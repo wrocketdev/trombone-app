@@ -196,6 +196,22 @@ def etat(s: requests.Session) -> None:
         print(f"  courte : {fiche.get('shortDescription', '')[:70]!r}")
         details = verifier(s.get(e.url("details")))
         print(f"  contact: {details.get('contactWebsite')} / {details.get('contactEmail')}")
+
+        print("Visuels :")
+        for genre in (
+            "icon",
+            "featureGraphic",
+            "phoneScreenshots",
+            "sevenInchScreenshots",
+            "tenInchScreenshots",
+        ):
+            images = verifier(s.get(e.url(f"listings/{LANGUE}/{genre}"))).get(
+                "images", []
+            )
+            print(f"  {genre:<22} {len(images)}")
+
+        bundles = verifier(s.get(e.url("bundles"))).get("bundles", [])
+        print(f"App bundles : {[b['versionCode'] for b in bundles] or 'aucun'}")
         pistes = verifier(s.get(e.url("tracks")))
         for t in pistes.get("tracks", []):
             versions = [
