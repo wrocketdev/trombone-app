@@ -122,23 +122,48 @@ L'application est gratuite et financée par la publicité. Une annonce peut appa
 
 ## 2. Visuels
 
-Attendus dans `publication/visuels/`, aux noms que `play_api.py` va chercher.
-**Aucun n'existe encore.**
+Dans `publication/assets/`, aux noms que `play_api.py` va chercher.
 
 | Fichier | Format exigé par Play | État |
 |---|---|---|
-| `icone.png` | 512 × 512, PNG 32 bits | ❌ à dessiner — l'icône actuelle est celle du gabarit Flutter |
-| `graphisme.png` | 1024 × 500 | ❌ à produire |
-| `capture01.png` … `capture08.png` | ≥ 320 px de côté, ratio 16:9 ou 9:16, 2 minimum | ❌ à capturer |
+| `icone-play-512.png` | 512 × 512 | ✅ rendu par `generer.py` |
+| `feature-graphic-1024x500.png` | 1024 × 500 | ✅ rendu par `generer.py` |
+| `captures/01-accueil.png` … `06-organiser.png` | ≥ 320 px de côté, 2 minimum | ❌ à prendre sur l'appareil |
 
-L'ordre de la liste **est** l'ordre d'affichage, et seules les trois premières
-sont visibles dans un résultat de recherche sans faire défiler. Elles doivent
-donc porter les trois arguments dans l'ordre : ce que l'application fait, qu'elle
-le fait sur l'appareil, et l'étendue du catalogue.
+### Comment ils sont fabriqués
 
-Les captures peuvent être prises sur l'appareil (`adb exec-out screencap -p`) :
-l'écran d'accueil, la fusion avec ses vignettes, l'aperçu, et un écran de
-sécurité sont les quatre qui montrent le plus.
+```bash
+python publication/assets/generer.py
+```
+
+Les visuels sont écrits en **HTML/CSS** (`icone.html`, `feature.html`,
+`icone-foreground.html`) et rendus par Edge en mode headless à deux fois la
+taille finale, puis réduits sous Pillow. C'est la méthode du compresseur
+vidéo : ni le tracé de primitives ni Pillow seul ne donnent la police du
+produit, les dégradés ou l'antialiasing d'un moteur de rendu.
+
+La même commande écrit aussi les icônes de lanceur — couche adaptative de
+premier plan et les cinq mipmaps héritées.
+
+### Le motif
+
+**Le trombone lui-même** : le nom et le geste, la pince qui tient des feuilles
+ensemble.
+
+Les pistes « PDF » ont été essayées et écartées — feuille à coin corné, badge
+rouge, double page. Toutes disent la catégorie, aucune ne dit le produit. Or
+dans une liste de résultats pour « fusionner pdf », l'utilisateur sait déjà que
+tout est un outil PDF ; le travail de l'icône y est de sortir du lot, et cette
+grille-là est un mur de rouge Adobe et de feuilles blanches. D'où le fond
+sombre et la pince orange, qui sont par ailleurs les couleurs du thème
+(`#191813` / `#E8703A`) et non un choix de circonstance.
+
+### Ordre des captures
+
+L'ordre de la liste dans `play_api.py` **est** l'ordre d'affichage, et seules
+les trois premières sont visibles dans un résultat de recherche sans faire
+défiler. Le détail, les conditions de prise de vue et le piège de la redirection
+PowerShell sont dans [`assets/captures/README.md`](assets/captures/README.md).
 
 ---
 
@@ -198,7 +223,7 @@ Classement attendu : PEGI 3 / Tout public.
 | Tags | pdf, fusionner pdf, pdf en word, scanner, signature, ocr, hors ligne |
 | Pays de diffusion | France, Belgique, Suisse, Luxembourg, Canada — puis élargir |
 | Politique de confidentialité | ⏳ à publier — voir §7 |
-| Adresse e-mail de contact | ⏳ à décider — **publique sur la fiche**, donc une adresse dédiée |
+| Adresse e-mail de contact | ✅ `kwizustudio@gmail.com` — la même que Kwizu et le compresseur : **publique sur la fiche**, donc dédiée et jamais l'adresse personnelle |
 
 > **Sur l'adresse e-mail.** Google l'affiche en clair sur la page publique de
 > l'application, elle sera moissonnée. Utiliser une adresse dédiée, jamais
@@ -229,9 +254,10 @@ question, c'est la réponse.
 | 3 | Accès du compte de service à la nouvelle app | ❌ Play Console > Utilisateurs et autorisations |
 | 4 | Clé de signature d'envoi (`trombone-upload.jks`) | ❌ le build utilise encore la clé de debug — Play refusera l'AAB |
 | 5 | Identifiants AdMob réels | ❌ l'App ID du manifeste est celui de test de Google |
-| 6 | URL de politique de confidentialité en HTTPS | ❌ obligatoire, l'app affiche de la publicité |
-| 7 | Adresse e-mail de contact publique | ❌ à décider |
-| 8 | Icône 512, graphisme 1024×500, ≥ 2 captures | ❌ §2 |
+| 6 | URL de politique de confidentialité en HTTPS | ⏳ page écrite (`publication/site/`) — reste à activer GitHub Pages |
+| 7 | Adresse e-mail de contact publique | ✅ `kwizustudio@gmail.com` |
+| 8 | Icône 512 et graphisme 1024×500 | ✅ `publication/assets/` |
+| 8 bis | Captures d'écran | ❌ à prendre, téléphone déverrouillé — voir `assets/captures/README.md` |
 | 9 | Fiche, sécurité des données, classification | ⏸ prêt ici — à poser **après** validation du binaire |
 | 10 | Envoi de l'AAB | ⏸ bloqué par 2, 3 et 4 |
 

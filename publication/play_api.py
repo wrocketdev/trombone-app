@@ -299,7 +299,7 @@ def visuels(s: requests.Session) -> None:
 # Le site et l'adresse affiches sur la fiche. L'adresse est **publique** et
 # sera moissonnee : une adresse dediee, jamais l'adresse personnelle.
 SITE_CONTACT = "https://wrocketdev.github.io/trombone-app/"
-EMAIL_CONTACT = "wrocketdev@gmail.com"
+EMAIL_CONTACT = "kwizustudio@gmail.com"
 
 
 def contact(s: requests.Session) -> None:
