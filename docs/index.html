@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trombone — 24 outils PDF, sur votre téléphone</title>
+<meta name="description" content="Fusionner, convertir, signer et protéger vos PDF sur Android. Tout est calculé sur l'appareil : aucun document n'est envoyé sur un serveur.">
+<style>
+  :root {
+    color-scheme: light dark;
+    --encre:#191A1F; --encre-sourde:#5F5A52;
+    --papier:#FDFBF6; --lin:#F2EDE3; --trait:#E4DFD4;
+    --accent:#BE410C; --sauge:#1B7A54;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --encre:#F6F2E9; --encre-sourde:#A29A8C;
+      --papier:#191813; --lin:#242118; --trait:#2F2B21;
+      --accent:#E8703A; --sauge:#6DAA92;
+    }
+  }
+  * { box-sizing:border-box; }
+  body {
+    margin:0; padding:0; background:var(--papier); color:var(--encre);
+    font:400 16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    overflow-x:clip;
+  }
+  main { max-width:46rem; margin:0 auto; padding:3.5rem 1.25rem 4rem; }
+
+  .marque { display:flex; align-items:center; gap:.85rem; margin-bottom:2.75rem; }
+  .marque svg { width:38px; height:53px; flex:none; }
+  .marque span { font-size:1.45rem; font-weight:700; letter-spacing:-.025em; }
+
+  h1 { font-size:clamp(1.9rem,6vw,2.6rem); line-height:1.12; letter-spacing:-.03em; margin:0 0 1rem; overflow-wrap:anywhere; }
+  h1 em { font-style:normal; color:var(--accent); display:block; }
+  .chapeau { font-size:1.075rem; color:var(--encre-sourde); margin:0 0 2.5rem; max-width:34rem; }
+
+  h2 { font-size:1.15rem; letter-spacing:-.012em; margin:2.75rem 0 .7rem; }
+
+  .encart {
+    border-left:3px solid var(--sauge); padding:.9rem 0 .9rem 1.15rem; margin:0 0 2.5rem;
+    background:color-mix(in srgb, var(--sauge) 7%, transparent); border-radius:0 6px 6px 0;
+  }
+  .encart p { margin:0; }
+  .encart p + p { margin-top:.6rem; color:var(--encre-sourde); font-size:.94rem; }
+
+  ul.outils { list-style:none; padding:0; margin:0; display:grid; gap:.55rem 1.5rem;
+              grid-template-columns:repeat(auto-fill,minmax(min(15rem,100%),1fr)); }
+  ul.outils li { padding-left:1.1rem; position:relative; }
+  ul.outils li::before { content:"·"; position:absolute; left:.25rem; color:var(--accent); font-weight:700; }
+
+  a { color:var(--accent); }
+  .liens { display:flex; flex-wrap:wrap; gap:.75rem; margin-top:1.25rem; }
+  .liens a {
+    display:inline-block; padding:.6rem 1.1rem; border:1px solid var(--trait);
+    border-radius:999px; text-decoration:none; background:var(--lin);
+  }
+  footer { margin-top:3.5rem; padding-top:1.25rem; border-top:1px solid var(--trait);
+           color:var(--encre-sourde); font-size:.9rem; }
+</style>
+</head>
+<body>
+<main>
+
+  <div class="marque">
+    <svg viewBox="0 0 120 168" fill="none" aria-hidden="true">
+      <path d="M 34 50 L 34 120 A 26 26 0 0 0 86 120 L 86 37 A 15 15 0 0 0 56 37 L 56 108"
+            stroke="var(--accent)" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>Trombone</span>
+  </div>
+
+  <h1>24 outils PDF.<em>Rien ne part en ligne.</em></h1>
+  <p class="chapeau">
+    Une application Android, en français, qui fusionne, convertit, signe et
+    protège vos PDF — et qui fait tout le travail sur votre téléphone.
+  </p>
+
+  <div class="encart">
+    <p><strong>Vos documents ne quittent jamais l'appareil.</strong> La plupart des applications PDF téléversent vos fichiers sur leurs serveurs pour les traiter. Pas celle-ci.</p>
+    <p>Un seul outil a besoin du réseau : « Page web vers PDF », pour aller chercher l'adresse que vous lui donnez. Les vingt-trois autres fonctionnent sans connexion.</p>
+  </div>
+
+  <h2>Ce que fait l'application</h2>
+  <ul class="outils">
+    <li>Fusionner plusieurs PDF</li>
+    <li>Diviser, extraire, réordonner</li>
+    <li>Recto-verso à partir de deux scans</li>
+    <li>Images, Excel, PowerPoint vers PDF</li>
+    <li>Page web vers PDF</li>
+    <li>Scanner un document papier</li>
+    <li>PDF vers Word, Excel, PowerPoint</li>
+    <li>PDF vers images, PDF/A</li>
+    <li>Protéger par mot de passe</li>
+    <li>Déverrouiller un PDF</li>
+    <li>Caviarder, réparer</li>
+    <li>Signer, filigrane, numéros de page</li>
+    <li>Rogner, pivoter, comparer</li>
+    <li>Reconnaissance de texte (OCR)</li>
+  </ul>
+
+  <h2>Confidentialité</h2>
+  <p>
+    L'application est gratuite et financée par la publicité, qui est la seule
+    chose à collecter des données. Le détail, y compris ce que collecte la régie
+    et comment le refuser, est écrit noir sur blanc :
+  </p>
+  <div class="liens">
+    <a href="politique-confidentialite.html">Politique de confidentialité</a>
+    <a href="mailto:kwizustudio@gmail.com">Nous écrire</a>
+  </div>
+
+  <footer>
+    Trombone — édité par Kwizu Studio.<br>
+    Contact : <a href="mailto:kwizustudio@gmail.com">kwizustudio@gmail.com</a>
+  </footer>
+
+</main>
+</body>
+</html>

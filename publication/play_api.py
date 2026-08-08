@@ -302,7 +302,32 @@ SITE_CONTACT = "https://wrocketdev.github.io/trombone-app/"
 EMAIL_CONTACT = "kwizustudio@gmail.com"
 
 
+def _site_joignable(url: str) -> bool:
+    """Le site de contact repond-il ?
+
+    Le script de la belote porte cette cicatrice : `kwizu.wrocket.dev` etait
+    encore declare sur la fiche alors qu'il rendait un HTTP 530. Un lien mort
+    sur une fiche en production est un manquement au reglement Play, pas une
+    coquille — et rien dans l'API ne le signale.
+
+    On n'utilise pas la session Play ici : elle porte un jeton Bearer Google
+    qu'il n'y a aucune raison d'envoyer a un site tiers.
+    """
+    try:
+        r = requests.get(url, timeout=15, allow_redirects=True)
+        return r.status_code < 400
+    except requests.RequestException:
+        return False
+
+
 def contact(s: requests.Session) -> None:
+    if not _site_joignable(SITE_CONTACT):
+        raise SystemExit(
+            f"{SITE_CONTACT} ne repond pas.\n\n"
+            "Rien n'a ete ecrit. Publier une fiche qui pointe vers un lien\n"
+            "mort est un manquement au reglement Play.\n"
+            "Activer GitHub Pages sur le depot, ou corriger SITE_CONTACT."
+        )
     with Edit(s) as e:
         avant = verifier(s.get(e.url("details")))
         print(f"  avant : {avant.get('contactWebsite')} / {avant.get('contactEmail')}")

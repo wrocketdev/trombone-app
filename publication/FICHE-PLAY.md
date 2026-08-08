@@ -254,7 +254,7 @@ question, c'est la réponse.
 | 3 | Accès du compte de service à la nouvelle app | ❌ Play Console > Utilisateurs et autorisations |
 | 4 | Clé de signature d'envoi (`trombone-upload.jks`) | ❌ le build utilise encore la clé de debug — Play refusera l'AAB |
 | 5 | Identifiants AdMob réels | ❌ l'App ID du manifeste est celui de test de Google |
-| 6 | URL de politique de confidentialité en HTTPS | ⏳ page écrite (`publication/site/`) — reste à activer GitHub Pages |
+| 6 | URL de politique de confidentialité en HTTPS | ⏳ page écrite (`docs/`) — reste à activer GitHub Pages sur le dépôt |
 | 7 | Adresse e-mail de contact publique | ✅ `kwizustudio@gmail.com` |
 | 8 | Icône 512 et graphisme 1024×500 | ✅ `publication/assets/` |
 | 8 bis | Captures d'écran | ✅ six, réelles, prises sur l'appareil |
