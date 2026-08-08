@@ -1,0 +1,32 @@
+[
+  {
+    "date": "2026-08-08",
+    "macrostructure": "Bento Grid",
+    "genre": "playful",
+    "theme": "custom",
+    "theme_axes": "clair / rounded-sans / accent-chaud",
+    "vibe": "enjoué et rassurant, utilitaire du quotidien",
+    "enrichment": "none",
+    "brief": "Fusion PDF — passe de correction après parcours ADB complet sur S24 Ultra : teinte danger distincte, chroma du thème sombre remontée, encre de famille propagée aux 24 outils, contrôles de page reconstruits, grammaire unifiée (fichier choisi / résultat / ajout / page), recherche d'outils, aperçu zoomable, annulation de suppression, « Terminé » qui sort du flux, noms d'export dérivés de la source"
+  },
+  {
+    "date": "2026-08-08",
+    "macrostructure": "Bento Grid",
+    "genre": "playful",
+    "theme": "custom",
+    "theme_axes": "clair / rounded-sans / accent-chaud",
+    "vibe": "enjoué et rassurant, utilitaire du quotidien",
+    "enrichment": "none",
+    "brief": "Fusion PDF — refonte bento après recherche marché (1 678 avis fr) : ton enjoué, conversion remontée à parité avec la fusion"
+  },
+  {
+    "date": "2026-08-08",
+    "macrostructure": "Workbench",
+    "genre": "editorial",
+    "theme": "custom",
+    "theme_axes": "clair / serif-haute-graisse / accent-chaud",
+    "vibe": "papeterie fine, artisanal-premium",
+    "enrichment": "none",
+    "brief": "Fusion PDF — refonte graphique totale d'une app Flutter d'outils PDF (24 outils, français, ad-financée)"
+  }
+]

@@ -1,0 +1,37 @@
+{
+  "date": "2026-08-08",
+  "framework": "Flutter 3.44.8 / Dart 3.12.2 (Material 3)",
+  "fonts": {
+    "display": "Fraunces (statique, opsz 72 / SOFT 30 / WONK 0)",
+    "ui": "Inter (400/500/600/700)",
+    "source": "assets/fonts/, déclarés pubspec.yaml L88-L106",
+    "bundled": true,
+    "weight_kb": 464
+  },
+  "palette": {
+    "system": "AppColors, ThemeExtension",
+    "file": "lib/theme/app_colors.dart",
+    "light": "L140",
+    "dark": "L171",
+    "inks": "L138 — 4 encres de famille, une par section d'outils"
+  },
+  "spacing": {
+    "scale": "4 pt",
+    "file": "lib/theme/app_spacing.dart L5",
+    "radii": "L33",
+    "motion": "L65"
+  },
+  "motion": {
+    "stance": "motion-cut",
+    "libraries": "aucune (pas de rive, lottie, flutter_animate)",
+    "primitives": ["stagger-rise", "press-sink"],
+    "reduced_motion": "géré via MediaQuery.disableAnimations"
+  },
+  "tests": {
+    "count": 87,
+    "contrast_guard": "test/theme_contrast_test.dart — WCAG AA par rôle, deux thèmes",
+    "layout_guard": "test/widget_test.dart — 320→834 px, échelle de police jusqu'à 200 %"
+  },
+  "stamp": "lib/theme/app_theme.dart L1-L11",
+  "design_md": false
+}

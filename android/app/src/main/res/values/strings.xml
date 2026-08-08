@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Le nom sous l'icône, et rien d'autre.
+
+         Android tronque ce libellé à une douzaine de caractères dans le
+         lanceur : « Fusionner PDF, Word & Images » y arrivait comme
+         « Fusionner… ». Les mots-clés n'ont donc rien à faire ici — leur
+         place est dans le titre de la fiche Play (30 caractères, indexé),
+         qui est un champ distinct et localisable fiche par fiche.
+
+         Ce libellé vit dans une ressource plutôt qu'en dur dans le
+         manifeste pour qu'une future locale puisse le remplacer via un
+         values-xx/strings.xml. La marque ne change pas d'une langue à
+         l'autre, mais le mécanisme est en place. -->
+    <string name="app_name">Trombone</string>
+</resources>
