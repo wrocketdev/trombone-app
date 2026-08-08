@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<style>
+  /* Couche de premier plan de l'icône adaptative, 432x432, fond transparent.
+     Le fond est une couleur unie declaree en ressource
+     (`values/ic_launcher_background.xml`), pas une image : Android n'applique
+     de parallaxe qu'aux deux couches, et un dégradé y coûterait un PNG de plus
+     sans rien apporter à cette taille.
+
+     **La zone sûre fait 288 px sur 432**, soit les deux tiers centraux : tout
+     ce qui déborde peut être rogné par le masque du lanceur — cercle, carré
+     arrondi, goutte selon le constructeur. La pince est donc dessinée dans
+     260 px de haut, à l'intérieur, et non à la taille de l'icône Play. */
+
+  html, body { margin: 0; padding: 0; background: transparent; }
+  body { width: 432px; height: 432px; overflow: hidden; }
+
+  .couche {
+    width: 432px; height: 432px;
+    display: grid; place-items: center;
+  }
+
+  .pince { width: 187px; height: 260px; }
+</style>
+</head>
+<body>
+  <div class="couche">
+    <svg class="pince" viewBox="0 0 120 168" fill="none"
+         xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="or" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%"  stop-color="#FF9463"/>
+          <stop offset="100%" stop-color="#E8703A"/>
+        </linearGradient>
+      </defs>
+      <path d="M 34 50 L 34 120 A 26 26 0 0 0 86 120 L 86 37
+                 A 15 15 0 0 0 56 37 L 56 108"
+            stroke="url(#or)" stroke-width="15"
+            stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<style>
+  /* Icône Play, 512x512. Rendue à 2x puis réduite.
+
+     Le motif est le TROMBONE, c'est-à-dire à la fois le nom et le geste : la
+     pince qui tient des feuilles ensemble. C'est ce que fait l'application,
+     et c'est ce qu'aucun concurrent n'affiche.
+
+     Les pistes « PDF » ont été essayées et écartées : la feuille à coin
+     corné, le badge rouge, la double page. Toutes disent la catégorie,
+     aucune ne dit le produit — et dans une liste de résultats pour
+     « fusionner pdf », l'utilisateur sait déjà que tout est un outil PDF.
+     Le travail de l'icône y est de sortir du lot, or la grille Play de cette
+     catégorie est un mur de rouge Adobe et de feuilles blanches.
+
+     D'où le fond sombre et la pince orange : les deux seules couleurs qui ne
+     soient pas déjà partout, et ce sont celles du produit — le fond reprend
+     le papier sombre du thème (#191813), la pince l'accent du thème sombre
+     (#E8703A), pas une couleur choisie pour la circonstance.
+
+     La feuille derrière est volontairement faible : à 48 px elle disparaît,
+     et il ne reste que la pince, qui est le message. Elle ne sert qu'à donner
+     à la pince quelque chose à tenir aux grandes tailles. */
+
+  html, body { margin: 0; padding: 0; }
+  body { width: 512px; height: 512px; overflow: hidden; }
+
+  .icone {
+    width: 512px; height: 512px;
+    background:
+      radial-gradient(115% 105% at 30% 18%, #302B21 0%, #1E1B14 55%, #13110C 100%);
+    display: grid; place-items: center;
+    position: relative;
+  }
+
+  /* La feuille tenue. Inclinée : une feuille parfaitement droite sous une
+     pince droite se lit comme un rectangle, pas comme du papier. */
+  .feuille {
+    position: absolute;
+    width: 196px; height: 250px;
+    top: 152px; left: 158px;
+    background: #F2EDE3;
+    opacity: .13;
+    border-radius: 6px;
+    transform: rotate(-5deg);
+  }
+
+  .pince {
+    position: relative;
+    width: 258px; height: 358px;
+  }
+</style>
+</head>
+<body>
+  <div class="icone">
+    <div class="feuille"></div>
+
+    <svg class="pince" viewBox="0 0 120 168" fill="none"
+         xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="or" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%"  stop-color="#FF9463"/>
+          <stop offset="100%" stop-color="#E8703A"/>
+        </linearGradient>
+      </defs>
+      <!-- Un trombone est un seul trait replié deux fois : bras droit, demi-
+           tour bas, bras gauche, demi-tour haut plus serré, bras central. Les
+           deux arcs sont des demi-cercles exacts (la corde vaut deux rayons),
+           sans quoi le repli se voit ovale. -->
+      <path d="M 34 50 L 34 120 A 26 26 0 0 0 86 120 L 86 37
+                 A 15 15 0 0 0 56 37 L 56 108"
+            stroke="url(#or)" stroke-width="15"
+            stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+</body>
+</html>

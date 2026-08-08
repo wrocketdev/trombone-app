@@ -47,7 +47,9 @@ Trombone réunit 24 outils PDF dans une seule application, en français, et les 
 
 VOS DOCUMENTS NE PARTENT NULLE PART
 
-La plupart des applications PDF envoient vos fichiers sur leurs serveurs pour les traiter. Un bulletin de salaire, un contrat, un compte rendu médical : ce sont ces documents-là qu'on manipule en PDF. Trombone fait tout le travail sur l'appareil. Rien n'est téléversé, rien n'est conservé ailleurs, et l'application fonctionne sans connexion.
+La plupart des applications PDF envoient vos fichiers sur leurs serveurs pour les traiter. Un bulletin de salaire, un contrat, un compte rendu médical : ce sont ces documents-là qu'on manipule en PDF. Trombone fait tout le travail sur l'appareil. Rien n'est téléversé, rien n'est conservé ailleurs, et il n'y a ni compte ni inscription.
+
+Un seul outil a besoin du réseau : « Page web vers PDF », pour aller chercher l'adresse que vous lui donnez. Les vingt-trois autres fonctionnent sans connexion.
 
 ASSEMBLER ET ORGANISER
 

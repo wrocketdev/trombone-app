@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<style>
+  /* Graphique de mise en avant, 1024x500 — dimensions imposées par Play.
+     Affiché en tête de fiche et dans les surfaces de recommandation.
+
+     Play recadre les bords sur certaines surfaces : rien de significatif ne
+     doit vivre dans les 60 px de marge. */
+
+  @font-face {
+    font-family: 'Jakarta';
+    src: url('../../assets/fonts/PlusJakartaSans-700.ttf') format('truetype');
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: 'Inter';
+    src: url('../../assets/fonts/Inter-400.ttf') format('truetype');
+    font-weight: 400;
+  }
+
+  html, body { margin: 0; padding: 0; }
+  body { width: 1024px; height: 500px; overflow: hidden; }
+
+  .plaque {
+    position: relative;
+    width: 1024px; height: 500px;
+    background:
+      radial-gradient(58% 88% at 24% 46%, rgba(232,112,58,.15) 0%, rgba(232,112,58,0) 62%),
+      radial-gradient(112% 118% at 22% 10%, #302B21 0%, #1E1B14 56%, #13110C 100%);
+    display: flex; align-items: center; gap: 62px;
+    padding: 0 76px; box-sizing: border-box;
+  }
+
+  /* --- La pince et sa liasse : le motif de l'icône, repris ici pour que la
+         fiche et l'icône se reconnaissent l'une l'autre. --- */
+  .liasse { position: relative; width: 250px; height: 330px; flex: none; }
+
+  .feuille {
+    position: absolute;
+    width: 168px; height: 214px;
+    background: #F2EDE3;
+    border-radius: 5px;
+  }
+  /* Trois feuilles décalées : c'est la fusion, dite sans un mot. */
+  .f1 { top: 74px; left: 24px; transform: rotate(-7deg); opacity: .18; }
+  .f2 { top: 68px; left: 40px; transform: rotate(-2deg); opacity: .26; }
+  .f3 { top: 62px; left: 56px; transform: rotate(3deg);  opacity: .34; }
+
+  .pince { position: absolute; top: -8px; left: 38px; width: 186px; height: 260px; }
+
+  /* --- Le titre --- */
+  .titre {
+    font-family: 'Jakarta', 'Segoe UI', sans-serif; font-weight: 700;
+    /* -.035em faisait se toucher « part en » : sur une police deja etroite
+       en 700, le crenage negatif se paie tout de suite a cette taille. */
+    font-size: 58px; line-height: 1.1; letter-spacing: -.02em;
+    color: #F6F2E9; margin: 0;
+    white-space: nowrap;   /* deux lignes, decoupees a la main, jamais trois */
+  }
+  /* Roman, jamais italique : une emphase penchée dans un titre est le tell le
+     plus fiable qu'il y ait. C'est la couleur qui porte l'accent. */
+  .titre em { font-style: normal; color: #FF9463; display: block; }
+
+  .sous {
+    font-family: 'Inter', 'Segoe UI', sans-serif; font-weight: 400;
+    margin: 26px 0 0; font-size: 25px; letter-spacing: -.012em;
+    color: #A9A096;
+  }
+</style>
+</head>
+<body>
+  <div class="plaque">
+
+    <div class="liasse">
+      <div class="feuille f1"></div>
+      <div class="feuille f2"></div>
+      <div class="feuille f3"></div>
+      <svg class="pince" viewBox="0 0 120 168" fill="none"
+           xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="or" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%"  stop-color="#FF9463"/>
+            <stop offset="100%" stop-color="#E8703A"/>
+          </linearGradient>
+        </defs>
+        <path d="M 34 50 L 34 120 A 26 26 0 0 0 86 120 L 86 37
+                 A 15 15 0 0 0 56 37 L 56 108"
+              stroke="url(#or)" stroke-width="15"
+              stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+
+    <div>
+      <h1 class="titre">24 outils PDF.<em>Rien ne part en ligne.</em></h1>
+      <p class="sous">Tout se passe sur votre téléphone.</p>
+    </div>
+
+  </div>
+</body>
+</html>

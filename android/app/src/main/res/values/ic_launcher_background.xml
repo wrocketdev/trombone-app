@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- La couche de fond d'une icône adaptative est unie : Android l'anime en
+         parallaxe sous le premier plan, et un dégradé n'y survivrait pas au
+         recadrage des masques. C'est le ton médian du dégradé de l'icône Play,
+         donc la même famille que le papier sombre du thème (#191813). -->
+    <color name="ic_launcher_background">#1E1B14</color>
+</resources>

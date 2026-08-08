@@ -28,9 +28,11 @@ Usage :
     python play_api.py etat        (lecture seule)
     python play_api.py fiche       (ECRIT les textes depuis FICHE-PLAY.md)
     python play_api.py contact     (ECRIT le site et l'e-mail de contact)
-    python play_api.py visuels     (ECRIT icone, graphisme, captures)
-    python play_api.py bundle <chemin.aab>   (brouillon, canal interne)
-    python play_api.py publier <chemin.aab>  (ECRIT : completed, 4 pistes)
+    python play_api.py visuels     (ECRIT ce qui manque, n'ecrase rien)
+    python play_api.py bundle <chemin.aab>   (ECRIT : brouillon sur alpha)
+    python play_api.py publier               (ECRIT : alpha -> completed)
+    python play_api.py deployer <piste> <versionCode>
+                                   (ECRIT : rattache un binaire DEJA depose)
 
 Chaque commande ouvre un « edit », applique ses changements et le valide.
 Un edit non valide expire tout seul : en cas d'erreur en cours de route,
@@ -151,11 +153,19 @@ DESCRIPTION_LONGUE = _bloc("Description longue")
 # sans faire defiler. Elles doivent donc porter les trois arguments, dans
 # l'ordre : ce que l'app fait, qu'elle le fait sur l'appareil, et l'etendue
 # du catalogue.
+ASSETS = RACINE / "assets"
+CAPTURES = ASSETS / "captures"
+
 VISUELS = {
-    "icon": [RACINE / "visuels" / "icone.png"],
-    "featureGraphic": [RACINE / "visuels" / "graphisme.png"],
+    "icon": [ASSETS / "icone-play-512.png"],
+    "featureGraphic": [ASSETS / "feature-graphic-1024x500.png"],
     "phoneScreenshots": [
-        RACINE / "visuels" / f"capture{n:02d}.png" for n in range(1, 9)
+        CAPTURES / "01-accueil.png",
+        CAPTURES / "02-fusion.png",
+        CAPTURES / "03-recherche.png",
+        CAPTURES / "04-apercu.png",
+        CAPTURES / "05-proteger.png",
+        CAPTURES / "06-organiser.png",
     ],
 }
 
@@ -197,9 +207,46 @@ def etat(s: requests.Session) -> None:
         raise _Lecture()
 
 
+# Affirmations qui ne doivent JAMAIS revenir dans la fiche, parce qu'elles
+# sont fausses. Le controle est ici et pas dans un commentaire : une remise en
+# place par copier-coller ne se verrait pas.
+#
+# La lecon vient du compresseur video, dont la fiche est partie en ligne en
+# affirmant « does not even request internet permission » alors que le
+# manifeste la demandait. Trombone porte le meme piege en plus gros : elle
+# declare INTERNET, elle affiche de la publicite, et son outil « page web vers
+# PDF » va chercher une adresse. « Aucun envoi de vos documents » est vrai ;
+# « fonctionne sans connexion » sans reserve ne l'est pas.
+INTERDITS = (
+    "aucune connexion",
+    "sans aucune connexion",
+    "aucune permission",
+    "100 % hors ligne",
+    "100% hors ligne",
+    "entierement hors ligne",
+    "entièrement hors ligne",
+    "ne demande aucun acces",
+    "ne demande aucun accès",
+)
+
+
+def _controler_affirmations(longue: str) -> None:
+    bas = longue.lower()
+    for interdit in INTERDITS:
+        if interdit in bas:
+            raise SystemExit(
+                f"FICHE-PLAY.md contient a nouveau « {interdit} ».\n"
+                "Affirmation retiree parce qu'elle est fausse : l'application\n"
+                "declare INTERNET, affiche de la publicite, et son outil\n"
+                "« page web vers PDF » va chercher une adresse. Ce qui est vrai\n"
+                "et qu'il faut dire a la place : aucun document n'est envoye."
+            )
+
+
 def fiche(s: requests.Session) -> None:
     print("Longueurs :")
     limites()
+    _controler_affirmations(DESCRIPTION_LONGUE)
     with Edit(s) as e:
         verifier(
             s.put(
@@ -216,11 +263,25 @@ def fiche(s: requests.Session) -> None:
 
 
 def visuels(s: requests.Session) -> None:
+    """Ne pousse que ce qui manque, et refuse d'ecraser le reste.
+
+    La version Kwizu commencait par un DELETE de la categorie, faute de quoi
+    une seconde execution empilait un deuxieme jeu de captures a la suite du
+    premier. Mais un DELETE detruit du travail deja valide pour le remettre a
+    l'identique — et si l'envoi echoue au milieu, la fiche reste sans visuel.
+    Le compresseur a corrige en sautant les categories deja remplies ; c'est
+    cette version-la qui est reprise ici.
+
+    Pour remplacer un visuel deja en ligne, le supprimer depuis la Console.
+    """
     with Edit(s) as e:
         for genre, fichiers in VISUELS.items():
-            # Sans ce menage, chaque execution empilerait un second jeu de
-            # captures a la suite du premier.
-            s.delete(e.url(f"listings/{LANGUE}/{genre}"))
+            existants = verifier(s.get(e.url(f"listings/{LANGUE}/{genre}"))).get(
+                "images", []
+            )
+            if existants:
+                print(f"  {genre:<18} deja {len(existants)} image(s) — ignore")
+                continue
             for f in fichiers:
                 if not f.exists():
                     raise SystemExit(f"visuel introuvable : {f}")
@@ -264,11 +325,17 @@ def contact(s: requests.Session) -> None:
 # refonte de fiche.
 NOTES_RELEASE = "Premiere version."
 
-# Les quatre pistes, toutes servies a chaque publication. La lecon de Kwizu :
-# un testeur inscrit recoit la version de **sa** piste, et une piste oubliee
-# avec un vieux `completed` prime sur la production. Basculer la production
-# ne suffit pas.
-PISTES = ("production", "beta", "alpha", "internal")
+PISTES = ("internal", "alpha", "beta", "production")
+
+# **La publication se fait piste par piste, jamais en bloc.** Kwizu bascule ses
+# quatre pistes en `completed` d'un seul edit ; le compresseur video a du y
+# renoncer, parce que le compte exige un test ferme de quatorze jours avec
+# douze testeurs avant d'ouvrir `beta` et `production`. Servir les quatre
+# ensemble ferait echouer la moitie des appels au milieu d'un edit.
+#
+# Trombone est une application neuve sur ce meme compte : elle part donc sur
+# `alpha` seule, et `deployer` prend la piste en argument pour la suite.
+PISTE = "alpha"  # « Tests fermes - Alpha » dans la Console
 
 
 def _televerser(s: requests.Session, e: Edit, chemin: str) -> int:
@@ -286,54 +353,108 @@ def _televerser(s: requests.Session, e: Edit, chemin: str) -> int:
     return info["versionCode"]
 
 
+def _release_existante(s: requests.Session, e: Edit, piste: str) -> dict:
+    """La release en place sur `piste`, relue pour etre reecrite telle quelle.
+
+    Un PUT sur une piste remplace **toute** sa liste de releases : omettre
+    `name` ou `releaseNotes` les effacerait sans rien signaler. On relit donc
+    avant d'ecrire, et on ne touche qu'aux champs voulus.
+    """
+    piste_actuelle = verifier(s.get(e.url(f"tracks/{piste}")))
+    releases = piste_actuelle.get("releases") or []
+    return dict(releases[0]) if releases else {}
+
+
 def bundle(s: requests.Session, chemin: str) -> None:
+    """Depose l'AAB et l'accroche en brouillon a la piste [PISTE]."""
     with Edit(s) as e:
         code = _televerser(s, e, chemin)
-        verifier(
-            s.put(
-                e.url("tracks/internal"),
-                json={
-                    "track": "internal",
-                    "releases": [
-                        {
-                            "versionCodes": [str(code)],
-                            "status": "draft",
-                            "releaseNotes": [
-                                {"language": LANGUE, "text": NOTES_RELEASE}
-                            ],
-                        }
-                    ],
-                },
-            )
+        release = _release_existante(s, e, PISTE)
+        release["versionCodes"] = [str(code)]
+        release["status"] = "draft"
+        release.setdefault(
+            "releaseNotes", [{"language": LANGUE, "text": NOTES_RELEASE}]
         )
-    print("Bundle depose en brouillon sur le canal interne.")
+        verifier(
+            s.put(e.url(f"tracks/{PISTE}"), json={"track": PISTE, "releases": [release]})
+        )
+        print(f"  {PISTE} <- brouillon {release.get('name', '(sans nom)')} [{code}]")
+    print(
+        "Bundle depose en brouillon. Il reste a inscrire les testeurs, puis a "
+        "confirmer et envoyer pour examen."
+    )
 
 
-def publier(s: requests.Session, chemin: str) -> None:
-    """Televerse l'AAB et le met en `completed` sur les quatre pistes, dans
-    un seul edit — donc un seul commit, aucune fenetre d'incoherence."""
+def publier(s: requests.Session) -> None:
+    """Fait passer la release brouillon de [PISTE] en `completed`.
+
+    Ne televerse rien : le binaire est deja depose par `bundle`. Passer en
+    `completed`, c'est envoyer la release en examen Google puis la rendre
+    disponible aux testeurs inscrits — geste sortant et difficile a defaire,
+    d'ou la commande separee.
+    """
     with Edit(s) as e:
-        code = _televerser(s, e, chemin)
-        for piste in PISTES:
-            verifier(
-                s.put(
-                    e.url(f"tracks/{piste}"),
-                    json={
-                        "track": piste,
-                        "releases": [
-                            {
-                                "versionCodes": [str(code)],
-                                "status": "completed",
-                                "releaseNotes": [
-                                    {"language": LANGUE, "text": NOTES_RELEASE}
-                                ],
-                            }
-                        ],
-                    },
-                )
+        release = _release_existante(s, e, PISTE)
+        if not release:
+            raise SystemExit(f"aucune release sur {PISTE} — lancer `bundle` d'abord")
+        if not release.get("versionCodes"):
+            raise SystemExit(f"la release de {PISTE} n'a pas de binaire")
+        if release.get("status") == "completed":
+            raise SystemExit(f"{PISTE} est deja en `completed` — rien a faire")
+
+        release["status"] = "completed"
+        release.pop("userFraction", None)  # incompatible avec un deploiement complet
+        verifier(
+            s.put(e.url(f"tracks/{PISTE}"), json={"track": PISTE, "releases": [release]})
+        )
+        print(f"  {PISTE} <- completed {release['versionCodes']}")
+    print("Release envoyee en examen, puis disponible aux testeurs inscrits.")
+
+
+def deployer(s: requests.Session, piste: str, code: str) -> None:
+    """Rattache un binaire DEJA depose a une piste, directement en `completed`.
+
+    Un meme AAB ne se televerse qu'une fois — Play refuse un second envoi du
+    meme versionCode. Diffuser un binaire existant sur une piste de plus,
+    c'est donc ecrire la piste, pas renvoyer le fichier.
+
+    La piste est validee contre [PISTES] : une faute de frappe creerait une
+    piste inconnue au lieu d'echouer, et personne ne s'en apercevrait avant de
+    chercher pourquoi les testeurs n'ont rien recu.
+    """
+    if piste not in PISTES:
+        raise SystemExit(f"piste inconnue : {piste!r} — attendu {' | '.join(PISTES)}")
+
+    with Edit(s) as e:
+        connus = [
+            str(b["versionCode"])
+            for b in verifier(s.get(e.url("bundles"))).get("bundles", [])
+        ]
+        if str(code) not in connus:
+            raise SystemExit(
+                f"versionCode {code} jamais depose (connus : {connus or 'aucun'}) — "
+                "lancer `bundle` d'abord."
             )
-            print(f"  {piste:<12} completed [{code}]")
-    print(f"Version {code} publiee sur les quatre pistes.")
+
+        release = _release_existante(s, e, piste) or {"name": "1.0.0"}
+        if (
+            release.get("versionCodes") == [str(code)]
+            and release.get("status") == "completed"
+        ):
+            raise SystemExit(f"{piste} diffuse deja {code} en completed — rien a faire")
+
+        avant = release.get("versionCodes") or "(vide)"
+        release["versionCodes"] = [str(code)]
+        release["status"] = "completed"
+        release.pop("userFraction", None)
+        release.setdefault(
+            "releaseNotes", [{"language": LANGUE, "text": NOTES_RELEASE}]
+        )
+        verifier(
+            s.put(e.url(f"tracks/{piste}"), json={"track": piste, "releases": [release]})
+        )
+        print(f"  {piste:<12} {avant} -> completed ['{code}']")
+    print(f"Piste {piste} diffuse maintenant le versionCode {code}.")
 
 
 def main() -> None:
@@ -351,9 +472,15 @@ def main() -> None:
         elif commande == "contact":
             contact(s)
         elif commande == "bundle":
+            if len(sys.argv) < 3:
+                raise SystemExit("chemin de l'AAB attendu")
             bundle(s, sys.argv[2])
         elif commande == "publier":
-            publier(s, sys.argv[2])
+            publier(s)
+        elif commande == "deployer":
+            if len(sys.argv) < 4:
+                raise SystemExit("piste et versionCode attendus")
+            deployer(s, sys.argv[2], sys.argv[3])
         else:
             raise SystemExit(__doc__)
     except _Lecture:
