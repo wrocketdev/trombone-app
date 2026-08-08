@@ -1,9 +1,16 @@
 # Captures d'écran de la fiche Play
 
-Captures **réelles**, à prendre sur le SM-S928B (Galaxy S24 Ultra, Android 16)
-sur l'APK signé `fr.trombone.pdf`, en 1440 × 3120. Aucune maquette : une capture
-qui ne correspond pas à l'application est un motif de rejet, et c'est aussi ce
-qui produit les avis 1★ « ça ne ressemble pas à ça ».
+Captures **réelles**, prises sur le SM-S928B (Galaxy S24 Ultra, Android 16) sur
+`fr.trombone.pdf`, en 1440 × 3120. Aucune maquette : une capture qui ne
+correspond pas à l'application est un motif de rejet, et c'est aussi ce qui
+produit les avis 1★ « ça ne ressemble pas à ça ».
+
+**Sur le ratio.** 3120 / 1440 fait 2,167:1, au-dessus du 2:1 que plusieurs
+guides annoncent comme plafond. Vérifié avant de retraiter quoi que ce soit :
+les dix captures téléphone du compresseur vidéo sont exactement au même format
+et sont en ligne sur Play. Le plafond n'est donc pas appliqué à ce format. Ne
+pas recadrer, et surtout ne pas recadrer *dans* le vide vertical d'un écran —
+ce serait montrer une interface qui n'existe pas.
 
 ## Ordre de dépôt
 
@@ -13,10 +20,10 @@ trois premières sont visibles dans un résultat de recherche sans faire défile
 | Rang | Fichier | Pourquoi cette place |
 |---|---|---|
 | 1 | `01-accueil.png` | Le catalogue. Une application PDF qui en fait vingt-quatre doit le montrer d'emblée — c'est l'argument que le titre à 30 caractères ne peut pas porter. |
-| 2 | `02-fusion.png` | Le geste le plus cherché (« fusionner pdf »), avec ses vignettes de pages : on voit qu'on choisit ce qu'on garde. |
-| 3 | `03-recherche.png` | La recherche par mots-clés. Répond à « je ne trouve jamais l'outil » — le grief le plus courant des applications à catalogue. |
-| 4 | `04-apercu.png` | L'aperçu page à page avant export, et le réglage de compression. |
-| 5 | `05-proteger.png` | La sécurité : mot de passe, et l'avertissement d'irréversibilité. |
+| 2 | `02-fusion.png` | Le geste le plus cherché. **Une page y est volontairement écartée** : désaturée, « 2 pages sur 3 », et le bouton descendu à 4 pages. C'est ce qu'aucune capture de concurrent ne montre — qu'on choisit ce qu'on garde avant de fusionner. |
+| 3 | `03-recherche.png` | La recherche par mots-clés. Répond à « je ne trouve jamais l'outil », le grief courant des applications à catalogue. La requête est `scan`, qui rend trois outils de trois familles ; `converti` n'en rendait que deux et laissait l'écran vide. |
+| 4 | `04-apercu.png` | L'aperçu page à page avant export, avec Enregistrer, Partager et Compresser. |
+| 5 | `05-proteger.png` | La sécurité : AES 256, les deux champs remplis pour que l'action primaire soit active, et l'avertissement d'irréversibilité. |
 | 6 | `06-organiser.png` | Réordonner, extraire, diviser. |
 
 ## Conditions de prise de vue

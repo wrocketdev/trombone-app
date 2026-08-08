@@ -128,7 +128,7 @@ Dans `publication/assets/`, aux noms que `play_api.py` va chercher.
 |---|---|---|
 | `icone-play-512.png` | 512 × 512 | ✅ rendu par `generer.py` |
 | `feature-graphic-1024x500.png` | 1024 × 500 | ✅ rendu par `generer.py` |
-| `captures/01-accueil.png` … `06-organiser.png` | ≥ 320 px de côté, 2 minimum | ❌ à prendre sur l'appareil |
+| `captures/01-accueil.png` … `06-organiser.png` | ≥ 320 px de côté, 2 minimum | ✅ six captures, 1440 × 3120, S24 Ultra |
 
 ### Comment ils sont fabriqués
 
@@ -257,7 +257,7 @@ question, c'est la réponse.
 | 6 | URL de politique de confidentialité en HTTPS | ⏳ page écrite (`publication/site/`) — reste à activer GitHub Pages |
 | 7 | Adresse e-mail de contact publique | ✅ `kwizustudio@gmail.com` |
 | 8 | Icône 512 et graphisme 1024×500 | ✅ `publication/assets/` |
-| 8 bis | Captures d'écran | ❌ à prendre, téléphone déverrouillé — voir `assets/captures/README.md` |
+| 8 bis | Captures d'écran | ✅ six, réelles, sur l'APK `fr.trombone.pdf` |
 | 9 | Fiche, sécurité des données, classification | ⏸ prêt ici — à poser **après** validation du binaire |
 | 10 | Envoi de l'AAB | ⏸ bloqué par 2, 3 et 4 |
 
