@@ -53,7 +53,7 @@ CLE = Path(r"C:\Users\thomas\cles-android\play-publisher.json")
 # Definitif. Il a ete choisi pour ne nommer aucun outil en particulier :
 # l'identifiant precedent, `com.fusionpdf.fusion_pdf`, aurait fige « fusion »
 # dans une application qui propose vingt-quatre outils.
-PAQUET = "fr.trombone.pdf"
+PAQUET = "com.kwizu.trombone"
 
 LANGUE = "fr-FR"
 RACINE = Path(__file__).resolve().parent

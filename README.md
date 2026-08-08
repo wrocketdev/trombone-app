@@ -66,4 +66,4 @@ Trois champs différents, trois rôles à ne pas confondre :
 | --- | --- | --- |
 | `android:label` | `Trombone` | Le lanceur tronque vers 12 caractères |
 | Titre Play (fr) | `Trombone : PDF, Scan & Word` | 30 caractères, indexé, localisable par langue |
-| `applicationId` | `fr.trombone.pdf` | Définitif dès la première publication |
+| `applicationId` | `com.kwizu.trombone` | Définitif dès la première publication |

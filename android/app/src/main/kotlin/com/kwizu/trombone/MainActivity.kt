@@ -1,4 +1,4 @@
-package fr.trombone.pdf
+package com.kwizu.trombone
 
 import android.os.Handler
 import android.os.Looper

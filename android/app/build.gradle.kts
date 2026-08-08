@@ -41,7 +41,7 @@ if (cleDisponible) {
 }
 
 android {
-    namespace = "fr.trombone.pdf"
+    namespace = "com.kwizu.trombone"
     compileSdk = 37
     ndkVersion = flutter.ndkVersion
 
@@ -53,11 +53,22 @@ android {
     defaultConfig {
         // Définitif dès la première publication sur Play : un applicationId ne
         // se change plus jamais ensuite (ce serait une autre application, avec
-        // d'autres installations et d'autres avis). D'où le choix d'un
-        // identifiant qui ne nomme aucun outil en particulier — l'ancien,
-        // `com.fusionpdf.fusion_pdf`, aurait figé « fusion » dans une
-        // application qui en propose vingt-quatre.
-        applicationId = "fr.trombone.pdf"
+        // d'autres installations et d'autres avis).
+        //
+        // `com.kwizu.<produit>`, comme les deux autres applications du compte :
+        // `com.kwizu.app` pour la belote, `com.kwizu.videocompress` pour le
+        // compresseur. Le premier ne correspond pas au `namespace` de son
+        // projet, mais c'est un cas particulier — il reprend la fiche de
+        // « Kwizu - Quiz culture générale » et n'a pas déplacé ses sources.
+        // Trombone est neuve : les deux valent la même chose, comme sur le
+        // compresseur.
+        //
+        // « trombone » plutôt que « pdf » : l'identifiant paraît dans l'URL
+        // publique de la fiche, il nomme donc le produit comme le titre Play,
+        // et il ne se périme pas si le catalogue déborde un jour du PDF.
+        // L'identifiant d'origine, `com.fusionpdf.fusion_pdf`, aurait figé
+        // « fusion » dans une application qui propose vingt-quatre outils.
+        applicationId = "com.kwizu.trombone"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
         minSdk = flutter.minSdkVersion

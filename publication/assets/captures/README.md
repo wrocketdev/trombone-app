@@ -1,7 +1,7 @@
 # Captures d'écran de la fiche Play
 
-Captures **réelles**, prises sur le SM-S928B (Galaxy S24 Ultra, Android 16) sur
-`fr.trombone.pdf`, en 1440 × 3120. Aucune maquette : une capture qui ne
+Captures **réelles**, prises sur le SM-S928B (Galaxy S24 Ultra, Android 16),
+en 1440 × 3120. Aucune maquette : une capture qui ne
 correspond pas à l'application est un motif de rejet, et c'est aussi ce qui
 produit les avis 1★ « ça ne ressemble pas à ça ».
 

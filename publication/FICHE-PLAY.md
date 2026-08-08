@@ -249,7 +249,7 @@ question, c'est la réponse.
 
 | # | Élément | État |
 |---|---|---|
-| 1 | Nom de paquet | ✅ `fr.trombone.pdf` |
+| 1 | Nom de paquet | ✅ `com.kwizu.trombone` |
 | 2 | **Création de l'application dans la Play Console** | ❌ **manuel — aucune API ne le fait** |
 | 3 | Accès du compte de service à la nouvelle app | ❌ Play Console > Utilisateurs et autorisations |
 | 4 | Clé de signature d'envoi (`trombone-upload.jks`) | ❌ le build utilise encore la clé de debug — Play refusera l'AAB |
@@ -257,7 +257,7 @@ question, c'est la réponse.
 | 6 | URL de politique de confidentialité en HTTPS | ⏳ page écrite (`publication/site/`) — reste à activer GitHub Pages |
 | 7 | Adresse e-mail de contact publique | ✅ `kwizustudio@gmail.com` |
 | 8 | Icône 512 et graphisme 1024×500 | ✅ `publication/assets/` |
-| 8 bis | Captures d'écran | ✅ six, réelles, sur l'APK `fr.trombone.pdf` |
+| 8 bis | Captures d'écran | ✅ six, réelles, prises sur l'appareil |
 | 9 | Fiche, sécurité des données, classification | ⏸ prêt ici — à poser **après** validation du binaire |
 | 10 | Envoi de l'AAB | ⏸ bloqué par 2, 3 et 4 |
 
