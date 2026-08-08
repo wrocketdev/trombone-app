@@ -30,11 +30,33 @@ flutter build apk --release
 | `test/` | Contraste WCAG, débordements de mise en page, cibles tactiles, catalogue d'outils |
 | `android/app/src/main/kotlin/` | Le canal « page web → PDF » (WebView + pipeline d'impression Android) |
 
-## Avant publication
+## Publication
 
+`publication/` porte tout ce qui concerne la fiche Play :
+[`FICHE-PLAY.md`](publication/FICHE-PLAY.md) est la source des textes,
+[`play_api.py`](publication/play_api.py) les pose via l'API Android Publisher.
+
+```bash
+python publication/play_api.py etat     # lecture seule
+python publication/play_api.py fiche    # écrit les textes depuis FICHE-PLAY.md
+```
+
+Reste à faire, dans l'ordre — le détail est en §7 de `FICHE-PLAY.md` :
+
+- [ ] Créer l'application dans la Play Console — **manuel, aucune API ne le fait**
+- [ ] Donner l'accès au compte de service sur cette application
 - [ ] Remplacer l'App ID AdMob de test dans `android/app/src/main/AndroidManifest.xml`
-- [ ] Créer une configuration de signature release (le build utilise encore la clé de debug)
-- [ ] Rédiger la fiche Play française — le titre visé est `Trombone : PDF, Scan & Word`
+- [ ] Publier une politique de confidentialité en HTTPS
+- [ ] Icône 512 px, graphisme 1024 × 500, au moins deux captures
+- [x] Clé de signature d'envoi (`android/key.properties`, hors dépôt)
+
+## Signature
+
+La clé d'envoi vit hors du dépôt ; `android/key.properties` la désigne et
+`android/.gitignore` l'exclut. **Écrire son chemin avec des `/`** : dans un
+fichier `.properties` l'antislash est un caractère d'échappement, et un chemin
+mal lu produit un AAB signé avec la clé de debug — que Play refuse. Le build
+échoue désormais franchement dans ce cas au lieu de retomber sur la clé de debug.
 
 ## Nommage
 
