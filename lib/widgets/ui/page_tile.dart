@@ -2,6 +2,7 @@ import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
 
+import '../../l10n/l10n.dart';
 import '../../theme/theme.dart';
 import '../page_thumb.dart';
 
@@ -68,6 +69,7 @@ class PageTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final colors = context.colors;
+    final l10n = context.l10n;
 
     return SizedBox(
       width: width,
@@ -81,8 +83,8 @@ class PageTile extends StatelessWidget {
               button: true,
               selected: included,
               label: included
-                  ? 'Page $number, incluse. Toucher pour l’écarter.'
-                  : 'Page $number, écartée. Toucher pour l’inclure.',
+                  ? l10n.pageTileIncluded(number)
+                  : l10n.pageTileExcluded(number),
               child: GestureDetector(
                 onTap: onToggle,
                 behavior: HitTestBehavior.opaque,
@@ -132,7 +134,7 @@ class PageTile extends StatelessWidget {
                   // remplacé un bouton de 24 dp par un bouton de 40, toujours
                   // sous le seuil. Le test de ce fichier verrouille les 44.
                   IconButton(
-                    tooltip: 'Pivoter la page $number',
+                    tooltip: l10n.pageTileRotate(number),
                     onPressed: onRotate,
                     padding: EdgeInsets.zero,
                     constraints: const BoxConstraints(

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../l10n/l10n.dart';
 import '../../theme/theme.dart';
 
 /// « Le fichier est prêt » — la carte de résultat, avant l'enregistrement.
@@ -26,7 +27,7 @@ class ResultCard extends StatelessWidget {
     required this.onSave,
     this.onShare,
     this.busy = false,
-    this.saveLabel = 'Enregistrer',
+    this.saveLabel,
   });
 
   /// « Document Word prêt », « PDF protégé ».
@@ -38,11 +39,15 @@ class ResultCard extends StatelessWidget {
   final VoidCallback onSave;
   final VoidCallback? onShare;
   final bool busy;
-  final String saveLabel;
+
+  /// Nul, il retombe sur « Enregistrer » traduit — la valeur par défaut dépend
+  /// de la langue, elle ne peut donc pas être un paramètre constant.
+  final String? saveLabel;
 
   @override
   Widget build(BuildContext context) {
     final colors = context.colors;
+    final l10n = context.l10n;
     return Container(
       padding: const EdgeInsets.all(Space.md),
       decoration: BoxDecoration(
@@ -82,14 +87,14 @@ class ResultCard extends StatelessWidget {
           FilledButton.icon(
             onPressed: busy ? null : onSave,
             icon: const Icon(Icons.save_alt),
-            label: Text(saveLabel, maxLines: 1),
+            label: Text(saveLabel ?? l10n.actionSave, maxLines: 1),
           ),
           if (onShare != null) ...[
             const SizedBox(height: Space.xs),
             OutlinedButton.icon(
               onPressed: busy ? null : onShare,
               icon: const Icon(Icons.share_outlined),
-              label: const Text('Partager', maxLines: 1),
+              label: Text(l10n.actionShare, maxLines: 1),
             ),
           ],
         ],

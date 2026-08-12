@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 import '../core/office/ooxml.dart';
 import '../core/office/pptx_to_pdf.dart';
+import '../l10n/l10n.dart';
 import '../widgets/progress_dialog.dart';
 import '../widgets/ui/empty_state.dart';
 import 'preview_screen.dart';
@@ -38,6 +39,7 @@ class _PptxToPdfScreenState extends State<PptxToPdfScreen> {
   }
 
   Future<void> _pick() async {
+    final L l10n = context.l10n;
     setState(() => _busy = true);
     try {
       final PickedPptx? picked = await PptxToPdf.pickPptxFile();
@@ -53,7 +55,7 @@ class _PptxToPdfScreenState extends State<PptxToPdfScreen> {
     } on LegacyPptException catch (e) {
       _showError(e.toString());
     } catch (e) {
-      _showError('Lecture impossible : ${_friendlyError(e)}');
+      _showError(l10n.pptxReadFailed(_friendlyError(e)));
     } finally {
       if (mounted) setState(() => _busy = false);
     }
@@ -70,10 +72,11 @@ class _PptxToPdfScreenState extends State<PptxToPdfScreen> {
     final PickedPptx? picked = _picked;
     if (picked == null || _slides.isEmpty) return;
     final List<PptxSlide> slides = _slides;
+    final L l10n = context.l10n;
     try {
       final Uint8List? bytes = await runWithProgressDialog<Uint8List>(
         context: context,
-        title: 'Conversion en cours…',
+        title: l10n.convertProgress,
         task: (token, onProgress) => PptxToPdf.convert(
           slides,
           onProgress: onProgress,
@@ -90,36 +93,32 @@ class _PptxToPdfScreenState extends State<PptxToPdfScreen> {
         ),
       );
     } catch (e) {
-      _showError('Echec de la conversion : ${_friendlyError(e)}');
+      _showError(l10n.errorConversionFailed(_friendlyError(e)));
     }
   }
 
   @override
   Widget build(BuildContext context) {
     final ThemeData theme = Theme.of(context);
+    final L l10n = context.l10n;
     final PickedPptx? picked = _picked;
     final int slideCount = _slides.length;
     final int shown = slideCount > _kPreviewLimit ? _kPreviewLimit : slideCount;
 
     return Scaffold(
-      appBar: AppBar(title: const Text('PowerPoint vers PDF')),
+      appBar: AppBar(title: Text(l10n.toolPptxToPdf)),
       body: picked == null
           ? EmptyState(
               icon: Icons.slideshow_outlined,
-              title: 'Une présentation en PDF',
+              title: l10n.pptxEmptyTitle,
               // L'avertissement sur le .ppt vivait dans une branche
               // `if (picked == null)` écrite à l'intérieur du cas « fichier
               // chargé » : il ne pouvait plus s'afficher. Sa place est ici, au
               // moment où l'on va choisir le fichier — après coup, il arrive
               // trop tard pour servir à quoi que ce soit.
-              body:
-                  'Une page paysage 16:9 par diapositive, reprenant le titre '
-                  'et les puces. Le texte est repris ; les images, formes et '
-                  'arrière-plans d’origine ne le sont pas.\n\n'
-                  'Format accepté : .pptx. Un ancien fichier .ppt doit d’abord '
-                  'être réenregistré en .pptx depuis PowerPoint.',
+              body: l10n.pptxEmptyBody,
               accepts: const ['PPTX'],
-              actionLabel: 'Choisir une présentation',
+              actionLabel: l10n.pptxChoosePresentation,
               onAction: _pick,
               busy: _busy,
             )
@@ -143,7 +142,7 @@ class _PptxToPdfScreenState extends State<PptxToPdfScreen> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                'Conversion du texte uniquement',
+                                l10n.pptxTextOnlyTitle,
                                 style: theme.textTheme.titleSmall?.copyWith(
                                   color: theme.colorScheme.onSecondaryContainer,
                                   fontWeight: FontWeight.bold,
@@ -151,11 +150,7 @@ class _PptxToPdfScreenState extends State<PptxToPdfScreen> {
                               ),
                               const SizedBox(height: 6),
                               Text(
-                                'Le texte de chaque diapositive est repris. Les '
-                                'images, formes, arrière-plans, couleurs et mises '
-                                'en page d\'origine ne sont pas conservés : le PDF '
-                                'obtenu est une mise en page simple et lisible, pas '
-                                'une copie fidèle de votre présentation.',
+                                l10n.pptxTextOnlyBody,
                                 style: theme.textTheme.bodySmall?.copyWith(
                                   color: theme.colorScheme.onSecondaryContainer,
                                 ),
@@ -176,11 +171,9 @@ class _PptxToPdfScreenState extends State<PptxToPdfScreen> {
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                     ),
-                    subtitle: Text(
-                      '$slideCount diapositive${slideCount > 1 ? 's' : ''}',
-                    ),
+                    subtitle: Text(l10n.pptxSlideCount(slideCount)),
                     trailing: IconButton(
-                      tooltip: 'Retirer ce fichier',
+                      tooltip: l10n.actionRemoveFile,
                       icon: const Icon(Icons.close),
                       onPressed: _busy ? null : _clear,
                     ),
@@ -188,19 +181,17 @@ class _PptxToPdfScreenState extends State<PptxToPdfScreen> {
                 ),
                 const SizedBox(height: 20),
                 Text(
-                  'Diapositives détectées',
+                  l10n.pptxSlidesDetected,
                   style: theme.textTheme.titleSmall,
                 ),
                 const SizedBox(height: 8),
                 for (int i = 0; i < shown; i++)
-                  _slideTile(theme, i, _slides[i]),
+                  _slideTile(theme, l10n, i, _slides[i]),
                 if (slideCount > shown)
                   Padding(
                     padding: const EdgeInsets.only(top: 8),
                     child: Text(
-                      'et ${slideCount - shown} autre'
-                      '${slideCount - shown > 1 ? 's' : ''} diapositive'
-                      '${slideCount - shown > 1 ? 's' : ''}…',
+                      l10n.pptxMoreSlides(slideCount - shown),
                       style: theme.textTheme.bodySmall?.copyWith(
                         color: theme.colorScheme.onSurfaceVariant,
                       ),
@@ -216,14 +207,14 @@ class _PptxToPdfScreenState extends State<PptxToPdfScreen> {
                 child: FilledButton.icon(
                   onPressed: _busy || _slides.isEmpty ? null : _convert,
                   icon: const Icon(Icons.picture_as_pdf_outlined),
-                  label: const Text('Convertir en PDF', maxLines: 1),
+                  label: Text(l10n.actionConvertToPdf, maxLines: 1),
                 ),
               ),
             ),
     );
   }
 
-  Widget _slideTile(ThemeData theme, int index, PptxSlide slide) {
+  Widget _slideTile(ThemeData theme, L l10n, int index, PptxSlide slide) {
     final String title = slide.title.trim();
     final int bullets = slide.bullets
         .where((String b) => b.trim().isNotEmpty)
@@ -245,7 +236,7 @@ class _PptxToPdfScreenState extends State<PptxToPdfScreen> {
           ),
         ),
         title: Text(
-          title.isEmpty ? 'Sans titre' : title,
+          title.isEmpty ? l10n.pptxUntitledSlide : title,
           maxLines: 2,
           overflow: TextOverflow.ellipsis,
           style: title.isEmpty
@@ -256,9 +247,7 @@ class _PptxToPdfScreenState extends State<PptxToPdfScreen> {
               : null,
         ),
         subtitle: Text(
-          empty
-              ? 'Aucun texte (image ou forme uniquement)'
-              : '$bullets ligne${bullets > 1 ? 's' : ''} de texte',
+          empty ? l10n.pptxEmptySlide : l10n.pptxTextLineCount(bullets),
         ),
       ),
     );

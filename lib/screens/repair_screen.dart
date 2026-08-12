@@ -6,6 +6,7 @@ import '../core/files/file_utils.dart';
 import 'package:syncfusion_flutter_pdf/pdf.dart' as sf;
 
 import '../core/pdf/security_engine.dart';
+import '../l10n/l10n.dart';
 import '../widgets/progress_dialog.dart';
 import '../widgets/ui/empty_state.dart';
 import 'preview_screen.dart';
@@ -26,9 +27,6 @@ class _RepairScreenState extends State<RepairScreen> {
   PickedPdf? _picked;
   bool _busy = false;
 
-  static const String _genericFailureMessage =
-      'Impossible de réparer ce fichier — il est peut-être trop endommagé.';
-
   void _showError(String message) {
     ScaffoldMessenger.of(
       context,
@@ -42,7 +40,7 @@ class _RepairScreenState extends State<RepairScreen> {
       if (picked == null) return;
       setState(() => _picked = picked);
     } catch (e) {
-      if (mounted) _showError('Impossible d\'ouvrir le fichier : $e');
+      if (mounted) _showError(context.l10n.errorOpenFailed('$e'));
     } finally {
       if (mounted) setState(() => _busy = false);
     }
@@ -51,25 +49,28 @@ class _RepairScreenState extends State<RepairScreen> {
   Future<void> _repair() async {
     final picked = _picked;
     if (picked == null) return;
+    // Le message d'échec est lu ici et non dans la tâche : celle-ci s'exécute
+    // en dehors de l'arbre des widgets et n'a pas de contexte à interroger.
+    final L l10n = context.l10n;
     setState(() => _busy = true);
     try {
       final bytes = await runWithProgressDialog<Uint8List>(
         context: context,
-        title: 'Réparation en cours…',
+        title: l10n.repairProgress,
         task: (token, onProgress) async {
           onProgress(0, 1);
           sf.PdfDocument doc;
           try {
             doc = sf.PdfDocument(inputBytes: picked.bytes);
           } catch (_) {
-            throw const _RepairFailure(_genericFailureMessage);
+            throw _RepairFailure(l10n.repairFailed);
           }
           try {
             final List<int> out = await doc.save();
             onProgress(1, 1);
             return Uint8List.fromList(out);
           } catch (_) {
-            throw const _RepairFailure(_genericFailureMessage);
+            throw _RepairFailure(l10n.repairFailed);
           } finally {
             doc.dispose();
           }
@@ -86,7 +87,7 @@ class _RepairScreenState extends State<RepairScreen> {
       );
     } catch (e) {
       if (mounted) {
-        _showError(e is _RepairFailure ? e.message : _genericFailureMessage);
+        _showError(e is _RepairFailure ? e.message : l10n.repairFailed);
       }
     } finally {
       if (mounted) setState(() => _busy = false);
@@ -95,16 +96,16 @@ class _RepairScreenState extends State<RepairScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = context.l10n;
     return Scaffold(
-      appBar: AppBar(title: const Text('Réparer PDF')),
+      appBar: AppBar(title: Text(l10n.toolRepair)),
       body: _picked == null
           ? EmptyState(
               icon: Icons.healing_outlined,
-              title: 'Réparer un fichier abîmé',
-              body:
-                  'La structure interne d’un PDF endommagé est reconstruite. Ce qui est récupérable le sera.',
-              accepts: const ['PDF'],
-              actionLabel: 'Choisir un PDF',
+              title: l10n.repairEmptyTitle,
+              body: l10n.repairEmptyBody,
+              accepts: [l10n.formatPdf],
+              actionLabel: l10n.actionChoosePdf,
               onAction: _pick,
               busy: _busy,
             )
@@ -118,13 +119,13 @@ class _RepairScreenState extends State<RepairScreen> {
                           ? Icons.upload_file
                           : Icons.picture_as_pdf_outlined,
                     ),
-                    title: Text(_picked?.name ?? 'Choisir un PDF'),
-                    subtitle: _picked == null
-                        ? const Text('Aucun fichier choisi')
-                        : null,
+                    title: Text(_picked?.name ?? l10n.actionChoosePdf),
+                    subtitle: _picked == null ? Text(l10n.noFileChosen) : null,
                     trailing: TextButton(
                       onPressed: _busy ? null : _pick,
-                      child: Text(_picked == null ? 'Choisir' : 'Changer'),
+                      child: Text(
+                        _picked == null ? l10n.actionChoose : l10n.actionChange,
+                      ),
                     ),
                     onTap: _busy ? null : _pick,
                   ),
@@ -139,7 +140,7 @@ class _RepairScreenState extends State<RepairScreen> {
                 child: FilledButton.icon(
                   onPressed: _busy ? null : _repair,
                   icon: const Icon(Icons.build_outlined),
-                  label: const Text('Réparer', maxLines: 1),
+                  label: Text(l10n.repairAction, maxLines: 1),
                 ),
               ),
             ),

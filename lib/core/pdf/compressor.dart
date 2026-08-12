@@ -30,17 +30,6 @@ class Compressor {
     CompressionLevel.strong: _RasterSettings(80, 55),
   };
 
-  static String label(CompressionLevel level) {
-    switch (level) {
-      case CompressionLevel.light:
-        return 'Légère';
-      case CompressionLevel.medium:
-        return 'Moyenne';
-      case CompressionLevel.strong:
-        return 'Forte';
-    }
-  }
-
   /// Renders a handful of sample pages to project the final file size
   /// without paying the cost of compressing the whole document.
   static Future<int> estimateSize(

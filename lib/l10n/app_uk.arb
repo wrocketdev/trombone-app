@@ -1,0 +1,2369 @@
+{
+  "@@locale": "uk",
+  "appTitle": "Скріпка — PDF, Scan & Word",
+  "@appTitle": {
+    "description": "Titre affiché par le sélecteur de tâches d'Android au-dessus de l'aperçu de l'application. La marque « Trombone » ne se traduit jamais ; seuls les mots-clés qui la suivent peuvent l'être."
+  },
+  "appWordmark": "Тромбон",
+  "@appWordmark": {
+    "description": "La signature de marque en haut de l'écran d'accueil. NE PAS TRADUIRE — c'est un nom propre, identique dans les vingt-cinq langues."
+  },
+  "actionSave": "зберегти",
+  "@actionSave": {
+    "description": "Action principale de fin de parcours : écrire le fichier produit sur l'appareil. Bouton pleine largeur, doit tenir sur une ligne."
+  },
+  "actionShare": "Поділіться",
+  "@actionShare": {
+    "description": "Ouvre la fenêtre de partage du système. Bouton de demi-largeur, doit tenir sur une ligne."
+  },
+  "actionCompress": "Компрес",
+  "@actionCompress": {
+    "description": "Réduit le poids du PDF. Bouton de demi-largeur, doit tenir sur une ligne."
+  },
+  "actionDone": "Готово",
+  "@actionDone": {
+    "description": "Acquitte la feuille de confirmation d'export et sort de l'outil."
+  },
+  "actionCancel": "Скасувати",
+  "@actionCancel": {
+    "description": "Interrompt une opération en cours dans la boîte de progression."
+  },
+  "actionChange": "Щоб змінитися",
+  "@actionChange": {
+    "description": "Remplace le fichier choisi par un autre. Bouton texte étroit posé au bout d'une rangée — libellé court impératif."
+  },
+  "actionContinue": "Продовжити",
+  "@actionContinue": {
+    "description": "Libellé de repli du bouton d'un écran vide quand l'outil n'en propose pas de plus précis."
+  },
+  "actionOpening": "Відкриття…",
+  "@actionOpening": {
+    "description": "État transitoire d'un bouton pendant que la boîte de sélection de fichiers du système s'ouvre. Garder le caractère de suspension final."
+  },
+  "actionRemoveFile": "Видаліть цей файл",
+  "@actionRemoveFile": {
+    "description": "Info-bulle de la croix qui ramène l'écran à son état vide."
+  },
+  "progressPreparing": "Підготовка…",
+  "@progressPreparing": {
+    "description": "Affiché sous la barre de progression tant que le travail total n'est pas connu. Garder le caractère de suspension final."
+  },
+  "progressPercent": "{percent} %",
+  "@progressPercent": {
+    "description": "Avancement en pourcentage. L'espace avant le signe % est une convention française ; les langues qui collent le signe au chiffre doivent écrire « {percent}% ».",
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "emptyReassurance": "Безкоштовний експорт, без водяних знаків і обмежень.",
+  "@emptyReassurance": {
+    "description": "Note verte sous le bouton d'un écran vide. Répond à la peur du marché : découvrir un paiement au moment d'enregistrer. Doit rester une phrase brève, tenant sur une à deux lignes."
+  },
+  "emptyAcceptedFormats": "Прийнятні формати",
+  "@emptyAcceptedFormats": {
+    "description": "Intitulé de la rangée de puces listant les formats que l'outil sait ouvrir."
+  },
+  "exportSavedTitle": "Це записано.",
+  "@exportSavedTitle": {
+    "description": "Titre de la feuille de confirmation, après écriture réussie du fichier. Ton rassurant et affirmatif ; c'est le seul moment célébré de l'application."
+  },
+  "exportSavedBody": "Під назвою та в папці, яку ви щойно вибрали. Без водяного знака, без обмежень, нічого для розблокування.",
+  "@exportSavedBody": {
+    "description": "Corps de la feuille de confirmation. Rappelle que rien n'est verrouillé derrière un paiement — la promesse centrale du produit."
+  },
+  "exportSaveDialogTitle": "Зберегти PDF",
+  "@exportSaveDialogTitle": {
+    "description": "Titre de la boîte système d'enregistrement de fichier."
+  },
+  "pageTileIncluded": "Сторінка {number}, включена. Торкніться, щоб відсунути його вбік.",
+  "@pageTileIncluded": {
+    "description": "Étiquette d'accessibilité d'une vignette de page retenue. Lue à voix haute, jamais affichée.",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "pageTileExcluded": "Сторінка {number}, вилучено. Торкніться, щоб включити його.",
+  "@pageTileExcluded": {
+    "description": "Étiquette d'accessibilité d'une vignette de page écartée. Lue à voix haute, jamais affichée.",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "pageTileRotate": "Повернути сторінку {number}",
+  "@pageTileRotate": {
+    "description": "Info-bulle du bouton de rotation sous une vignette de page.",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "sectionHeaderSemantics": "{title}, {count} інструментів",
+  "@sectionHeaderSemantics": {
+    "description": "Étiquette d'accessibilité d'un en-tête de section de l'accueil. Lue à voix haute, jamais affichée.",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "toolCount": "{count} інструментів",
+  "@toolCount": {
+    "description": "Décompte des outils, au colophon de l'accueil. Le nombre est calculé depuis le catalogue, jamais saisi.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePromise": "Створіть свій документ, експортуйте його.\nБез стіни в кінці.",
+  "@homePromise": {
+    "description": "La promesse sous la marque, en haut de l'accueil. Elle désamorce la peur relevée dans les avis du marché : découvrir un paiement obligatoire au moment d'enregistrer. Le saut de ligne est intentionnel — deux lignes exactement, la seconde plus courte que la première."
+  },
+  "homeChipNoAccount": "Без рахунку",
+  "@homeChipNoAccount": {
+    "description": "Puce de garantie : aucune inscription n'est demandée. Deux ou trois mots maximum, la puce est étroite."
+  },
+  "homeChipNoWatermark": "Без водяного знака",
+  "@homeChipNoWatermark": {
+    "description": "Puce de garantie : les fichiers exportés ne portent aucune marque apposée. Deux ou trois mots maximum."
+  },
+  "homeChipUnlimited": "Необмежений експорт",
+  "@homeChipUnlimited": {
+    "description": "Puce de garantie : aucun quota sur le nombre d'exports. Deux ou trois mots maximum."
+  },
+  "homeSearchTooltip": "Знайдіть інструмент",
+  "@homeSearchTooltip": {
+    "description": "Info-bulle de la loupe épinglée à la barre de titre de l'accueil."
+  },
+  "homeColophon": "За оплату при реєстрації нічого не розблоковується. Експорт безкоштовний, без водяних знаків і без обмеження кількості.",
+  "@homeColophon": {
+    "description": "Texte de pied d'accueil, sous le décompte des outils. Répète la promesse en toutes lettres."
+  },
+  "sectionFeatured": "Рекомендовані",
+  "@sectionFeatured": {
+    "description": "Famille des cinq outils mis en avant dans la bande bento. Apparaît en sous-titre des résultats de recherche. Court."
+  },
+  "sectionToPdf": "До PDF",
+  "@sectionToPdf": {
+    "description": "Famille des outils qui produisent un PDF depuis un autre format. Titre de section de l'accueil : doit tenir sur une ligne à côté d'un filet et d'une pastille de compte."
+  },
+  "sectionFromPdf": "З PDF",
+  "@sectionFromPdf": {
+    "description": "Famille des outils qui tirent autre chose d'un PDF. Titre de section : doit tenir sur une ligne."
+  },
+  "sectionSecurity": "Безпека",
+  "@sectionSecurity": {
+    "description": "Famille des outils de protection, déverrouillage, réparation et caviardage. Titre de section : doit tenir sur une ligne."
+  },
+  "sectionEdit": "Редагувати",
+  "@sectionEdit": {
+    "description": "Famille des outils qui modifient un PDF en place. Titre de section, verbe à l'infinitif : doit tenir sur une ligne."
+  },
+  "toolMerge": "Об’єднати",
+  "@toolMerge": {
+    "description": "Outil : réunit plusieurs documents en un seul PDF. Libellé de tuile — verbe à l'infinitif, court, il s'affiche sur une tuile de 96 dp de large."
+  },
+  "toolMergeKeywords": "зібрати об'єднати об'єднати перегрупувати об'єднати об'єднати",
+  "@toolMergeKeywords": {
+    "description": "Mots que l'utilisateur peut taper pour trouver l'outil « Fusionner » sans en connaître le nom exact. Séparés par des espaces, sans accents ni ponctuation, en minuscules. Ce ne sont PAS des traductions mot à mot : donnez les synonymes naturels de votre langue, y compris les termes empruntés à l'anglais s'ils sont d'usage courant. Ajoutez-en ou retirez-en librement."
+  },
+  "toolMergeSubtitle": "PDF, Word, зображення та текст в одному документі",
+  "@toolMergeSubtitle": {
+    "description": "Sous-titre du grand bloc bento de l'accueil. Une ligne descriptive, deux au plus."
+  },
+  "toolRectoVerso": "Двостороння",
+  "@toolRectoVerso": {
+    "description": "Outil : intercale deux scans — les pages impaires et les pages paires — pour reconstituer un document imprimé des deux côtés. Libellé de tuile, court."
+  },
+  "toolRectoVersoKeywords": "двостороннє вкраплення сканування парне непарне",
+  "@toolRectoVersoKeywords": {
+    "description": "Mots de recherche pour « Recto-verso ». Séparés par des espaces, sans accents, en minuscules. Donnez les synonymes naturels de votre langue plutôt qu'une traduction mot à mot."
+  },
+  "toolRectoVersoSubtitle": "Два скани, повернути порядок",
+  "@toolRectoVersoSubtitle": {
+    "description": "Sous-titre d'un bloc bento moyen. Très court — une ligne, six mots au plus."
+  },
+  "toolImagesToPdf": "Зображення в PDF",
+  "@toolImagesToPdf": {
+    "description": "Outil : assemble des photos en un PDF. Libellé de tuile, court."
+  },
+  "toolImagesToPdfKeywords": "фото jpg jpeg png фотоальбом пристрій",
+  "@toolImagesToPdfKeywords": {
+    "description": "Mots de recherche pour « Images vers PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolImagesToPdfSubtitle": "Фотографії та знімки в одному документі",
+  "@toolImagesToPdfSubtitle": {
+    "description": "Sous-titre d'un bloc bento moyen. Très court — une ligne, six mots au plus."
+  },
+  "toolPdfToWord": "PDF в Word",
+  "@toolPdfToWord": {
+    "description": "Outil : convertit un PDF en document Word modifiable. « Word » est une marque, elle ne se traduit pas. Libellé de tuile, court."
+  },
+  "toolPdfToWordKeywords": "Перетворення редагованого текстового процесора docx",
+  "@toolPdfToWordKeywords": {
+    "description": "Mots de recherche pour « PDF vers Word ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolPdfToWordSubtitle": "Текст і таблиці, редаговані",
+  "@toolPdfToWordSubtitle": {
+    "description": "Sous-titre d'un bloc bento moyen. Très court — une ligne, six mots au plus."
+  },
+  "toolOrganize": "Упорядкуйте PDF",
+  "@toolOrganize": {
+    "description": "Outil : réordonne, extrait, divise et supprime des pages. Libellé de tuile, court."
+  },
+  "toolOrganizeKeywords": "розділити окремі витягти, змінити порядок, сторінки порядку, видалити",
+  "@toolOrganizeKeywords": {
+    "description": "Mots de recherche pour « Organiser un PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolOrganizeSubtitle": "Розділіть, витягніть, змініть порядок",
+  "@toolOrganizeSubtitle": {
+    "description": "Sous-titre d'un bloc bento moyen. Très court — trois verbes à l'infinitif."
+  },
+  "toolExcelToPdf": "Excel в PDF",
+  "@toolExcelToPdf": {
+    "description": "Outil : convertit un classeur en PDF. « Excel » est une marque, elle ne se traduit pas. Libellé de tuile, court."
+  },
+  "toolExcelToPdfKeywords": "аркуш розрахунків робочої книги електронної таблиці xlsx",
+  "@toolExcelToPdfKeywords": {
+    "description": "Mots de recherche pour « Excel vers PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolPptxToPdf": "PowerPoint в PDF",
+  "@toolPptxToPdf": {
+    "description": "Outil : convertit une présentation en PDF. « PowerPoint » est une marque, elle ne se traduit pas. Libellé de tuile."
+  },
+  "toolPptxToPdfKeywords": "pptx слайд презентація слайди",
+  "@toolPptxToPdfKeywords": {
+    "description": "Mots de recherche pour « PowerPoint vers PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolHtmlToPdf": "Веб-сторінка в PDF",
+  "@toolHtmlToPdf": {
+    "description": "Outil : enregistre une page web en PDF depuis son adresse. Libellé de tuile, court."
+  },
+  "toolHtmlToPdfKeywords": "html URL-адреса веб-сайту, посилання на статтю",
+  "@toolHtmlToPdfKeywords": {
+    "description": "Mots de recherche pour « Page web vers PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolScan": "Відскануйте документ",
+  "@toolScan": {
+    "description": "Outil : photographie des pages avec l'appareil et les redresse en PDF. Libellé de tuile, court."
+  },
+  "toolScanKeywords": "камера фото оцифрувати сканувати пристрій папір",
+  "@toolScanKeywords": {
+    "description": "Mots de recherche pour « Scanner un document ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolPdfToExcel": "PDF в Excel",
+  "@toolPdfToExcel": {
+    "description": "Outil : extrait les tableaux d'un PDF vers un classeur. « Excel » est une marque. Libellé de tuile, court."
+  },
+  "toolPdfToExcelKeywords": "Таблиця електронних таблиць xlsx витягує дані",
+  "@toolPdfToExcelKeywords": {
+    "description": "Mots de recherche pour « PDF vers Excel ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolPdfToPptx": "PDF в PowerPoint",
+  "@toolPdfToPptx": {
+    "description": "Outil : transforme chaque page en diapositive. « PowerPoint » est une marque. Libellé de tuile."
+  },
+  "toolPdfToPptxKeywords": "pptx слайд презентація слайди",
+  "@toolPdfToPptxKeywords": {
+    "description": "Mots de recherche pour « PDF vers PowerPoint ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolPdfToImages": "PDF в зображення",
+  "@toolPdfToImages": {
+    "description": "Outil : exporte chaque page en fichier image. Libellé de tuile, court."
+  },
+  "toolPdfToImagesKeywords": "Експорт фотографій jpg png",
+  "@toolPdfToImagesKeywords": {
+    "description": "Mots de recherche pour « PDF vers Images ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolOcr": "Пошуковий текст (OCR)",
+  "@toolOcr": {
+    "description": "Outil : reconnaît les caractères d'un PDF scanné pour le rendre sélectionnable. « OCR » est un sigle international, à conserver tel quel entre parenthèses. Libellé de tuile."
+  },
+  "toolOcrKeywords": "розпізнавання символів сканування копія вибір",
+  "@toolOcrKeywords": {
+    "description": "Mots de recherche pour « Texte cherchable (OCR) ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolPdfA": "Перетворити в PDF/A",
+  "@toolPdfA": {
+    "description": "Outil : produit la variante normalisée d'archivage. « PDF/A » est une norme ISO, à conserver telle quelle. Libellé de tuile."
+  },
+  "toolPdfAKeywords": "архівне стандартне довгострокове збереження",
+  "@toolPdfAKeywords": {
+    "description": "Mots de recherche pour « Convertir en PDF/A ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolProtect": "Захист PDF",
+  "@toolProtect": {
+    "description": "Outil : chiffre le document derrière un mot de passe. Libellé de tuile, court."
+  },
+  "toolProtectKeywords": "пароль замок шифрування замок безпечний",
+  "@toolProtectKeywords": {
+    "description": "Mots de recherche pour « Protéger PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolUnlock": "Розблокувати PDF",
+  "@toolUnlock": {
+    "description": "Outil : retire le mot de passe d'un PDF dont on connaît le mot de passe. Libellé de tuile, court."
+  },
+  "toolUnlockKeywords": "видалити пароль відкрити розшифрувати розблокувати замок",
+  "@toolUnlockKeywords": {
+    "description": "Mots de recherche pour « Déverrouiller PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolRepair": "Відремонтувати PDF",
+  "@toolRepair": {
+    "description": "Outil : récupère ce qui peut l'être d'un fichier endommagé. Libellé de tuile, court."
+  },
+  "toolRepairKeywords": "пошкоджений нечитабельний пошкоджений помилка відновлення",
+  "@toolRepairKeywords": {
+    "description": "Mots de recherche pour « Réparer PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolRedact": "Редагувати PDF-файл",
+  "@toolRedact": {
+    "description": "Outil : recouvre définitivement des zones du document pour anonymiser. Le terme métier consacré en français est « caviarder » ; employez l'équivalent consacré de votre langue (anglais : redact). Libellé de tuile."
+  },
+  "toolRedactKeywords": "приховати чорнити анонімізувати конфіденційно видалити",
+  "@toolRedactKeywords": {
+    "description": "Mots de recherche pour « Caviarder un PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolEdit": "Редагувати PDF",
+  "@toolEdit": {
+    "description": "Outil : ajoute ou corrige du texte sur les pages. Libellé de tuile, court."
+  },
+  "toolEditKeywords": "змінити текст правильно анотувати написати",
+  "@toolEditKeywords": {
+    "description": "Mots de recherche pour « Éditer PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolSign": "Знак",
+  "@toolSign": {
+    "description": "Outil : appose une signature tracée au doigt. Libellé de tuile, un seul verbe."
+  },
+  "toolSignKeywords": "підпис початковий контракт рука",
+  "@toolSignKeywords": {
+    "description": "Mots de recherche pour « Signer ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolWatermark": "Водяний знак",
+  "@toolWatermark": {
+    "description": "Outil : appose une mention en travers des pages (« CONFIDENTIEL », « BROUILLON »). Libellé de tuile, un seul mot si possible."
+  },
+  "toolWatermarkKeywords": "водяний знак конфіденційна марка чорновий знак",
+  "@toolWatermarkKeywords": {
+    "description": "Mots de recherche pour « Filigrane ». Séparés par des espaces, sans accents, en minuscules. Gardez « watermark » : le terme anglais est cherché dans toutes les langues."
+  },
+  "toolPageNumbers": "Номери сторінок",
+  "@toolPageNumbers": {
+    "description": "Outil : appose une pagination. Libellé de tuile, court."
+  },
+  "toolPageNumbersKeywords": "пагінація фоліо номер номери",
+  "@toolPageNumbersKeywords": {
+    "description": "Mots de recherche pour « Numéros de page ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolCrop": "Обрізати PDF",
+  "@toolCrop": {
+    "description": "Outil : recadre les pages en retirant les marges. Libellé de tuile, court."
+  },
+  "toolCropKeywords": "розмір країв обрізання",
+  "@toolCropKeywords": {
+    "description": "Mots de recherche pour « Rogner un PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolCompare": "Порівняти PDF",
+  "@toolCompare": {
+    "description": "Outil : met deux versions face à face et signale ce qui change. Libellé de tuile, court."
+  },
+  "toolCompareKeywords": "різниця версії різниця зміни",
+  "@toolCompareKeywords": {
+    "description": "Mots de recherche pour « Comparer PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "searchHint": "Об’єднати, пароль, водяний знак…",
+  "@searchHint": {
+    "description": "Texte d'invite du champ de recherche. Trois exemples de requêtes séparés par des virgules, suivis d'un caractère de suspension. Choisissez trois exemples naturels dans votre langue plutôt qu'une traduction littérale."
+  },
+  "searchClear": "Щоб стерти",
+  "@searchClear": {
+    "description": "Info-bulle de la croix qui vide le champ de recherche."
+  },
+  "searchNoResultTitle": "Немає інструментів для “{query}”.",
+  "@searchNoResultTitle": {
+    "description": "Titre affiché quand aucun outil ne correspond. Les guillemets français « » doivent être remplacés par ceux de votre langue.",
+    "placeholders": {
+      "query": {
+        "type": "String"
+      }
+    }
+  },
+  "searchNoResultBody": "Спробуйте формат, який є у вас під рукою – «Word», «Excel», «фото» – або що завгодно з ним зробити: «підписати», «розділити», «пароль».",
+  "@searchNoResultBody": {
+    "description": "Conseil affiché sous le titre d'absence de résultat. Les exemples entre guillemets doivent être adaptés à votre langue, pas traduits littéralement. Employez les guillemets de votre langue."
+  },
+  "actionUndo": "Скасувати",
+  "@actionUndo": {
+    "description": "Défait la dernière action — retrait d'un fichier, compression appliquée. ATTENTION : ce n'est PAS « interrompre » (voir actionCancel). Le français emploie le même mot pour les deux, la plupart des langues non : anglais « Undo » contre « Cancel », allemand « Rückgängig » contre « Abbrechen »."
+  },
+  "actionApply": "Застосувати",
+  "@actionApply": {
+    "description": "Valide le réglage choisi et l'applique au document."
+  },
+  "actionChoose": "Виберіть",
+  "@actionChoose": {
+    "description": "Ouvre la boîte de sélection de fichiers du système. Libellé court, souvent au bout d'une rangée étroite."
+  },
+  "actionChoosePdf": "Виберіть PDF",
+  "@actionChoosePdf": {
+    "description": "Bouton principal d'un écran vide dont l'outil ne travaille que sur des PDF."
+  },
+  "actionChooseFiles": "Виберіть файли",
+  "@actionChooseFiles": {
+    "description": "Bouton principal d'un écran vide dont l'outil accepte plusieurs fichiers à la fois."
+  },
+  "actionConvert": "конвертувати",
+  "@actionConvert": {
+    "description": "Lance la conversion. Bouton pleine largeur en bas d'écran."
+  },
+  "actionFinish": "До кінця",
+  "@actionFinish": {
+    "description": "Clôt une capture en plusieurs pages et passe à la suite."
+  },
+  "actionBack": "Назад",
+  "@actionBack": {
+    "description": "Info-bulle de la flèche qui remonte d'un écran."
+  },
+  "actionAdd": "додати",
+  "@actionAdd": {
+    "description": "Ajoute un élément à une liste. Libellé court."
+  },
+  "noFileChosen": "Файл не вибрано",
+  "@noFileChosen": {
+    "description": "Sous-titre d'une rangée tant qu'aucun fichier n'a été retenu."
+  },
+  "errorExportFailed": "Помилка експорту: {detail}",
+  "@errorExportFailed": {
+    "description": "Bandeau d'erreur quand l'écriture du fichier échoue. {detail} est un message technique non traduit, rendu tel quel.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "errorShareFailed": "Помилка спільного доступу: {detail}",
+  "@errorShareFailed": {
+    "description": "Bandeau d'erreur quand la fenêtre de partage échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "errorOpenFailed": "Неможливо відкрити файл: {detail}",
+  "@errorOpenFailed": {
+    "description": "Bandeau d'erreur quand le fichier choisi ne peut pas être lu. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "errorConversionFailed": "Помилка перетворення: {detail}",
+  "@errorConversionFailed": {
+    "description": "Bandeau d'erreur quand une conversion de format échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "errorOnFile": "{name}: {detail}",
+  "@errorOnFile": {
+    "description": "Bandeau d'erreur rattaché à un fichier précis d'une sélection multiple. Ne traduire que la ponctuation de séparation si votre langue en emploie une autre.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "errorPickPdf": "Виберіть файл PDF.",
+  "@errorPickPdf": {
+    "description": "Bandeau d'erreur quand l'outil exige un PDF et qu'on lui a donné autre chose."
+  },
+  "sizeBytes": "{value} o",
+  "@sizeBytes": {
+    "description": "Poids d'un fichier en octets. L'abréviation est « o » en français, « B » en anglais — employez celle de votre langue.",
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "sizeKb": "{value} КБ",
+  "@sizeKb": {
+    "description": "Poids d'un fichier en kilo-octets. L'abréviation est « Ko » en français, « KB » en anglais et dans la plupart des langues — employez celle de la vôtre.",
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "sizeMb": "{value} MB",
+  "@sizeMb": {
+    "description": "Poids d'un fichier en méga-octets. L'abréviation est « Mo » en français, « MB » en anglais et dans la plupart des langues — employez celle de la vôtre.",
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "sizeApprox": "~{size}",
+  "@sizeApprox": {
+    "description": "Taille estimée, précédée du signe « environ ». {size} est déjà formaté (« 240 Ko »). Le tilde et non le signe ≈ : ce dernier manque au sous-ensemble des fontes embarquées. Voir test/l10n_coverage_test.dart.",
+    "placeholders": {
+      "size": {
+        "type": "String"
+      }
+    }
+  },
+  "pageCount": "{count} сторінок",
+  "@pageCount": {
+    "description": "Décompte de pages. Employez les formes plurielles de votre langue — le polonais, le tchèque, le lituanien et le letton en ont plus de deux.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pageCountOfTotal": "{kept} сторінок із {total}",
+  "@pageCountOfTotal": {
+    "description": "Décompte partiel : combien de pages sont retenues sur combien au total. Affiché seulement quand on en a écarté ; « 3 pages sur 3 » n'apparaît jamais.",
+    "placeholders": {
+      "kept": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "pageOfTotal": "Сторінка {current} на {total}",
+  "@pageOfTotal": {
+    "description": "Titre de la visionneuse plein écran : quelle page on regarde, sur combien.",
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "formatPdf": "PDF",
+  "@formatPdf": {
+    "description": "Puce de format acceptable. Sigle international, à conserver tel quel dans toutes les langues."
+  },
+  "formatWord": "Слово",
+  "@formatWord": {
+    "description": "Puce de format acceptable. Marque déposée, à conserver telle quelle."
+  },
+  "formatExcel": "Excel",
+  "@formatExcel": {
+    "description": "Puce de format acceptable. Marque déposée, à conserver telle quelle."
+  },
+  "formatPowerPoint": "Power point",
+  "@formatPowerPoint": {
+    "description": "Puce de format acceptable. Marque déposée, à conserver telle quelle."
+  },
+  "formatImages": "Картинки",
+  "@formatImages": {
+    "description": "Puce de format acceptable : les fichiers d'image en général."
+  },
+  "formatText": "текст",
+  "@formatText": {
+    "description": "Puce de format acceptable : les fichiers texte brut."
+  },
+  "mergeAddFile": "Додайте файл",
+  "@mergeAddFile": {
+    "description": "Libellé de la carte à contour tireté en fin de liste, qui ouvre la sélection de fichiers."
+  },
+  "mergeAddHint": "PDF, Word, зображення або текст",
+  "@mergeAddHint": {
+    "description": "Ligne sous le libellé de la carte d'ajout, énumérant ce qui est accepté."
+  },
+  "mergeEmptyTitle": "Єдиний документ",
+  "@mergeEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Fusionner : ce qu'on va obtenir, en trois mots."
+  },
+  "mergeEmptyBody": "Додайте PDF-файли, файли Word, зображення або текст. Ви можете змінити їх порядок і видалити сторінки перед експортом.",
+  "@mergeEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Fusionner."
+  },
+  "mergeNeedOnePage": "Додайте принаймні один файл зі сторінкою для включення.",
+  "@mergeNeedOnePage": {
+    "description": "Bandeau d'erreur quand on demande l'aperçu sans qu'aucune page ne soit retenue."
+  },
+  "mergeProgress": "Триває злиття...",
+  "@mergeProgress": {
+    "description": "Titre de la boîte de progression pendant l'assemblage. Garder le caractère de suspension final."
+  },
+  "mergeFailed": "Не вдалося злити: {detail}",
+  "@mergeFailed": {
+    "description": "Bandeau d'erreur quand l'assemblage échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "mergeRemoved": "{name} видалено.",
+  "@mergeRemoved": {
+    "description": "Bandeau confirmant qu'un document a quitté la liste ; il porte l'action « Annuler » (actionUndo). Accordez au genre du mot « fichier » dans votre langue.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "mergeRemoveTooltip": "Видаліть {name}",
+  "@mergeRemoveTooltip": {
+    "description": "Info-bulle de la corbeille d'une rangée de la liste.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "mergeMoveSemantics": "Перемістити {name}",
+  "@mergeMoveSemantics": {
+    "description": "Étiquette d'accessibilité de la poignée de glissement. Lue à voix haute, jamais affichée.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "mergeRotateAll": "Повернути всі сторінки",
+  "@mergeRotateAll": {
+    "description": "Bouton qui fait tourner d'un quart de tour toutes les pages du document déplié."
+  },
+  "mergePreviewAndExport": "Попередній перегляд і експорт ({count} сторінок)",
+  "@mergePreviewAndExport": {
+    "description": "Bouton de bas d'écran de l'outil Fusionner, avec le nombre de pages retenues entre parenthèses.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "previewTitle": "Огляд · {size}",
+  "@previewTitle": {
+    "description": "Titre de l'écran d'aperçu, suivi du poids du fichier. {size} est déjà formaté (« 1,20 Mo »). Le point médian est un séparateur typographique, gardez-le ou remplacez-le par celui de votre langue.",
+    "placeholders": {
+      "size": {
+        "type": "String"
+      }
+    }
+  },
+  "previewZoomPage": "Сторінка {number}, збільшити",
+  "@previewZoomPage": {
+    "description": "Étiquette d'accessibilité d'une vignette d'aperçu. Lue à voix haute, jamais affichée.",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "previewPageUnreadable": "Нерозбірлива сторінка.",
+  "@previewPageUnreadable": {
+    "description": "Affiché à la place d'une page dont le rendu a échoué."
+  },
+  "previewExportWhat": "PDF · {count} сторінок",
+  "@previewExportWhat": {
+    "description": "Description de ce qui vient d'être enregistré, dans la feuille de confirmation. Décrit le document, ne le nomme pas.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "compressTitle": "Компресія",
+  "@compressTitle": {
+    "description": "Titre de la feuille de choix du niveau de compression."
+  },
+  "compressBody": "Поточний розмір: {size}. Виберіть рівень — перед застосуванням відображається приблизний розмір.",
+  "@compressBody": {
+    "description": "Consigne de la feuille de compression. {size} est déjà formaté.",
+    "placeholders": {
+      "size": {
+        "type": "String"
+      }
+    }
+  },
+  "compressEstimating": "Оцінити…",
+  "@compressEstimating": {
+    "description": "Affiché tant que la taille estimée d'un niveau n'est pas connue. Garder le caractère de suspension final."
+  },
+  "compressProgress": "Виконується стиснення...",
+  "@compressProgress": {
+    "description": "Titre de la boîte de progression pendant la compression. Garder le caractère de suspension final."
+  },
+  "compressFailed": "Помилка стиснення: {detail}",
+  "@compressFailed": {
+    "description": "Bandeau d'erreur quand la compression échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "protectEmptyTitle": "Під паролем",
+  "@protectEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Protéger."
+  },
+  "protectEmptyBody": "PDF-файл більше не відкриватиметься без вибраного вами пароля. Зберігайте: відновленню не підлягає.",
+  "@protectEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Protéger. L'avertissement de la seconde phrase est essentiel — ne l'allégez pas."
+  },
+  "protectSubtitle": "Буде зашифровано в 256-бітному AES",
+  "@protectSubtitle": {
+    "description": "Sous-titre de la carte du fichier choisi. « AES 256 bits » est un nom d'algorithme, à conserver tel quel."
+  },
+  "protectPassword": "Пароль",
+  "@protectPassword": {
+    "description": "Intitulé du premier champ de saisie."
+  },
+  "protectConfirmPassword": "Підтвердьте пароль",
+  "@protectConfirmPassword": {
+    "description": "Intitulé du second champ, où l'on retape le mot de passe."
+  },
+  "protectShowPasswords": "Показати паролі",
+  "@protectShowPasswords": {
+    "description": "Info-bulle du bouton œil quand les caractères sont masqués."
+  },
+  "protectHidePasswords": "Приховати паролі",
+  "@protectHidePasswords": {
+    "description": "Info-bulle du bouton œil quand les caractères sont visibles."
+  },
+  "protectMismatch": "Два паролі відрізняються.",
+  "@protectMismatch": {
+    "description": "Message d'erreur rattaché au champ de confirmation. Court : il s'affiche sous le champ."
+  },
+  "protectWarning": "Запишіть це куди-небудь: без цього документ назавжди стане нерозбірливим. Відновлення неможливе ні вами, ні програмою.",
+  "@protectWarning": {
+    "description": "Avertissement sous les champs de saisie. C'est le seul endroit qui dit qu'un mot de passe perdu est perdu pour de bon — ne l'allégez pas."
+  },
+  "protectAlreadyProtected": "Цей файл уже захищено — спершу скористайтеся Unlock PDF.",
+  "@protectAlreadyProtected": {
+    "description": "Bandeau d'erreur quand le PDF choisi porte déjà un mot de passe. « Déverrouiller PDF » doit reprendre exactement le libellé traduit de l'outil (toolUnlock)."
+  },
+  "protectProgress": "Триває захист…",
+  "@protectProgress": {
+    "description": "Titre de la boîte de progression pendant le chiffrement. Garder le caractère de suspension final."
+  },
+  "protectFailed": "Помилка захисту: {detail}",
+  "@protectFailed": {
+    "description": "Bandeau d'erreur quand le chiffrement échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "protectAction": "Захищати",
+  "@protectAction": {
+    "description": "Bouton de bas d'écran qui lance le chiffrement. Verbe à l'infinitif, court."
+  },
+  "protectResultTitle": "Захищений PDF",
+  "@protectResultTitle": {
+    "description": "Titre de la carte de résultat, une fois le document chiffré."
+  },
+  "protectResultDetail": "Зашифровано в AES 256 біт. Вам знадобиться пароль, щоб відкрити його.",
+  "@protectResultDetail": {
+    "description": "Détail de la carte de résultat. « AES 256 bits » est un nom d'algorithme, à conserver tel quel."
+  },
+  "protectExportWhat": "Захищений паролем PDF",
+  "@protectExportWhat": {
+    "description": "Description de ce qui vient d'être enregistré, dans la feuille de confirmation."
+  },
+  "unlockEmptyTitle": "Видалити пароль",
+  "@unlockEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Déverrouiller."
+  },
+  "unlockEmptyBody": "Вам потрібен поточний пароль для документа. Після видалення PDF-файл відкриватиметься вільно.",
+  "@unlockEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Déverrouiller. La première phrase est importante : l'outil ne casse pas les mots de passe, il en délivre un document qu'on sait déjà ouvrir."
+  },
+  "unlockAcceptsProtectedPdf": "Захищений PDF",
+  "@unlockAcceptsProtectedPdf": {
+    "description": "Puce de format acceptable : un PDF portant un mot de passe."
+  },
+  "unlockChooseProtectedPdf": "Виберіть захищений PDF-файл",
+  "@unlockChooseProtectedPdf": {
+    "description": "Bouton principal de l'écran vide de l'outil Déverrouiller."
+  },
+  "unlockCurrentPassword": "Поточний пароль",
+  "@unlockCurrentPassword": {
+    "description": "Intitulé du champ où l'on saisit le mot de passe qui ouvre déjà le document."
+  },
+  "unlockWrongPassword": "Невірний пароль.",
+  "@unlockWrongPassword": {
+    "description": "Bandeau d'erreur quand le mot de passe saisi n'ouvre pas le document."
+  },
+  "unlockProgress": "Триває розблокування…",
+  "@unlockProgress": {
+    "description": "Titre de la boîte de progression pendant le retrait du mot de passe. Garder le caractère de suspension final."
+  },
+  "unlockFailed": "Не вдалося розблокувати: {detail}",
+  "@unlockFailed": {
+    "description": "Bandeau d'erreur quand le retrait du mot de passe échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "unlockAction": "Розблокувати",
+  "@unlockAction": {
+    "description": "Bouton de bas d'écran qui retire le mot de passe. Verbe à l'infinitif, court."
+  },
+  "repairEmptyTitle": "Відновити пошкоджений файл",
+  "@repairEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Réparer."
+  },
+  "repairEmptyBody": "Внутрішня структура пошкодженого PDF відновлюється. Те, що можна врятувати, буде врятованим.",
+  "@repairEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Réparer. La seconde phrase promet peu délibérément — la réparation n'est jamais garantie."
+  },
+  "repairProgress": "Триває ремонт…",
+  "@repairProgress": {
+    "description": "Titre de la boîte de progression pendant la reconstruction. Garder le caractère de suspension final."
+  },
+  "repairFailed": "Цей файл не можна відновити — можливо, він занадто пошкоджений.",
+  "@repairFailed": {
+    "description": "Bandeau d'erreur quand la reconstruction échoue. Le ton reste prudent : on ne sait pas pourquoi, et on le dit."
+  },
+  "repairAction": "Виправити",
+  "@repairAction": {
+    "description": "Bouton de bas d'écran qui lance la reconstruction. Verbe à l'infinitif, court."
+  },
+  "pdfToWordEmptyTitle": "Редагований Word",
+  "@pdfToWordEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil PDF vers Word. « Word » est une marque, à conserver."
+  },
+  "pdfToWordEmptyBody": "Текст і структура PDF-файлу транспонуються в документ .docx, який можна повторно відкрити та виправити.",
+  "@pdfToWordEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil PDF vers Word. « .docx » est une extension de fichier, à conserver telle quelle."
+  },
+  "pdfToWordAnalyzing": "Аналіз документа…",
+  "@pdfToWordAnalyzing": {
+    "description": "Titre de la boîte de progression pendant l'inspection du PDF, avant conversion. Garder le caractère de suspension final."
+  },
+  "pdfToWordAnalysisPending": "Очікується аналіз",
+  "@pdfToWordAnalysisPending": {
+    "description": "Sous-titre de la carte du fichier tant que l'inspection n'a pas rendu ses résultats."
+  },
+  "pdfToWordAnalysisFailed": "Неможливо сканувати: {detail}",
+  "@pdfToWordAnalysisFailed": {
+    "description": "Bandeau d'erreur quand l'inspection du PDF échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "pdfLocked": "Цей PDF-файл захищено паролем. Спочатку розблокуйте його.",
+  "@pdfLocked": {
+    "description": "Bandeau d'erreur commun aux outils qui refusent un PDF chiffré. Renvoie implicitement à l'outil Déverrouiller."
+  },
+  "pdfToWordConverting": "Перетворення на Word…",
+  "@pdfToWordConverting": {
+    "description": "Titre de la boîte de progression pendant la conversion. Garder le caractère de suspension final."
+  },
+  "pdfToWordSummaryTitle": "Вміст виявлено",
+  "@pdfToWordSummaryTitle": {
+    "description": "Titre de la carte qui résume ce que l'inspection a trouvé dans le PDF."
+  },
+  "pdfToWordParagraphCount": "{count} абзаців",
+  "@pdfToWordParagraphCount": {
+    "description": "Puce du résumé : combien de paragraphes ont été reconnus.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pdfToWordHeadingCount": "{count} назв",
+  "@pdfToWordHeadingCount": {
+    "description": "Puce du résumé : combien de titres ont été reconnus.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pdfToWordTableCount": "{count} таблиць",
+  "@pdfToWordTableCount": {
+    "description": "Puce du résumé : combien de tableaux ont été reconnus.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pdfToWordNoTables": "Таблиці не виявлено: якщо ваш PDF-файл містить такі, його рядки буде перетворено на абзаци.",
+  "@pdfToWordNoTables": {
+    "description": "Avertissement affiché quand l'inspection n'a trouvé aucun tableau."
+  },
+  "pdfToWordCaveat": "Перетворення відтворює текст, форматування та таблиці, але не точний макет: положення зображень і стовпців не зберігається, а зображення не включаються в документ Word.",
+  "@pdfToWordCaveat": {
+    "description": "Ce que la conversion ne sait pas faire, dit avant qu'on la lance. C'est le passage qui évite la déception — ne l'allégez pas."
+  },
+  "pdfToWordScanWarning": "Здається, цей PDF-файл сканований: тексту не знайдено. Спочатку скористайтеся інструментом «Текст з можливістю пошуку» (OCR), а потім поверніться та конвертуйте отриманий PDF-файл.",
+  "@pdfToWordScanWarning": {
+    "description": "Avertissement quand le PDF ne contient aucun texte extractible. « Texte cherchable (OCR) » doit reprendre exactement le libellé traduit de l'outil (toolOcr)."
+  },
+  "pdfToWordResultTitle": "Документ Word готовий",
+  "@pdfToWordResultTitle": {
+    "description": "Titre de la carte de résultat, une fois le .docx produit."
+  },
+  "pdfToWordResultDetail": "{name} — {size}",
+  "@pdfToWordResultDetail": {
+    "description": "Détail de la carte de résultat : le nom du fichier et son poids, déjà formatés.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "size": {
+        "type": "String"
+      }
+    }
+  },
+  "pdfToWordExportWhat": "Документ Word",
+  "@pdfToWordExportWhat": {
+    "description": "Description de ce qui vient d'être enregistré, dans la feuille de confirmation."
+  },
+  "pdfToWordConvertAction": "Перетворити в Word",
+  "@pdfToWordConvertAction": {
+    "description": "Bouton de bas d'écran qui lance la conversion. Doit tenir sur une ligne."
+  },
+  "actionConvertAgain": "Перетворіть знову",
+  "@actionConvertAgain": {
+    "description": "Action secondaire proposée une fois le fichier produit, pour refaire la conversion. Doit tenir sur une ligne."
+  },
+  "errorSaveFailed": "Не вдалося зареєструвати: {detail}",
+  "@errorSaveFailed": {
+    "description": "Bandeau d'erreur quand l'écriture du fichier échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "rectoVersoIntro": "Односторонній пристрій подачі створює два файли: непарні сторінки в порядку, парні сторінки часто у зворотному порядку. Виберіть обидва, щоб перекомпонувати їх.",
+  "@rectoVersoIntro": {
+    "description": "Consigne en tête de l'outil Recto-verso, qui explique d'où viennent les deux fichiers attendus."
+  },
+  "rectoVersoOddSlot": "Файл непарних сторінок (односторонній)",
+  "@rectoVersoOddSlot": {
+    "description": "Intitulé de la première case : le scan des pages 1, 3, 5…"
+  },
+  "rectoVersoEvenSlot": "Файл парних сторінок (назад)",
+  "@rectoVersoEvenSlot": {
+    "description": "Intitulé de la seconde case : le scan des pages 2, 4, 6…"
+  },
+  "rectoVersoReversed": "Другий файл у зворотному порядку",
+  "@rectoVersoReversed": {
+    "description": "Intitulé de l'interrupteur qui retourne l'ordre des pages paires."
+  },
+  "rectoVersoReversedHint": "Це найпоширеніший випадок, позначений за замовчуванням",
+  "@rectoVersoReversedHint": {
+    "description": "Sous-titre de l'interrupteur, qui justifie sa valeur par défaut."
+  },
+  "rectoVersoPreview": "Огляд чергування ({count} сторінок)",
+  "@rectoVersoPreview": {
+    "description": "Titre de la bande de vignettes qui montre le résultat de l'entrelacement.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "rectoVersoProgress": "Триває чергування…",
+  "@rectoVersoProgress": {
+    "description": "Titre de la boîte de progression pendant l'entrelacement. Garder le caractère de suspension final."
+  },
+  "fileWithPageCount": "{name} · {count} сторінок",
+  "@fileWithPageCount": {
+    "description": "Sous-titre d'une carte de fichier : son nom, puis son nombre de pages. Le point médian est un séparateur typographique.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "actionPreviewAndExport": "Попередній перегляд і експорт",
+  "@actionPreviewAndExport": {
+    "description": "Bouton de bas d'écran qui mène à l'écran d'aperçu. Doit tenir sur une ligne."
+  },
+  "errorOpenFailedShort": "Не вдається відкрити: {detail}",
+  "@errorOpenFailedShort": {
+    "description": "Variante brève du bandeau d'erreur d'ouverture. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "errorGeneric": "Помилка: {detail}",
+  "@errorGeneric": {
+    "description": "Bandeau d'erreur générique, quand l'écran n'a rien de plus précis à dire. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "actionConvertToPdf": "Перетворити в PDF",
+  "@actionConvertToPdf": {
+    "description": "Bouton de bas d'écran des outils de conversion vers le PDF. Doit tenir sur une ligne."
+  },
+  "convertProgress": "Триває перетворення...",
+  "@convertProgress": {
+    "description": "Titre de la boîte de progression pendant une conversion de format. Garder le caractère de suspension final."
+  },
+  "excelEmptyTitle": "PDF робочий зошит",
+  "@excelEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Excel vers PDF."
+  },
+  "excelEmptyBody": "Аркуші у файлі .xlsx перетворюються на сторінки PDF, готові до надсилання чи друку.",
+  "@excelEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Excel vers PDF. « .xlsx » est une extension de fichier, à conserver telle quelle."
+  },
+  "excelChooseWorkbook": "Виберіть підшивку",
+  "@excelChooseWorkbook": {
+    "description": "Bouton principal de l'écran vide de l'outil Excel vers PDF."
+  },
+  "excelChooseXlsx": "Виберіть книгу .xlsx",
+  "@excelChooseXlsx": {
+    "description": "Intitulé de la rangée de fichier tant qu'aucun classeur n'est choisi. « .xlsx » est une extension, à conserver."
+  },
+  "excelLegacyFormat": "Формат .xls (старий двійковий формат Excel) не підтримується. Збережіть файл як .xlsx і повторіть спробу.",
+  "@excelLegacyFormat": {
+    "description": "Bandeau d'erreur quand on choisit un classeur au vieux format binaire. Les extensions « .xls » et « .xlsx » sont à conserver telles quelles."
+  },
+  "excelWrongFormat": "Будь ласка, виберіть книгу Excel .xlsx.",
+  "@excelWrongFormat": {
+    "description": "Bandeau d'erreur quand le fichier choisi n'est pas un classeur."
+  },
+  "excelUnreadable": "Нечитабельна папка: {detail}",
+  "@excelUnreadable": {
+    "description": "Bandeau d'erreur quand le classeur ne peut pas être décodé. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "excelSheetsAndRows": "{sheets} аркушів · {rows} рядків загалом",
+  "@excelSheetsAndRows": {
+    "description": "Sous-titre de la rangée de fichier : combien de feuilles et combien de lignes en tout. Le point médian est un séparateur typographique.",
+    "placeholders": {
+      "sheets": {
+        "type": "int"
+      },
+      "rows": {
+        "type": "int"
+      }
+    }
+  },
+  "excelSheetsDetected": "Виявлено листя",
+  "@excelSheetsDetected": {
+    "description": "Intitulé de la liste des feuilles trouvées dans le classeur."
+  },
+  "excelEmptySheet": "Порожній аркуш",
+  "@excelEmptySheet": {
+    "description": "Sous-titre d'une feuille qui ne contient aucune ligne."
+  },
+  "excelSheetDimensions": "{rows} рядків × {columns} стовпців",
+  "@excelSheetDimensions": {
+    "description": "Sous-titre d'une feuille : ses dimensions. Le signe × est le symbole de multiplication.",
+    "placeholders": {
+      "rows": {
+        "type": "int"
+      },
+      "columns": {
+        "type": "int"
+      }
+    }
+  },
+  "excelRepeatHeader": "Повторіть рядок заголовка на кожній сторінці",
+  "@excelRepeatHeader": {
+    "description": "Intitulé de l'interrupteur qui redessine la première ligne en haut de chaque page."
+  },
+  "excelRepeatHeaderHint": "У верхній частині кожної сторінки таблиці перемальовується перший рядок аркуша.",
+  "@excelRepeatHeaderHint": {
+    "description": "Sous-titre de l'interrupteur de répétition d'en-tête."
+  },
+  "excelCaveat": "Що потрібно для перетворення: текст комірок, збережений у файлі (включаючи останній обчислений результат формул), перший жирний рядок і сітку.\n\nЩо не включено: кольори, шрифти, формати чисел, об’єднані комірки, зображення, графіка та самі формули. Стовпці зменшені відповідно до ширини сторінки; на дуже широких аркушах текст у занадто вузьких клітинках скорочується на «…».",
+  "@excelCaveat": {
+    "description": "Ce que la conversion sait et ne sait pas faire. Les deux paragraphes sont séparés par une ligne vide — gardez le double saut de ligne. C'est le passage qui évite la déception, ne l'allégez pas."
+  },
+  "pptxEmptyTitle": "Презентація в форматі PDF",
+  "@pptxEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil PowerPoint vers PDF."
+  },
+  "pptxEmptyBody": "Одна альбомна сторінка 16:9 на слайд, включаючи заголовок і маркери. Текст повторюється; вихідні зображення, форми та фони не є такими.\n\nПрийнятий формат: .pptx. Старий файл .ppt потрібно спочатку повторно зберегти як .pptx із PowerPoint.",
+  "@pptxEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil PowerPoint vers PDF. Les deux paragraphes sont séparés par une ligne vide — gardez le double saut de ligne. « 16:9 », « .pptx » et « .ppt » sont à conserver tels quels."
+  },
+  "pptxChoosePresentation": "Виберіть презентацію",
+  "@pptxChoosePresentation": {
+    "description": "Bouton principal de l'écran vide de l'outil PowerPoint vers PDF."
+  },
+  "pptxTextOnlyTitle": "Перетворення лише тексту",
+  "@pptxTextOnlyTitle": {
+    "description": "Titre de la carte d'avertissement affichée une fois la présentation chargée."
+  },
+  "pptxTextOnlyBody": "Текст кожного слайда повторюється. Оригінальні зображення, форми, фони, кольори та макети не зберігаються: отриманий PDF-файл є простим, зрозумілим для читання макетом, а не точною копією вашої презентації.",
+  "@pptxTextOnlyBody": {
+    "description": "Corps de la carte d'avertissement. Dit clairement ce que l'outil ne fait pas — ne l'allégez pas."
+  },
+  "pptxSlideCount": "{count} слайдів",
+  "@pptxSlideCount": {
+    "description": "Sous-titre de la rangée de fichier : combien de diapositives ont été trouvées.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pptxSlidesDetected": "Виявлено слайди",
+  "@pptxSlidesDetected": {
+    "description": "Intitulé de la liste des diapositives trouvées dans la présentation."
+  },
+  "pptxMoreSlides": "і {count} інших слайдів…",
+  "@pptxMoreSlides": {
+    "description": "Affiché sous la liste quand la présentation compte plus de trente diapositives et que l'aperçu s'arrête là. Garder le caractère de suspension final.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pptxUntitledSlide": "Без назви",
+  "@pptxUntitledSlide": {
+    "description": "Affiché à la place du titre d'une diapositive qui n'en porte pas. Rendu en italique."
+  },
+  "pptxEmptySlide": "Без тексту (лише зображення або фігура)",
+  "@pptxEmptySlide": {
+    "description": "Sous-titre d'une diapositive dont l'outil n'a extrait aucun texte."
+  },
+  "pptxTextLineCount": "{count} рядків тексту",
+  "@pptxTextLineCount": {
+    "description": "Sous-titre d'une diapositive : combien de lignes de texte elle porte.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pptxReadFailed": "Неможливо прочитати: {detail}",
+  "@pptxReadFailed": {
+    "description": "Bandeau d'erreur quand la présentation ne peut pas être décodée. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "compressLevelLight": "світло",
+  "@compressLevelLight": {
+    "description": "Niveau de compression le plus doux. Adjectif accordé à « compression » ; si votre langue ne permet pas l'adjectif seul, écrivez « Compression légère »."
+  },
+  "compressLevelMedium": "Середній",
+  "@compressLevelMedium": {
+    "description": "Niveau de compression intermédiaire. Adjectif accordé à « compression »."
+  },
+  "compressLevelStrong": "Форте",
+  "@compressLevelStrong": {
+    "description": "Niveau de compression le plus agressif. Adjectif accordé à « compression »."
+  },
+  "pptxQualityStandard": "Стандарт (150 dpi)",
+  "@pptxQualityStandard": {
+    "description": "Réglage de résolution par défaut de l'export PowerPoint. « dpi » est un sigle international, à conserver."
+  },
+  "pptxQualityHigh": "Високий (220 dpi)",
+  "@pptxQualityHigh": {
+    "description": "Réglage de résolution élevée de l'export PowerPoint. « dpi » est un sigle international, à conserver."
+  },
+  "pdfToExcelEmptyTitle": "Отримати таблиці",
+  "@pdfToExcelEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil PDF vers Excel."
+  },
+  "pdfToExcelEmptyBody": "Таблиці з PDF-файлу витягуються до книги Excel. Форматування не зберігається, значення є.",
+  "@pdfToExcelEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil PDF vers Excel."
+  },
+  "pdfToExcelPagesAnalyzed": "Проаналізовано {count} сторінок",
+  "@pdfToExcelPagesAnalyzed": {
+    "description": "Sous-titre de la carte du fichier une fois l'inspection faite.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pdfToExcelAnalysisFailed": "Аналіз неможливий. PDF-файл може бути захищений паролем або пошкоджений. ({detail})",
+  "@pdfToExcelAnalysisFailed": {
+    "description": "Bandeau d'erreur quand l'inspection échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "pdfToExcelNothingToExport": "Немає нічого для експорту: таблицю не виявлено.",
+  "@pdfToExcelNothingToExport": {
+    "description": "Bandeau d'erreur quand on lance la conversion sans qu'aucun tableau n'ait été reconnu."
+  },
+  "pdfToExcelBuilding": "Створення робочої книги…",
+  "@pdfToExcelBuilding": {
+    "description": "Titre de la boîte de progression pendant la construction du classeur. Garder le caractère de suspension final."
+  },
+  "pdfToExcelIncludeParagraphs": "Також включити текст поза таблицями (один рядок на абзац)",
+  "@pdfToExcelIncludeParagraphs": {
+    "description": "Intitulé de l'interrupteur qui verse le texte courant dans le classeur."
+  },
+  "pdfToExcelIncludeParagraphsHint": "Корисно для напівструктурованого документа: текст розміщується в колонці A після таблиць на сторінці.",
+  "@pdfToExcelIncludeParagraphsHint": {
+    "description": "Sous-titre de l'interrupteur. « colonne A » désigne la première colonne du tableur."
+  },
+  "pdfToExcelCaveatTitle": "Що не зберігає перетворення",
+  "@pdfToExcelCaveatTitle": {
+    "description": "Intitulé du paragraphe qui énumère les limites de l'extraction."
+  },
+  "pdfToExcelCaveat": "Виявлення базується на положенні тексту на сторінці: таблиці без звичайних рамок, об’єднані комірки та дуже неправильні стовпці можуть бути погано вирізані. Відсканований файл PDF (зображення) не містить тексту, який можна витягти, і нічого не дасть. Кольори, формули та зображення ніколи не включаються: є лише текстові значення.",
+  "@pdfToExcelCaveat": {
+    "description": "Limites de l'extraction de tableaux, dites avant qu'on lance la conversion. Ne l'allégez pas."
+  },
+  "pdfToExcelTablesFound": "{tables} таблиці, виявлені на {pages} сторінках",
+  "@pdfToExcelTablesFound": {
+    "description": "Résumé de l'inspection : combien de tableaux, sur combien de pages.",
+    "placeholders": {
+      "tables": {
+        "type": "int"
+      },
+      "pages": {
+        "type": "int"
+      }
+    }
+  },
+  "pdfToExcelPagesConcerned": "Постраждалі сторінки: {pages}",
+  "@pdfToExcelPagesConcerned": {
+    "description": "Liste des numéros de page qui portent un tableau. {pages} est déjà formaté (« 1, 3, 7… »).",
+    "placeholders": {
+      "pages": {
+        "type": "String"
+      }
+    }
+  },
+  "pdfToExcelParagraphsOutside": "{count} абзаців поза таблицями",
+  "@pdfToExcelParagraphsOutside": {
+    "description": "Résumé de l'inspection : combien de paragraphes vivent en dehors des tableaux.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pdfToExcelScannedWarning": "З цього PDF-файлу не вдалося отримати текст: швидше за все, це відсканований документ (зображення сторінок). Електронна таблиця не може нічого отримати з цього; спочатку скористайтеся інструментом розпізнавання тексту (OCR).",
+  "@pdfToExcelScannedWarning": {
+    "description": "Avertissement quand le PDF est un scan sans couche de texte. « OCR » est un sigle international, à conserver."
+  },
+  "pdfToExcelNoTableWarning": "У цьому документі не було розпізнано структуру таблиці. Текст є, але він не розміщений у звичайних колонках. Замість того, щоб створювати нечитабельну книгу, увімкніть «Також включити нетабличний текст» вище або скористайтеся «PDF у Word», який краще зберігає абзаци.",
+  "@pdfToExcelNoTableWarning": {
+    "description": "Avertissement quand le texte existe mais n'est pas tabulaire. Les deux citations entre guillemets doivent reprendre exactement les libellés traduits correspondants (pdfToExcelIncludeParagraphs et toolPdfToWord)."
+  },
+  "pdfToExcelResultTitle": "Підшивка готова",
+  "@pdfToExcelResultTitle": {
+    "description": "Titre de la carte de résultat, une fois le classeur produit."
+  },
+  "pdfToExcelExportWhat": "Робоча книга Excel",
+  "@pdfToExcelExportWhat": {
+    "description": "Description de ce qui vient d'être enregistré, dans la feuille de confirmation."
+  },
+  "pdfToExcelConvertAction": "Перетворити в Excel",
+  "@pdfToExcelConvertAction": {
+    "description": "Bouton de bas d'écran qui lance la conversion. Doit tenir sur une ligne."
+  },
+  "resultNameAndSize": "{name} — {size}",
+  "@resultNameAndSize": {
+    "description": "Détail d'une carte de résultat : le nom du fichier et son poids, déjà formatés.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "size": {
+        "type": "String"
+      }
+    }
+  },
+  "pdfToPptxEmptyTitle": "Один слайд на сторінку",
+  "@pdfToPptxEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil PDF vers PowerPoint."
+  },
+  "pdfToPptxEmptyBody": "PDF стає ідентичною презентацією PowerPoint. Кожна сторінка надходить у вигляді зображення: макет точний, але текст не можна редагувати в PowerPoint.",
+  "@pdfToPptxEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil PDF vers PowerPoint. Le compromis annoncé — mise en page fidèle contre texte figé — est le point essentiel."
+  },
+  "pdfToPptxOpenFailed": "Не вдається відкрити цей PDF: {detail}",
+  "@pdfToPptxOpenFailed": {
+    "description": "Bandeau d'erreur quand le PDF ne peut pas être lu. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "pdfToPptxConverting": "Перетворення на PowerPoint…",
+  "@pdfToPptxConverting": {
+    "description": "Titre de la boîte de progression pendant la conversion. Garder le caractère de suspension final."
+  },
+  "pdfToPptxPagesToSlides": "{count} сторінок > {count} слайдів",
+  "@pdfToPptxPagesToSlides": {
+    "description": "Sous-titre de la carte du fichier : autant de diapositives que de pages. Le chevron simple et non une flèche → : celle-ci manque au sous-ensemble des fontes embarquées. Voir test/l10n_coverage_test.dart.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pdfToPptxEmptyDocument": "Порожній документ",
+  "@pdfToPptxEmptyDocument": {
+    "description": "Sous-titre de la carte du fichier quand le PDF ne contient aucune page."
+  },
+  "qualityLabel": "якість",
+  "@qualityLabel": {
+    "description": "Intitulé du groupe de boutons qui choisit la résolution de sortie."
+  },
+  "pdfToPptxQualityHint": "Вища роздільна здатність забезпечує чіткіші слайди, але значно більший файл.",
+  "@pdfToPptxQualityHint": {
+    "description": "Explication sous le choix de qualité, dans le cas ordinaire."
+  },
+  "pdfToPptxHeavyWarning": "Попередження: у високій якості презентація з {count} сторінок може важити кілька десятків Мб і довго відкриватися. Якщо сумніваєтеся, виберіть «Стандарт».",
+  "@pdfToPptxHeavyWarning": {
+    "description": "Avertissement affiché en rouge quand haute qualité et document long se combinent. « Standard » doit reprendre le libellé traduit de pptxQualityStandard. « Mo » est l'abréviation de méga-octet — employez celle de votre langue.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "goodToKnow": "А саме",
+  "@goodToKnow": {
+    "description": "Titre d'une carte d'information neutre."
+  },
+  "pdfToPptxCaveat": "Кожен слайд є зображенням сторінки: макет ідентичний PDF-файлу, але текст не можна редагувати в PowerPoint.\nЩоб отримати редагований текст, замість цього використовуйте «PDF to Word».\nПрезентація має лише один формат слайда: він береться з першої сторінки, а сторінки різних форматів розміщуються по центру.",
+  "@pdfToPptxCaveat": {
+    "description": "Trois limites de la conversion, une par ligne — gardez les sauts de ligne simples. « PDF vers Word » doit reprendre le libellé traduit de toolPdfToWord."
+  },
+  "pdfToPptxResultTitle": "Презентація готова",
+  "@pdfToPptxResultTitle": {
+    "description": "Titre de la carte de résultat, une fois la présentation produite."
+  },
+  "pdfToPptxResultDetail": "{name} — {count} слайдів · {size} · {quality}",
+  "@pdfToPptxResultDetail": {
+    "description": "Détail de la carte de résultat : nom, nombre de diapositives, poids et réglage de qualité. Le point médian est un séparateur typographique.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      },
+      "size": {
+        "type": "String"
+      },
+      "quality": {
+        "type": "String"
+      }
+    }
+  },
+  "notSavedYet": "Файл ще не на вашому пристрої: збережіть його або поділіться ним.",
+  "@notSavedYet": {
+    "description": "Rappel sous la carte de résultat : le fichier existe en mémoire mais n'a pas encore été écrit."
+  },
+  "pdfToPptxChangeQuality": "Змінити якість",
+  "@pdfToPptxChangeQuality": {
+    "description": "Action secondaire qui revient au choix de résolution pour refaire la conversion."
+  },
+  "pdfToPptxConvertAction": "Конвертувати в PowerPoint",
+  "@pdfToPptxConvertAction": {
+    "description": "Bouton de bas d'écran qui lance la conversion. Doit tenir sur une ligne."
+  },
+  "pdfToPptxExportWhat": "Презентація PowerPoint · {count} слайдів",
+  "@pdfToPptxExportWhat": {
+    "description": "Description de ce qui vient d'être enregistré, dans la feuille de confirmation.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "formatLabel": "Формат",
+  "@formatLabel": {
+    "description": "Intitulé du groupe de boutons qui choisit le format de sortie."
+  },
+  "actionExport": "Експорт",
+  "@actionExport": {
+    "description": "Bouton qui lance la production des fichiers. Verbe à l'infinitif, court."
+  },
+  "imageQualityWeb": "Інтернет (72 dpi)",
+  "@imageQualityWeb": {
+    "description": "Résolution la plus basse de l'export en images, destinée à l'écran. « dpi » est un sigle international, à conserver."
+  },
+  "imageQualityStandard": "Стандарт (150 dpi)",
+  "@imageQualityStandard": {
+    "description": "Résolution intermédiaire de l'export en images. « dpi » est un sigle international, à conserver."
+  },
+  "imageQualityHigh": "Висока якість (300 dpi)",
+  "@imageQualityHigh": {
+    "description": "Résolution la plus élevée de l'export en images, destinée à l'impression. « dpi » est un sigle international, à conserver."
+  },
+  "pdfToImagesEmptyTitle": "Одне зображення на сторінку",
+  "@pdfToImagesEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil PDF vers Images."
+  },
+  "pdfToImagesEmptyBody": "Виберіть PDF: кожна сторінка відображатиметься як зображення з визначенням, яке ви потім налаштуєте.",
+  "@pdfToImagesEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil PDF vers Images."
+  },
+  "pdfToImagesNotAPdf": "{name}: виберіть файл PDF.",
+  "@pdfToImagesNotAPdf": {
+    "description": "Bandeau d'erreur quand le fichier choisi n'est pas un PDF.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "errorLoadFailed": "Не вдалося завантажити: {detail}",
+  "@errorLoadFailed": {
+    "description": "Bandeau d'erreur quand le fichier ne peut pas être chargé. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "pdfToImagesProgress": "Виконується експорт…",
+  "@pdfToImagesProgress": {
+    "description": "Titre de la boîte de progression pendant le rendu des images. Garder le caractère de suspension final."
+  },
+  "pdfToImagesExportWhat": "{count} зображень {format}",
+  "@pdfToImagesExportWhat": {
+    "description": "Description de ce qui vient d'être enregistré : combien d'images, dans quel format. {format} vaut « JPG » ou « PNG » et ne se traduit pas.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "format": {
+        "type": "String"
+      }
+    }
+  },
+  "pdfaEmptyTitle": "Архів надовго",
+  "@pdfaEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Convertir en PDF/A."
+  },
+  "pdfaEmptyBody": "PDF/A — це формат архівування, який вимагається багатьма адміністраціями. Документ конвертується без втрати зовнішнього вигляду.",
+  "@pdfaEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Convertir en PDF/A. « PDF/A » est une norme ISO, à conserver telle quelle."
+  },
+  "pdfaConformanceLevel": "Рівень відповідності",
+  "@pdfaConformanceLevel": {
+    "description": "Intitulé du groupe de boutons qui choisit la variante de la norme."
+  },
+  "pdfaA1bDetail": "Найсуворіший і загальновизнаний рівень. Виберіть, якщо сумніваєтеся.",
+  "@pdfaA1bDetail": {
+    "description": "Explication de la variante PDF/A-1b, affichée sous le choix."
+  },
+  "pdfaA2bDetail": "На основі PDF 1.7: більш ефективне стиснення, трохи легші файли.",
+  "@pdfaA2bDetail": {
+    "description": "Explication de la variante PDF/A-2b. « PDF 1.7 » est un numéro de version, à conserver."
+  },
+  "pdfaA3bDetail": "Як A-2b, але дозволяє вкладення (часто запитується для електронних рахунків).",
+  "@pdfaA3bDetail": {
+    "description": "Explication de la variante PDF/A-3b. « A-2b » désigne la variante précédente, à conserver."
+  },
+  "pdfaConvertingTo": "Перетворення на {level}…",
+  "@pdfaConvertingTo": {
+    "description": "Titre de la boîte de progression. {level} vaut « PDF/A-1b » et ne se traduit pas. Garder le caractère de suspension final.",
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "pdfaCaveatTitle": "Що змінює перетворення",
+  "@pdfaCaveatTitle": {
+    "description": "Titre de la carte qui énumère les effets de la conversion."
+  },
+  "pdfaCaveat": "Кожна сторінка перемальовується як зображення з роздільною здатністю {dpi} dpi: текст стає зображенням, макет зависає. Це те, що робить файл справді сумісним незалежно від шрифтів вихідного документа, але натомість текст більше не доступний для вибору чи пошуку, посилання та форми зникають, а файл стає важчим.",
+  "@pdfaCaveat": {
+    "description": "Le compromis de la conversion PDF/A, dit avant qu'on la lance. « dpi » est un sigle international. Ne l'allégez pas.",
+    "placeholders": {
+      "dpi": {
+        "type": "int"
+      }
+    }
+  },
+  "pdfaOpenFailed": "Неможливо відкрити цей PDF: {detail}",
+  "@pdfaOpenFailed": {
+    "description": "Bandeau d'erreur quand le PDF ne peut pas être lu. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "imagesToPdfEmptyTitle": "Зображення, PDF",
+  "@imagesToPdfEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Images vers PDF."
+  },
+  "imagesToPdfEmptyBody": "JPG, PNG, WebP, HEIC — додайте свої зображення, і вони будуть зібрані у вибраному вами порядку.",
+  "@imagesToPdfEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Images vers PDF. Les quatre noms de format ne se traduisent pas."
+  },
+  "imagesToPdfChoose": "Виберіть зображення",
+  "@imagesToPdfChoose": {
+    "description": "Bouton principal de l'écran vide de l'outil Images vers PDF."
+  },
+  "imagesToPdfAdd": "Додайте зображення",
+  "@imagesToPdfAdd": {
+    "description": "Info-bulle du bouton flottant qui ajoute d'autres images à la liste."
+  },
+  "imagesToPdfRejected": "Пропущено (не зображення): {names}",
+  "@imagesToPdfRejected": {
+    "description": "Bandeau signalant les fichiers écartés parce qu'ils ne sont pas des images. {names} est une liste de noms séparés par des virgules.",
+    "placeholders": {
+      "names": {
+        "type": "String"
+      }
+    }
+  },
+  "imagesToPdfBuilding": "Створення PDF...",
+  "@imagesToPdfBuilding": {
+    "description": "Titre de la boîte de progression pendant l'assemblage. Garder le caractère de suspension final."
+  },
+  "imagesToPdfBuildFailed": "Помилка створення: {detail}",
+  "@imagesToPdfBuildFailed": {
+    "description": "Bandeau d'erreur quand l'assemblage échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "imagesToPdfCreateAction": "Створіть PDF ({count} зображень)",
+  "@imagesToPdfCreateAction": {
+    "description": "Bouton de bas d'écran, avec le nombre d'images retenues entre parenthèses.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "actionRotate": "Обертати",
+  "@actionRotate": {
+    "description": "Info-bulle du bouton qui fait tourner une image d'un quart de tour."
+  },
+  "actionRemove": "Вилучити",
+  "@actionRemove": {
+    "description": "Info-bulle du bouton qui retire un élément de la liste."
+  },
+  "htmlTitle": "HTML/веб-сторінка в PDF",
+  "@htmlTitle": {
+    "description": "Titre de la barre de l'outil Page web vers PDF. « HTML » est un sigle, à conserver."
+  },
+  "htmlIntro": "Перетворіть веб-сторінку або HTML-код у формат A4 PDF. Візуалізація виконується браузером, інтегрованим в Android, тому макет схожий на друк із Chrome.",
+  "@htmlIntro": {
+    "description": "Consigne en tête de l'outil. « A4 » est un format de papier, « Android » et « Chrome » des marques — à conserver."
+  },
+  "htmlModeUrl": "Адреса сайту",
+  "@htmlModeUrl": {
+    "description": "Onglet du sélecteur : fournir une adresse à télécharger. Court, il tient dans un segment."
+  },
+  "htmlModeCode": "HTML код",
+  "@htmlModeCode": {
+    "description": "Onglet du sélecteur : coller du code source. Court, il tient dans un segment."
+  },
+  "htmlUrlLabel": "Адреса сторінки",
+  "@htmlUrlLabel": {
+    "description": "Intitulé du champ où l'on saisit l'adresse."
+  },
+  "htmlUrlHint": "https://example.fr/article",
+  "@htmlUrlHint": {
+    "description": "Exemple d'adresse affiché en filigrane dans le champ. Adaptez le domaine à votre langue (« example.com », « beispiel.de »…)."
+  },
+  "htmlCodeLabel": "HTML код",
+  "@htmlCodeLabel": {
+    "description": "Intitulé du champ où l'on colle le code source."
+  },
+  "htmlCodeHint": "<h1>Назва</h1>\n<p>Текст…</p>",
+  "@htmlCodeHint": {
+    "description": "Exemple de code affiché en filigrane. Les balises <h1> et <p> ne se traduisent pas ; seuls les mots entre elles le sont. Gardez le saut de ligne."
+  },
+  "htmlUrlBadScheme": "Адреса має починатися з http:// або https://.",
+  "@htmlUrlBadScheme": {
+    "description": "Bandeau d'erreur quand l'adresse ne porte pas de protocole. « http:// » et « https:// » ne se traduisent pas."
+  },
+  "htmlUrlIncomplete": "Введіть повну веб-адресу.",
+  "@htmlUrlIncomplete": {
+    "description": "Bandeau d'erreur quand le champ ne contient que le protocole."
+  },
+  "htmlCodeEmpty": "Вставте HTML-код для конвертації.",
+  "@htmlCodeEmpty": {
+    "description": "Bandeau d'erreur quand le champ de code est vide."
+  },
+  "htmlLoadingUrl": "Завантаження сторінки та конвертація…",
+  "@htmlLoadingUrl": {
+    "description": "Titre de la boîte de progression pendant le téléchargement puis le rendu. Garder le caractère de suspension final."
+  },
+  "htmlConverting": "Триває перетворення HTML...",
+  "@htmlConverting": {
+    "description": "Titre de la boîte de progression pendant le rendu du code collé. Garder le caractère de suspension final."
+  },
+  "htmlNetworkNotice": "Необхідне підключення до Інтернету: це єдиний інструмент у додатку, який повинен завантажити сторінку. Сторінки, які вимагають входу в обліковий запис, банер із файлами cookie або багато JavaScript, можуть видаватися незавершеними.",
+  "@htmlNetworkNotice": {
+    "description": "Avertissement affiché en mode adresse. Il signale la seule exception au fonctionnement hors ligne de l'application — ne l'allégez pas. « JavaScript » est une marque, à conserver."
+  },
+  "htmlOfflineNotice": "HTML і CSS, написані безпосередньо на сторінці, відображаються в автономному режимі. З іншого боку, зображення, таблиці стилів або шрифти, викликані зовнішньою веб-адресою, потребують підключення до Інтернету.",
+  "@htmlOfflineNotice": {
+    "description": "Avertissement affiché en mode code. « HTML » et « CSS » sont des sigles, à conserver."
+  },
+  "watermarkEmptyTitle": "Додайте водяний знак",
+  "@watermarkEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Filigrane."
+  },
+  "watermarkEmptyBody": "Вибраний вами текст повторюється у фоновому режимі на всіх сторінках — щоб позначити документ як конфіденційний або чернетковий.",
+  "@watermarkEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Filigrane."
+  },
+  "watermarkEmptyNote": "Безкоштовний експорт без обмеження кількості.",
+  "@watermarkEmptyNote": {
+    "description": "Note verte de l'écran vide, propre à cet outil. La note habituelle promet « sans filigrane » — sur l'outil qui en appose un, elle se contredirait. Ne réintroduisez donc pas la mention du filigrane ici."
+  },
+  "watermarkTextLabel": "Текст водяного знака",
+  "@watermarkTextLabel": {
+    "description": "Intitulé du champ où l'on saisit la mention à répéter."
+  },
+  "watermarkDefaultText": "КОНФІДЕНЦІЙНО",
+  "@watermarkDefaultText": {
+    "description": "Mention proposée par défaut dans le champ, en capitales. Employez le mot consacré de votre langue (anglais : CONFIDENTIAL, allemand : VERTRAULICH)."
+  },
+  "watermarkNeedText": "Введіть текст для водяного знака.",
+  "@watermarkNeedText": {
+    "description": "Bandeau d'erreur quand on applique sans avoir saisi de texte."
+  },
+  "watermarkOpacity": "Непрозорість: {percent} %",
+  "@watermarkOpacity": {
+    "description": "Intitulé du curseur d'opacité. L'espace avant le signe % est une convention française ; collez-le au chiffre si votre langue le veut.",
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "watermarkRotation": "Кут повороту: {degrees}°",
+  "@watermarkRotation": {
+    "description": "Intitulé du curseur d'inclinaison. Le signe degré est international.",
+    "placeholders": {
+      "degrees": {
+        "type": "int"
+      }
+    }
+  },
+  "watermarkFontSize": "Розмір тексту: {points} пт",
+  "@watermarkFontSize": {
+    "description": "Intitulé du curseur de corps. « pt » est l'abréviation typographique de point, internationale.",
+    "placeholders": {
+      "points": {
+        "type": "int"
+      }
+    }
+  },
+  "watermarkColor": "колір",
+  "@watermarkColor": {
+    "description": "Intitulé de la rangée de pastilles de couleur."
+  },
+  "colorGrey": "Сірий",
+  "@colorGrey": {
+    "description": "Nom d'une couleur de filigrane, sous sa pastille. Très court."
+  },
+  "colorRed": "Червоний",
+  "@colorRed": {
+    "description": "Nom d'une couleur de filigrane, sous sa pastille. Très court."
+  },
+  "colorBlue": "Синій",
+  "@colorBlue": {
+    "description": "Nom d'une couleur de filigrane, sous sa pastille. Très court."
+  },
+  "colorBlack": "чорний",
+  "@colorBlack": {
+    "description": "Nom d'une couleur de filigrane, sous sa pastille. Très court."
+  },
+  "watermarkProgress": "Виконується застосування водяного знака…",
+  "@watermarkProgress": {
+    "description": "Titre de la boîte de progression. Garder le caractère de suspension final."
+  },
+  "percentValue": "{percent} %",
+  "@percentValue": {
+    "description": "Valeur en pourcentage affichée sur la pastille d'un curseur. L'espace avant le signe % est une convention française.",
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "degreesValue": "{degrees}°",
+  "@degreesValue": {
+    "description": "Valeur en degrés affichée sur la pastille d'un curseur.",
+    "placeholders": {
+      "degrees": {
+        "type": "int"
+      }
+    }
+  },
+  "pointsValue": "{points} пт",
+  "@pointsValue": {
+    "description": "Valeur en points typographiques affichée sur la pastille d'un curseur.",
+    "placeholders": {
+      "points": {
+        "type": "int"
+      }
+    }
+  },
+  "pageNumbersEmptyTitle": "Пронумеруйте сторінки",
+  "@pageNumbersEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Numéros de page."
+  },
+  "pageNumbersEmptyBody": "Виберіть PDF-файл, а потім позицію та формат чисел, які додаватимуться на кожну сторінку.",
+  "@pageNumbersEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Numéros de page."
+  },
+  "positionLabel": "Позиція",
+  "@positionLabel": {
+    "description": "Intitulé du groupe de boutons qui choisit où poser le numéro."
+  },
+  "positionBottomCenter": "Нижній центр",
+  "@positionBottomCenter": {
+    "description": "Position du numéro : en bas, au milieu. Très court, il tient dans une pastille."
+  },
+  "positionBottomRight": "Праворуч внизу",
+  "@positionBottomRight": {
+    "description": "Position du numéro : en bas, à droite. Très court."
+  },
+  "positionTopCenter": "Верхній центр",
+  "@positionTopCenter": {
+    "description": "Position du numéro : en haut, au milieu. Très court."
+  },
+  "positionTopRight": "Вгорі справа",
+  "@positionTopRight": {
+    "description": "Position du numéro : en haut, à droite. Très court."
+  },
+  "pageNumbersFormatPlain": "Н",
+  "@pageNumbersFormatPlain": {
+    "description": "Format de numérotation : le numéro seul. « N » est l'initiale de « numéro » — employez celle de votre langue si elle diffère (anglais : N, allemand : N)."
+  },
+  "pageNumbersFormatOfTotal": "N / всього",
+  "@pageNumbersFormatOfTotal": {
+    "description": "Format de numérotation : le numéro suivi du total, « 3 / 12 ». Traduisez « total » ; « N » suit la même règle que ci-dessus. Doit rester très court, c'est un segment de bouton."
+  },
+  "pageNumbersStart": "Стартовий номер",
+  "@pageNumbersStart": {
+    "description": "Intitulé du champ où l'on choisit à quel chiffre la numérotation commence."
+  },
+  "pageNumbersProgress": "Триває нумерація…",
+  "@pageNumbersProgress": {
+    "description": "Titre de la boîte de progression. Garder le caractère de suspension final."
+  },
+  "organizeEmptyTitle": "Резюме PDF в руках",
+  "@organizeEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Organiser."
+  },
+  "organizeEmptyBody": "Відкрийте документ, щоб розділити його, витягнути сторінки або змінити порядок.",
+  "@organizeEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Organiser."
+  },
+  "organizeOpenFile": "Відкрийте файл",
+  "@organizeOpenFile": {
+    "description": "Bouton principal de l'écran vide de l'outil Organiser."
+  },
+  "organizeNothingToExport": "Немає сторінок для експорту.",
+  "@organizeNothingToExport": {
+    "description": "Bandeau d'erreur quand toutes les pages ont été écartées."
+  },
+  "organizePagesKept": "Збережено сторінок: {kept} із {total}",
+  "@organizePagesKept": {
+    "description": "Sous-titre du document : combien de pages restent retenues sur combien. Affiché seulement quand on en a écarté.",
+    "placeholders": {
+      "kept": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "organizePageExcluded": "Відкинуто",
+  "@organizePageExcluded": {
+    "description": "Mention sous une rangée de page mise de côté. Accordé au féminin de « page ». Court."
+  },
+  "organizePageMoved": "Переміщено з позиції {from}",
+  "@organizePageMoved": {
+    "description": "Mention sous une rangée de page qu'on a fait glisser ailleurs. Accordé au féminin de « page ».",
+    "placeholders": {
+      "from": {
+        "type": "int"
+      }
+    }
+  },
+  "organizePageTitle": "Сторінка {number}",
+  "@organizePageTitle": {
+    "description": "Titre d'une rangée de la liste des pages.",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "organizeExcludePage": "Видалити сторінку {number}",
+  "@organizeExcludePage": {
+    "description": "Info-bulle du bouton qui met une page de côté.",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "organizeIncludePage": "Включити сторінку {number}",
+  "@organizeIncludePage": {
+    "description": "Info-bulle du bouton qui remet une page dans le document.",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "organizeMovePage": "Перемістити сторінку {number}",
+  "@organizeMovePage": {
+    "description": "Étiquette d'accessibilité de la poignée de glissement. Lue à voix haute, jamais affichée.",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "organizeExtract": "Екстракт",
+  "@organizeExtract": {
+    "description": "Bouton qui ne garde qu'une plage de pages. Verbe à l'infinitif, court."
+  },
+  "organizeSplit": "Розділити",
+  "@organizeSplit": {
+    "description": "Bouton qui coupe le document en plusieurs fichiers. Verbe à l'infinitif, court."
+  },
+  "organizePreview": "Попередній перегляд",
+  "@organizePreview": {
+    "description": "Bouton qui mène à l'écran d'aperçu. Court."
+  },
+  "organizeExtractTitle": "Витягніть діапазон сторінок",
+  "@organizeExtractTitle": {
+    "description": "Titre de la boîte de dialogue de choix de la plage."
+  },
+  "organizeRangeLabel": "Сторінки {start} до {end}",
+  "@organizeRangeLabel": {
+    "description": "Plage retenue par le curseur double de la boîte d'extraction.",
+    "placeholders": {
+      "start": {
+        "type": "int"
+      },
+      "end": {
+        "type": "int"
+      }
+    }
+  },
+  "organizeSplitTitle": "Розділити на кілька файлів",
+  "@organizeSplitTitle": {
+    "description": "Titre de la boîte de dialogue de division."
+  },
+  "organizeFileCount": "{count} файлів",
+  "@organizeFileCount": {
+    "description": "Nombre de fichiers que la division produira, sous le curseur.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "organizeSplitFailed": "Помилка ділення: {detail}",
+  "@organizeSplitFailed": {
+    "description": "Bandeau d'erreur quand la division échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "scanNoCamera": "На цьому пристрої немає камери.",
+  "@scanNoCamera": {
+    "description": "Message d'erreur quand l'appareil n'expose aucune caméra."
+  },
+  "scanCameraFailed": "Не вдається ініціалізувати камеру: {detail}",
+  "@scanCameraFailed": {
+    "description": "Message d'erreur quand la caméra refuse de démarrer. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "scanCropToolbar": "Налаштувати",
+  "@scanCropToolbar": {
+    "description": "Titre de la barre du recadreur système d'Android, après la prise de vue. Court."
+  },
+  "scanCaptureFailed": "Помилка захоплення: {detail}",
+  "@scanCaptureFailed": {
+    "description": "Bandeau d'erreur quand la prise de vue échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "scanPermissionBody": "Для сканування документа потрібен доступ до камери.",
+  "@scanPermissionBody": {
+    "description": "Explication affichée quand l'autorisation d'accès à la caméra n'a pas été accordée."
+  },
+  "scanGrantPermission": "Дозволити камеру",
+  "@scanGrantPermission": {
+    "description": "Bouton qui redemande l'autorisation d'accès à la caméra. Doit tenir sur une ligne."
+  },
+  "actionRetry": "Спробуйте знову",
+  "@actionRetry": {
+    "description": "Bouton qui relance une opération après un échec. Court."
+  },
+  "scanNoPageYet": "На даний момент немає сторінок.",
+  "@scanNoPageYet": {
+    "description": "Affiché dans la grille de relecture tant qu'aucune page n'a été photographiée."
+  },
+  "scanFinishAction": "Оздоблення · {count}",
+  "@scanFinishAction": {
+    "description": "Bouton qui clôt la capture, suivi du nombre de pages prises. Le point médian est un séparateur typographique. Doit tenir sur une ligne.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "signTitle": "Підпишіть PDF",
+  "@signTitle": {
+    "description": "Titre de la barre de l'outil Signer."
+  },
+  "signIntro": "Додайте намальований від руки підпис на сторінку PDF-файлу. Це простий малюнок, який додається до документа, а не сертифікований електронний підпис.",
+  "@signIntro": {
+    "description": "Consigne en tête de l'outil Signer. La dernière proposition est une réserve juridique — ne la retirez pas."
+  },
+  "signChooseSubtitle": "Виберіть документ для підпису",
+  "@signChooseSubtitle": {
+    "description": "Sous-titre de la rangée qui ouvre la sélection de fichiers."
+  },
+  "signPickPage": "Виберіть сторінку для підпису.",
+  "@signPickPage": {
+    "description": "Consigne au-dessus de la bande de vignettes de pages."
+  },
+  "signDrawTitle": "Намалюй мій підпис",
+  "@signDrawTitle": {
+    "description": "Titre de l'étape où l'on trace la signature au doigt."
+  },
+  "signDrawBody": "Малюйте пальцем, як на папері. Це розміщує дизайн на сторінці — це не сертифікований електронний підпис.",
+  "@signDrawBody": {
+    "description": "Consigne de l'étape de tracé. La réserve juridique de la fin est délibérément répétée ici."
+  },
+  "signNeedDrawing": "Перш ніж продовжити, намалюйте підпис.",
+  "@signNeedDrawing": {
+    "description": "Bandeau d'erreur quand on valide une zone de tracé restée vide."
+  },
+  "signClear": "Щоб стерти",
+  "@signClear": {
+    "description": "Bouton qui vide la zone de tracé. Court."
+  },
+  "signValidate": "Для підтвердження",
+  "@signValidate": {
+    "description": "Bouton qui retient la signature tracée et passe au placement. Court."
+  },
+  "signPlaceBody": "Перетягніть підпис у потрібне місце на сторінці, а потім натисніть «Готово».",
+  "@signPlaceBody": {
+    "description": "Consigne de l'étape de placement. « Terminer » doit reprendre exactement le libellé traduit de actionFinish."
+  },
+  "signPageUnavailable": "Неможливо відобразити сторінку.",
+  "@signPageUnavailable": {
+    "description": "Affiché à la place de la page quand son rendu échoue."
+  },
+  "signProgress": "Додавання підпису…",
+  "@signProgress": {
+    "description": "Titre de la boîte de progression. Garder le caractère de suspension final."
+  },
+  "editTitle": "Примітки до документа",
+  "@editTitle": {
+    "description": "Titre de l'écran vide de l'outil Éditer."
+  },
+  "editEmptyBody": "Додайте текст або виділіть уривки безпосередньо до наявного PDF-файлу.",
+  "@editEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Éditer."
+  },
+  "editAddTextTitle": "Додайте текст",
+  "@editAddTextTitle": {
+    "description": "Titre de la boîte de dialogue de saisie d'une annotation."
+  },
+  "editTextHint": "Ваш текст",
+  "@editTextHint": {
+    "description": "Texte d'invite du champ de saisie de l'annotation."
+  },
+  "editFontSize": "Розмір тексту: {size}",
+  "@editFontSize": {
+    "description": "Intitulé du curseur de corps, dans la boîte de saisie.",
+    "placeholders": {
+      "size": {
+        "type": "int"
+      }
+    }
+  },
+  "editNeedAnnotation": "Додайте принаймні одну анотацію перед завершенням.",
+  "@editNeedAnnotation": {
+    "description": "Bandeau d'erreur quand on termine sans avoir rien ajouté."
+  },
+  "editProgress": "Застосування анотацій…",
+  "@editProgress": {
+    "description": "Titre de la boîte de progression. Garder le caractère de suspension final."
+  },
+  "editChooseOther": "Виберіть інший PDF",
+  "@editChooseOther": {
+    "description": "Info-bulle du bouton qui abandonne le document en cours."
+  },
+  "editUndoTooltip": "Скасувати останню анотацію",
+  "@editUndoTooltip": {
+    "description": "Info-bulle du bouton qui retire la dernière annotation posée. Il s'agit de défaire, pas d'interrompre."
+  },
+  "editModeText": "текст",
+  "@editModeText": {
+    "description": "Onglet du sélecteur : poser du texte. Très court, il tient dans un segment."
+  },
+  "editModeHighlight": "Виділіть",
+  "@editModeHighlight": {
+    "description": "Onglet du sélecteur : surligner un passage. Très court, il tient dans un segment."
+  },
+  "editPageUnavailable": "Неможливо відобразити цю сторінку.",
+  "@editPageUnavailable": {
+    "description": "Affiché à la place de la page quand son rendu échoue."
+  },
+  "ocrEmptyTitle": "Зробіть текст доступним для пошуку",
+  "@ocrEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil OCR."
+  },
+  "ocrEmptyBody": "Текст відсканованого PDF-файлу розпізнається та непомітно додається поверх зображення. Зовнішній вигляд сторінки не змінюється.",
+  "@ocrEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil OCR. La seconde phrase est importante : elle rassure sur le fait que rien n'est abîmé."
+  },
+  "ocrWrongFormat": "Виберіть PDF або зображення (JPG, PNG тощо).",
+  "@ocrWrongFormat": {
+    "description": "Bandeau d'erreur quand le fichier n'est ni un PDF ni une image. Les noms de format ne se traduisent pas."
+  },
+  "ocrProgress": "Виконується розпізнавання…",
+  "@ocrProgress": {
+    "description": "Titre de la boîte de progression pendant la reconnaissance de caractères. Garder le caractère de suspension final."
+  },
+  "ocrFailed": "Не вдалося розпізнати: {detail}",
+  "@ocrFailed": {
+    "description": "Bandeau d'erreur quand la reconnaissance échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "ocrRunAction": "Почати розпізнавання",
+  "@ocrRunAction": {
+    "description": "Bouton de bas d'écran qui lance l'OCR. Doit tenir sur une ligne."
+  },
+  "ocrResultTitle": "Результат OCR",
+  "@ocrResultTitle": {
+    "description": "Titre de la barre de l'écran de résultat. « OCR » est un sigle international, à conserver."
+  },
+  "ocrResultBody": "Проаналізовано {count} сторінок. PDF-файл із можливістю пошуку готовий, і ви також можете скопіювати весь розпізнаний текст.",
+  "@ocrResultBody": {
+    "description": "Résumé de l'écran de résultat : combien de pages ont été traitées et ce qu'on peut faire ensuite.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "ocrCopyText": "Скопіюйте текст",
+  "@ocrCopyText": {
+    "description": "Bouton qui met tout le texte reconnu dans le presse-papiers."
+  },
+  "ocrTextCopied": "Текст скопійовано.",
+  "@ocrTextCopied": {
+    "description": "Bandeau confirmant la copie dans le presse-papiers."
+  },
+  "redactIntro": "Назавжди приховати частини PDF-файлу (імена, адреси, суми). На відміну від простого чорного прямокутника, розміщеного зверху, прихований текст фактично видаляється з файлу, а не просто покривається: його більше не можна вибрати чи скопіювати.",
+  "@redactIntro": {
+    "description": "Consigne en tête de l'outil Caviarder. La distinction avec un rectangle noir décoratif est le cœur de l'outil — ne l'allégez pas."
+  },
+  "redactChooseSubtitle": "Виберіть документ для редагування",
+  "@redactChooseSubtitle": {
+    "description": "Sous-titre de la rangée qui ouvre la sélection de fichiers."
+  },
+  "redactCaveat": "Зверніть увагу: для видалення прихованого тексту кожна сторінка документа перетворюється на зображення (200 ppi). Таким чином, результат більше не є PDF-файлом, з якого можна вибрати текст, і отриманий файл, як правило, важчий за оригінал.",
+  "@redactCaveat": {
+    "description": "Le prix à payer du caviardage réel. « ppp » est l'abréviation française de « points par pouce » ; l'anglais et la plupart des langues emploient « dpi »."
+  },
+  "redactEmptyPdf": "Цей PDF-файл не містить сторінок.",
+  "@redactEmptyPdf": {
+    "description": "Bandeau d'erreur quand le document choisi est vide."
+  },
+  "redactOpenFailed": "Не вдається відкрити цей PDF (він може бути захищений паролем): {detail}",
+  "@redactOpenFailed": {
+    "description": "Bandeau d'erreur quand le PDF ne peut pas être lu. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "redactPageRenderFailed": "Сторінку {number} не можна відобразити: {detail}",
+  "@redactPageRenderFailed": {
+    "description": "Bandeau d'erreur quand une page ne peut pas être rendue à l'écran. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      },
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "redactUndoTooltip": "Скасувати останню зону",
+  "@redactUndoTooltip": {
+    "description": "Info-bulle du bouton qui retire le dernier rectangle tracé. Il s'agit de défaire, pas d'interrompre."
+  },
+  "redactInstructions": "Проведіть пальцем по сторінці, щоб намалювати область, яку потрібно приховати. Закритий текст буде видалено з файлу, а не лише закритий.",
+  "@redactInstructions": {
+    "description": "Consigne au-dessus de la page, dans l'éditeur."
+  },
+  "redactPagePrevious": "Попередня сторінка",
+  "@redactPagePrevious": {
+    "description": "Info-bulle de la flèche qui remonte d'une page."
+  },
+  "redactPageNext": "Наступна сторінка",
+  "@redactPageNext": {
+    "description": "Info-bulle de la flèche qui descend d'une page."
+  },
+  "redactPager": "Сторінка {current} / {total}",
+  "@redactPager": {
+    "description": "Position dans le document, entre les deux flèches de navigation. Forme abrégée avec une barre oblique.",
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "redactNoZone": "Немає нанесеної ділянки",
+  "@redactNoZone": {
+    "description": "Affiché au-dessus des boutons tant qu'aucun rectangle n'a été tracé."
+  },
+  "redactZoneCount": "{count} областей, які потрібно приховати",
+  "@redactZoneCount": {
+    "description": "Nombre de rectangles tracés, au-dessus des boutons.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "redactOtherPdf": "Інший PDF",
+  "@redactOtherPdf": {
+    "description": "Bouton qui abandonne le document en cours pour en ouvrir un autre. Court."
+  },
+  "redactAction": "Відредагувати",
+  "@redactAction": {
+    "description": "Bouton qui applique le caviardage. Verbe à l'infinitif, court ; employez le terme consacré de votre langue."
+  },
+  "redactProgress": "Виконується редакція…",
+  "@redactProgress": {
+    "description": "Titre de la boîte de progression. Garder le caractère de suspension final."
+  },
+  "cropEmptyTitle": "Обріжте поля",
+  "@cropEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Rogner."
+  },
+  "cropEmptyBody": "Виберіть PDF-файл, потім проведіть пальцем по попередньому перегляду, щоб окреслити область, яку потрібно зберегти.",
+  "@cropEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Rogner."
+  },
+  "cropTooSmall": "Вибрана область замала.",
+  "@cropTooSmall": {
+    "description": "Bandeau d'erreur quand la zone tracée au doigt est trop réduite pour donner une page."
+  },
+  "cropProgress": "Виконується обрізка…",
+  "@cropProgress": {
+    "description": "Titre de la boîte de progression. Garder le caractère de suspension final."
+  },
+  "cropFailed": "Не вдалося обрізати: {detail}",
+  "@cropFailed": {
+    "description": "Bandeau d'erreur quand le recadrage échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "cropKeptArea": "Заповідна територія",
+  "@cropKeptArea": {
+    "description": "Intitulé au-dessus de l'aperçu sur lequel on trace la zone à garder."
+  },
+  "cropDimensions": "{width} × {height} мм ({widthPercent} % × {heightPercent} %)",
+  "@cropDimensions": {
+    "description": "Dimensions de la zone tracée, en millimètres puis en proportion de la page. Le signe × est le symbole de multiplication. L'espace avant le signe % est une convention française.",
+    "placeholders": {
+      "width": {
+        "type": "int"
+      },
+      "height": {
+        "type": "int"
+      },
+      "widthPercent": {
+        "type": "int"
+      },
+      "heightPercent": {
+        "type": "int"
+      }
+    }
+  },
+  "cropFullPage": "Повна сторінка",
+  "@cropFullPage": {
+    "description": "Bouton qui remet la zone aux dimensions de la page entière."
+  },
+  "cropAllPages": "Застосувати до всіх сторінок",
+  "@cropAllPages": {
+    "description": "Intitulé de l'interrupteur qui étend le recadrage au document entier."
+  },
+  "cropAllPagesOn": "На кожній сторінці вирізається однакова ділянка.",
+  "@cropAllPagesOn": {
+    "description": "Sous-titre de l'interrupteur quand il est activé."
+  },
+  "cropAllPagesOff": "Обрізається лише перша сторінка, інші залишаються цілими.",
+  "@cropAllPagesOff": {
+    "description": "Sous-titre de l'interrupteur quand il est désactivé."
+  },
+  "cropCaveat": "Обрізання зменшує розмір сторінки: вміст за межами області більше не відображається та не друкується.",
+  "@cropCaveat": {
+    "description": "Ce que le recadrage fait au document, dit avant qu'on l'applique."
+  },
+  "cropAction": "кадрування",
+  "@cropAction": {
+    "description": "Bouton de bas d'écran qui lance le recadrage. Verbe à l'infinitif, court."
+  },
+  "compareTitle": "Порівняйте два PDF-файли",
+  "@compareTitle": {
+    "description": "Titre de la barre de l'outil Comparer."
+  },
+  "compareEmptyTitle": "Що змінилося",
+  "@compareEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Comparer."
+  },
+  "compareEmptyBody": "Виберіть дві версії одного PDF-файлу. Додані та видалені уривки будуть розміщені поруч один з одним сторінка за сторінкою.",
+  "@compareEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Comparer."
+  },
+  "compareSlotA": "Файл А",
+  "@compareSlotA": {
+    "description": "Intitulé de la première case : la version de départ. La lettre A sert de repère, gardez-la."
+  },
+  "compareSlotB": "Файл Б",
+  "@compareSlotB": {
+    "description": "Intitulé de la seconde case : la version à confronter. La lettre B sert de repère, gardez-la."
+  },
+  "compareAction": "Порівняйте",
+  "@compareAction": {
+    "description": "Bouton qui lance la comparaison. Verbe à l'infinitif, court."
+  },
+  "compareProgress": "Триває порівняння…",
+  "@compareProgress": {
+    "description": "Titre de la boîte de progression. Garder le caractère de suspension final."
+  },
+  "compareFailed": "Не вдалося порівняти: {detail}",
+  "@compareFailed": {
+    "description": "Bandeau d'erreur quand la comparaison échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "compareChangedPages": "{changed} сторінки відрізняються на {total}",
+  "@compareChangedPages": {
+    "description": "Résumé de la comparaison : combien de pages diffèrent, sur combien au total. Accordez le verbe au nombre.",
+    "placeholders": {
+      "changed": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "compareNoDifference": "Між двома файлами не виявлено відмінностей.",
+  "@compareNoDifference": {
+    "description": "Affiché quand les deux documents sont identiques mot pour mot."
+  },
+  "comparePageHeading": "Сторінка {number}",
+  "@comparePageHeading": {
+    "description": "Titre d'une carte de résultat, pour une page qui a changé.",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "organizeFilesCreated": "Створено файлів: {count}",
+  "@organizeFilesCreated": {
+    "description": "Titre de la feuille de résultats de la division : combien de fichiers en sont sortis.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "organizePartTitle": "Частина {number}",
+  "@organizePartTitle": {
+    "description": "Nom d'un des fichiers issus de la division, dans la liste des résultats et dans la feuille de confirmation.",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  }
+}

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../l10n/l10n.dart';
+
 /// Le bandeau « voici le fichier sur lequel vous travaillez ».
 ///
 /// Huit écrans portaient chacun leur copie de cette carte, et chaque copie
@@ -51,6 +53,7 @@ class PickedFileCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = context.l10n;
     return Card(
       child: ListTile(
         leading: Icon(icon),
@@ -60,12 +63,12 @@ class PickedFileCard extends StatelessWidget {
         trailing: onChange != null
             ? TextButton(
                 onPressed: busy ? null : onChange,
-                child: const Text('Changer', maxLines: 1),
+                child: Text(l10n.actionChange, maxLines: 1),
               )
             : onClear == null
             ? null
             : IconButton(
-                tooltip: 'Retirer ce fichier',
+                tooltip: l10n.actionRemoveFile,
                 icon: const Icon(Icons.close),
                 onPressed: busy ? null : onClear,
               ),

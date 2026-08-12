@@ -1,0 +1,2369 @@
+{
+  "@@locale": "fil",
+  "appTitle": "Paper clip — PDF, Scan at Word",
+  "@appTitle": {
+    "description": "Titre affiché par le sélecteur de tâches d'Android au-dessus de l'aperçu de l'application. La marque « Trombone » ne se traduit jamais ; seuls les mots-clés qui la suivent peuvent l'être."
+  },
+  "appWordmark": "Trombone",
+  "@appWordmark": {
+    "description": "La signature de marque en haut de l'écran d'accueil. NE PAS TRADUIRE — c'est un nom propre, identique dans les vingt-cinq langues."
+  },
+  "actionSave": "I-save",
+  "@actionSave": {
+    "description": "Action principale de fin de parcours : écrire le fichier produit sur l'appareil. Bouton pleine largeur, doit tenir sur une ligne."
+  },
+  "actionShare": "Ibahagi",
+  "@actionShare": {
+    "description": "Ouvre la fenêtre de partage du système. Bouton de demi-largeur, doit tenir sur une ligne."
+  },
+  "actionCompress": "I-compress",
+  "@actionCompress": {
+    "description": "Réduit le poids du PDF. Bouton de demi-largeur, doit tenir sur une ligne."
+  },
+  "actionDone": "Tapos na",
+  "@actionDone": {
+    "description": "Acquitte la feuille de confirmation d'export et sort de l'outil."
+  },
+  "actionCancel": "Kanselahin",
+  "@actionCancel": {
+    "description": "Interrompt une opération en cours dans la boîte de progression."
+  },
+  "actionChange": "Para magbago",
+  "@actionChange": {
+    "description": "Remplace le fichier choisi par un autre. Bouton texte étroit posé au bout d'une rangée — libellé court impératif."
+  },
+  "actionContinue": "Magpatuloy",
+  "@actionContinue": {
+    "description": "Libellé de repli du bouton d'un écran vide quand l'outil n'en propose pas de plus précis."
+  },
+  "actionOpening": "Binubuksan…",
+  "@actionOpening": {
+    "description": "État transitoire d'un bouton pendant que la boîte de sélection de fichiers du système s'ouvre. Garder le caractère de suspension final."
+  },
+  "actionRemoveFile": "Alisin ang file na ito",
+  "@actionRemoveFile": {
+    "description": "Info-bulle de la croix qui ramène l'écran à son état vide."
+  },
+  "progressPreparing": "Paghahanda…",
+  "@progressPreparing": {
+    "description": "Affiché sous la barre de progression tant que le travail total n'est pas connu. Garder le caractère de suspension final."
+  },
+  "progressPercent": "{percent} %",
+  "@progressPercent": {
+    "description": "Avancement en pourcentage. L'espace avant le signe % est une convention française ; les langues qui collent le signe au chiffre doivent écrire « {percent}% ».",
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "emptyReassurance": "Libreng pag-export, walang watermark o limitasyon.",
+  "@emptyReassurance": {
+    "description": "Note verte sous le bouton d'un écran vide. Répond à la peur du marché : découvrir un paiement au moment d'enregistrer. Doit rester une phrase brève, tenant sur une à deux lignes."
+  },
+  "emptyAcceptedFormats": "Mga tinatanggap na format",
+  "@emptyAcceptedFormats": {
+    "description": "Intitulé de la rangée de puces listant les formats que l'outil sait ouvrir."
+  },
+  "exportSavedTitle": "Ito ay naitala.",
+  "@exportSavedTitle": {
+    "description": "Titre de la feuille de confirmation, après écriture réussie du fichier. Ton rassurant et affirmatif ; c'est le seul moment célébré de l'application."
+  },
+  "exportSavedBody": "Sa ilalim ng pangalan at sa folder na kakapili mo lang. Walang watermark, walang limitasyon, walang i-unlock.",
+  "@exportSavedBody": {
+    "description": "Corps de la feuille de confirmation. Rappelle que rien n'est verrouillé derrière un paiement — la promesse centrale du produit."
+  },
+  "exportSaveDialogTitle": "I-save ang PDF",
+  "@exportSaveDialogTitle": {
+    "description": "Titre de la boîte système d'enregistrement de fichier."
+  },
+  "pageTileIncluded": "Pahina {number}, kasama. Pindutin upang itabi ito.",
+  "@pageTileIncluded": {
+    "description": "Étiquette d'accessibilité d'une vignette de page retenue. Lue à voix haute, jamais affichée.",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "pageTileExcluded": "Pahina {number}, itinapon. Pindutin upang isama ito.",
+  "@pageTileExcluded": {
+    "description": "Étiquette d'accessibilité d'une vignette de page écartée. Lue à voix haute, jamais affichée.",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "pageTileRotate": "I-rotate ang page {number}",
+  "@pageTileRotate": {
+    "description": "Info-bulle du bouton de rotation sous une vignette de page.",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "sectionHeaderSemantics": "{title}, {count} tool",
+  "@sectionHeaderSemantics": {
+    "description": "Étiquette d'accessibilité d'un en-tête de section de l'accueil. Lue à voix haute, jamais affichée.",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "toolCount": "{count} na mga tool",
+  "@toolCount": {
+    "description": "Décompte des outils, au colophon de l'accueil. Le nombre est calculé depuis le catalogue, jamais saisi.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePromise": "Gawin ang iyong dokumento, i-export ito.\nWalang pader sa dulo.",
+  "@homePromise": {
+    "description": "La promesse sous la marque, en haut de l'accueil. Elle désamorce la peur relevée dans les avis du marché : découvrir un paiement obligatoire au moment d'enregistrer. Le saut de ligne est intentionnel — deux lignes exactement, la seconde plus courte que la première."
+  },
+  "homeChipNoAccount": "Nang walang account",
+  "@homeChipNoAccount": {
+    "description": "Puce de garantie : aucune inscription n'est demandée. Deux ou trois mots maximum, la puce est étroite."
+  },
+  "homeChipNoWatermark": "Walang watermark",
+  "@homeChipNoWatermark": {
+    "description": "Puce de garantie : les fichiers exportés ne portent aucune marque apposée. Deux ou trois mots maximum."
+  },
+  "homeChipUnlimited": "Walang limitasyong pag-export",
+  "@homeChipUnlimited": {
+    "description": "Puce de garantie : aucun quota sur le nombre d'exports. Deux ou trois mots maximum."
+  },
+  "homeSearchTooltip": "Maghanap ng tool",
+  "@homeSearchTooltip": {
+    "description": "Info-bulle de la loupe épinglée à la barre de titre de l'accueil."
+  },
+  "homeColophon": "Walang na-unlock laban sa pagbabayad kapag nagrerehistro. Ang pag-export ay libre, walang watermark at walang limitasyon sa bilang.",
+  "@homeColophon": {
+    "description": "Texte de pied d'accueil, sous le décompte des outils. Répète la promesse en toutes lettres."
+  },
+  "sectionFeatured": "Itinatampok",
+  "@sectionFeatured": {
+    "description": "Famille des cinq outils mis en avant dans la bande bento. Apparaît en sous-titre des résultats de recherche. Court."
+  },
+  "sectionToPdf": "Sa PDF",
+  "@sectionToPdf": {
+    "description": "Famille des outils qui produisent un PDF depuis un autre format. Titre de section de l'accueil : doit tenir sur une ligne à côté d'un filet et d'une pastille de compte."
+  },
+  "sectionFromPdf": "Mula sa PDF",
+  "@sectionFromPdf": {
+    "description": "Famille des outils qui tirent autre chose d'un PDF. Titre de section : doit tenir sur une ligne."
+  },
+  "sectionSecurity": "Seguridad",
+  "@sectionSecurity": {
+    "description": "Famille des outils de protection, déverrouillage, réparation et caviardage. Titre de section : doit tenir sur une ligne."
+  },
+  "sectionEdit": "I-edit",
+  "@sectionEdit": {
+    "description": "Famille des outils qui modifient un PDF en place. Titre de section, verbe à l'infinitif : doit tenir sur une ligne."
+  },
+  "toolMerge": "Pagsamahin",
+  "@toolMerge": {
+    "description": "Outil : réunit plusieurs documents en un seul PDF. Libellé de tuile — verbe à l'infinitif, court, il s'affiche sur une tuile de 96 dp de large."
+  },
+  "toolMergeKeywords": "assemble combine join regroup join together concatenate",
+  "@toolMergeKeywords": {
+    "description": "Mots que l'utilisateur peut taper pour trouver l'outil « Fusionner » sans en connaître le nom exact. Séparés par des espaces, sans accents ni ponctuation, en minuscules. Ce ne sont PAS des traductions mot à mot : donnez les synonymes naturels de votre langue, y compris les termes empruntés à l'anglais s'ils sont d'usage courant. Ajoutez-en ou retirez-en librement."
+  },
+  "toolMergeSubtitle": "PDF, Word, mga imahe at teksto sa isang dokumento",
+  "@toolMergeSubtitle": {
+    "description": "Sous-titre du grand bloc bento de l'accueil. Une ligne descriptive, deux au plus."
+  },
+  "toolRectoVerso": "Dalawang panig",
+  "@toolRectoVerso": {
+    "description": "Outil : intercale deux scans — les pages impaires et les pages paires — pour reconstituer un document imprimé des deux côtés. Libellé de tuile, court."
+  },
+  "toolRectoVersoKeywords": "double sided intersperse scan kahit na kakaiba",
+  "@toolRectoVersoKeywords": {
+    "description": "Mots de recherche pour « Recto-verso ». Séparés par des espaces, sans accents, en minuscules. Donnez les synonymes naturels de votre langue plutôt qu'une traduction mot à mot."
+  },
+  "toolRectoVersoSubtitle": "Dalawang scan, ibalik sa ayos",
+  "@toolRectoVersoSubtitle": {
+    "description": "Sous-titre d'un bloc bento moyen. Très court — une ligne, six mots au plus."
+  },
+  "toolImagesToPdf": "Mga larawan sa PDF",
+  "@toolImagesToPdf": {
+    "description": "Outil : assemble des photos en un PDF. Libellé de tuile, court."
+  },
+  "toolImagesToPdfKeywords": "larawan jpg jpeg png larawan album device",
+  "@toolImagesToPdfKeywords": {
+    "description": "Mots de recherche pour « Images vers PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolImagesToPdfSubtitle": "Mga larawan at pagkuha sa isang dokumento",
+  "@toolImagesToPdfSubtitle": {
+    "description": "Sous-titre d'un bloc bento moyen. Très court — une ligne, six mots au plus."
+  },
+  "toolPdfToWord": "PDF sa Word",
+  "@toolPdfToWord": {
+    "description": "Outil : convertit un PDF en document Word modifiable. « Word » est une marque, elle ne se traduit pas. Libellé de tuile, court."
+  },
+  "toolPdfToWordKeywords": "docx editable word processor convert",
+  "@toolPdfToWordKeywords": {
+    "description": "Mots de recherche pour « PDF vers Word ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolPdfToWordSubtitle": "Teksto at mga talahanayan, nae-edit",
+  "@toolPdfToWordSubtitle": {
+    "description": "Sous-titre d'un bloc bento moyen. Très court — une ligne, six mots au plus."
+  },
+  "toolOrganize": "Ayusin ang isang PDF",
+  "@toolOrganize": {
+    "description": "Outil : réordonne, extrait, divise et supprime des pages. Libellé de tuile, court."
+  },
+  "toolOrganizeKeywords": "hatiin ang hiwalay na extract muling ayusin ang mga pahina ng pagkakasunud-sunod tanggalin",
+  "@toolOrganizeKeywords": {
+    "description": "Mots de recherche pour « Organiser un PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolOrganizeSubtitle": "Hatiin, kunin, muling ayusin",
+  "@toolOrganizeSubtitle": {
+    "description": "Sous-titre d'un bloc bento moyen. Très court — trois verbes à l'infinitif."
+  },
+  "toolExcelToPdf": "Excel sa PDF",
+  "@toolExcelToPdf": {
+    "description": "Outil : convertit un classeur en PDF. « Excel » est une marque, elle ne se traduit pas. Libellé de tuile, court."
+  },
+  "toolExcelToPdfKeywords": "xlsx spreadsheet workbook sheet ng pagkalkula",
+  "@toolExcelToPdfKeywords": {
+    "description": "Mots de recherche pour « Excel vers PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolPptxToPdf": "PowerPoint sa PDF",
+  "@toolPptxToPdf": {
+    "description": "Outil : convertit une présentation en PDF. « PowerPoint » est une marque, elle ne se traduit pas. Libellé de tuile."
+  },
+  "toolPptxToPdfKeywords": "pptx slide presentation slides",
+  "@toolPptxToPdfKeywords": {
+    "description": "Mots de recherche pour « PowerPoint vers PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolHtmlToPdf": "Web page sa PDF",
+  "@toolHtmlToPdf": {
+    "description": "Outil : enregistre une page web en PDF depuis son adresse. Libellé de tuile, court."
+  },
+  "toolHtmlToPdfKeywords": "html website url link na artikulo",
+  "@toolHtmlToPdfKeywords": {
+    "description": "Mots de recherche pour « Page web vers PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolScan": "I-scan ang isang dokumento",
+  "@toolScan": {
+    "description": "Outil : photographie des pages avec l'appareil et les redresse en PDF. Libellé de tuile, court."
+  },
+  "toolScanKeywords": "camera photo digitize scan device paper",
+  "@toolScanKeywords": {
+    "description": "Mots de recherche pour « Scanner un document ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolPdfToExcel": "PDF sa Excel",
+  "@toolPdfToExcel": {
+    "description": "Outil : extrait les tableaux d'un PDF vers un classeur. « Excel » est une marque. Libellé de tuile, court."
+  },
+  "toolPdfToExcelKeywords": "xlsx spreadsheet table extract data",
+  "@toolPdfToExcelKeywords": {
+    "description": "Mots de recherche pour « PDF vers Excel ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolPdfToPptx": "PDF sa PowerPoint",
+  "@toolPdfToPptx": {
+    "description": "Outil : transforme chaque page en diapositive. « PowerPoint » est une marque. Libellé de tuile."
+  },
+  "toolPdfToPptxKeywords": "pptx slide presentation slides",
+  "@toolPdfToPptxKeywords": {
+    "description": "Mots de recherche pour « PDF vers PowerPoint ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolPdfToImages": "PDF sa Mga Larawan",
+  "@toolPdfToImages": {
+    "description": "Outil : exporte chaque page en fichier image. Libellé de tuile, court."
+  },
+  "toolPdfToImagesKeywords": "jpg png photo export capture",
+  "@toolPdfToImagesKeywords": {
+    "description": "Mots de recherche pour « PDF vers Images ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolOcr": "Naghahanap ng teksto (OCR)",
+  "@toolOcr": {
+    "description": "Outil : reconnaît les caractères d'un PDF scanné pour le rendre sélectionnable. « OCR » est un sigle international, à conserver tel quel entre parenthèses. Libellé de tuile."
+  },
+  "toolOcrKeywords": "character recognition scan copy piliin",
+  "@toolOcrKeywords": {
+    "description": "Mots de recherche pour « Texte cherchable (OCR) ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolPdfA": "I-convert sa PDF/A",
+  "@toolPdfA": {
+    "description": "Outil : produit la variante normalisée d'archivage. « PDF/A » est une norme ISO, à conserver telle quelle. Libellé de tuile."
+  },
+  "toolPdfAKeywords": "pag-archive ng karaniwang pangmatagalang konserbasyon",
+  "@toolPdfAKeywords": {
+    "description": "Mots de recherche pour « Convertir en PDF/A ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolProtect": "Protektahan ang PDF",
+  "@toolProtect": {
+    "description": "Outil : chiffre le document derrière un mot de passe. Libellé de tuile, court."
+  },
+  "toolProtectKeywords": "password padlock encrypt lock secure",
+  "@toolProtectKeywords": {
+    "description": "Mots de recherche pour « Protéger PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolUnlock": "I-unlock ang PDF",
+  "@toolUnlock": {
+    "description": "Outil : retire le mot de passe d'un PDF dont on connaît le mot de passe. Libellé de tuile, court."
+  },
+  "toolUnlockKeywords": "tanggalin ang password open decrypt unlock padlock",
+  "@toolUnlockKeywords": {
+    "description": "Mots de recherche pour « Déverrouiller PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolRepair": "Ayusin ang PDF",
+  "@toolRepair": {
+    "description": "Outil : récupère ce qui peut l'être d'un fichier endommagé. Libellé de tuile, court."
+  },
+  "toolRepairKeywords": "corrupted unreadable damaged recover error",
+  "@toolRepairKeywords": {
+    "description": "Mots de recherche pour « Réparer PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolRedact": "I-react ang isang PDF",
+  "@toolRedact": {
+    "description": "Outil : recouvre définitivement des zones du document pour anonymiser. Le terme métier consacré en français est « caviarder » ; employez l'équivalent consacré de votre langue (anglais : redact). Libellé de tuile."
+  },
+  "toolRedactKeywords": "itago blacken anonymize confidential delete",
+  "@toolRedactKeywords": {
+    "description": "Mots de recherche pour « Caviarder un PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolEdit": "I-edit ang PDF",
+  "@toolEdit": {
+    "description": "Outil : ajoute ou corrige du texte sur les pages. Libellé de tuile, court."
+  },
+  "toolEditKeywords": "text modify tamang annotate write",
+  "@toolEditKeywords": {
+    "description": "Mots de recherche pour « Éditer PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolSign": "Lagda",
+  "@toolSign": {
+    "description": "Outil : appose une signature tracée au doigt. Libellé de tuile, un seul verbe."
+  },
+  "toolSignKeywords": "lagda paunang kontrata kamay",
+  "@toolSignKeywords": {
+    "description": "Mots de recherche pour « Signer ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolWatermark": "Watermark",
+  "@toolWatermark": {
+    "description": "Outil : appose une mention en travers des pages (« CONFIDENTIEL », « BROUILLON »). Libellé de tuile, un seul mot si possible."
+  },
+  "toolWatermarkKeywords": "watermark kumpidensyal na stamp draft mark",
+  "@toolWatermarkKeywords": {
+    "description": "Mots de recherche pour « Filigrane ». Séparés par des espaces, sans accents, en minuscules. Gardez « watermark » : le terme anglais est cherché dans toutes les langues."
+  },
+  "toolPageNumbers": "Mga numero ng pahina",
+  "@toolPageNumbers": {
+    "description": "Outil : appose une pagination. Libellé de tuile, court."
+  },
+  "toolPageNumbersKeywords": "mga numero ng numero ng pagination folio",
+  "@toolPageNumbersKeywords": {
+    "description": "Mots de recherche pour « Numéros de page ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolCrop": "I-crop ang isang PDF",
+  "@toolCrop": {
+    "description": "Outil : recadre les pages en retirant les marges. Libellé de tuile, court."
+  },
+  "toolCropKeywords": "gupitin ang mga gilid ng laki ng mga gilid ng pananim",
+  "@toolCropKeywords": {
+    "description": "Mots de recherche pour « Rogner un PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolCompare": "Ihambing ang PDF",
+  "@toolCompare": {
+    "description": "Outil : met deux versions face à face et signale ce qui change. Libellé de tuile, court."
+  },
+  "toolCompareKeywords": "pagkakaiba ng mga bersyon diff pagbabago",
+  "@toolCompareKeywords": {
+    "description": "Mots de recherche pour « Comparer PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "searchHint": "Pagsamahin, password, watermark...",
+  "@searchHint": {
+    "description": "Texte d'invite du champ de recherche. Trois exemples de requêtes séparés par des virgules, suivis d'un caractère de suspension. Choisissez trois exemples naturels dans votre langue plutôt qu'une traduction littérale."
+  },
+  "searchClear": "Para burahin",
+  "@searchClear": {
+    "description": "Info-bulle de la croix qui vide le champ de recherche."
+  },
+  "searchNoResultTitle": "Walang mga tool para sa \"{query}\".",
+  "@searchNoResultTitle": {
+    "description": "Titre affiché quand aucun outil ne correspond. Les guillemets français « » doivent être remplacés par ceux de votre langue.",
+    "placeholders": {
+      "query": {
+        "type": "String"
+      }
+    }
+  },
+  "searchNoResultBody": "Subukan ang format na nasa kamay mo – “Word”, “Excel”, “photo” – o anumang gusto mong gawin dito: “sign”, “divide”, “password”.",
+  "@searchNoResultBody": {
+    "description": "Conseil affiché sous le titre d'absence de résultat. Les exemples entre guillemets doivent être adaptés à votre langue, pas traduits littéralement. Employez les guillemets de votre langue."
+  },
+  "actionUndo": "Kanselahin",
+  "@actionUndo": {
+    "description": "Défait la dernière action — retrait d'un fichier, compression appliquée. ATTENTION : ce n'est PAS « interrompre » (voir actionCancel). Le français emploie le même mot pour les deux, la plupart des langues non : anglais « Undo » contre « Cancel », allemand « Rückgängig » contre « Abbrechen »."
+  },
+  "actionApply": "Mag-apply",
+  "@actionApply": {
+    "description": "Valide le réglage choisi et l'applique au document."
+  },
+  "actionChoose": "Pumili",
+  "@actionChoose": {
+    "description": "Ouvre la boîte de sélection de fichiers du système. Libellé court, souvent au bout d'une rangée étroite."
+  },
+  "actionChoosePdf": "Pumili ng PDF",
+  "@actionChoosePdf": {
+    "description": "Bouton principal d'un écran vide dont l'outil ne travaille que sur des PDF."
+  },
+  "actionChooseFiles": "Pumili ng mga file",
+  "@actionChooseFiles": {
+    "description": "Bouton principal d'un écran vide dont l'outil accepte plusieurs fichiers à la fois."
+  },
+  "actionConvert": "Magbalik-loob",
+  "@actionConvert": {
+    "description": "Lance la conversion. Bouton pleine largeur en bas d'écran."
+  },
+  "actionFinish": "Upang tapusin",
+  "@actionFinish": {
+    "description": "Clôt une capture en plusieurs pages et passe à la suite."
+  },
+  "actionBack": "Bumalik",
+  "@actionBack": {
+    "description": "Info-bulle de la flèche qui remonte d'un écran."
+  },
+  "actionAdd": "Idagdag",
+  "@actionAdd": {
+    "description": "Ajoute un élément à une liste. Libellé court."
+  },
+  "noFileChosen": "Walang napiling file",
+  "@noFileChosen": {
+    "description": "Sous-titre d'une rangée tant qu'aucun fichier n'a été retenu."
+  },
+  "errorExportFailed": "Nabigo ang pag-export: {detail}",
+  "@errorExportFailed": {
+    "description": "Bandeau d'erreur quand l'écriture du fichier échoue. {detail} est un message technique non traduit, rendu tel quel.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "errorShareFailed": "Nabigo ang pagbabahagi: {detail}",
+  "@errorShareFailed": {
+    "description": "Bandeau d'erreur quand la fenêtre de partage échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "errorOpenFailed": "Hindi mabuksan ang file: {detail}",
+  "@errorOpenFailed": {
+    "description": "Bandeau d'erreur quand le fichier choisi ne peut pas être lu. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "errorConversionFailed": "Nabigo ang conversion: {detail}",
+  "@errorConversionFailed": {
+    "description": "Bandeau d'erreur quand une conversion de format échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "errorOnFile": "{name}: {detail}",
+  "@errorOnFile": {
+    "description": "Bandeau d'erreur rattaché à un fichier précis d'une sélection multiple. Ne traduire que la ponctuation de séparation si votre langue en emploie une autre.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "errorPickPdf": "Mangyaring pumili ng PDF file.",
+  "@errorPickPdf": {
+    "description": "Bandeau d'erreur quand l'outil exige un PDF et qu'on lui a donné autre chose."
+  },
+  "sizeBytes": "{value} o",
+  "@sizeBytes": {
+    "description": "Poids d'un fichier en octets. L'abréviation est « o » en français, « B » en anglais — employez celle de votre langue.",
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "sizeKb": "{value} KB",
+  "@sizeKb": {
+    "description": "Poids d'un fichier en kilo-octets. L'abréviation est « Ko » en français, « KB » en anglais et dans la plupart des langues — employez celle de la vôtre.",
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "sizeMb": "{value} MB",
+  "@sizeMb": {
+    "description": "Poids d'un fichier en méga-octets. L'abréviation est « Mo » en français, « MB » en anglais et dans la plupart des langues — employez celle de la vôtre.",
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "sizeApprox": "~{size}",
+  "@sizeApprox": {
+    "description": "Taille estimée, précédée du signe « environ ». {size} est déjà formaté (« 240 Ko »). Le tilde et non le signe ≈ : ce dernier manque au sous-ensemble des fontes embarquées. Voir test/l10n_coverage_test.dart.",
+    "placeholders": {
+      "size": {
+        "type": "String"
+      }
+    }
+  },
+  "pageCount": "{count} na mga pahina",
+  "@pageCount": {
+    "description": "Décompte de pages. Employez les formes plurielles de votre langue — le polonais, le tchèque, le lituanien et le letton en ont plus de deux.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pageCountOfTotal": "{kept} page out of {total}",
+  "@pageCountOfTotal": {
+    "description": "Décompte partiel : combien de pages sont retenues sur combien au total. Affiché seulement quand on en a écarté ; « 3 pages sur 3 » n'apparaît jamais.",
+    "placeholders": {
+      "kept": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "pageOfTotal": "Pahina {current} sa {total}",
+  "@pageOfTotal": {
+    "description": "Titre de la visionneuse plein écran : quelle page on regarde, sur combien.",
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "formatPdf": "PDF",
+  "@formatPdf": {
+    "description": "Puce de format acceptable. Sigle international, à conserver tel quel dans toutes les langues."
+  },
+  "formatWord": "salita",
+  "@formatWord": {
+    "description": "Puce de format acceptable. Marque déposée, à conserver telle quelle."
+  },
+  "formatExcel": "Excel",
+  "@formatExcel": {
+    "description": "Puce de format acceptable. Marque déposée, à conserver telle quelle."
+  },
+  "formatPowerPoint": "Power point",
+  "@formatPowerPoint": {
+    "description": "Puce de format acceptable. Marque déposée, à conserver telle quelle."
+  },
+  "formatImages": "Mga larawan",
+  "@formatImages": {
+    "description": "Puce de format acceptable : les fichiers d'image en général."
+  },
+  "formatText": "Text",
+  "@formatText": {
+    "description": "Puce de format acceptable : les fichiers texte brut."
+  },
+  "mergeAddFile": "Magdagdag ng file",
+  "@mergeAddFile": {
+    "description": "Libellé de la carte à contour tireté en fin de liste, qui ouvre la sélection de fichiers."
+  },
+  "mergeAddHint": "PDF, Word, mga larawan o teksto",
+  "@mergeAddHint": {
+    "description": "Ligne sous le libellé de la carte d'ajout, énumérant ce qui est accepté."
+  },
+  "mergeEmptyTitle": "Isang dokumento",
+  "@mergeEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Fusionner : ce qu'on va obtenir, en trois mots."
+  },
+  "mergeEmptyBody": "Magdagdag ng mga PDF, Word file, larawan o text. Maaari mong muling ayusin ang mga ito at alisin ang mga pahina bago i-export.",
+  "@mergeEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Fusionner."
+  },
+  "mergeNeedOnePage": "Magdagdag ng kahit isang file na may isasamang pahina.",
+  "@mergeNeedOnePage": {
+    "description": "Bandeau d'erreur quand on demande l'aperçu sans qu'aucune page ne soit retenue."
+  },
+  "mergeProgress": "Kasalukuyang isinasagawa ang pagsasanib...",
+  "@mergeProgress": {
+    "description": "Titre de la boîte de progression pendant l'assemblage. Garder le caractère de suspension final."
+  },
+  "mergeFailed": "Nabigo ang pagsasama: {detail}",
+  "@mergeFailed": {
+    "description": "Bandeau d'erreur quand l'assemblage échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "mergeRemoved": "Inalis ang {name}.",
+  "@mergeRemoved": {
+    "description": "Bandeau confirmant qu'un document a quitté la liste ; il porte l'action « Annuler » (actionUndo). Accordez au genre du mot « fichier » dans votre langue.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "mergeRemoveTooltip": "Alisin ang {name}",
+  "@mergeRemoveTooltip": {
+    "description": "Info-bulle de la corbeille d'une rangée de la liste.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "mergeMoveSemantics": "Ilipat ang {name}",
+  "@mergeMoveSemantics": {
+    "description": "Étiquette d'accessibilité de la poignée de glissement. Lue à voix haute, jamais affichée.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "mergeRotateAll": "I-rotate ang lahat ng page",
+  "@mergeRotateAll": {
+    "description": "Bouton qui fait tourner d'un quart de tour toutes les pages du document déplié."
+  },
+  "mergePreviewAndExport": "I-preview at i-export ({count} mga pahina)",
+  "@mergePreviewAndExport": {
+    "description": "Bouton de bas d'écran de l'outil Fusionner, avec le nombre de pages retenues entre parenthèses.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "previewTitle": "Pangkalahatang-ideya · {size}",
+  "@previewTitle": {
+    "description": "Titre de l'écran d'aperçu, suivi du poids du fichier. {size} est déjà formaté (« 1,20 Mo »). Le point médian est un séparateur typographique, gardez-le ou remplacez-le par celui de votre langue.",
+    "placeholders": {
+      "size": {
+        "type": "String"
+      }
+    }
+  },
+  "previewZoomPage": "Pahina {number}, palakihin",
+  "@previewZoomPage": {
+    "description": "Étiquette d'accessibilité d'une vignette d'aperçu. Lue à voix haute, jamais affichée.",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "previewPageUnreadable": "Hindi mabasa na pahina.",
+  "@previewPageUnreadable": {
+    "description": "Affiché à la place d'une page dont le rendu a échoué."
+  },
+  "previewExportWhat": "PDF · {count} na mga pahina",
+  "@previewExportWhat": {
+    "description": "Description de ce qui vient d'être enregistré, dans la feuille de confirmation. Décrit le document, ne le nomme pas.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "compressTitle": "Compression",
+  "@compressTitle": {
+    "description": "Titre de la feuille de choix du niveau de compression."
+  },
+  "compressBody": "Kasalukuyang laki: {size}. Pumili ng isang antas — ang tinantyang laki ay ipinapakita bago mag-apply.",
+  "@compressBody": {
+    "description": "Consigne de la feuille de compression. {size} est déjà formaté.",
+    "placeholders": {
+      "size": {
+        "type": "String"
+      }
+    }
+  },
+  "compressEstimating": "Tantyahin…",
+  "@compressEstimating": {
+    "description": "Affiché tant que la taille estimée d'un niveau n'est pas connue. Garder le caractère de suspension final."
+  },
+  "compressProgress": "Kasalukuyang isinasagawa ang compression...",
+  "@compressProgress": {
+    "description": "Titre de la boîte de progression pendant la compression. Garder le caractère de suspension final."
+  },
+  "compressFailed": "Nabigo ang compression: {detail}",
+  "@compressFailed": {
+    "description": "Bandeau d'erreur quand la compression échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "protectEmptyTitle": "Ilagay sa ilalim ng password",
+  "@protectEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Protéger."
+  },
+  "protectEmptyBody": "Hindi na magbubukas ang PDF nang walang password na iyong pinili. Panatilihin ito: hindi ito mababawi.",
+  "@protectEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Protéger. L'avertissement de la seconde phrase est essentiel — ne l'allégez pas."
+  },
+  "protectSubtitle": "Ie-encrypt sa 256-bit AES",
+  "@protectSubtitle": {
+    "description": "Sous-titre de la carte du fichier choisi. « AES 256 bits » est un nom d'algorithme, à conserver tel quel."
+  },
+  "protectPassword": "Password",
+  "@protectPassword": {
+    "description": "Intitulé du premier champ de saisie."
+  },
+  "protectConfirmPassword": "Kumpirmahin ang password",
+  "@protectConfirmPassword": {
+    "description": "Intitulé du second champ, où l'on retape le mot de passe."
+  },
+  "protectShowPasswords": "Ipakita ang mga password",
+  "@protectShowPasswords": {
+    "description": "Info-bulle du bouton œil quand les caractères sont masqués."
+  },
+  "protectHidePasswords": "Itago ang mga password",
+  "@protectHidePasswords": {
+    "description": "Info-bulle du bouton œil quand les caractères sont visibles."
+  },
+  "protectMismatch": "Magkaiba ang dalawang password.",
+  "@protectMismatch": {
+    "description": "Message d'erreur rattaché au champ de confirmation. Court : il s'affiche sous le champ."
+  },
+  "protectWarning": "Isulat ito sa isang lugar: kung wala ito, ang dokumento ay magiging permanenteng hindi mabasa. Walang posibleng pagbawi, ni sa iyo o sa pamamagitan ng application.",
+  "@protectWarning": {
+    "description": "Avertissement sous les champs de saisie. C'est le seul endroit qui dit qu'un mot de passe perdu est perdu pour de bon — ne l'allégez pas."
+  },
+  "protectAlreadyProtected": "Protektado na ang file na ito — gamitin muna ang Unlock PDF.",
+  "@protectAlreadyProtected": {
+    "description": "Bandeau d'erreur quand le PDF choisi porte déjà un mot de passe. « Déverrouiller PDF » doit reprendre exactement le libellé traduit de l'outil (toolUnlock)."
+  },
+  "protectProgress": "Kasalukuyang isinasagawa ang proteksyon…",
+  "@protectProgress": {
+    "description": "Titre de la boîte de progression pendant le chiffrement. Garder le caractère de suspension final."
+  },
+  "protectFailed": "Nabigo ang proteksyon: {detail}",
+  "@protectFailed": {
+    "description": "Bandeau d'erreur quand le chiffrement échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "protectAction": "Protektahan",
+  "@protectAction": {
+    "description": "Bouton de bas d'écran qui lance le chiffrement. Verbe à l'infinitif, court."
+  },
+  "protectResultTitle": "Protektadong PDF",
+  "@protectResultTitle": {
+    "description": "Titre de la carte de résultat, une fois le document chiffré."
+  },
+  "protectResultDetail": "Naka-encrypt sa AES 256 bits. Kakailanganin mo ang password para mabuksan ito.",
+  "@protectResultDetail": {
+    "description": "Détail de la carte de résultat. « AES 256 bits » est un nom d'algorithme, à conserver tel quel."
+  },
+  "protectExportWhat": "PDF na protektado ng password",
+  "@protectExportWhat": {
+    "description": "Description de ce qui vient d'être enregistré, dans la feuille de confirmation."
+  },
+  "unlockEmptyTitle": "Alisin ang password",
+  "@unlockEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Déverrouiller."
+  },
+  "unlockEmptyBody": "Kailangan mo ang kasalukuyang password para sa dokumento. Kapag naalis na, malayang magbubukas ang PDF.",
+  "@unlockEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Déverrouiller. La première phrase est importante : l'outil ne casse pas les mots de passe, il en délivre un document qu'on sait déjà ouvrir."
+  },
+  "unlockAcceptsProtectedPdf": "Protektadong PDF",
+  "@unlockAcceptsProtectedPdf": {
+    "description": "Puce de format acceptable : un PDF portant un mot de passe."
+  },
+  "unlockChooseProtectedPdf": "Pumili ng protektadong PDF",
+  "@unlockChooseProtectedPdf": {
+    "description": "Bouton principal de l'écran vide de l'outil Déverrouiller."
+  },
+  "unlockCurrentPassword": "Kasalukuyang password",
+  "@unlockCurrentPassword": {
+    "description": "Intitulé du champ où l'on saisit le mot de passe qui ouvre déjà le document."
+  },
+  "unlockWrongPassword": "Maling password.",
+  "@unlockWrongPassword": {
+    "description": "Bandeau d'erreur quand le mot de passe saisi n'ouvre pas le document."
+  },
+  "unlockProgress": "Kasalukuyang ina-unlock…",
+  "@unlockProgress": {
+    "description": "Titre de la boîte de progression pendant le retrait du mot de passe. Garder le caractère de suspension final."
+  },
+  "unlockFailed": "Nabigong i-unlock: {detail}",
+  "@unlockFailed": {
+    "description": "Bandeau d'erreur quand le retrait du mot de passe échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "unlockAction": "I-unlock",
+  "@unlockAction": {
+    "description": "Bouton de bas d'écran qui retire le mot de passe. Verbe à l'infinitif, court."
+  },
+  "repairEmptyTitle": "Ayusin ang isang nasirang file",
+  "@repairEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Réparer."
+  },
+  "repairEmptyBody": "Ang panloob na istraktura ng isang nasirang PDF ay muling itinayo. Kung ano ang maililigtas ay magiging maililigtas.",
+  "@repairEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Réparer. La seconde phrase promet peu délibérément — la réparation n'est jamais garantie."
+  },
+  "repairProgress": "Kasalukuyang isinasagawa ang pag-aayos…",
+  "@repairProgress": {
+    "description": "Titre de la boîte de progression pendant la reconstruction. Garder le caractère de suspension final."
+  },
+  "repairFailed": "Ang file na ito ay hindi maaaring ayusin - ito ay maaaring masyadong nasira.",
+  "@repairFailed": {
+    "description": "Bandeau d'erreur quand la reconstruction échoue. Le ton reste prudent : on ne sait pas pourquoi, et on le dit."
+  },
+  "repairAction": "Ayusin",
+  "@repairAction": {
+    "description": "Bouton de bas d'écran qui lance la reconstruction. Verbe à l'infinitif, court."
+  },
+  "pdfToWordEmptyTitle": "Isang nae-edit na Salita",
+  "@pdfToWordEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil PDF vers Word. « Word » est une marque, à conserver."
+  },
+  "pdfToWordEmptyBody": "Ang teksto at istraktura ng PDF ay inilipat sa isang .docx na dokumento na maaari mong muling buksan at itama.",
+  "@pdfToWordEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil PDF vers Word. « .docx » est une extension de fichier, à conserver telle quelle."
+  },
+  "pdfToWordAnalyzing": "Pagsusuri ng dokumento…",
+  "@pdfToWordAnalyzing": {
+    "description": "Titre de la boîte de progression pendant l'inspection du PDF, avant conversion. Garder le caractère de suspension final."
+  },
+  "pdfToWordAnalysisPending": "Nakabinbin ang pagsusuri",
+  "@pdfToWordAnalysisPending": {
+    "description": "Sous-titre de la carte du fichier tant que l'inspection n'a pas rendu ses résultats."
+  },
+  "pdfToWordAnalysisFailed": "Hindi ma-scan: {detail}",
+  "@pdfToWordAnalysisFailed": {
+    "description": "Bandeau d'erreur quand l'inspection du PDF échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "pdfLocked": "Pinoprotektahan ng password ang PDF na ito. I-unlock muna ito.",
+  "@pdfLocked": {
+    "description": "Bandeau d'erreur commun aux outils qui refusent un PDF chiffré. Renvoie implicitement à l'outil Déverrouiller."
+  },
+  "pdfToWordConverting": "Kino-convert sa Word...",
+  "@pdfToWordConverting": {
+    "description": "Titre de la boîte de progression pendant la conversion. Garder le caractère de suspension final."
+  },
+  "pdfToWordSummaryTitle": "Natukoy ang nilalaman",
+  "@pdfToWordSummaryTitle": {
+    "description": "Titre de la carte qui résume ce que l'inspection a trouvé dans le PDF."
+  },
+  "pdfToWordParagraphCount": "{count} mga talata",
+  "@pdfToWordParagraphCount": {
+    "description": "Puce du résumé : combien de paragraphes ont été reconnus.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pdfToWordHeadingCount": "{count} mga pamagat",
+  "@pdfToWordHeadingCount": {
+    "description": "Puce du résumé : combien de titres ont été reconnus.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pdfToWordTableCount": "{count} mga talahanayan",
+  "@pdfToWordTableCount": {
+    "description": "Puce du résumé : combien de tableaux ont été reconnus.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pdfToWordNoTables": "Walang nakitang mga talahanayan: kung naglalaman ang iyong PDF ng anuman, ang mga linya nito ay mako-convert sa mga talata.",
+  "@pdfToWordNoTables": {
+    "description": "Avertissement affiché quand l'inspection n'a trouvé aucun tableau."
+  },
+  "pdfToWordCaveat": "Kinukuha ng conversion ang teksto, pag-format, at mga talahanayan, ngunit hindi ang eksaktong layout: ang posisyon ng mga imahe at column ay hindi pinapanatili, at ang mga larawan ay hindi kasama sa dokumento ng Word.",
+  "@pdfToWordCaveat": {
+    "description": "Ce que la conversion ne sait pas faire, dit avant qu'on la lance. C'est le passage qui évite la déception — ne l'allégez pas."
+  },
+  "pdfToWordScanWarning": "Mukhang isang scan ang PDF na ito: walang nakitang text. Gamitin muna ang Searchable Text (OCR) tool, pagkatapos ay bumalik at i-convert ang resultang PDF.",
+  "@pdfToWordScanWarning": {
+    "description": "Avertissement quand le PDF ne contient aucun texte extractible. « Texte cherchable (OCR) » doit reprendre exactement le libellé traduit de l'outil (toolOcr)."
+  },
+  "pdfToWordResultTitle": "Handa na ang dokumento ng salita",
+  "@pdfToWordResultTitle": {
+    "description": "Titre de la carte de résultat, une fois le .docx produit."
+  },
+  "pdfToWordResultDetail": "{name} — {size}",
+  "@pdfToWordResultDetail": {
+    "description": "Détail de la carte de résultat : le nom du fichier et son poids, déjà formatés.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "size": {
+        "type": "String"
+      }
+    }
+  },
+  "pdfToWordExportWhat": "Word na dokumento",
+  "@pdfToWordExportWhat": {
+    "description": "Description de ce qui vient d'être enregistré, dans la feuille de confirmation."
+  },
+  "pdfToWordConvertAction": "I-convert sa Word",
+  "@pdfToWordConvertAction": {
+    "description": "Bouton de bas d'écran qui lance la conversion. Doit tenir sur une ligne."
+  },
+  "actionConvertAgain": "Mag-convert muli",
+  "@actionConvertAgain": {
+    "description": "Action secondaire proposée une fois le fichier produit, pour refaire la conversion. Doit tenir sur une ligne."
+  },
+  "errorSaveFailed": "Hindi makapagrehistro: {detail}",
+  "@errorSaveFailed": {
+    "description": "Bandeau d'erreur quand l'écriture du fichier échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "rectoVersoIntro": "Ang isang single-sided feeder ay gumagawa ng dalawang file: kakaibang mga pahina sa pagkakasunud-sunod, kahit na mga pahina ay madalas sa reverse order. Piliin ang dalawa para i-recompose ang mga ito.",
+  "@rectoVersoIntro": {
+    "description": "Consigne en tête de l'outil Recto-verso, qui explique d'où viennent les deux fichiers attendus."
+  },
+  "rectoVersoOddSlot": "Odd Pages File (Single sided)",
+  "@rectoVersoOddSlot": {
+    "description": "Intitulé de la première case : le scan des pages 1, 3, 5…"
+  },
+  "rectoVersoEvenSlot": "Even pages file (likod)",
+  "@rectoVersoEvenSlot": {
+    "description": "Intitulé de la seconde case : le scan des pages 2, 4, 6…"
+  },
+  "rectoVersoReversed": "Ang pangalawang file ay nasa reverse order",
+  "@rectoVersoReversed": {
+    "description": "Intitulé de l'interrupteur qui retourne l'ordre des pages paires."
+  },
+  "rectoVersoReversedHint": "Ito ang pinakakaraniwang kaso, na nasuri bilang default",
+  "@rectoVersoReversedHint": {
+    "description": "Sous-titre de l'interrupteur, qui justifie sa valeur par défaut."
+  },
+  "rectoVersoPreview": "Pangkalahatang-ideya ng interleaving ({count} na mga pahina)",
+  "@rectoVersoPreview": {
+    "description": "Titre de la bande de vignettes qui montre le résultat de l'entrelacement.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "rectoVersoProgress": "Isinasagawa ang interleading...",
+  "@rectoVersoProgress": {
+    "description": "Titre de la boîte de progression pendant l'entrelacement. Garder le caractère de suspension final."
+  },
+  "fileWithPageCount": "{name} · {count} na mga pahina",
+  "@fileWithPageCount": {
+    "description": "Sous-titre d'une carte de fichier : son nom, puis son nombre de pages. Le point médian est un séparateur typographique.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "actionPreviewAndExport": "I-preview at i-export",
+  "@actionPreviewAndExport": {
+    "description": "Bouton de bas d'écran qui mène à l'écran d'aperçu. Doit tenir sur une ligne."
+  },
+  "errorOpenFailedShort": "Hindi mabuksan: {detail}",
+  "@errorOpenFailedShort": {
+    "description": "Variante brève du bandeau d'erreur d'ouverture. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "errorGeneric": "Nabigo: {detail}",
+  "@errorGeneric": {
+    "description": "Bandeau d'erreur générique, quand l'écran n'a rien de plus précis à dire. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "actionConvertToPdf": "I-convert sa PDF",
+  "@actionConvertToPdf": {
+    "description": "Bouton de bas d'écran des outils de conversion vers le PDF. Doit tenir sur une ligne."
+  },
+  "convertProgress": "Kasalukuyang ginagawa ang conversion...",
+  "@convertProgress": {
+    "description": "Titre de la boîte de progression pendant une conversion de format. Garder le caractère de suspension final."
+  },
+  "excelEmptyTitle": "Isang PDF workbook",
+  "@excelEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Excel vers PDF."
+  },
+  "excelEmptyBody": "Ang mga sheet sa isang .xlsx file ay nagiging mga PDF page, handa nang ipadala o i-print.",
+  "@excelEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Excel vers PDF. « .xlsx » est une extension de fichier, à conserver telle quelle."
+  },
+  "excelChooseWorkbook": "Pumili ng binder",
+  "@excelChooseWorkbook": {
+    "description": "Bouton principal de l'écran vide de l'outil Excel vers PDF."
+  },
+  "excelChooseXlsx": "Pumili ng .xlsx workbook",
+  "@excelChooseXlsx": {
+    "description": "Intitulé de la rangée de fichier tant qu'aucun classeur n'est choisi. « .xlsx » est une extension, à conserver."
+  },
+  "excelLegacyFormat": "Ang .xls na format (lumang Excel binary format) ay hindi suportado. I-save ang file bilang .xlsx pagkatapos ay subukang muli.",
+  "@excelLegacyFormat": {
+    "description": "Bandeau d'erreur quand on choisit un classeur au vieux format binaire. Les extensions « .xls » et « .xlsx » sont à conserver telles quelles."
+  },
+  "excelWrongFormat": "Mangyaring pumili ng Excel .xlsx workbook.",
+  "@excelWrongFormat": {
+    "description": "Bandeau d'erreur quand le fichier choisi n'est pas un classeur."
+  },
+  "excelUnreadable": "Hindi nababasa na folder: {detail}",
+  "@excelUnreadable": {
+    "description": "Bandeau d'erreur quand le classeur ne peut pas être décodé. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "excelSheetsAndRows": "{sheets} sheets · {rows} row sa kabuuan",
+  "@excelSheetsAndRows": {
+    "description": "Sous-titre de la rangée de fichier : combien de feuilles et combien de lignes en tout. Le point médian est un séparateur typographique.",
+    "placeholders": {
+      "sheets": {
+        "type": "int"
+      },
+      "rows": {
+        "type": "int"
+      }
+    }
+  },
+  "excelSheetsDetected": "Natukoy ang mga dahon",
+  "@excelSheetsDetected": {
+    "description": "Intitulé de la liste des feuilles trouvées dans le classeur."
+  },
+  "excelEmptySheet": "Walang laman na sheet",
+  "@excelEmptySheet": {
+    "description": "Sous-titre d'une feuille qui ne contient aucune ligne."
+  },
+  "excelSheetDimensions": "{rows} row × {columns} columns",
+  "@excelSheetDimensions": {
+    "description": "Sous-titre d'une feuille : ses dimensions. Le signe × est le symbole de multiplication.",
+    "placeholders": {
+      "rows": {
+        "type": "int"
+      },
+      "columns": {
+        "type": "int"
+      }
+    }
+  },
+  "excelRepeatHeader": "Ulitin ang linya ng header sa bawat pahina",
+  "@excelRepeatHeader": {
+    "description": "Intitulé de l'interrupteur qui redessine la première ligne en haut de chaque page."
+  },
+  "excelRepeatHeaderHint": "Ang unang hilera ng sheet ay muling iginuhit sa tuktok ng bawat pahina ng talahanayan.",
+  "@excelRepeatHeaderHint": {
+    "description": "Sous-titre de l'interrupteur de répétition d'en-tête."
+  },
+  "excelCaveat": "Ano ang kailangan ng conversion: ang text ng mga cell habang ito ay naka-save sa file (kabilang ang huling kinakalkula na resulta ng mga formula), ang unang bold na linya at isang grid.\n\nAno ang hindi kasama: mga kulay, mga font, mga format ng numero, pinagsamang mga cell, mga larawan, mga graphics at ang mga formula mismo. Ang mga column ay binabawasan upang magkasya sa lapad ng pahina; sa napakalapad na mga sheet, ang teksto sa mga cell na masyadong makitid ay pinuputol ng \"...\".",
+  "@excelCaveat": {
+    "description": "Ce que la conversion sait et ne sait pas faire. Les deux paragraphes sont séparés par une ligne vide — gardez le double saut de ligne. C'est le passage qui évite la déception, ne l'allégez pas."
+  },
+  "pptxEmptyTitle": "Isang presentasyon sa PDF",
+  "@pptxEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil PowerPoint vers PDF."
+  },
+  "pptxEmptyBody": "Isang 16:9 na landscape page bawat slide, kasama ang pamagat at mga bala. Ang teksto ay paulit-ulit; ang mga orihinal na larawan, hugis at background ay hindi.\n\nTinanggap na format: .pptx. Ang isang lumang .ppt file ay dapat munang i-save bilang .pptx mula sa PowerPoint.",
+  "@pptxEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil PowerPoint vers PDF. Les deux paragraphes sont séparés par une ligne vide — gardez le double saut de ligne. « 16:9 », « .pptx » et « .ppt » sont à conserver tels quels."
+  },
+  "pptxChoosePresentation": "Pumili ng isang pagtatanghal",
+  "@pptxChoosePresentation": {
+    "description": "Bouton principal de l'écran vide de l'outil PowerPoint vers PDF."
+  },
+  "pptxTextOnlyTitle": "Conversion ng text lang",
+  "@pptxTextOnlyTitle": {
+    "description": "Titre de la carte d'avertissement affichée une fois la présentation chargée."
+  },
+  "pptxTextOnlyBody": "Ang teksto ng bawat slide ay paulit-ulit. Ang mga orihinal na larawan, hugis, background, kulay at layout ay hindi pinapanatili: ang resultang PDF ay isang simple, nababasang layout, hindi isang tapat na kopya ng iyong presentasyon.",
+  "@pptxTextOnlyBody": {
+    "description": "Corps de la carte d'avertissement. Dit clairement ce que l'outil ne fait pas — ne l'allégez pas."
+  },
+  "pptxSlideCount": "{count} mga slide",
+  "@pptxSlideCount": {
+    "description": "Sous-titre de la rangée de fichier : combien de diapositives ont été trouvées.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pptxSlidesDetected": "May nakitang mga slide",
+  "@pptxSlidesDetected": {
+    "description": "Intitulé de la liste des diapositives trouvées dans la présentation."
+  },
+  "pptxMoreSlides": "at {count} iba pang mga slide...",
+  "@pptxMoreSlides": {
+    "description": "Affiché sous la liste quand la présentation compte plus de trente diapositives et que l'aperçu s'arrête là. Garder le caractère de suspension final.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pptxUntitledSlide": "Walang pamagat",
+  "@pptxUntitledSlide": {
+    "description": "Affiché à la place du titre d'une diapositive qui n'en porte pas. Rendu en italique."
+  },
+  "pptxEmptySlide": "Walang teksto (larawan o hugis lamang)",
+  "@pptxEmptySlide": {
+    "description": "Sous-titre d'une diapositive dont l'outil n'a extrait aucun texte."
+  },
+  "pptxTextLineCount": "{count} mga linya ng teksto",
+  "@pptxTextLineCount": {
+    "description": "Sous-titre d'une diapositive : combien de lignes de texte elle porte.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pptxReadFailed": "Hindi mabasa: {detail}",
+  "@pptxReadFailed": {
+    "description": "Bandeau d'erreur quand la présentation ne peut pas être décodée. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "compressLevelLight": "Liwanag",
+  "@compressLevelLight": {
+    "description": "Niveau de compression le plus doux. Adjectif accordé à « compression » ; si votre langue ne permet pas l'adjectif seul, écrivez « Compression légère »."
+  },
+  "compressLevelMedium": "Katamtaman",
+  "@compressLevelMedium": {
+    "description": "Niveau de compression intermédiaire. Adjectif accordé à « compression »."
+  },
+  "compressLevelStrong": "Forte",
+  "@compressLevelStrong": {
+    "description": "Niveau de compression le plus agressif. Adjectif accordé à « compression »."
+  },
+  "pptxQualityStandard": "Karaniwan (150 dpi)",
+  "@pptxQualityStandard": {
+    "description": "Réglage de résolution par défaut de l'export PowerPoint. « dpi » est un sigle international, à conserver."
+  },
+  "pptxQualityHigh": "Mataas (220 dpi)",
+  "@pptxQualityHigh": {
+    "description": "Réglage de résolution élevée de l'export PowerPoint. « dpi » est un sigle international, à conserver."
+  },
+  "pdfToExcelEmptyTitle": "Kunin ang mga talahanayan",
+  "@pdfToExcelEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil PDF vers Excel."
+  },
+  "pdfToExcelEmptyBody": "Ang mga talahanayan mula sa isang PDF ay kinukuha sa isang Excel workbook. Ang pag-format ay hindi napanatili, ang mga halaga ay.",
+  "@pdfToExcelEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil PDF vers Excel."
+  },
+  "pdfToExcelPagesAnalyzed": "{count} na mga pahina ang nasuri",
+  "@pdfToExcelPagesAnalyzed": {
+    "description": "Sous-titre de la carte du fichier une fois l'inspection faite.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pdfToExcelAnalysisFailed": "Imposible ang pagsusuri. Ang PDF ay maaaring protektado ng password o nasira. ({detail})",
+  "@pdfToExcelAnalysisFailed": {
+    "description": "Bandeau d'erreur quand l'inspection échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "pdfToExcelNothingToExport": "Walang i-export: walang nakitang talahanayan.",
+  "@pdfToExcelNothingToExport": {
+    "description": "Bandeau d'erreur quand on lance la conversion sans qu'aucun tableau n'ait été reconnu."
+  },
+  "pdfToExcelBuilding": "Ginagawa ang workbook...",
+  "@pdfToExcelBuilding": {
+    "description": "Titre de la boîte de progression pendant la construction du classeur. Garder le caractère de suspension final."
+  },
+  "pdfToExcelIncludeParagraphs": "Isama rin ang teksto sa labas ng mga talahanayan (isang linya bawat talata)",
+  "@pdfToExcelIncludeParagraphs": {
+    "description": "Intitulé de l'interrupteur qui verse le texte courant dans le classeur."
+  },
+  "pdfToExcelIncludeParagraphsHint": "Kapaki-pakinabang para sa isang semi-structured na dokumento: ang teksto ay inilalagay sa column A, pagkatapos ng mga talahanayan sa pahina.",
+  "@pdfToExcelIncludeParagraphsHint": {
+    "description": "Sous-titre de l'interrupteur. « colonne A » désigne la première colonne du tableur."
+  },
+  "pdfToExcelCaveatTitle": "Ano ang hindi pinapanatili ng conversion",
+  "@pdfToExcelCaveatTitle": {
+    "description": "Intitulé du paragraphe qui énumère les limites de l'extraction."
+  },
+  "pdfToExcelCaveat": "Ang pagtuklas ay batay sa posisyon ng teksto sa pahina: ang mga talahanayan na walang regular na hangganan, pinagsamang mga cell at napaka-irregular na mga haligi ay maaaring hindi maganda ang pagputol. Ang isang na-scan na PDF (larawan) ay walang nae-extract na text at wala itong ibibigay. Ang mga kulay, formula at larawan ay hindi kailanman kasama: ang mga halaga ng teksto lamang ang.",
+  "@pdfToExcelCaveat": {
+    "description": "Limites de l'extraction de tableaux, dites avant qu'on lance la conversion. Ne l'allégez pas."
+  },
+  "pdfToExcelTablesFound": "{tables} na mga talahanayan ang nakita sa {pages} na mga pahina",
+  "@pdfToExcelTablesFound": {
+    "description": "Résumé de l'inspection : combien de tableaux, sur combien de pages.",
+    "placeholders": {
+      "tables": {
+        "type": "int"
+      },
+      "pages": {
+        "type": "int"
+      }
+    }
+  },
+  "pdfToExcelPagesConcerned": "Mga apektadong pahina: {pages}",
+  "@pdfToExcelPagesConcerned": {
+    "description": "Liste des numéros de page qui portent un tableau. {pages} est déjà formaté (« 1, 3, 7… »).",
+    "placeholders": {
+      "pages": {
+        "type": "String"
+      }
+    }
+  },
+  "pdfToExcelParagraphsOutside": "{count} mga talata sa labas ng mga talahanayan",
+  "@pdfToExcelParagraphsOutside": {
+    "description": "Résumé de l'inspection : combien de paragraphes vivent en dehors des tableaux.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pdfToExcelScannedWarning": "Walang text na maaaring makuha mula sa PDF na ito: ito ay malamang na isang na-scan na dokumento (mga larawan ng pahina). Walang makukuha ang isang spreadsheet dito; gamitin muna ang text recognition (OCR) tool.",
+  "@pdfToExcelScannedWarning": {
+    "description": "Avertissement quand le PDF est un scan sans couche de texte. « OCR » est un sigle international, à conserver."
+  },
+  "pdfToExcelNoTableWarning": "Walang istraktura ng talahanayan ang nakilala sa dokumentong ito. Ang teksto ay naroroon, ngunit hindi ito nakaayos sa mga regular na hanay. Sa halip na gumawa ng hindi nababasang workbook, i-enable ang \"Isama rin ang text na hindi talahanayan\" sa itaas, o gamitin ang \"PDF to Word\" na mas pinapanatili ang mga talata.",
+  "@pdfToExcelNoTableWarning": {
+    "description": "Avertissement quand le texte existe mais n'est pas tabulaire. Les deux citations entre guillemets doivent reprendre exactement les libellés traduits correspondants (pdfToExcelIncludeParagraphs et toolPdfToWord)."
+  },
+  "pdfToExcelResultTitle": "Handa na ang binder",
+  "@pdfToExcelResultTitle": {
+    "description": "Titre de la carte de résultat, une fois le classeur produit."
+  },
+  "pdfToExcelExportWhat": "Excel workbook",
+  "@pdfToExcelExportWhat": {
+    "description": "Description de ce qui vient d'être enregistré, dans la feuille de confirmation."
+  },
+  "pdfToExcelConvertAction": "I-convert sa Excel",
+  "@pdfToExcelConvertAction": {
+    "description": "Bouton de bas d'écran qui lance la conversion. Doit tenir sur une ligne."
+  },
+  "resultNameAndSize": "{name} — {size}",
+  "@resultNameAndSize": {
+    "description": "Détail d'une carte de résultat : le nom du fichier et son poids, déjà formatés.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "size": {
+        "type": "String"
+      }
+    }
+  },
+  "pdfToPptxEmptyTitle": "Isang slide bawat pahina",
+  "@pdfToPptxEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil PDF vers PowerPoint."
+  },
+  "pdfToPptxEmptyBody": "Ang PDF ay nagiging magkaparehong PowerPoint presentation. Dumarating ang bawat pahina sa anyo ng isang imahe: ang layout ay tapat, ngunit ang teksto ay hindi mae-edit sa PowerPoint.",
+  "@pdfToPptxEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil PDF vers PowerPoint. Le compromis annoncé — mise en page fidèle contre texte figé — est le point essentiel."
+  },
+  "pdfToPptxOpenFailed": "Hindi mabuksan ang PDF na ito: {detail}",
+  "@pdfToPptxOpenFailed": {
+    "description": "Bandeau d'erreur quand le PDF ne peut pas être lu. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "pdfToPptxConverting": "Kino-convert sa PowerPoint…",
+  "@pdfToPptxConverting": {
+    "description": "Titre de la boîte de progression pendant la conversion. Garder le caractère de suspension final."
+  },
+  "pdfToPptxPagesToSlides": "{count} na mga pahina > {count} na mga slide",
+  "@pdfToPptxPagesToSlides": {
+    "description": "Sous-titre de la carte du fichier : autant de diapositives que de pages. Le chevron simple et non une flèche → : celle-ci manque au sous-ensemble des fontes embarquées. Voir test/l10n_coverage_test.dart.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pdfToPptxEmptyDocument": "Walang laman na dokumento",
+  "@pdfToPptxEmptyDocument": {
+    "description": "Sous-titre de la carte du fichier quand le PDF ne contient aucune page."
+  },
+  "qualityLabel": "Kalidad",
+  "@qualityLabel": {
+    "description": "Intitulé du groupe de boutons qui choisit la résolution de sortie."
+  },
+  "pdfToPptxQualityHint": "Ang isang mas mataas na resolution ay nagreresulta sa mas matalas na mga slide ngunit isang makabuluhang mas malaking file.",
+  "@pdfToPptxQualityHint": {
+    "description": "Explication sous le choix de qualité, dans le cas ordinaire."
+  },
+  "pdfToPptxHeavyWarning": "Babala: sa mataas na kalidad, ang isang presentasyon ng {count} na mga pahina ay maaaring tumimbang ng ilang sampu-sampung MB at magtagal upang mabuksan. Piliin ang Standard kapag may pagdududa.",
+  "@pdfToPptxHeavyWarning": {
+    "description": "Avertissement affiché en rouge quand haute qualité et document long se combinent. « Standard » doit reprendre le libellé traduit de pptxQualityStandard. « Mo » est l'abréviation de méga-octet — employez celle de votre langue.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "goodToKnow": "Namely",
+  "@goodToKnow": {
+    "description": "Titre d'une carte d'information neutre."
+  },
+  "pdfToPptxCaveat": "Ang bawat slide ay isang imahe ng pahina: ang layout ay kapareho ng PDF, ngunit ang teksto ay hindi mae-edit sa PowerPoint.\nPara kunin ang nae-edit na text, gamitin na lang ang “PDF to Word”.\nAng isang presentasyon ay mayroon lamang isang slide format: ito ay kinuha mula sa unang pahina, at mga pahina ng iba't ibang mga format ay nakasentro sa loob nito.",
+  "@pdfToPptxCaveat": {
+    "description": "Trois limites de la conversion, une par ligne — gardez les sauts de ligne simples. « PDF vers Word » doit reprendre le libellé traduit de toolPdfToWord."
+  },
+  "pdfToPptxResultTitle": "Handa na ang pagtatanghal",
+  "@pdfToPptxResultTitle": {
+    "description": "Titre de la carte de résultat, une fois la présentation produite."
+  },
+  "pdfToPptxResultDetail": "{name} — {count} slides · {size} · {quality}",
+  "@pdfToPptxResultDetail": {
+    "description": "Détail de la carte de résultat : nom, nombre de diapositives, poids et réglage de qualité. Le point médian est un séparateur typographique.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      },
+      "size": {
+        "type": "String"
+      },
+      "quality": {
+        "type": "String"
+      }
+    }
+  },
+  "notSavedYet": "Ang file ay wala pa sa iyong device: i-save ito o ibahagi ito.",
+  "@notSavedYet": {
+    "description": "Rappel sous la carte de résultat : le fichier existe en mémoire mais n'a pas encore été écrit."
+  },
+  "pdfToPptxChangeQuality": "Baguhin ang kalidad",
+  "@pdfToPptxChangeQuality": {
+    "description": "Action secondaire qui revient au choix de résolution pour refaire la conversion."
+  },
+  "pdfToPptxConvertAction": "I-convert sa PowerPoint",
+  "@pdfToPptxConvertAction": {
+    "description": "Bouton de bas d'écran qui lance la conversion. Doit tenir sur une ligne."
+  },
+  "pdfToPptxExportWhat": "PowerPoint presentation · {count} na mga slide",
+  "@pdfToPptxExportWhat": {
+    "description": "Description de ce qui vient d'être enregistré, dans la feuille de confirmation.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "formatLabel": "Format",
+  "@formatLabel": {
+    "description": "Intitulé du groupe de boutons qui choisit le format de sortie."
+  },
+  "actionExport": "I-export",
+  "@actionExport": {
+    "description": "Bouton qui lance la production des fichiers. Verbe à l'infinitif, court."
+  },
+  "imageQualityWeb": "Web (72 dpi)",
+  "@imageQualityWeb": {
+    "description": "Résolution la plus basse de l'export en images, destinée à l'écran. « dpi » est un sigle international, à conserver."
+  },
+  "imageQualityStandard": "Karaniwan (150 dpi)",
+  "@imageQualityStandard": {
+    "description": "Résolution intermédiaire de l'export en images. « dpi » est un sigle international, à conserver."
+  },
+  "imageQualityHigh": "Mataas na kalidad (300 dpi)",
+  "@imageQualityHigh": {
+    "description": "Résolution la plus élevée de l'export en images, destinée à l'impression. « dpi » est un sigle international, à conserver."
+  },
+  "pdfToImagesEmptyTitle": "Isang larawan bawat pahina",
+  "@pdfToImagesEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil PDF vers Images."
+  },
+  "pdfToImagesEmptyBody": "Pumili ng isang PDF: lalabas ang bawat pahina bilang isang imahe, sa kahulugan na iyong isinasaayos.",
+  "@pdfToImagesEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil PDF vers Images."
+  },
+  "pdfToImagesNotAPdf": "{name}: Mangyaring pumili ng PDF file.",
+  "@pdfToImagesNotAPdf": {
+    "description": "Bandeau d'erreur quand le fichier choisi n'est pas un PDF.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "errorLoadFailed": "Nabigong mag-load: {detail}",
+  "@errorLoadFailed": {
+    "description": "Bandeau d'erreur quand le fichier ne peut pas être chargé. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "pdfToImagesProgress": "Kasalukuyang isinasagawa ang pag-export...",
+  "@pdfToImagesProgress": {
+    "description": "Titre de la boîte de progression pendant le rendu des images. Garder le caractère de suspension final."
+  },
+  "pdfToImagesExportWhat": "{count} mga larawan {format}",
+  "@pdfToImagesExportWhat": {
+    "description": "Description de ce qui vient d'être enregistré : combien d'images, dans quel format. {format} vaut « JPG » ou « PNG » et ne se traduit pas.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "format": {
+        "type": "String"
+      }
+    }
+  },
+  "pdfaEmptyTitle": "I-archive nang mahabang panahon",
+  "@pdfaEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Convertir en PDF/A."
+  },
+  "pdfaEmptyBody": "Ang PDF/A ay ang format ng pag-archive na kinakailangan ng maraming administrasyon. Ang dokumento ay na-convert nang hindi nawawala ang hitsura nito.",
+  "@pdfaEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Convertir en PDF/A. « PDF/A » est une norme ISO, à conserver telle quelle."
+  },
+  "pdfaConformanceLevel": "Antas ng pagsunod",
+  "@pdfaConformanceLevel": {
+    "description": "Intitulé du groupe de boutons qui choisit la variante de la norme."
+  },
+  "pdfaA1bDetail": "Ang pinakamahigpit at pinaka-tinatanggap na antas. Pumili kapag may pagdududa.",
+  "@pdfaA1bDetail": {
+    "description": "Explication de la variante PDF/A-1b, affichée sous le choix."
+  },
+  "pdfaA2bDetail": "Batay sa PDF 1.7: mas mahusay na compression, bahagyang mas magaan na mga file.",
+  "@pdfaA2bDetail": {
+    "description": "Explication de la variante PDF/A-2b. « PDF 1.7 » est un numéro de version, à conserver."
+  },
+  "pdfaA3bDetail": "Tulad ng A-2b, ngunit pinapayagan ang mga attachment (kadalasang hinihiling para sa electronic invoicing).",
+  "@pdfaA3bDetail": {
+    "description": "Explication de la variante PDF/A-3b. « A-2b » désigne la variante précédente, à conserver."
+  },
+  "pdfaConvertingTo": "Conversion sa {level}…",
+  "@pdfaConvertingTo": {
+    "description": "Titre de la boîte de progression. {level} vaut « PDF/A-1b » et ne se traduit pas. Garder le caractère de suspension final.",
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "pdfaCaveatTitle": "Ano ang pagbabago ng conversion",
+  "@pdfaCaveatTitle": {
+    "description": "Titre de la carte qui énumère les effets de la conversion."
+  },
+  "pdfaCaveat": "Ang bawat pahina ay muling iginuhit bilang isang imahe sa {dpi} dpi: ang teksto ay nagiging isang imahe, ang layout ay nagyelo. Ito ang dahilan kung bakit ang file ay tunay na sumusunod nang hindi umaasa sa mga font ng orihinal na dokumento, ngunit bilang kapalit ang teksto ay hindi na mapipili o mahahanap, ang mga link at mga form ay nawawala, at ang file ay nagiging mas mabigat.",
+  "@pdfaCaveat": {
+    "description": "Le compromis de la conversion PDF/A, dit avant qu'on la lance. « dpi » est un sigle international. Ne l'allégez pas.",
+    "placeholders": {
+      "dpi": {
+        "type": "int"
+      }
+    }
+  },
+  "pdfaOpenFailed": "Hindi mabuksan ang PDF na ito: {detail}",
+  "@pdfaOpenFailed": {
+    "description": "Bandeau d'erreur quand le PDF ne peut pas être lu. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "imagesToPdfEmptyTitle": "Mga larawan, isang PDF",
+  "@imagesToPdfEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Images vers PDF."
+  },
+  "imagesToPdfEmptyBody": "JPG, PNG, WebP, HEIC — idagdag ang iyong mga larawan at ang mga ito ay bubuuin sa pagkakasunud-sunod na iyong pinili.",
+  "@imagesToPdfEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Images vers PDF. Les quatre noms de format ne se traduisent pas."
+  },
+  "imagesToPdfChoose": "Pumili ng mga larawan",
+  "@imagesToPdfChoose": {
+    "description": "Bouton principal de l'écran vide de l'outil Images vers PDF."
+  },
+  "imagesToPdfAdd": "Magdagdag ng mga larawan",
+  "@imagesToPdfAdd": {
+    "description": "Info-bulle du bouton flottant qui ajoute d'autres images à la liste."
+  },
+  "imagesToPdfRejected": "Nilaktawan (hindi isang larawan): {names}",
+  "@imagesToPdfRejected": {
+    "description": "Bandeau signalant les fichiers écartés parce qu'ils ne sont pas des images. {names} est une liste de noms séparés par des virgules.",
+    "placeholders": {
+      "names": {
+        "type": "String"
+      }
+    }
+  },
+  "imagesToPdfBuilding": "Ginagawa ang PDF...",
+  "@imagesToPdfBuilding": {
+    "description": "Titre de la boîte de progression pendant l'assemblage. Garder le caractère de suspension final."
+  },
+  "imagesToPdfBuildFailed": "Nabigo ang paggawa: {detail}",
+  "@imagesToPdfBuildFailed": {
+    "description": "Bandeau d'erreur quand l'assemblage échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "imagesToPdfCreateAction": "Lumikha ng PDF ({count} na mga larawan)",
+  "@imagesToPdfCreateAction": {
+    "description": "Bouton de bas d'écran, avec le nombre d'images retenues entre parenthèses.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "actionRotate": "Iikot",
+  "@actionRotate": {
+    "description": "Info-bulle du bouton qui fait tourner une image d'un quart de tour."
+  },
+  "actionRemove": "Mag-withdraw",
+  "@actionRemove": {
+    "description": "Info-bulle du bouton qui retire un élément de la liste."
+  },
+  "htmlTitle": "HTML / web page sa PDF",
+  "@htmlTitle": {
+    "description": "Titre de la barre de l'outil Page web vers PDF. « HTML » est un sigle, à conserver."
+  },
+  "htmlIntro": "I-transform ang isang web page o HTML code sa A4 PDF. Ang pag-render ay isinasagawa ng browser na isinama sa Android, samakatuwid ang layout ay ang pag-print mula sa Chrome.",
+  "@htmlIntro": {
+    "description": "Consigne en tête de l'outil. « A4 » est un format de papier, « Android » et « Chrome » des marques — à conserver."
+  },
+  "htmlModeUrl": "Address ng website",
+  "@htmlModeUrl": {
+    "description": "Onglet du sélecteur : fournir une adresse à télécharger. Court, il tient dans un segment."
+  },
+  "htmlModeCode": "HTML code",
+  "@htmlModeCode": {
+    "description": "Onglet du sélecteur : coller du code source. Court, il tient dans un segment."
+  },
+  "htmlUrlLabel": "Address ng page",
+  "@htmlUrlLabel": {
+    "description": "Intitulé du champ où l'on saisit l'adresse."
+  },
+  "htmlUrlHint": "https://example.fr/article",
+  "@htmlUrlHint": {
+    "description": "Exemple d'adresse affiché en filigrane dans le champ. Adaptez le domaine à votre langue (« example.com », « beispiel.de »…)."
+  },
+  "htmlCodeLabel": "HTML code",
+  "@htmlCodeLabel": {
+    "description": "Intitulé du champ où l'on colle le code source."
+  },
+  "htmlCodeHint": "<h1>Pamagat</h1>\n<p>Text...</p>",
+  "@htmlCodeHint": {
+    "description": "Exemple de code affiché en filigrane. Les balises <h1> et <p> ne se traduisent pas ; seuls les mots entre elles le sont. Gardez le saut de ligne."
+  },
+  "htmlUrlBadScheme": "Ang address ay dapat magsimula sa http:// o https://.",
+  "@htmlUrlBadScheme": {
+    "description": "Bandeau d'erreur quand l'adresse ne porte pas de protocole. « http:// » et « https:// » ne se traduisent pas."
+  },
+  "htmlUrlIncomplete": "Maglagay ng buong web address.",
+  "@htmlUrlIncomplete": {
+    "description": "Bandeau d'erreur quand le champ ne contient que le protocole."
+  },
+  "htmlCodeEmpty": "I-paste ang HTML code para ma-convert.",
+  "@htmlCodeEmpty": {
+    "description": "Bandeau d'erreur quand le champ de code est vide."
+  },
+  "htmlLoadingUrl": "Nilo-load ang page at nagko-convert...",
+  "@htmlLoadingUrl": {
+    "description": "Titre de la boîte de progression pendant le téléchargement puis le rendu. Garder le caractère de suspension final."
+  },
+  "htmlConverting": "Kasalukuyang ginagawa ang conversion ng HTML...",
+  "@htmlConverting": {
+    "description": "Titre de la boîte de progression pendant le rendu du code collé. Garder le caractère de suspension final."
+  },
+  "htmlNetworkNotice": "Ang isang koneksyon sa internet ay kinakailangan: ito ay ang tanging tool sa application na dapat i-download ang pahina. Maaaring lumabas na hindi kumpleto ang mga page na nangangailangan ng pag-log in sa account, cookie banner, o maraming JavaScript.",
+  "@htmlNetworkNotice": {
+    "description": "Avertissement affiché en mode adresse. Il signale la seule exception au fonctionnement hors ligne de l'application — ne l'allégez pas. « JavaScript » est une marque, à conserver."
+  },
+  "htmlOfflineNotice": "Ang HTML at CSS na direktang nakasulat sa pahina ay nai-render offline. Sa kabilang banda, ang mga imahe, style sheet o font na tinatawag ng isang panlabas na web address ay nangangailangan ng koneksyon sa internet.",
+  "@htmlOfflineNotice": {
+    "description": "Avertissement affiché en mode code. « HTML » et « CSS » sont des sigles, à conserver."
+  },
+  "watermarkEmptyTitle": "Magdagdag ng watermark",
+  "@watermarkEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Filigrane."
+  },
+  "watermarkEmptyBody": "Ang teksto na iyong pinili ay inuulit sa background sa lahat ng mga pahina — upang markahan ang isang dokumento bilang kumpidensyal o draft.",
+  "@watermarkEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Filigrane."
+  },
+  "watermarkEmptyNote": "Libreng pag-export na walang limitasyon sa bilang.",
+  "@watermarkEmptyNote": {
+    "description": "Note verte de l'écran vide, propre à cet outil. La note habituelle promet « sans filigrane » — sur l'outil qui en appose un, elle se contredirait. Ne réintroduisez donc pas la mention du filigrane ici."
+  },
+  "watermarkTextLabel": "Teksto ng watermark",
+  "@watermarkTextLabel": {
+    "description": "Intitulé du champ où l'on saisit la mention à répéter."
+  },
+  "watermarkDefaultText": "KUMPIDENSYAL",
+  "@watermarkDefaultText": {
+    "description": "Mention proposée par défaut dans le champ, en capitales. Employez le mot consacré de votre langue (anglais : CONFIDENTIAL, allemand : VERTRAULICH)."
+  },
+  "watermarkNeedText": "Maglagay ng text para sa watermark.",
+  "@watermarkNeedText": {
+    "description": "Bandeau d'erreur quand on applique sans avoir saisi de texte."
+  },
+  "watermarkOpacity": "Opacity: {percent} %",
+  "@watermarkOpacity": {
+    "description": "Intitulé du curseur d'opacité. L'espace avant le signe % est une convention française ; collez-le au chiffre si votre langue le veut.",
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "watermarkRotation": "Anggulo ng pag-ikot: {degrees}°",
+  "@watermarkRotation": {
+    "description": "Intitulé du curseur d'inclinaison. Le signe degré est international.",
+    "placeholders": {
+      "degrees": {
+        "type": "int"
+      }
+    }
+  },
+  "watermarkFontSize": "Laki ng teksto: {points} pt",
+  "@watermarkFontSize": {
+    "description": "Intitulé du curseur de corps. « pt » est l'abréviation typographique de point, internationale.",
+    "placeholders": {
+      "points": {
+        "type": "int"
+      }
+    }
+  },
+  "watermarkColor": "Kulay",
+  "@watermarkColor": {
+    "description": "Intitulé de la rangée de pastilles de couleur."
+  },
+  "colorGrey": "Gray",
+  "@colorGrey": {
+    "description": "Nom d'une couleur de filigrane, sous sa pastille. Très court."
+  },
+  "colorRed": "Pula",
+  "@colorRed": {
+    "description": "Nom d'une couleur de filigrane, sous sa pastille. Très court."
+  },
+  "colorBlue": "Asul",
+  "@colorBlue": {
+    "description": "Nom d'une couleur de filigrane, sous sa pastille. Très court."
+  },
+  "colorBlack": "Itim",
+  "@colorBlack": {
+    "description": "Nom d'une couleur de filigrane, sous sa pastille. Très court."
+  },
+  "watermarkProgress": "Kasalukuyang isinasagawa ang application ng watermark...",
+  "@watermarkProgress": {
+    "description": "Titre de la boîte de progression. Garder le caractère de suspension final."
+  },
+  "percentValue": "{percent} %",
+  "@percentValue": {
+    "description": "Valeur en pourcentage affichée sur la pastille d'un curseur. L'espace avant le signe % est une convention française.",
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "degreesValue": "{degrees}°",
+  "@degreesValue": {
+    "description": "Valeur en degrés affichée sur la pastille d'un curseur.",
+    "placeholders": {
+      "degrees": {
+        "type": "int"
+      }
+    }
+  },
+  "pointsValue": "{points} pt",
+  "@pointsValue": {
+    "description": "Valeur en points typographiques affichée sur la pastille d'un curseur.",
+    "placeholders": {
+      "points": {
+        "type": "int"
+      }
+    }
+  },
+  "pageNumbersEmptyTitle": "Lagyan ng numero ang mga pahina",
+  "@pageNumbersEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Numéros de page."
+  },
+  "pageNumbersEmptyBody": "Pumili ng PDF, pagkatapos ay ang posisyon at format ng mga numero na idaragdag sa bawat pahina.",
+  "@pageNumbersEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Numéros de page."
+  },
+  "positionLabel": "Posisyon",
+  "@positionLabel": {
+    "description": "Intitulé du groupe de boutons qui choisit où poser le numéro."
+  },
+  "positionBottomCenter": "gitnang ibaba",
+  "@positionBottomCenter": {
+    "description": "Position du numéro : en bas, au milieu. Très court, il tient dans une pastille."
+  },
+  "positionBottomRight": "kanang ibaba",
+  "@positionBottomRight": {
+    "description": "Position du numéro : en bas, à droite. Très court."
+  },
+  "positionTopCenter": "Nangungunang gitna",
+  "@positionTopCenter": {
+    "description": "Position du numéro : en haut, au milieu. Très court."
+  },
+  "positionTopRight": "kanang itaas",
+  "@positionTopRight": {
+    "description": "Position du numéro : en haut, à droite. Très court."
+  },
+  "pageNumbersFormatPlain": "N",
+  "@pageNumbersFormatPlain": {
+    "description": "Format de numérotation : le numéro seul. « N » est l'initiale de « numéro » — employez celle de votre langue si elle diffère (anglais : N, allemand : N)."
+  },
+  "pageNumbersFormatOfTotal": "N / kabuuan",
+  "@pageNumbersFormatOfTotal": {
+    "description": "Format de numérotation : le numéro suivi du total, « 3 / 12 ». Traduisez « total » ; « N » suit la même règle que ci-dessus. Doit rester très court, c'est un segment de bouton."
+  },
+  "pageNumbersStart": "Panimulang numero",
+  "@pageNumbersStart": {
+    "description": "Intitulé du champ où l'on choisit à quel chiffre la numérotation commence."
+  },
+  "pageNumbersProgress": "Kasalukuyang binibilang...",
+  "@pageNumbersProgress": {
+    "description": "Titre de la boîte de progression. Garder le caractère de suspension final."
+  },
+  "organizeEmptyTitle": "Ipagpatuloy ang isang PDF sa kamay",
+  "@organizeEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Organiser."
+  },
+  "organizeEmptyBody": "Magbukas ng dokumento para hatiin ito, kunin ang mga pahina, o baguhin ang pagkakasunud-sunod.",
+  "@organizeEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Organiser."
+  },
+  "organizeOpenFile": "Magbukas ng file",
+  "@organizeOpenFile": {
+    "description": "Bouton principal de l'écran vide de l'outil Organiser."
+  },
+  "organizeNothingToExport": "Walang mga page na ie-export.",
+  "@organizeNothingToExport": {
+    "description": "Bandeau d'erreur quand toutes les pages ont été écartées."
+  },
+  "organizePagesKept": "{kept} na pahina ang napanatili sa {total}",
+  "@organizePagesKept": {
+    "description": "Sous-titre du document : combien de pages restent retenues sur combien. Affiché seulement quand on en a écarté.",
+    "placeholders": {
+      "kept": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "organizePageExcluded": "Itinapon",
+  "@organizePageExcluded": {
+    "description": "Mention sous une rangée de page mise de côté. Accordé au féminin de « page ». Court."
+  },
+  "organizePageMoved": "Inilipat mula sa posisyon {from}",
+  "@organizePageMoved": {
+    "description": "Mention sous une rangée de page qu'on a fait glisser ailleurs. Accordé au féminin de « page ».",
+    "placeholders": {
+      "from": {
+        "type": "int"
+      }
+    }
+  },
+  "organizePageTitle": "Pahina {number}",
+  "@organizePageTitle": {
+    "description": "Titre d'une rangée de la liste des pages.",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "organizeExcludePage": "Itapon ang pahina {number}",
+  "@organizeExcludePage": {
+    "description": "Info-bulle du bouton qui met une page de côté.",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "organizeIncludePage": "Isama ang pahina {number}",
+  "@organizeIncludePage": {
+    "description": "Info-bulle du bouton qui remet une page dans le document.",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "organizeMovePage": "Ilipat ang pahina {number}",
+  "@organizeMovePage": {
+    "description": "Étiquette d'accessibilité de la poignée de glissement. Lue à voix haute, jamais affichée.",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "organizeExtract": "I-extract",
+  "@organizeExtract": {
+    "description": "Bouton qui ne garde qu'une plage de pages. Verbe à l'infinitif, court."
+  },
+  "organizeSplit": "hatiin",
+  "@organizeSplit": {
+    "description": "Bouton qui coupe le document en plusieurs fichiers. Verbe à l'infinitif, court."
+  },
+  "organizePreview": "Silipin",
+  "@organizePreview": {
+    "description": "Bouton qui mène à l'écran d'aperçu. Court."
+  },
+  "organizeExtractTitle": "Mag-extract ng hanay ng page",
+  "@organizeExtractTitle": {
+    "description": "Titre de la boîte de dialogue de choix de la plage."
+  },
+  "organizeRangeLabel": "Mga pahina {start} hanggang {end}",
+  "@organizeRangeLabel": {
+    "description": "Plage retenue par le curseur double de la boîte d'extraction.",
+    "placeholders": {
+      "start": {
+        "type": "int"
+      },
+      "end": {
+        "type": "int"
+      }
+    }
+  },
+  "organizeSplitTitle": "Hatiin sa maraming file",
+  "@organizeSplitTitle": {
+    "description": "Titre de la boîte de dialogue de division."
+  },
+  "organizeFileCount": "{count} na mga file",
+  "@organizeFileCount": {
+    "description": "Nombre de fichiers que la division produira, sous le curseur.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "organizeSplitFailed": "Pagkabigo ng dibisyon: {detail}",
+  "@organizeSplitFailed": {
+    "description": "Bandeau d'erreur quand la division échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "scanNoCamera": "Walang available na camera sa device na ito.",
+  "@scanNoCamera": {
+    "description": "Message d'erreur quand l'appareil n'expose aucune caméra."
+  },
+  "scanCameraFailed": "Hindi masimulan ang camera: {detail}",
+  "@scanCameraFailed": {
+    "description": "Message d'erreur quand la caméra refuse de démarrer. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "scanCropToolbar": "Ayusin",
+  "@scanCropToolbar": {
+    "description": "Titre de la barre du recadreur système d'Android, après la prise de vue. Court."
+  },
+  "scanCaptureFailed": "Nabigo ang pagkuha: {detail}",
+  "@scanCaptureFailed": {
+    "description": "Bandeau d'erreur quand la prise de vue échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "scanPermissionBody": "Ang pag-access sa camera ay kinakailangan upang mag-scan ng isang dokumento.",
+  "@scanPermissionBody": {
+    "description": "Explication affichée quand l'autorisation d'accès à la caméra n'a pas été accordée."
+  },
+  "scanGrantPermission": "Payagan ang camera",
+  "@scanGrantPermission": {
+    "description": "Bouton qui redemande l'autorisation d'accès à la caméra. Doit tenir sur une ligne."
+  },
+  "actionRetry": "Subukan muli",
+  "@actionRetry": {
+    "description": "Bouton qui relance une opération après un échec. Court."
+  },
+  "scanNoPageYet": "Walang mga pahina sa ngayon.",
+  "@scanNoPageYet": {
+    "description": "Affiché dans la grille de relecture tant qu'aucune page n'a été photographiée."
+  },
+  "scanFinishAction": "Tapusin · {count}",
+  "@scanFinishAction": {
+    "description": "Bouton qui clôt la capture, suivi du nombre de pages prises. Le point médian est un séparateur typographique. Doit tenir sur une ligne.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "signTitle": "Pumirma ng PDF",
+  "@signTitle": {
+    "description": "Titre de la barre de l'outil Signer."
+  },
+  "signIntro": "Idagdag ang iyong hand-drawn signature sa isang page ng isang PDF. Ito ay isang simpleng pagguhit na idinagdag sa dokumento, hindi isang sertipikadong electronic signature.",
+  "@signIntro": {
+    "description": "Consigne en tête de l'outil Signer. La dernière proposition est une réserve juridique — ne la retirez pas."
+  },
+  "signChooseSubtitle": "Piliin ang dokumentong pipirmahan",
+  "@signChooseSubtitle": {
+    "description": "Sous-titre de la rangée qui ouvre la sélection de fichiers."
+  },
+  "signPickPage": "Piliin ang pahinang pipirmahan.",
+  "@signPickPage": {
+    "description": "Consigne au-dessus de la bande de vignettes de pages."
+  },
+  "signDrawTitle": "Iguhit ang aking lagda",
+  "@signDrawTitle": {
+    "description": "Titre de l'étape où l'on trace la signature au doigt."
+  },
+  "signDrawBody": "Gumuhit gamit ang iyong daliri tulad ng sa papel. Naglalagay ito ng disenyo sa page — hindi ito isang sertipikadong electronic signature.",
+  "@signDrawBody": {
+    "description": "Consigne de l'étape de tracé. La réserve juridique de la fin est délibérément répétée ici."
+  },
+  "signNeedDrawing": "Gumuhit ng lagda bago magpatuloy.",
+  "@signNeedDrawing": {
+    "description": "Bandeau d'erreur quand on valide une zone de tracé restée vide."
+  },
+  "signClear": "Para burahin",
+  "@signClear": {
+    "description": "Bouton qui vide la zone de tracé. Court."
+  },
+  "signValidate": "Upang patunayan",
+  "@signValidate": {
+    "description": "Bouton qui retient la signature tracée et passe au placement. Court."
+  },
+  "signPlaceBody": "I-drag ang lagda sa gustong lokasyon sa page, pagkatapos ay tapikin ang Tapos.",
+  "@signPlaceBody": {
+    "description": "Consigne de l'étape de placement. « Terminer » doit reprendre exactement le libellé traduit de actionFinish."
+  },
+  "signPageUnavailable": "Hindi maipakita ang pahina.",
+  "@signPageUnavailable": {
+    "description": "Affiché à la place de la page quand son rendu échoue."
+  },
+  "signProgress": "Idinaragdag ang lagda...",
+  "@signProgress": {
+    "description": "Titre de la boîte de progression. Garder le caractère de suspension final."
+  },
+  "editTitle": "Mag-annotate ng isang dokumento",
+  "@editTitle": {
+    "description": "Titre de l'écran vide de l'outil Éditer."
+  },
+  "editEmptyBody": "Magdagdag ng teksto o i-highlight ang mga sipi nang direkta sa isang umiiral nang PDF.",
+  "@editEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Éditer."
+  },
+  "editAddTextTitle": "Magdagdag ng teksto",
+  "@editAddTextTitle": {
+    "description": "Titre de la boîte de dialogue de saisie d'une annotation."
+  },
+  "editTextHint": "Iyong text",
+  "@editTextHint": {
+    "description": "Texte d'invite du champ de saisie de l'annotation."
+  },
+  "editFontSize": "Laki ng text: {size}",
+  "@editFontSize": {
+    "description": "Intitulé du curseur de corps, dans la boîte de saisie.",
+    "placeholders": {
+      "size": {
+        "type": "int"
+      }
+    }
+  },
+  "editNeedAnnotation": "Magdagdag ng kahit isang anotasyon bago matapos.",
+  "@editNeedAnnotation": {
+    "description": "Bandeau d'erreur quand on termine sans avoir rien ajouté."
+  },
+  "editProgress": "Paglalapat ng mga anotasyon...",
+  "@editProgress": {
+    "description": "Titre de la boîte de progression. Garder le caractère de suspension final."
+  },
+  "editChooseOther": "Pumili ng isa pang PDF",
+  "@editChooseOther": {
+    "description": "Info-bulle du bouton qui abandonne le document en cours."
+  },
+  "editUndoTooltip": "I-undo ang huling anotasyon",
+  "@editUndoTooltip": {
+    "description": "Info-bulle du bouton qui retire la dernière annotation posée. Il s'agit de défaire, pas d'interrompre."
+  },
+  "editModeText": "Text",
+  "@editModeText": {
+    "description": "Onglet du sélecteur : poser du texte. Très court, il tient dans un segment."
+  },
+  "editModeHighlight": "I-highlight",
+  "@editModeHighlight": {
+    "description": "Onglet du sélecteur : surligner un passage. Très court, il tient dans un segment."
+  },
+  "editPageUnavailable": "Hindi maipakita ang pahinang ito.",
+  "@editPageUnavailable": {
+    "description": "Affiché à la place de la page quand son rendu échoue."
+  },
+  "ocrEmptyTitle": "Gawing nahahanap ang teksto",
+  "@ocrEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil OCR."
+  },
+  "ocrEmptyBody": "Ang teksto ng isang na-scan na PDF ay kinikilala at idinagdag sa ibabaw ng larawan, nang hindi nakikita. Ang pahina ay hindi nagbabago ng hitsura.",
+  "@ocrEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil OCR. La seconde phrase est importante : elle rassure sur le fait que rien n'est abîmé."
+  },
+  "ocrWrongFormat": "Pumili ng PDF o isang imahe (JPG, PNG, atbp.).",
+  "@ocrWrongFormat": {
+    "description": "Bandeau d'erreur quand le fichier n'est ni un PDF ni une image. Les noms de format ne se traduisent pas."
+  },
+  "ocrProgress": "Kasalukuyang ginagawa ang pagkilala…",
+  "@ocrProgress": {
+    "description": "Titre de la boîte de progression pendant la reconnaissance de caractères. Garder le caractère de suspension final."
+  },
+  "ocrFailed": "Nabigong makilala: {detail}",
+  "@ocrFailed": {
+    "description": "Bandeau d'erreur quand la reconnaissance échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "ocrRunAction": "Simulan ang pagkilala",
+  "@ocrRunAction": {
+    "description": "Bouton de bas d'écran qui lance l'OCR. Doit tenir sur une ligne."
+  },
+  "ocrResultTitle": "Resulta ng OCR",
+  "@ocrResultTitle": {
+    "description": "Titre de la barre de l'écran de résultat. « OCR » est un sigle international, à conserver."
+  },
+  "ocrResultBody": "{count} na mga pahina ang nasuri. Ang mahahanap na PDF ay handa na, at maaari mo ring kopyahin ang lahat ng kinikilalang teksto.",
+  "@ocrResultBody": {
+    "description": "Résumé de l'écran de résultat : combien de pages ont été traitées et ce qu'on peut faire ensuite.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "ocrCopyText": "Kopyahin ang text",
+  "@ocrCopyText": {
+    "description": "Bouton qui met tout le texte reconnu dans le presse-papiers."
+  },
+  "ocrTextCopied": "Kinopya ang text.",
+  "@ocrTextCopied": {
+    "description": "Bandeau confirmant la copie dans le presse-papiers."
+  },
+  "redactIntro": "Permanenteng itago ang mga bahagi ng isang PDF (mga pangalan, address, halaga). Hindi tulad ng isang simpleng itim na parihaba na inilagay sa itaas, ang nakatagong teksto ay talagang tinatanggal mula sa file, hindi lamang sakop: hindi na ito mapipili o makopya.",
+  "@redactIntro": {
+    "description": "Consigne en tête de l'outil Caviarder. La distinction avec un rectangle noir décoratif est le cœur de l'outil — ne l'allégez pas."
+  },
+  "redactChooseSubtitle": "Piliin ang dokumentong ire-redact",
+  "@redactChooseSubtitle": {
+    "description": "Sous-titre de la rangée qui ouvre la sélection de fichiers."
+  },
+  "redactCaveat": "Pakitandaan: upang alisin ang nakatagong teksto, ang bawat pahina ng dokumento ay kino-convert sa isang imahe (200 ppi). Ang resulta ay hindi na isang PDF kung saan maaaring piliin ang teksto, at ang resultang file ay karaniwang mas mabigat kaysa sa orihinal.",
+  "@redactCaveat": {
+    "description": "Le prix à payer du caviardage réel. « ppp » est l'abréviation française de « points par pouce » ; l'anglais et la plupart des langues emploient « dpi »."
+  },
+  "redactEmptyPdf": "Ang PDF na ito ay hindi naglalaman ng anumang mga pahina.",
+  "@redactEmptyPdf": {
+    "description": "Bandeau d'erreur quand le document choisi est vide."
+  },
+  "redactOpenFailed": "Hindi mabuksan ang PDF na ito (maaaring protektado ito ng password): {detail}",
+  "@redactOpenFailed": {
+    "description": "Bandeau d'erreur quand le PDF ne peut pas être lu. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "redactPageRenderFailed": "Hindi maipakita ang pahina ng {number}: {detail}",
+  "@redactPageRenderFailed": {
+    "description": "Bandeau d'erreur quand une page ne peut pas être rendue à l'écran. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      },
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "redactUndoTooltip": "I-undo ang huling zone",
+  "@redactUndoTooltip": {
+    "description": "Info-bulle du bouton qui retire le dernier rectangle tracé. Il s'agit de défaire, pas d'interrompre."
+  },
+  "redactInstructions": "I-drag ang iyong daliri sa buong page para gumuhit ng lugar na itatago. Aalisin talaga sa file ang sakop na text, hindi lang sakop.",
+  "@redactInstructions": {
+    "description": "Consigne au-dessus de la page, dans l'éditeur."
+  },
+  "redactPagePrevious": "Nakaraang pahina",
+  "@redactPagePrevious": {
+    "description": "Info-bulle de la flèche qui remonte d'une page."
+  },
+  "redactPageNext": "Susunod na pahina",
+  "@redactPageNext": {
+    "description": "Info-bulle de la flèche qui descend d'une page."
+  },
+  "redactPager": "Pahina {current} / {total}",
+  "@redactPager": {
+    "description": "Position dans le document, entre les deux flèches de navigation. Forme abrégée avec une barre oblique.",
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "redactNoZone": "Walang plotted area",
+  "@redactNoZone": {
+    "description": "Affiché au-dessus des boutons tant qu'aucun rectangle n'a été tracé."
+  },
+  "redactZoneCount": "{count} mga lugar na itatago",
+  "@redactZoneCount": {
+    "description": "Nombre de rectangles tracés, au-dessus des boutons.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "redactOtherPdf": "Iba pang PDF",
+  "@redactOtherPdf": {
+    "description": "Bouton qui abandonne le document en cours pour en ouvrir un autre. Court."
+  },
+  "redactAction": "I-redact",
+  "@redactAction": {
+    "description": "Bouton qui applique le caviardage. Verbe à l'infinitif, court ; employez le terme consacré de votre langue."
+  },
+  "redactProgress": "Kasalukuyang isinasagawa ang redaction...",
+  "@redactProgress": {
+    "description": "Titre de la boîte de progression. Garder le caractère de suspension final."
+  },
+  "cropEmptyTitle": "I-crop ang mga margin",
+  "@cropEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Rogner."
+  },
+  "cropEmptyBody": "Pumili ng PDF, pagkatapos ay i-drag ang iyong daliri sa buong preview upang balangkasin ang lugar na gusto mong panatilihin.",
+  "@cropEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Rogner."
+  },
+  "cropTooSmall": "Masyadong maliit ang napiling lugar.",
+  "@cropTooSmall": {
+    "description": "Bandeau d'erreur quand la zone tracée au doigt est trop réduite pour donner une page."
+  },
+  "cropProgress": "Kasalukuyang ginagawa ang pag-trim…",
+  "@cropProgress": {
+    "description": "Titre de la boîte de progression. Garder le caractère de suspension final."
+  },
+  "cropFailed": "Nabigo ang pag-trim: {detail}",
+  "@cropFailed": {
+    "description": "Bandeau d'erreur quand le recadrage échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "cropKeptArea": "Conserved na lugar",
+  "@cropKeptArea": {
+    "description": "Intitulé au-dessus de l'aperçu sur lequel on trace la zone à garder."
+  },
+  "cropDimensions": "{width} × {height} mm ({widthPercent} % × {heightPercent} %)",
+  "@cropDimensions": {
+    "description": "Dimensions de la zone tracée, en millimètres puis en proportion de la page. Le signe × est le symbole de multiplication. L'espace avant le signe % est une convention française.",
+    "placeholders": {
+      "width": {
+        "type": "int"
+      },
+      "height": {
+        "type": "int"
+      },
+      "widthPercent": {
+        "type": "int"
+      },
+      "heightPercent": {
+        "type": "int"
+      }
+    }
+  },
+  "cropFullPage": "Buong pahina",
+  "@cropFullPage": {
+    "description": "Bouton qui remet la zone aux dimensions de la page entière."
+  },
+  "cropAllPages": "Mag-apply sa lahat ng page",
+  "@cropAllPages": {
+    "description": "Intitulé de l'interrupteur qui étend le recadrage au document entier."
+  },
+  "cropAllPagesOn": "Ang parehong lugar ay pinutol sa bawat pahina.",
+  "@cropAllPagesOn": {
+    "description": "Sous-titre de l'interrupteur quand il est activé."
+  },
+  "cropAllPagesOff": "Ang pahina 1 lamang ang na-crop, ang iba ay pinananatiling buo.",
+  "@cropAllPagesOff": {
+    "description": "Sous-titre de l'interrupteur quand il est désactivé."
+  },
+  "cropCaveat": "Ang pag-crop ay binabawasan ang laki ng pahina: ang nilalaman sa labas ng lugar ay hindi na ipinapakita o naka-print.",
+  "@cropCaveat": {
+    "description": "Ce que le recadrage fait au document, dit avant qu'on l'applique."
+  },
+  "cropAction": "I-crop",
+  "@cropAction": {
+    "description": "Bouton de bas d'écran qui lance le recadrage. Verbe à l'infinitif, court."
+  },
+  "compareTitle": "Paghambingin ang dalawang PDF",
+  "@compareTitle": {
+    "description": "Titre de la barre de l'outil Comparer."
+  },
+  "compareEmptyTitle": "Ano ang nagbago",
+  "@compareEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Comparer."
+  },
+  "compareEmptyBody": "Pumili ng dalawang bersyon ng parehong PDF. Ang mga idinagdag at tinanggal na mga sipi ay ilalagay sa tabi ng bawat isa, bawat pahina.",
+  "@compareEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Comparer."
+  },
+  "compareSlotA": "File A",
+  "@compareSlotA": {
+    "description": "Intitulé de la première case : la version de départ. La lettre A sert de repère, gardez-la."
+  },
+  "compareSlotB": "File B",
+  "@compareSlotB": {
+    "description": "Intitulé de la seconde case : la version à confronter. La lettre B sert de repère, gardez-la."
+  },
+  "compareAction": "Ikumpara",
+  "@compareAction": {
+    "description": "Bouton qui lance la comparaison. Verbe à l'infinitif, court."
+  },
+  "compareProgress": "Kasalukuyang pinaghahambing…",
+  "@compareProgress": {
+    "description": "Titre de la boîte de progression. Garder le caractère de suspension final."
+  },
+  "compareFailed": "Nabigo ang paghahambing: {detail}",
+  "@compareFailed": {
+    "description": "Bandeau d'erreur quand la comparaison échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "compareChangedPages": "{changed} na mga page ay naiiba sa {total}",
+  "@compareChangedPages": {
+    "description": "Résumé de la comparaison : combien de pages diffèrent, sur combien au total. Accordez le verbe au nombre.",
+    "placeholders": {
+      "changed": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "compareNoDifference": "Walang nakitang pagkakaiba sa pagitan ng dalawang file.",
+  "@compareNoDifference": {
+    "description": "Affiché quand les deux documents sont identiques mot pour mot."
+  },
+  "comparePageHeading": "Pahina {number}",
+  "@comparePageHeading": {
+    "description": "Titre d'une carte de résultat, pour une page qui a changé.",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "organizeFilesCreated": "{count} na mga file ang ginawa",
+  "@organizeFilesCreated": {
+    "description": "Titre de la feuille de résultats de la division : combien de fichiers en sont sortis.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "organizePartTitle": "Bahagi {number}",
+  "@organizePartTitle": {
+    "description": "Nom d'un des fichiers issus de la division, dans la liste des résultats et dans la feuille de confirmation.",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  }
+}

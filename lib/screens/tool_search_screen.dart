@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../l10n/l10n.dart';
 import '../theme/theme.dart';
 import 'home_screen.dart';
 
@@ -46,9 +47,10 @@ class _ToolSearchScreenState extends State<ToolSearchScreen> {
   @override
   Widget build(BuildContext context) {
     final colors = context.colors;
-    final List<ToolEntry> results = HomeScreen.allTools
-        .where((t) => t.matches(_query))
-        .toList();
+    final l10n = context.l10n;
+    final List<ToolEntry> results = ToolCatalog.of(
+      l10n,
+    ).all.where((t) => t.matches(_query)).toList();
 
     return Scaffold(
       appBar: AppBar(
@@ -61,7 +63,7 @@ class _ToolSearchScreenState extends State<ToolSearchScreen> {
           onChanged: (v) => setState(() => _query = v),
           style: AppTypography.body.copyWith(color: colors.ink),
           decoration: InputDecoration(
-            hintText: 'Fusionner, mot de passe, filigrane…',
+            hintText: l10n.searchHint,
             filled: false,
             border: InputBorder.none,
             enabledBorder: InputBorder.none,
@@ -70,7 +72,7 @@ class _ToolSearchScreenState extends State<ToolSearchScreen> {
             suffixIcon: _query.isEmpty
                 ? null
                 : IconButton(
-                    tooltip: 'Effacer',
+                    tooltip: l10n.searchClear,
                     icon: const Icon(Icons.close),
                     onPressed: () {
                       _controller.clear();
@@ -145,6 +147,7 @@ class _NoResult extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final colors = context.colors;
+    final l10n = context.l10n;
     return Padding(
       padding: const EdgeInsets.all(Space.xl),
       child: Column(
@@ -152,14 +155,12 @@ class _NoResult extends StatelessWidget {
         children: [
           const SizedBox(height: Space.xl),
           Text(
-            'Aucun outil pour « $query ».',
+            l10n.searchNoResultTitle(query),
             style: AppTypography.headline.copyWith(color: colors.ink),
           ),
           const SizedBox(height: Space.xs),
           Text(
-            'Essayez le format que vous avez sous la main — « Word », '
-            '« Excel », « photo » — ou ce que vous voulez en faire : '
-            '« signer », « diviser », « mot de passe ».',
+            l10n.searchNoResultBody,
             style: AppTypography.body.copyWith(color: colors.inkMuted),
           ),
         ],

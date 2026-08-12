@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../l10n/l10n.dart';
 import '../../theme/theme.dart';
 
 /// En-tête de section : titre, filet de liaison, compte.
@@ -41,7 +42,7 @@ class SectionHeader extends StatelessWidget {
     final colors = context.colors;
     return Semantics(
       header: true,
-      label: '$title, $count outils',
+      label: context.l10n.sectionHeaderSemantics(title, count),
       child: ExcludeSemantics(
         child: LayoutBuilder(
           builder: (context, constraints) => Row(

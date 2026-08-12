@@ -28,17 +28,6 @@ extension ImageExportQualityX on ImageExportQuality {
         return 300;
     }
   }
-
-  String get label {
-    switch (this) {
-      case ImageExportQuality.web:
-        return 'Web (72 dpi)';
-      case ImageExportQuality.standard:
-        return 'Standard (150 dpi)';
-      case ImageExportQuality.high:
-        return 'Haute qualité (300 dpi)';
-    }
-  }
 }
 
 /// One page rendered to an image file on disk, ready to be shared or saved.

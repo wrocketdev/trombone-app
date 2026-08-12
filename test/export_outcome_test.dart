@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
+import 'package:trombone/l10n/l10n.dart';
 import 'package:trombone/theme/theme.dart';
 import 'package:trombone/widgets/ui/export_outcome.dart';
 
@@ -31,6 +32,15 @@ void main() {
 
     await tester.pumpWidget(
       MaterialApp(
+        // Sans les delegues, `L.of(context)` rend nul et tout widget qui lit
+        // un libelle jette. La langue est fixee au francais : c'est le
+        // modele, et une mesure de largeur n'a de sens que dans une langue
+        // connue.
+        locale: const Locale('fr'),
+        localizationsDelegates: L.localizationsDelegates,
+        // `supportedLocales` vaut en_US par defaut ; la resolution y
+        // retomberait et le delegue ne saurait pas la servir.
+        supportedLocales: L.supportedLocales,
         theme: AppTheme.light(),
         home: Scaffold(
           body: Builder(

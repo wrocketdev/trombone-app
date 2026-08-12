@@ -6,6 +6,7 @@ import '../core/ads/ad_service.dart';
 import '../core/files/export_service.dart';
 import '../core/office/pdf_to_excel.dart';
 import '../core/pdf/security_engine.dart';
+import '../l10n/l10n.dart';
 import '../widgets/progress_dialog.dart';
 import '../widgets/ui/empty_state.dart';
 import '../widgets/ui/result_card.dart';
@@ -43,6 +44,7 @@ class _PdfToExcelScreenState extends State<PdfToExcelScreen> {
   }
 
   Future<void> _pick() async {
+    final L l10n = context.l10n;
     setState(() => _busy = true);
     try {
       final PickedPdf? picked = await SecurityEngine.pickPdfFile();
@@ -55,7 +57,7 @@ class _PdfToExcelScreenState extends State<PdfToExcelScreen> {
       });
       await _analyze();
     } catch (e) {
-      _showMessage('Impossible d\'ouvrir le fichier : $e');
+      _showMessage(l10n.errorOpenFailed('$e'));
     } finally {
       if (mounted) setState(() => _busy = false);
     }
@@ -64,11 +66,12 @@ class _PdfToExcelScreenState extends State<PdfToExcelScreen> {
   Future<void> _analyze() async {
     final PickedPdf? picked = _picked;
     if (picked == null || !mounted) return;
+    final L l10n = context.l10n;
     try {
       final PdfToExcelAnalysis? analysis =
           await runWithProgressDialog<PdfToExcelAnalysis>(
             context: context,
-            title: 'Analyse du document…',
+            title: l10n.pdfToWordAnalyzing,
             task: (token, onProgress) => PdfToExcel.analyze(
               picked.bytes,
               cancelToken: token,
@@ -78,10 +81,7 @@ class _PdfToExcelScreenState extends State<PdfToExcelScreen> {
       if (analysis == null || !mounted) return;
       setState(() => _analysis = analysis);
     } catch (e) {
-      _showMessage(
-        'Analyse impossible. Le PDF est peut-être protégé par un mot de '
-        'passe ou endommagé. ($e)',
-      );
+      _showMessage(l10n.pdfToExcelAnalysisFailed('$e'));
       if (mounted) {
         setState(() {
           _picked = null;
@@ -94,15 +94,16 @@ class _PdfToExcelScreenState extends State<PdfToExcelScreen> {
   Future<void> _convert() async {
     final PdfToExcelAnalysis? analysis = _analysis;
     if (analysis == null) return;
+    final L l10n = context.l10n;
     if (!analysis.canExport(includeParagraphs: _includeParagraphs)) {
       // Garde-fou : on ne genere jamais un classeur vide.
-      _showMessage('Rien à exporter : aucun tableau détecté.');
+      _showMessage(l10n.pdfToExcelNothingToExport);
       return;
     }
     try {
       final Uint8List? bytes = await runWithProgressDialog<Uint8List>(
         context: context,
-        title: 'Création du classeur…',
+        title: l10n.pdfToExcelBuilding,
         task: (token, onProgress) async {
           onProgress(0, 1);
           final Uint8List? built = PdfToExcel.build(
@@ -119,25 +120,30 @@ class _PdfToExcelScreenState extends State<PdfToExcelScreen> {
       if (bytes == null || !mounted) return;
       setState(() => _result = bytes);
     } catch (e) {
-      _showMessage('Échec de la conversion : $e');
+      _showMessage(l10n.errorConversionFailed('$e'));
     }
   }
 
   Future<void> _save() async {
     final Uint8List? bytes = _result;
     if (bytes == null) return;
+    final L l10n = context.l10n;
     setState(() => _busy = true);
     try {
-      final bool ok = await ExportService.saveToDevice(bytes, _resultName);
+      final bool ok = await ExportService.saveToDevice(
+        bytes,
+        _resultName,
+        dialogTitle: l10n.exportSaveDialogTitle,
+      );
       if (ok && mounted) {
         await showExportSuccess(
           context,
-          what: 'Classeur Excel',
+          what: l10n.pdfToExcelExportWhat,
           onShare: _share,
         );
       }
     } catch (e) {
-      _showMessage('Enregistrement impossible : $e');
+      _showMessage(l10n.errorSaveFailed('$e'));
     } finally {
       if (mounted) setState(() => _busy = false);
     }
@@ -146,12 +152,13 @@ class _PdfToExcelScreenState extends State<PdfToExcelScreen> {
   Future<void> _share() async {
     final Uint8List? bytes = _result;
     if (bytes == null) return;
+    final L l10n = context.l10n;
     setState(() => _busy = true);
     try {
       await ExportService.share(bytes, _resultName);
       AdService.instance.showAfterSuccessfulExport();
     } catch (e) {
-      _showMessage('Partage impossible : $e');
+      _showMessage(l10n.errorShareFailed('$e'));
     } finally {
       if (mounted) setState(() => _busy = false);
     }
@@ -162,20 +169,20 @@ class _PdfToExcelScreenState extends State<PdfToExcelScreen> {
     final PickedPdf? picked = _picked;
     final PdfToExcelAnalysis? analysis = _analysis;
     final ThemeData theme = Theme.of(context);
+    final L l10n = context.l10n;
     final bool canExport =
         analysis != null &&
         analysis.canExport(includeParagraphs: _includeParagraphs);
 
     return Scaffold(
-      appBar: AppBar(title: const Text('PDF vers Excel')),
+      appBar: AppBar(title: Text(l10n.toolPdfToExcel)),
       body: picked == null
           ? EmptyState(
               icon: Icons.table_chart_outlined,
-              title: 'Récupérer les tableaux',
-              body:
-                  'Les tableaux d’un PDF sont extraits vers un classeur Excel. La mise en forme n’est pas conservée, les valeurs le sont.',
-              accepts: const ['PDF'],
-              actionLabel: 'Choisir un PDF',
+              title: l10n.pdfToExcelEmptyTitle,
+              body: l10n.pdfToExcelEmptyBody,
+              accepts: [l10n.formatPdf],
+              actionLabel: l10n.actionChoosePdf,
               onAction: _pick,
               busy: _busy,
             )
@@ -185,8 +192,8 @@ class _PdfToExcelScreenState extends State<PdfToExcelScreen> {
                 PickedFileCard(
                   name: picked.name,
                   subtitle: analysis == null
-                      ? 'Analyse en attente'
-                      : '${analysis.pageCount} pages analysées',
+                      ? l10n.pdfToWordAnalysisPending
+                      : l10n.pdfToExcelPagesAnalyzed(analysis.pageCount),
                   busy: _busy,
                   onChange: _pick,
                 ),
@@ -201,14 +208,8 @@ class _PdfToExcelScreenState extends State<PdfToExcelScreen> {
                         _includeParagraphs = v;
                         _result = null;
                       }),
-                      title: const Text(
-                        'Inclure aussi le texte hors tableaux '
-                        '(une ligne par paragraphe)',
-                      ),
-                      subtitle: const Text(
-                        'Utile pour un document semi-structuré : le texte est placé '
-                        'dans la colonne A, après les tableaux de la page.',
-                      ),
+                      title: Text(l10n.pdfToExcelIncludeParagraphs),
+                      subtitle: Text(l10n.pdfToExcelIncludeParagraphsHint),
                       isThreeLine: true,
                     ),
                   ),
@@ -218,25 +219,19 @@ class _PdfToExcelScreenState extends State<PdfToExcelScreen> {
                   ],
                   const SizedBox(height: 16),
                   Text(
-                    'Ce que la conversion ne conserve pas',
+                    l10n.pdfToExcelCaveatTitle,
                     style: theme.textTheme.titleSmall,
                   ),
                   const SizedBox(height: 6),
-                  const Text(
-                    'La détection repose sur la position du texte dans la page : '
-                    'les tableaux sans bordure régulière, les cellules fusionnées '
-                    'et les colonnes très irrégulières peuvent être mal découpés. '
-                    'Un PDF scanné (image) ne contient aucun texte extractible et '
-                    'ne donnera rien. Les couleurs, formules et images ne sont '
-                    'jamais reprises : seules les valeurs texte le sont.',
-                  ),
+                  Text(l10n.pdfToExcelCaveat),
                   if (_result != null) ...[
                     const SizedBox(height: 16),
                     ResultCard(
-                      title: 'Classeur prêt',
-                      detail:
-                          '$_resultName — '
-                          '${(_result!.lengthInBytes / 1024).toStringAsFixed(0)} Ko',
+                      title: l10n.pdfToExcelResultTitle,
+                      detail: l10n.resultNameAndSize(
+                        _resultName,
+                        formatFileSize(l10n, _result!.lengthInBytes),
+                      ),
                       busy: _busy,
                       onSave: _save,
                       onShare: _share,
@@ -253,7 +248,7 @@ class _PdfToExcelScreenState extends State<PdfToExcelScreen> {
                 child: FilledButton.icon(
                   onPressed: (_busy || !canExport) ? null : _convert,
                   icon: const Icon(Icons.table_chart_outlined),
-                  label: const Text('Convertir en Excel', maxLines: 1),
+                  label: Text(l10n.pdfToExcelConvertAction, maxLines: 1),
                 ),
               ),
             ),
@@ -270,6 +265,7 @@ class _AnalysisCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final ThemeData theme = Theme.of(context);
+    final L l10n = context.l10n;
     final List<int> pages = analysis.pagesWithTables;
     final String pagesLabel = pages.length > 12
         ? '${pages.take(12).join(', ')}…'
@@ -290,10 +286,10 @@ class _AnalysisCard extends StatelessWidget {
                 const SizedBox(width: 12),
                 Expanded(
                   child: Text(
-                    '${analysis.tableCount} '
-                    '${analysis.tableCount > 1 ? 'tableaux détectés' : 'tableau détecté'}'
-                    ' sur ${analysis.pageCount} '
-                    '${analysis.pageCount > 1 ? 'pages' : 'page'}',
+                    l10n.pdfToExcelTablesFound(
+                      analysis.tableCount,
+                      analysis.pageCount,
+                    ),
                     style: theme.textTheme.titleMedium,
                   ),
                 ),
@@ -302,13 +298,13 @@ class _AnalysisCard extends StatelessWidget {
             if (analysis.hasTables) ...[
               const SizedBox(height: 8),
               Text(
-                'Pages concernées : $pagesLabel',
+                l10n.pdfToExcelPagesConcerned(pagesLabel),
                 style: theme.textTheme.bodySmall,
               ),
             ],
             const SizedBox(height: 4),
             Text(
-              '${analysis.paragraphCount} paragraphes hors tableaux',
+              l10n.pdfToExcelParagraphsOutside(analysis.paragraphCount),
               style: theme.textTheme.bodySmall,
             ),
           ],
@@ -328,15 +324,8 @@ class _NoTableCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final ThemeData theme = Theme.of(context);
     final String message = analysis.isScanned
-        ? 'Aucun texte n\'a pu être extrait de ce PDF : il s\'agit très '
-              'probablement d\'un document scanné (des images de pages). Un '
-              'tableur ne peut rien en tirer ; utilisez d\'abord l\'outil de '
-              'reconnaissance de texte (OCR).'
-        : 'Aucune structure de tableau n\'a été reconnue dans ce document. '
-              'Le texte est bien là, mais il n\'est pas disposé en colonnes '
-              'régulières. Plutôt que de produire un classeur illisible, '
-              'activez « Inclure aussi le texte hors tableaux » ci-dessus, ou '
-              'utilisez « PDF vers Word » qui conserve mieux les paragraphes.';
+        ? context.l10n.pdfToExcelScannedWarning
+        : context.l10n.pdfToExcelNoTableWarning;
     return Card(
       color: theme.colorScheme.errorContainer,
       child: Padding(

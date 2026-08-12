@@ -1,0 +1,2369 @@
+{
+  "@@locale": "nb",
+  "appTitle": "Papirklipp — PDF, Skann og Word",
+  "@appTitle": {
+    "description": "Titre affiché par le sélecteur de tâches d'Android au-dessus de l'aperçu de l'application. La marque « Trombone » ne se traduit jamais ; seuls les mots-clés qui la suivent peuvent l'être."
+  },
+  "appWordmark": "Trombone",
+  "@appWordmark": {
+    "description": "La signature de marque en haut de l'écran d'accueil. NE PAS TRADUIRE — c'est un nom propre, identique dans les vingt-cinq langues."
+  },
+  "actionSave": "Lagre",
+  "@actionSave": {
+    "description": "Action principale de fin de parcours : écrire le fichier produit sur l'appareil. Bouton pleine largeur, doit tenir sur une ligne."
+  },
+  "actionShare": "Del",
+  "@actionShare": {
+    "description": "Ouvre la fenêtre de partage du système. Bouton de demi-largeur, doit tenir sur une ligne."
+  },
+  "actionCompress": "Komprimer",
+  "@actionCompress": {
+    "description": "Réduit le poids du PDF. Bouton de demi-largeur, doit tenir sur une ligne."
+  },
+  "actionDone": "Ferdig",
+  "@actionDone": {
+    "description": "Acquitte la feuille de confirmation d'export et sort de l'outil."
+  },
+  "actionCancel": "Avbryt",
+  "@actionCancel": {
+    "description": "Interrompt une opération en cours dans la boîte de progression."
+  },
+  "actionChange": "Endre",
+  "@actionChange": {
+    "description": "Remplace le fichier choisi par un autre. Bouton texte étroit posé au bout d'une rangée — libellé court impératif."
+  },
+  "actionContinue": "Fortsett",
+  "@actionContinue": {
+    "description": "Libellé de repli du bouton d'un écran vide quand l'outil n'en propose pas de plus précis."
+  },
+  "actionOpening": "Åpner …",
+  "@actionOpening": {
+    "description": "État transitoire d'un bouton pendant que la boîte de sélection de fichiers du système s'ouvre. Garder le caractère de suspension final."
+  },
+  "actionRemoveFile": "Fjern denne filen",
+  "@actionRemoveFile": {
+    "description": "Info-bulle de la croix qui ramène l'écran à son état vide."
+  },
+  "progressPreparing": "Forberedelse...",
+  "@progressPreparing": {
+    "description": "Affiché sous la barre de progression tant que le travail total n'est pas connu. Garder le caractère de suspension final."
+  },
+  "progressPercent": "{percent} %",
+  "@progressPercent": {
+    "description": "Avancement en pourcentage. L'espace avant le signe % est une convention française ; les langues qui collent le signe au chiffre doivent écrire « {percent}% ».",
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "emptyReassurance": "Gratis eksport, uten vannmerke eller grense.",
+  "@emptyReassurance": {
+    "description": "Note verte sous le bouton d'un écran vide. Répond à la peur du marché : découvrir un paiement au moment d'enregistrer. Doit rester une phrase brève, tenant sur une à deux lignes."
+  },
+  "emptyAcceptedFormats": "Godkjente formater",
+  "@emptyAcceptedFormats": {
+    "description": "Intitulé de la rangée de puces listant les formats que l'outil sait ouvrir."
+  },
+  "exportSavedTitle": "Det er tatt opp.",
+  "@exportSavedTitle": {
+    "description": "Titre de la feuille de confirmation, après écriture réussie du fichier. Ton rassurant et affirmatif ; c'est le seul moment célébré de l'application."
+  },
+  "exportSavedBody": "Under navnet og i mappen du nettopp har valgt. Ingen vannmerke, ingen grenser, ingenting å låse opp.",
+  "@exportSavedBody": {
+    "description": "Corps de la feuille de confirmation. Rappelle que rien n'est verrouillé derrière un paiement — la promesse centrale du produit."
+  },
+  "exportSaveDialogTitle": "Lagre PDF",
+  "@exportSaveDialogTitle": {
+    "description": "Titre de la boîte système d'enregistrement de fichier."
+  },
+  "pageTileIncluded": "Side {number}, inkludert. Trykk for å flytte den til side.",
+  "@pageTileIncluded": {
+    "description": "Étiquette d'accessibilité d'une vignette de page retenue. Lue à voix haute, jamais affichée.",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "pageTileExcluded": "Side {number}, forkastet. Trykk for å inkludere den.",
+  "@pageTileExcluded": {
+    "description": "Étiquette d'accessibilité d'une vignette de page écartée. Lue à voix haute, jamais affichée.",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "pageTileRotate": "Roter siden {number}",
+  "@pageTileRotate": {
+    "description": "Info-bulle du bouton de rotation sous une vignette de page.",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "sectionHeaderSemantics": "{title}, {count} verktøy",
+  "@sectionHeaderSemantics": {
+    "description": "Étiquette d'accessibilité d'un en-tête de section de l'accueil. Lue à voix haute, jamais affichée.",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "toolCount": "{count} verktøy",
+  "@toolCount": {
+    "description": "Décompte des outils, au colophon de l'accueil. Le nombre est calculé depuis le catalogue, jamais saisi.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePromise": "Lag dokumentet ditt, eksporter det.\nIngen vegg på slutten.",
+  "@homePromise": {
+    "description": "La promesse sous la marque, en haut de l'accueil. Elle désamorce la peur relevée dans les avis du marché : découvrir un paiement obligatoire au moment d'enregistrer. Le saut de ligne est intentionnel — deux lignes exactement, la seconde plus courte que la première."
+  },
+  "homeChipNoAccount": "Uten konto",
+  "@homeChipNoAccount": {
+    "description": "Puce de garantie : aucune inscription n'est demandée. Deux ou trois mots maximum, la puce est étroite."
+  },
+  "homeChipNoWatermark": "Uten vannmerke",
+  "@homeChipNoWatermark": {
+    "description": "Puce de garantie : les fichiers exportés ne portent aucune marque apposée. Deux ou trois mots maximum."
+  },
+  "homeChipUnlimited": "Ubegrenset eksport",
+  "@homeChipUnlimited": {
+    "description": "Puce de garantie : aucun quota sur le nombre d'exports. Deux ou trois mots maximum."
+  },
+  "homeSearchTooltip": "Finn et verktøy",
+  "@homeSearchTooltip": {
+    "description": "Info-bulle de la loupe épinglée à la barre de titre de l'accueil."
+  },
+  "homeColophon": "Ingenting låses opp mot betaling ved registrering. Eksporten er gratis, uten vannmerke og uten antallsbegrensning.",
+  "@homeColophon": {
+    "description": "Texte de pied d'accueil, sous le décompte des outils. Répète la promesse en toutes lettres."
+  },
+  "sectionFeatured": "Utvalgte",
+  "@sectionFeatured": {
+    "description": "Famille des cinq outils mis en avant dans la bande bento. Apparaît en sous-titre des résultats de recherche. Court."
+  },
+  "sectionToPdf": "Til PDF-en",
+  "@sectionToPdf": {
+    "description": "Famille des outils qui produisent un PDF depuis un autre format. Titre de section de l'accueil : doit tenir sur une ligne à côté d'un filet et d'une pastille de compte."
+  },
+  "sectionFromPdf": "Fra PDF",
+  "@sectionFromPdf": {
+    "description": "Famille des outils qui tirent autre chose d'un PDF. Titre de section : doit tenir sur une ligne."
+  },
+  "sectionSecurity": "Sikkerhet",
+  "@sectionSecurity": {
+    "description": "Famille des outils de protection, déverrouillage, réparation et caviardage. Titre de section : doit tenir sur une ligne."
+  },
+  "sectionEdit": "Rediger",
+  "@sectionEdit": {
+    "description": "Famille des outils qui modifient un PDF en place. Titre de section, verbe à l'infinitif : doit tenir sur une ligne."
+  },
+  "toolMerge": "Slå sammen",
+  "@toolMerge": {
+    "description": "Outil : réunit plusieurs documents en un seul PDF. Libellé de tuile — verbe à l'infinitif, court, il s'affiche sur une tuile de 96 dp de large."
+  },
+  "toolMergeKeywords": "sette sammen kombinere sammenføye omgruppere sammenføye sammen",
+  "@toolMergeKeywords": {
+    "description": "Mots que l'utilisateur peut taper pour trouver l'outil « Fusionner » sans en connaître le nom exact. Séparés par des espaces, sans accents ni ponctuation, en minuscules. Ce ne sont PAS des traductions mot à mot : donnez les synonymes naturels de votre langue, y compris les termes empruntés à l'anglais s'ils sont d'usage courant. Ajoutez-en ou retirez-en librement."
+  },
+  "toolMergeSubtitle": "PDF, Word, bilder og tekst i ett dokument",
+  "@toolMergeSubtitle": {
+    "description": "Sous-titre du grand bloc bento de l'accueil. Une ligne descriptive, deux au plus."
+  },
+  "toolRectoVerso": "Dobbeltsidig",
+  "@toolRectoVerso": {
+    "description": "Outil : intercale deux scans — les pages impaires et les pages paires — pour reconstituer un document imprimé des deux côtés. Libellé de tuile, court."
+  },
+  "toolRectoVersoKeywords": "dobbeltsidig intersperse skanning selv oddetall",
+  "@toolRectoVersoKeywords": {
+    "description": "Mots de recherche pour « Recto-verso ». Séparés par des espaces, sans accents, en minuscules. Donnez les synonymes naturels de votre langue plutôt qu'une traduction mot à mot."
+  },
+  "toolRectoVersoSubtitle": "To skanninger, satt tilbake i rekkefølge",
+  "@toolRectoVersoSubtitle": {
+    "description": "Sous-titre d'un bloc bento moyen. Très court — une ligne, six mots au plus."
+  },
+  "toolImagesToPdf": "Bilder til PDF",
+  "@toolImagesToPdf": {
+    "description": "Outil : assemble des photos en un PDF. Libellé de tuile, court."
+  },
+  "toolImagesToPdfKeywords": "foto jpg jpeg png fotoalbum enhet",
+  "@toolImagesToPdfKeywords": {
+    "description": "Mots de recherche pour « Images vers PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolImagesToPdfSubtitle": "Bilder og opptak i ett dokument",
+  "@toolImagesToPdfSubtitle": {
+    "description": "Sous-titre d'un bloc bento moyen. Très court — une ligne, six mots au plus."
+  },
+  "toolPdfToWord": "PDF til Word",
+  "@toolPdfToWord": {
+    "description": "Outil : convertit un PDF en document Word modifiable. « Word » est une marque, elle ne se traduit pas. Libellé de tuile, court."
+  },
+  "toolPdfToWordKeywords": "docx redigerbar tekstbehandlerkonvertering",
+  "@toolPdfToWordKeywords": {
+    "description": "Mots de recherche pour « PDF vers Word ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolPdfToWordSubtitle": "Tekst og tabeller, redigerbare",
+  "@toolPdfToWordSubtitle": {
+    "description": "Sous-titre d'un bloc bento moyen. Très court — une ligne, six mots au plus."
+  },
+  "toolOrganize": "Organiser en PDF",
+  "@toolOrganize": {
+    "description": "Outil : réordonne, extrait, divise et supprime des pages. Libellé de tuile, court."
+  },
+  "toolOrganizeKeywords": "dele separate uttrekk ombestille rekkefølge sider slette",
+  "@toolOrganizeKeywords": {
+    "description": "Mots de recherche pour « Organiser un PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolOrganizeSubtitle": "Del opp, trekk ut, omorganiser",
+  "@toolOrganizeSubtitle": {
+    "description": "Sous-titre d'un bloc bento moyen. Très court — trois verbes à l'infinitif."
+  },
+  "toolExcelToPdf": "Excel til PDF",
+  "@toolExcelToPdf": {
+    "description": "Outil : convertit un classeur en PDF. « Excel » est une marque, elle ne se traduit pas. Libellé de tuile, court."
+  },
+  "toolExcelToPdfKeywords": "xlsx regneark arbeidsbok beregningsark",
+  "@toolExcelToPdfKeywords": {
+    "description": "Mots de recherche pour « Excel vers PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolPptxToPdf": "PowerPoint til PDF",
+  "@toolPptxToPdf": {
+    "description": "Outil : convertit une présentation en PDF. « PowerPoint » est une marque, elle ne se traduit pas. Libellé de tuile."
+  },
+  "toolPptxToPdfKeywords": "pptx lysbildepresentasjon lysbilder",
+  "@toolPptxToPdfKeywords": {
+    "description": "Mots de recherche pour « PowerPoint vers PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolHtmlToPdf": "Nettside til PDF",
+  "@toolHtmlToPdf": {
+    "description": "Outil : enregistre une page web en PDF depuis son adresse. Libellé de tuile, court."
+  },
+  "toolHtmlToPdfKeywords": "html nettside url link artikkel",
+  "@toolHtmlToPdfKeywords": {
+    "description": "Mots de recherche pour « Page web vers PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolScan": "Skann et dokument",
+  "@toolScan": {
+    "description": "Outil : photographie des pages avec l'appareil et les redresse en PDF. Libellé de tuile, court."
+  },
+  "toolScanKeywords": "kamera foto digitalisere skanneenhet papir",
+  "@toolScanKeywords": {
+    "description": "Mots de recherche pour « Scanner un document ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolPdfToExcel": "PDF til Excel",
+  "@toolPdfToExcel": {
+    "description": "Outil : extrait les tableaux d'un PDF vers un classeur. « Excel » est une marque. Libellé de tuile, court."
+  },
+  "toolPdfToExcelKeywords": "xlsx regnearktabell trekke ut data",
+  "@toolPdfToExcelKeywords": {
+    "description": "Mots de recherche pour « PDF vers Excel ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolPdfToPptx": "PDF til PowerPoint",
+  "@toolPdfToPptx": {
+    "description": "Outil : transforme chaque page en diapositive. « PowerPoint » est une marque. Libellé de tuile."
+  },
+  "toolPdfToPptxKeywords": "pptx lysbildepresentasjon lysbilder",
+  "@toolPdfToPptxKeywords": {
+    "description": "Mots de recherche pour « PDF vers PowerPoint ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolPdfToImages": "PDF til bilder",
+  "@toolPdfToImages": {
+    "description": "Outil : exporte chaque page en fichier image. Libellé de tuile, court."
+  },
+  "toolPdfToImagesKeywords": "jpg png bildeeksportfangst",
+  "@toolPdfToImagesKeywords": {
+    "description": "Mots de recherche pour « PDF vers Images ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolOcr": "Søkbar tekst (OCR)",
+  "@toolOcr": {
+    "description": "Outil : reconnaît les caractères d'un PDF scanné pour le rendre sélectionnable. « OCR » est un sigle international, à conserver tel quel entre parenthèses. Libellé de tuile."
+  },
+  "toolOcrKeywords": "tegngjenkjenning skanning kopi velge",
+  "@toolOcrKeywords": {
+    "description": "Mots de recherche pour « Texte cherchable (OCR) ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolPdfA": "Konverter til PDF/A",
+  "@toolPdfA": {
+    "description": "Outil : produit la variante normalisée d'archivage. « PDF/A » est une norme ISO, à conserver telle quelle. Libellé de tuile."
+  },
+  "toolPdfAKeywords": "arkiveringsstandard langtidskonservering",
+  "@toolPdfAKeywords": {
+    "description": "Mots de recherche pour « Convertir en PDF/A ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolProtect": "Beskytt PDF",
+  "@toolProtect": {
+    "description": "Outil : chiffre le document derrière un mot de passe. Libellé de tuile, court."
+  },
+  "toolProtectKeywords": "passord hengelås krypter lås sikker",
+  "@toolProtectKeywords": {
+    "description": "Mots de recherche pour « Protéger PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolUnlock": "Lås opp PDF",
+  "@toolUnlock": {
+    "description": "Outil : retire le mot de passe d'un PDF dont on connaît le mot de passe. Libellé de tuile, court."
+  },
+  "toolUnlockKeywords": "fjerne passord åpne dekryptere låse opp hengelås",
+  "@toolUnlockKeywords": {
+    "description": "Mots de recherche pour « Déverrouiller PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolRepair": "Reparer PDF",
+  "@toolRepair": {
+    "description": "Outil : récupère ce qui peut l'être d'un fichier endommagé. Libellé de tuile, court."
+  },
+  "toolRepairKeywords": "ødelagt uleselig skadet gjenopprettingsfeil",
+  "@toolRepairKeywords": {
+    "description": "Mots de recherche pour « Réparer PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolRedact": "Rediger en PDF",
+  "@toolRedact": {
+    "description": "Outil : recouvre définitivement des zones du document pour anonymiser. Le terme métier consacré en français est « caviarder » ; employez l'équivalent consacré de votre langue (anglais : redact). Libellé de tuile."
+  },
+  "toolRedactKeywords": "skjule svarte anonymisere konfidensiell sletting",
+  "@toolRedactKeywords": {
+    "description": "Mots de recherche pour « Caviarder un PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolEdit": "Rediger PDF",
+  "@toolEdit": {
+    "description": "Outil : ajoute ou corrige du texte sur les pages. Libellé de tuile, court."
+  },
+  "toolEditKeywords": "tekst modifiser riktig kommenter skriv",
+  "@toolEditKeywords": {
+    "description": "Mots de recherche pour « Éditer PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolSign": "Signer",
+  "@toolSign": {
+    "description": "Outil : appose une signature tracée au doigt. Libellé de tuile, un seul verbe."
+  },
+  "toolSignKeywords": "signatur første kontrakt hånd",
+  "@toolSignKeywords": {
+    "description": "Mots de recherche pour « Signer ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolWatermark": "Vannmerke",
+  "@toolWatermark": {
+    "description": "Outil : appose une mention en travers des pages (« CONFIDENTIEL », « BROUILLON »). Libellé de tuile, un seul mot si possible."
+  },
+  "toolWatermarkKeywords": "vannmerke konfidensielt stempel utkast merke",
+  "@toolWatermarkKeywords": {
+    "description": "Mots de recherche pour « Filigrane ». Séparés par des espaces, sans accents, en minuscules. Gardez « watermark » : le terme anglais est cherché dans toutes les langues."
+  },
+  "toolPageNumbers": "Sidetall",
+  "@toolPageNumbers": {
+    "description": "Outil : appose une pagination. Libellé de tuile, court."
+  },
+  "toolPageNumbersKeywords": "pagineringsfolionummer",
+  "@toolPageNumbersKeywords": {
+    "description": "Mots de recherche pour « Numéros de page ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolCrop": "Beskjær en PDF",
+  "@toolCrop": {
+    "description": "Outil : recadre les pages en retirant les marges. Libellé de tuile, court."
+  },
+  "toolCropKeywords": "skjære marger beskjæringskanter størrelse",
+  "@toolCropKeywords": {
+    "description": "Mots de recherche pour « Rogner un PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolCompare": "Sammenlign PDF",
+  "@toolCompare": {
+    "description": "Outil : met deux versions face à face et signale ce qui change. Libellé de tuile, court."
+  },
+  "toolCompareKeywords": "forskjellige versjoner forskjellige endringer",
+  "@toolCompareKeywords": {
+    "description": "Mots de recherche pour « Comparer PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "searchHint": "Slå sammen, passord, vannmerke ...",
+  "@searchHint": {
+    "description": "Texte d'invite du champ de recherche. Trois exemples de requêtes séparés par des virgules, suivis d'un caractère de suspension. Choisissez trois exemples naturels dans votre langue plutôt qu'une traduction littérale."
+  },
+  "searchClear": "Klart",
+  "@searchClear": {
+    "description": "Info-bulle de la croix qui vide le champ de recherche."
+  },
+  "searchNoResultTitle": "Ingen verktøy for \"{query}\".",
+  "@searchNoResultTitle": {
+    "description": "Titre affiché quand aucun outil ne correspond. Les guillemets français « » doivent être remplacés par ceux de votre langue.",
+    "placeholders": {
+      "query": {
+        "type": "String"
+      }
+    }
+  },
+  "searchNoResultBody": "Prøv formatet du har for hånden – “Word”, “Excel”, “photo” – eller hva du vil gjøre med det: “sign”, “divide”, “password”.",
+  "@searchNoResultBody": {
+    "description": "Conseil affiché sous le titre d'absence de résultat. Les exemples entre guillemets doivent être adaptés à votre langue, pas traduits littéralement. Employez les guillemets de votre langue."
+  },
+  "actionUndo": "Avbryt",
+  "@actionUndo": {
+    "description": "Défait la dernière action — retrait d'un fichier, compression appliquée. ATTENTION : ce n'est PAS « interrompre » (voir actionCancel). Le français emploie le même mot pour les deux, la plupart des langues non : anglais « Undo » contre « Cancel », allemand « Rückgängig » contre « Abbrechen »."
+  },
+  "actionApply": "Søk",
+  "@actionApply": {
+    "description": "Valide le réglage choisi et l'applique au document."
+  },
+  "actionChoose": "Velg",
+  "@actionChoose": {
+    "description": "Ouvre la boîte de sélection de fichiers du système. Libellé court, souvent au bout d'une rangée étroite."
+  },
+  "actionChoosePdf": "Velg en PDF",
+  "@actionChoosePdf": {
+    "description": "Bouton principal d'un écran vide dont l'outil ne travaille que sur des PDF."
+  },
+  "actionChooseFiles": "Velg filer",
+  "@actionChooseFiles": {
+    "description": "Bouton principal d'un écran vide dont l'outil accepte plusieurs fichiers à la fois."
+  },
+  "actionConvert": "Konverter",
+  "@actionConvert": {
+    "description": "Lance la conversion. Bouton pleine largeur en bas d'écran."
+  },
+  "actionFinish": "Fullfør",
+  "@actionFinish": {
+    "description": "Clôt une capture en plusieurs pages et passe à la suite."
+  },
+  "actionBack": "Retur",
+  "@actionBack": {
+    "description": "Info-bulle de la flèche qui remonte d'un écran."
+  },
+  "actionAdd": "Legg til",
+  "@actionAdd": {
+    "description": "Ajoute un élément à une liste. Libellé court."
+  },
+  "noFileChosen": "Ingen fil er valgt",
+  "@noFileChosen": {
+    "description": "Sous-titre d'une rangée tant qu'aucun fichier n'a été retenu."
+  },
+  "errorExportFailed": "Eksport mislyktes: {detail}",
+  "@errorExportFailed": {
+    "description": "Bandeau d'erreur quand l'écriture du fichier échoue. {detail} est un message technique non traduit, rendu tel quel.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "errorShareFailed": "Deling mislyktes: {detail}",
+  "@errorShareFailed": {
+    "description": "Bandeau d'erreur quand la fenêtre de partage échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "errorOpenFailed": "Kan ikke åpne filen: {detail}",
+  "@errorOpenFailed": {
+    "description": "Bandeau d'erreur quand le fichier choisi ne peut pas être lu. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "errorConversionFailed": "Konvertering mislyktes: {detail}",
+  "@errorConversionFailed": {
+    "description": "Bandeau d'erreur quand une conversion de format échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "errorOnFile": "{name}: {detail}",
+  "@errorOnFile": {
+    "description": "Bandeau d'erreur rattaché à un fichier précis d'une sélection multiple. Ne traduire que la ponctuation de séparation si votre langue en emploie une autre.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "errorPickPdf": "Velg en PDF-fil.",
+  "@errorPickPdf": {
+    "description": "Bandeau d'erreur quand l'outil exige un PDF et qu'on lui a donné autre chose."
+  },
+  "sizeBytes": "{value} o",
+  "@sizeBytes": {
+    "description": "Poids d'un fichier en octets. L'abréviation est « o » en français, « B » en anglais — employez celle de votre langue.",
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "sizeKb": "{value} KB",
+  "@sizeKb": {
+    "description": "Poids d'un fichier en kilo-octets. L'abréviation est « Ko » en français, « KB » en anglais et dans la plupart des langues — employez celle de la vôtre.",
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "sizeMb": "{value} MB",
+  "@sizeMb": {
+    "description": "Poids d'un fichier en méga-octets. L'abréviation est « Mo » en français, « MB » en anglais et dans la plupart des langues — employez celle de la vôtre.",
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "sizeApprox": "~{size}",
+  "@sizeApprox": {
+    "description": "Taille estimée, précédée du signe « environ ». {size} est déjà formaté (« 240 Ko »). Le tilde et non le signe ≈ : ce dernier manque au sous-ensemble des fontes embarquées. Voir test/l10n_coverage_test.dart.",
+    "placeholders": {
+      "size": {
+        "type": "String"
+      }
+    }
+  },
+  "pageCount": "{count} sider",
+  "@pageCount": {
+    "description": "Décompte de pages. Employez les formes plurielles de votre langue — le polonais, le tchèque, le lituanien et le letton en ont plus de deux.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pageCountOfTotal": "{kept} sider av {total}",
+  "@pageCountOfTotal": {
+    "description": "Décompte partiel : combien de pages sont retenues sur combien au total. Affiché seulement quand on en a écarté ; « 3 pages sur 3 » n'apparaît jamais.",
+    "placeholders": {
+      "kept": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "pageOfTotal": "Side {current} på {total}",
+  "@pageOfTotal": {
+    "description": "Titre de la visionneuse plein écran : quelle page on regarde, sur combien.",
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "formatPdf": "PDF",
+  "@formatPdf": {
+    "description": "Puce de format acceptable. Sigle international, à conserver tel quel dans toutes les langues."
+  },
+  "formatWord": "Word",
+  "@formatWord": {
+    "description": "Puce de format acceptable. Marque déposée, à conserver telle quelle."
+  },
+  "formatExcel": "Excel",
+  "@formatExcel": {
+    "description": "Puce de format acceptable. Marque déposée, à conserver telle quelle."
+  },
+  "formatPowerPoint": "PowerPoint",
+  "@formatPowerPoint": {
+    "description": "Puce de format acceptable. Marque déposée, à conserver telle quelle."
+  },
+  "formatImages": "Bilder",
+  "@formatImages": {
+    "description": "Puce de format acceptable : les fichiers d'image en général."
+  },
+  "formatText": "Tekst",
+  "@formatText": {
+    "description": "Puce de format acceptable : les fichiers texte brut."
+  },
+  "mergeAddFile": "Legg til en fil",
+  "@mergeAddFile": {
+    "description": "Libellé de la carte à contour tireté en fin de liste, qui ouvre la sélection de fichiers."
+  },
+  "mergeAddHint": "PDF, Word, bilder eller tekst",
+  "@mergeAddHint": {
+    "description": "Ligne sous le libellé de la carte d'ajout, énumérant ce qui est accepté."
+  },
+  "mergeEmptyTitle": "Et enkelt dokument",
+  "@mergeEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Fusionner : ce qu'on va obtenir, en trois mots."
+  },
+  "mergeEmptyBody": "Legg til PDF-er, Word-filer, bilder eller tekst. Du kan omorganisere dem og fjerne sider før du eksporterer.",
+  "@mergeEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Fusionner."
+  },
+  "mergeNeedOnePage": "Legg til minst én fil med en side som skal inkluderes.",
+  "@mergeNeedOnePage": {
+    "description": "Bandeau d'erreur quand on demande l'aperçu sans qu'aucune page ne soit retenue."
+  },
+  "mergeProgress": "Sammenslåing pågår...",
+  "@mergeProgress": {
+    "description": "Titre de la boîte de progression pendant l'assemblage. Garder le caractère de suspension final."
+  },
+  "mergeFailed": "Sammenslåing mislyktes: {detail}",
+  "@mergeFailed": {
+    "description": "Bandeau d'erreur quand l'assemblage échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "mergeRemoved": "{name} fjernet.",
+  "@mergeRemoved": {
+    "description": "Bandeau confirmant qu'un document a quitté la liste ; il porte l'action « Annuler » (actionUndo). Accordez au genre du mot « fichier » dans votre langue.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "mergeRemoveTooltip": "Fjern {name}",
+  "@mergeRemoveTooltip": {
+    "description": "Info-bulle de la corbeille d'une rangée de la liste.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "mergeMoveSemantics": "Flytt {name}",
+  "@mergeMoveSemantics": {
+    "description": "Étiquette d'accessibilité de la poignée de glissement. Lue à voix haute, jamais affichée.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "mergeRotateAll": "Roter alle sider",
+  "@mergeRotateAll": {
+    "description": "Bouton qui fait tourner d'un quart de tour toutes les pages du document déplié."
+  },
+  "mergePreviewAndExport": "Forhåndsvisning og eksport ({count} sider)",
+  "@mergePreviewAndExport": {
+    "description": "Bouton de bas d'écran de l'outil Fusionner, avec le nombre de pages retenues entre parenthèses.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "previewTitle": "Oversikt · {size}",
+  "@previewTitle": {
+    "description": "Titre de l'écran d'aperçu, suivi du poids du fichier. {size} est déjà formaté (« 1,20 Mo »). Le point médian est un séparateur typographique, gardez-le ou remplacez-le par celui de votre langue.",
+    "placeholders": {
+      "size": {
+        "type": "String"
+      }
+    }
+  },
+  "previewZoomPage": "Side {number}, forstørre",
+  "@previewZoomPage": {
+    "description": "Étiquette d'accessibilité d'une vignette d'aperçu. Lue à voix haute, jamais affichée.",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "previewPageUnreadable": "Uleselig side.",
+  "@previewPageUnreadable": {
+    "description": "Affiché à la place d'une page dont le rendu a échoué."
+  },
+  "previewExportWhat": "PDF · {count} sider",
+  "@previewExportWhat": {
+    "description": "Description de ce qui vient d'être enregistré, dans la feuille de confirmation. Décrit le document, ne le nomme pas.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "compressTitle": "Komprimering",
+  "@compressTitle": {
+    "description": "Titre de la feuille de choix du niveau de compression."
+  },
+  "compressBody": "Nåværende størrelse: {size}. Velg et nivå – beregnet størrelse vises før påføring.",
+  "@compressBody": {
+    "description": "Consigne de la feuille de compression. {size} est déjà formaté.",
+    "placeholders": {
+      "size": {
+        "type": "String"
+      }
+    }
+  },
+  "compressEstimating": "Anslå...",
+  "@compressEstimating": {
+    "description": "Affiché tant que la taille estimée d'un niveau n'est pas connue. Garder le caractère de suspension final."
+  },
+  "compressProgress": "Komprimering pågår...",
+  "@compressProgress": {
+    "description": "Titre de la boîte de progression pendant la compression. Garder le caractère de suspension final."
+  },
+  "compressFailed": "Komprimering mislyktes: {detail}",
+  "@compressFailed": {
+    "description": "Bandeau d'erreur quand la compression échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "protectEmptyTitle": "Sett under passord",
+  "@protectEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Protéger."
+  },
+  "protectEmptyBody": "PDF-filen åpnes ikke lenger uten passordet du velger. Behold den: den kan ikke gjenopprettes.",
+  "@protectEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Protéger. L'avertissement de la seconde phrase est essentiel — ne l'allégez pas."
+  },
+  "protectSubtitle": "Vil bli kryptert i 256-bit AES",
+  "@protectSubtitle": {
+    "description": "Sous-titre de la carte du fichier choisi. « AES 256 bits » est un nom d'algorithme, à conserver tel quel."
+  },
+  "protectPassword": "Passord",
+  "@protectPassword": {
+    "description": "Intitulé du premier champ de saisie."
+  },
+  "protectConfirmPassword": "Bekreft passord",
+  "@protectConfirmPassword": {
+    "description": "Intitulé du second champ, où l'on retape le mot de passe."
+  },
+  "protectShowPasswords": "Vis passord",
+  "@protectShowPasswords": {
+    "description": "Info-bulle du bouton œil quand les caractères sont masqués."
+  },
+  "protectHidePasswords": "Skjul passord",
+  "@protectHidePasswords": {
+    "description": "Info-bulle du bouton œil quand les caractères sont visibles."
+  },
+  "protectMismatch": "De to passordene er forskjellige.",
+  "@protectMismatch": {
+    "description": "Message d'erreur rattaché au champ de confirmation. Court : il s'affiche sous le champ."
+  },
+  "protectWarning": "Skriv det ned et sted: uten det blir dokumentet permanent uleselig. Ingen gjenoppretting er mulig, verken av deg eller applikasjonen.",
+  "@protectWarning": {
+    "description": "Avertissement sous les champs de saisie. C'est le seul endroit qui dit qu'un mot de passe perdu est perdu pour de bon — ne l'allégez pas."
+  },
+  "protectAlreadyProtected": "Denne filen er allerede beskyttet – bruk Unlock PDF først.",
+  "@protectAlreadyProtected": {
+    "description": "Bandeau d'erreur quand le PDF choisi porte déjà un mot de passe. « Déverrouiller PDF » doit reprendre exactement le libellé traduit de l'outil (toolUnlock)."
+  },
+  "protectProgress": "Beskyttelse pågår...",
+  "@protectProgress": {
+    "description": "Titre de la boîte de progression pendant le chiffrement. Garder le caractère de suspension final."
+  },
+  "protectFailed": "Beskyttelse mislyktes: {detail}",
+  "@protectFailed": {
+    "description": "Bandeau d'erreur quand le chiffrement échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "protectAction": "Beskytt",
+  "@protectAction": {
+    "description": "Bouton de bas d'écran qui lance le chiffrement. Verbe à l'infinitif, court."
+  },
+  "protectResultTitle": "Beskyttet PDF",
+  "@protectResultTitle": {
+    "description": "Titre de la carte de résultat, une fois le document chiffré."
+  },
+  "protectResultDetail": "Kryptert i AES 256 bits. Du trenger passordet for å åpne det.",
+  "@protectResultDetail": {
+    "description": "Détail de la carte de résultat. « AES 256 bits » est un nom d'algorithme, à conserver tel quel."
+  },
+  "protectExportWhat": "Passordbeskyttet PDF",
+  "@protectExportWhat": {
+    "description": "Description de ce qui vient d'être enregistré, dans la feuille de confirmation."
+  },
+  "unlockEmptyTitle": "Fjern passord",
+  "@unlockEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Déverrouiller."
+  },
+  "unlockEmptyBody": "Du trenger gjeldende passord for dokumentet. Når den er fjernet, åpnes PDF-en fritt.",
+  "@unlockEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Déverrouiller. La première phrase est importante : l'outil ne casse pas les mots de passe, il en délivre un document qu'on sait déjà ouvrir."
+  },
+  "unlockAcceptsProtectedPdf": "Beskyttet PDF",
+  "@unlockAcceptsProtectedPdf": {
+    "description": "Puce de format acceptable : un PDF portant un mot de passe."
+  },
+  "unlockChooseProtectedPdf": "Velg en beskyttet PDF",
+  "@unlockChooseProtectedPdf": {
+    "description": "Bouton principal de l'écran vide de l'outil Déverrouiller."
+  },
+  "unlockCurrentPassword": "Gjeldende passord",
+  "@unlockCurrentPassword": {
+    "description": "Intitulé du champ où l'on saisit le mot de passe qui ouvre déjà le document."
+  },
+  "unlockWrongPassword": "Feil passord.",
+  "@unlockWrongPassword": {
+    "description": "Bandeau d'erreur quand le mot de passe saisi n'ouvre pas le document."
+  },
+  "unlockProgress": "Låser opp pågår …",
+  "@unlockProgress": {
+    "description": "Titre de la boîte de progression pendant le retrait du mot de passe. Garder le caractère de suspension final."
+  },
+  "unlockFailed": "Kunne ikke låse opp: {detail}",
+  "@unlockFailed": {
+    "description": "Bandeau d'erreur quand le retrait du mot de passe échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "unlockAction": "Lås opp",
+  "@unlockAction": {
+    "description": "Bouton de bas d'écran qui retire le mot de passe. Verbe à l'infinitif, court."
+  },
+  "repairEmptyTitle": "Reparer en skadet fil",
+  "@repairEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Réparer."
+  },
+  "repairEmptyBody": "Den interne strukturen til en skadet PDF rekonstrueres. Det som er bergbart vil være bergbart.",
+  "@repairEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Réparer. La seconde phrase promet peu délibérément — la réparation n'est jamais garantie."
+  },
+  "repairProgress": "Reparasjon pågår...",
+  "@repairProgress": {
+    "description": "Titre de la boîte de progression pendant la reconstruction. Garder le caractère de suspension final."
+  },
+  "repairFailed": "Denne filen kan ikke repareres – den kan være for skadet.",
+  "@repairFailed": {
+    "description": "Bandeau d'erreur quand la reconstruction échoue. Le ton reste prudent : on ne sait pas pourquoi, et on le dit."
+  },
+  "repairAction": "Reparasjon",
+  "@repairAction": {
+    "description": "Bouton de bas d'écran qui lance la reconstruction. Verbe à l'infinitif, court."
+  },
+  "pdfToWordEmptyTitle": "Et redigerbart Word",
+  "@pdfToWordEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil PDF vers Word. « Word » est une marque, à conserver."
+  },
+  "pdfToWordEmptyBody": "Teksten og strukturen til PDF-filen transponeres til et .docx-dokument som du kan åpne på nytt og korrigere.",
+  "@pdfToWordEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil PDF vers Word. « .docx » est une extension de fichier, à conserver telle quelle."
+  },
+  "pdfToWordAnalyzing": "Analyse av dokumentet...",
+  "@pdfToWordAnalyzing": {
+    "description": "Titre de la boîte de progression pendant l'inspection du PDF, avant conversion. Garder le caractère de suspension final."
+  },
+  "pdfToWordAnalysisPending": "Analyse venter",
+  "@pdfToWordAnalysisPending": {
+    "description": "Sous-titre de la carte du fichier tant que l'inspection n'a pas rendu ses résultats."
+  },
+  "pdfToWordAnalysisFailed": "Kan ikke skanne: {detail}",
+  "@pdfToWordAnalysisFailed": {
+    "description": "Bandeau d'erreur quand l'inspection du PDF échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "pdfLocked": "Denne PDF-filen er passordbeskyttet. Lås den opp først.",
+  "@pdfLocked": {
+    "description": "Bandeau d'erreur commun aux outils qui refusent un PDF chiffré. Renvoie implicitement à l'outil Déverrouiller."
+  },
+  "pdfToWordConverting": "Konverterer til Word …",
+  "@pdfToWordConverting": {
+    "description": "Titre de la boîte de progression pendant la conversion. Garder le caractère de suspension final."
+  },
+  "pdfToWordSummaryTitle": "Innhold oppdaget",
+  "@pdfToWordSummaryTitle": {
+    "description": "Titre de la carte qui résume ce que l'inspection a trouvé dans le PDF."
+  },
+  "pdfToWordParagraphCount": "{count} avsnitt",
+  "@pdfToWordParagraphCount": {
+    "description": "Puce du résumé : combien de paragraphes ont été reconnus.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pdfToWordHeadingCount": "{count} titler",
+  "@pdfToWordHeadingCount": {
+    "description": "Puce du résumé : combien de titres ont été reconnus.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pdfToWordTableCount": "{count} tabeller",
+  "@pdfToWordTableCount": {
+    "description": "Puce du résumé : combien de tableaux ont été reconnus.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pdfToWordNoTables": "Ingen tabeller oppdaget: Hvis PDF-filen inneholder noen, vil linjene bli konvertert til avsnitt.",
+  "@pdfToWordNoTables": {
+    "description": "Avertissement affiché quand l'inspection n'a trouvé aucun tableau."
+  },
+  "pdfToWordCaveat": "Konverteringen gjengir teksten, formateringen og tabellene, men ikke den nøyaktige layouten: posisjonen til bilder og kolonner er ikke bevart, og bildene er ikke inkludert i Word-dokumentet.",
+  "@pdfToWordCaveat": {
+    "description": "Ce que la conversion ne sait pas faire, dit avant qu'on la lance. C'est le passage qui évite la déception — ne l'allégez pas."
+  },
+  "pdfToWordScanWarning": "Denne PDF-en ser ut til å være skannet: ingen tekst ble funnet. Bruk søkbar tekst (OCR)-verktøyet først, kom så tilbake og konverter den resulterende PDF-filen.",
+  "@pdfToWordScanWarning": {
+    "description": "Avertissement quand le PDF ne contient aucun texte extractible. « Texte cherchable (OCR) » doit reprendre exactement le libellé traduit de l'outil (toolOcr)."
+  },
+  "pdfToWordResultTitle": "Word-dokumentet er klart",
+  "@pdfToWordResultTitle": {
+    "description": "Titre de la carte de résultat, une fois le .docx produit."
+  },
+  "pdfToWordResultDetail": "{name} — {size}",
+  "@pdfToWordResultDetail": {
+    "description": "Détail de la carte de résultat : le nom du fichier et son poids, déjà formatés.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "size": {
+        "type": "String"
+      }
+    }
+  },
+  "pdfToWordExportWhat": "Word-dokument",
+  "@pdfToWordExportWhat": {
+    "description": "Description de ce qui vient d'être enregistré, dans la feuille de confirmation."
+  },
+  "pdfToWordConvertAction": "Konverter til Word",
+  "@pdfToWordConvertAction": {
+    "description": "Bouton de bas d'écran qui lance la conversion. Doit tenir sur une ligne."
+  },
+  "actionConvertAgain": "Konverter igjen",
+  "@actionConvertAgain": {
+    "description": "Action secondaire proposée une fois le fichier produit, pour refaire la conversion. Doit tenir sur une ligne."
+  },
+  "errorSaveFailed": "Kan ikke registrere: {detail}",
+  "@errorSaveFailed": {
+    "description": "Bandeau d'erreur quand l'écriture du fichier échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "rectoVersoIntro": "En enkeltsidig mater produserer to filer: oddetallssider i rekkefølge, partallssider ofte i omvendt rekkefølge. Velg begge for å komponere dem på nytt.",
+  "@rectoVersoIntro": {
+    "description": "Consigne en tête de l'outil Recto-verso, qui explique d'où viennent les deux fichiers attendus."
+  },
+  "rectoVersoOddSlot": "Odd-sider-fil (ensidig)",
+  "@rectoVersoOddSlot": {
+    "description": "Intitulé de la première case : le scan des pages 1, 3, 5…"
+  },
+  "rectoVersoEvenSlot": "Partalls-fil (tilbake)",
+  "@rectoVersoEvenSlot": {
+    "description": "Intitulé de la seconde case : le scan des pages 2, 4, 6…"
+  },
+  "rectoVersoReversed": "Den andre filen er i omvendt rekkefølge",
+  "@rectoVersoReversed": {
+    "description": "Intitulé de l'interrupteur qui retourne l'ordre des pages paires."
+  },
+  "rectoVersoReversedHint": "Dette er det vanligste tilfellet, merket som standard",
+  "@rectoVersoReversedHint": {
+    "description": "Sous-titre de l'interrupteur, qui justifie sa valeur par défaut."
+  },
+  "rectoVersoPreview": "Interleaving-oversikt ({count} sider)",
+  "@rectoVersoPreview": {
+    "description": "Titre de la bande de vignettes qui montre le résultat de l'entrelacement.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "rectoVersoProgress": "Interleaving pågår...",
+  "@rectoVersoProgress": {
+    "description": "Titre de la boîte de progression pendant l'entrelacement. Garder le caractère de suspension final."
+  },
+  "fileWithPageCount": "{name} · {count} sider",
+  "@fileWithPageCount": {
+    "description": "Sous-titre d'une carte de fichier : son nom, puis son nombre de pages. Le point médian est un séparateur typographique.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "actionPreviewAndExport": "Forhåndsvis og eksporter",
+  "@actionPreviewAndExport": {
+    "description": "Bouton de bas d'écran qui mène à l'écran d'aperçu. Doit tenir sur une ligne."
+  },
+  "errorOpenFailedShort": "Kan ikke åpne: {detail}",
+  "@errorOpenFailedShort": {
+    "description": "Variante brève du bandeau d'erreur d'ouverture. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "errorGeneric": "Mislyktes: {detail}",
+  "@errorGeneric": {
+    "description": "Bandeau d'erreur générique, quand l'écran n'a rien de plus précis à dire. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "actionConvertToPdf": "Konverter til PDF",
+  "@actionConvertToPdf": {
+    "description": "Bouton de bas d'écran des outils de conversion vers le PDF. Doit tenir sur une ligne."
+  },
+  "convertProgress": "Konvertering pågår...",
+  "@convertProgress": {
+    "description": "Titre de la boîte de progression pendant une conversion de format. Garder le caractère de suspension final."
+  },
+  "excelEmptyTitle": "En PDF-arbeidsbok",
+  "@excelEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Excel vers PDF."
+  },
+  "excelEmptyBody": "Ark i en .xlsx-fil blir PDF-sider, klare til å sende eller skrive ut.",
+  "@excelEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Excel vers PDF. « .xlsx » est une extension de fichier, à conserver telle quelle."
+  },
+  "excelChooseWorkbook": "Velg en perm",
+  "@excelChooseWorkbook": {
+    "description": "Bouton principal de l'écran vide de l'outil Excel vers PDF."
+  },
+  "excelChooseXlsx": "Velg en .xlsx-arbeidsbok",
+  "@excelChooseXlsx": {
+    "description": "Intitulé de la rangée de fichier tant qu'aucun classeur n'est choisi. « .xlsx » est une extension, à conserver."
+  },
+  "excelLegacyFormat": ".xls-formatet (gammelt Excel-binærformat) støttes ikke. Lagre filen som .xlsx og prøv igjen.",
+  "@excelLegacyFormat": {
+    "description": "Bandeau d'erreur quand on choisit un classeur au vieux format binaire. Les extensions « .xls » et « .xlsx » sont à conserver telles quelles."
+  },
+  "excelWrongFormat": "Velg en Excel .xlsx-arbeidsbok.",
+  "@excelWrongFormat": {
+    "description": "Bandeau d'erreur quand le fichier choisi n'est pas un classeur."
+  },
+  "excelUnreadable": "Uleselig mappe: {detail}",
+  "@excelUnreadable": {
+    "description": "Bandeau d'erreur quand le classeur ne peut pas être décodé. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "excelSheetsAndRows": "{sheets} ark · {rows} rader totalt",
+  "@excelSheetsAndRows": {
+    "description": "Sous-titre de la rangée de fichier : combien de feuilles et combien de lignes en tout. Le point médian est un séparateur typographique.",
+    "placeholders": {
+      "sheets": {
+        "type": "int"
+      },
+      "rows": {
+        "type": "int"
+      }
+    }
+  },
+  "excelSheetsDetected": "Blader oppdaget",
+  "@excelSheetsDetected": {
+    "description": "Intitulé de la liste des feuilles trouvées dans le classeur."
+  },
+  "excelEmptySheet": "Tomt ark",
+  "@excelEmptySheet": {
+    "description": "Sous-titre d'une feuille qui ne contient aucune ligne."
+  },
+  "excelSheetDimensions": "{rows} rader × {columns} kolonner",
+  "@excelSheetDimensions": {
+    "description": "Sous-titre d'une feuille : ses dimensions. Le signe × est le symbole de multiplication.",
+    "placeholders": {
+      "rows": {
+        "type": "int"
+      },
+      "columns": {
+        "type": "int"
+      }
+    }
+  },
+  "excelRepeatHeader": "Gjenta overskriftslinjen på hver side",
+  "@excelRepeatHeader": {
+    "description": "Intitulé de l'interrupteur qui redessine la première ligne en haut de chaque page."
+  },
+  "excelRepeatHeaderHint": "Den første raden av arket tegnes på nytt øverst på hver tabellside.",
+  "@excelRepeatHeaderHint": {
+    "description": "Sous-titre de l'interrupteur de répétition d'en-tête."
+  },
+  "excelCaveat": "Hva konverteringen krever: teksten til cellene slik den er lagret i filen (inkludert det siste beregnede resultatet av formlene), den første fete linjen og et rutenett.\n\nHva er ikke inkludert: farger, fonter, tallformater, sammenslåtte celler, bilder, grafikk og selve formlene. Kolonnene er redusert for å passe til bredden på siden; på svært brede ark avkortes teksten i celler som er for smale av \"...\".",
+  "@excelCaveat": {
+    "description": "Ce que la conversion sait et ne sait pas faire. Les deux paragraphes sont séparés par une ligne vide — gardez le double saut de ligne. C'est le passage qui évite la déception, ne l'allégez pas."
+  },
+  "pptxEmptyTitle": "En presentasjon i PDF",
+  "@pptxEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil PowerPoint vers PDF."
+  },
+  "pptxEmptyBody": "Én 16:9 liggende side per lysbilde, inkludert tittel og kuler. Teksten gjentas; de originale bildene, formene og bakgrunnene er ikke det.\n\nAkseptert format: .pptx. En gammel .ppt-fil må først lagres på nytt som .pptx fra PowerPoint.",
+  "@pptxEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil PowerPoint vers PDF. Les deux paragraphes sont séparés par une ligne vide — gardez le double saut de ligne. « 16:9 », « .pptx » et « .ppt » sont à conserver tels quels."
+  },
+  "pptxChoosePresentation": "Velg en presentasjon",
+  "@pptxChoosePresentation": {
+    "description": "Bouton principal de l'écran vide de l'outil PowerPoint vers PDF."
+  },
+  "pptxTextOnlyTitle": "Kun konvertering av tekst",
+  "@pptxTextOnlyTitle": {
+    "description": "Titre de la carte d'avertissement affichée une fois la présentation chargée."
+  },
+  "pptxTextOnlyBody": "Teksten til hvert lysbilde gjentas. De originale bildene, formene, bakgrunnene, fargene og layoutene er ikke bevart: den resulterende PDF-filen er en enkel, lesbar layout, ikke en tro kopi av presentasjonen din.",
+  "@pptxTextOnlyBody": {
+    "description": "Corps de la carte d'avertissement. Dit clairement ce que l'outil ne fait pas — ne l'allégez pas."
+  },
+  "pptxSlideCount": "{count} lysbilder",
+  "@pptxSlideCount": {
+    "description": "Sous-titre de la rangée de fichier : combien de diapositives ont été trouvées.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pptxSlidesDetected": "Lysbilder oppdaget",
+  "@pptxSlidesDetected": {
+    "description": "Intitulé de la liste des diapositives trouvées dans la présentation."
+  },
+  "pptxMoreSlides": "og {count} andre lysbilder …",
+  "@pptxMoreSlides": {
+    "description": "Affiché sous la liste quand la présentation compte plus de trente diapositives et que l'aperçu s'arrête là. Garder le caractère de suspension final.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pptxUntitledSlide": "Uten tittel",
+  "@pptxUntitledSlide": {
+    "description": "Affiché à la place du titre d'une diapositive qui n'en porte pas. Rendu en italique."
+  },
+  "pptxEmptySlide": "Ingen tekst (kun bilde eller form)",
+  "@pptxEmptySlide": {
+    "description": "Sous-titre d'une diapositive dont l'outil n'a extrait aucun texte."
+  },
+  "pptxTextLineCount": "{count} linjer med tekst",
+  "@pptxTextLineCount": {
+    "description": "Sous-titre d'une diapositive : combien de lignes de texte elle porte.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pptxReadFailed": "Kan ikke lese: {detail}",
+  "@pptxReadFailed": {
+    "description": "Bandeau d'erreur quand la présentation ne peut pas être décodée. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "compressLevelLight": "Lys",
+  "@compressLevelLight": {
+    "description": "Niveau de compression le plus doux. Adjectif accordé à « compression » ; si votre langue ne permet pas l'adjectif seul, écrivez « Compression légère »."
+  },
+  "compressLevelMedium": "Gjennomsnittlig",
+  "@compressLevelMedium": {
+    "description": "Niveau de compression intermédiaire. Adjectif accordé à « compression »."
+  },
+  "compressLevelStrong": "Sterk",
+  "@compressLevelStrong": {
+    "description": "Niveau de compression le plus agressif. Adjectif accordé à « compression »."
+  },
+  "pptxQualityStandard": "Standard (150 dpi)",
+  "@pptxQualityStandard": {
+    "description": "Réglage de résolution par défaut de l'export PowerPoint. « dpi » est un sigle international, à conserver."
+  },
+  "pptxQualityHigh": "Høy (220 dpi)",
+  "@pptxQualityHigh": {
+    "description": "Réglage de résolution élevée de l'export PowerPoint. « dpi » est un sigle international, à conserver."
+  },
+  "pdfToExcelEmptyTitle": "Hent tabeller",
+  "@pdfToExcelEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil PDF vers Excel."
+  },
+  "pdfToExcelEmptyBody": "Tabeller fra en PDF-fil trekkes ut til en Excel-arbeidsbok. Formateringen er ikke bevart, verdiene er det.",
+  "@pdfToExcelEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil PDF vers Excel."
+  },
+  "pdfToExcelPagesAnalyzed": "{count} sider analysert",
+  "@pdfToExcelPagesAnalyzed": {
+    "description": "Sous-titre de la carte du fichier une fois l'inspection faite.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pdfToExcelAnalysisFailed": "Analyse umulig. PDF-filen kan være passordbeskyttet eller skadet. ({detail})",
+  "@pdfToExcelAnalysisFailed": {
+    "description": "Bandeau d'erreur quand l'inspection échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "pdfToExcelNothingToExport": "Ingenting å eksportere: ingen tabell oppdaget.",
+  "@pdfToExcelNothingToExport": {
+    "description": "Bandeau d'erreur quand on lance la conversion sans qu'aucun tableau n'ait été reconnu."
+  },
+  "pdfToExcelBuilding": "Oppretter arbeidsboken …",
+  "@pdfToExcelBuilding": {
+    "description": "Titre de la boîte de progression pendant la construction du classeur. Garder le caractère de suspension final."
+  },
+  "pdfToExcelIncludeParagraphs": "Ta også med tekst utenfor tabeller (én linje per avsnitt)",
+  "@pdfToExcelIncludeParagraphs": {
+    "description": "Intitulé de l'interrupteur qui verse le texte courant dans le classeur."
+  },
+  "pdfToExcelIncludeParagraphsHint": "Nyttig for et semistrukturert dokument: teksten plasseres i kolonne A, etter tabellene på siden.",
+  "@pdfToExcelIncludeParagraphsHint": {
+    "description": "Sous-titre de l'interrupteur. « colonne A » désigne la première colonne du tableur."
+  },
+  "pdfToExcelCaveatTitle": "Hva konverteringen ikke bevarer",
+  "@pdfToExcelCaveatTitle": {
+    "description": "Intitulé du paragraphe qui énumère les limites de l'extraction."
+  },
+  "pdfToExcelCaveat": "Deteksjon er basert på plasseringen av teksten på siden: Tabeller uten en vanlig kantlinje, sammenslåtte celler og svært uregelmessige kolonner kan være dårlig kuttet. En skannet PDF (bilde) inneholder ingen tekst som kan pakkes ut og vil ikke gi noe. Farger, formler og bilder er aldri inkludert: bare tekstverdier er med.",
+  "@pdfToExcelCaveat": {
+    "description": "Limites de l'extraction de tableaux, dites avant qu'on lance la conversion. Ne l'allégez pas."
+  },
+  "pdfToExcelTablesFound": "{tables} tabeller oppdaget på {pages} sider",
+  "@pdfToExcelTablesFound": {
+    "description": "Résumé de l'inspection : combien de tableaux, sur combien de pages.",
+    "placeholders": {
+      "tables": {
+        "type": "int"
+      },
+      "pages": {
+        "type": "int"
+      }
+    }
+  },
+  "pdfToExcelPagesConcerned": "Berørte sider: {pages}",
+  "@pdfToExcelPagesConcerned": {
+    "description": "Liste des numéros de page qui portent un tableau. {pages} est déjà formaté (« 1, 3, 7… »).",
+    "placeholders": {
+      "pages": {
+        "type": "String"
+      }
+    }
+  },
+  "pdfToExcelParagraphsOutside": "{count} avsnitt utenfor tabeller",
+  "@pdfToExcelParagraphsOutside": {
+    "description": "Résumé de l'inspection : combien de paragraphes vivent en dehors des tableaux.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pdfToExcelScannedWarning": "Ingen tekst kunne trekkes ut fra denne PDF-en: det er mest sannsynlig et skannet dokument (sidebilder). Et regneark kan ikke få noe ut av dette; Bruk først tekstgjenkjenningsverktøyet (OCR).",
+  "@pdfToExcelScannedWarning": {
+    "description": "Avertissement quand le PDF est un scan sans couche de texte. « OCR » est un sigle international, à conserver."
+  },
+  "pdfToExcelNoTableWarning": "Ingen tabellstruktur ble gjenkjent i dette dokumentet. Teksten er der, men den er ikke ordnet i vanlige spalter. I stedet for å lage en uleselig arbeidsbok, aktiver \"Inkluder også ikke-tabelltekst\" ovenfor, eller bruk \"PDF til Word\" som bevarer avsnitt bedre.",
+  "@pdfToExcelNoTableWarning": {
+    "description": "Avertissement quand le texte existe mais n'est pas tabulaire. Les deux citations entre guillemets doivent reprendre exactement les libellés traduits correspondants (pdfToExcelIncludeParagraphs et toolPdfToWord)."
+  },
+  "pdfToExcelResultTitle": "Perm klar",
+  "@pdfToExcelResultTitle": {
+    "description": "Titre de la carte de résultat, une fois le classeur produit."
+  },
+  "pdfToExcelExportWhat": "Excel arbeidsbok",
+  "@pdfToExcelExportWhat": {
+    "description": "Description de ce qui vient d'être enregistré, dans la feuille de confirmation."
+  },
+  "pdfToExcelConvertAction": "Konverter til Excel",
+  "@pdfToExcelConvertAction": {
+    "description": "Bouton de bas d'écran qui lance la conversion. Doit tenir sur une ligne."
+  },
+  "resultNameAndSize": "{name} — {size}",
+  "@resultNameAndSize": {
+    "description": "Détail d'une carte de résultat : le nom du fichier et son poids, déjà formatés.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "size": {
+        "type": "String"
+      }
+    }
+  },
+  "pdfToPptxEmptyTitle": "Ett lysbilde per side",
+  "@pdfToPptxEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil PDF vers PowerPoint."
+  },
+  "pdfToPptxEmptyBody": "PDF-en blir en identisk PowerPoint-presentasjon. Hver side kommer i form av et bilde: layouten er trofast, men teksten vil ikke kunne redigeres i PowerPoint.",
+  "@pdfToPptxEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil PDF vers PowerPoint. Le compromis annoncé — mise en page fidèle contre texte figé — est le point essentiel."
+  },
+  "pdfToPptxOpenFailed": "Kan ikke åpne denne PDF-en: {detail}",
+  "@pdfToPptxOpenFailed": {
+    "description": "Bandeau d'erreur quand le PDF ne peut pas être lu. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "pdfToPptxConverting": "Konverterer til PowerPoint …",
+  "@pdfToPptxConverting": {
+    "description": "Titre de la boîte de progression pendant la conversion. Garder le caractère de suspension final."
+  },
+  "pdfToPptxPagesToSlides": "{count} sider > {count} lysbilder",
+  "@pdfToPptxPagesToSlides": {
+    "description": "Sous-titre de la carte du fichier : autant de diapositives que de pages. Le chevron simple et non une flèche → : celle-ci manque au sous-ensemble des fontes embarquées. Voir test/l10n_coverage_test.dart.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pdfToPptxEmptyDocument": "Tomt dokument",
+  "@pdfToPptxEmptyDocument": {
+    "description": "Sous-titre de la carte du fichier quand le PDF ne contient aucune page."
+  },
+  "qualityLabel": "Kvalitet",
+  "@qualityLabel": {
+    "description": "Intitulé du groupe de boutons qui choisit la résolution de sortie."
+  },
+  "pdfToPptxQualityHint": "En høyere oppløsning gir skarpere lysbilder, men en betydelig større fil.",
+  "@pdfToPptxQualityHint": {
+    "description": "Explication sous le choix de qualité, dans le cas ordinaire."
+  },
+  "pdfToPptxHeavyWarning": "Advarsel: i høy kvalitet kan en presentasjon på {count} sider veie flere titalls MB og ta lang tid å åpne. Velg Standard når du er i tvil.",
+  "@pdfToPptxHeavyWarning": {
+    "description": "Avertissement affiché en rouge quand haute qualité et document long se combinent. « Standard » doit reprendre le libellé traduit de pptxQualityStandard. « Mo » est l'abréviation de méga-octet — employez celle de votre langue.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "goodToKnow": "Å vite",
+  "@goodToKnow": {
+    "description": "Titre d'une carte d'information neutre."
+  },
+  "pdfToPptxCaveat": "Hvert lysbilde er et bilde av siden: layouten er identisk med PDF, men teksten vil ikke kunne redigeres i PowerPoint.\nFor å hente redigerbar tekst, bruk \"PDF til Word\" i stedet.\nEn presentasjon har bare ett lysbildeformat: den er hentet fra den første siden, og sider med forskjellige formater er sentrert i den.",
+  "@pdfToPptxCaveat": {
+    "description": "Trois limites de la conversion, une par ligne — gardez les sauts de ligne simples. « PDF vers Word » doit reprendre le libellé traduit de toolPdfToWord."
+  },
+  "pdfToPptxResultTitle": "Presentasjon klar",
+  "@pdfToPptxResultTitle": {
+    "description": "Titre de la carte de résultat, une fois la présentation produite."
+  },
+  "pdfToPptxResultDetail": "{name} — {count} lysbilder · {size} · {quality}",
+  "@pdfToPptxResultDetail": {
+    "description": "Détail de la carte de résultat : nom, nombre de diapositives, poids et réglage de qualité. Le point médian est un séparateur typographique.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      },
+      "size": {
+        "type": "String"
+      },
+      "quality": {
+        "type": "String"
+      }
+    }
+  },
+  "notSavedYet": "Filen er ikke på enheten din ennå: lagre den eller del den.",
+  "@notSavedYet": {
+    "description": "Rappel sous la carte de résultat : le fichier existe en mémoire mais n'a pas encore été écrit."
+  },
+  "pdfToPptxChangeQuality": "Endre kvalitet",
+  "@pdfToPptxChangeQuality": {
+    "description": "Action secondaire qui revient au choix de résolution pour refaire la conversion."
+  },
+  "pdfToPptxConvertAction": "Konverter til PowerPoint",
+  "@pdfToPptxConvertAction": {
+    "description": "Bouton de bas d'écran qui lance la conversion. Doit tenir sur une ligne."
+  },
+  "pdfToPptxExportWhat": "PowerPoint-presentasjon · {count} lysbilder",
+  "@pdfToPptxExportWhat": {
+    "description": "Description de ce qui vient d'être enregistré, dans la feuille de confirmation.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "formatLabel": "Format",
+  "@formatLabel": {
+    "description": "Intitulé du groupe de boutons qui choisit le format de sortie."
+  },
+  "actionExport": "Eksporter",
+  "@actionExport": {
+    "description": "Bouton qui lance la production des fichiers. Verbe à l'infinitif, court."
+  },
+  "imageQualityWeb": "Internett (72 dpi)",
+  "@imageQualityWeb": {
+    "description": "Résolution la plus basse de l'export en images, destinée à l'écran. « dpi » est un sigle international, à conserver."
+  },
+  "imageQualityStandard": "Standard (150 dpi)",
+  "@imageQualityStandard": {
+    "description": "Résolution intermédiaire de l'export en images. « dpi » est un sigle international, à conserver."
+  },
+  "imageQualityHigh": "Høy kvalitet (300 dpi)",
+  "@imageQualityHigh": {
+    "description": "Résolution la plus élevée de l'export en images, destinée à l'impression. « dpi » est un sigle international, à conserver."
+  },
+  "pdfToImagesEmptyTitle": "Ett bilde per side",
+  "@pdfToImagesEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil PDF vers Images."
+  },
+  "pdfToImagesEmptyBody": "Velg en PDF: hver side vil komme ut som et bilde, med definisjonen som du deretter justerer.",
+  "@pdfToImagesEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil PDF vers Images."
+  },
+  "pdfToImagesNotAPdf": "{name}: Velg en PDF-fil.",
+  "@pdfToImagesNotAPdf": {
+    "description": "Bandeau d'erreur quand le fichier choisi n'est pas un PDF.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "errorLoadFailed": "Kunne ikke laste: {detail}",
+  "@errorLoadFailed": {
+    "description": "Bandeau d'erreur quand le fichier ne peut pas être chargé. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "pdfToImagesProgress": "Eksport pågår …",
+  "@pdfToImagesProgress": {
+    "description": "Titre de la boîte de progression pendant le rendu des images. Garder le caractère de suspension final."
+  },
+  "pdfToImagesExportWhat": "{count} bilder {format}",
+  "@pdfToImagesExportWhat": {
+    "description": "Description de ce qui vient d'être enregistré : combien d'images, dans quel format. {format} vaut « JPG » ou « PNG » et ne se traduit pas.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "format": {
+        "type": "String"
+      }
+    }
+  },
+  "pdfaEmptyTitle": "Arkiver i lang tid",
+  "@pdfaEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Convertir en PDF/A."
+  },
+  "pdfaEmptyBody": "PDF/A er arkiveringsformatet som kreves av mange administrasjoner. Dokumentet konverteres uten å miste utseendet.",
+  "@pdfaEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Convertir en PDF/A. « PDF/A » est une norme ISO, à conserver telle quelle."
+  },
+  "pdfaConformanceLevel": "Samsvarsnivå",
+  "@pdfaConformanceLevel": {
+    "description": "Intitulé du groupe de boutons qui choisit la variante de la norme."
+  },
+  "pdfaA1bDetail": "Det strengeste og mest universelt aksepterte nivået. Velg når du er i tvil.",
+  "@pdfaA1bDetail": {
+    "description": "Explication de la variante PDF/A-1b, affichée sous le choix."
+  },
+  "pdfaA2bDetail": "Basert på PDF 1.7: mer effektiv komprimering, litt lettere filer.",
+  "@pdfaA2bDetail": {
+    "description": "Explication de la variante PDF/A-2b. « PDF 1.7 » est un numéro de version, à conserver."
+  },
+  "pdfaA3bDetail": "Som A-2b, men tillater vedlegg (ofte etterspurt for elektronisk fakturering).",
+  "@pdfaA3bDetail": {
+    "description": "Explication de la variante PDF/A-3b. « A-2b » désigne la variante précédente, à conserver."
+  },
+  "pdfaConvertingTo": "Konvertering til {level}...",
+  "@pdfaConvertingTo": {
+    "description": "Titre de la boîte de progression. {level} vaut « PDF/A-1b » et ne se traduit pas. Garder le caractère de suspension final.",
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "pdfaCaveatTitle": "Hva konverteringen endrer",
+  "@pdfaCaveatTitle": {
+    "description": "Titre de la carte qui énumère les effets de la conversion."
+  },
+  "pdfaCaveat": "Hver side tegnes på nytt som et bilde ved {dpi} dpi: teksten blir et bilde, oppsettet fryses. Det er dette som gjør filen virkelig kompatibel uten å være avhengig av fontene til originaldokumentet, men til gjengjeld er teksten ikke lenger valgbar eller søkbar, koblingene og skjemaene forsvinner, og filen blir tyngre.",
+  "@pdfaCaveat": {
+    "description": "Le compromis de la conversion PDF/A, dit avant qu'on la lance. « dpi » est un sigle international. Ne l'allégez pas.",
+    "placeholders": {
+      "dpi": {
+        "type": "int"
+      }
+    }
+  },
+  "pdfaOpenFailed": "Kan ikke åpne denne PDF-en: {detail}",
+  "@pdfaOpenFailed": {
+    "description": "Bandeau d'erreur quand le PDF ne peut pas être lu. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "imagesToPdfEmptyTitle": "Bilder, en PDF",
+  "@imagesToPdfEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Images vers PDF."
+  },
+  "imagesToPdfEmptyBody": "JPG, PNG, WebP, HEIC – legg til bildene dine og de vil bli satt sammen i den rekkefølgen du velger.",
+  "@imagesToPdfEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Images vers PDF. Les quatre noms de format ne se traduisent pas."
+  },
+  "imagesToPdfChoose": "Velg bilder",
+  "@imagesToPdfChoose": {
+    "description": "Bouton principal de l'écran vide de l'outil Images vers PDF."
+  },
+  "imagesToPdfAdd": "Legg til bilder",
+  "@imagesToPdfAdd": {
+    "description": "Info-bulle du bouton flottant qui ajoute d'autres images à la liste."
+  },
+  "imagesToPdfRejected": "Hoppet over (ikke et bilde): {names}",
+  "@imagesToPdfRejected": {
+    "description": "Bandeau signalant les fichiers écartés parce qu'ils ne sont pas des images. {names} est une liste de noms séparés par des virgules.",
+    "placeholders": {
+      "names": {
+        "type": "String"
+      }
+    }
+  },
+  "imagesToPdfBuilding": "Oppretter PDF-en...",
+  "@imagesToPdfBuilding": {
+    "description": "Titre de la boîte de progression pendant l'assemblage. Garder le caractère de suspension final."
+  },
+  "imagesToPdfBuildFailed": "Opprettelsen mislyktes: {detail}",
+  "@imagesToPdfBuildFailed": {
+    "description": "Bandeau d'erreur quand l'assemblage échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "imagesToPdfCreateAction": "Lag PDF-en ({count} bilder)",
+  "@imagesToPdfCreateAction": {
+    "description": "Bouton de bas d'écran, avec le nombre d'images retenues entre parenthèses.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "actionRotate": "Roter",
+  "@actionRotate": {
+    "description": "Info-bulle du bouton qui fait tourner une image d'un quart de tour."
+  },
+  "actionRemove": "Fjern",
+  "@actionRemove": {
+    "description": "Info-bulle du bouton qui retire un élément de la liste."
+  },
+  "htmlTitle": "HTML / nettside til PDF",
+  "@htmlTitle": {
+    "description": "Titre de la barre de l'outil Page web vers PDF. « HTML » est un sigle, à conserver."
+  },
+  "htmlIntro": "Gjør om en nettside eller HTML-kode til A4 PDF. Gjengivelsen utføres av nettleseren integrert i Android, oppsettet er derfor som for utskrift fra Chrome.",
+  "@htmlIntro": {
+    "description": "Consigne en tête de l'outil. « A4 » est un format de papier, « Android » et « Chrome » des marques — à conserver."
+  },
+  "htmlModeUrl": "Nettstedets adresse",
+  "@htmlModeUrl": {
+    "description": "Onglet du sélecteur : fournir une adresse à télécharger. Court, il tient dans un segment."
+  },
+  "htmlModeCode": "HTML-kode",
+  "@htmlModeCode": {
+    "description": "Onglet du sélecteur : coller du code source. Court, il tient dans un segment."
+  },
+  "htmlUrlLabel": "Sideadresse",
+  "@htmlUrlLabel": {
+    "description": "Intitulé du champ où l'on saisit l'adresse."
+  },
+  "htmlUrlHint": "https://example.fr/artikkel",
+  "@htmlUrlHint": {
+    "description": "Exemple d'adresse affiché en filigrane dans le champ. Adaptez le domaine à votre langue (« example.com », « beispiel.de »…)."
+  },
+  "htmlCodeLabel": "HTML-kode",
+  "@htmlCodeLabel": {
+    "description": "Intitulé du champ où l'on colle le code source."
+  },
+  "htmlCodeHint": "<h1>Tittel</h1>\n<p>Tekst...</p>",
+  "@htmlCodeHint": {
+    "description": "Exemple de code affiché en filigrane. Les balises <h1> et <p> ne se traduisent pas ; seuls les mots entre elles le sont. Gardez le saut de ligne."
+  },
+  "htmlUrlBadScheme": "Adressen må begynne med http:// eller https://.",
+  "@htmlUrlBadScheme": {
+    "description": "Bandeau d'erreur quand l'adresse ne porte pas de protocole. « http:// » et « https:// » ne se traduisent pas."
+  },
+  "htmlUrlIncomplete": "Skriv inn en fullstendig nettadresse.",
+  "@htmlUrlIncomplete": {
+    "description": "Bandeau d'erreur quand le champ ne contient que le protocole."
+  },
+  "htmlCodeEmpty": "Lim inn HTML-kode for å konvertere.",
+  "@htmlCodeEmpty": {
+    "description": "Bandeau d'erreur quand le champ de code est vide."
+  },
+  "htmlLoadingUrl": "Laster inn siden og konverterer …",
+  "@htmlLoadingUrl": {
+    "description": "Titre de la boîte de progression pendant le téléchargement puis le rendu. Garder le caractère de suspension final."
+  },
+  "htmlConverting": "HTML-konvertering pågår...",
+  "@htmlConverting": {
+    "description": "Titre de la boîte de progression pendant le rendu du code collé. Garder le caractère de suspension final."
+  },
+  "htmlNetworkNotice": "En internettforbindelse er nødvendig: det er det eneste verktøyet i applikasjonen som må laste ned siden. Sider som krever en kontopålogging, et informasjonskapselbanner eller mye JavaScript kan bli ufullstendige.",
+  "@htmlNetworkNotice": {
+    "description": "Avertissement affiché en mode adresse. Il signale la seule exception au fonctionnement hors ligne de l'application — ne l'allégez pas. « JavaScript » est une marque, à conserver."
+  },
+  "htmlOfflineNotice": "HTML og CSS skrevet direkte til siden gjengis offline. På den annen side krever bilder, stilark eller fonter som kalles av en ekstern nettadresse en internettforbindelse.",
+  "@htmlOfflineNotice": {
+    "description": "Avertissement affiché en mode code. « HTML » et « CSS » sont des sigles, à conserver."
+  },
+  "watermarkEmptyTitle": "Legg til et vannmerke",
+  "@watermarkEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Filigrane."
+  },
+  "watermarkEmptyBody": "Valgt tekst gjentas i bakgrunnen på alle sider – for å merke et dokument som konfidensielt eller utkast.",
+  "@watermarkEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Filigrane."
+  },
+  "watermarkEmptyNote": "Gratis eksport uten antall grenser.",
+  "@watermarkEmptyNote": {
+    "description": "Note verte de l'écran vide, propre à cet outil. La note habituelle promet « sans filigrane » — sur l'outil qui en appose un, elle se contredirait. Ne réintroduisez donc pas la mention du filigrane ici."
+  },
+  "watermarkTextLabel": "Vannmerketekst",
+  "@watermarkTextLabel": {
+    "description": "Intitulé du champ où l'on saisit la mention à répéter."
+  },
+  "watermarkDefaultText": "KONFIDENSIELT",
+  "@watermarkDefaultText": {
+    "description": "Mention proposée par défaut dans le champ, en capitales. Employez le mot consacré de votre langue (anglais : CONFIDENTIAL, allemand : VERTRAULICH)."
+  },
+  "watermarkNeedText": "Skriv inn tekst for vannmerket.",
+  "@watermarkNeedText": {
+    "description": "Bandeau d'erreur quand on applique sans avoir saisi de texte."
+  },
+  "watermarkOpacity": "Opasitet: {percent} %",
+  "@watermarkOpacity": {
+    "description": "Intitulé du curseur d'opacité. L'espace avant le signe % est une convention française ; collez-le au chiffre si votre langue le veut.",
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "watermarkRotation": "Rotasjonsvinkel: {degrees}°",
+  "@watermarkRotation": {
+    "description": "Intitulé du curseur d'inclinaison. Le signe degré est international.",
+    "placeholders": {
+      "degrees": {
+        "type": "int"
+      }
+    }
+  },
+  "watermarkFontSize": "Tekststørrelse: {points} pt",
+  "@watermarkFontSize": {
+    "description": "Intitulé du curseur de corps. « pt » est l'abréviation typographique de point, internationale.",
+    "placeholders": {
+      "points": {
+        "type": "int"
+      }
+    }
+  },
+  "watermarkColor": "Farge",
+  "@watermarkColor": {
+    "description": "Intitulé de la rangée de pastilles de couleur."
+  },
+  "colorGrey": "Grå",
+  "@colorGrey": {
+    "description": "Nom d'une couleur de filigrane, sous sa pastille. Très court."
+  },
+  "colorRed": "Rødt",
+  "@colorRed": {
+    "description": "Nom d'une couleur de filigrane, sous sa pastille. Très court."
+  },
+  "colorBlue": "Blått",
+  "@colorBlue": {
+    "description": "Nom d'une couleur de filigrane, sous sa pastille. Très court."
+  },
+  "colorBlack": "Svart",
+  "@colorBlack": {
+    "description": "Nom d'une couleur de filigrane, sous sa pastille. Très court."
+  },
+  "watermarkProgress": "Vannmerkeapplikasjon pågår...",
+  "@watermarkProgress": {
+    "description": "Titre de la boîte de progression. Garder le caractère de suspension final."
+  },
+  "percentValue": "{percent} %",
+  "@percentValue": {
+    "description": "Valeur en pourcentage affichée sur la pastille d'un curseur. L'espace avant le signe % est une convention française.",
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "degreesValue": "{degrees}°",
+  "@degreesValue": {
+    "description": "Valeur en degrés affichée sur la pastille d'un curseur.",
+    "placeholders": {
+      "degrees": {
+        "type": "int"
+      }
+    }
+  },
+  "pointsValue": "{points} pt",
+  "@pointsValue": {
+    "description": "Valeur en points typographiques affichée sur la pastille d'un curseur.",
+    "placeholders": {
+      "points": {
+        "type": "int"
+      }
+    }
+  },
+  "pageNumbersEmptyTitle": "Nummerer sidene",
+  "@pageNumbersEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Numéros de page."
+  },
+  "pageNumbersEmptyBody": "Velg en PDF, og deretter plasseringen og formatet til tallene som skal legges til på hver side.",
+  "@pageNumbersEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Numéros de page."
+  },
+  "positionLabel": "Posisjon",
+  "@positionLabel": {
+    "description": "Intitulé du groupe de boutons qui choisit où poser le numéro."
+  },
+  "positionBottomCenter": "Nederst i midten",
+  "@positionBottomCenter": {
+    "description": "Position du numéro : en bas, au milieu. Très court, il tient dans une pastille."
+  },
+  "positionBottomRight": "Nederst til høyre",
+  "@positionBottomRight": {
+    "description": "Position du numéro : en bas, à droite. Très court."
+  },
+  "positionTopCenter": "Øverst i midten",
+  "@positionTopCenter": {
+    "description": "Position du numéro : en haut, au milieu. Très court."
+  },
+  "positionTopRight": "Øverst til høyre",
+  "@positionTopRight": {
+    "description": "Position du numéro : en haut, à droite. Très court."
+  },
+  "pageNumbersFormatPlain": "N",
+  "@pageNumbersFormatPlain": {
+    "description": "Format de numérotation : le numéro seul. « N » est l'initiale de « numéro » — employez celle de votre langue si elle diffère (anglais : N, allemand : N)."
+  },
+  "pageNumbersFormatOfTotal": "N / totalt",
+  "@pageNumbersFormatOfTotal": {
+    "description": "Format de numérotation : le numéro suivi du total, « 3 / 12 ». Traduisez « total » ; « N » suit la même règle que ci-dessus. Doit rester très court, c'est un segment de bouton."
+  },
+  "pageNumbersStart": "Startnummer",
+  "@pageNumbersStart": {
+    "description": "Intitulé du champ où l'on choisit à quel chiffre la numérotation commence."
+  },
+  "pageNumbersProgress": "Nummerering pågår …",
+  "@pageNumbersProgress": {
+    "description": "Titre de la boîte de progression. Garder le caractère de suspension final."
+  },
+  "organizeEmptyTitle": "Gjenoppta en PDF i hånden",
+  "@organizeEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Organiser."
+  },
+  "organizeEmptyBody": "Åpne et dokument for å dele det, trekke ut sider eller endre rekkefølgen.",
+  "@organizeEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Organiser."
+  },
+  "organizeOpenFile": "Åpne en fil",
+  "@organizeOpenFile": {
+    "description": "Bouton principal de l'écran vide de l'outil Organiser."
+  },
+  "organizeNothingToExport": "Ingen sider å eksportere.",
+  "@organizeNothingToExport": {
+    "description": "Bandeau d'erreur quand toutes les pages ont été écartées."
+  },
+  "organizePagesKept": "{kept} sider beholdt av {total}",
+  "@organizePagesKept": {
+    "description": "Sous-titre du document : combien de pages restent retenues sur combien. Affiché seulement quand on en a écarté.",
+    "placeholders": {
+      "kept": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "organizePageExcluded": "Forkastet",
+  "@organizePageExcluded": {
+    "description": "Mention sous une rangée de page mise de côté. Accordé au féminin de « page ». Court."
+  },
+  "organizePageMoved": "Flyttet fra posisjon {from}",
+  "@organizePageMoved": {
+    "description": "Mention sous une rangée de page qu'on a fait glisser ailleurs. Accordé au féminin de « page ».",
+    "placeholders": {
+      "from": {
+        "type": "int"
+      }
+    }
+  },
+  "organizePageTitle": "Side {number}",
+  "@organizePageTitle": {
+    "description": "Titre d'une rangée de la liste des pages.",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "organizeExcludePage": "Kast side {number}",
+  "@organizeExcludePage": {
+    "description": "Info-bulle du bouton qui met une page de côté.",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "organizeIncludePage": "Inkluder side {number}",
+  "@organizeIncludePage": {
+    "description": "Info-bulle du bouton qui remet une page dans le document.",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "organizeMovePage": "Flytt side {number}",
+  "@organizeMovePage": {
+    "description": "Étiquette d'accessibilité de la poignée de glissement. Lue à voix haute, jamais affichée.",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "organizeExtract": "Utdrag",
+  "@organizeExtract": {
+    "description": "Bouton qui ne garde qu'une plage de pages. Verbe à l'infinitif, court."
+  },
+  "organizeSplit": "Del opp",
+  "@organizeSplit": {
+    "description": "Bouton qui coupe le document en plusieurs fichiers. Verbe à l'infinitif, court."
+  },
+  "organizePreview": "Oversikt",
+  "@organizePreview": {
+    "description": "Bouton qui mène à l'écran d'aperçu. Court."
+  },
+  "organizeExtractTitle": "Trekk ut et sideområde",
+  "@organizeExtractTitle": {
+    "description": "Titre de la boîte de dialogue de choix de la plage."
+  },
+  "organizeRangeLabel": "Sidene {start} til {end}",
+  "@organizeRangeLabel": {
+    "description": "Plage retenue par le curseur double de la boîte d'extraction.",
+    "placeholders": {
+      "start": {
+        "type": "int"
+      },
+      "end": {
+        "type": "int"
+      }
+    }
+  },
+  "organizeSplitTitle": "Del opp i flere filer",
+  "@organizeSplitTitle": {
+    "description": "Titre de la boîte de dialogue de division."
+  },
+  "organizeFileCount": "{count} filer",
+  "@organizeFileCount": {
+    "description": "Nombre de fichiers que la division produira, sous le curseur.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "organizeSplitFailed": "Divisjonsfeil: {detail}",
+  "@organizeSplitFailed": {
+    "description": "Bandeau d'erreur quand la division échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "scanNoCamera": "Ingen kamera tilgjengelig på denne enheten.",
+  "@scanNoCamera": {
+    "description": "Message d'erreur quand l'appareil n'expose aucune caméra."
+  },
+  "scanCameraFailed": "Kan ikke initialisere kamera: {detail}",
+  "@scanCameraFailed": {
+    "description": "Message d'erreur quand la caméra refuse de démarrer. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "scanCropToolbar": "Juster",
+  "@scanCropToolbar": {
+    "description": "Titre de la barre du recadreur système d'Android, après la prise de vue. Court."
+  },
+  "scanCaptureFailed": "Opptak mislyktes: {detail}",
+  "@scanCaptureFailed": {
+    "description": "Bandeau d'erreur quand la prise de vue échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "scanPermissionBody": "Tilgang til kameraet kreves for å skanne et dokument.",
+  "@scanPermissionBody": {
+    "description": "Explication affichée quand l'autorisation d'accès à la caméra n'a pas été accordée."
+  },
+  "scanGrantPermission": "Tillat kamera",
+  "@scanGrantPermission": {
+    "description": "Bouton qui redemande l'autorisation d'accès à la caméra. Doit tenir sur une ligne."
+  },
+  "actionRetry": "Prøv igjen",
+  "@actionRetry": {
+    "description": "Bouton qui relance une opération après un échec. Court."
+  },
+  "scanNoPageYet": "Ingen sider for øyeblikket.",
+  "@scanNoPageYet": {
+    "description": "Affiché dans la grille de relecture tant qu'aucune page n'a été photographiée."
+  },
+  "scanFinishAction": "Finish · {count}",
+  "@scanFinishAction": {
+    "description": "Bouton qui clôt la capture, suivi du nombre de pages prises. Le point médian est un séparateur typographique. Doit tenir sur une ligne.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "signTitle": "Signer en PDF",
+  "@signTitle": {
+    "description": "Titre de la barre de l'outil Signer."
+  },
+  "signIntro": "Legg til din håndtegnede signatur på en side i en PDF. Det er en enkel tegning lagt til dokumentet, ikke en sertifisert elektronisk signatur.",
+  "@signIntro": {
+    "description": "Consigne en tête de l'outil Signer. La dernière proposition est une réserve juridique — ne la retirez pas."
+  },
+  "signChooseSubtitle": "Velg dokumentet du vil signere",
+  "@signChooseSubtitle": {
+    "description": "Sous-titre de la rangée qui ouvre la sélection de fichiers."
+  },
+  "signPickPage": "Velg siden du vil signere.",
+  "@signPickPage": {
+    "description": "Consigne au-dessus de la bande de vignettes de pages."
+  },
+  "signDrawTitle": "Tegn signaturen min",
+  "@signDrawTitle": {
+    "description": "Titre de l'étape où l'on trace la signature au doigt."
+  },
+  "signDrawBody": "Tegn med fingeren som på papir. Dette setter et design på siden - det er ikke en sertifisert elektronisk signatur.",
+  "@signDrawBody": {
+    "description": "Consigne de l'étape de tracé. La réserve juridique de la fin est délibérément répétée ici."
+  },
+  "signNeedDrawing": "Tegn en signatur før du fortsetter.",
+  "@signNeedDrawing": {
+    "description": "Bandeau d'erreur quand on valide une zone de tracé restée vide."
+  },
+  "signClear": "Klart",
+  "@signClear": {
+    "description": "Bouton qui vide la zone de tracé. Court."
+  },
+  "signValidate": "Bekreft",
+  "@signValidate": {
+    "description": "Bouton qui retient la signature tracée et passe au placement. Court."
+  },
+  "signPlaceBody": "Dra signaturen til ønsket plassering på siden, og trykk deretter på Fullfør.",
+  "@signPlaceBody": {
+    "description": "Consigne de l'étape de placement. « Terminer » doit reprendre exactement le libellé traduit de actionFinish."
+  },
+  "signPageUnavailable": "Kan ikke vise siden.",
+  "@signPageUnavailable": {
+    "description": "Affiché à la place de la page quand son rendu échoue."
+  },
+  "signProgress": "Legger til signaturen …",
+  "@signProgress": {
+    "description": "Titre de la boîte de progression. Garder le caractère de suspension final."
+  },
+  "editTitle": "Kommenter et dokument",
+  "@editTitle": {
+    "description": "Titre de l'écran vide de l'outil Éditer."
+  },
+  "editEmptyBody": "Legg til tekst eller marker passasjer direkte i en eksisterende PDF.",
+  "@editEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Éditer."
+  },
+  "editAddTextTitle": "Legg til tekst",
+  "@editAddTextTitle": {
+    "description": "Titre de la boîte de dialogue de saisie d'une annotation."
+  },
+  "editTextHint": "Teksten din",
+  "@editTextHint": {
+    "description": "Texte d'invite du champ de saisie de l'annotation."
+  },
+  "editFontSize": "Tekststørrelse: {size}",
+  "@editFontSize": {
+    "description": "Intitulé du curseur de corps, dans la boîte de saisie.",
+    "placeholders": {
+      "size": {
+        "type": "int"
+      }
+    }
+  },
+  "editNeedAnnotation": "Legg til minst én merknad før du fullfører.",
+  "@editNeedAnnotation": {
+    "description": "Bandeau d'erreur quand on termine sans avoir rien ajouté."
+  },
+  "editProgress": "Bruk av merknader...",
+  "@editProgress": {
+    "description": "Titre de la boîte de progression. Garder le caractère de suspension final."
+  },
+  "editChooseOther": "Velg en annen PDF",
+  "@editChooseOther": {
+    "description": "Info-bulle du bouton qui abandonne le document en cours."
+  },
+  "editUndoTooltip": "Angre siste merknad",
+  "@editUndoTooltip": {
+    "description": "Info-bulle du bouton qui retire la dernière annotation posée. Il s'agit de défaire, pas d'interrompre."
+  },
+  "editModeText": "Tekst",
+  "@editModeText": {
+    "description": "Onglet du sélecteur : poser du texte. Très court, il tient dans un segment."
+  },
+  "editModeHighlight": "Marker",
+  "@editModeHighlight": {
+    "description": "Onglet du sélecteur : surligner un passage. Très court, il tient dans un segment."
+  },
+  "editPageUnavailable": "Kan ikke vise denne siden.",
+  "@editPageUnavailable": {
+    "description": "Affiché à la place de la page quand son rendu échoue."
+  },
+  "ocrEmptyTitle": "Gjør tekst søkbar",
+  "@ocrEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil OCR."
+  },
+  "ocrEmptyBody": "Teksten i en skannet PDF gjenkjennes og legges til over bildet, usynlig. Siden endrer ikke utseende.",
+  "@ocrEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil OCR. La seconde phrase est importante : elle rassure sur le fait que rien n'est abîmé."
+  },
+  "ocrWrongFormat": "Velg en PDF eller et bilde (JPG, PNG, etc.).",
+  "@ocrWrongFormat": {
+    "description": "Bandeau d'erreur quand le fichier n'est ni un PDF ni une image. Les noms de format ne se traduisent pas."
+  },
+  "ocrProgress": "Anerkjennelse pågår...",
+  "@ocrProgress": {
+    "description": "Titre de la boîte de progression pendant la reconnaissance de caractères. Garder le caractère de suspension final."
+  },
+  "ocrFailed": "Kunne ikke gjenkjenne: {detail}",
+  "@ocrFailed": {
+    "description": "Bandeau d'erreur quand la reconnaissance échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "ocrRunAction": "Start gjenkjenning",
+  "@ocrRunAction": {
+    "description": "Bouton de bas d'écran qui lance l'OCR. Doit tenir sur une ligne."
+  },
+  "ocrResultTitle": "OCR-resultat",
+  "@ocrResultTitle": {
+    "description": "Titre de la barre de l'écran de résultat. « OCR » est un sigle international, à conserver."
+  },
+  "ocrResultBody": "{count} sider analysert. Den søkbare PDF-en er klar, og du kan også kopiere all gjenkjent tekst.",
+  "@ocrResultBody": {
+    "description": "Résumé de l'écran de résultat : combien de pages ont été traitées et ce qu'on peut faire ensuite.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "ocrCopyText": "Kopier tekst",
+  "@ocrCopyText": {
+    "description": "Bouton qui met tout le texte reconnu dans le presse-papiers."
+  },
+  "ocrTextCopied": "Tekst kopiert.",
+  "@ocrTextCopied": {
+    "description": "Bandeau confirmant la copie dans le presse-papiers."
+  },
+  "redactIntro": "Skjul områder av en PDF permanent (navn, adresser, beløp). I motsetning til et enkelt svart rektangel plassert på toppen, blir den skjulte teksten faktisk slettet fra filen, ikke bare dekket: den kan ikke lenger velges eller kopieres.",
+  "@redactIntro": {
+    "description": "Consigne en tête de l'outil Caviarder. La distinction avec un rectangle noir décoratif est le cœur de l'outil — ne l'allégez pas."
+  },
+  "redactChooseSubtitle": "Velg dokumentet som skal redigeres",
+  "@redactChooseSubtitle": {
+    "description": "Sous-titre de la rangée qui ouvre la sélection de fichiers."
+  },
+  "redactCaveat": "Merk: For å fjerne skjult tekst, konverteres hver side i dokumentet til et bilde (200 ppi). Resultatet er derfor ikke lenger en PDF som teksten kan velges fra, og den resulterende filen er generelt tyngre enn originalen.",
+  "@redactCaveat": {
+    "description": "Le prix à payer du caviardage réel. « ppp » est l'abréviation française de « points par pouce » ; l'anglais et la plupart des langues emploient « dpi »."
+  },
+  "redactEmptyPdf": "Denne PDF-en inneholder ingen sider.",
+  "@redactEmptyPdf": {
+    "description": "Bandeau d'erreur quand le document choisi est vide."
+  },
+  "redactOpenFailed": "Kan ikke åpne denne PDF-en (den kan være passordbeskyttet): {detail}",
+  "@redactOpenFailed": {
+    "description": "Bandeau d'erreur quand le PDF ne peut pas être lu. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "redactPageRenderFailed": "{number}-siden kan ikke vises: {detail}",
+  "@redactPageRenderFailed": {
+    "description": "Bandeau d'erreur quand une page ne peut pas être rendue à l'écran. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      },
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "redactUndoTooltip": "Angre siste sone",
+  "@redactUndoTooltip": {
+    "description": "Info-bulle du bouton qui retire le dernier rectangle tracé. Il s'agit de défaire, pas d'interrompre."
+  },
+  "redactInstructions": "Dra fingeren over siden for å tegne et område du vil skjule. Dekket tekst vil faktisk bli fjernet fra filen, ikke bare dekket.",
+  "@redactInstructions": {
+    "description": "Consigne au-dessus de la page, dans l'éditeur."
+  },
+  "redactPagePrevious": "Forrige side",
+  "@redactPagePrevious": {
+    "description": "Info-bulle de la flèche qui remonte d'une page."
+  },
+  "redactPageNext": "Neste side",
+  "@redactPageNext": {
+    "description": "Info-bulle de la flèche qui descend d'une page."
+  },
+  "redactPager": "Side {current} / {total}",
+  "@redactPager": {
+    "description": "Position dans le document, entre les deux flèches de navigation. Forme abrégée avec une barre oblique.",
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "redactNoZone": "Ikke inntegnet areal",
+  "@redactNoZone": {
+    "description": "Affiché au-dessus des boutons tant qu'aucun rectangle n'a été tracé."
+  },
+  "redactZoneCount": "{count} områder å skjule",
+  "@redactZoneCount": {
+    "description": "Nombre de rectangles tracés, au-dessus des boutons.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "redactOtherPdf": "Annen PDF",
+  "@redactOtherPdf": {
+    "description": "Bouton qui abandonne le document en cours pour en ouvrir un autre. Court."
+  },
+  "redactAction": "Rediger",
+  "@redactAction": {
+    "description": "Bouton qui applique le caviardage. Verbe à l'infinitif, court ; employez le terme consacré de votre langue."
+  },
+  "redactProgress": "Redaksjon pågår …",
+  "@redactProgress": {
+    "description": "Titre de la boîte de progression. Garder le caractère de suspension final."
+  },
+  "cropEmptyTitle": "Beskjær margene",
+  "@cropEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Rogner."
+  },
+  "cropEmptyBody": "Velg en PDF-fil, og dra fingeren over forhåndsvisningen for å skissere området du vil beholde.",
+  "@cropEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Rogner."
+  },
+  "cropTooSmall": "Det valgte området er for lite.",
+  "@cropTooSmall": {
+    "description": "Bandeau d'erreur quand la zone tracée au doigt est trop réduite pour donner une page."
+  },
+  "cropProgress": "Trimming pågår...",
+  "@cropProgress": {
+    "description": "Titre de la boîte de progression. Garder le caractère de suspension final."
+  },
+  "cropFailed": "Trimming mislyktes: {detail}",
+  "@cropFailed": {
+    "description": "Bandeau d'erreur quand le recadrage échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "cropKeptArea": "Fredet område",
+  "@cropKeptArea": {
+    "description": "Intitulé au-dessus de l'aperçu sur lequel on trace la zone à garder."
+  },
+  "cropDimensions": "{width} × {height} mm ({widthPercent} % × {heightPercent} %)",
+  "@cropDimensions": {
+    "description": "Dimensions de la zone tracée, en millimètres puis en proportion de la page. Le signe × est le symbole de multiplication. L'espace avant le signe % est une convention française.",
+    "placeholders": {
+      "width": {
+        "type": "int"
+      },
+      "height": {
+        "type": "int"
+      },
+      "widthPercent": {
+        "type": "int"
+      },
+      "heightPercent": {
+        "type": "int"
+      }
+    }
+  },
+  "cropFullPage": "Helside",
+  "@cropFullPage": {
+    "description": "Bouton qui remet la zone aux dimensions de la page entière."
+  },
+  "cropAllPages": "Bruk på alle sider",
+  "@cropAllPages": {
+    "description": "Intitulé de l'interrupteur qui étend le recadrage au document entier."
+  },
+  "cropAllPagesOn": "Det samme området er kuttet ut på hver side.",
+  "@cropAllPagesOn": {
+    "description": "Sous-titre de l'interrupteur quand il est activé."
+  },
+  "cropAllPagesOff": "Bare side 1 beskjæres, de andre beholdes hele.",
+  "@cropAllPagesOff": {
+    "description": "Sous-titre de l'interrupteur quand il est désactivé."
+  },
+  "cropCaveat": "Beskjæring reduserer størrelsen på siden: innhold utenfor området vises eller skrives ikke lenger ut.",
+  "@cropCaveat": {
+    "description": "Ce que le recadrage fait au document, dit avant qu'on l'applique."
+  },
+  "cropAction": "Beskjære",
+  "@cropAction": {
+    "description": "Bouton de bas d'écran qui lance le recadrage. Verbe à l'infinitif, court."
+  },
+  "compareTitle": "Sammenlign to PDF-er",
+  "@compareTitle": {
+    "description": "Titre de la barre de l'outil Comparer."
+  },
+  "compareEmptyTitle": "Hva har endret seg",
+  "@compareEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Comparer."
+  },
+  "compareEmptyBody": "Velg to versjoner av samme PDF. De lagte og slettede passasjene vil bli plassert ved siden av hverandre, side for side.",
+  "@compareEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Comparer."
+  },
+  "compareSlotA": "Fil A",
+  "@compareSlotA": {
+    "description": "Intitulé de la première case : la version de départ. La lettre A sert de repère, gardez-la."
+  },
+  "compareSlotB": "Fil B",
+  "@compareSlotB": {
+    "description": "Intitulé de la seconde case : la version à confronter. La lettre B sert de repère, gardez-la."
+  },
+  "compareAction": "Sammenlign",
+  "@compareAction": {
+    "description": "Bouton qui lance la comparaison. Verbe à l'infinitif, court."
+  },
+  "compareProgress": "Sammenligning pågår...",
+  "@compareProgress": {
+    "description": "Titre de la boîte de progression. Garder le caractère de suspension final."
+  },
+  "compareFailed": "Sammenligning mislyktes: {detail}",
+  "@compareFailed": {
+    "description": "Bandeau d'erreur quand la comparaison échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "compareChangedPages": "{changed} sider er forskjellige på {total}",
+  "@compareChangedPages": {
+    "description": "Résumé de la comparaison : combien de pages diffèrent, sur combien au total. Accordez le verbe au nombre.",
+    "placeholders": {
+      "changed": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "compareNoDifference": "Ingen forskjeller oppdaget mellom de to filene.",
+  "@compareNoDifference": {
+    "description": "Affiché quand les deux documents sont identiques mot pour mot."
+  },
+  "comparePageHeading": "Side {number}",
+  "@comparePageHeading": {
+    "description": "Titre d'une carte de résultat, pour une page qui a changé.",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "organizeFilesCreated": "{count} filer opprettet",
+  "@organizeFilesCreated": {
+    "description": "Titre de la feuille de résultats de la division : combien de fichiers en sont sortis.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "organizePartTitle": "Del {number}",
+  "@organizePartTitle": {
+    "description": "Nom d'un des fichiers issus de la division, dans la liste des résultats et dans la feuille de confirmation.",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  }
+}

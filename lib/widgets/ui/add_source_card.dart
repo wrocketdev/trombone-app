@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../l10n/l10n.dart';
 import '../../theme/theme.dart';
 
 /// La carte « ajouter un fichier », en dernière position d'une liste.
@@ -86,7 +87,7 @@ class AddSourceCard extends StatelessWidget {
                       mainAxisSize: MainAxisSize.min,
                       children: [
                         Text(
-                          busy ? 'Ouverture…' : label,
+                          busy ? context.l10n.actionOpening : label,
                           style: AppTypography.bodyStrong.copyWith(
                             color: colors.ink,
                           ),

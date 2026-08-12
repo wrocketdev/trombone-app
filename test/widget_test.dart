@@ -15,6 +15,28 @@ final Finder _pageScrollable = find.byType(Scrollable).first;
 void main() {
   setUpAll(loadAppFonts);
 
+  // L'application suit la langue de l'appareil, et le harnais de test annonce
+  // `en_US`. Sans cette contrainte, `FusionPdfApp` se résoudrait en anglais et
+  // les libellés attendus plus bas — qui sont ceux du modèle français —
+  // seraient introuvables. On fixe donc la langue de l'appareil simulé plutôt
+  // que de figer une langue dans les assertions.
+  setUp(() {
+    final dispatcher =
+        TestWidgetsFlutterBinding.ensureInitialized().platformDispatcher;
+    // Les deux, et non le seul `localeTestValue` : `MaterialApp` résout sa
+    // langue depuis `platformDispatcher.locales`, la liste des préférences, et
+    // ignore la locale primaire prise isolément.
+    dispatcher.localeTestValue = const Locale('fr');
+    dispatcher.localesTestValue = const <Locale>[Locale('fr')];
+  });
+
+  tearDown(() {
+    final dispatcher =
+        TestWidgetsFlutterBinding.ensureInitialized().platformDispatcher;
+    dispatcher.clearLocaleTestValue();
+    dispatcher.clearLocalesTestValue();
+  });
+
   testWidgets('Home screen shows the three main actions', (
     WidgetTester tester,
   ) async {

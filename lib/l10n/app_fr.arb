@@ -1,0 +1,2191 @@
+{
+  "@@locale": "fr",
+
+  "appTitle": "Trombone — PDF, Scan & Word",
+  "@appTitle": {
+    "description": "Titre affiché par le sélecteur de tâches d'Android au-dessus de l'aperçu de l'application. La marque « Trombone » ne se traduit jamais ; seuls les mots-clés qui la suivent peuvent l'être."
+  },
+  "appWordmark": "Trombone",
+  "@appWordmark": {
+    "description": "La signature de marque en haut de l'écran d'accueil. NE PAS TRADUIRE — c'est un nom propre, identique dans les vingt-cinq langues."
+  },
+
+  "actionSave": "Enregistrer",
+  "@actionSave": {
+    "description": "Action principale de fin de parcours : écrire le fichier produit sur l'appareil. Bouton pleine largeur, doit tenir sur une ligne."
+  },
+  "actionShare": "Partager",
+  "@actionShare": {
+    "description": "Ouvre la fenêtre de partage du système. Bouton de demi-largeur, doit tenir sur une ligne."
+  },
+  "actionCompress": "Compresser",
+  "@actionCompress": {
+    "description": "Réduit le poids du PDF. Bouton de demi-largeur, doit tenir sur une ligne."
+  },
+  "actionDone": "Terminé",
+  "@actionDone": {
+    "description": "Acquitte la feuille de confirmation d'export et sort de l'outil."
+  },
+  "actionCancel": "Annuler",
+  "@actionCancel": {
+    "description": "Interrompt une opération en cours dans la boîte de progression."
+  },
+  "actionChange": "Changer",
+  "@actionChange": {
+    "description": "Remplace le fichier choisi par un autre. Bouton texte étroit posé au bout d'une rangée — libellé court impératif."
+  },
+  "actionContinue": "Continuer",
+  "@actionContinue": {
+    "description": "Libellé de repli du bouton d'un écran vide quand l'outil n'en propose pas de plus précis."
+  },
+  "actionOpening": "Ouverture…",
+  "@actionOpening": {
+    "description": "État transitoire d'un bouton pendant que la boîte de sélection de fichiers du système s'ouvre. Garder le caractère de suspension final."
+  },
+  "actionRemoveFile": "Retirer ce fichier",
+  "@actionRemoveFile": {
+    "description": "Info-bulle de la croix qui ramène l'écran à son état vide."
+  },
+
+  "progressPreparing": "Préparation…",
+  "@progressPreparing": {
+    "description": "Affiché sous la barre de progression tant que le travail total n'est pas connu. Garder le caractère de suspension final."
+  },
+  "progressPercent": "{percent} %",
+  "@progressPercent": {
+    "description": "Avancement en pourcentage. L'espace avant le signe % est une convention française ; les langues qui collent le signe au chiffre doivent écrire « {percent}% ».",
+    "placeholders": {
+      "percent": { "type": "int" }
+    }
+  },
+
+  "emptyReassurance": "Export gratuit, sans filigrane ni limite.",
+  "@emptyReassurance": {
+    "description": "Note verte sous le bouton d'un écran vide. Répond à la peur du marché : découvrir un paiement au moment d'enregistrer. Doit rester une phrase brève, tenant sur une à deux lignes."
+  },
+  "emptyAcceptedFormats": "Formats acceptés",
+  "@emptyAcceptedFormats": {
+    "description": "Intitulé de la rangée de puces listant les formats que l'outil sait ouvrir."
+  },
+
+  "exportSavedTitle": "C’est enregistré.",
+  "@exportSavedTitle": {
+    "description": "Titre de la feuille de confirmation, après écriture réussie du fichier. Ton rassurant et affirmatif ; c'est le seul moment célébré de l'application."
+  },
+  "exportSavedBody": "Sous le nom et dans le dossier que vous venez de choisir. Sans filigrane, sans limite, rien à débloquer.",
+  "@exportSavedBody": {
+    "description": "Corps de la feuille de confirmation. Rappelle que rien n'est verrouillé derrière un paiement — la promesse centrale du produit."
+  },
+  "exportSaveDialogTitle": "Enregistrer le PDF",
+  "@exportSaveDialogTitle": {
+    "description": "Titre de la boîte système d'enregistrement de fichier."
+  },
+
+  "pageTileIncluded": "Page {number}, incluse. Toucher pour l’écarter.",
+  "@pageTileIncluded": {
+    "description": "Étiquette d'accessibilité d'une vignette de page retenue. Lue à voix haute, jamais affichée.",
+    "placeholders": {
+      "number": { "type": "int" }
+    }
+  },
+  "pageTileExcluded": "Page {number}, écartée. Toucher pour l’inclure.",
+  "@pageTileExcluded": {
+    "description": "Étiquette d'accessibilité d'une vignette de page écartée. Lue à voix haute, jamais affichée.",
+    "placeholders": {
+      "number": { "type": "int" }
+    }
+  },
+  "pageTileRotate": "Pivoter la page {number}",
+  "@pageTileRotate": {
+    "description": "Info-bulle du bouton de rotation sous une vignette de page.",
+    "placeholders": {
+      "number": { "type": "int" }
+    }
+  },
+
+  "sectionHeaderSemantics": "{title}, {count, plural, one{{count} outil} other{{count} outils}}",
+  "@sectionHeaderSemantics": {
+    "description": "Étiquette d'accessibilité d'un en-tête de section de l'accueil. Lue à voix haute, jamais affichée.",
+    "placeholders": {
+      "title": { "type": "String" },
+      "count": { "type": "int" }
+    }
+  },
+  "toolCount": "{count, plural, one{{count} outil} other{{count} outils}}",
+  "@toolCount": {
+    "description": "Décompte des outils, au colophon de l'accueil. Le nombre est calculé depuis le catalogue, jamais saisi.",
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+
+  "homePromise": "Faites votre document, exportez-le.\nAucun mur à la fin.",
+  "@homePromise": {
+    "description": "La promesse sous la marque, en haut de l'accueil. Elle désamorce la peur relevée dans les avis du marché : découvrir un paiement obligatoire au moment d'enregistrer. Le saut de ligne est intentionnel — deux lignes exactement, la seconde plus courte que la première."
+  },
+  "homeChipNoAccount": "Sans compte",
+  "@homeChipNoAccount": {
+    "description": "Puce de garantie : aucune inscription n'est demandée. Deux ou trois mots maximum, la puce est étroite."
+  },
+  "homeChipNoWatermark": "Sans filigrane",
+  "@homeChipNoWatermark": {
+    "description": "Puce de garantie : les fichiers exportés ne portent aucune marque apposée. Deux ou trois mots maximum."
+  },
+  "homeChipUnlimited": "Export illimité",
+  "@homeChipUnlimited": {
+    "description": "Puce de garantie : aucun quota sur le nombre d'exports. Deux ou trois mots maximum."
+  },
+  "homeSearchTooltip": "Rechercher un outil",
+  "@homeSearchTooltip": {
+    "description": "Info-bulle de la loupe épinglée à la barre de titre de l'accueil."
+  },
+  "homeColophon": "Rien ne se débloque contre paiement au moment d’enregistrer. L’export est gratuit, sans filigrane et sans limite de nombre.",
+  "@homeColophon": {
+    "description": "Texte de pied d'accueil, sous le décompte des outils. Répète la promesse en toutes lettres."
+  },
+
+  "sectionFeatured": "À la une",
+  "@sectionFeatured": {
+    "description": "Famille des cinq outils mis en avant dans la bande bento. Apparaît en sous-titre des résultats de recherche. Court."
+  },
+  "sectionToPdf": "Vers le PDF",
+  "@sectionToPdf": {
+    "description": "Famille des outils qui produisent un PDF depuis un autre format. Titre de section de l'accueil : doit tenir sur une ligne à côté d'un filet et d'une pastille de compte."
+  },
+  "sectionFromPdf": "Depuis le PDF",
+  "@sectionFromPdf": {
+    "description": "Famille des outils qui tirent autre chose d'un PDF. Titre de section : doit tenir sur une ligne."
+  },
+  "sectionSecurity": "Sécurité",
+  "@sectionSecurity": {
+    "description": "Famille des outils de protection, déverrouillage, réparation et caviardage. Titre de section : doit tenir sur une ligne."
+  },
+  "sectionEdit": "Éditer",
+  "@sectionEdit": {
+    "description": "Famille des outils qui modifient un PDF en place. Titre de section, verbe à l'infinitif : doit tenir sur une ligne."
+  },
+
+  "toolMerge": "Fusionner",
+  "@toolMerge": {
+    "description": "Outil : réunit plusieurs documents en un seul PDF. Libellé de tuile — verbe à l'infinitif, court, il s'affiche sur une tuile de 96 dp de large."
+  },
+  "toolMergeKeywords": "assembler combiner joindre regrouper reunir concatener",
+  "@toolMergeKeywords": {
+    "description": "Mots que l'utilisateur peut taper pour trouver l'outil « Fusionner » sans en connaître le nom exact. Séparés par des espaces, sans accents ni ponctuation, en minuscules. Ce ne sont PAS des traductions mot à mot : donnez les synonymes naturels de votre langue, y compris les termes empruntés à l'anglais s'ils sont d'usage courant. Ajoutez-en ou retirez-en librement."
+  },
+  "toolMergeSubtitle": "PDF, Word, images et texte en un seul document",
+  "@toolMergeSubtitle": {
+    "description": "Sous-titre du grand bloc bento de l'accueil. Une ligne descriptive, deux au plus."
+  },
+
+  "toolRectoVerso": "Recto-verso",
+  "@toolRectoVerso": {
+    "description": "Outil : intercale deux scans — les pages impaires et les pages paires — pour reconstituer un document imprimé des deux côtés. Libellé de tuile, court."
+  },
+  "toolRectoVersoKeywords": "double face intercaler scan pair impair",
+  "@toolRectoVersoKeywords": {
+    "description": "Mots de recherche pour « Recto-verso ». Séparés par des espaces, sans accents, en minuscules. Donnez les synonymes naturels de votre langue plutôt qu'une traduction mot à mot."
+  },
+  "toolRectoVersoSubtitle": "Deux scans, remis dans l’ordre",
+  "@toolRectoVersoSubtitle": {
+    "description": "Sous-titre d'un bloc bento moyen. Très court — une ligne, six mots au plus."
+  },
+
+  "toolImagesToPdf": "Images vers PDF",
+  "@toolImagesToPdf": {
+    "description": "Outil : assemble des photos en un PDF. Libellé de tuile, court."
+  },
+  "toolImagesToPdfKeywords": "photo jpg jpeg png photos album appareil",
+  "@toolImagesToPdfKeywords": {
+    "description": "Mots de recherche pour « Images vers PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolImagesToPdfSubtitle": "Photos et captures en un document",
+  "@toolImagesToPdfSubtitle": {
+    "description": "Sous-titre d'un bloc bento moyen. Très court — une ligne, six mots au plus."
+  },
+
+  "toolPdfToWord": "PDF vers Word",
+  "@toolPdfToWord": {
+    "description": "Outil : convertit un PDF en document Word modifiable. « Word » est une marque, elle ne se traduit pas. Libellé de tuile, court."
+  },
+  "toolPdfToWordKeywords": "docx traitement de texte editable convertir",
+  "@toolPdfToWordKeywords": {
+    "description": "Mots de recherche pour « PDF vers Word ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolPdfToWordSubtitle": "Texte et tableaux, modifiables",
+  "@toolPdfToWordSubtitle": {
+    "description": "Sous-titre d'un bloc bento moyen. Très court — une ligne, six mots au plus."
+  },
+
+  "toolOrganize": "Organiser un PDF",
+  "@toolOrganize": {
+    "description": "Outil : réordonne, extrait, divise et supprime des pages. Libellé de tuile, court."
+  },
+  "toolOrganizeKeywords": "diviser separer extraire reordonner ordre pages supprimer",
+  "@toolOrganizeKeywords": {
+    "description": "Mots de recherche pour « Organiser un PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolOrganizeSubtitle": "Diviser, extraire, réordonner",
+  "@toolOrganizeSubtitle": {
+    "description": "Sous-titre d'un bloc bento moyen. Très court — trois verbes à l'infinitif."
+  },
+
+  "toolExcelToPdf": "Excel vers PDF",
+  "@toolExcelToPdf": {
+    "description": "Outil : convertit un classeur en PDF. « Excel » est une marque, elle ne se traduit pas. Libellé de tuile, court."
+  },
+  "toolExcelToPdfKeywords": "tableur xlsx classeur feuille calcul",
+  "@toolExcelToPdfKeywords": {
+    "description": "Mots de recherche pour « Excel vers PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+
+  "toolPptxToPdf": "PowerPoint vers PDF",
+  "@toolPptxToPdf": {
+    "description": "Outil : convertit une présentation en PDF. « PowerPoint » est une marque, elle ne se traduit pas. Libellé de tuile."
+  },
+  "toolPptxToPdfKeywords": "pptx diapositive presentation slides",
+  "@toolPptxToPdfKeywords": {
+    "description": "Mots de recherche pour « PowerPoint vers PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+
+  "toolHtmlToPdf": "Page web vers PDF",
+  "@toolHtmlToPdf": {
+    "description": "Outil : enregistre une page web en PDF depuis son adresse. Libellé de tuile, court."
+  },
+  "toolHtmlToPdfKeywords": "html site internet url lien article",
+  "@toolHtmlToPdfKeywords": {
+    "description": "Mots de recherche pour « Page web vers PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+
+  "toolScan": "Scanner un document",
+  "@toolScan": {
+    "description": "Outil : photographie des pages avec l'appareil et les redresse en PDF. Libellé de tuile, court."
+  },
+  "toolScanKeywords": "camera photo numeriser scan appareil papier",
+  "@toolScanKeywords": {
+    "description": "Mots de recherche pour « Scanner un document ». Séparés par des espaces, sans accents, en minuscules."
+  },
+
+  "toolPdfToExcel": "PDF vers Excel",
+  "@toolPdfToExcel": {
+    "description": "Outil : extrait les tableaux d'un PDF vers un classeur. « Excel » est une marque. Libellé de tuile, court."
+  },
+  "toolPdfToExcelKeywords": "tableur xlsx tableau extraire donnees",
+  "@toolPdfToExcelKeywords": {
+    "description": "Mots de recherche pour « PDF vers Excel ». Séparés par des espaces, sans accents, en minuscules."
+  },
+
+  "toolPdfToPptx": "PDF vers PowerPoint",
+  "@toolPdfToPptx": {
+    "description": "Outil : transforme chaque page en diapositive. « PowerPoint » est une marque. Libellé de tuile."
+  },
+  "toolPdfToPptxKeywords": "pptx diapositive presentation slides",
+  "@toolPdfToPptxKeywords": {
+    "description": "Mots de recherche pour « PDF vers PowerPoint ». Séparés par des espaces, sans accents, en minuscules."
+  },
+
+  "toolPdfToImages": "PDF vers Images",
+  "@toolPdfToImages": {
+    "description": "Outil : exporte chaque page en fichier image. Libellé de tuile, court."
+  },
+  "toolPdfToImagesKeywords": "jpg png photo exporter capture",
+  "@toolPdfToImagesKeywords": {
+    "description": "Mots de recherche pour « PDF vers Images ». Séparés par des espaces, sans accents, en minuscules."
+  },
+
+  "toolOcr": "Texte cherchable (OCR)",
+  "@toolOcr": {
+    "description": "Outil : reconnaît les caractères d'un PDF scanné pour le rendre sélectionnable. « OCR » est un sigle international, à conserver tel quel entre parenthèses. Libellé de tuile."
+  },
+  "toolOcrKeywords": "reconnaissance caracteres scanne copier selectionner",
+  "@toolOcrKeywords": {
+    "description": "Mots de recherche pour « Texte cherchable (OCR) ». Séparés par des espaces, sans accents, en minuscules."
+  },
+
+  "toolPdfA": "Convertir en PDF/A",
+  "@toolPdfA": {
+    "description": "Outil : produit la variante normalisée d'archivage. « PDF/A » est une norme ISO, à conserver telle quelle. Libellé de tuile."
+  },
+  "toolPdfAKeywords": "archivage norme long terme conservation",
+  "@toolPdfAKeywords": {
+    "description": "Mots de recherche pour « Convertir en PDF/A ». Séparés par des espaces, sans accents, en minuscules."
+  },
+
+  "toolProtect": "Protéger PDF",
+  "@toolProtect": {
+    "description": "Outil : chiffre le document derrière un mot de passe. Libellé de tuile, court."
+  },
+  "toolProtectKeywords": "mot de passe cadenas chiffrer verrouiller securiser",
+  "@toolProtectKeywords": {
+    "description": "Mots de recherche pour « Protéger PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+
+  "toolUnlock": "Déverrouiller PDF",
+  "@toolUnlock": {
+    "description": "Outil : retire le mot de passe d'un PDF dont on connaît le mot de passe. Libellé de tuile, court."
+  },
+  "toolUnlockKeywords": "retirer mot de passe ouvrir dechiffrer debloquer cadenas",
+  "@toolUnlockKeywords": {
+    "description": "Mots de recherche pour « Déverrouiller PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+
+  "toolRepair": "Réparer PDF",
+  "@toolRepair": {
+    "description": "Outil : récupère ce qui peut l'être d'un fichier endommagé. Libellé de tuile, court."
+  },
+  "toolRepairKeywords": "corrompu illisible endommage recuperer erreur",
+  "@toolRepairKeywords": {
+    "description": "Mots de recherche pour « Réparer PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+
+  "toolRedact": "Caviarder un PDF",
+  "@toolRedact": {
+    "description": "Outil : recouvre définitivement des zones du document pour anonymiser. Le terme métier consacré en français est « caviarder » ; employez l'équivalent consacré de votre langue (anglais : redact). Libellé de tuile."
+  },
+  "toolRedactKeywords": "masquer noircir anonymiser confidentiel effacer",
+  "@toolRedactKeywords": {
+    "description": "Mots de recherche pour « Caviarder un PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+
+  "toolEdit": "Éditer PDF",
+  "@toolEdit": {
+    "description": "Outil : ajoute ou corrige du texte sur les pages. Libellé de tuile, court."
+  },
+  "toolEditKeywords": "texte modifier corriger annoter ecrire",
+  "@toolEditKeywords": {
+    "description": "Mots de recherche pour « Éditer PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+
+  "toolSign": "Signer",
+  "@toolSign": {
+    "description": "Outil : appose une signature tracée au doigt. Libellé de tuile, un seul verbe."
+  },
+  "toolSignKeywords": "signature paraphe contrat main",
+  "@toolSignKeywords": {
+    "description": "Mots de recherche pour « Signer ». Séparés par des espaces, sans accents, en minuscules."
+  },
+
+  "toolWatermark": "Filigrane",
+  "@toolWatermark": {
+    "description": "Outil : appose une mention en travers des pages (« CONFIDENTIEL », « BROUILLON »). Libellé de tuile, un seul mot si possible."
+  },
+  "toolWatermarkKeywords": "watermark tampon confidentiel brouillon marque",
+  "@toolWatermarkKeywords": {
+    "description": "Mots de recherche pour « Filigrane ». Séparés par des espaces, sans accents, en minuscules. Gardez « watermark » : le terme anglais est cherché dans toutes les langues."
+  },
+
+  "toolPageNumbers": "Numéros de page",
+  "@toolPageNumbers": {
+    "description": "Outil : appose une pagination. Libellé de tuile, court."
+  },
+  "toolPageNumbersKeywords": "pagination folio numeroter chiffres",
+  "@toolPageNumbersKeywords": {
+    "description": "Mots de recherche pour « Numéros de page ». Séparés par des espaces, sans accents, en minuscules."
+  },
+
+  "toolCrop": "Rogner un PDF",
+  "@toolCrop": {
+    "description": "Outil : recadre les pages en retirant les marges. Libellé de tuile, court."
+  },
+  "toolCropKeywords": "couper marges recadrer bords taille",
+  "@toolCropKeywords": {
+    "description": "Mots de recherche pour « Rogner un PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+
+  "toolCompare": "Comparer PDF",
+  "@toolCompare": {
+    "description": "Outil : met deux versions face à face et signale ce qui change. Libellé de tuile, court."
+  },
+  "toolCompareKeywords": "difference versions diff changements",
+  "@toolCompareKeywords": {
+    "description": "Mots de recherche pour « Comparer PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+
+  "searchHint": "Fusionner, mot de passe, filigrane…",
+  "@searchHint": {
+    "description": "Texte d'invite du champ de recherche. Trois exemples de requêtes séparés par des virgules, suivis d'un caractère de suspension. Choisissez trois exemples naturels dans votre langue plutôt qu'une traduction littérale."
+  },
+  "searchClear": "Effacer",
+  "@searchClear": {
+    "description": "Info-bulle de la croix qui vide le champ de recherche."
+  },
+  "searchNoResultTitle": "Aucun outil pour « {query} ».",
+  "@searchNoResultTitle": {
+    "description": "Titre affiché quand aucun outil ne correspond. Les guillemets français « » doivent être remplacés par ceux de votre langue.",
+    "placeholders": {
+      "query": { "type": "String" }
+    }
+  },
+  "searchNoResultBody": "Essayez le format que vous avez sous la main — « Word », « Excel », « photo » — ou ce que vous voulez en faire : « signer », « diviser », « mot de passe ».",
+  "@searchNoResultBody": {
+    "description": "Conseil affiché sous le titre d'absence de résultat. Les exemples entre guillemets doivent être adaptés à votre langue, pas traduits littéralement. Employez les guillemets de votre langue."
+  },
+
+  "actionUndo": "Annuler",
+  "@actionUndo": {
+    "description": "Défait la dernière action — retrait d'un fichier, compression appliquée. ATTENTION : ce n'est PAS « interrompre » (voir actionCancel). Le français emploie le même mot pour les deux, la plupart des langues non : anglais « Undo » contre « Cancel », allemand « Rückgängig » contre « Abbrechen »."
+  },
+  "actionApply": "Appliquer",
+  "@actionApply": {
+    "description": "Valide le réglage choisi et l'applique au document."
+  },
+  "actionChoose": "Choisir",
+  "@actionChoose": {
+    "description": "Ouvre la boîte de sélection de fichiers du système. Libellé court, souvent au bout d'une rangée étroite."
+  },
+  "actionChoosePdf": "Choisir un PDF",
+  "@actionChoosePdf": {
+    "description": "Bouton principal d'un écran vide dont l'outil ne travaille que sur des PDF."
+  },
+  "actionChooseFiles": "Choisir des fichiers",
+  "@actionChooseFiles": {
+    "description": "Bouton principal d'un écran vide dont l'outil accepte plusieurs fichiers à la fois."
+  },
+  "actionConvert": "Convertir",
+  "@actionConvert": {
+    "description": "Lance la conversion. Bouton pleine largeur en bas d'écran."
+  },
+  "actionFinish": "Terminer",
+  "@actionFinish": {
+    "description": "Clôt une capture en plusieurs pages et passe à la suite."
+  },
+  "actionBack": "Retour",
+  "@actionBack": {
+    "description": "Info-bulle de la flèche qui remonte d'un écran."
+  },
+  "actionAdd": "Ajouter",
+  "@actionAdd": {
+    "description": "Ajoute un élément à une liste. Libellé court."
+  },
+  "noFileChosen": "Aucun fichier choisi",
+  "@noFileChosen": {
+    "description": "Sous-titre d'une rangée tant qu'aucun fichier n'a été retenu."
+  },
+
+  "errorExportFailed": "Échec de l’export : {detail}",
+  "@errorExportFailed": {
+    "description": "Bandeau d'erreur quand l'écriture du fichier échoue. {detail} est un message technique non traduit, rendu tel quel.",
+    "placeholders": {
+      "detail": { "type": "String" }
+    }
+  },
+  "errorShareFailed": "Échec du partage : {detail}",
+  "@errorShareFailed": {
+    "description": "Bandeau d'erreur quand la fenêtre de partage échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": { "type": "String" }
+    }
+  },
+  "errorOpenFailed": "Impossible d’ouvrir le fichier : {detail}",
+  "@errorOpenFailed": {
+    "description": "Bandeau d'erreur quand le fichier choisi ne peut pas être lu. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": { "type": "String" }
+    }
+  },
+  "errorConversionFailed": "Échec de la conversion : {detail}",
+  "@errorConversionFailed": {
+    "description": "Bandeau d'erreur quand une conversion de format échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": { "type": "String" }
+    }
+  },
+  "errorOnFile": "{name} : {detail}",
+  "@errorOnFile": {
+    "description": "Bandeau d'erreur rattaché à un fichier précis d'une sélection multiple. Ne traduire que la ponctuation de séparation si votre langue en emploie une autre.",
+    "placeholders": {
+      "name": { "type": "String" },
+      "detail": { "type": "String" }
+    }
+  },
+  "errorPickPdf": "Veuillez choisir un fichier PDF.",
+  "@errorPickPdf": {
+    "description": "Bandeau d'erreur quand l'outil exige un PDF et qu'on lui a donné autre chose."
+  },
+
+  "sizeBytes": "{value} o",
+  "@sizeBytes": {
+    "description": "Poids d'un fichier en octets. L'abréviation est « o » en français, « B » en anglais — employez celle de votre langue.",
+    "placeholders": {
+      "value": { "type": "String" }
+    }
+  },
+  "sizeKb": "{value} Ko",
+  "@sizeKb": {
+    "description": "Poids d'un fichier en kilo-octets. L'abréviation est « Ko » en français, « KB » en anglais et dans la plupart des langues — employez celle de la vôtre.",
+    "placeholders": {
+      "value": { "type": "String" }
+    }
+  },
+  "sizeMb": "{value} Mo",
+  "@sizeMb": {
+    "description": "Poids d'un fichier en méga-octets. L'abréviation est « Mo » en français, « MB » en anglais et dans la plupart des langues — employez celle de la vôtre.",
+    "placeholders": {
+      "value": { "type": "String" }
+    }
+  },
+  "sizeApprox": "~ {size}",
+  "@sizeApprox": {
+    "description": "Taille estimée, précédée du signe « environ ». {size} est déjà formaté (« 240 Ko »). Le tilde et non le signe ≈ : ce dernier manque au sous-ensemble des fontes embarquées. Voir test/l10n_coverage_test.dart.",
+    "placeholders": {
+      "size": { "type": "String" }
+    }
+  },
+
+  "pageCount": "{count, plural, one{{count} page} other{{count} pages}}",
+  "@pageCount": {
+    "description": "Décompte de pages. Employez les formes plurielles de votre langue — le polonais, le tchèque, le lituanien et le letton en ont plus de deux.",
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "pageCountOfTotal": "{kept, plural, one{{kept} page} other{{kept} pages}} sur {total}",
+  "@pageCountOfTotal": {
+    "description": "Décompte partiel : combien de pages sont retenues sur combien au total. Affiché seulement quand on en a écarté ; « 3 pages sur 3 » n'apparaît jamais.",
+    "placeholders": {
+      "kept": { "type": "int" },
+      "total": { "type": "int" }
+    }
+  },
+  "pageOfTotal": "Page {current} sur {total}",
+  "@pageOfTotal": {
+    "description": "Titre de la visionneuse plein écran : quelle page on regarde, sur combien.",
+    "placeholders": {
+      "current": { "type": "int" },
+      "total": { "type": "int" }
+    }
+  },
+
+  "formatPdf": "PDF",
+  "@formatPdf": {
+    "description": "Puce de format acceptable. Sigle international, à conserver tel quel dans toutes les langues."
+  },
+  "formatWord": "Word",
+  "@formatWord": {
+    "description": "Puce de format acceptable. Marque déposée, à conserver telle quelle."
+  },
+  "formatExcel": "Excel",
+  "@formatExcel": {
+    "description": "Puce de format acceptable. Marque déposée, à conserver telle quelle."
+  },
+  "formatPowerPoint": "PowerPoint",
+  "@formatPowerPoint": {
+    "description": "Puce de format acceptable. Marque déposée, à conserver telle quelle."
+  },
+  "formatImages": "Images",
+  "@formatImages": {
+    "description": "Puce de format acceptable : les fichiers d'image en général."
+  },
+  "formatText": "Texte",
+  "@formatText": {
+    "description": "Puce de format acceptable : les fichiers texte brut."
+  },
+
+  "mergeAddFile": "Ajouter un fichier",
+  "@mergeAddFile": {
+    "description": "Libellé de la carte à contour tireté en fin de liste, qui ouvre la sélection de fichiers."
+  },
+  "mergeAddHint": "PDF, Word, images ou texte",
+  "@mergeAddHint": {
+    "description": "Ligne sous le libellé de la carte d'ajout, énumérant ce qui est accepté."
+  },
+  "mergeEmptyTitle": "Un seul document",
+  "@mergeEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Fusionner : ce qu'on va obtenir, en trois mots."
+  },
+  "mergeEmptyBody": "Ajoutez des PDF, des fichiers Word, des images ou du texte. Vous pourrez les réordonner et écarter des pages avant l’export.",
+  "@mergeEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Fusionner."
+  },
+  "mergeNeedOnePage": "Ajoutez au moins un fichier avec une page à inclure.",
+  "@mergeNeedOnePage": {
+    "description": "Bandeau d'erreur quand on demande l'aperçu sans qu'aucune page ne soit retenue."
+  },
+  "mergeProgress": "Fusion en cours…",
+  "@mergeProgress": {
+    "description": "Titre de la boîte de progression pendant l'assemblage. Garder le caractère de suspension final."
+  },
+  "mergeFailed": "Échec de la fusion : {detail}",
+  "@mergeFailed": {
+    "description": "Bandeau d'erreur quand l'assemblage échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": { "type": "String" }
+    }
+  },
+  "mergeRemoved": "{name} retiré.",
+  "@mergeRemoved": {
+    "description": "Bandeau confirmant qu'un document a quitté la liste ; il porte l'action « Annuler » (actionUndo). Accordez au genre du mot « fichier » dans votre langue.",
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+  "mergeRemoveTooltip": "Retirer {name}",
+  "@mergeRemoveTooltip": {
+    "description": "Info-bulle de la corbeille d'une rangée de la liste.",
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+  "mergeMoveSemantics": "Déplacer {name}",
+  "@mergeMoveSemantics": {
+    "description": "Étiquette d'accessibilité de la poignée de glissement. Lue à voix haute, jamais affichée.",
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+  "mergeRotateAll": "Pivoter toutes les pages",
+  "@mergeRotateAll": {
+    "description": "Bouton qui fait tourner d'un quart de tour toutes les pages du document déplié."
+  },
+  "mergePreviewAndExport": "Aperçu et export ({count, plural, one{{count} page} other{{count} pages}})",
+  "@mergePreviewAndExport": {
+    "description": "Bouton de bas d'écran de l'outil Fusionner, avec le nombre de pages retenues entre parenthèses.",
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+
+  "previewTitle": "Aperçu · {size}",
+  "@previewTitle": {
+    "description": "Titre de l'écran d'aperçu, suivi du poids du fichier. {size} est déjà formaté (« 1,20 Mo »). Le point médian est un séparateur typographique, gardez-le ou remplacez-le par celui de votre langue.",
+    "placeholders": {
+      "size": { "type": "String" }
+    }
+  },
+  "previewZoomPage": "Page {number}, agrandir",
+  "@previewZoomPage": {
+    "description": "Étiquette d'accessibilité d'une vignette d'aperçu. Lue à voix haute, jamais affichée.",
+    "placeholders": {
+      "number": { "type": "int" }
+    }
+  },
+  "previewPageUnreadable": "Page illisible.",
+  "@previewPageUnreadable": {
+    "description": "Affiché à la place d'une page dont le rendu a échoué."
+  },
+  "previewExportWhat": "PDF · {count, plural, one{{count} page} other{{count} pages}}",
+  "@previewExportWhat": {
+    "description": "Description de ce qui vient d'être enregistré, dans la feuille de confirmation. Décrit le document, ne le nomme pas.",
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "compressTitle": "Compression",
+  "@compressTitle": {
+    "description": "Titre de la feuille de choix du niveau de compression."
+  },
+  "compressBody": "Taille actuelle : {size}. Choisissez un niveau — la taille estimée s’affiche avant d’appliquer.",
+  "@compressBody": {
+    "description": "Consigne de la feuille de compression. {size} est déjà formaté.",
+    "placeholders": {
+      "size": { "type": "String" }
+    }
+  },
+  "compressEstimating": "Estimation…",
+  "@compressEstimating": {
+    "description": "Affiché tant que la taille estimée d'un niveau n'est pas connue. Garder le caractère de suspension final."
+  },
+  "compressProgress": "Compression en cours…",
+  "@compressProgress": {
+    "description": "Titre de la boîte de progression pendant la compression. Garder le caractère de suspension final."
+  },
+  "compressFailed": "Échec de la compression : {detail}",
+  "@compressFailed": {
+    "description": "Bandeau d'erreur quand la compression échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": { "type": "String" }
+    }
+  },
+
+  "protectEmptyTitle": "Mettre sous mot de passe",
+  "@protectEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Protéger."
+  },
+  "protectEmptyBody": "Le PDF ne s’ouvrira plus sans le mot de passe que vous choisissez. Gardez-le : il ne peut pas être récupéré.",
+  "@protectEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Protéger. L'avertissement de la seconde phrase est essentiel — ne l'allégez pas."
+  },
+  "protectSubtitle": "Sera chiffré en AES 256 bits",
+  "@protectSubtitle": {
+    "description": "Sous-titre de la carte du fichier choisi. « AES 256 bits » est un nom d'algorithme, à conserver tel quel."
+  },
+  "protectPassword": "Mot de passe",
+  "@protectPassword": {
+    "description": "Intitulé du premier champ de saisie."
+  },
+  "protectConfirmPassword": "Confirmer le mot de passe",
+  "@protectConfirmPassword": {
+    "description": "Intitulé du second champ, où l'on retape le mot de passe."
+  },
+  "protectShowPasswords": "Afficher les mots de passe",
+  "@protectShowPasswords": {
+    "description": "Info-bulle du bouton œil quand les caractères sont masqués."
+  },
+  "protectHidePasswords": "Masquer les mots de passe",
+  "@protectHidePasswords": {
+    "description": "Info-bulle du bouton œil quand les caractères sont visibles."
+  },
+  "protectMismatch": "Les deux mots de passe diffèrent.",
+  "@protectMismatch": {
+    "description": "Message d'erreur rattaché au champ de confirmation. Court : il s'affiche sous le champ."
+  },
+  "protectWarning": "Notez-le quelque part : sans lui, le document devient définitivement illisible. Aucune récupération n’est possible, ni par vous ni par l’application.",
+  "@protectWarning": {
+    "description": "Avertissement sous les champs de saisie. C'est le seul endroit qui dit qu'un mot de passe perdu est perdu pour de bon — ne l'allégez pas."
+  },
+  "protectAlreadyProtected": "Ce fichier est déjà protégé — utilisez d’abord Déverrouiller PDF.",
+  "@protectAlreadyProtected": {
+    "description": "Bandeau d'erreur quand le PDF choisi porte déjà un mot de passe. « Déverrouiller PDF » doit reprendre exactement le libellé traduit de l'outil (toolUnlock)."
+  },
+  "protectProgress": "Protection en cours…",
+  "@protectProgress": {
+    "description": "Titre de la boîte de progression pendant le chiffrement. Garder le caractère de suspension final."
+  },
+  "protectFailed": "Échec de la protection : {detail}",
+  "@protectFailed": {
+    "description": "Bandeau d'erreur quand le chiffrement échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": { "type": "String" }
+    }
+  },
+  "protectAction": "Protéger",
+  "@protectAction": {
+    "description": "Bouton de bas d'écran qui lance le chiffrement. Verbe à l'infinitif, court."
+  },
+  "protectResultTitle": "PDF protégé",
+  "@protectResultTitle": {
+    "description": "Titre de la carte de résultat, une fois le document chiffré."
+  },
+  "protectResultDetail": "Chiffré en AES 256 bits. Il faudra le mot de passe pour l’ouvrir.",
+  "@protectResultDetail": {
+    "description": "Détail de la carte de résultat. « AES 256 bits » est un nom d'algorithme, à conserver tel quel."
+  },
+  "protectExportWhat": "PDF protégé par mot de passe",
+  "@protectExportWhat": {
+    "description": "Description de ce qui vient d'être enregistré, dans la feuille de confirmation."
+  },
+
+  "unlockEmptyTitle": "Retirer le mot de passe",
+  "@unlockEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Déverrouiller."
+  },
+  "unlockEmptyBody": "Il vous faut le mot de passe actuel du document. Une fois retiré, le PDF s’ouvrira librement.",
+  "@unlockEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Déverrouiller. La première phrase est importante : l'outil ne casse pas les mots de passe, il en délivre un document qu'on sait déjà ouvrir."
+  },
+  "unlockAcceptsProtectedPdf": "PDF protégé",
+  "@unlockAcceptsProtectedPdf": {
+    "description": "Puce de format acceptable : un PDF portant un mot de passe."
+  },
+  "unlockChooseProtectedPdf": "Choisir un PDF protégé",
+  "@unlockChooseProtectedPdf": {
+    "description": "Bouton principal de l'écran vide de l'outil Déverrouiller."
+  },
+  "unlockCurrentPassword": "Mot de passe actuel",
+  "@unlockCurrentPassword": {
+    "description": "Intitulé du champ où l'on saisit le mot de passe qui ouvre déjà le document."
+  },
+  "unlockWrongPassword": "Mot de passe incorrect.",
+  "@unlockWrongPassword": {
+    "description": "Bandeau d'erreur quand le mot de passe saisi n'ouvre pas le document."
+  },
+  "unlockProgress": "Déverrouillage en cours…",
+  "@unlockProgress": {
+    "description": "Titre de la boîte de progression pendant le retrait du mot de passe. Garder le caractère de suspension final."
+  },
+  "unlockFailed": "Échec du déverrouillage : {detail}",
+  "@unlockFailed": {
+    "description": "Bandeau d'erreur quand le retrait du mot de passe échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": { "type": "String" }
+    }
+  },
+  "unlockAction": "Déverrouiller",
+  "@unlockAction": {
+    "description": "Bouton de bas d'écran qui retire le mot de passe. Verbe à l'infinitif, court."
+  },
+
+  "repairEmptyTitle": "Réparer un fichier abîmé",
+  "@repairEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Réparer."
+  },
+  "repairEmptyBody": "La structure interne d’un PDF endommagé est reconstruite. Ce qui est récupérable le sera.",
+  "@repairEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Réparer. La seconde phrase promet peu délibérément — la réparation n'est jamais garantie."
+  },
+  "repairProgress": "Réparation en cours…",
+  "@repairProgress": {
+    "description": "Titre de la boîte de progression pendant la reconstruction. Garder le caractère de suspension final."
+  },
+  "repairFailed": "Impossible de réparer ce fichier — il est peut-être trop endommagé.",
+  "@repairFailed": {
+    "description": "Bandeau d'erreur quand la reconstruction échoue. Le ton reste prudent : on ne sait pas pourquoi, et on le dit."
+  },
+  "repairAction": "Réparer",
+  "@repairAction": {
+    "description": "Bouton de bas d'écran qui lance la reconstruction. Verbe à l'infinitif, court."
+  },
+
+  "pdfToWordEmptyTitle": "Un Word modifiable",
+  "@pdfToWordEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil PDF vers Word. « Word » est une marque, à conserver."
+  },
+  "pdfToWordEmptyBody": "Le texte et la structure du PDF sont transposés dans un document .docx que vous pourrez rouvrir et corriger.",
+  "@pdfToWordEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil PDF vers Word. « .docx » est une extension de fichier, à conserver telle quelle."
+  },
+  "pdfToWordAnalyzing": "Analyse du document…",
+  "@pdfToWordAnalyzing": {
+    "description": "Titre de la boîte de progression pendant l'inspection du PDF, avant conversion. Garder le caractère de suspension final."
+  },
+  "pdfToWordAnalysisPending": "Analyse en attente",
+  "@pdfToWordAnalysisPending": {
+    "description": "Sous-titre de la carte du fichier tant que l'inspection n'a pas rendu ses résultats."
+  },
+  "pdfToWordAnalysisFailed": "Analyse impossible : {detail}",
+  "@pdfToWordAnalysisFailed": {
+    "description": "Bandeau d'erreur quand l'inspection du PDF échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": { "type": "String" }
+    }
+  },
+  "pdfLocked": "Ce PDF est protégé par un mot de passe. Déverrouillez-le d’abord.",
+  "@pdfLocked": {
+    "description": "Bandeau d'erreur commun aux outils qui refusent un PDF chiffré. Renvoie implicitement à l'outil Déverrouiller."
+  },
+  "pdfToWordConverting": "Conversion en Word…",
+  "@pdfToWordConverting": {
+    "description": "Titre de la boîte de progression pendant la conversion. Garder le caractère de suspension final."
+  },
+  "pdfToWordSummaryTitle": "Contenu détecté",
+  "@pdfToWordSummaryTitle": {
+    "description": "Titre de la carte qui résume ce que l'inspection a trouvé dans le PDF."
+  },
+  "pdfToWordParagraphCount": "{count, plural, one{{count} paragraphe} other{{count} paragraphes}}",
+  "@pdfToWordParagraphCount": {
+    "description": "Puce du résumé : combien de paragraphes ont été reconnus.",
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "pdfToWordHeadingCount": "{count, plural, one{{count} titre} other{{count} titres}}",
+  "@pdfToWordHeadingCount": {
+    "description": "Puce du résumé : combien de titres ont été reconnus.",
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "pdfToWordTableCount": "{count, plural, one{{count} tableau} other{{count} tableaux}}",
+  "@pdfToWordTableCount": {
+    "description": "Puce du résumé : combien de tableaux ont été reconnus.",
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "pdfToWordNoTables": "Aucun tableau détecté : si votre PDF en contient, ses lignes seront converties en paragraphes.",
+  "@pdfToWordNoTables": {
+    "description": "Avertissement affiché quand l'inspection n'a trouvé aucun tableau."
+  },
+  "pdfToWordCaveat": "La conversion reproduit le texte, la mise en forme et les tableaux, mais pas la mise en page exacte : la position des images et des colonnes n’est pas conservée, et les images ne sont pas reprises dans le document Word.",
+  "@pdfToWordCaveat": {
+    "description": "Ce que la conversion ne sait pas faire, dit avant qu'on la lance. C'est le passage qui évite la déception — ne l'allégez pas."
+  },
+  "pdfToWordScanWarning": "Ce PDF semble être un scan : aucun texte n’a été trouvé. Utilisez d’abord l’outil Texte cherchable (OCR), puis revenez convertir le PDF obtenu.",
+  "@pdfToWordScanWarning": {
+    "description": "Avertissement quand le PDF ne contient aucun texte extractible. « Texte cherchable (OCR) » doit reprendre exactement le libellé traduit de l'outil (toolOcr)."
+  },
+  "pdfToWordResultTitle": "Document Word prêt",
+  "@pdfToWordResultTitle": {
+    "description": "Titre de la carte de résultat, une fois le .docx produit."
+  },
+  "pdfToWordResultDetail": "{name} — {size}",
+  "@pdfToWordResultDetail": {
+    "description": "Détail de la carte de résultat : le nom du fichier et son poids, déjà formatés.",
+    "placeholders": {
+      "name": { "type": "String" },
+      "size": { "type": "String" }
+    }
+  },
+  "pdfToWordExportWhat": "Document Word",
+  "@pdfToWordExportWhat": {
+    "description": "Description de ce qui vient d'être enregistré, dans la feuille de confirmation."
+  },
+  "pdfToWordConvertAction": "Convertir en Word",
+  "@pdfToWordConvertAction": {
+    "description": "Bouton de bas d'écran qui lance la conversion. Doit tenir sur une ligne."
+  },
+  "actionConvertAgain": "Convertir à nouveau",
+  "@actionConvertAgain": {
+    "description": "Action secondaire proposée une fois le fichier produit, pour refaire la conversion. Doit tenir sur une ligne."
+  },
+  "errorSaveFailed": "Enregistrement impossible : {detail}",
+  "@errorSaveFailed": {
+    "description": "Bandeau d'erreur quand l'écriture du fichier échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": { "type": "String" }
+    }
+  },
+
+  "rectoVersoIntro": "Un chargeur simple face donne deux fichiers : les pages impaires dans l’ordre, les pages paires souvent dans l’ordre inverse. Choisissez les deux pour les recomposer.",
+  "@rectoVersoIntro": {
+    "description": "Consigne en tête de l'outil Recto-verso, qui explique d'où viennent les deux fichiers attendus."
+  },
+  "rectoVersoOddSlot": "Fichier des pages impaires (recto)",
+  "@rectoVersoOddSlot": {
+    "description": "Intitulé de la première case : le scan des pages 1, 3, 5…"
+  },
+  "rectoVersoEvenSlot": "Fichier des pages paires (verso)",
+  "@rectoVersoEvenSlot": {
+    "description": "Intitulé de la seconde case : le scan des pages 2, 4, 6…"
+  },
+  "rectoVersoReversed": "Le second fichier est en ordre inverse",
+  "@rectoVersoReversed": {
+    "description": "Intitulé de l'interrupteur qui retourne l'ordre des pages paires."
+  },
+  "rectoVersoReversedHint": "C’est le cas le plus courant, coché par défaut",
+  "@rectoVersoReversedHint": {
+    "description": "Sous-titre de l'interrupteur, qui justifie sa valeur par défaut."
+  },
+  "rectoVersoPreview": "Aperçu de l’entrelacement ({count, plural, one{{count} page} other{{count} pages}})",
+  "@rectoVersoPreview": {
+    "description": "Titre de la bande de vignettes qui montre le résultat de l'entrelacement.",
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "rectoVersoProgress": "Entrelacement en cours…",
+  "@rectoVersoProgress": {
+    "description": "Titre de la boîte de progression pendant l'entrelacement. Garder le caractère de suspension final."
+  },
+  "fileWithPageCount": "{name} · {count, plural, one{{count} page} other{{count} pages}}",
+  "@fileWithPageCount": {
+    "description": "Sous-titre d'une carte de fichier : son nom, puis son nombre de pages. Le point médian est un séparateur typographique.",
+    "placeholders": {
+      "name": { "type": "String" },
+      "count": { "type": "int" }
+    }
+  },
+  "actionPreviewAndExport": "Aperçu et export",
+  "@actionPreviewAndExport": {
+    "description": "Bouton de bas d'écran qui mène à l'écran d'aperçu. Doit tenir sur une ligne."
+  },
+  "errorOpenFailedShort": "Impossible d’ouvrir : {detail}",
+  "@errorOpenFailedShort": {
+    "description": "Variante brève du bandeau d'erreur d'ouverture. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": { "type": "String" }
+    }
+  },
+  "errorGeneric": "Échec : {detail}",
+  "@errorGeneric": {
+    "description": "Bandeau d'erreur générique, quand l'écran n'a rien de plus précis à dire. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": { "type": "String" }
+    }
+  },
+  "actionConvertToPdf": "Convertir en PDF",
+  "@actionConvertToPdf": {
+    "description": "Bouton de bas d'écran des outils de conversion vers le PDF. Doit tenir sur une ligne."
+  },
+  "convertProgress": "Conversion en cours…",
+  "@convertProgress": {
+    "description": "Titre de la boîte de progression pendant une conversion de format. Garder le caractère de suspension final."
+  },
+
+  "excelEmptyTitle": "Un classeur en PDF",
+  "@excelEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Excel vers PDF."
+  },
+  "excelEmptyBody": "Les feuilles d’un fichier .xlsx deviennent des pages PDF, prêtes à envoyer ou à imprimer.",
+  "@excelEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Excel vers PDF. « .xlsx » est une extension de fichier, à conserver telle quelle."
+  },
+  "excelChooseWorkbook": "Choisir un classeur",
+  "@excelChooseWorkbook": {
+    "description": "Bouton principal de l'écran vide de l'outil Excel vers PDF."
+  },
+  "excelChooseXlsx": "Choisir un classeur .xlsx",
+  "@excelChooseXlsx": {
+    "description": "Intitulé de la rangée de fichier tant qu'aucun classeur n'est choisi. « .xlsx » est une extension, à conserver."
+  },
+  "excelLegacyFormat": "Le format .xls (ancien format binaire Excel) n’est pas pris en charge. Enregistrez le fichier en .xlsx puis réessayez.",
+  "@excelLegacyFormat": {
+    "description": "Bandeau d'erreur quand on choisit un classeur au vieux format binaire. Les extensions « .xls » et « .xlsx » sont à conserver telles quelles."
+  },
+  "excelWrongFormat": "Veuillez choisir un classeur Excel .xlsx.",
+  "@excelWrongFormat": {
+    "description": "Bandeau d'erreur quand le fichier choisi n'est pas un classeur."
+  },
+  "excelUnreadable": "Classeur illisible : {detail}",
+  "@excelUnreadable": {
+    "description": "Bandeau d'erreur quand le classeur ne peut pas être décodé. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": { "type": "String" }
+    }
+  },
+  "excelSheetsAndRows": "{sheets, plural, one{{sheets} feuille} other{{sheets} feuilles}} · {rows, plural, one{{rows} ligne au total} other{{rows} lignes au total}}",
+  "@excelSheetsAndRows": {
+    "description": "Sous-titre de la rangée de fichier : combien de feuilles et combien de lignes en tout. Le point médian est un séparateur typographique.",
+    "placeholders": {
+      "sheets": { "type": "int" },
+      "rows": { "type": "int" }
+    }
+  },
+  "excelSheetsDetected": "Feuilles détectées",
+  "@excelSheetsDetected": {
+    "description": "Intitulé de la liste des feuilles trouvées dans le classeur."
+  },
+  "excelEmptySheet": "Feuille vide",
+  "@excelEmptySheet": {
+    "description": "Sous-titre d'une feuille qui ne contient aucune ligne."
+  },
+  "excelSheetDimensions": "{rows, plural, one{{rows} ligne} other{{rows} lignes}} × {columns, plural, one{{columns} colonne} other{{columns} colonnes}}",
+  "@excelSheetDimensions": {
+    "description": "Sous-titre d'une feuille : ses dimensions. Le signe × est le symbole de multiplication.",
+    "placeholders": {
+      "rows": { "type": "int" },
+      "columns": { "type": "int" }
+    }
+  },
+  "excelRepeatHeader": "Répéter la ligne d’en-tête sur chaque page",
+  "@excelRepeatHeader": {
+    "description": "Intitulé de l'interrupteur qui redessine la première ligne en haut de chaque page."
+  },
+  "excelRepeatHeaderHint": "La première ligne de la feuille est redessinée en haut de chaque page du tableau.",
+  "@excelRepeatHeaderHint": {
+    "description": "Sous-titre de l'interrupteur de répétition d'en-tête."
+  },
+  "excelCaveat": "Ce que la conversion reprend : le texte des cellules tel qu’il est enregistré dans le fichier (y compris le dernier résultat calculé des formules), la première ligne en gras et un quadrillage.\n\nCe qui n’est pas repris : couleurs, polices, formats de nombres, cellules fusionnées, images, graphiques et formules elles-mêmes. Les colonnes sont réduites pour tenir dans la largeur de la page ; sur les feuilles très larges, le texte des cellules trop étroites est tronqué par « … ».",
+  "@excelCaveat": {
+    "description": "Ce que la conversion sait et ne sait pas faire. Les deux paragraphes sont séparés par une ligne vide — gardez le double saut de ligne. C'est le passage qui évite la déception, ne l'allégez pas."
+  },
+
+  "pptxEmptyTitle": "Une présentation en PDF",
+  "@pptxEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil PowerPoint vers PDF."
+  },
+  "pptxEmptyBody": "Une page paysage 16:9 par diapositive, reprenant le titre et les puces. Le texte est repris ; les images, formes et arrière-plans d’origine ne le sont pas.\n\nFormat accepté : .pptx. Un ancien fichier .ppt doit d’abord être réenregistré en .pptx depuis PowerPoint.",
+  "@pptxEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil PowerPoint vers PDF. Les deux paragraphes sont séparés par une ligne vide — gardez le double saut de ligne. « 16:9 », « .pptx » et « .ppt » sont à conserver tels quels."
+  },
+  "pptxChoosePresentation": "Choisir une présentation",
+  "@pptxChoosePresentation": {
+    "description": "Bouton principal de l'écran vide de l'outil PowerPoint vers PDF."
+  },
+  "pptxTextOnlyTitle": "Conversion du texte uniquement",
+  "@pptxTextOnlyTitle": {
+    "description": "Titre de la carte d'avertissement affichée une fois la présentation chargée."
+  },
+  "pptxTextOnlyBody": "Le texte de chaque diapositive est repris. Les images, formes, arrière-plans, couleurs et mises en page d’origine ne sont pas conservés : le PDF obtenu est une mise en page simple et lisible, pas une copie fidèle de votre présentation.",
+  "@pptxTextOnlyBody": {
+    "description": "Corps de la carte d'avertissement. Dit clairement ce que l'outil ne fait pas — ne l'allégez pas."
+  },
+  "pptxSlideCount": "{count, plural, one{{count} diapositive} other{{count} diapositives}}",
+  "@pptxSlideCount": {
+    "description": "Sous-titre de la rangée de fichier : combien de diapositives ont été trouvées.",
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "pptxSlidesDetected": "Diapositives détectées",
+  "@pptxSlidesDetected": {
+    "description": "Intitulé de la liste des diapositives trouvées dans la présentation."
+  },
+  "pptxMoreSlides": "et {count, plural, one{{count} autre diapositive} other{{count} autres diapositives}}…",
+  "@pptxMoreSlides": {
+    "description": "Affiché sous la liste quand la présentation compte plus de trente diapositives et que l'aperçu s'arrête là. Garder le caractère de suspension final.",
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "pptxUntitledSlide": "Sans titre",
+  "@pptxUntitledSlide": {
+    "description": "Affiché à la place du titre d'une diapositive qui n'en porte pas. Rendu en italique."
+  },
+  "pptxEmptySlide": "Aucun texte (image ou forme uniquement)",
+  "@pptxEmptySlide": {
+    "description": "Sous-titre d'une diapositive dont l'outil n'a extrait aucun texte."
+  },
+  "pptxTextLineCount": "{count, plural, one{{count} ligne de texte} other{{count} lignes de texte}}",
+  "@pptxTextLineCount": {
+    "description": "Sous-titre d'une diapositive : combien de lignes de texte elle porte.",
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "pptxReadFailed": "Lecture impossible : {detail}",
+  "@pptxReadFailed": {
+    "description": "Bandeau d'erreur quand la présentation ne peut pas être décodée. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": { "type": "String" }
+    }
+  },
+
+  "compressLevelLight": "Légère",
+  "@compressLevelLight": {
+    "description": "Niveau de compression le plus doux. Adjectif accordé à « compression » ; si votre langue ne permet pas l'adjectif seul, écrivez « Compression légère »."
+  },
+  "compressLevelMedium": "Moyenne",
+  "@compressLevelMedium": {
+    "description": "Niveau de compression intermédiaire. Adjectif accordé à « compression »."
+  },
+  "compressLevelStrong": "Forte",
+  "@compressLevelStrong": {
+    "description": "Niveau de compression le plus agressif. Adjectif accordé à « compression »."
+  },
+
+  "pptxQualityStandard": "Standard (150 dpi)",
+  "@pptxQualityStandard": {
+    "description": "Réglage de résolution par défaut de l'export PowerPoint. « dpi » est un sigle international, à conserver."
+  },
+  "pptxQualityHigh": "Haute (220 dpi)",
+  "@pptxQualityHigh": {
+    "description": "Réglage de résolution élevée de l'export PowerPoint. « dpi » est un sigle international, à conserver."
+  },
+
+  "pdfToExcelEmptyTitle": "Récupérer les tableaux",
+  "@pdfToExcelEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil PDF vers Excel."
+  },
+  "pdfToExcelEmptyBody": "Les tableaux d’un PDF sont extraits vers un classeur Excel. La mise en forme n’est pas conservée, les valeurs le sont.",
+  "@pdfToExcelEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil PDF vers Excel."
+  },
+  "pdfToExcelPagesAnalyzed": "{count, plural, one{{count} page analysée} other{{count} pages analysées}}",
+  "@pdfToExcelPagesAnalyzed": {
+    "description": "Sous-titre de la carte du fichier une fois l'inspection faite.",
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "pdfToExcelAnalysisFailed": "Analyse impossible. Le PDF est peut-être protégé par un mot de passe ou endommagé. ({detail})",
+  "@pdfToExcelAnalysisFailed": {
+    "description": "Bandeau d'erreur quand l'inspection échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": { "type": "String" }
+    }
+  },
+  "pdfToExcelNothingToExport": "Rien à exporter : aucun tableau détecté.",
+  "@pdfToExcelNothingToExport": {
+    "description": "Bandeau d'erreur quand on lance la conversion sans qu'aucun tableau n'ait été reconnu."
+  },
+  "pdfToExcelBuilding": "Création du classeur…",
+  "@pdfToExcelBuilding": {
+    "description": "Titre de la boîte de progression pendant la construction du classeur. Garder le caractère de suspension final."
+  },
+  "pdfToExcelIncludeParagraphs": "Inclure aussi le texte hors tableaux (une ligne par paragraphe)",
+  "@pdfToExcelIncludeParagraphs": {
+    "description": "Intitulé de l'interrupteur qui verse le texte courant dans le classeur."
+  },
+  "pdfToExcelIncludeParagraphsHint": "Utile pour un document semi-structuré : le texte est placé dans la colonne A, après les tableaux de la page.",
+  "@pdfToExcelIncludeParagraphsHint": {
+    "description": "Sous-titre de l'interrupteur. « colonne A » désigne la première colonne du tableur."
+  },
+  "pdfToExcelCaveatTitle": "Ce que la conversion ne conserve pas",
+  "@pdfToExcelCaveatTitle": {
+    "description": "Intitulé du paragraphe qui énumère les limites de l'extraction."
+  },
+  "pdfToExcelCaveat": "La détection repose sur la position du texte dans la page : les tableaux sans bordure régulière, les cellules fusionnées et les colonnes très irrégulières peuvent être mal découpés. Un PDF scanné (image) ne contient aucun texte extractible et ne donnera rien. Les couleurs, formules et images ne sont jamais reprises : seules les valeurs texte le sont.",
+  "@pdfToExcelCaveat": {
+    "description": "Limites de l'extraction de tableaux, dites avant qu'on lance la conversion. Ne l'allégez pas."
+  },
+  "pdfToExcelTablesFound": "{tables, plural, one{{tables} tableau détecté} other{{tables} tableaux détectés}} sur {pages, plural, one{{pages} page} other{{pages} pages}}",
+  "@pdfToExcelTablesFound": {
+    "description": "Résumé de l'inspection : combien de tableaux, sur combien de pages.",
+    "placeholders": {
+      "tables": { "type": "int" },
+      "pages": { "type": "int" }
+    }
+  },
+  "pdfToExcelPagesConcerned": "Pages concernées : {pages}",
+  "@pdfToExcelPagesConcerned": {
+    "description": "Liste des numéros de page qui portent un tableau. {pages} est déjà formaté (« 1, 3, 7… »).",
+    "placeholders": {
+      "pages": { "type": "String" }
+    }
+  },
+  "pdfToExcelParagraphsOutside": "{count, plural, one{{count} paragraphe hors tableaux} other{{count} paragraphes hors tableaux}}",
+  "@pdfToExcelParagraphsOutside": {
+    "description": "Résumé de l'inspection : combien de paragraphes vivent en dehors des tableaux.",
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "pdfToExcelScannedWarning": "Aucun texte n’a pu être extrait de ce PDF : il s’agit très probablement d’un document scanné (des images de pages). Un tableur ne peut rien en tirer ; utilisez d’abord l’outil de reconnaissance de texte (OCR).",
+  "@pdfToExcelScannedWarning": {
+    "description": "Avertissement quand le PDF est un scan sans couche de texte. « OCR » est un sigle international, à conserver."
+  },
+  "pdfToExcelNoTableWarning": "Aucune structure de tableau n’a été reconnue dans ce document. Le texte est bien là, mais il n’est pas disposé en colonnes régulières. Plutôt que de produire un classeur illisible, activez « Inclure aussi le texte hors tableaux » ci-dessus, ou utilisez « PDF vers Word » qui conserve mieux les paragraphes.",
+  "@pdfToExcelNoTableWarning": {
+    "description": "Avertissement quand le texte existe mais n'est pas tabulaire. Les deux citations entre guillemets doivent reprendre exactement les libellés traduits correspondants (pdfToExcelIncludeParagraphs et toolPdfToWord)."
+  },
+  "pdfToExcelResultTitle": "Classeur prêt",
+  "@pdfToExcelResultTitle": {
+    "description": "Titre de la carte de résultat, une fois le classeur produit."
+  },
+  "pdfToExcelExportWhat": "Classeur Excel",
+  "@pdfToExcelExportWhat": {
+    "description": "Description de ce qui vient d'être enregistré, dans la feuille de confirmation."
+  },
+  "pdfToExcelConvertAction": "Convertir en Excel",
+  "@pdfToExcelConvertAction": {
+    "description": "Bouton de bas d'écran qui lance la conversion. Doit tenir sur une ligne."
+  },
+  "resultNameAndSize": "{name} — {size}",
+  "@resultNameAndSize": {
+    "description": "Détail d'une carte de résultat : le nom du fichier et son poids, déjà formatés.",
+    "placeholders": {
+      "name": { "type": "String" },
+      "size": { "type": "String" }
+    }
+  },
+
+  "pdfToPptxEmptyTitle": "Une diapositive par page",
+  "@pdfToPptxEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil PDF vers PowerPoint."
+  },
+  "pdfToPptxEmptyBody": "Le PDF devient une présentation PowerPoint à l’identique. Chaque page arrive sous forme d’image : la mise en page est fidèle, mais le texte ne sera pas modifiable dans PowerPoint.",
+  "@pdfToPptxEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil PDF vers PowerPoint. Le compromis annoncé — mise en page fidèle contre texte figé — est le point essentiel."
+  },
+  "pdfToPptxOpenFailed": "Impossible d’ouvrir ce PDF : {detail}",
+  "@pdfToPptxOpenFailed": {
+    "description": "Bandeau d'erreur quand le PDF ne peut pas être lu. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": { "type": "String" }
+    }
+  },
+  "pdfToPptxConverting": "Conversion en PowerPoint…",
+  "@pdfToPptxConverting": {
+    "description": "Titre de la boîte de progression pendant la conversion. Garder le caractère de suspension final."
+  },
+  "pdfToPptxPagesToSlides": "{count, plural, one{{count} page} other{{count} pages}} > {count, plural, one{{count} diapositive} other{{count} diapositives}}",
+  "@pdfToPptxPagesToSlides": {
+    "description": "Sous-titre de la carte du fichier : autant de diapositives que de pages. Le chevron simple et non une flèche → : celle-ci manque au sous-ensemble des fontes embarquées. Voir test/l10n_coverage_test.dart.",
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "pdfToPptxEmptyDocument": "Document vide",
+  "@pdfToPptxEmptyDocument": {
+    "description": "Sous-titre de la carte du fichier quand le PDF ne contient aucune page."
+  },
+  "qualityLabel": "Qualité",
+  "@qualityLabel": {
+    "description": "Intitulé du groupe de boutons qui choisit la résolution de sortie."
+  },
+  "pdfToPptxQualityHint": "Une résolution plus élevée donne des diapositives plus nettes mais un fichier nettement plus lourd.",
+  "@pdfToPptxQualityHint": {
+    "description": "Explication sous le choix de qualité, dans le cas ordinaire."
+  },
+  "pdfToPptxHeavyWarning": "Attention : en haute qualité, une présentation de {count, plural, one{{count} page} other{{count} pages}} peut peser plusieurs dizaines de Mo et être longue à ouvrir. Choisissez Standard en cas de doute.",
+  "@pdfToPptxHeavyWarning": {
+    "description": "Avertissement affiché en rouge quand haute qualité et document long se combinent. « Standard » doit reprendre le libellé traduit de pptxQualityStandard. « Mo » est l'abréviation de méga-octet — employez celle de votre langue.",
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "goodToKnow": "À savoir",
+  "@goodToKnow": {
+    "description": "Titre d'une carte d'information neutre."
+  },
+  "pdfToPptxCaveat": "Chaque diapositive est une image de la page : la mise en page est identique au PDF, mais le texte ne sera pas modifiable dans PowerPoint.\nPour récupérer du texte modifiable, utilisez plutôt « PDF vers Word ».\nUne présentation n’a qu’un seul format de diapositive : il est repris de la première page, et les pages de format différent sont centrées à l’intérieur.",
+  "@pdfToPptxCaveat": {
+    "description": "Trois limites de la conversion, une par ligne — gardez les sauts de ligne simples. « PDF vers Word » doit reprendre le libellé traduit de toolPdfToWord."
+  },
+  "pdfToPptxResultTitle": "Présentation prête",
+  "@pdfToPptxResultTitle": {
+    "description": "Titre de la carte de résultat, une fois la présentation produite."
+  },
+  "pdfToPptxResultDetail": "{name} — {count, plural, one{{count} diapositive} other{{count} diapositives}} · {size} · {quality}",
+  "@pdfToPptxResultDetail": {
+    "description": "Détail de la carte de résultat : nom, nombre de diapositives, poids et réglage de qualité. Le point médian est un séparateur typographique.",
+    "placeholders": {
+      "name": { "type": "String" },
+      "count": { "type": "int" },
+      "size": { "type": "String" },
+      "quality": { "type": "String" }
+    }
+  },
+  "notSavedYet": "Le fichier n’est pas encore sur votre appareil : enregistrez-le ou partagez-le.",
+  "@notSavedYet": {
+    "description": "Rappel sous la carte de résultat : le fichier existe en mémoire mais n'a pas encore été écrit."
+  },
+  "pdfToPptxChangeQuality": "Changer la qualité",
+  "@pdfToPptxChangeQuality": {
+    "description": "Action secondaire qui revient au choix de résolution pour refaire la conversion."
+  },
+  "pdfToPptxConvertAction": "Convertir en PowerPoint",
+  "@pdfToPptxConvertAction": {
+    "description": "Bouton de bas d'écran qui lance la conversion. Doit tenir sur une ligne."
+  },
+  "pdfToPptxExportWhat": "Présentation PowerPoint · {count, plural, one{{count} diapositive} other{{count} diapositives}}",
+  "@pdfToPptxExportWhat": {
+    "description": "Description de ce qui vient d'être enregistré, dans la feuille de confirmation.",
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+
+  "formatLabel": "Format",
+  "@formatLabel": {
+    "description": "Intitulé du groupe de boutons qui choisit le format de sortie."
+  },
+  "actionExport": "Exporter",
+  "@actionExport": {
+    "description": "Bouton qui lance la production des fichiers. Verbe à l'infinitif, court."
+  },
+  "imageQualityWeb": "Web (72 dpi)",
+  "@imageQualityWeb": {
+    "description": "Résolution la plus basse de l'export en images, destinée à l'écran. « dpi » est un sigle international, à conserver."
+  },
+  "imageQualityStandard": "Standard (150 dpi)",
+  "@imageQualityStandard": {
+    "description": "Résolution intermédiaire de l'export en images. « dpi » est un sigle international, à conserver."
+  },
+  "imageQualityHigh": "Haute qualité (300 dpi)",
+  "@imageQualityHigh": {
+    "description": "Résolution la plus élevée de l'export en images, destinée à l'impression. « dpi » est un sigle international, à conserver."
+  },
+  "pdfToImagesEmptyTitle": "Une image par page",
+  "@pdfToImagesEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil PDF vers Images."
+  },
+  "pdfToImagesEmptyBody": "Choisissez un PDF : chaque page en sortira sous forme d’image, à la définition que vous réglez ensuite.",
+  "@pdfToImagesEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil PDF vers Images."
+  },
+  "pdfToImagesNotAPdf": "{name} : veuillez choisir un fichier PDF.",
+  "@pdfToImagesNotAPdf": {
+    "description": "Bandeau d'erreur quand le fichier choisi n'est pas un PDF.",
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+  "errorLoadFailed": "Échec du chargement : {detail}",
+  "@errorLoadFailed": {
+    "description": "Bandeau d'erreur quand le fichier ne peut pas être chargé. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": { "type": "String" }
+    }
+  },
+  "pdfToImagesProgress": "Export en cours…",
+  "@pdfToImagesProgress": {
+    "description": "Titre de la boîte de progression pendant le rendu des images. Garder le caractère de suspension final."
+  },
+  "pdfToImagesExportWhat": "{count, plural, one{{count} image} other{{count} images}} {format}",
+  "@pdfToImagesExportWhat": {
+    "description": "Description de ce qui vient d'être enregistré : combien d'images, dans quel format. {format} vaut « JPG » ou « PNG » et ne se traduit pas.",
+    "placeholders": {
+      "count": { "type": "int" },
+      "format": { "type": "String" }
+    }
+  },
+
+  "pdfaEmptyTitle": "Archiver pour longtemps",
+  "@pdfaEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Convertir en PDF/A."
+  },
+  "pdfaEmptyBody": "Le PDF/A est le format d’archivage exigé par de nombreuses administrations. Le document est converti sans perdre son apparence.",
+  "@pdfaEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Convertir en PDF/A. « PDF/A » est une norme ISO, à conserver telle quelle."
+  },
+  "pdfaConformanceLevel": "Niveau de conformité",
+  "@pdfaConformanceLevel": {
+    "description": "Intitulé du groupe de boutons qui choisit la variante de la norme."
+  },
+  "pdfaA1bDetail": "Le niveau le plus strict et le plus universellement accepté. À choisir en cas de doute.",
+  "@pdfaA1bDetail": {
+    "description": "Explication de la variante PDF/A-1b, affichée sous le choix."
+  },
+  "pdfaA2bDetail": "Basé sur PDF 1.7 : compression plus efficace, fichiers un peu plus légers.",
+  "@pdfaA2bDetail": {
+    "description": "Explication de la variante PDF/A-2b. « PDF 1.7 » est un numéro de version, à conserver."
+  },
+  "pdfaA3bDetail": "Comme le A-2b, mais autorise les pièces jointes (souvent demandé pour la facturation électronique).",
+  "@pdfaA3bDetail": {
+    "description": "Explication de la variante PDF/A-3b. « A-2b » désigne la variante précédente, à conserver."
+  },
+  "pdfaConvertingTo": "Conversion en {level}…",
+  "@pdfaConvertingTo": {
+    "description": "Titre de la boîte de progression. {level} vaut « PDF/A-1b » et ne se traduit pas. Garder le caractère de suspension final.",
+    "placeholders": {
+      "level": { "type": "String" }
+    }
+  },
+  "pdfaCaveatTitle": "Ce que la conversion change",
+  "@pdfaCaveatTitle": {
+    "description": "Titre de la carte qui énumère les effets de la conversion."
+  },
+  "pdfaCaveat": "Chaque page est redessinée en image à {dpi} dpi : le texte devient une image, la mise en page est figée. C’est ce qui rend le fichier réellement conforme sans dépendre des polices du document d’origine, mais en contrepartie le texte n’est plus sélectionnable ni recherchable, les liens et les formulaires disparaissent, et le fichier devient plus lourd.",
+  "@pdfaCaveat": {
+    "description": "Le compromis de la conversion PDF/A, dit avant qu'on la lance. « dpi » est un sigle international. Ne l'allégez pas.",
+    "placeholders": {
+      "dpi": { "type": "int" }
+    }
+  },
+  "pdfaOpenFailed": "Impossible d’ouvrir ce PDF : {detail}",
+  "@pdfaOpenFailed": {
+    "description": "Bandeau d'erreur quand le PDF ne peut pas être lu. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": { "type": "String" }
+    }
+  },
+
+  "imagesToPdfEmptyTitle": "Des images, un PDF",
+  "@imagesToPdfEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Images vers PDF."
+  },
+  "imagesToPdfEmptyBody": "JPG, PNG, WebP, HEIC — ajoutez vos images et elles seront assemblées dans l’ordre que vous choisissez.",
+  "@imagesToPdfEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Images vers PDF. Les quatre noms de format ne se traduisent pas."
+  },
+  "imagesToPdfChoose": "Choisir des images",
+  "@imagesToPdfChoose": {
+    "description": "Bouton principal de l'écran vide de l'outil Images vers PDF."
+  },
+  "imagesToPdfAdd": "Ajouter des images",
+  "@imagesToPdfAdd": {
+    "description": "Info-bulle du bouton flottant qui ajoute d'autres images à la liste."
+  },
+  "imagesToPdfRejected": "Ignoré (pas une image) : {names}",
+  "@imagesToPdfRejected": {
+    "description": "Bandeau signalant les fichiers écartés parce qu'ils ne sont pas des images. {names} est une liste de noms séparés par des virgules.",
+    "placeholders": {
+      "names": { "type": "String" }
+    }
+  },
+  "imagesToPdfBuilding": "Création du PDF…",
+  "@imagesToPdfBuilding": {
+    "description": "Titre de la boîte de progression pendant l'assemblage. Garder le caractère de suspension final."
+  },
+  "imagesToPdfBuildFailed": "Échec de la création : {detail}",
+  "@imagesToPdfBuildFailed": {
+    "description": "Bandeau d'erreur quand l'assemblage échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": { "type": "String" }
+    }
+  },
+  "imagesToPdfCreateAction": "Créer le PDF ({count, plural, one{{count} image} other{{count} images}})",
+  "@imagesToPdfCreateAction": {
+    "description": "Bouton de bas d'écran, avec le nombre d'images retenues entre parenthèses.",
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "actionRotate": "Pivoter",
+  "@actionRotate": {
+    "description": "Info-bulle du bouton qui fait tourner une image d'un quart de tour."
+  },
+  "actionRemove": "Retirer",
+  "@actionRemove": {
+    "description": "Info-bulle du bouton qui retire un élément de la liste."
+  },
+
+  "htmlTitle": "HTML / page web en PDF",
+  "@htmlTitle": {
+    "description": "Titre de la barre de l'outil Page web vers PDF. « HTML » est un sigle, à conserver."
+  },
+  "htmlIntro": "Transformez une page web ou du code HTML en PDF A4. Le rendu est réalisé par le navigateur intégré à Android, la mise en page est donc celle d’une impression depuis Chrome.",
+  "@htmlIntro": {
+    "description": "Consigne en tête de l'outil. « A4 » est un format de papier, « Android » et « Chrome » des marques — à conserver."
+  },
+  "htmlModeUrl": "Adresse web",
+  "@htmlModeUrl": {
+    "description": "Onglet du sélecteur : fournir une adresse à télécharger. Court, il tient dans un segment."
+  },
+  "htmlModeCode": "Code HTML",
+  "@htmlModeCode": {
+    "description": "Onglet du sélecteur : coller du code source. Court, il tient dans un segment."
+  },
+  "htmlUrlLabel": "Adresse de la page",
+  "@htmlUrlLabel": {
+    "description": "Intitulé du champ où l'on saisit l'adresse."
+  },
+  "htmlUrlHint": "https://exemple.fr/article",
+  "@htmlUrlHint": {
+    "description": "Exemple d'adresse affiché en filigrane dans le champ. Adaptez le domaine à votre langue (« example.com », « beispiel.de »…)."
+  },
+  "htmlCodeLabel": "Code HTML",
+  "@htmlCodeLabel": {
+    "description": "Intitulé du champ où l'on colle le code source."
+  },
+  "htmlCodeHint": "<h1>Titre</h1>\n<p>Texte…</p>",
+  "@htmlCodeHint": {
+    "description": "Exemple de code affiché en filigrane. Les balises <h1> et <p> ne se traduisent pas ; seuls les mots entre elles le sont. Gardez le saut de ligne."
+  },
+  "htmlUrlBadScheme": "L’adresse doit commencer par http:// ou https://.",
+  "@htmlUrlBadScheme": {
+    "description": "Bandeau d'erreur quand l'adresse ne porte pas de protocole. « http:// » et « https:// » ne se traduisent pas."
+  },
+  "htmlUrlIncomplete": "Entrez une adresse web complète.",
+  "@htmlUrlIncomplete": {
+    "description": "Bandeau d'erreur quand le champ ne contient que le protocole."
+  },
+  "htmlCodeEmpty": "Collez du code HTML à convertir.",
+  "@htmlCodeEmpty": {
+    "description": "Bandeau d'erreur quand le champ de code est vide."
+  },
+  "htmlLoadingUrl": "Chargement de la page et conversion…",
+  "@htmlLoadingUrl": {
+    "description": "Titre de la boîte de progression pendant le téléchargement puis le rendu. Garder le caractère de suspension final."
+  },
+  "htmlConverting": "Conversion du HTML en cours…",
+  "@htmlConverting": {
+    "description": "Titre de la boîte de progression pendant le rendu du code collé. Garder le caractère de suspension final."
+  },
+  "htmlNetworkNotice": "Une connexion internet est nécessaire : c’est le seul outil de l’application qui doit télécharger la page. Les pages qui exigent une connexion à un compte, un bandeau de cookies ou beaucoup de JavaScript peuvent sortir incomplètes.",
+  "@htmlNetworkNotice": {
+    "description": "Avertissement affiché en mode adresse. Il signale la seule exception au fonctionnement hors ligne de l'application — ne l'allégez pas. « JavaScript » est une marque, à conserver."
+  },
+  "htmlOfflineNotice": "Le HTML et le CSS écrits directement dans la page sont rendus hors ligne. En revanche, les images, feuilles de style ou polices appelées par une adresse web externe nécessitent une connexion internet.",
+  "@htmlOfflineNotice": {
+    "description": "Avertissement affiché en mode code. « HTML » et « CSS » sont des sigles, à conserver."
+  },
+
+  "watermarkEmptyTitle": "Apposer un filigrane",
+  "@watermarkEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Filigrane."
+  },
+  "watermarkEmptyBody": "Un texte de votre choix est répété en fond sur toutes les pages — pour marquer un document comme confidentiel ou brouillon.",
+  "@watermarkEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Filigrane."
+  },
+  "watermarkEmptyNote": "Export gratuit et sans limite de nombre.",
+  "@watermarkEmptyNote": {
+    "description": "Note verte de l'écran vide, propre à cet outil. La note habituelle promet « sans filigrane » — sur l'outil qui en appose un, elle se contredirait. Ne réintroduisez donc pas la mention du filigrane ici."
+  },
+  "watermarkTextLabel": "Texte du filigrane",
+  "@watermarkTextLabel": {
+    "description": "Intitulé du champ où l'on saisit la mention à répéter."
+  },
+  "watermarkDefaultText": "CONFIDENTIEL",
+  "@watermarkDefaultText": {
+    "description": "Mention proposée par défaut dans le champ, en capitales. Employez le mot consacré de votre langue (anglais : CONFIDENTIAL, allemand : VERTRAULICH)."
+  },
+  "watermarkNeedText": "Entrez un texte pour le filigrane.",
+  "@watermarkNeedText": {
+    "description": "Bandeau d'erreur quand on applique sans avoir saisi de texte."
+  },
+  "watermarkOpacity": "Opacité : {percent} %",
+  "@watermarkOpacity": {
+    "description": "Intitulé du curseur d'opacité. L'espace avant le signe % est une convention française ; collez-le au chiffre si votre langue le veut.",
+    "placeholders": {
+      "percent": { "type": "int" }
+    }
+  },
+  "watermarkRotation": "Angle de rotation : {degrees}°",
+  "@watermarkRotation": {
+    "description": "Intitulé du curseur d'inclinaison. Le signe degré est international.",
+    "placeholders": {
+      "degrees": { "type": "int" }
+    }
+  },
+  "watermarkFontSize": "Taille du texte : {points} pt",
+  "@watermarkFontSize": {
+    "description": "Intitulé du curseur de corps. « pt » est l'abréviation typographique de point, internationale.",
+    "placeholders": {
+      "points": { "type": "int" }
+    }
+  },
+  "watermarkColor": "Couleur",
+  "@watermarkColor": {
+    "description": "Intitulé de la rangée de pastilles de couleur."
+  },
+  "colorGrey": "Gris",
+  "@colorGrey": {
+    "description": "Nom d'une couleur de filigrane, sous sa pastille. Très court."
+  },
+  "colorRed": "Rouge",
+  "@colorRed": {
+    "description": "Nom d'une couleur de filigrane, sous sa pastille. Très court."
+  },
+  "colorBlue": "Bleu",
+  "@colorBlue": {
+    "description": "Nom d'une couleur de filigrane, sous sa pastille. Très court."
+  },
+  "colorBlack": "Noir",
+  "@colorBlack": {
+    "description": "Nom d'une couleur de filigrane, sous sa pastille. Très court."
+  },
+  "watermarkProgress": "Application du filigrane en cours…",
+  "@watermarkProgress": {
+    "description": "Titre de la boîte de progression. Garder le caractère de suspension final."
+  },
+  "percentValue": "{percent} %",
+  "@percentValue": {
+    "description": "Valeur en pourcentage affichée sur la pastille d'un curseur. L'espace avant le signe % est une convention française.",
+    "placeholders": {
+      "percent": { "type": "int" }
+    }
+  },
+  "degreesValue": "{degrees}°",
+  "@degreesValue": {
+    "description": "Valeur en degrés affichée sur la pastille d'un curseur.",
+    "placeholders": {
+      "degrees": { "type": "int" }
+    }
+  },
+  "pointsValue": "{points} pt",
+  "@pointsValue": {
+    "description": "Valeur en points typographiques affichée sur la pastille d'un curseur.",
+    "placeholders": {
+      "points": { "type": "int" }
+    }
+  },
+
+  "pageNumbersEmptyTitle": "Numéroter les pages",
+  "@pageNumbersEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Numéros de page."
+  },
+  "pageNumbersEmptyBody": "Choisissez un PDF, puis la position et le format des numéros qui seront ajoutés sur chaque page.",
+  "@pageNumbersEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Numéros de page."
+  },
+  "positionLabel": "Position",
+  "@positionLabel": {
+    "description": "Intitulé du groupe de boutons qui choisit où poser le numéro."
+  },
+  "positionBottomCenter": "Bas centre",
+  "@positionBottomCenter": {
+    "description": "Position du numéro : en bas, au milieu. Très court, il tient dans une pastille."
+  },
+  "positionBottomRight": "Bas droite",
+  "@positionBottomRight": {
+    "description": "Position du numéro : en bas, à droite. Très court."
+  },
+  "positionTopCenter": "Haut centre",
+  "@positionTopCenter": {
+    "description": "Position du numéro : en haut, au milieu. Très court."
+  },
+  "positionTopRight": "Haut droite",
+  "@positionTopRight": {
+    "description": "Position du numéro : en haut, à droite. Très court."
+  },
+  "pageNumbersFormatPlain": "N",
+  "@pageNumbersFormatPlain": {
+    "description": "Format de numérotation : le numéro seul. « N » est l'initiale de « numéro » — employez celle de votre langue si elle diffère (anglais : N, allemand : N)."
+  },
+  "pageNumbersFormatOfTotal": "N / total",
+  "@pageNumbersFormatOfTotal": {
+    "description": "Format de numérotation : le numéro suivi du total, « 3 / 12 ». Traduisez « total » ; « N » suit la même règle que ci-dessus. Doit rester très court, c'est un segment de bouton."
+  },
+  "pageNumbersStart": "Numéro de départ",
+  "@pageNumbersStart": {
+    "description": "Intitulé du champ où l'on choisit à quel chiffre la numérotation commence."
+  },
+  "pageNumbersProgress": "Numérotation en cours…",
+  "@pageNumbersProgress": {
+    "description": "Titre de la boîte de progression. Garder le caractère de suspension final."
+  },
+
+  "organizeEmptyTitle": "Reprendre un PDF en main",
+  "@organizeEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Organiser."
+  },
+  "organizeEmptyBody": "Ouvrez un document pour le diviser, en extraire des pages ou en changer l’ordre.",
+  "@organizeEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Organiser."
+  },
+  "organizeOpenFile": "Ouvrir un fichier",
+  "@organizeOpenFile": {
+    "description": "Bouton principal de l'écran vide de l'outil Organiser."
+  },
+  "organizeNothingToExport": "Aucune page à exporter.",
+  "@organizeNothingToExport": {
+    "description": "Bandeau d'erreur quand toutes les pages ont été écartées."
+  },
+  "organizePagesKept": "{kept, plural, one{{kept} page retenue} other{{kept} pages retenues}} sur {total}",
+  "@organizePagesKept": {
+    "description": "Sous-titre du document : combien de pages restent retenues sur combien. Affiché seulement quand on en a écarté.",
+    "placeholders": {
+      "kept": { "type": "int" },
+      "total": { "type": "int" }
+    }
+  },
+  "organizePageExcluded": "Écartée",
+  "@organizePageExcluded": {
+    "description": "Mention sous une rangée de page mise de côté. Accordé au féminin de « page ». Court."
+  },
+  "organizePageMoved": "Déplacée depuis la position {from}",
+  "@organizePageMoved": {
+    "description": "Mention sous une rangée de page qu'on a fait glisser ailleurs. Accordé au féminin de « page ».",
+    "placeholders": {
+      "from": { "type": "int" }
+    }
+  },
+  "organizePageTitle": "Page {number}",
+  "@organizePageTitle": {
+    "description": "Titre d'une rangée de la liste des pages.",
+    "placeholders": {
+      "number": { "type": "int" }
+    }
+  },
+  "organizeExcludePage": "Écarter la page {number}",
+  "@organizeExcludePage": {
+    "description": "Info-bulle du bouton qui met une page de côté.",
+    "placeholders": {
+      "number": { "type": "int" }
+    }
+  },
+  "organizeIncludePage": "Inclure la page {number}",
+  "@organizeIncludePage": {
+    "description": "Info-bulle du bouton qui remet une page dans le document.",
+    "placeholders": {
+      "number": { "type": "int" }
+    }
+  },
+  "organizeMovePage": "Déplacer la page {number}",
+  "@organizeMovePage": {
+    "description": "Étiquette d'accessibilité de la poignée de glissement. Lue à voix haute, jamais affichée.",
+    "placeholders": {
+      "number": { "type": "int" }
+    }
+  },
+  "organizeExtract": "Extraire",
+  "@organizeExtract": {
+    "description": "Bouton qui ne garde qu'une plage de pages. Verbe à l'infinitif, court."
+  },
+  "organizeSplit": "Diviser",
+  "@organizeSplit": {
+    "description": "Bouton qui coupe le document en plusieurs fichiers. Verbe à l'infinitif, court."
+  },
+  "organizePreview": "Aperçu",
+  "@organizePreview": {
+    "description": "Bouton qui mène à l'écran d'aperçu. Court."
+  },
+  "organizeExtractTitle": "Extraire une plage de pages",
+  "@organizeExtractTitle": {
+    "description": "Titre de la boîte de dialogue de choix de la plage."
+  },
+  "organizeRangeLabel": "Pages {start} à {end}",
+  "@organizeRangeLabel": {
+    "description": "Plage retenue par le curseur double de la boîte d'extraction.",
+    "placeholders": {
+      "start": { "type": "int" },
+      "end": { "type": "int" }
+    }
+  },
+  "organizeSplitTitle": "Diviser en plusieurs fichiers",
+  "@organizeSplitTitle": {
+    "description": "Titre de la boîte de dialogue de division."
+  },
+  "organizeFileCount": "{count, plural, one{{count} fichier} other{{count} fichiers}}",
+  "@organizeFileCount": {
+    "description": "Nombre de fichiers que la division produira, sous le curseur.",
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "organizeSplitFailed": "Échec de la division : {detail}",
+  "@organizeSplitFailed": {
+    "description": "Bandeau d'erreur quand la division échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": { "type": "String" }
+    }
+  },
+  "scanNoCamera": "Aucune caméra disponible sur cet appareil.",
+  "@scanNoCamera": {
+    "description": "Message d'erreur quand l'appareil n'expose aucune caméra."
+  },
+  "scanCameraFailed": "Impossible d’initialiser la caméra : {detail}",
+  "@scanCameraFailed": {
+    "description": "Message d'erreur quand la caméra refuse de démarrer. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": { "type": "String" }
+    }
+  },
+  "scanCropToolbar": "Ajuster",
+  "@scanCropToolbar": {
+    "description": "Titre de la barre du recadreur système d'Android, après la prise de vue. Court."
+  },
+  "scanCaptureFailed": "Échec de la capture : {detail}",
+  "@scanCaptureFailed": {
+    "description": "Bandeau d'erreur quand la prise de vue échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": { "type": "String" }
+    }
+  },
+  "scanPermissionBody": "L’accès à l’appareil photo est nécessaire pour scanner un document.",
+  "@scanPermissionBody": {
+    "description": "Explication affichée quand l'autorisation d'accès à la caméra n'a pas été accordée."
+  },
+  "scanGrantPermission": "Autoriser l’appareil photo",
+  "@scanGrantPermission": {
+    "description": "Bouton qui redemande l'autorisation d'accès à la caméra. Doit tenir sur une ligne."
+  },
+  "actionRetry": "Réessayer",
+  "@actionRetry": {
+    "description": "Bouton qui relance une opération après un échec. Court."
+  },
+  "scanNoPageYet": "Aucune page pour le moment.",
+  "@scanNoPageYet": {
+    "description": "Affiché dans la grille de relecture tant qu'aucune page n'a été photographiée."
+  },
+  "scanFinishAction": "Terminer · {count}",
+  "@scanFinishAction": {
+    "description": "Bouton qui clôt la capture, suivi du nombre de pages prises. Le point médian est un séparateur typographique. Doit tenir sur une ligne.",
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+
+  "signTitle": "Signer un PDF",
+  "@signTitle": {
+    "description": "Titre de la barre de l'outil Signer."
+  },
+  "signIntro": "Apposez votre signature dessinée à la main sur une page d’un PDF. C’est un simple dessin ajouté au document, pas une signature électronique certifiée.",
+  "@signIntro": {
+    "description": "Consigne en tête de l'outil Signer. La dernière proposition est une réserve juridique — ne la retirez pas."
+  },
+  "signChooseSubtitle": "Sélectionnez le document à signer",
+  "@signChooseSubtitle": {
+    "description": "Sous-titre de la rangée qui ouvre la sélection de fichiers."
+  },
+  "signPickPage": "Choisissez la page à signer.",
+  "@signPickPage": {
+    "description": "Consigne au-dessus de la bande de vignettes de pages."
+  },
+  "signDrawTitle": "Dessiner ma signature",
+  "@signDrawTitle": {
+    "description": "Titre de l'étape où l'on trace la signature au doigt."
+  },
+  "signDrawBody": "Dessinez avec le doigt comme sur papier. Ceci appose un dessin sur la page — ce n’est pas une signature électronique certifiée.",
+  "@signDrawBody": {
+    "description": "Consigne de l'étape de tracé. La réserve juridique de la fin est délibérément répétée ici."
+  },
+  "signNeedDrawing": "Dessinez une signature avant de continuer.",
+  "@signNeedDrawing": {
+    "description": "Bandeau d'erreur quand on valide une zone de tracé restée vide."
+  },
+  "signClear": "Effacer",
+  "@signClear": {
+    "description": "Bouton qui vide la zone de tracé. Court."
+  },
+  "signValidate": "Valider",
+  "@signValidate": {
+    "description": "Bouton qui retient la signature tracée et passe au placement. Court."
+  },
+  "signPlaceBody": "Faites glisser la signature à l’endroit voulu sur la page, puis appuyez sur Terminer.",
+  "@signPlaceBody": {
+    "description": "Consigne de l'étape de placement. « Terminer » doit reprendre exactement le libellé traduit de actionFinish."
+  },
+  "signPageUnavailable": "Impossible d’afficher la page.",
+  "@signPageUnavailable": {
+    "description": "Affiché à la place de la page quand son rendu échoue."
+  },
+  "signProgress": "Ajout de la signature…",
+  "@signProgress": {
+    "description": "Titre de la boîte de progression. Garder le caractère de suspension final."
+  },
+
+  "editTitle": "Annoter un document",
+  "@editTitle": {
+    "description": "Titre de l'écran vide de l'outil Éditer."
+  },
+  "editEmptyBody": "Ajoutez du texte ou surlignez des passages directement sur un PDF existant.",
+  "@editEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Éditer."
+  },
+  "editAddTextTitle": "Ajouter du texte",
+  "@editAddTextTitle": {
+    "description": "Titre de la boîte de dialogue de saisie d'une annotation."
+  },
+  "editTextHint": "Votre texte",
+  "@editTextHint": {
+    "description": "Texte d'invite du champ de saisie de l'annotation."
+  },
+  "editFontSize": "Taille du texte : {size}",
+  "@editFontSize": {
+    "description": "Intitulé du curseur de corps, dans la boîte de saisie.",
+    "placeholders": {
+      "size": { "type": "int" }
+    }
+  },
+  "editNeedAnnotation": "Ajoutez au moins une annotation avant de terminer.",
+  "@editNeedAnnotation": {
+    "description": "Bandeau d'erreur quand on termine sans avoir rien ajouté."
+  },
+  "editProgress": "Application des annotations…",
+  "@editProgress": {
+    "description": "Titre de la boîte de progression. Garder le caractère de suspension final."
+  },
+  "editChooseOther": "Choisir un autre PDF",
+  "@editChooseOther": {
+    "description": "Info-bulle du bouton qui abandonne le document en cours."
+  },
+  "editUndoTooltip": "Annuler la dernière annotation",
+  "@editUndoTooltip": {
+    "description": "Info-bulle du bouton qui retire la dernière annotation posée. Il s'agit de défaire, pas d'interrompre."
+  },
+  "editModeText": "Texte",
+  "@editModeText": {
+    "description": "Onglet du sélecteur : poser du texte. Très court, il tient dans un segment."
+  },
+  "editModeHighlight": "Surligner",
+  "@editModeHighlight": {
+    "description": "Onglet du sélecteur : surligner un passage. Très court, il tient dans un segment."
+  },
+  "editPageUnavailable": "Impossible d’afficher cette page.",
+  "@editPageUnavailable": {
+    "description": "Affiché à la place de la page quand son rendu échoue."
+  },
+
+  "ocrEmptyTitle": "Rendre le texte cherchable",
+  "@ocrEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil OCR."
+  },
+  "ocrEmptyBody": "Le texte d’un PDF scanné est reconnu et ajouté par-dessus l’image, de façon invisible. La page ne change pas d’apparence.",
+  "@ocrEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil OCR. La seconde phrase est importante : elle rassure sur le fait que rien n'est abîmé."
+  },
+  "ocrWrongFormat": "Choisissez un PDF ou une image (JPG, PNG…).",
+  "@ocrWrongFormat": {
+    "description": "Bandeau d'erreur quand le fichier n'est ni un PDF ni une image. Les noms de format ne se traduisent pas."
+  },
+  "ocrProgress": "Reconnaissance en cours…",
+  "@ocrProgress": {
+    "description": "Titre de la boîte de progression pendant la reconnaissance de caractères. Garder le caractère de suspension final."
+  },
+  "ocrFailed": "Échec de la reconnaissance : {detail}",
+  "@ocrFailed": {
+    "description": "Bandeau d'erreur quand la reconnaissance échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": { "type": "String" }
+    }
+  },
+  "ocrRunAction": "Lancer la reconnaissance",
+  "@ocrRunAction": {
+    "description": "Bouton de bas d'écran qui lance l'OCR. Doit tenir sur une ligne."
+  },
+  "ocrResultTitle": "Résultat de l’OCR",
+  "@ocrResultTitle": {
+    "description": "Titre de la barre de l'écran de résultat. « OCR » est un sigle international, à conserver."
+  },
+  "ocrResultBody": "{count, plural, one{{count} page analysée} other{{count} pages analysées}}. Le PDF cherchable est prêt, et vous pouvez aussi copier tout le texte reconnu.",
+  "@ocrResultBody": {
+    "description": "Résumé de l'écran de résultat : combien de pages ont été traitées et ce qu'on peut faire ensuite.",
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "ocrCopyText": "Copier le texte",
+  "@ocrCopyText": {
+    "description": "Bouton qui met tout le texte reconnu dans le presse-papiers."
+  },
+  "ocrTextCopied": "Texte copié.",
+  "@ocrTextCopied": {
+    "description": "Bandeau confirmant la copie dans le presse-papiers."
+  },
+
+  "redactIntro": "Masquez définitivement des zones d’un PDF (noms, adresses, montants). Contrairement à un simple rectangle noir posé par-dessus, le texte masqué est réellement supprimé du fichier, pas seulement recouvert : il ne peut plus être sélectionné ni copié.",
+  "@redactIntro": {
+    "description": "Consigne en tête de l'outil Caviarder. La distinction avec un rectangle noir décoratif est le cœur de l'outil — ne l'allégez pas."
+  },
+  "redactChooseSubtitle": "Sélectionnez le document à caviarder",
+  "@redactChooseSubtitle": {
+    "description": "Sous-titre de la rangée qui ouvre la sélection de fichiers."
+  },
+  "redactCaveat": "À savoir : pour supprimer le texte caché, chaque page du document est reconvertie en image (200 ppp). Le résultat n’est donc plus un PDF dont on peut sélectionner le texte, et le fichier obtenu est généralement plus lourd que l’original.",
+  "@redactCaveat": {
+    "description": "Le prix à payer du caviardage réel. « ppp » est l'abréviation française de « points par pouce » ; l'anglais et la plupart des langues emploient « dpi »."
+  },
+  "redactEmptyPdf": "Ce PDF ne contient aucune page.",
+  "@redactEmptyPdf": {
+    "description": "Bandeau d'erreur quand le document choisi est vide."
+  },
+  "redactOpenFailed": "Impossible d’ouvrir ce PDF (il est peut-être protégé par mot de passe) : {detail}",
+  "@redactOpenFailed": {
+    "description": "Bandeau d'erreur quand le PDF ne peut pas être lu. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": { "type": "String" }
+    }
+  },
+  "redactPageRenderFailed": "Affichage de la page {number} impossible : {detail}",
+  "@redactPageRenderFailed": {
+    "description": "Bandeau d'erreur quand une page ne peut pas être rendue à l'écran. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "number": { "type": "int" },
+      "detail": { "type": "String" }
+    }
+  },
+  "redactUndoTooltip": "Annuler la dernière zone",
+  "@redactUndoTooltip": {
+    "description": "Info-bulle du bouton qui retire le dernier rectangle tracé. Il s'agit de défaire, pas d'interrompre."
+  },
+  "redactInstructions": "Faites glisser le doigt sur la page pour tracer une zone à masquer. Le texte couvert sera réellement supprimé du fichier, pas seulement recouvert.",
+  "@redactInstructions": {
+    "description": "Consigne au-dessus de la page, dans l'éditeur."
+  },
+  "redactPagePrevious": "Page précédente",
+  "@redactPagePrevious": {
+    "description": "Info-bulle de la flèche qui remonte d'une page."
+  },
+  "redactPageNext": "Page suivante",
+  "@redactPageNext": {
+    "description": "Info-bulle de la flèche qui descend d'une page."
+  },
+  "redactPager": "Page {current} / {total}",
+  "@redactPager": {
+    "description": "Position dans le document, entre les deux flèches de navigation. Forme abrégée avec une barre oblique.",
+    "placeholders": {
+      "current": { "type": "int" },
+      "total": { "type": "int" }
+    }
+  },
+  "redactNoZone": "Aucune zone tracée",
+  "@redactNoZone": {
+    "description": "Affiché au-dessus des boutons tant qu'aucun rectangle n'a été tracé."
+  },
+  "redactZoneCount": "{count, plural, one{{count} zone à masquer} other{{count} zones à masquer}}",
+  "@redactZoneCount": {
+    "description": "Nombre de rectangles tracés, au-dessus des boutons.",
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "redactOtherPdf": "Autre PDF",
+  "@redactOtherPdf": {
+    "description": "Bouton qui abandonne le document en cours pour en ouvrir un autre. Court."
+  },
+  "redactAction": "Caviarder",
+  "@redactAction": {
+    "description": "Bouton qui applique le caviardage. Verbe à l'infinitif, court ; employez le terme consacré de votre langue."
+  },
+  "redactProgress": "Caviardage en cours…",
+  "@redactProgress": {
+    "description": "Titre de la boîte de progression. Garder le caractère de suspension final."
+  },
+
+  "cropEmptyTitle": "Rogner les marges",
+  "@cropEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Rogner."
+  },
+  "cropEmptyBody": "Choisissez un PDF, puis faites glisser votre doigt sur l’aperçu pour délimiter la zone à conserver.",
+  "@cropEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Rogner."
+  },
+  "cropTooSmall": "La zone sélectionnée est trop petite.",
+  "@cropTooSmall": {
+    "description": "Bandeau d'erreur quand la zone tracée au doigt est trop réduite pour donner une page."
+  },
+  "cropProgress": "Rognage en cours…",
+  "@cropProgress": {
+    "description": "Titre de la boîte de progression. Garder le caractère de suspension final."
+  },
+  "cropFailed": "Échec du rognage : {detail}",
+  "@cropFailed": {
+    "description": "Bandeau d'erreur quand le recadrage échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": { "type": "String" }
+    }
+  },
+  "cropKeptArea": "Zone conservée",
+  "@cropKeptArea": {
+    "description": "Intitulé au-dessus de l'aperçu sur lequel on trace la zone à garder."
+  },
+  "cropDimensions": "{width} × {height} mm ({widthPercent} % × {heightPercent} %)",
+  "@cropDimensions": {
+    "description": "Dimensions de la zone tracée, en millimètres puis en proportion de la page. Le signe × est le symbole de multiplication. L'espace avant le signe % est une convention française.",
+    "placeholders": {
+      "width": { "type": "int" },
+      "height": { "type": "int" },
+      "widthPercent": { "type": "int" },
+      "heightPercent": { "type": "int" }
+    }
+  },
+  "cropFullPage": "Page entière",
+  "@cropFullPage": {
+    "description": "Bouton qui remet la zone aux dimensions de la page entière."
+  },
+  "cropAllPages": "Appliquer à toutes les pages",
+  "@cropAllPages": {
+    "description": "Intitulé de l'interrupteur qui étend le recadrage au document entier."
+  },
+  "cropAllPagesOn": "La même zone est découpée sur chaque page.",
+  "@cropAllPagesOn": {
+    "description": "Sous-titre de l'interrupteur quand il est activé."
+  },
+  "cropAllPagesOff": "Seule la page 1 est rognée, les autres sont conservées entières.",
+  "@cropAllPagesOff": {
+    "description": "Sous-titre de l'interrupteur quand il est désactivé."
+  },
+  "cropCaveat": "Le rognage réduit la taille de la page : le contenu situé en dehors de la zone n’est plus affiché ni imprimé.",
+  "@cropCaveat": {
+    "description": "Ce que le recadrage fait au document, dit avant qu'on l'applique."
+  },
+  "cropAction": "Rogner",
+  "@cropAction": {
+    "description": "Bouton de bas d'écran qui lance le recadrage. Verbe à l'infinitif, court."
+  },
+
+  "compareTitle": "Comparer deux PDF",
+  "@compareTitle": {
+    "description": "Titre de la barre de l'outil Comparer."
+  },
+  "compareEmptyTitle": "Ce qui a changé",
+  "@compareEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Comparer."
+  },
+  "compareEmptyBody": "Choisissez deux versions d’un même PDF. Les passages ajoutés et supprimés seront mis en regard, page par page.",
+  "@compareEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Comparer."
+  },
+  "compareSlotA": "Fichier A",
+  "@compareSlotA": {
+    "description": "Intitulé de la première case : la version de départ. La lettre A sert de repère, gardez-la."
+  },
+  "compareSlotB": "Fichier B",
+  "@compareSlotB": {
+    "description": "Intitulé de la seconde case : la version à confronter. La lettre B sert de repère, gardez-la."
+  },
+  "compareAction": "Comparer",
+  "@compareAction": {
+    "description": "Bouton qui lance la comparaison. Verbe à l'infinitif, court."
+  },
+  "compareProgress": "Comparaison en cours…",
+  "@compareProgress": {
+    "description": "Titre de la boîte de progression. Garder le caractère de suspension final."
+  },
+  "compareFailed": "Échec de la comparaison : {detail}",
+  "@compareFailed": {
+    "description": "Bandeau d'erreur quand la comparaison échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": { "type": "String" }
+    }
+  },
+  "compareChangedPages": "{changed, plural, one{{changed} page diffère} other{{changed} pages diffèrent}} sur {total}",
+  "@compareChangedPages": {
+    "description": "Résumé de la comparaison : combien de pages diffèrent, sur combien au total. Accordez le verbe au nombre.",
+    "placeholders": {
+      "changed": { "type": "int" },
+      "total": { "type": "int" }
+    }
+  },
+  "compareNoDifference": "Aucune différence détectée entre les deux fichiers.",
+  "@compareNoDifference": {
+    "description": "Affiché quand les deux documents sont identiques mot pour mot."
+  },
+  "comparePageHeading": "Page {number}",
+  "@comparePageHeading": {
+    "description": "Titre d'une carte de résultat, pour une page qui a changé.",
+    "placeholders": {
+      "number": { "type": "int" }
+    }
+  },
+
+  "organizeFilesCreated": "{count, plural, one{{count} fichier créé} other{{count} fichiers créés}}",
+  "@organizeFilesCreated": {
+    "description": "Titre de la feuille de résultats de la division : combien de fichiers en sont sortis.",
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "organizePartTitle": "Partie {number}",
+  "@organizePartTitle": {
+    "description": "Nom d'un des fichiers issus de la division, dans la liste des résultats et dans la feuille de confirmation.",
+    "placeholders": {
+      "number": { "type": "int" }
+    }
+  }
+}

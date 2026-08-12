@@ -1,0 +1,2369 @@
+{
+  "@@locale": "vi",
+  "appTitle": "Kẹp giấy - PDF, Scan & Word",
+  "@appTitle": {
+    "description": "Titre affiché par le sélecteur de tâches d'Android au-dessus de l'aperçu de l'application. La marque « Trombone » ne se traduit jamais ; seuls les mots-clés qui la suivent peuvent l'être."
+  },
+  "appWordmark": "kèn trombone",
+  "@appWordmark": {
+    "description": "La signature de marque en haut de l'écran d'accueil. NE PAS TRADUIRE — c'est un nom propre, identique dans les vingt-cinq langues."
+  },
+  "actionSave": "Cứu",
+  "@actionSave": {
+    "description": "Action principale de fin de parcours : écrire le fichier produit sur l'appareil. Bouton pleine largeur, doit tenir sur une ligne."
+  },
+  "actionShare": "Chia sẻ",
+  "@actionShare": {
+    "description": "Ouvre la fenêtre de partage du système. Bouton de demi-largeur, doit tenir sur une ligne."
+  },
+  "actionCompress": "nén",
+  "@actionCompress": {
+    "description": "Réduit le poids du PDF. Bouton de demi-largeur, doit tenir sur une ligne."
+  },
+  "actionDone": "Hoàn thành",
+  "@actionDone": {
+    "description": "Acquitte la feuille de confirmation d'export et sort de l'outil."
+  },
+  "actionCancel": "Hủy bỏ",
+  "@actionCancel": {
+    "description": "Interrompt une opération en cours dans la boîte de progression."
+  },
+  "actionChange": "Để thay đổi",
+  "@actionChange": {
+    "description": "Remplace le fichier choisi par un autre. Bouton texte étroit posé au bout d'une rangée — libellé court impératif."
+  },
+  "actionContinue": "Tiếp tục",
+  "@actionContinue": {
+    "description": "Libellé de repli du bouton d'un écran vide quand l'outil n'en propose pas de plus précis."
+  },
+  "actionOpening": "Khai mạc…",
+  "@actionOpening": {
+    "description": "État transitoire d'un bouton pendant que la boîte de sélection de fichiers du système s'ouvre. Garder le caractère de suspension final."
+  },
+  "actionRemoveFile": "Xóa tập tin này",
+  "@actionRemoveFile": {
+    "description": "Info-bulle de la croix qui ramène l'écran à son état vide."
+  },
+  "progressPreparing": "Sự chuẩn bị…",
+  "@progressPreparing": {
+    "description": "Affiché sous la barre de progression tant que le travail total n'est pas connu. Garder le caractère de suspension final."
+  },
+  "progressPercent": "{percent} %",
+  "@progressPercent": {
+    "description": "Avancement en pourcentage. L'espace avant le signe % est une convention française ; les langues qui collent le signe au chiffre doivent écrire « {percent}% ».",
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "emptyReassurance": "Xuất khẩu miễn phí, không có hình mờ hoặc giới hạn.",
+  "@emptyReassurance": {
+    "description": "Note verte sous le bouton d'un écran vide. Répond à la peur du marché : découvrir un paiement au moment d'enregistrer. Doit rester une phrase brève, tenant sur une à deux lignes."
+  },
+  "emptyAcceptedFormats": "Các định dạng được chấp nhận",
+  "@emptyAcceptedFormats": {
+    "description": "Intitulé de la rangée de puces listant les formats que l'outil sait ouvrir."
+  },
+  "exportSavedTitle": "Nó được ghi lại.",
+  "@exportSavedTitle": {
+    "description": "Titre de la feuille de confirmation, après écriture réussie du fichier. Ton rassurant et affirmatif ; c'est le seul moment célébré de l'application."
+  },
+  "exportSavedBody": "Dưới tên và trong thư mục bạn vừa chọn. Không có hình mờ, không có giới hạn, không có gì để mở khóa.",
+  "@exportSavedBody": {
+    "description": "Corps de la feuille de confirmation. Rappelle que rien n'est verrouillé derrière un paiement — la promesse centrale du produit."
+  },
+  "exportSaveDialogTitle": "Lưu PDF",
+  "@exportSaveDialogTitle": {
+    "description": "Titre de la boîte système d'enregistrement de fichier."
+  },
+  "pageTileIncluded": "Trang {number}, được bao gồm. Chạm để di chuyển nó sang một bên.",
+  "@pageTileIncluded": {
+    "description": "Étiquette d'accessibilité d'une vignette de page retenue. Lue à voix haute, jamais affichée.",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "pageTileExcluded": "Trang {number}, bị loại bỏ. Chạm để bao gồm nó.",
+  "@pageTileExcluded": {
+    "description": "Étiquette d'accessibilité d'une vignette de page écartée. Lue à voix haute, jamais affichée.",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "pageTileRotate": "Xoay trang {number}",
+  "@pageTileRotate": {
+    "description": "Info-bulle du bouton de rotation sous une vignette de page.",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "sectionHeaderSemantics": "công cụ {title}, {count}",
+  "@sectionHeaderSemantics": {
+    "description": "Étiquette d'accessibilité d'un en-tête de section de l'accueil. Lue à voix haute, jamais affichée.",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "toolCount": "công cụ {count}",
+  "@toolCount": {
+    "description": "Décompte des outils, au colophon de l'accueil. Le nombre est calculé depuis le catalogue, jamais saisi.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePromise": "Tạo tài liệu của bạn, xuất nó.\nKhông có bức tường ở cuối.",
+  "@homePromise": {
+    "description": "La promesse sous la marque, en haut de l'accueil. Elle désamorce la peur relevée dans les avis du marché : découvrir un paiement obligatoire au moment d'enregistrer. Le saut de ligne est intentionnel — deux lignes exactement, la seconde plus courte que la première."
+  },
+  "homeChipNoAccount": "Không có tài khoản",
+  "@homeChipNoAccount": {
+    "description": "Puce de garantie : aucune inscription n'est demandée. Deux ou trois mots maximum, la puce est étroite."
+  },
+  "homeChipNoWatermark": "Không có hình mờ",
+  "@homeChipNoWatermark": {
+    "description": "Puce de garantie : les fichiers exportés ne portent aucune marque apposée. Deux ou trois mots maximum."
+  },
+  "homeChipUnlimited": "Xuất khẩu không giới hạn",
+  "@homeChipUnlimited": {
+    "description": "Puce de garantie : aucun quota sur le nombre d'exports. Deux ou trois mots maximum."
+  },
+  "homeSearchTooltip": "Tìm một công cụ",
+  "@homeSearchTooltip": {
+    "description": "Info-bulle de la loupe épinglée à la barre de titre de l'accueil."
+  },
+  "homeColophon": "Không có gì được mở khóa để thanh toán khi đăng ký. Xuất khẩu miễn phí, không có hình mờ và không giới hạn số lượng.",
+  "@homeColophon": {
+    "description": "Texte de pied d'accueil, sous le décompte des outils. Répète la promesse en toutes lettres."
+  },
+  "sectionFeatured": "Nổi bật",
+  "@sectionFeatured": {
+    "description": "Famille des cinq outils mis en avant dans la bande bento. Apparaît en sous-titre des résultats de recherche. Court."
+  },
+  "sectionToPdf": "Chuyển sang PDF",
+  "@sectionToPdf": {
+    "description": "Famille des outils qui produisent un PDF depuis un autre format. Titre de section de l'accueil : doit tenir sur une ligne à côté d'un filet et d'une pastille de compte."
+  },
+  "sectionFromPdf": "Từ PDF",
+  "@sectionFromPdf": {
+    "description": "Famille des outils qui tirent autre chose d'un PDF. Titre de section : doit tenir sur une ligne."
+  },
+  "sectionSecurity": "Bảo vệ",
+  "@sectionSecurity": {
+    "description": "Famille des outils de protection, déverrouillage, réparation et caviardage. Titre de section : doit tenir sur une ligne."
+  },
+  "sectionEdit": "Biên tập",
+  "@sectionEdit": {
+    "description": "Famille des outils qui modifient un PDF en place. Titre de section, verbe à l'infinitif : doit tenir sur une ligne."
+  },
+  "toolMerge": "Hợp nhất",
+  "@toolMerge": {
+    "description": "Outil : réunit plusieurs documents en un seul PDF. Libellé de tuile — verbe à l'infinitif, court, il s'affiche sur une tuile de 96 dp de large."
+  },
+  "toolMergeKeywords": "lắp ráp kết hợp tham gia lại nhóm tham gia cùng nhau nối",
+  "@toolMergeKeywords": {
+    "description": "Mots que l'utilisateur peut taper pour trouver l'outil « Fusionner » sans en connaître le nom exact. Séparés par des espaces, sans accents ni ponctuation, en minuscules. Ce ne sont PAS des traductions mot à mot : donnez les synonymes naturels de votre langue, y compris les termes empruntés à l'anglais s'ils sont d'usage courant. Ajoutez-en ou retirez-en librement."
+  },
+  "toolMergeSubtitle": "PDF, Word, hình ảnh và văn bản trong một tài liệu",
+  "@toolMergeSubtitle": {
+    "description": "Sous-titre du grand bloc bento de l'accueil. Une ligne descriptive, deux au plus."
+  },
+  "toolRectoVerso": "hai mặt",
+  "@toolRectoVerso": {
+    "description": "Outil : intercale deux scans — les pages impaires et les pages paires — pour reconstituer un document imprimé des deux côtés. Libellé de tuile, court."
+  },
+  "toolRectoVersoKeywords": "quét xen kẽ hai mặt chẵn lẻ",
+  "@toolRectoVersoKeywords": {
+    "description": "Mots de recherche pour « Recto-verso ». Séparés par des espaces, sans accents, en minuscules. Donnez les synonymes naturels de votre langue plutôt qu'une traduction mot à mot."
+  },
+  "toolRectoVersoSubtitle": "Hai lần quét, sắp xếp lại theo thứ tự",
+  "@toolRectoVersoSubtitle": {
+    "description": "Sous-titre d'un bloc bento moyen. Très court — une ligne, six mots au plus."
+  },
+  "toolImagesToPdf": "Hình ảnh sang PDF",
+  "@toolImagesToPdf": {
+    "description": "Outil : assemble des photos en un PDF. Libellé de tuile, court."
+  },
+  "toolImagesToPdfKeywords": "ảnh jpg jpeg png album ảnh thiết bị",
+  "@toolImagesToPdfKeywords": {
+    "description": "Mots de recherche pour « Images vers PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolImagesToPdfSubtitle": "Hình ảnh và ảnh chụp trong một tài liệu",
+  "@toolImagesToPdfSubtitle": {
+    "description": "Sous-titre d'un bloc bento moyen. Très court — une ligne, six mots au plus."
+  },
+  "toolPdfToWord": "PDF sang Word",
+  "@toolPdfToWord": {
+    "description": "Outil : convertit un PDF en document Word modifiable. « Word » est une marque, elle ne se traduit pas. Libellé de tuile, court."
+  },
+  "toolPdfToWordKeywords": "docx chuyển đổi trình xử lý văn bản có thể chỉnh sửa",
+  "@toolPdfToWordKeywords": {
+    "description": "Mots de recherche pour « PDF vers Word ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolPdfToWordSubtitle": "Văn bản và bảng biểu, có thể chỉnh sửa",
+  "@toolPdfToWordSubtitle": {
+    "description": "Sous-titre d'un bloc bento moyen. Très court — une ligne, six mots au plus."
+  },
+  "toolOrganize": "Sắp xếp một tệp PDF",
+  "@toolOrganize": {
+    "description": "Outil : réordonne, extrait, divise et supprime des pages. Libellé de tuile, court."
+  },
+  "toolOrganizeKeywords": "chia tách trích xuất sắp xếp lại thứ tự trang xóa",
+  "@toolOrganizeKeywords": {
+    "description": "Mots de recherche pour « Organiser un PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolOrganizeSubtitle": "Chia, trích, sắp xếp lại",
+  "@toolOrganizeSubtitle": {
+    "description": "Sous-titre d'un bloc bento moyen. Très court — trois verbes à l'infinitif."
+  },
+  "toolExcelToPdf": "Excel sang PDF",
+  "@toolExcelToPdf": {
+    "description": "Outil : convertit un classeur en PDF. « Excel » est une marque, elle ne se traduit pas. Libellé de tuile, court."
+  },
+  "toolExcelToPdfKeywords": "bảng tính bảng tính xlsx",
+  "@toolExcelToPdfKeywords": {
+    "description": "Mots de recherche pour « Excel vers PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolPptxToPdf": "PowerPoint sang PDF",
+  "@toolPptxToPdf": {
+    "description": "Outil : convertit une présentation en PDF. « PowerPoint » est une marque, elle ne se traduit pas. Libellé de tuile."
+  },
+  "toolPptxToPdfKeywords": "slide thuyết trình pptx",
+  "@toolPptxToPdfKeywords": {
+    "description": "Mots de recherche pour « PowerPoint vers PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolHtmlToPdf": "Trang web sang PDF",
+  "@toolHtmlToPdf": {
+    "description": "Outil : enregistre une page web en PDF depuis son adresse. Libellé de tuile, court."
+  },
+  "toolHtmlToPdfKeywords": "bài viết liên kết url trang web html",
+  "@toolHtmlToPdfKeywords": {
+    "description": "Mots de recherche pour « Page web vers PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolScan": "Quét tài liệu",
+  "@toolScan": {
+    "description": "Outil : photographie des pages avec l'appareil et les redresse en PDF. Libellé de tuile, court."
+  },
+  "toolScanKeywords": "máy ảnh ảnh số hóa thiết bị quét giấy",
+  "@toolScanKeywords": {
+    "description": "Mots de recherche pour « Scanner un document ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolPdfToExcel": "PDF sang Excel",
+  "@toolPdfToExcel": {
+    "description": "Outil : extrait les tableaux d'un PDF vers un classeur. « Excel » est une marque. Libellé de tuile, court."
+  },
+  "toolPdfToExcelKeywords": "dữ liệu trích xuất bảng tính xlsx",
+  "@toolPdfToExcelKeywords": {
+    "description": "Mots de recherche pour « PDF vers Excel ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolPdfToPptx": "PDF sang PowerPoint",
+  "@toolPdfToPptx": {
+    "description": "Outil : transforme chaque page en diapositive. « PowerPoint » est une marque. Libellé de tuile."
+  },
+  "toolPdfToPptxKeywords": "slide thuyết trình pptx",
+  "@toolPdfToPptxKeywords": {
+    "description": "Mots de recherche pour « PDF vers PowerPoint ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolPdfToImages": "PDF sang hình ảnh",
+  "@toolPdfToImages": {
+    "description": "Outil : exporte chaque page en fichier image. Libellé de tuile, court."
+  },
+  "toolPdfToImagesKeywords": "chụp ảnh xuất khẩu jpg png",
+  "@toolPdfToImagesKeywords": {
+    "description": "Mots de recherche pour « PDF vers Images ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolOcr": "Văn bản có thể tìm kiếm (OCR)",
+  "@toolOcr": {
+    "description": "Outil : reconnaît les caractères d'un PDF scanné pour le rendre sélectionnable. « OCR » est un sigle international, à conserver tel quel entre parenthèses. Libellé de tuile."
+  },
+  "toolOcrKeywords": "chọn bản sao quét nhận dạng ký tự",
+  "@toolOcrKeywords": {
+    "description": "Mots de recherche pour « Texte cherchable (OCR) ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolPdfA": "Chuyển đổi sang PDF/A",
+  "@toolPdfA": {
+    "description": "Outil : produit la variante normalisée d'archivage. « PDF/A » est une norme ISO, à conserver telle quelle. Libellé de tuile."
+  },
+  "toolPdfAKeywords": "tiêu chuẩn lưu trữ bảo quản lâu dài",
+  "@toolPdfAKeywords": {
+    "description": "Mots de recherche pour « Convertir en PDF/A ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolProtect": "Bảo vệ PDF",
+  "@toolProtect": {
+    "description": "Outil : chiffre le document derrière un mot de passe. Libellé de tuile, court."
+  },
+  "toolProtectKeywords": "ổ khóa mật khẩu mã hóa khóa an toàn",
+  "@toolProtectKeywords": {
+    "description": "Mots de recherche pour « Protéger PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolUnlock": "Mở khóa PDF",
+  "@toolUnlock": {
+    "description": "Outil : retire le mot de passe d'un PDF dont on connaît le mot de passe. Libellé de tuile, court."
+  },
+  "toolUnlockKeywords": "xóa mật khẩu mở giải mã mở khóa ổ khóa",
+  "@toolUnlockKeywords": {
+    "description": "Mots de recherche pour « Déverrouiller PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolRepair": "Sửa chữa PDF",
+  "@toolRepair": {
+    "description": "Outil : récupère ce qui peut l'être d'un fichier endommagé. Libellé de tuile, court."
+  },
+  "toolRepairKeywords": "bị hỏng không thể đọc được lỗi khôi phục bị hỏng",
+  "@toolRepairKeywords": {
+    "description": "Mots de recherche pour « Réparer PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolRedact": "Biên tập lại một bản PDF",
+  "@toolRedact": {
+    "description": "Outil : recouvre définitivement des zones du document pour anonymiser. Le terme métier consacré en français est « caviarder » ; employez l'équivalent consacré de votre langue (anglais : redact). Libellé de tuile."
+  },
+  "toolRedactKeywords": "ẩn bôi đen ẩn danh xóa bí mật",
+  "@toolRedactKeywords": {
+    "description": "Mots de recherche pour « Caviarder un PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolEdit": "Chỉnh sửa PDF",
+  "@toolEdit": {
+    "description": "Outil : ajoute ou corrige du texte sur les pages. Libellé de tuile, court."
+  },
+  "toolEditKeywords": "văn bản sửa đổi chú thích chính xác viết",
+  "@toolEditKeywords": {
+    "description": "Mots de recherche pour « Éditer PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolSign": "Dấu hiệu",
+  "@toolSign": {
+    "description": "Outil : appose une signature tracée au doigt. Libellé de tuile, un seul verbe."
+  },
+  "toolSignKeywords": "ký tay hợp đồng ban đầu",
+  "@toolSignKeywords": {
+    "description": "Mots de recherche pour « Signer ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolWatermark": "Hình mờ",
+  "@toolWatermark": {
+    "description": "Outil : appose une mention en travers des pages (« CONFIDENTIEL », « BROUILLON »). Libellé de tuile, un seul mot si possible."
+  },
+  "toolWatermarkKeywords": "hình mờ dấu dự thảo tem bí mật",
+  "@toolWatermarkKeywords": {
+    "description": "Mots de recherche pour « Filigrane ». Séparés par des espaces, sans accents, en minuscules. Gardez « watermark » : le terme anglais est cherché dans toutes les langues."
+  },
+  "toolPageNumbers": "Số trang",
+  "@toolPageNumbers": {
+    "description": "Outil : appose une pagination. Libellé de tuile, court."
+  },
+  "toolPageNumbersKeywords": "số trang folio phân trang",
+  "@toolPageNumbersKeywords": {
+    "description": "Mots de recherche pour « Numéros de page ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolCrop": "Cắt một tệp PDF",
+  "@toolCrop": {
+    "description": "Outil : recadre les pages en retirant les marges. Libellé de tuile, court."
+  },
+  "toolCropKeywords": "cắt lề kích thước cạnh cắt",
+  "@toolCropKeywords": {
+    "description": "Mots de recherche pour « Rogner un PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "toolCompare": "So sánh PDF",
+  "@toolCompare": {
+    "description": "Outil : met deux versions face à face et signale ce qui change. Libellé de tuile, court."
+  },
+  "toolCompareKeywords": "phiên bản khác nhau thay đổi khác biệt",
+  "@toolCompareKeywords": {
+    "description": "Mots de recherche pour « Comparer PDF ». Séparés par des espaces, sans accents, en minuscules."
+  },
+  "searchHint": "Hợp nhất, mật khẩu, hình mờ…",
+  "@searchHint": {
+    "description": "Texte d'invite du champ de recherche. Trois exemples de requêtes séparés par des virgules, suivis d'un caractère de suspension. Choisissez trois exemples naturels dans votre langue plutôt qu'une traduction littérale."
+  },
+  "searchClear": "Để xóa",
+  "@searchClear": {
+    "description": "Info-bulle de la croix qui vide le champ de recherche."
+  },
+  "searchNoResultTitle": "Không có công cụ nào dành cho “{query}”.",
+  "@searchNoResultTitle": {
+    "description": "Titre affiché quand aucun outil ne correspond. Les guillemets français « » doivent être remplacés par ceux de votre langue.",
+    "placeholders": {
+      "query": {
+        "type": "String"
+      }
+    }
+  },
+  "searchNoResultBody": "Hãy thử định dạng bạn có trong tay – “Word”, “Excel”, “ảnh” – hoặc bất cứ điều gì bạn muốn làm với nó: “ký tên”, “chia”, “mật khẩu”.",
+  "@searchNoResultBody": {
+    "description": "Conseil affiché sous le titre d'absence de résultat. Les exemples entre guillemets doivent être adaptés à votre langue, pas traduits littéralement. Employez les guillemets de votre langue."
+  },
+  "actionUndo": "Hủy bỏ",
+  "@actionUndo": {
+    "description": "Défait la dernière action — retrait d'un fichier, compression appliquée. ATTENTION : ce n'est PAS « interrompre » (voir actionCancel). Le français emploie le même mot pour les deux, la plupart des langues non : anglais « Undo » contre « Cancel », allemand « Rückgängig » contre « Abbrechen »."
+  },
+  "actionApply": "Áp dụng",
+  "@actionApply": {
+    "description": "Valide le réglage choisi et l'applique au document."
+  },
+  "actionChoose": "Chọn",
+  "@actionChoose": {
+    "description": "Ouvre la boîte de sélection de fichiers du système. Libellé court, souvent au bout d'une rangée étroite."
+  },
+  "actionChoosePdf": "Chọn một bản PDF",
+  "@actionChoosePdf": {
+    "description": "Bouton principal d'un écran vide dont l'outil ne travaille que sur des PDF."
+  },
+  "actionChooseFiles": "Chọn tập tin",
+  "@actionChooseFiles": {
+    "description": "Bouton principal d'un écran vide dont l'outil accepte plusieurs fichiers à la fois."
+  },
+  "actionConvert": "Chuyển thành",
+  "@actionConvert": {
+    "description": "Lance la conversion. Bouton pleine largeur en bas d'écran."
+  },
+  "actionFinish": "Để kết thúc",
+  "@actionFinish": {
+    "description": "Clôt une capture en plusieurs pages et passe à la suite."
+  },
+  "actionBack": "Mặt sau",
+  "@actionBack": {
+    "description": "Info-bulle de la flèche qui remonte d'un écran."
+  },
+  "actionAdd": "Thêm vào",
+  "@actionAdd": {
+    "description": "Ajoute un élément à une liste. Libellé court."
+  },
+  "noFileChosen": "Không có tập tin nào được chọn",
+  "@noFileChosen": {
+    "description": "Sous-titre d'une rangée tant qu'aucun fichier n'a été retenu."
+  },
+  "errorExportFailed": "Xuất không thành công: {detail}",
+  "@errorExportFailed": {
+    "description": "Bandeau d'erreur quand l'écriture du fichier échoue. {detail} est un message technique non traduit, rendu tel quel.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "errorShareFailed": "Chia sẻ không thành công: {detail}",
+  "@errorShareFailed": {
+    "description": "Bandeau d'erreur quand la fenêtre de partage échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "errorOpenFailed": "Không thể mở tập tin: {detail}",
+  "@errorOpenFailed": {
+    "description": "Bandeau d'erreur quand le fichier choisi ne peut pas être lu. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "errorConversionFailed": "Chuyển đổi không thành công: {detail}",
+  "@errorConversionFailed": {
+    "description": "Bandeau d'erreur quand une conversion de format échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "errorOnFile": "{name}: {detail}",
+  "@errorOnFile": {
+    "description": "Bandeau d'erreur rattaché à un fichier précis d'une sélection multiple. Ne traduire que la ponctuation de séparation si votre langue en emploie une autre.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "errorPickPdf": "Vui lòng chọn tệp PDF.",
+  "@errorPickPdf": {
+    "description": "Bandeau d'erreur quand l'outil exige un PDF et qu'on lui a donné autre chose."
+  },
+  "sizeBytes": "{value} o",
+  "@sizeBytes": {
+    "description": "Poids d'un fichier en octets. L'abréviation est « o » en français, « B » en anglais — employez celle de votre langue.",
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "sizeKb": "{value} KB",
+  "@sizeKb": {
+    "description": "Poids d'un fichier en kilo-octets. L'abréviation est « Ko » en français, « KB » en anglais et dans la plupart des langues — employez celle de la vôtre.",
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "sizeMb": "{value} MB",
+  "@sizeMb": {
+    "description": "Poids d'un fichier en méga-octets. L'abréviation est « Mo » en français, « MB » en anglais et dans la plupart des langues — employez celle de la vôtre.",
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "sizeApprox": "~{size}",
+  "@sizeApprox": {
+    "description": "Taille estimée, précédée du signe « environ ». {size} est déjà formaté (« 240 Ko »). Le tilde et non le signe ≈ : ce dernier manque au sous-ensemble des fontes embarquées. Voir test/l10n_coverage_test.dart.",
+    "placeholders": {
+      "size": {
+        "type": "String"
+      }
+    }
+  },
+  "pageCount": "{count} trang",
+  "@pageCount": {
+    "description": "Décompte de pages. Employez les formes plurielles de votre langue — le polonais, le tchèque, le lituanien et le letton en ont plus de deux.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pageCountOfTotal": "{kept} trang trong tổng số {total}",
+  "@pageCountOfTotal": {
+    "description": "Décompte partiel : combien de pages sont retenues sur combien au total. Affiché seulement quand on en a écarté ; « 3 pages sur 3 » n'apparaît jamais.",
+    "placeholders": {
+      "kept": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "pageOfTotal": "Trang {current} trên {total}",
+  "@pageOfTotal": {
+    "description": "Titre de la visionneuse plein écran : quelle page on regarde, sur combien.",
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "formatPdf": "PDF",
+  "@formatPdf": {
+    "description": "Puce de format acceptable. Sigle international, à conserver tel quel dans toutes les langues."
+  },
+  "formatWord": "Từ",
+  "@formatWord": {
+    "description": "Puce de format acceptable. Marque déposée, à conserver telle quelle."
+  },
+  "formatExcel": "Excel",
+  "@formatExcel": {
+    "description": "Puce de format acceptable. Marque déposée, à conserver telle quelle."
+  },
+  "formatPowerPoint": "điểm mạnh",
+  "@formatPowerPoint": {
+    "description": "Puce de format acceptable. Marque déposée, à conserver telle quelle."
+  },
+  "formatImages": "Hình ảnh",
+  "@formatImages": {
+    "description": "Puce de format acceptable : les fichiers d'image en général."
+  },
+  "formatText": "Chữ",
+  "@formatText": {
+    "description": "Puce de format acceptable : les fichiers texte brut."
+  },
+  "mergeAddFile": "Thêm một tập tin",
+  "@mergeAddFile": {
+    "description": "Libellé de la carte à contour tireté en fin de liste, qui ouvre la sélection de fichiers."
+  },
+  "mergeAddHint": "PDF, Word, hình ảnh hoặc văn bản",
+  "@mergeAddHint": {
+    "description": "Ligne sous le libellé de la carte d'ajout, énumérant ce qui est accepté."
+  },
+  "mergeEmptyTitle": "Một tài liệu duy nhất",
+  "@mergeEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Fusionner : ce qu'on va obtenir, en trois mots."
+  },
+  "mergeEmptyBody": "Thêm tệp PDF, tệp Word, hình ảnh hoặc văn bản. Bạn có thể sắp xếp lại chúng và xóa các trang trước khi xuất.",
+  "@mergeEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Fusionner."
+  },
+  "mergeNeedOnePage": "Thêm ít nhất một tệp có trang để đưa vào.",
+  "@mergeNeedOnePage": {
+    "description": "Bandeau d'erreur quand on demande l'aperçu sans qu'aucune page ne soit retenue."
+  },
+  "mergeProgress": "Đang tiến hành sáp nhập...",
+  "@mergeProgress": {
+    "description": "Titre de la boîte de progression pendant l'assemblage. Garder le caractère de suspension final."
+  },
+  "mergeFailed": "Hợp nhất không thành công: {detail}",
+  "@mergeFailed": {
+    "description": "Bandeau d'erreur quand l'assemblage échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "mergeRemoved": "{name} đã bị xóa.",
+  "@mergeRemoved": {
+    "description": "Bandeau confirmant qu'un document a quitté la liste ; il porte l'action « Annuler » (actionUndo). Accordez au genre du mot « fichier » dans votre langue.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "mergeRemoveTooltip": "Xóa {name}",
+  "@mergeRemoveTooltip": {
+    "description": "Info-bulle de la corbeille d'une rangée de la liste.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "mergeMoveSemantics": "Di chuyển {name}",
+  "@mergeMoveSemantics": {
+    "description": "Étiquette d'accessibilité de la poignée de glissement. Lue à voix haute, jamais affichée.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "mergeRotateAll": "Xoay tất cả các trang",
+  "@mergeRotateAll": {
+    "description": "Bouton qui fait tourner d'un quart de tour toutes les pages du document déplié."
+  },
+  "mergePreviewAndExport": "Xem trước và xuất ({count} trang)",
+  "@mergePreviewAndExport": {
+    "description": "Bouton de bas d'écran de l'outil Fusionner, avec le nombre de pages retenues entre parenthèses.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "previewTitle": "Tổng quan · {size}",
+  "@previewTitle": {
+    "description": "Titre de l'écran d'aperçu, suivi du poids du fichier. {size} est déjà formaté (« 1,20 Mo »). Le point médian est un séparateur typographique, gardez-le ou remplacez-le par celui de votre langue.",
+    "placeholders": {
+      "size": {
+        "type": "String"
+      }
+    }
+  },
+  "previewZoomPage": "Trang {number}, phóng to",
+  "@previewZoomPage": {
+    "description": "Étiquette d'accessibilité d'une vignette d'aperçu. Lue à voix haute, jamais affichée.",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "previewPageUnreadable": "Trang không thể đọc được.",
+  "@previewPageUnreadable": {
+    "description": "Affiché à la place d'une page dont le rendu a échoué."
+  },
+  "previewExportWhat": "PDF · {count} trang",
+  "@previewExportWhat": {
+    "description": "Description de ce qui vient d'être enregistré, dans la feuille de confirmation. Décrit le document, ne le nomme pas.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "compressTitle": "nén",
+  "@compressTitle": {
+    "description": "Titre de la feuille de choix du niveau de compression."
+  },
+  "compressBody": "Kích thước hiện tại: {size}. Chọn cấp độ - kích thước ước tính sẽ được hiển thị trước khi áp dụng.",
+  "@compressBody": {
+    "description": "Consigne de la feuille de compression. {size} est déjà formaté.",
+    "placeholders": {
+      "size": {
+        "type": "String"
+      }
+    }
+  },
+  "compressEstimating": "Ước lượng…",
+  "@compressEstimating": {
+    "description": "Affiché tant que la taille estimée d'un niveau n'est pas connue. Garder le caractère de suspension final."
+  },
+  "compressProgress": "Đang nén...",
+  "@compressProgress": {
+    "description": "Titre de la boîte de progression pendant la compression. Garder le caractère de suspension final."
+  },
+  "compressFailed": "Nén không thành công: {detail}",
+  "@compressFailed": {
+    "description": "Bandeau d'erreur quand la compression échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "protectEmptyTitle": "Đặt dưới mật khẩu",
+  "@protectEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Protéger."
+  },
+  "protectEmptyBody": "Tệp PDF sẽ không mở được nữa nếu không có mật khẩu bạn chọn. Giữ nó: nó không thể được phục hồi.",
+  "@protectEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Protéger. L'avertissement de la seconde phrase est essentiel — ne l'allégez pas."
+  },
+  "protectSubtitle": "Sẽ được mã hóa bằng AES 256-bit",
+  "@protectSubtitle": {
+    "description": "Sous-titre de la carte du fichier choisi. « AES 256 bits » est un nom d'algorithme, à conserver tel quel."
+  },
+  "protectPassword": "Mật khẩu",
+  "@protectPassword": {
+    "description": "Intitulé du premier champ de saisie."
+  },
+  "protectConfirmPassword": "Xác nhận mật khẩu",
+  "@protectConfirmPassword": {
+    "description": "Intitulé du second champ, où l'on retape le mot de passe."
+  },
+  "protectShowPasswords": "Hiển thị mật khẩu",
+  "@protectShowPasswords": {
+    "description": "Info-bulle du bouton œil quand les caractères sont masqués."
+  },
+  "protectHidePasswords": "Ẩn mật khẩu",
+  "@protectHidePasswords": {
+    "description": "Info-bulle du bouton œil quand les caractères sont visibles."
+  },
+  "protectMismatch": "Hai mật khẩu này khác nhau.",
+  "@protectMismatch": {
+    "description": "Message d'erreur rattaché au champ de confirmation. Court : il s'affiche sous le champ."
+  },
+  "protectWarning": "Hãy viết nó ra đâu đó: không có nó, tài liệu sẽ vĩnh viễn không thể đọc được. Không thể khôi phục được, bởi bạn cũng như bởi ứng dụng.",
+  "@protectWarning": {
+    "description": "Avertissement sous les champs de saisie. C'est le seul endroit qui dit qu'un mot de passe perdu est perdu pour de bon — ne l'allégez pas."
+  },
+  "protectAlreadyProtected": "Tệp này đã được bảo vệ - trước tiên hãy sử dụng Mở khóa PDF.",
+  "@protectAlreadyProtected": {
+    "description": "Bandeau d'erreur quand le PDF choisi porte déjà un mot de passe. « Déverrouiller PDF » doit reprendre exactement le libellé traduit de l'outil (toolUnlock)."
+  },
+  "protectProgress": "Đang tiến hành bảo vệ…",
+  "@protectProgress": {
+    "description": "Titre de la boîte de progression pendant le chiffrement. Garder le caractère de suspension final."
+  },
+  "protectFailed": "Bảo vệ không thành công: {detail}",
+  "@protectFailed": {
+    "description": "Bandeau d'erreur quand le chiffrement échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "protectAction": "Bảo vệ",
+  "@protectAction": {
+    "description": "Bouton de bas d'écran qui lance le chiffrement. Verbe à l'infinitif, court."
+  },
+  "protectResultTitle": "PDF được bảo vệ",
+  "@protectResultTitle": {
+    "description": "Titre de la carte de résultat, une fois le document chiffré."
+  },
+  "protectResultDetail": "Được mã hóa bằng AES 256 bit. Bạn sẽ cần mật khẩu để mở nó.",
+  "@protectResultDetail": {
+    "description": "Détail de la carte de résultat. « AES 256 bits » est un nom d'algorithme, à conserver tel quel."
+  },
+  "protectExportWhat": "PDF được bảo vệ bằng mật khẩu",
+  "@protectExportWhat": {
+    "description": "Description de ce qui vient d'être enregistré, dans la feuille de confirmation."
+  },
+  "unlockEmptyTitle": "Xóa mật khẩu",
+  "@unlockEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Déverrouiller."
+  },
+  "unlockEmptyBody": "Bạn cần mật khẩu hiện tại cho tài liệu. Sau khi xóa, tệp PDF sẽ mở tự do.",
+  "@unlockEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Déverrouiller. La première phrase est importante : l'outil ne casse pas les mots de passe, il en délivre un document qu'on sait déjà ouvrir."
+  },
+  "unlockAcceptsProtectedPdf": "PDF được bảo vệ",
+  "@unlockAcceptsProtectedPdf": {
+    "description": "Puce de format acceptable : un PDF portant un mot de passe."
+  },
+  "unlockChooseProtectedPdf": "Chọn một tệp PDF được bảo vệ",
+  "@unlockChooseProtectedPdf": {
+    "description": "Bouton principal de l'écran vide de l'outil Déverrouiller."
+  },
+  "unlockCurrentPassword": "Mật khẩu hiện tại",
+  "@unlockCurrentPassword": {
+    "description": "Intitulé du champ où l'on saisit le mot de passe qui ouvre déjà le document."
+  },
+  "unlockWrongPassword": "Mật khẩu không chính xác.",
+  "@unlockWrongPassword": {
+    "description": "Bandeau d'erreur quand le mot de passe saisi n'ouvre pas le document."
+  },
+  "unlockProgress": "Đang mở khóa…",
+  "@unlockProgress": {
+    "description": "Titre de la boîte de progression pendant le retrait du mot de passe. Garder le caractère de suspension final."
+  },
+  "unlockFailed": "Không mở khóa được: {detail}",
+  "@unlockFailed": {
+    "description": "Bandeau d'erreur quand le retrait du mot de passe échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "unlockAction": "Mở khóa",
+  "@unlockAction": {
+    "description": "Bouton de bas d'écran qui retire le mot de passe. Verbe à l'infinitif, court."
+  },
+  "repairEmptyTitle": "Sửa chữa một tập tin bị hỏng",
+  "@repairEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Réparer."
+  },
+  "repairEmptyBody": "Cấu trúc bên trong của tệp PDF bị hỏng được xây dựng lại. Cái gì cứu được sẽ cứu được.",
+  "@repairEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Réparer. La seconde phrase promet peu délibérément — la réparation n'est jamais garantie."
+  },
+  "repairProgress": "Đang sửa chữa…",
+  "@repairProgress": {
+    "description": "Titre de la boîte de progression pendant la reconstruction. Garder le caractère de suspension final."
+  },
+  "repairFailed": "Không thể sửa chữa được tập tin này - nó có thể bị hỏng quá mức.",
+  "@repairFailed": {
+    "description": "Bandeau d'erreur quand la reconstruction échoue. Le ton reste prudent : on ne sait pas pourquoi, et on le dit."
+  },
+  "repairAction": "Sửa chữa",
+  "@repairAction": {
+    "description": "Bouton de bas d'écran qui lance la reconstruction. Verbe à l'infinitif, court."
+  },
+  "pdfToWordEmptyTitle": "Một Word có thể chỉnh sửa",
+  "@pdfToWordEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil PDF vers Word. « Word » est une marque, à conserver."
+  },
+  "pdfToWordEmptyBody": "Văn bản và cấu trúc của tệp PDF được chuyển thành tài liệu .docx mà bạn có thể mở lại và sửa.",
+  "@pdfToWordEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil PDF vers Word. « .docx » est une extension de fichier, à conserver telle quelle."
+  },
+  "pdfToWordAnalyzing": "Phân tích tài liệu…",
+  "@pdfToWordAnalyzing": {
+    "description": "Titre de la boîte de progression pendant l'inspection du PDF, avant conversion. Garder le caractère de suspension final."
+  },
+  "pdfToWordAnalysisPending": "Đang chờ phân tích",
+  "@pdfToWordAnalysisPending": {
+    "description": "Sous-titre de la carte du fichier tant que l'inspection n'a pas rendu ses résultats."
+  },
+  "pdfToWordAnalysisFailed": "Không thể quét: {detail}",
+  "@pdfToWordAnalysisFailed": {
+    "description": "Bandeau d'erreur quand l'inspection du PDF échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "pdfLocked": "Bản PDF này được bảo vệ bằng mật khẩu. Mở khóa nó trước.",
+  "@pdfLocked": {
+    "description": "Bandeau d'erreur commun aux outils qui refusent un PDF chiffré. Renvoie implicitement à l'outil Déverrouiller."
+  },
+  "pdfToWordConverting": "Đang chuyển đổi sang Word…",
+  "@pdfToWordConverting": {
+    "description": "Titre de la boîte de progression pendant la conversion. Garder le caractère de suspension final."
+  },
+  "pdfToWordSummaryTitle": "Đã phát hiện thấy nội dung",
+  "@pdfToWordSummaryTitle": {
+    "description": "Titre de la carte qui résume ce que l'inspection a trouvé dans le PDF."
+  },
+  "pdfToWordParagraphCount": "{count} đoạn văn",
+  "@pdfToWordParagraphCount": {
+    "description": "Puce du résumé : combien de paragraphes ont été reconnus.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pdfToWordHeadingCount": "{count} danh hiệu",
+  "@pdfToWordHeadingCount": {
+    "description": "Puce du résumé : combien de titres ont été reconnus.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pdfToWordTableCount": "{count} bảng",
+  "@pdfToWordTableCount": {
+    "description": "Puce du résumé : combien de tableaux ont été reconnus.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pdfToWordNoTables": "Không phát hiện thấy bảng nào: nếu tệp PDF của bạn chứa bất kỳ bảng nào, các dòng của nó sẽ được chuyển đổi thành các đoạn văn.",
+  "@pdfToWordNoTables": {
+    "description": "Avertissement affiché quand l'inspection n'a trouvé aucun tableau."
+  },
+  "pdfToWordCaveat": "Việc chuyển đổi sẽ tái tạo văn bản, định dạng và bảng biểu nhưng không tái tạo bố cục chính xác: vị trí của hình ảnh và cột không được giữ nguyên và hình ảnh không được đưa vào tài liệu Word.",
+  "@pdfToWordCaveat": {
+    "description": "Ce que la conversion ne sait pas faire, dit avant qu'on la lance. C'est le passage qui évite la déception — ne l'allégez pas."
+  },
+  "pdfToWordScanWarning": "Bản PDF này có vẻ là bản quét: không tìm thấy văn bản nào. Trước tiên, hãy sử dụng công cụ Văn bản có thể tìm kiếm (OCR), sau đó quay lại và chuyển đổi tệp PDF thu được.",
+  "@pdfToWordScanWarning": {
+    "description": "Avertissement quand le PDF ne contient aucun texte extractible. « Texte cherchable (OCR) » doit reprendre exactement le libellé traduit de l'outil (toolOcr)."
+  },
+  "pdfToWordResultTitle": "Tài liệu Word đã sẵn sàng",
+  "@pdfToWordResultTitle": {
+    "description": "Titre de la carte de résultat, une fois le .docx produit."
+  },
+  "pdfToWordResultDetail": "{name} — {size}",
+  "@pdfToWordResultDetail": {
+    "description": "Détail de la carte de résultat : le nom du fichier et son poids, déjà formatés.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "size": {
+        "type": "String"
+      }
+    }
+  },
+  "pdfToWordExportWhat": "tài liệu Word",
+  "@pdfToWordExportWhat": {
+    "description": "Description de ce qui vient d'être enregistré, dans la feuille de confirmation."
+  },
+  "pdfToWordConvertAction": "Chuyển đổi sang Word",
+  "@pdfToWordConvertAction": {
+    "description": "Bouton de bas d'écran qui lance la conversion. Doit tenir sur une ligne."
+  },
+  "actionConvertAgain": "Chuyển đổi lại",
+  "@actionConvertAgain": {
+    "description": "Action secondaire proposée une fois le fichier produit, pour refaire la conversion. Doit tenir sur une ligne."
+  },
+  "errorSaveFailed": "Không thể đăng ký: {detail}",
+  "@errorSaveFailed": {
+    "description": "Bandeau d'erreur quand l'écriture du fichier échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "rectoVersoIntro": "Bộ nạp một mặt tạo ra hai tệp: các trang lẻ theo thứ tự, các trang chẵn thường theo thứ tự ngược lại. Chọn cả hai để sắp xếp lại chúng.",
+  "@rectoVersoIntro": {
+    "description": "Consigne en tête de l'outil Recto-verso, qui explique d'où viennent les deux fichiers attendus."
+  },
+  "rectoVersoOddSlot": "Tệp trang lẻ (Một mặt)",
+  "@rectoVersoOddSlot": {
+    "description": "Intitulé de la première case : le scan des pages 1, 3, 5…"
+  },
+  "rectoVersoEvenSlot": "Tệp trang chẵn (trở lại)",
+  "@rectoVersoEvenSlot": {
+    "description": "Intitulé de la seconde case : le scan des pages 2, 4, 6…"
+  },
+  "rectoVersoReversed": "Tệp thứ hai theo thứ tự ngược lại",
+  "@rectoVersoReversed": {
+    "description": "Intitulé de l'interrupteur qui retourne l'ordre des pages paires."
+  },
+  "rectoVersoReversedHint": "Đây là trường hợp phổ biến nhất, được kiểm tra theo mặc định",
+  "@rectoVersoReversedHint": {
+    "description": "Sous-titre de l'interrupteur, qui justifie sa valeur par défaut."
+  },
+  "rectoVersoPreview": "Tổng quan về xen kẽ ({count} trang)",
+  "@rectoVersoPreview": {
+    "description": "Titre de la bande de vignettes qui montre le résultat de l'entrelacement.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "rectoVersoProgress": "Đang xen kẽ…",
+  "@rectoVersoProgress": {
+    "description": "Titre de la boîte de progression pendant l'entrelacement. Garder le caractère de suspension final."
+  },
+  "fileWithPageCount": "{name} · {count} trang",
+  "@fileWithPageCount": {
+    "description": "Sous-titre d'une carte de fichier : son nom, puis son nombre de pages. Le point médian est un séparateur typographique.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "actionPreviewAndExport": "Xem trước và xuất",
+  "@actionPreviewAndExport": {
+    "description": "Bouton de bas d'écran qui mène à l'écran d'aperçu. Doit tenir sur une ligne."
+  },
+  "errorOpenFailedShort": "Không thể mở được: {detail}",
+  "@errorOpenFailedShort": {
+    "description": "Variante brève du bandeau d'erreur d'ouverture. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "errorGeneric": "Không thành công: {detail}",
+  "@errorGeneric": {
+    "description": "Bandeau d'erreur générique, quand l'écran n'a rien de plus précis à dire. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "actionConvertToPdf": "Chuyển đổi sang PDF",
+  "@actionConvertToPdf": {
+    "description": "Bouton de bas d'écran des outils de conversion vers le PDF. Doit tenir sur une ligne."
+  },
+  "convertProgress": "Đang tiến hành chuyển đổi...",
+  "@convertProgress": {
+    "description": "Titre de la boîte de progression pendant une conversion de format. Garder le caractère de suspension final."
+  },
+  "excelEmptyTitle": "Một sổ làm việc PDF",
+  "@excelEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Excel vers PDF."
+  },
+  "excelEmptyBody": "Các trang tính trong tệp .xlsx trở thành trang PDF, sẵn sàng gửi hoặc in.",
+  "@excelEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Excel vers PDF. « .xlsx » est une extension de fichier, à conserver telle quelle."
+  },
+  "excelChooseWorkbook": "Chọn chất kết dính",
+  "@excelChooseWorkbook": {
+    "description": "Bouton principal de l'écran vide de l'outil Excel vers PDF."
+  },
+  "excelChooseXlsx": "Chọn sổ làm việc .xlsx",
+  "@excelChooseXlsx": {
+    "description": "Intitulé de la rangée de fichier tant qu'aucun classeur n'est choisi. « .xlsx » est une extension, à conserver."
+  },
+  "excelLegacyFormat": "Định dạng .xls (định dạng nhị phân Excel cũ) không được hỗ trợ. Lưu tệp dưới dạng .xlsx rồi thử lại.",
+  "@excelLegacyFormat": {
+    "description": "Bandeau d'erreur quand on choisit un classeur au vieux format binaire. Les extensions « .xls » et « .xlsx » sont à conserver telles quelles."
+  },
+  "excelWrongFormat": "Vui lòng chọn sổ làm việc Excel .xlsx.",
+  "@excelWrongFormat": {
+    "description": "Bandeau d'erreur quand le fichier choisi n'est pas un classeur."
+  },
+  "excelUnreadable": "Thư mục không thể đọc được: {detail}",
+  "@excelUnreadable": {
+    "description": "Bandeau d'erreur quand le classeur ne peut pas être décodé. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "excelSheetsAndRows": "Tổng cộng {sheets} tờ · tổng cộng {rows} hàng",
+  "@excelSheetsAndRows": {
+    "description": "Sous-titre de la rangée de fichier : combien de feuilles et combien de lignes en tout. Le point médian est un séparateur typographique.",
+    "placeholders": {
+      "sheets": {
+        "type": "int"
+      },
+      "rows": {
+        "type": "int"
+      }
+    }
+  },
+  "excelSheetsDetected": "Lá được phát hiện",
+  "@excelSheetsDetected": {
+    "description": "Intitulé de la liste des feuilles trouvées dans le classeur."
+  },
+  "excelEmptySheet": "Trang tính trống",
+  "@excelEmptySheet": {
+    "description": "Sous-titre d'une feuille qui ne contient aucune ligne."
+  },
+  "excelSheetDimensions": "{rows} hàng × {columns} cột",
+  "@excelSheetDimensions": {
+    "description": "Sous-titre d'une feuille : ses dimensions. Le signe × est le symbole de multiplication.",
+    "placeholders": {
+      "rows": {
+        "type": "int"
+      },
+      "columns": {
+        "type": "int"
+      }
+    }
+  },
+  "excelRepeatHeader": "Lặp lại dòng tiêu đề trên mỗi trang",
+  "@excelRepeatHeader": {
+    "description": "Intitulé de l'interrupteur qui redessine la première ligne en haut de chaque page."
+  },
+  "excelRepeatHeaderHint": "Hàng đầu tiên của trang tính được vẽ lại ở đầu mỗi trang bảng.",
+  "@excelRepeatHeaderHint": {
+    "description": "Sous-titre de l'interrupteur de répétition d'en-tête."
+  },
+  "excelCaveat": "Nội dung chuyển đổi bao gồm: văn bản của các ô khi nó được lưu trong tệp (bao gồm kết quả tính toán cuối cùng của các công thức), dòng in đậm đầu tiên và một lưới.\n\nNhững gì không được bao gồm: màu sắc, phông chữ, định dạng số, ô được hợp nhất, hình ảnh, đồ họa và chính công thức. Các cột được giảm bớt để vừa với chiều rộng của trang; trên các trang tính rất rộng, văn bản trong các ô quá hẹp sẽ bị cắt bớt bởi “…”.",
+  "@excelCaveat": {
+    "description": "Ce que la conversion sait et ne sait pas faire. Les deux paragraphes sont séparés par une ligne vide — gardez le double saut de ligne. C'est le passage qui évite la déception, ne l'allégez pas."
+  },
+  "pptxEmptyTitle": "Một bài thuyết trình dưới dạng PDF",
+  "@pptxEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil PowerPoint vers PDF."
+  },
+  "pptxEmptyBody": "Một trang ngang 16:9 trên mỗi trang chiếu, bao gồm tiêu đề và dấu đầu dòng. Văn bản được lặp lại; những hình ảnh, hình dạng và hình nền ban đầu thì không.\n\nĐịnh dạng được chấp nhận: .pptx. Tệp .ppt cũ trước tiên phải được lưu lại dưới dạng .pptx từ PowerPoint.",
+  "@pptxEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil PowerPoint vers PDF. Les deux paragraphes sont séparés par une ligne vide — gardez le double saut de ligne. « 16:9 », « .pptx » et « .ppt » sont à conserver tels quels."
+  },
+  "pptxChoosePresentation": "Chọn một bài thuyết trình",
+  "@pptxChoosePresentation": {
+    "description": "Bouton principal de l'écran vide de l'outil PowerPoint vers PDF."
+  },
+  "pptxTextOnlyTitle": "Chỉ chuyển đổi văn bản",
+  "@pptxTextOnlyTitle": {
+    "description": "Titre de la carte d'avertissement affichée une fois la présentation chargée."
+  },
+  "pptxTextOnlyBody": "Văn bản của mỗi slide được lặp lại. Các hình ảnh, hình dạng, hình nền, màu sắc và bố cục ban đầu không được giữ nguyên: tệp PDF thu được là một bố cục đơn giản, dễ đọc chứ không phải là bản sao trung thực của bản trình bày của bạn.",
+  "@pptxTextOnlyBody": {
+    "description": "Corps de la carte d'avertissement. Dit clairement ce que l'outil ne fait pas — ne l'allégez pas."
+  },
+  "pptxSlideCount": "{count} trang trình bày",
+  "@pptxSlideCount": {
+    "description": "Sous-titre de la rangée de fichier : combien de diapositives ont été trouvées.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pptxSlidesDetected": "Đã phát hiện thấy các trang trình bày",
+  "@pptxSlidesDetected": {
+    "description": "Intitulé de la liste des diapositives trouvées dans la présentation."
+  },
+  "pptxMoreSlides": "và {count} trang trình bày khác…",
+  "@pptxMoreSlides": {
+    "description": "Affiché sous la liste quand la présentation compte plus de trente diapositives et que l'aperçu s'arrête là. Garder le caractère de suspension final.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pptxUntitledSlide": "Không có tiêu đề",
+  "@pptxUntitledSlide": {
+    "description": "Affiché à la place du titre d'une diapositive qui n'en porte pas. Rendu en italique."
+  },
+  "pptxEmptySlide": "Không có văn bản (chỉ hình ảnh hoặc hình dạng)",
+  "@pptxEmptySlide": {
+    "description": "Sous-titre d'une diapositive dont l'outil n'a extrait aucun texte."
+  },
+  "pptxTextLineCount": "{count} dòng văn bản",
+  "@pptxTextLineCount": {
+    "description": "Sous-titre d'une diapositive : combien de lignes de texte elle porte.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pptxReadFailed": "Không thể đọc: {detail}",
+  "@pptxReadFailed": {
+    "description": "Bandeau d'erreur quand la présentation ne peut pas être décodée. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "compressLevelLight": "Ánh sáng",
+  "@compressLevelLight": {
+    "description": "Niveau de compression le plus doux. Adjectif accordé à « compression » ; si votre langue ne permet pas l'adjectif seul, écrivez « Compression légère »."
+  },
+  "compressLevelMedium": "Trung bình",
+  "@compressLevelMedium": {
+    "description": "Niveau de compression intermédiaire. Adjectif accordé à « compression »."
+  },
+  "compressLevelStrong": "sở trường",
+  "@compressLevelStrong": {
+    "description": "Niveau de compression le plus agressif. Adjectif accordé à « compression »."
+  },
+  "pptxQualityStandard": "Tiêu chuẩn (150 dpi)",
+  "@pptxQualityStandard": {
+    "description": "Réglage de résolution par défaut de l'export PowerPoint. « dpi » est un sigle international, à conserver."
+  },
+  "pptxQualityHigh": "Cao (220 dpi)",
+  "@pptxQualityHigh": {
+    "description": "Réglage de résolution élevée de l'export PowerPoint. « dpi » est un sigle international, à conserver."
+  },
+  "pdfToExcelEmptyTitle": "Truy xuất bảng",
+  "@pdfToExcelEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil PDF vers Excel."
+  },
+  "pdfToExcelEmptyBody": "Các bảng từ PDF được trích xuất sang sổ làm việc Excel. Định dạng không được giữ nguyên, các giá trị vẫn vậy.",
+  "@pdfToExcelEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil PDF vers Excel."
+  },
+  "pdfToExcelPagesAnalyzed": "{count} trang được phân tích",
+  "@pdfToExcelPagesAnalyzed": {
+    "description": "Sous-titre de la carte du fichier une fois l'inspection faite.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pdfToExcelAnalysisFailed": "Phân tích không thể. Tệp PDF có thể được bảo vệ bằng mật khẩu hoặc bị hỏng. ({detail})",
+  "@pdfToExcelAnalysisFailed": {
+    "description": "Bandeau d'erreur quand l'inspection échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "pdfToExcelNothingToExport": "Không có gì để xuất: không phát hiện thấy bảng nào.",
+  "@pdfToExcelNothingToExport": {
+    "description": "Bandeau d'erreur quand on lance la conversion sans qu'aucun tableau n'ait été reconnu."
+  },
+  "pdfToExcelBuilding": "Đang tạo sổ làm việc…",
+  "@pdfToExcelBuilding": {
+    "description": "Titre de la boîte de progression pendant la construction du classeur. Garder le caractère de suspension final."
+  },
+  "pdfToExcelIncludeParagraphs": "Cũng bao gồm văn bản bên ngoài bảng (một dòng trên mỗi đoạn)",
+  "@pdfToExcelIncludeParagraphs": {
+    "description": "Intitulé de l'interrupteur qui verse le texte courant dans le classeur."
+  },
+  "pdfToExcelIncludeParagraphsHint": "Hữu ích đối với tài liệu bán cấu trúc: văn bản được đặt ở cột A, sau các bảng trên trang.",
+  "@pdfToExcelIncludeParagraphsHint": {
+    "description": "Sous-titre de l'interrupteur. « colonne A » désigne la première colonne du tableur."
+  },
+  "pdfToExcelCaveatTitle": "Những gì chuyển đổi không bảo tồn",
+  "@pdfToExcelCaveatTitle": {
+    "description": "Intitulé du paragraphe qui énumère les limites de l'extraction."
+  },
+  "pdfToExcelCaveat": "Việc phát hiện dựa trên vị trí của văn bản trên trang: các bảng không có đường viền thông thường, các ô được hợp nhất và các cột rất không đều có thể bị cắt kém. Một bản PDF (hình ảnh) được quét không chứa văn bản có thể trích xuất được và sẽ không mang lại kết quả gì. Màu sắc, công thức và hình ảnh không bao giờ được bao gồm: chỉ có giá trị văn bản.",
+  "@pdfToExcelCaveat": {
+    "description": "Limites de l'extraction de tableaux, dites avant qu'on lance la conversion. Ne l'allégez pas."
+  },
+  "pdfToExcelTablesFound": "Đã phát hiện thấy bảng {tables} trên trang {pages}",
+  "@pdfToExcelTablesFound": {
+    "description": "Résumé de l'inspection : combien de tableaux, sur combien de pages.",
+    "placeholders": {
+      "tables": {
+        "type": "int"
+      },
+      "pages": {
+        "type": "int"
+      }
+    }
+  },
+  "pdfToExcelPagesConcerned": "Các trang bị ảnh hưởng: {pages}",
+  "@pdfToExcelPagesConcerned": {
+    "description": "Liste des numéros de page qui portent un tableau. {pages} est déjà formaté (« 1, 3, 7… »).",
+    "placeholders": {
+      "pages": {
+        "type": "String"
+      }
+    }
+  },
+  "pdfToExcelParagraphsOutside": "{count} đoạn văn bên ngoài bảng",
+  "@pdfToExcelParagraphsOutside": {
+    "description": "Résumé de l'inspection : combien de paragraphes vivent en dehors des tableaux.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pdfToExcelScannedWarning": "Không thể trích xuất văn bản nào từ tệp PDF này: rất có thể đây là tài liệu được quét (hình ảnh trang). Một bảng tính không thể lấy được gì từ việc này; đầu tiên hãy sử dụng công cụ nhận dạng văn bản (OCR).",
+  "@pdfToExcelScannedWarning": {
+    "description": "Avertissement quand le PDF est un scan sans couche de texte. « OCR » est un sigle international, à conserver."
+  },
+  "pdfToExcelNoTableWarning": "Không có cấu trúc bảng nào được công nhận trong tài liệu này. Văn bản vẫn ở đó nhưng nó không được sắp xếp theo các cột thông thường. Thay vì tạo ra một sổ làm việc không thể đọc được, hãy bật “Cũng bao gồm văn bản không phải bảng” ở trên hoặc sử dụng “PDF sang Word” để lưu giữ các đoạn văn tốt hơn.",
+  "@pdfToExcelNoTableWarning": {
+    "description": "Avertissement quand le texte existe mais n'est pas tabulaire. Les deux citations entre guillemets doivent reprendre exactement les libellés traduits correspondants (pdfToExcelIncludeParagraphs et toolPdfToWord)."
+  },
+  "pdfToExcelResultTitle": "Chất kết dính đã sẵn sàng",
+  "@pdfToExcelResultTitle": {
+    "description": "Titre de la carte de résultat, une fois le classeur produit."
+  },
+  "pdfToExcelExportWhat": "Sổ làm việc Excel",
+  "@pdfToExcelExportWhat": {
+    "description": "Description de ce qui vient d'être enregistré, dans la feuille de confirmation."
+  },
+  "pdfToExcelConvertAction": "Chuyển đổi sang Excel",
+  "@pdfToExcelConvertAction": {
+    "description": "Bouton de bas d'écran qui lance la conversion. Doit tenir sur une ligne."
+  },
+  "resultNameAndSize": "{name} — {size}",
+  "@resultNameAndSize": {
+    "description": "Détail d'une carte de résultat : le nom du fichier et son poids, déjà formatés.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "size": {
+        "type": "String"
+      }
+    }
+  },
+  "pdfToPptxEmptyTitle": "Một slide trên mỗi trang",
+  "@pdfToPptxEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil PDF vers PowerPoint."
+  },
+  "pdfToPptxEmptyBody": "PDF trở thành một bản trình bày PowerPoint giống hệt nhau. Mỗi trang đều có dạng hình ảnh: bố cục trung thực nhưng văn bản sẽ không thể chỉnh sửa được trong PowerPoint.",
+  "@pdfToPptxEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil PDF vers PowerPoint. Le compromis annoncé — mise en page fidèle contre texte figé — est le point essentiel."
+  },
+  "pdfToPptxOpenFailed": "Không thể mở tệp PDF này: {detail}",
+  "@pdfToPptxOpenFailed": {
+    "description": "Bandeau d'erreur quand le PDF ne peut pas être lu. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "pdfToPptxConverting": "Đang chuyển đổi sang PowerPoint…",
+  "@pdfToPptxConverting": {
+    "description": "Titre de la boîte de progression pendant la conversion. Garder le caractère de suspension final."
+  },
+  "pdfToPptxPagesToSlides": "{count} trang > {count} trang trình bày",
+  "@pdfToPptxPagesToSlides": {
+    "description": "Sous-titre de la carte du fichier : autant de diapositives que de pages. Le chevron simple et non une flèche → : celle-ci manque au sous-ensemble des fontes embarquées. Voir test/l10n_coverage_test.dart.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pdfToPptxEmptyDocument": "Tài liệu trống",
+  "@pdfToPptxEmptyDocument": {
+    "description": "Sous-titre de la carte du fichier quand le PDF ne contient aucune page."
+  },
+  "qualityLabel": "Chất lượng",
+  "@qualityLabel": {
+    "description": "Intitulé du groupe de boutons qui choisit la résolution de sortie."
+  },
+  "pdfToPptxQualityHint": "Độ phân giải cao hơn mang lại các trang trình bày sắc nét hơn nhưng tệp lớn hơn đáng kể.",
+  "@pdfToPptxQualityHint": {
+    "description": "Explication sous le choix de qualité, dans le cas ordinaire."
+  },
+  "pdfToPptxHeavyWarning": "Cảnh báo: ở chất lượng cao, bản trình bày gồm {count} trang có thể nặng vài chục MB và mất nhiều thời gian để mở. Chọn Tiêu chuẩn khi nghi ngờ.",
+  "@pdfToPptxHeavyWarning": {
+    "description": "Avertissement affiché en rouge quand haute qualité et document long se combinent. « Standard » doit reprendre le libellé traduit de pptxQualityStandard. « Mo » est l'abréviation de méga-octet — employez celle de votre langue.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "goodToKnow": "Cụ thể là",
+  "@goodToKnow": {
+    "description": "Titre d'une carte d'information neutre."
+  },
+  "pdfToPptxCaveat": "Mỗi slide là một hình ảnh của trang: bố cục giống hệt PDF nhưng văn bản sẽ không thể chỉnh sửa được trong PowerPoint.\nĐể truy xuất văn bản có thể chỉnh sửa, thay vào đó hãy sử dụng “PDF to Word”.\nMột bản trình bày chỉ có một định dạng slide: nó được lấy từ trang đầu tiên và các trang có định dạng khác nhau được căn giữa trong đó.",
+  "@pdfToPptxCaveat": {
+    "description": "Trois limites de la conversion, une par ligne — gardez les sauts de ligne simples. « PDF vers Word » doit reprendre le libellé traduit de toolPdfToWord."
+  },
+  "pdfToPptxResultTitle": "Bản trình bày đã sẵn sàng",
+  "@pdfToPptxResultTitle": {
+    "description": "Titre de la carte de résultat, une fois la présentation produite."
+  },
+  "pdfToPptxResultDetail": "{name} — {count} slide · {size} · {quality}",
+  "@pdfToPptxResultDetail": {
+    "description": "Détail de la carte de résultat : nom, nombre de diapositives, poids et réglage de qualité. Le point médian est un séparateur typographique.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      },
+      "size": {
+        "type": "String"
+      },
+      "quality": {
+        "type": "String"
+      }
+    }
+  },
+  "notSavedYet": "Tệp chưa có trên thiết bị của bạn: hãy lưu hoặc chia sẻ tệp.",
+  "@notSavedYet": {
+    "description": "Rappel sous la carte de résultat : le fichier existe en mémoire mais n'a pas encore été écrit."
+  },
+  "pdfToPptxChangeQuality": "Thay đổi chất lượng",
+  "@pdfToPptxChangeQuality": {
+    "description": "Action secondaire qui revient au choix de résolution pour refaire la conversion."
+  },
+  "pdfToPptxConvertAction": "Chuyển đổi sang PowerPoint",
+  "@pdfToPptxConvertAction": {
+    "description": "Bouton de bas d'écran qui lance la conversion. Doit tenir sur une ligne."
+  },
+  "pdfToPptxExportWhat": "Bản trình bày PowerPoint · {count} slide",
+  "@pdfToPptxExportWhat": {
+    "description": "Description de ce qui vient d'être enregistré, dans la feuille de confirmation.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "formatLabel": "Định dạng",
+  "@formatLabel": {
+    "description": "Intitulé du groupe de boutons qui choisit le format de sortie."
+  },
+  "actionExport": "Xuất khẩu",
+  "@actionExport": {
+    "description": "Bouton qui lance la production des fichiers. Verbe à l'infinitif, court."
+  },
+  "imageQualityWeb": "Web (72 dpi)",
+  "@imageQualityWeb": {
+    "description": "Résolution la plus basse de l'export en images, destinée à l'écran. « dpi » est un sigle international, à conserver."
+  },
+  "imageQualityStandard": "Tiêu chuẩn (150 dpi)",
+  "@imageQualityStandard": {
+    "description": "Résolution intermédiaire de l'export en images. « dpi » est un sigle international, à conserver."
+  },
+  "imageQualityHigh": "Chất lượng cao (300 dpi)",
+  "@imageQualityHigh": {
+    "description": "Résolution la plus élevée de l'export en images, destinée à l'impression. « dpi » est un sigle international, à conserver."
+  },
+  "pdfToImagesEmptyTitle": "Một hình ảnh trên mỗi trang",
+  "@pdfToImagesEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil PDF vers Images."
+  },
+  "pdfToImagesEmptyBody": "Chọn một tệp PDF: mỗi trang sẽ xuất hiện dưới dạng hình ảnh, với độ nét mà bạn điều chỉnh sau đó.",
+  "@pdfToImagesEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil PDF vers Images."
+  },
+  "pdfToImagesNotAPdf": "{name}: Vui lòng chọn tệp PDF.",
+  "@pdfToImagesNotAPdf": {
+    "description": "Bandeau d'erreur quand le fichier choisi n'est pas un PDF.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "errorLoadFailed": "Không tải được: {detail}",
+  "@errorLoadFailed": {
+    "description": "Bandeau d'erreur quand le fichier ne peut pas être chargé. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "pdfToImagesProgress": "Đang xuất khẩu…",
+  "@pdfToImagesProgress": {
+    "description": "Titre de la boîte de progression pendant le rendu des images. Garder le caractère de suspension final."
+  },
+  "pdfToImagesExportWhat": "{count} hình ảnh {format}",
+  "@pdfToImagesExportWhat": {
+    "description": "Description de ce qui vient d'être enregistré : combien d'images, dans quel format. {format} vaut « JPG » ou « PNG » et ne se traduit pas.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "format": {
+        "type": "String"
+      }
+    }
+  },
+  "pdfaEmptyTitle": "Lưu trữ trong một thời gian dài",
+  "@pdfaEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Convertir en PDF/A."
+  },
+  "pdfaEmptyBody": "PDF/A là định dạng lưu trữ được nhiều cơ quan quản lý yêu cầu. Tài liệu được chuyển đổi mà không làm mất đi vẻ ngoài của nó.",
+  "@pdfaEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Convertir en PDF/A. « PDF/A » est une norme ISO, à conserver telle quelle."
+  },
+  "pdfaConformanceLevel": "Mức độ tuân thủ",
+  "@pdfaConformanceLevel": {
+    "description": "Intitulé du groupe de boutons qui choisit la variante de la norme."
+  },
+  "pdfaA1bDetail": "Mức độ nghiêm ngặt nhất và được chấp nhận rộng rãi nhất. Chọn khi nghi ngờ.",
+  "@pdfaA1bDetail": {
+    "description": "Explication de la variante PDF/A-1b, affichée sous le choix."
+  },
+  "pdfaA2bDetail": "Dựa trên PDF 1.7: nén hiệu quả hơn, tệp nhẹ hơn một chút.",
+  "@pdfaA2bDetail": {
+    "description": "Explication de la variante PDF/A-2b. « PDF 1.7 » est un numéro de version, à conserver."
+  },
+  "pdfaA3bDetail": "Giống như A-2b, nhưng cho phép đính kèm (thường được yêu cầu đối với hóa đơn điện tử).",
+  "@pdfaA3bDetail": {
+    "description": "Explication de la variante PDF/A-3b. « A-2b » désigne la variante précédente, à conserver."
+  },
+  "pdfaConvertingTo": "Chuyển đổi sang {level}…",
+  "@pdfaConvertingTo": {
+    "description": "Titre de la boîte de progression. {level} vaut « PDF/A-1b » et ne se traduit pas. Garder le caractère de suspension final.",
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "pdfaCaveatTitle": "Việc chuyển đổi thay đổi những gì",
+  "@pdfaCaveatTitle": {
+    "description": "Titre de la carte qui énumère les effets de la conversion."
+  },
+  "pdfaCaveat": "Mỗi trang được vẽ lại dưới dạng hình ảnh ở {dpi} dpi: văn bản trở thành hình ảnh, bố cục bị cố định. Đây chính là điều khiến file thực sự tuân thủ mà không phụ thuộc vào phông chữ của tài liệu gốc nhưng bù lại văn bản không còn có thể lựa chọn hoặc tìm kiếm được nữa, các liên kết và biểu mẫu biến mất và file trở nên nặng hơn.",
+  "@pdfaCaveat": {
+    "description": "Le compromis de la conversion PDF/A, dit avant qu'on la lance. « dpi » est un sigle international. Ne l'allégez pas.",
+    "placeholders": {
+      "dpi": {
+        "type": "int"
+      }
+    }
+  },
+  "pdfaOpenFailed": "Không thể mở tệp PDF này: {detail}",
+  "@pdfaOpenFailed": {
+    "description": "Bandeau d'erreur quand le PDF ne peut pas être lu. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "imagesToPdfEmptyTitle": "Hình ảnh, PDF",
+  "@imagesToPdfEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Images vers PDF."
+  },
+  "imagesToPdfEmptyBody": "JPG, PNG, WebP, HEIC - thêm hình ảnh của bạn và chúng sẽ được tập hợp theo thứ tự bạn chọn.",
+  "@imagesToPdfEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Images vers PDF. Les quatre noms de format ne se traduisent pas."
+  },
+  "imagesToPdfChoose": "Chọn hình ảnh",
+  "@imagesToPdfChoose": {
+    "description": "Bouton principal de l'écran vide de l'outil Images vers PDF."
+  },
+  "imagesToPdfAdd": "Thêm hình ảnh",
+  "@imagesToPdfAdd": {
+    "description": "Info-bulle du bouton flottant qui ajoute d'autres images à la liste."
+  },
+  "imagesToPdfRejected": "Đã bỏ qua (không phải hình ảnh): {names}",
+  "@imagesToPdfRejected": {
+    "description": "Bandeau signalant les fichiers écartés parce qu'ils ne sont pas des images. {names} est une liste de noms séparés par des virgules.",
+    "placeholders": {
+      "names": {
+        "type": "String"
+      }
+    }
+  },
+  "imagesToPdfBuilding": "Đang tạo tệp PDF...",
+  "@imagesToPdfBuilding": {
+    "description": "Titre de la boîte de progression pendant l'assemblage. Garder le caractère de suspension final."
+  },
+  "imagesToPdfBuildFailed": "Tạo không thành công: {detail}",
+  "@imagesToPdfBuildFailed": {
+    "description": "Bandeau d'erreur quand l'assemblage échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "imagesToPdfCreateAction": "Tạo tệp PDF ({count} hình ảnh)",
+  "@imagesToPdfCreateAction": {
+    "description": "Bouton de bas d'écran, avec le nombre d'images retenues entre parenthèses.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "actionRotate": "Quay",
+  "@actionRotate": {
+    "description": "Info-bulle du bouton qui fait tourner une image d'un quart de tour."
+  },
+  "actionRemove": "Rút",
+  "@actionRemove": {
+    "description": "Info-bulle du bouton qui retire un élément de la liste."
+  },
+  "htmlTitle": "HTML / trang web sang PDF",
+  "@htmlTitle": {
+    "description": "Titre de la barre de l'outil Page web vers PDF. « HTML » est un sigle, à conserver."
+  },
+  "htmlIntro": "Chuyển đổi một trang web hoặc mã HTML thành A4 PDF. Việc hiển thị được thực hiện bởi trình duyệt được tích hợp vào Android, do đó bố cục giống như bố cục in từ Chrome.",
+  "@htmlIntro": {
+    "description": "Consigne en tête de l'outil. « A4 » est un format de papier, « Android » et « Chrome » des marques — à conserver."
+  },
+  "htmlModeUrl": "Địa chỉ trang web",
+  "@htmlModeUrl": {
+    "description": "Onglet du sélecteur : fournir une adresse à télécharger. Court, il tient dans un segment."
+  },
+  "htmlModeCode": "mã HTML",
+  "@htmlModeCode": {
+    "description": "Onglet du sélecteur : coller du code source. Court, il tient dans un segment."
+  },
+  "htmlUrlLabel": "Địa chỉ trang",
+  "@htmlUrlLabel": {
+    "description": "Intitulé du champ où l'on saisit l'adresse."
+  },
+  "htmlUrlHint": "https://example.fr/article",
+  "@htmlUrlHint": {
+    "description": "Exemple d'adresse affiché en filigrane dans le champ. Adaptez le domaine à votre langue (« example.com », « beispiel.de »…)."
+  },
+  "htmlCodeLabel": "mã HTML",
+  "@htmlCodeLabel": {
+    "description": "Intitulé du champ où l'on colle le code source."
+  },
+  "htmlCodeHint": "<h1>Tiêu đề</h1>\n<p>Văn bản…</p>",
+  "@htmlCodeHint": {
+    "description": "Exemple de code affiché en filigrane. Les balises <h1> et <p> ne se traduisent pas ; seuls les mots entre elles le sont. Gardez le saut de ligne."
+  },
+  "htmlUrlBadScheme": "Địa chỉ phải bắt đầu bằng http:// hoặc https://.",
+  "@htmlUrlBadScheme": {
+    "description": "Bandeau d'erreur quand l'adresse ne porte pas de protocole. « http:// » et « https:// » ne se traduisent pas."
+  },
+  "htmlUrlIncomplete": "Nhập địa chỉ web đầy đủ.",
+  "@htmlUrlIncomplete": {
+    "description": "Bandeau d'erreur quand le champ ne contient que le protocole."
+  },
+  "htmlCodeEmpty": "Dán mã HTML để chuyển đổi.",
+  "@htmlCodeEmpty": {
+    "description": "Bandeau d'erreur quand le champ de code est vide."
+  },
+  "htmlLoadingUrl": "Đang tải trang và chuyển đổi…",
+  "@htmlLoadingUrl": {
+    "description": "Titre de la boîte de progression pendant le téléchargement puis le rendu. Garder le caractère de suspension final."
+  },
+  "htmlConverting": "Đang tiến hành chuyển đổi HTML...",
+  "@htmlConverting": {
+    "description": "Titre de la boîte de progression pendant le rendu du code collé. Garder le caractère de suspension final."
+  },
+  "htmlNetworkNotice": "Cần có kết nối internet: ​​đây là công cụ duy nhất trong ứng dụng phải tải xuống trang. Các trang yêu cầu đăng nhập tài khoản, biểu ngữ cookie hoặc nhiều JavaScript có thể không hoàn chỉnh.",
+  "@htmlNetworkNotice": {
+    "description": "Avertissement affiché en mode adresse. Il signale la seule exception au fonctionnement hors ligne de l'application — ne l'allégez pas. « JavaScript » est une marque, à conserver."
+  },
+  "htmlOfflineNotice": "HTML và CSS được viết trực tiếp vào trang sẽ được hiển thị ngoại tuyến. Mặt khác, hình ảnh, biểu định kiểu hoặc phông chữ được gọi bằng địa chỉ web bên ngoài yêu cầu kết nối internet.",
+  "@htmlOfflineNotice": {
+    "description": "Avertissement affiché en mode code. « HTML » et « CSS » sont des sigles, à conserver."
+  },
+  "watermarkEmptyTitle": "Thêm hình mờ",
+  "@watermarkEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Filigrane."
+  },
+  "watermarkEmptyBody": "Văn bản bạn chọn được lặp lại ở chế độ nền trên tất cả các trang — để đánh dấu tài liệu là bí mật hoặc bản nháp.",
+  "@watermarkEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Filigrane."
+  },
+  "watermarkEmptyNote": "Xuất khẩu miễn phí không giới hạn số lượng.",
+  "@watermarkEmptyNote": {
+    "description": "Note verte de l'écran vide, propre à cet outil. La note habituelle promet « sans filigrane » — sur l'outil qui en appose un, elle se contredirait. Ne réintroduisez donc pas la mention du filigrane ici."
+  },
+  "watermarkTextLabel": "Văn bản hình mờ",
+  "@watermarkTextLabel": {
+    "description": "Intitulé du champ où l'on saisit la mention à répéter."
+  },
+  "watermarkDefaultText": "BẢO MẬT",
+  "@watermarkDefaultText": {
+    "description": "Mention proposée par défaut dans le champ, en capitales. Employez le mot consacré de votre langue (anglais : CONFIDENTIAL, allemand : VERTRAULICH)."
+  },
+  "watermarkNeedText": "Nhập văn bản cho hình mờ.",
+  "@watermarkNeedText": {
+    "description": "Bandeau d'erreur quand on applique sans avoir saisi de texte."
+  },
+  "watermarkOpacity": "Độ mờ: {percent} %",
+  "@watermarkOpacity": {
+    "description": "Intitulé du curseur d'opacité. L'espace avant le signe % est une convention française ; collez-le au chiffre si votre langue le veut.",
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "watermarkRotation": "Góc quay: {degrees}°",
+  "@watermarkRotation": {
+    "description": "Intitulé du curseur d'inclinaison. Le signe degré est international.",
+    "placeholders": {
+      "degrees": {
+        "type": "int"
+      }
+    }
+  },
+  "watermarkFontSize": "Cỡ chữ: {points} pt",
+  "@watermarkFontSize": {
+    "description": "Intitulé du curseur de corps. « pt » est l'abréviation typographique de point, internationale.",
+    "placeholders": {
+      "points": {
+        "type": "int"
+      }
+    }
+  },
+  "watermarkColor": "Màu sắc",
+  "@watermarkColor": {
+    "description": "Intitulé de la rangée de pastilles de couleur."
+  },
+  "colorGrey": "Xám",
+  "@colorGrey": {
+    "description": "Nom d'une couleur de filigrane, sous sa pastille. Très court."
+  },
+  "colorRed": "Màu đỏ",
+  "@colorRed": {
+    "description": "Nom d'une couleur de filigrane, sous sa pastille. Très court."
+  },
+  "colorBlue": "Màu xanh da trời",
+  "@colorBlue": {
+    "description": "Nom d'une couleur de filigrane, sous sa pastille. Très court."
+  },
+  "colorBlack": "Đen",
+  "@colorBlack": {
+    "description": "Nom d'une couleur de filigrane, sous sa pastille. Très court."
+  },
+  "watermarkProgress": "Đang tiến hành áp dụng hình mờ…",
+  "@watermarkProgress": {
+    "description": "Titre de la boîte de progression. Garder le caractère de suspension final."
+  },
+  "percentValue": "{percent} %",
+  "@percentValue": {
+    "description": "Valeur en pourcentage affichée sur la pastille d'un curseur. L'espace avant le signe % est une convention française.",
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "degreesValue": "{degrees}°",
+  "@degreesValue": {
+    "description": "Valeur en degrés affichée sur la pastille d'un curseur.",
+    "placeholders": {
+      "degrees": {
+        "type": "int"
+      }
+    }
+  },
+  "pointsValue": "{points} điểm",
+  "@pointsValue": {
+    "description": "Valeur en points typographiques affichée sur la pastille d'un curseur.",
+    "placeholders": {
+      "points": {
+        "type": "int"
+      }
+    }
+  },
+  "pageNumbersEmptyTitle": "Đánh số trang",
+  "@pageNumbersEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Numéros de page."
+  },
+  "pageNumbersEmptyBody": "Chọn một tệp PDF, sau đó chọn vị trí và định dạng của các số sẽ được thêm vào trên mỗi trang.",
+  "@pageNumbersEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Numéros de page."
+  },
+  "positionLabel": "Chức vụ",
+  "@positionLabel": {
+    "description": "Intitulé du groupe de boutons qui choisit où poser le numéro."
+  },
+  "positionBottomCenter": "trung tâm dưới cùng",
+  "@positionBottomCenter": {
+    "description": "Position du numéro : en bas, au milieu. Très court, il tient dans une pastille."
+  },
+  "positionBottomRight": "Dưới cùng bên phải",
+  "@positionBottomRight": {
+    "description": "Position du numéro : en bas, à droite. Très court."
+  },
+  "positionTopCenter": "trung tâm hàng đầu",
+  "@positionTopCenter": {
+    "description": "Position du numéro : en haut, au milieu. Très court."
+  },
+  "positionTopRight": "Trên cùng bên phải",
+  "@positionTopRight": {
+    "description": "Position du numéro : en haut, à droite. Très court."
+  },
+  "pageNumbersFormatPlain": "N",
+  "@pageNumbersFormatPlain": {
+    "description": "Format de numérotation : le numéro seul. « N » est l'initiale de « numéro » — employez celle de votre langue si elle diffère (anglais : N, allemand : N)."
+  },
+  "pageNumbersFormatOfTotal": "N/tổng ​​cộng",
+  "@pageNumbersFormatOfTotal": {
+    "description": "Format de numérotation : le numéro suivi du total, « 3 / 12 ». Traduisez « total » ; « N » suit la même règle que ci-dessus. Doit rester très court, c'est un segment de bouton."
+  },
+  "pageNumbersStart": "Số bắt đầu",
+  "@pageNumbersStart": {
+    "description": "Intitulé du champ où l'on choisit à quel chiffre la numérotation commence."
+  },
+  "pageNumbersProgress": "Đang đánh số…",
+  "@pageNumbersProgress": {
+    "description": "Titre de la boîte de progression. Garder le caractère de suspension final."
+  },
+  "organizeEmptyTitle": "Tiếp tục một bản PDF trong tay",
+  "@organizeEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Organiser."
+  },
+  "organizeEmptyBody": "Mở tài liệu để chia nhỏ, trích xuất trang hoặc thay đổi thứ tự.",
+  "@organizeEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Organiser."
+  },
+  "organizeOpenFile": "Mở một tập tin",
+  "@organizeOpenFile": {
+    "description": "Bouton principal de l'écran vide de l'outil Organiser."
+  },
+  "organizeNothingToExport": "Không có trang nào để xuất.",
+  "@organizeNothingToExport": {
+    "description": "Bandeau d'erreur quand toutes les pages ont été écartées."
+  },
+  "organizePagesKept": "{kept} trang được giữ lại trong tổng số {total}",
+  "@organizePagesKept": {
+    "description": "Sous-titre du document : combien de pages restent retenues sur combien. Affiché seulement quand on en a écarté.",
+    "placeholders": {
+      "kept": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "organizePageExcluded": "Bị loại bỏ",
+  "@organizePageExcluded": {
+    "description": "Mention sous une rangée de page mise de côté. Accordé au féminin de « page ». Court."
+  },
+  "organizePageMoved": "Đã chuyển từ vị trí {from}",
+  "@organizePageMoved": {
+    "description": "Mention sous une rangée de page qu'on a fait glisser ailleurs. Accordé au féminin de « page ».",
+    "placeholders": {
+      "from": {
+        "type": "int"
+      }
+    }
+  },
+  "organizePageTitle": "Trang {number}",
+  "@organizePageTitle": {
+    "description": "Titre d'une rangée de la liste des pages.",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "organizeExcludePage": "Loại bỏ trang {number}",
+  "@organizeExcludePage": {
+    "description": "Info-bulle du bouton qui met une page de côté.",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "organizeIncludePage": "Bao gồm trang {number}",
+  "@organizeIncludePage": {
+    "description": "Info-bulle du bouton qui remet une page dans le document.",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "organizeMovePage": "Di chuyển trang {number}",
+  "@organizeMovePage": {
+    "description": "Étiquette d'accessibilité de la poignée de glissement. Lue à voix haute, jamais affichée.",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "organizeExtract": "Trích xuất",
+  "@organizeExtract": {
+    "description": "Bouton qui ne garde qu'une plage de pages. Verbe à l'infinitif, court."
+  },
+  "organizeSplit": "Chia",
+  "@organizeSplit": {
+    "description": "Bouton qui coupe le document en plusieurs fichiers. Verbe à l'infinitif, court."
+  },
+  "organizePreview": "Xem trước",
+  "@organizePreview": {
+    "description": "Bouton qui mène à l'écran d'aperçu. Court."
+  },
+  "organizeExtractTitle": "Trích xuất một phạm vi trang",
+  "@organizeExtractTitle": {
+    "description": "Titre de la boîte de dialogue de choix de la plage."
+  },
+  "organizeRangeLabel": "Trang {start} tới {end}",
+  "@organizeRangeLabel": {
+    "description": "Plage retenue par le curseur double de la boîte d'extraction.",
+    "placeholders": {
+      "start": {
+        "type": "int"
+      },
+      "end": {
+        "type": "int"
+      }
+    }
+  },
+  "organizeSplitTitle": "Chia thành nhiều tập tin",
+  "@organizeSplitTitle": {
+    "description": "Titre de la boîte de dialogue de division."
+  },
+  "organizeFileCount": "{count} tệp",
+  "@organizeFileCount": {
+    "description": "Nombre de fichiers que la division produira, sous le curseur.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "organizeSplitFailed": "Lỗi phân chia: {detail}",
+  "@organizeSplitFailed": {
+    "description": "Bandeau d'erreur quand la division échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "scanNoCamera": "Không có máy ảnh có sẵn trên thiết bị này.",
+  "@scanNoCamera": {
+    "description": "Message d'erreur quand l'appareil n'expose aucune caméra."
+  },
+  "scanCameraFailed": "Không thể khởi tạo camera: {detail}",
+  "@scanCameraFailed": {
+    "description": "Message d'erreur quand la caméra refuse de démarrer. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "scanCropToolbar": "Điều chỉnh",
+  "@scanCropToolbar": {
+    "description": "Titre de la barre du recadreur système d'Android, après la prise de vue. Court."
+  },
+  "scanCaptureFailed": "Chụp không thành công: {detail}",
+  "@scanCaptureFailed": {
+    "description": "Bandeau d'erreur quand la prise de vue échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "scanPermissionBody": "Cần có quyền truy cập vào máy ảnh để quét tài liệu.",
+  "@scanPermissionBody": {
+    "description": "Explication affichée quand l'autorisation d'accès à la caméra n'a pas été accordée."
+  },
+  "scanGrantPermission": "Cho phép máy ảnh",
+  "@scanGrantPermission": {
+    "description": "Bouton qui redemande l'autorisation d'accès à la caméra. Doit tenir sur une ligne."
+  },
+  "actionRetry": "Thử lại",
+  "@actionRetry": {
+    "description": "Bouton qui relance une opération après un échec. Court."
+  },
+  "scanNoPageYet": "Không có trang nào vào lúc này",
+  "@scanNoPageYet": {
+    "description": "Affiché dans la grille de relecture tant qu'aucune page n'a été photographiée."
+  },
+  "scanFinishAction": "Kết thúc · {count}",
+  "@scanFinishAction": {
+    "description": "Bouton qui clôt la capture, suivi du nombre de pages prises. Le point médian est un séparateur typographique. Doit tenir sur une ligne.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "signTitle": "Ký một bản PDF",
+  "@signTitle": {
+    "description": "Titre de la barre de l'outil Signer."
+  },
+  "signIntro": "Thêm chữ ký vẽ tay của bạn vào một trang PDF. Đó là một bản vẽ đơn giản được thêm vào tài liệu chứ không phải chữ ký điện tử được chứng nhận.",
+  "@signIntro": {
+    "description": "Consigne en tête de l'outil Signer. La dernière proposition est une réserve juridique — ne la retirez pas."
+  },
+  "signChooseSubtitle": "Chọn văn bản cần ký",
+  "@signChooseSubtitle": {
+    "description": "Sous-titre de la rangée qui ouvre la sélection de fichiers."
+  },
+  "signPickPage": "Chọn trang để ký.",
+  "@signPickPage": {
+    "description": "Consigne au-dessus de la bande de vignettes de pages."
+  },
+  "signDrawTitle": "Vẽ chữ ký của tôi",
+  "@signDrawTitle": {
+    "description": "Titre de l'étape où l'on trace la signature au doigt."
+  },
+  "signDrawBody": "Vẽ bằng ngón tay của bạn như trên giấy. Điều này sẽ đưa một thiết kế lên trang - nó không phải là chữ ký điện tử được chứng nhận.",
+  "@signDrawBody": {
+    "description": "Consigne de l'étape de tracé. La réserve juridique de la fin est délibérément répétée ici."
+  },
+  "signNeedDrawing": "Vẽ chữ ký trước khi tiếp tục.",
+  "@signNeedDrawing": {
+    "description": "Bandeau d'erreur quand on valide une zone de tracé restée vide."
+  },
+  "signClear": "Để xóa",
+  "@signClear": {
+    "description": "Bouton qui vide la zone de tracé. Court."
+  },
+  "signValidate": "Để xác thực",
+  "@signValidate": {
+    "description": "Bouton qui retient la signature tracée et passe au placement. Court."
+  },
+  "signPlaceBody": "Kéo chữ ký đến vị trí mong muốn trên trang, sau đó chạm vào Hoàn tất.",
+  "@signPlaceBody": {
+    "description": "Consigne de l'étape de placement. « Terminer » doit reprendre exactement le libellé traduit de actionFinish."
+  },
+  "signPageUnavailable": "Không thể hiển thị trang.",
+  "@signPageUnavailable": {
+    "description": "Affiché à la place de la page quand son rendu échoue."
+  },
+  "signProgress": "Đang thêm chữ ký…",
+  "@signProgress": {
+    "description": "Titre de la boîte de progression. Garder le caractère de suspension final."
+  },
+  "editTitle": "Chú thích một tài liệu",
+  "@editTitle": {
+    "description": "Titre de l'écran vide de l'outil Éditer."
+  },
+  "editEmptyBody": "Thêm văn bản hoặc đánh dấu các đoạn trực tiếp vào tệp PDF hiện có.",
+  "@editEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Éditer."
+  },
+  "editAddTextTitle": "Thêm văn bản",
+  "@editAddTextTitle": {
+    "description": "Titre de la boîte de dialogue de saisie d'une annotation."
+  },
+  "editTextHint": "Văn bản của bạn",
+  "@editTextHint": {
+    "description": "Texte d'invite du champ de saisie de l'annotation."
+  },
+  "editFontSize": "Kích thước văn bản: {size}",
+  "@editFontSize": {
+    "description": "Intitulé du curseur de corps, dans la boîte de saisie.",
+    "placeholders": {
+      "size": {
+        "type": "int"
+      }
+    }
+  },
+  "editNeedAnnotation": "Thêm ít nhất một chú thích trước khi hoàn tất.",
+  "@editNeedAnnotation": {
+    "description": "Bandeau d'erreur quand on termine sans avoir rien ajouté."
+  },
+  "editProgress": "Ứng dụng chú thích…",
+  "@editProgress": {
+    "description": "Titre de la boîte de progression. Garder le caractère de suspension final."
+  },
+  "editChooseOther": "Chọn một bản PDF khác",
+  "@editChooseOther": {
+    "description": "Info-bulle du bouton qui abandonne le document en cours."
+  },
+  "editUndoTooltip": "Hoàn tác chú thích cuối cùng",
+  "@editUndoTooltip": {
+    "description": "Info-bulle du bouton qui retire la dernière annotation posée. Il s'agit de défaire, pas d'interrompre."
+  },
+  "editModeText": "Chữ",
+  "@editModeText": {
+    "description": "Onglet du sélecteur : poser du texte. Très court, il tient dans un segment."
+  },
+  "editModeHighlight": "Điểm nổi bật",
+  "@editModeHighlight": {
+    "description": "Onglet du sélecteur : surligner un passage. Très court, il tient dans un segment."
+  },
+  "editPageUnavailable": "Không thể hiển thị trang này.",
+  "@editPageUnavailable": {
+    "description": "Affiché à la place de la page quand son rendu échoue."
+  },
+  "ocrEmptyTitle": "Làm cho văn bản có thể tìm kiếm được",
+  "@ocrEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil OCR."
+  },
+  "ocrEmptyBody": "Văn bản của bản PDF được quét sẽ được nhận dạng và thêm vào hình ảnh một cách vô hình. Trang này không thay đổi diện mạo.",
+  "@ocrEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil OCR. La seconde phrase est importante : elle rassure sur le fait que rien n'est abîmé."
+  },
+  "ocrWrongFormat": "Chọn một tệp PDF hoặc hình ảnh (JPG, PNG, v.v.).",
+  "@ocrWrongFormat": {
+    "description": "Bandeau d'erreur quand le fichier n'est ni un PDF ni une image. Les noms de format ne se traduisent pas."
+  },
+  "ocrProgress": "Đang tiến hành công nhận…",
+  "@ocrProgress": {
+    "description": "Titre de la boîte de progression pendant la reconnaissance de caractères. Garder le caractère de suspension final."
+  },
+  "ocrFailed": "Không nhận dạng được: {detail}",
+  "@ocrFailed": {
+    "description": "Bandeau d'erreur quand la reconnaissance échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "ocrRunAction": "Bắt đầu công nhận",
+  "@ocrRunAction": {
+    "description": "Bouton de bas d'écran qui lance l'OCR. Doit tenir sur une ligne."
+  },
+  "ocrResultTitle": "kết quả OCR",
+  "@ocrResultTitle": {
+    "description": "Titre de la barre de l'écran de résultat. « OCR » est un sigle international, à conserver."
+  },
+  "ocrResultBody": "{count} trang được phân tích. Bản PDF có thể tìm kiếm đã sẵn sàng và bạn cũng có thể sao chép tất cả văn bản được nhận dạng.",
+  "@ocrResultBody": {
+    "description": "Résumé de l'écran de résultat : combien de pages ont été traitées et ce qu'on peut faire ensuite.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "ocrCopyText": "Sao chép văn bản",
+  "@ocrCopyText": {
+    "description": "Bouton qui met tout le texte reconnu dans le presse-papiers."
+  },
+  "ocrTextCopied": "Đã sao chép văn bản.",
+  "@ocrTextCopied": {
+    "description": "Bandeau confirmant la copie dans le presse-papiers."
+  },
+  "redactIntro": "Ẩn vĩnh viễn các khu vực của tệp PDF (tên, địa chỉ, số tiền). Không giống như một hình chữ nhật màu đen đơn giản được đặt ở trên cùng, văn bản ẩn thực sự bị xóa khỏi tệp chứ không chỉ bị che: nó không thể được chọn hoặc sao chép nữa.",
+  "@redactIntro": {
+    "description": "Consigne en tête de l'outil Caviarder. La distinction avec un rectangle noir décoratif est le cœur de l'outil — ne l'allégez pas."
+  },
+  "redactChooseSubtitle": "Chọn tài liệu để biên tập lại",
+  "@redactChooseSubtitle": {
+    "description": "Sous-titre de la rangée qui ouvre la sélection de fichiers."
+  },
+  "redactCaveat": "Xin lưu ý: để xóa văn bản ẩn, mỗi trang của tài liệu sẽ được chuyển thành hình ảnh (200 ppi). Do đó, kết quả không còn là một tệp PDF mà từ đó văn bản có thể được chọn và tệp kết quả thường nặng hơn tệp gốc.",
+  "@redactCaveat": {
+    "description": "Le prix à payer du caviardage réel. « ppp » est l'abréviation française de « points par pouce » ; l'anglais et la plupart des langues emploient « dpi »."
+  },
+  "redactEmptyPdf": "Bản PDF này không chứa bất kỳ trang nào.",
+  "@redactEmptyPdf": {
+    "description": "Bandeau d'erreur quand le document choisi est vide."
+  },
+  "redactOpenFailed": "Không thể mở tệp PDF này (có thể nó được bảo vệ bằng mật khẩu): {detail}",
+  "@redactOpenFailed": {
+    "description": "Bandeau d'erreur quand le PDF ne peut pas être lu. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "redactPageRenderFailed": "Không thể hiển thị trang {number}: {detail}",
+  "@redactPageRenderFailed": {
+    "description": "Bandeau d'erreur quand une page ne peut pas être rendue à l'écran. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      },
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "redactUndoTooltip": "Hoàn tác vùng cuối cùng",
+  "@redactUndoTooltip": {
+    "description": "Info-bulle du bouton qui retire le dernier rectangle tracé. Il s'agit de défaire, pas d'interrompre."
+  },
+  "redactInstructions": "Kéo ngón tay của bạn trên trang để vẽ vùng cần ẩn. Văn bản bị che thực sự sẽ bị xóa khỏi tệp chứ không chỉ bị che.",
+  "@redactInstructions": {
+    "description": "Consigne au-dessus de la page, dans l'éditeur."
+  },
+  "redactPagePrevious": "Trang trước",
+  "@redactPagePrevious": {
+    "description": "Info-bulle de la flèche qui remonte d'une page."
+  },
+  "redactPageNext": "Trang tiếp theo",
+  "@redactPageNext": {
+    "description": "Info-bulle de la flèche qui descend d'une page."
+  },
+  "redactPager": "Trang {current} / {total}",
+  "@redactPager": {
+    "description": "Position dans le document, entre les deux flèches de navigation. Forme abrégée avec une barre oblique.",
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "redactNoZone": "Không có diện tích được vẽ",
+  "@redactNoZone": {
+    "description": "Affiché au-dessus des boutons tant qu'aucun rectangle n'a été tracé."
+  },
+  "redactZoneCount": "{count} khu vực cần ẩn",
+  "@redactZoneCount": {
+    "description": "Nombre de rectangles tracés, au-dessus des boutons.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "redactOtherPdf": "PDF khác",
+  "@redactOtherPdf": {
+    "description": "Bouton qui abandonne le document en cours pour en ouvrir un autre. Court."
+  },
+  "redactAction": "Biên tập lại",
+  "@redactAction": {
+    "description": "Bouton qui applique le caviardage. Verbe à l'infinitif, court ; employez le terme consacré de votre langue."
+  },
+  "redactProgress": "Đang trong quá trình chỉnh sửa…",
+  "@redactProgress": {
+    "description": "Titre de la boîte de progression. Garder le caractère de suspension final."
+  },
+  "cropEmptyTitle": "Cắt lề",
+  "@cropEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Rogner."
+  },
+  "cropEmptyBody": "Chọn một tệp PDF, sau đó kéo ngón tay của bạn qua bản xem trước để phác thảo khu vực bạn muốn giữ lại.",
+  "@cropEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Rogner."
+  },
+  "cropTooSmall": "Vùng được chọn quá nhỏ.",
+  "@cropTooSmall": {
+    "description": "Bandeau d'erreur quand la zone tracée au doigt est trop réduite pour donner une page."
+  },
+  "cropProgress": "Đang cắt tỉa…",
+  "@cropProgress": {
+    "description": "Titre de la boîte de progression. Garder le caractère de suspension final."
+  },
+  "cropFailed": "Cắt tỉa không thành công: {detail}",
+  "@cropFailed": {
+    "description": "Bandeau d'erreur quand le recadrage échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "cropKeptArea": "Khu bảo tồn",
+  "@cropKeptArea": {
+    "description": "Intitulé au-dessus de l'aperçu sur lequel on trace la zone à garder."
+  },
+  "cropDimensions": "{width} × {height} mm ({widthPercent} % × {heightPercent} %)",
+  "@cropDimensions": {
+    "description": "Dimensions de la zone tracée, en millimètres puis en proportion de la page. Le signe × est le symbole de multiplication. L'espace avant le signe % est une convention française.",
+    "placeholders": {
+      "width": {
+        "type": "int"
+      },
+      "height": {
+        "type": "int"
+      },
+      "widthPercent": {
+        "type": "int"
+      },
+      "heightPercent": {
+        "type": "int"
+      }
+    }
+  },
+  "cropFullPage": "Toàn trang",
+  "@cropFullPage": {
+    "description": "Bouton qui remet la zone aux dimensions de la page entière."
+  },
+  "cropAllPages": "Áp dụng cho tất cả các trang",
+  "@cropAllPages": {
+    "description": "Intitulé de l'interrupteur qui étend le recadrage au document entier."
+  },
+  "cropAllPagesOn": "Khu vực tương tự được cắt ra trên mỗi trang.",
+  "@cropAllPagesOn": {
+    "description": "Sous-titre de l'interrupteur quand il est activé."
+  },
+  "cropAllPagesOff": "Chỉ có trang 1 bị cắt, các trang còn lại giữ nguyên.",
+  "@cropAllPagesOff": {
+    "description": "Sous-titre de l'interrupteur quand il est désactivé."
+  },
+  "cropCaveat": "Việc cắt xén làm giảm kích thước của trang: nội dung bên ngoài khu vực không còn được hiển thị hoặc in.",
+  "@cropCaveat": {
+    "description": "Ce que le recadrage fait au document, dit avant qu'on l'applique."
+  },
+  "cropAction": "Mùa vụ",
+  "@cropAction": {
+    "description": "Bouton de bas d'écran qui lance le recadrage. Verbe à l'infinitif, court."
+  },
+  "compareTitle": "So sánh hai tệp PDF",
+  "@compareTitle": {
+    "description": "Titre de la barre de l'outil Comparer."
+  },
+  "compareEmptyTitle": "Điều gì đã thay đổi",
+  "@compareEmptyTitle": {
+    "description": "Titre de l'écran vide de l'outil Comparer."
+  },
+  "compareEmptyBody": "Chọn hai phiên bản của cùng một tệp PDF. Các đoạn được thêm và bị xóa sẽ được đặt cạnh nhau, theo từng trang.",
+  "@compareEmptyBody": {
+    "description": "Consigne de l'écran vide de l'outil Comparer."
+  },
+  "compareSlotA": "Tập tin A",
+  "@compareSlotA": {
+    "description": "Intitulé de la première case : la version de départ. La lettre A sert de repère, gardez-la."
+  },
+  "compareSlotB": "Tệp B",
+  "@compareSlotB": {
+    "description": "Intitulé de la seconde case : la version à confronter. La lettre B sert de repère, gardez-la."
+  },
+  "compareAction": "So sánh",
+  "@compareAction": {
+    "description": "Bouton qui lance la comparaison. Verbe à l'infinitif, court."
+  },
+  "compareProgress": "Đang tiến hành so sánh…",
+  "@compareProgress": {
+    "description": "Titre de la boîte de progression. Garder le caractère de suspension final."
+  },
+  "compareFailed": "So sánh không thành công: {detail}",
+  "@compareFailed": {
+    "description": "Bandeau d'erreur quand la comparaison échoue. {detail} est un message technique non traduit.",
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "compareChangedPages": "{changed} trang khác nhau trên {total}",
+  "@compareChangedPages": {
+    "description": "Résumé de la comparaison : combien de pages diffèrent, sur combien au total. Accordez le verbe au nombre.",
+    "placeholders": {
+      "changed": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "compareNoDifference": "Không có sự khác biệt được phát hiện giữa hai tập tin.",
+  "@compareNoDifference": {
+    "description": "Affiché quand les deux documents sont identiques mot pour mot."
+  },
+  "comparePageHeading": "Trang {number}",
+  "@comparePageHeading": {
+    "description": "Titre d'une carte de résultat, pour une page qui a changé.",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "organizeFilesCreated": "Đã tạo {count} tệp",
+  "@organizeFilesCreated": {
+    "description": "Titre de la feuille de résultats de la division : combien de fichiers en sont sortis.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "organizePartTitle": "Phần {number}",
+  "@organizePartTitle": {
+    "description": "Nom d'un des fichiers issus de la division, dans la liste des résultats et dans la feuille de confirmation.",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  }
+}

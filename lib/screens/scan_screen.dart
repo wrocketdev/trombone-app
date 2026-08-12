@@ -10,6 +10,7 @@ import '../core/pdf/converters.dart';
 import '../core/pdf/pdf_engine.dart';
 import '../models/page_selection.dart';
 import '../models/source_doc.dart';
+import '../l10n/l10n.dart';
 import '../widgets/progress_dialog.dart';
 import 'preview_screen.dart';
 
@@ -55,13 +56,12 @@ class _ScanScreenState extends State<ScanScreen> {
   }
 
   Future<void> _initCamera() async {
+    final L l10n = context.l10n;
     try {
       final cameras = await availableCameras();
       if (cameras.isEmpty) {
         if (mounted) {
-          setState(
-            () => _cameraError = 'Aucune caméra disponible sur cet appareil.',
-          );
+          setState(() => _cameraError = l10n.scanNoCamera);
         }
         return;
       }
@@ -78,9 +78,7 @@ class _ScanScreenState extends State<ScanScreen> {
       setState(() => _controller = controller);
     } catch (e) {
       if (mounted) {
-        setState(
-          () => _cameraError = 'Impossible d\'initialiser la caméra : $e',
-        );
+        setState(() => _cameraError = l10n.scanCameraFailed('$e'));
       }
     }
   }
@@ -90,13 +88,17 @@ class _ScanScreenState extends State<ScanScreen> {
     if (controller == null || !controller.value.isInitialized || _capturing) {
       return;
     }
+    final L l10n = context.l10n;
     setState(() => _capturing = true);
     try {
       final photo = await controller.takePicture();
       final cropped = await ImageCropper().cropImage(
         sourcePath: photo.path,
         uiSettings: [
-          AndroidUiSettings(toolbarTitle: 'Ajuster', lockAspectRatio: false),
+          AndroidUiSettings(
+            toolbarTitle: l10n.scanCropToolbar,
+            lockAspectRatio: false,
+          ),
         ],
       );
       if (cropped == null) return;
@@ -108,7 +110,7 @@ class _ScanScreenState extends State<ScanScreen> {
       if (mounted) {
         ScaffoldMessenger.of(
           context,
-        ).showSnackBar(SnackBar(content: Text('Échec de la capture : $e')));
+        ).showSnackBar(SnackBar(content: Text(l10n.scanCaptureFailed('$e'))));
       }
     } finally {
       if (mounted) setState(() => _capturing = false);
@@ -130,11 +132,12 @@ class _ScanScreenState extends State<ScanScreen> {
 
   Future<void> _finish() async {
     if (_pages.isEmpty) return;
+    final L l10n = context.l10n;
     final List<SourceDoc> docs = [];
     try {
       final bytes = await runWithProgressDialog<Uint8List>(
         context: context,
-        title: 'Création du PDF…',
+        title: l10n.imagesToPdfBuilding,
         task: (token, onProgress) async {
           final int totalSteps = _pages.length * 2;
           for (var i = 0; i < _pages.length; i++) {
@@ -174,7 +177,7 @@ class _ScanScreenState extends State<ScanScreen> {
       if (mounted) {
         ScaffoldMessenger.of(
           context,
-        ).showSnackBar(SnackBar(content: Text('Échec : $e')));
+        ).showSnackBar(SnackBar(content: Text(l10n.errorGeneric('$e'))));
       }
     } finally {
       for (final d in docs) {
@@ -186,7 +189,7 @@ class _ScanScreenState extends State<ScanScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Scanner un document')),
+      appBar: AppBar(title: Text(context.l10n.toolScan)),
       body: _buildBody(),
     );
   }
@@ -220,15 +223,15 @@ class _ScanScreenState extends State<ScanScreen> {
               children: [
                 const Icon(Icons.photo_camera_outlined, size: 40),
                 const SizedBox(height: 12),
-                const Text(
-                  'L\'accès à l\'appareil photo est nécessaire pour scanner un document.',
+                Text(
+                  context.l10n.scanPermissionBody,
                   textAlign: TextAlign.center,
                 ),
                 const SizedBox(height: 16),
                 FilledButton.icon(
                   onPressed: _init,
                   icon: const Icon(Icons.lock_open),
-                  label: const Text('Autoriser l\'appareil photo', maxLines: 1),
+                  label: Text(context.l10n.scanGrantPermission, maxLines: 1),
                 ),
               ],
             ),
@@ -258,7 +261,7 @@ class _ScanScreenState extends State<ScanScreen> {
                     _initCamera();
                   },
                   icon: const Icon(Icons.refresh),
-                  label: const Text('Réessayer', maxLines: 1),
+                  label: Text(context.l10n.actionRetry, maxLines: 1),
                 ),
               ],
             ),
@@ -280,7 +283,7 @@ class _ScanScreenState extends State<ScanScreen> {
             child: Chip(
               backgroundColor: Colors.black54,
               label: Text(
-                '${_pages.length} page(s)',
+                context.l10n.pageCount(_pages.length),
                 style: const TextStyle(color: Colors.white),
               ),
             ),
@@ -307,7 +310,7 @@ class _ScanScreenState extends State<ScanScreen> {
       children: [
         Expanded(
           child: _pages.isEmpty
-              ? const Center(child: Text('Aucune page pour le moment.'))
+              ? Center(child: Text(context.l10n.scanNoPageYet))
               : GridView.builder(
                   padding: const EdgeInsets.all(12),
                   gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
@@ -333,7 +336,7 @@ class _ScanScreenState extends State<ScanScreen> {
                   child: OutlinedButton.icon(
                     onPressed: _backToCamera,
                     icon: const Icon(Icons.camera_alt_outlined),
-                    label: const Text('Ajouter', maxLines: 1),
+                    label: Text(context.l10n.actionAdd, maxLines: 1),
                   ),
                 ),
                 const SizedBox(width: 8),
@@ -341,7 +344,10 @@ class _ScanScreenState extends State<ScanScreen> {
                   child: FilledButton.icon(
                     onPressed: _pages.isEmpty ? null : _finish,
                     icon: const Icon(Icons.check),
-                    label: Text('Terminer · ${_pages.length}', maxLines: 1),
+                    label: Text(
+                      context.l10n.scanFinishAction(_pages.length),
+                      maxLines: 1,
+                    ),
                   ),
                 ),
               ],

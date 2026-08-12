@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 
 import '../core/files/file_utils.dart';
 import '../core/pdf/edit_engine.dart';
+import '../l10n/l10n.dart';
 import '../widgets/progress_dialog.dart';
 import 'preview_screen.dart';
 import '../widgets/ui/empty_state.dart';
@@ -52,9 +53,9 @@ class _EditScreenState extends State<EditScreen> {
       final ext = (file.extension ?? file.name.split('.').last).toLowerCase();
       if (ext != 'pdf') {
         if (mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(content: Text('Veuillez choisir un fichier PDF.')),
-          );
+          ScaffoldMessenger.of(
+            context,
+          ).showSnackBar(SnackBar(content: Text(context.l10n.errorPickPdf)));
         }
         return;
       }
@@ -75,9 +76,9 @@ class _EditScreenState extends State<EditScreen> {
       _loadPage(0);
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(
-          context,
-        ).showSnackBar(SnackBar(content: Text('Impossible d\'ouvrir : $e')));
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text(context.l10n.errorOpenFailedShort('$e'))),
+        );
       }
     } finally {
       if (mounted) setState(() => _busy = false);
@@ -173,7 +174,7 @@ class _EditScreenState extends State<EditScreen> {
         return StatefulBuilder(
           builder: (dialogContext, setDialogState) {
             return AlertDialog(
-              title: const Text('Ajouter du texte'),
+              title: Text(context.l10n.editAddTextTitle),
               content: Column(
                 mainAxisSize: MainAxisSize.min,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -181,10 +182,12 @@ class _EditScreenState extends State<EditScreen> {
                   TextField(
                     controller: controller,
                     autofocus: true,
-                    decoration: const InputDecoration(hintText: 'Votre texte'),
+                    decoration: InputDecoration(
+                      hintText: context.l10n.editTextHint,
+                    ),
                   ),
                   const SizedBox(height: 16),
-                  Text('Taille du texte : ${fontSize.round()}'),
+                  Text(context.l10n.editFontSize(fontSize.round())),
                   Slider(
                     value: fontSize,
                     min: 10,
@@ -198,13 +201,13 @@ class _EditScreenState extends State<EditScreen> {
               actions: [
                 TextButton(
                   onPressed: () => Navigator.of(dialogContext).pop(),
-                  child: const Text('Annuler'),
+                  child: Text(context.l10n.actionCancel),
                 ),
                 FilledButton(
                   onPressed: () => Navigator.of(
                     dialogContext,
                   ).pop({'text': controller.text.trim(), 'fontSize': fontSize}),
-                  child: const Text('Ajouter'),
+                  child: Text(context.l10n.actionAdd),
                 ),
               ],
             );
@@ -243,17 +246,15 @@ class _EditScreenState extends State<EditScreen> {
     final bytes = _pdfBytes;
     if (bytes == null) return;
     if (_order.isEmpty) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Ajoutez au moins une annotation avant de terminer.'),
-        ),
-      );
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(SnackBar(content: Text(context.l10n.editNeedAnnotation)));
       return;
     }
     try {
       final result = await runWithProgressDialog<Uint8List>(
         context: context,
-        title: 'Application des annotations…',
+        title: context.l10n.editProgress,
         task: (_, _) => EditEngine.apply(bytes, _annotationsByPage),
       );
       if (result == null || !mounted) return;
@@ -267,26 +268,27 @@ class _EditScreenState extends State<EditScreen> {
       );
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(
-          context,
-        ).showSnackBar(SnackBar(content: Text('Échec : $e')));
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text(context.l10n.errorGeneric('$e'))),
+        );
       }
     }
   }
 
   @override
   Widget build(BuildContext context) {
+    final L l10n = context.l10n;
     return Scaffold(
       appBar: AppBar(
         title: Text(
           _pdfBytes == null
-              ? 'Éditer PDF'
-              : 'Page ${_pageIndex + 1} / $_pageCount',
+              ? l10n.toolEdit
+              : l10n.redactPager(_pageIndex + 1, _pageCount),
         ),
         actions: [
           if (_pdfBytes != null)
             IconButton(
-              tooltip: 'Choisir un autre PDF',
+              tooltip: l10n.editChooseOther,
               icon: const Icon(Icons.folder_open_outlined),
               onPressed: _busy ? null : _pickFile,
             ),
@@ -304,7 +306,7 @@ class _EditScreenState extends State<EditScreen> {
                       isLabelVisible: _totalAnnotations > 0,
                       label: Text('$_totalAnnotations', maxLines: 1),
                       child: IconButton.filledTonal(
-                        tooltip: 'Annuler la dernière annotation',
+                        tooltip: l10n.editUndoTooltip,
                         icon: const Icon(Icons.undo),
                         onPressed: _order.isEmpty ? null : _undo,
                       ),
@@ -314,7 +316,7 @@ class _EditScreenState extends State<EditScreen> {
                       child: FilledButton.icon(
                         onPressed: _finish,
                         icon: const Icon(Icons.check),
-                        label: const Text('Terminer', maxLines: 1),
+                        label: Text(l10n.actionFinish, maxLines: 1),
                       ),
                     ),
                   ],
@@ -325,14 +327,13 @@ class _EditScreenState extends State<EditScreen> {
   }
 
   Widget _buildEmptyState() {
+    final L l10n = context.l10n;
     return EmptyState(
       icon: Icons.edit_note_outlined,
-      title: 'Annoter un document',
-      body:
-          'Ajoutez du texte ou surlignez des passages directement sur '
-          'un PDF existant.',
-      accepts: const ['PDF'],
-      actionLabel: 'Choisir un PDF',
+      title: l10n.editTitle,
+      body: l10n.editEmptyBody,
+      accepts: [l10n.formatPdf],
+      actionLabel: l10n.actionChoosePdf,
       onAction: _pickFile,
       busy: _busy,
     );
@@ -353,16 +354,16 @@ class _EditScreenState extends State<EditScreen> {
                 ),
               ),
               SegmentedButton<_EditMode>(
-                segments: const [
+                segments: [
                   ButtonSegment(
                     value: _EditMode.text,
-                    label: Text('Texte', maxLines: 1),
-                    icon: Icon(Icons.text_fields),
+                    label: Text(context.l10n.editModeText, maxLines: 1),
+                    icon: const Icon(Icons.text_fields),
                   ),
                   ButtonSegment(
                     value: _EditMode.highlight,
-                    label: Text('Surligner', maxLines: 1),
-                    icon: Icon(Icons.border_color),
+                    label: Text(context.l10n.editModeHighlight, maxLines: 1),
+                    icon: const Icon(Icons.border_color),
                   ),
                 ],
                 selected: {_mode},
@@ -382,7 +383,7 @@ class _EditScreenState extends State<EditScreen> {
                     return const CircularProgressIndicator();
                   }
                   if (snap.hasError || snap.data == null) {
-                    return const Text('Impossible d\'afficher cette page.');
+                    return Text(context.l10n.editPageUnavailable);
                   }
                   return _buildPageCanvas(snap.data!);
                 },
@@ -401,7 +402,7 @@ class _EditScreenState extends State<EditScreen> {
                     ? () => _loadPage(_pageIndex - 1)
                     : null,
               ),
-              Text('Page ${_pageIndex + 1} / $_pageCount'),
+              Text(context.l10n.redactPager(_pageIndex + 1, _pageCount)),
               IconButton(
                 icon: const Icon(Icons.chevron_right),
                 onPressed: _pageIndex < _pageCount - 1

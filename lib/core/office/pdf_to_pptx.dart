@@ -17,15 +17,6 @@ extension PptxQualityX on PptxQuality {
         return 220;
     }
   }
-
-  String get label {
-    switch (this) {
-      case PptxQuality.standard:
-        return 'Standard (150 dpi)';
-      case PptxQuality.high:
-        return 'Haute (220 dpi)';
-    }
-  }
 }
 
 /// Convertit un PDF en presentation PowerPoint : une diapositive par page,

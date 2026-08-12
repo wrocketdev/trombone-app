@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 
 import '../core/files/file_utils.dart';
 import '../core/pdf/redact_engine.dart';
+import '../l10n/l10n.dart';
 import '../core/pdf/security_engine.dart';
 import '../widgets/progress_dialog.dart';
 import 'preview_screen.dart';
@@ -59,13 +60,14 @@ class _RedactScreenState extends State<RedactScreen> {
   }
 
   Future<void> _pick() async {
+    final L l10n = context.l10n;
     setState(() => _busy = true);
     try {
       final PickedPdf? picked = await SecurityEngine.pickPdfFile();
       if (picked == null) return;
       final int count = await FileUtils.pdfPageCount(picked.bytes);
       if (count == 0) {
-        _showError('Ce PDF ne contient aucune page.');
+        _showError(l10n.redactEmptyPdf);
         return;
       }
       if (!mounted) return;
@@ -80,10 +82,7 @@ class _RedactScreenState extends State<RedactScreen> {
       });
       await _loadPage(0);
     } catch (e) {
-      _showError(
-        'Impossible d\'ouvrir ce PDF (il est peut-être protégé par mot de '
-        'passe) : $e',
-      );
+      _showError(l10n.redactOpenFailed('$e'));
     } finally {
       if (mounted) setState(() => _busy = false);
     }
@@ -108,7 +107,7 @@ class _RedactScreenState extends State<RedactScreen> {
       if (!mounted) return;
       setState(() => _pages[index] = _RenderedPage(bytes, aspect));
     } catch (e) {
-      _showError('Affichage de la page ${index + 1} impossible : $e');
+      _showError(context.l10n.redactPageRenderFailed(index + 1, '$e'));
     }
   }
 
@@ -165,6 +164,7 @@ class _RedactScreenState extends State<RedactScreen> {
   Future<void> _apply() async {
     final PickedPdf? picked = _picked;
     if (picked == null || _placed.isEmpty) return;
+    final L l10n = context.l10n;
     final Map<int, List<RedactRect>> byPage = <int, List<RedactRect>>{};
     for (final _PlacedRect placed in _placed) {
       byPage
@@ -174,7 +174,7 @@ class _RedactScreenState extends State<RedactScreen> {
     try {
       final Uint8List? bytes = await runWithProgressDialog<Uint8List>(
         context: context,
-        title: 'Caviardage en cours…',
+        title: l10n.redactProgress,
         task: (token, onProgress) => RedactEngine.redact(
           picked.bytes,
           rectsByPage: byPage,
@@ -192,20 +192,21 @@ class _RedactScreenState extends State<RedactScreen> {
         ),
       );
     } catch (e) {
-      _showError('Échec : $e');
+      _showError(l10n.errorGeneric('$e'));
     }
   }
 
   @override
   Widget build(BuildContext context) {
     final bool hasFile = _picked != null;
+    final L l10n = context.l10n;
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Caviarder un PDF'),
+        title: Text(l10n.toolRedact),
         actions: [
           if (hasFile)
             IconButton(
-              tooltip: 'Annuler la dernière zone',
+              tooltip: l10n.redactUndoTooltip,
               onPressed: _placed.isEmpty ? null : _undo,
               icon: Badge.count(
                 count: _placed.length,
@@ -221,35 +222,28 @@ class _RedactScreenState extends State<RedactScreen> {
   }
 
   Widget _pickBody() {
+    final L l10n = context.l10n;
     return ListView(
       padding: const EdgeInsets.all(16),
       children: [
-        const Text(
-          'Masquez définitivement des zones d\'un PDF (noms, adresses, '
-          'montants). Contrairement à un simple rectangle noir posé par-dessus, '
-          'le texte masqué est réellement supprimé du fichier, pas seulement '
-          'recouvert : il ne peut plus être sélectionné ni copié.',
-        ),
+        Text(l10n.redactIntro),
         const SizedBox(height: 20),
         Card(
           child: ListTile(
             leading: const Icon(Icons.upload_file),
-            title: const Text('Choisir un PDF'),
-            subtitle: const Text('Sélectionnez le document à caviarder'),
+            title: Text(l10n.actionChoosePdf),
+            subtitle: Text(l10n.redactChooseSubtitle),
             onTap: _busy ? null : _pick,
           ),
         ),
         const SizedBox(height: 20),
         Card(
           color: Theme.of(context).colorScheme.surfaceContainerHighest,
-          child: const Padding(
-            padding: EdgeInsets.all(16),
+          child: Padding(
+            padding: const EdgeInsets.all(16),
             child: Text(
-              'À savoir : pour supprimer le texte caché, chaque page du '
-              'document est reconvertie en image (200 ppp). Le résultat n\'est '
-              'donc plus un PDF dont on peut sélectionner le texte, et le '
-              'fichier obtenu est généralement plus lourd que l\'original.',
-              style: TextStyle(fontSize: 13),
+              l10n.redactCaveat,
+              style: const TextStyle(fontSize: 13),
             ),
           ),
         ),
@@ -276,11 +270,7 @@ class _RedactScreenState extends State<RedactScreen> {
                 style: Theme.of(context).textTheme.titleSmall,
               ),
               const SizedBox(height: 4),
-              const Text(
-                'Faites glisser le doigt sur la page pour tracer une zone à '
-                'masquer. Le texte couvert sera réellement supprimé du '
-                'fichier, pas seulement recouvert.',
-              ),
+              Text(context.l10n.redactInstructions),
             ],
           ),
         ),
@@ -387,16 +377,16 @@ class _RedactScreenState extends State<RedactScreen> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           IconButton(
-            tooltip: 'Page précédente',
+            tooltip: context.l10n.redactPagePrevious,
             onPressed: _pageIndex > 0 ? () => _goToPage(_pageIndex - 1) : null,
             icon: const Icon(Icons.chevron_left),
           ),
           Text(
-            'Page ${_pageIndex + 1} / $_pageCount',
+            context.l10n.redactPager(_pageIndex + 1, _pageCount),
             style: Theme.of(context).textTheme.titleSmall,
           ),
           IconButton(
-            tooltip: 'Page suivante',
+            tooltip: context.l10n.redactPageNext,
             onPressed: _pageIndex < _pageCount - 1
                 ? () => _goToPage(_pageIndex + 1)
                 : null,
@@ -408,6 +398,7 @@ class _RedactScreenState extends State<RedactScreen> {
   }
 
   Widget _bottomBar() {
+    final L l10n = context.l10n;
     final int count = _placed.length;
     return SafeArea(
       child: Padding(
@@ -416,11 +407,7 @@ class _RedactScreenState extends State<RedactScreen> {
           mainAxisSize: MainAxisSize.min,
           children: [
             Text(
-              count == 0
-                  ? 'Aucune zone tracée'
-                  : count == 1
-                  ? '1 zone à masquer'
-                  : '$count zones à masquer',
+              count == 0 ? l10n.redactNoZone : l10n.redactZoneCount(count),
               style: Theme.of(context).textTheme.labelMedium,
             ),
             const SizedBox(height: 8),
@@ -430,7 +417,7 @@ class _RedactScreenState extends State<RedactScreen> {
                   child: OutlinedButton.icon(
                     onPressed: _busy ? null : _pick,
                     icon: const Icon(Icons.folder_open),
-                    label: const Text('Autre PDF', maxLines: 1),
+                    label: Text(l10n.redactOtherPdf, maxLines: 1),
                   ),
                 ),
                 const SizedBox(width: 12),
@@ -438,7 +425,7 @@ class _RedactScreenState extends State<RedactScreen> {
                   child: FilledButton.icon(
                     onPressed: (_busy || count == 0) ? null : _apply,
                     icon: const Icon(Icons.format_color_fill),
-                    label: const Text('Caviarder', maxLines: 1),
+                    label: Text(l10n.redactAction, maxLines: 1),
                   ),
                 ),
               ],

@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 
 import '../core/files/file_utils.dart';
 import '../core/pdf/pdf_engine.dart';
+import '../l10n/l10n.dart';
 import '../models/page_selection.dart';
 import '../models/source_doc.dart';
 import '../widgets/progress_dialog.dart';
@@ -59,6 +60,7 @@ class _ImagesToPdfScreenState extends State<ImagesToPdfScreen> {
   }
 
   Future<void> _addFiles() async {
+    final L l10n = context.l10n;
     setState(() => _busy = true);
     try {
       final files = await FileUtils.pickFiles();
@@ -75,11 +77,11 @@ class _ImagesToPdfScreenState extends State<ImagesToPdfScreen> {
           setState(() => _docs.add(doc));
         } catch (e) {
           if (!mounted) return;
-          _showError('${f.name} : ${_friendlyError(e)}');
+          _showError(l10n.errorOnFile(f.name, _friendlyError(e)));
         }
       }
       if (rejected.isNotEmpty && mounted) {
-        _showError('Ignoré (pas une image) : ${rejected.join(', ')}');
+        _showError(l10n.imagesToPdfRejected(rejected.join(', ')));
       }
     } finally {
       if (mounted) setState(() => _busy = false);
@@ -94,13 +96,14 @@ class _ImagesToPdfScreenState extends State<ImagesToPdfScreen> {
 
   Future<void> _build() async {
     if (_docs.isEmpty) return;
+    final L l10n = context.l10n;
     final List<PageSelection> selections = [
       for (final doc in _docs) PageSelection(source: doc, pageIndex: 0),
     ];
     try {
       final bytes = await runWithProgressDialog<Uint8List>(
         context: context,
-        title: 'Création du PDF…',
+        title: l10n.imagesToPdfBuilding,
         task: (token, onProgress) => PdfEngine.buildPdf(
           selections,
           onProgress: onProgress,
@@ -115,14 +118,17 @@ class _ImagesToPdfScreenState extends State<ImagesToPdfScreen> {
         ),
       );
     } catch (e) {
-      if (mounted) _showError('Échec de la création : ${_friendlyError(e)}');
+      if (mounted) {
+        _showError(l10n.imagesToPdfBuildFailed(_friendlyError(e)));
+      }
     }
   }
 
   @override
   Widget build(BuildContext context) {
+    final L l10n = context.l10n;
     return Scaffold(
-      appBar: AppBar(title: const Text('Images vers PDF')),
+      appBar: AppBar(title: Text(l10n.toolImagesToPdf)),
       body: _docs.isEmpty
           ? _EmptyState(busy: _busy, onAdd: _addFiles)
           : ReorderableListView.builder(
@@ -142,7 +148,7 @@ class _ImagesToPdfScreenState extends State<ImagesToPdfScreen> {
           ? null
           : FloatingActionButton(
               onPressed: _busy ? null : _addFiles,
-              tooltip: 'Ajouter des images',
+              tooltip: l10n.imagesToPdfAdd,
               child: const Icon(Icons.add),
             ),
       bottomNavigationBar: _docs.isEmpty
@@ -153,9 +159,7 @@ class _ImagesToPdfScreenState extends State<ImagesToPdfScreen> {
                 child: FilledButton.icon(
                   onPressed: _build,
                   icon: const Icon(Icons.picture_as_pdf_outlined),
-                  label: Text(
-                    'Créer le PDF (${_docs.length} image${_docs.length > 1 ? 's' : ''})',
-                  ),
+                  label: Text(l10n.imagesToPdfCreateAction(_docs.length)),
                 ),
               ),
             ),
@@ -182,12 +186,12 @@ class _ImagesToPdfScreenState extends State<ImagesToPdfScreen> {
           mainAxisSize: MainAxisSize.min,
           children: [
             IconButton(
-              tooltip: 'Pivoter',
+              tooltip: context.l10n.actionRotate,
               icon: const Icon(Icons.rotate_right),
               onPressed: () => setState(() => doc.rotateAll(90)),
             ),
             IconButton(
-              tooltip: 'Retirer',
+              tooltip: context.l10n.actionRemove,
               icon: const Icon(Icons.delete_outline),
               onPressed: () => _removeDoc(doc),
             ),
@@ -212,14 +216,13 @@ class _EmptyState extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final L l10n = context.l10n;
     return EmptyState(
       icon: Icons.image_outlined,
-      title: 'Des images, un PDF',
-      body:
-          'JPG, PNG, WebP, HEIC — ajoutez vos images et elles seront '
-          'assemblées dans l’ordre que vous choisissez.',
+      title: l10n.imagesToPdfEmptyTitle,
+      body: l10n.imagesToPdfEmptyBody,
       accepts: const ['JPG', 'PNG', 'WebP', 'HEIC'],
-      actionLabel: 'Choisir des images',
+      actionLabel: l10n.imagesToPdfChoose,
       onAction: onAdd,
       busy: busy,
     );

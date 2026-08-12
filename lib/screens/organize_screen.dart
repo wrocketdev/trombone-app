@@ -8,6 +8,7 @@ import '../core/files/file_utils.dart';
 import '../core/pdf/pdf_engine.dart';
 import '../models/page_selection.dart';
 import '../models/source_doc.dart';
+import '../l10n/l10n.dart';
 import '../theme/theme.dart';
 import '../widgets/page_thumb.dart';
 import '../widgets/progress_dialog.dart';
@@ -47,9 +48,9 @@ class _OrganizeScreenState extends State<OrganizeScreen> {
       });
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(
-          context,
-        ).showSnackBar(SnackBar(content: Text('Impossible d\'ouvrir : $e')));
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text(context.l10n.errorOpenFailedShort('$e'))),
+        );
       }
     } finally {
       if (mounted) setState(() => _busy = false);
@@ -69,15 +70,15 @@ class _OrganizeScreenState extends State<OrganizeScreen> {
     String name,
   ) async {
     if (selections.isEmpty) {
-      ScaffoldMessenger.of(
-        context,
-      ).showSnackBar(const SnackBar(content: Text('Aucune page à exporter.')));
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text(context.l10n.organizeNothingToExport)),
+      );
       return;
     }
     try {
       final bytes = await runWithProgressDialog<Uint8List>(
         context: context,
-        title: 'Préparation…',
+        title: context.l10n.progressPreparing,
         task: (token, onProgress) => PdfEngine.buildPdf(
           selections,
           onProgress: onProgress,
@@ -92,9 +93,9 @@ class _OrganizeScreenState extends State<OrganizeScreen> {
       );
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(
-          context,
-        ).showSnackBar(SnackBar(content: Text('Échec : $e')));
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text(context.l10n.errorGeneric('$e'))),
+        );
       }
     }
   }
@@ -142,9 +143,9 @@ class _OrganizeScreenState extends State<OrganizeScreen> {
       }
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(
-          context,
-        ).showSnackBar(SnackBar(content: Text('Échec de la division : $e')));
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text(context.l10n.organizeSplitFailed('$e'))),
+        );
       }
       return;
     }
@@ -159,12 +160,11 @@ class _OrganizeScreenState extends State<OrganizeScreen> {
 
   /// « 8 pages », ou « 6 pages sur 8 » quand on en a écarté.
   String _sourceSummary(SourceDoc doc) {
+    final L l10n = context.l10n;
     final int kept = doc.included.where((i) => i).length;
     final int total = doc.pageCount;
-    final String plural = total > 1 ? 's' : '';
-    if (kept == total) return '$total page$plural';
-    return '$kept page${kept > 1 ? 's' : ''} sur $total retenue'
-        '${kept > 1 ? 's' : ''}';
+    if (kept == total) return l10n.pageCount(total);
+    return l10n.organizePagesKept(kept, total);
   }
 
   Widget? _pageNote({
@@ -172,9 +172,10 @@ class _OrganizeScreenState extends State<OrganizeScreen> {
     required int from,
     required bool included,
   }) {
+    final L l10n = context.l10n;
     final List<String> parts = [
-      if (!included) 'Écartée',
-      if (moved) 'Déplacée depuis la position $from',
+      if (!included) l10n.organizePageExcluded,
+      if (moved) l10n.organizePageMoved(from),
     ];
     if (parts.isEmpty) return null;
     return Text(
@@ -198,17 +199,21 @@ class _OrganizeScreenState extends State<OrganizeScreen> {
   @override
   Widget build(BuildContext context) {
     final doc = _doc;
+    final L l10n = context.l10n;
     return Scaffold(
-      appBar: AppBar(title: const Text('Organiser un PDF')),
+      appBar: AppBar(title: Text(l10n.toolOrganize)),
       body: doc == null
           ? EmptyState(
               icon: Icons.dashboard_customize_outlined,
-              title: 'Reprendre un PDF en main',
-              body:
-                  'Ouvrez un document pour le diviser, en extraire des '
-                  'pages ou en changer l’ordre.',
-              accepts: const ['PDF', 'Word', 'Images', 'Texte'],
-              actionLabel: 'Ouvrir un fichier',
+              title: l10n.organizeEmptyTitle,
+              body: l10n.organizeEmptyBody,
+              accepts: [
+                l10n.formatPdf,
+                l10n.formatWord,
+                l10n.formatImages,
+                l10n.formatText,
+              ],
+              actionLabel: l10n.organizeOpenFile,
               onAction: _pick,
               busy: _busy,
             )
@@ -260,7 +265,7 @@ class _OrganizeScreenState extends State<OrganizeScreen> {
                               included: included,
                             ),
                           ),
-                          title: Text('Page ${listIndex + 1}'),
+                          title: Text(l10n.organizePageTitle(listIndex + 1)),
                           // « Position d'origine : 3 » s'affichait sur chaque
                           // rangée, y compris quand rien n'avait bougé — donc
                           // le plus souvent en répétant le titre. La ligne ne
@@ -275,7 +280,7 @@ class _OrganizeScreenState extends State<OrganizeScreen> {
                             mainAxisSize: MainAxisSize.min,
                             children: [
                               IconButton(
-                                tooltip: 'Pivoter la page ${listIndex + 1}',
+                                tooltip: l10n.pageTileRotate(listIndex + 1),
                                 icon: const Icon(Icons.rotate_right),
                                 onPressed: () => setState(
                                   () => doc.rotatePage(originalIndex, 90),
@@ -283,8 +288,8 @@ class _OrganizeScreenState extends State<OrganizeScreen> {
                               ),
                               IconButton(
                                 tooltip: included
-                                    ? 'Écarter la page ${listIndex + 1}'
-                                    : 'Inclure la page ${listIndex + 1}',
+                                    ? l10n.organizeExcludePage(listIndex + 1)
+                                    : l10n.organizeIncludePage(listIndex + 1),
                                 icon: Icon(
                                   included
                                       ? Icons.check_circle
@@ -303,7 +308,7 @@ class _OrganizeScreenState extends State<OrganizeScreen> {
                               ReorderableDragStartListener(
                                 index: listIndex,
                                 child: Semantics(
-                                  label: 'Déplacer la page ${listIndex + 1}',
+                                  label: l10n.organizeMovePage(listIndex + 1),
                                   child: const Padding(
                                     padding: EdgeInsets.symmetric(
                                       horizontal: Space.xxs,
@@ -332,7 +337,7 @@ class _OrganizeScreenState extends State<OrganizeScreen> {
                       child: OutlinedButton.icon(
                         onPressed: _extractRange,
                         icon: const Icon(Icons.content_cut),
-                        label: const Text('Extraire', maxLines: 1),
+                        label: Text(l10n.organizeExtract, maxLines: 1),
                       ),
                     ),
                     const SizedBox(width: 8),
@@ -340,7 +345,7 @@ class _OrganizeScreenState extends State<OrganizeScreen> {
                       child: OutlinedButton.icon(
                         onPressed: _splitIntoParts,
                         icon: const Icon(Icons.call_split),
-                        label: const Text('Diviser', maxLines: 1),
+                        label: Text(l10n.organizeSplit, maxLines: 1),
                       ),
                     ),
                     const SizedBox(width: 8),
@@ -355,7 +360,7 @@ class _OrganizeScreenState extends State<OrganizeScreen> {
                         // export et menait à l'aperçu. Le libellé dit
                         // maintenant ce que le bouton fait, et rejoint celui
                         // de l'écran Fusionner, qui mène au même endroit.
-                        label: const Text('Aperçu', maxLines: 1),
+                        label: Text(l10n.organizePreview, maxLines: 1),
                       ),
                     ),
                   ],
@@ -383,11 +388,16 @@ class _RangeDialogState extends State<_RangeDialog> {
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
-      title: const Text('Extraire une plage de pages'),
+      title: Text(context.l10n.organizeExtractTitle),
       content: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Text('Pages ${_values.start.round()} à ${_values.end.round()}'),
+          Text(
+            context.l10n.organizeRangeLabel(
+              _values.start.round(),
+              _values.end.round(),
+            ),
+          ),
           RangeSlider(
             min: 1,
             max: widget.maxPage.toDouble(),
@@ -400,11 +410,11 @@ class _RangeDialogState extends State<_RangeDialog> {
       actions: [
         TextButton(
           onPressed: () => Navigator.of(context).pop(),
-          child: const Text('Annuler'),
+          child: Text(context.l10n.actionCancel),
         ),
         FilledButton(
           onPressed: () => Navigator.of(context).pop(_values),
-          child: const Text('Extraire'),
+          child: Text(context.l10n.organizeExtract),
         ),
       ],
     );
@@ -426,11 +436,11 @@ class _SplitDialogState extends State<_SplitDialog> {
   Widget build(BuildContext context) {
     final maxParts = widget.maxParts.clamp(2, 20);
     return AlertDialog(
-      title: const Text('Diviser en plusieurs fichiers'),
+      title: Text(context.l10n.organizeSplitTitle),
       content: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Text('${_parts.round()} fichiers'),
+          Text(context.l10n.organizeFileCount(_parts.round())),
           Slider(
             min: 2,
             max: maxParts.toDouble(),
@@ -443,11 +453,11 @@ class _SplitDialogState extends State<_SplitDialog> {
       actions: [
         TextButton(
           onPressed: () => Navigator.of(context).pop(),
-          child: const Text('Annuler'),
+          child: Text(context.l10n.actionCancel),
         ),
         FilledButton(
           onPressed: () => Navigator.of(context).pop(_parts.round()),
-          child: const Text('Diviser'),
+          child: Text(context.l10n.organizeSplit),
         ),
       ],
     );
@@ -471,14 +481,14 @@ class _SplitResultsSheet extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              '${parts.length} fichiers créés',
+              context.l10n.organizeFilesCreated(parts.length),
               style: Theme.of(context).textTheme.titleLarge,
             ),
             const SizedBox(height: 12),
             for (var i = 0; i < parts.length; i++)
               ListTile(
                 leading: const Icon(Icons.picture_as_pdf_outlined),
-                title: Text('Partie ${i + 1}'),
+                title: Text(context.l10n.organizePartTitle(i + 1)),
                 subtitle: Text(
                   '${(parts[i].length / 1024).toStringAsFixed(0)} Ko',
                 ),
@@ -503,6 +513,7 @@ class _SplitResultsSheet extends StatelessWidget {
                     IconButton(
                       icon: const Icon(Icons.save_alt),
                       onPressed: () async {
+                        final L l10n = context.l10n;
                         final bool ok = await ExportService.saveToDevice(
                           parts[i],
                           sourceName == null
@@ -511,11 +522,12 @@ class _SplitResultsSheet extends StatelessWidget {
                                   sourceName,
                                   'partie-${i + 1}',
                                 ),
+                          dialogTitle: l10n.exportSaveDialogTitle,
                         );
                         if (ok && context.mounted) {
                           await showExportSuccess(
                             context,
-                            what: 'Partie ${i + 1}',
+                            what: l10n.organizePartTitle(i + 1),
                           );
                         }
                       },

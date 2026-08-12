@@ -3,6 +3,7 @@ import 'package:flutter_test/flutter_test.dart';
 
 import 'app_fonts.dart';
 
+import 'package:trombone/l10n/l10n.dart';
 import 'package:trombone/screens/compare_screen.dart';
 import 'package:trombone/screens/crop_screen.dart';
 import 'package:trombone/screens/edit_screen.dart';
@@ -85,7 +86,19 @@ void main() {
           await tester.pumpWidget(
             MediaQuery(
               data: MediaQueryData(textScaler: TextScaler.linear(c.scale)),
-              child: MaterialApp(theme: AppTheme.light(), home: build()),
+              child: MaterialApp(
+                // Sans les delegues, `L.of(context)` rend nul et tout widget qui lit
+                // un libelle jette. La langue est fixee au francais : c'est le
+                // modele, et une mesure de largeur n'a de sens que dans une langue
+                // connue.
+                locale: const Locale('fr'),
+                localizationsDelegates: L.localizationsDelegates,
+                // `supportedLocales` vaut en_US par defaut ; la resolution y
+                // retomberait et le delegue ne saurait pas la servir.
+                supportedLocales: L.supportedLocales,
+                theme: AppTheme.light(),
+                home: build(),
+              ),
             ),
           );
           await tester.pump();

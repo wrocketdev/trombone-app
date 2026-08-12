@@ -6,6 +6,7 @@ import '../core/files/file_utils.dart';
 import '../core/pdf/pdf_engine.dart';
 import '../models/page_selection.dart';
 import '../models/source_doc.dart';
+import '../l10n/l10n.dart';
 import '../theme/theme.dart';
 import '../widgets/progress_dialog.dart';
 import '../widgets/ui/add_source_card.dart';
@@ -51,7 +52,7 @@ class _MergeScreenState extends State<MergeScreen> {
           setState(() => _docs.add(doc));
         } catch (e) {
           if (!mounted) return;
-          _showError('${f.name} : ${_friendlyError(e)}');
+          _showError(context.l10n.errorOnFile(f.name, _friendlyError(e)));
         }
       }
     } finally {
@@ -98,13 +99,13 @@ class _MergeScreenState extends State<MergeScreen> {
         .showSnackBar(
           SnackBar(
             content: Text(
-              '${doc.name} retiré.',
+              context.l10n.mergeRemoved(doc.name),
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
             ),
             duration: const Duration(seconds: 6),
             action: SnackBarAction(
-              label: 'Annuler',
+              label: context.l10n.actionUndo,
               onPressed: () {
                 if (!mounted) return;
                 setState(() {
@@ -136,13 +137,13 @@ class _MergeScreenState extends State<MergeScreen> {
   Future<void> _preview() async {
     final selections = _buildSelections();
     if (selections.isEmpty) {
-      _showError('Ajoutez au moins un fichier avec une page à inclure.');
+      _showError(context.l10n.mergeNeedOnePage);
       return;
     }
     try {
       final bytes = await runWithProgressDialog<Uint8List>(
         context: context,
-        title: 'Fusion en cours…',
+        title: context.l10n.mergeProgress,
         task: (token, onProgress) => PdfEngine.buildPdf(
           selections,
           onProgress: onProgress,
@@ -162,7 +163,9 @@ class _MergeScreenState extends State<MergeScreen> {
         ),
       );
     } catch (e) {
-      if (mounted) _showError('Échec de la fusion : ${_friendlyError(e)}');
+      if (mounted) {
+        _showError(context.l10n.mergeFailed(_friendlyError(e)));
+      }
     }
   }
 
@@ -186,7 +189,7 @@ class _MergeScreenState extends State<MergeScreen> {
       (sum, d) => sum + d.includedPageCount,
     );
     return Scaffold(
-      appBar: AppBar(title: const Text('Fusionner')),
+      appBar: AppBar(title: Text(context.l10n.toolMerge)),
       body: _docs.isEmpty
           ? _EmptyState(busy: _busy, onAdd: _addFiles)
           // La carte « ajouter » vit **dans** la liste, en dernière position,
@@ -207,8 +210,8 @@ class _MergeScreenState extends State<MergeScreen> {
               footer: Padding(
                 padding: const EdgeInsets.only(top: Space.xxs),
                 child: AddSourceCard(
-                  label: 'Ajouter un fichier',
-                  hint: 'PDF, Word, images ou texte',
+                  label: context.l10n.mergeAddFile,
+                  hint: context.l10n.mergeAddHint,
                   busy: _busy,
                   onTap: _busy ? null : _addFiles,
                 ),
@@ -232,7 +235,7 @@ class _MergeScreenState extends State<MergeScreen> {
                   onPressed: totalIncluded == 0 ? null : _preview,
                   icon: const Icon(Icons.remove_red_eye_outlined),
                   label: Text(
-                    'Aperçu et export ($totalIncluded page${totalIncluded > 1 ? 's' : ''})',
+                    context.l10n.mergePreviewAndExport(totalIncluded),
                   ),
                 ),
               ),
@@ -291,14 +294,14 @@ class _MergeScreenState extends State<MergeScreen> {
                   ),
                 ),
                 IconButton(
-                  tooltip: 'Retirer ${doc.name}',
+                  tooltip: context.l10n.mergeRemoveTooltip(doc.name),
                   icon: const Icon(Icons.delete_outline),
                   onPressed: () => _removeDoc(doc),
                 ),
                 ReorderableDragStartListener(
                   index: index,
                   child: Semantics(
-                    label: 'Déplacer ${doc.name}',
+                    label: context.l10n.mergeMoveSemantics(doc.name),
                     child: const Padding(
                       padding: EdgeInsets.symmetric(horizontal: Space.xxs),
                       child: Icon(Icons.drag_handle),
@@ -320,11 +323,11 @@ class _MergeScreenState extends State<MergeScreen> {
   /// oblique sépare, et affichait « 3/3 » — une fraction qui n'apprend rien —
   /// dans le cas de loin le plus fréquent, celui où l'on n'a rien écarté.
   String _pagesLabel(SourceDoc doc) {
+    final L l10n = context.l10n;
     final int kept = doc.includedPageCount;
     final int total = doc.pageCount;
-    final String plural = total > 1 ? 's' : '';
-    if (kept == total) return '$total page$plural';
-    return '$kept page${kept > 1 ? 's' : ''} sur $total';
+    if (kept == total) return l10n.pageCount(total);
+    return l10n.pageCountOfTotal(kept, total);
   }
 
   Widget _buildPageGrid(SourceDoc doc) {
@@ -341,7 +344,7 @@ class _MergeScreenState extends State<MergeScreen> {
             child: TextButton.icon(
               onPressed: () => setState(() => doc.rotateAll(90)),
               icon: const Icon(Icons.rotate_right, size: 18),
-              label: const Text('Pivoter toutes les pages', maxLines: 1),
+              label: Text(context.l10n.mergeRotateAll, maxLines: 1),
             ),
           ),
           const SizedBox(height: Space.xs),
@@ -379,14 +382,18 @@ class _EmptyState extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = context.l10n;
     return EmptyState(
       icon: Icons.merge_type,
-      title: 'Un seul document',
-      body:
-          'Ajoutez des PDF, des fichiers Word, des images ou du texte. '
-          'Vous pourrez les réordonner et écarter des pages avant l’export.',
-      accepts: const ['PDF', 'Word', 'Images', 'Texte'],
-      actionLabel: 'Choisir des fichiers',
+      title: l10n.mergeEmptyTitle,
+      body: l10n.mergeEmptyBody,
+      accepts: [
+        l10n.formatPdf,
+        l10n.formatWord,
+        l10n.formatImages,
+        l10n.formatText,
+      ],
+      actionLabel: l10n.actionChooseFiles,
       onAction: onAdd,
       busy: busy,
     );

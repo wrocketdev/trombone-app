@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import '../core/files/file_utils.dart';
 import '../core/pdf/pdf_engine.dart';
 import '../core/pdf/recto_verso.dart';
+import '../l10n/l10n.dart';
 import '../models/page_selection.dart';
 import '../models/source_doc.dart';
 import '../widgets/page_thumb.dart';
@@ -48,9 +49,9 @@ class _RectoVersoScreenState extends State<RectoVersoScreen> {
       });
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(
-          context,
-        ).showSnackBar(SnackBar(content: Text('Impossible d\'ouvrir : $e')));
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text(context.l10n.errorOpenFailedShort('$e'))),
+        );
       }
     } finally {
       if (mounted) setState(() => _busy = false);
@@ -74,7 +75,7 @@ class _RectoVersoScreenState extends State<RectoVersoScreen> {
     try {
       final bytes = await runWithProgressDialog<Uint8List>(
         context: context,
-        title: 'Entrelacement en cours…',
+        title: context.l10n.rectoVersoProgress,
         task: (token, onProgress) => PdfEngine.buildPdf(
           selections,
           onProgress: onProgress,
@@ -90,9 +91,9 @@ class _RectoVersoScreenState extends State<RectoVersoScreen> {
       );
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(
-          context,
-        ).showSnackBar(SnackBar(content: Text('Échec : $e')));
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text(context.l10n.errorGeneric('$e'))),
+        );
       }
     }
   }
@@ -100,19 +101,16 @@ class _RectoVersoScreenState extends State<RectoVersoScreen> {
   @override
   Widget build(BuildContext context) {
     final selections = _interleaved;
+    final l10n = context.l10n;
     return Scaffold(
-      appBar: AppBar(title: const Text('Recto-verso')),
+      appBar: AppBar(title: Text(l10n.toolRectoVerso)),
       body: ListView(
         padding: const EdgeInsets.fromLTRB(16, 16, 16, 96),
         children: [
-          const Text(
-            'Un chargeur simple face donne deux fichiers : les pages '
-            'impaires dans l\'ordre, les pages paires souvent dans l\'ordre '
-            'inverse. Choisissez les deux pour les recomposer.',
-          ),
+          Text(l10n.rectoVersoIntro),
           const SizedBox(height: 20),
           _slot(
-            title: 'Fichier des pages impaires (recto)',
+            title: l10n.rectoVersoOddSlot,
             doc: _oddDoc,
             onPick: () => _pick(odd: true),
             onClear: () => setState(() {
@@ -122,7 +120,7 @@ class _RectoVersoScreenState extends State<RectoVersoScreen> {
           ),
           const SizedBox(height: 12),
           _slot(
-            title: 'Fichier des pages paires (verso)',
+            title: l10n.rectoVersoEvenSlot,
             doc: _evenDoc,
             onPick: () => _pick(odd: false),
             onClear: () => setState(() {
@@ -133,17 +131,15 @@ class _RectoVersoScreenState extends State<RectoVersoScreen> {
           const SizedBox(height: 12),
           SwitchListTile(
             contentPadding: EdgeInsets.zero,
-            title: const Text('Le second fichier est en ordre inverse'),
-            subtitle: const Text(
-              'C\'est le cas le plus courant, coché par défaut',
-            ),
+            title: Text(l10n.rectoVersoReversed),
+            subtitle: Text(l10n.rectoVersoReversedHint),
             value: _evenReversed,
             onChanged: (v) => setState(() => _evenReversed = v),
           ),
           if (selections != null) ...[
             const SizedBox(height: 20),
             Text(
-              'Aperçu de l\'entrelacement (${selections.length} pages)',
+              l10n.rectoVersoPreview(selections.length),
               style: Theme.of(context).textTheme.titleMedium,
             ),
             const SizedBox(height: 8),
@@ -182,7 +178,7 @@ class _RectoVersoScreenState extends State<RectoVersoScreen> {
                 child: FilledButton.icon(
                   onPressed: _busy ? null : _export,
                   icon: const Icon(Icons.remove_red_eye_outlined),
-                  label: const Text('Aperçu et export', maxLines: 1),
+                  label: Text(l10n.actionPreviewAndExport, maxLines: 1),
                 ),
               ),
             ),
@@ -203,13 +199,13 @@ class _RectoVersoScreenState extends State<RectoVersoScreen> {
         title: Text(title),
         subtitle: Text(
           doc == null
-              ? 'Aucun fichier choisi'
-              : '${doc.name} · ${doc.pageCount} pages',
+              ? context.l10n.noFileChosen
+              : context.l10n.fileWithPageCount(doc.name, doc.pageCount),
         ),
         trailing: doc == null
             ? TextButton(
                 onPressed: _busy ? null : onPick,
-                child: const Text('Choisir'),
+                child: Text(context.l10n.actionChoose),
               )
             : IconButton(icon: const Icon(Icons.close), onPressed: onClear),
         onTap: doc == null ? onPick : null,

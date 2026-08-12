@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../l10n/l10n.dart';
 import '../../theme/theme.dart';
 
 /// Barre d'action de l'écran d'aperçu.
@@ -29,7 +30,7 @@ class ExportActionBar extends StatelessWidget {
     required this.onShare,
     this.onCompress,
     this.busy = false,
-    this.saveLabel = 'Enregistrer',
+    this.saveLabel,
   });
 
   final VoidCallback onSave;
@@ -42,12 +43,15 @@ class ExportActionBar extends StatelessWidget {
   final bool busy;
 
   /// Le libellé de l'action principale peut être plus précis que
-  /// « Enregistrer » — il dispose de toute la largeur.
-  final String saveLabel;
+  /// « Enregistrer » — il dispose de toute la largeur. Nul, il retombe sur le
+  /// libellé générique traduit ; il ne peut pas porter de valeur par défaut
+  /// puisque celle-ci dépend de la langue, donc du contexte.
+  final String? saveLabel;
 
   @override
   Widget build(BuildContext context) {
     final colors = context.colors;
+    final l10n = context.l10n;
     return SafeArea(
       child: Container(
         padding: const EdgeInsets.fromLTRB(
@@ -70,7 +74,7 @@ class ExportActionBar extends StatelessWidget {
               child: FilledButton.icon(
                 onPressed: busy ? null : onSave,
                 icon: const Icon(Icons.save_alt),
-                label: Text(saveLabel, maxLines: 1),
+                label: Text(saveLabel ?? l10n.actionSave, maxLines: 1),
               ),
             ),
             const SizedBox(height: Space.xs),
@@ -80,7 +84,7 @@ class ExportActionBar extends StatelessWidget {
                   child: OutlinedButton.icon(
                     onPressed: busy ? null : onShare,
                     icon: const Icon(Icons.share_outlined),
-                    label: const Text('Partager', maxLines: 1),
+                    label: Text(l10n.actionShare, maxLines: 1),
                   ),
                 ),
                 if (onCompress != null) ...[
@@ -89,7 +93,7 @@ class ExportActionBar extends StatelessWidget {
                     child: OutlinedButton.icon(
                       onPressed: busy ? null : onCompress,
                       icon: const Icon(Icons.compress),
-                      label: const Text('Compresser', maxLines: 1),
+                      label: Text(l10n.actionCompress, maxLines: 1),
                     ),
                   ),
                 ],

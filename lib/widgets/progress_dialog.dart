@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
 
 import '../core/pdf/pdf_engine.dart';
+import '../l10n/l10n.dart';
 
 class _ProgressDialog<T> extends StatefulWidget {
   const _ProgressDialog({
@@ -39,6 +40,7 @@ class _ProgressDialogState<T> extends State<_ProgressDialog<T>> {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = context.l10n;
     return PopScope(
       canPop: false,
       child: AlertDialog(
@@ -52,7 +54,11 @@ class _ProgressDialogState<T> extends State<_ProgressDialog<T>> {
               children: [
                 LinearProgressIndicator(value: v),
                 const SizedBox(height: 12),
-                Text(v == null ? 'Préparation…' : '${(v * 100).round()} %'),
+                Text(
+                  v == null
+                      ? l10n.progressPreparing
+                      : l10n.progressPercent((v * 100).round()),
+                ),
               ],
             );
           },
@@ -60,7 +66,7 @@ class _ProgressDialogState<T> extends State<_ProgressDialog<T>> {
         actions: [
           TextButton(
             onPressed: widget.cancelToken.cancel,
-            child: const Text('Annuler'),
+            child: Text(l10n.actionCancel),
           ),
         ],
       ),

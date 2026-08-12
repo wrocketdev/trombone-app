@@ -4,6 +4,7 @@ import 'package:syncfusion_flutter_pdf/pdf.dart' as sf;
 import '../core/files/file_utils.dart';
 import '../theme/theme.dart';
 import '../core/pdf/compare_engine.dart';
+import '../l10n/l10n.dart';
 import '../core/pdf/pdf_engine.dart';
 import '../models/source_doc.dart';
 import '../widgets/progress_dialog.dart';
@@ -38,6 +39,7 @@ class _CompareScreenState extends State<CompareScreen> {
   }
 
   Future<void> _pick({required bool isA}) async {
+    final L l10n = context.l10n;
     setState(() => _busy = true);
     try {
       final files = await FileUtils.pickFiles(allowMultiple: false);
@@ -55,7 +57,7 @@ class _CompareScreenState extends State<CompareScreen> {
       });
     } catch (e) {
       if (mounted) {
-        _showError('Impossible d\'ouvrir le fichier : ${_friendlyError(e)}');
+        _showError(l10n.errorOpenFailed(_friendlyError(e)));
       }
     } finally {
       if (mounted) setState(() => _busy = false);
@@ -101,10 +103,11 @@ class _CompareScreenState extends State<CompareScreen> {
     final docA = _docA;
     final docB = _docB;
     if (docA == null || docB == null) return;
+    final L l10n = context.l10n;
     try {
       final result = await runWithProgressDialog<List<PageDiff>>(
         context: context,
-        title: 'Comparaison en cours…',
+        title: l10n.compareProgress,
         task: (token, onProgress) async {
           final int maxPages = docA.pageCount > docB.pageCount
               ? docA.pageCount
@@ -123,7 +126,7 @@ class _CompareScreenState extends State<CompareScreen> {
       if (result == null || !mounted) return;
       setState(() => _result = result);
     } catch (e) {
-      if (mounted) _showError('Échec de la comparaison : ${_friendlyError(e)}');
+      if (mounted) _showError(l10n.compareFailed(_friendlyError(e)));
     }
   }
 
@@ -154,9 +157,10 @@ class _CompareScreenState extends State<CompareScreen> {
     final result = _result;
     final int changedPages = result?.where((d) => d.hasChanges).length ?? 0;
     final int totalPages = result?.length ?? 0;
+    final L l10n = context.l10n;
 
     return Scaffold(
-      appBar: AppBar(title: const Text('Comparer deux PDF')),
+      appBar: AppBar(title: Text(l10n.compareTitle)),
       body: Column(
         children: [
           Padding(
@@ -165,14 +169,14 @@ class _CompareScreenState extends State<CompareScreen> {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 _slot(
-                  title: 'Fichier A',
+                  title: l10n.compareSlotA,
                   doc: _docA,
                   onPick: () => _pick(isA: true),
                   onClear: () => _clear(isA: true),
                 ),
                 const SizedBox(height: 12),
                 _slot(
-                  title: 'Fichier B',
+                  title: l10n.compareSlotB,
                   doc: _docB,
                   onPick: () => _pick(isA: false),
                   onClear: () => _clear(isA: false),
@@ -181,13 +185,12 @@ class _CompareScreenState extends State<CompareScreen> {
                 FilledButton.icon(
                   onPressed: canCompare ? _compare : null,
                   icon: const Icon(Icons.compare_arrows),
-                  label: const Text('Comparer', maxLines: 1),
+                  label: Text(l10n.compareAction, maxLines: 1),
                 ),
                 if (result != null) ...[
                   const SizedBox(height: 16),
                   Text(
-                    '$changedPages page${changedPages > 1 ? 's' : ''} diffère'
-                    '${changedPages > 1 ? 'nt' : ''} sur $totalPages',
+                    l10n.compareChangedPages(changedPages, totalPages),
                     style: Theme.of(context).textTheme.titleMedium,
                   ),
                 ],
@@ -208,10 +211,10 @@ class _CompareScreenState extends State<CompareScreen> {
   Widget _buildDiffList(List<PageDiff> pages) {
     final changed = pages.where((d) => d.hasChanges).toList();
     if (changed.isEmpty) {
-      return const Center(
+      return Center(
         child: Padding(
-          padding: EdgeInsets.all(24),
-          child: Text('Aucune différence détectée entre les deux fichiers.'),
+          padding: const EdgeInsets.all(24),
+          child: Text(context.l10n.compareNoDifference),
         ),
       );
     }
@@ -224,6 +227,7 @@ class _CompareScreenState extends State<CompareScreen> {
 
   Widget _buildPageCard(PageDiff diff) {
     final rows = _collapseSame(diff.lines);
+    final L l10n = context.l10n;
     return Card(
       margin: const EdgeInsets.symmetric(vertical: 6),
       child: Padding(
@@ -232,7 +236,7 @@ class _CompareScreenState extends State<CompareScreen> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'Page ${diff.pageNumber}',
+              l10n.comparePageHeading(diff.pageNumber),
               style: const TextStyle(fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 8),
@@ -299,13 +303,13 @@ class _CompareScreenState extends State<CompareScreen> {
         title: Text(title),
         subtitle: Text(
           doc == null
-              ? 'Aucun fichier choisi'
-              : '${doc.name} · ${doc.pageCount} page${doc.pageCount > 1 ? 's' : ''}',
+              ? context.l10n.noFileChosen
+              : context.l10n.fileWithPageCount(doc.name, doc.pageCount),
         ),
         trailing: doc == null
             ? TextButton(
                 onPressed: _busy ? null : onPick,
-                child: const Text('Choisir'),
+                child: Text(context.l10n.actionChoose),
               )
             : IconButton(icon: const Icon(Icons.close), onPressed: onClear),
         onTap: doc == null && !_busy ? onPick : null,
@@ -319,12 +323,11 @@ class _Placeholder extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const EmptyState(
+    final L l10n = context.l10n;
+    return EmptyState(
       icon: Icons.compare_arrows_outlined,
-      title: 'Ce qui a changé',
-      body:
-          'Choisissez deux versions d’un même PDF. Les passages ajoutés '
-          'et supprimés seront mis en regard, page par page.',
+      title: l10n.compareEmptyTitle,
+      body: l10n.compareEmptyBody,
     );
   }
 }

@@ -8,6 +8,7 @@ import '../core/files/file_utils.dart';
 import '../core/pdf/signature_engine.dart';
 import '../models/source_doc.dart';
 import '../widgets/page_thumb.dart';
+import '../l10n/l10n.dart';
 import '../widgets/progress_dialog.dart';
 import '../widgets/signature_pad.dart';
 import 'preview_screen.dart';
@@ -51,6 +52,7 @@ class _SignScreenState extends State<SignScreen> {
   }
 
   Future<void> _pickFile() async {
+    final L l10n = context.l10n;
     setState(() => _busy = true);
     try {
       final files = await FileUtils.pickFiles(allowMultiple: false);
@@ -59,9 +61,9 @@ class _SignScreenState extends State<SignScreen> {
           .toList();
       if (pdfFiles.isEmpty) {
         if (files.isNotEmpty && mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(content: Text('Choisissez un fichier PDF.')),
-          );
+          ScaffoldMessenger.of(
+            context,
+          ).showSnackBar(SnackBar(content: Text(l10n.errorPickPdf)));
         }
         return;
       }
@@ -74,9 +76,9 @@ class _SignScreenState extends State<SignScreen> {
       });
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(
-          context,
-        ).showSnackBar(SnackBar(content: Text('Impossible d\'ouvrir : $e')));
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text(l10n.errorOpenFailedShort('$e'))),
+        );
       }
     } finally {
       if (mounted) setState(() => _busy = false);
@@ -87,11 +89,9 @@ class _SignScreenState extends State<SignScreen> {
     final bytes = await _padKey.currentState?.exportPng();
     if (bytes == null) {
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('Dessinez une signature avant de continuer.'),
-          ),
-        );
+        ScaffoldMessenger.of(
+          context,
+        ).showSnackBar(SnackBar(content: Text(context.l10n.signNeedDrawing)));
       }
       return;
     }
@@ -153,7 +153,7 @@ class _SignScreenState extends State<SignScreen> {
       );
       final result = await runWithProgressDialog<Uint8List>(
         context: context,
-        title: 'Ajout de la signature…',
+        title: context.l10n.signProgress,
         task: (token, onProgress) => SignatureEngine.stampSignature(
           pdfBytes: pdfBytes,
           signaturePngBytes: sig,
@@ -172,9 +172,9 @@ class _SignScreenState extends State<SignScreen> {
       );
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(
-          context,
-        ).showSnackBar(SnackBar(content: Text('Échec : $e')));
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text(context.l10n.errorGeneric('$e'))),
+        );
       }
     }
   }
@@ -182,7 +182,7 @@ class _SignScreenState extends State<SignScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Signer un PDF')),
+      appBar: AppBar(title: Text(context.l10n.signTitle)),
       body: _bodyForStep(),
       bottomNavigationBar: _bottomBar(),
     );
@@ -202,6 +202,7 @@ class _SignScreenState extends State<SignScreen> {
   }
 
   Widget? _bottomBar() {
+    final L l10n = context.l10n;
     switch (_step) {
       case _SignStep.pickFile:
         return null;
@@ -214,7 +215,7 @@ class _SignScreenState extends State<SignScreen> {
                 Expanded(
                   child: OutlinedButton(
                     onPressed: _busy ? null : _goBack,
-                    child: const Text('Retour'),
+                    child: Text(l10n.actionBack),
                   ),
                 ),
                 const SizedBox(width: 12),
@@ -224,7 +225,7 @@ class _SignScreenState extends State<SignScreen> {
                         ? null
                         : () => setState(() => _step = _SignStep.draw),
                     icon: const Icon(Icons.arrow_forward),
-                    label: const Text('Continuer', maxLines: 1),
+                    label: Text(l10n.actionContinue, maxLines: 1),
                   ),
                 ),
               ],
@@ -237,7 +238,7 @@ class _SignScreenState extends State<SignScreen> {
             padding: const EdgeInsets.all(12),
             child: OutlinedButton(
               onPressed: _goBack,
-              child: const Text('Retour'),
+              child: Text(l10n.actionBack),
             ),
           ),
         );
@@ -250,7 +251,7 @@ class _SignScreenState extends State<SignScreen> {
                 Expanded(
                   child: OutlinedButton(
                     onPressed: _goBack,
-                    child: const Text('Retour'),
+                    child: Text(l10n.actionBack),
                   ),
                 ),
                 const SizedBox(width: 12),
@@ -258,7 +259,7 @@ class _SignScreenState extends State<SignScreen> {
                   child: FilledButton.icon(
                     onPressed: _finish,
                     icon: const Icon(Icons.check_circle_outline),
-                    label: const Text('Terminer', maxLines: 1),
+                    label: Text(l10n.actionFinish, maxLines: 1),
                   ),
                 ),
               ],
@@ -269,20 +270,17 @@ class _SignScreenState extends State<SignScreen> {
   }
 
   Widget _pickFileStep() {
+    final L l10n = context.l10n;
     return ListView(
       padding: const EdgeInsets.all(16),
       children: [
-        const Text(
-          'Apposez votre signature dessinée à la main sur une page d\'un '
-          'PDF. C\'est un simple dessin ajouté au document, pas une '
-          'signature électronique certifiée.',
-        ),
+        Text(l10n.signIntro),
         const SizedBox(height: 20),
         Card(
           child: ListTile(
             leading: const Icon(Icons.upload_file),
-            title: const Text('Choisir un PDF'),
-            subtitle: const Text('Sélectionnez le document à signer'),
+            title: Text(l10n.actionChoosePdf),
+            subtitle: Text(l10n.signChooseSubtitle),
             onTap: _busy ? null : _pickFile,
           ),
         ),
@@ -300,11 +298,11 @@ class _SignScreenState extends State<SignScreen> {
       padding: const EdgeInsets.fromLTRB(16, 16, 16, 16),
       children: [
         Text(
-          '${doc.name} · ${doc.pageCount} pages',
+          context.l10n.fileWithPageCount(doc.name, doc.pageCount),
           style: Theme.of(context).textTheme.titleMedium,
         ),
         const SizedBox(height: 4),
-        const Text('Choisissez la page à signer.'),
+        Text(context.l10n.signPickPage),
         const SizedBox(height: 16),
         SizedBox(
           height: 190,
@@ -343,15 +341,11 @@ class _SignScreenState extends State<SignScreen> {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Text(
-            'Dessiner ma signature',
+            context.l10n.signDrawTitle,
             style: Theme.of(context).textTheme.titleMedium,
           ),
           const SizedBox(height: 8),
-          const Text(
-            'Dessinez avec le doigt comme sur papier. Ceci appose un '
-            'dessin sur la page — ce n\'est pas une signature '
-            'électronique certifiée.',
-          ),
+          Text(context.l10n.signDrawBody),
           const SizedBox(height: 16),
           Container(
             height: 260,
@@ -381,7 +375,7 @@ class _SignScreenState extends State<SignScreen> {
                           setState(() => _padEmpty = true);
                         },
                   icon: const Icon(Icons.refresh),
-                  label: const Text('Effacer', maxLines: 1),
+                  label: Text(context.l10n.signClear, maxLines: 1),
                 ),
               ),
               const SizedBox(width: 12),
@@ -389,7 +383,7 @@ class _SignScreenState extends State<SignScreen> {
                 child: FilledButton.icon(
                   onPressed: _padEmpty ? null : _validateSignature,
                   icon: const Icon(Icons.check),
-                  label: const Text('Valider', maxLines: 1),
+                  label: Text(context.l10n.signValidate, maxLines: 1),
                 ),
               ),
             ],
@@ -407,12 +401,9 @@ class _SignScreenState extends State<SignScreen> {
 
     return Column(
       children: [
-        const Padding(
-          padding: EdgeInsets.fromLTRB(16, 16, 16, 8),
-          child: Text(
-            'Faites glisser la signature à l\'endroit voulu sur la page, '
-            'puis appuyez sur Terminer.',
-          ),
+        Padding(
+          padding: const EdgeInsets.fromLTRB(16, 16, 16, 8),
+          child: Text(context.l10n.signPlaceBody),
         ),
         Expanded(
           child: Padding(
@@ -430,9 +421,7 @@ class _SignScreenState extends State<SignScreen> {
                   return const Center(child: CircularProgressIndicator());
                 }
                 if (snap.hasError || snap.data == null) {
-                  return const Center(
-                    child: Text('Impossible d\'afficher la page.'),
-                  );
+                  return Center(child: Text(context.l10n.signPageUnavailable));
                 }
                 final pageBytes = snap.data!;
                 return LayoutBuilder(

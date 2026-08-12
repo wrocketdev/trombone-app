@@ -27,9 +27,17 @@ class ExportService {
   /// produit (« PDF · 8 pages ») au lieu de le nommer. Afficher le nom
   /// *suggéré* aurait été pire que de n'en afficher aucun : il contredit ce que
   /// l'utilisateur vient de taper, avec l'aplomb d'une confirmation.
-  static Future<bool> saveToDevice(Uint8List bytes, String fileName) async {
+  ///
+  /// [dialogTitle] est traduit par l'appelant : cette couche ne connaît pas de
+  /// `BuildContext`, et lui en passer un pour un seul libellé ferait entrer
+  /// l'interface dans le service d'export.
+  static Future<bool> saveToDevice(
+    Uint8List bytes,
+    String fileName, {
+    required String dialogTitle,
+  }) async {
     final String? path = await FilePicker.saveFile(
-      dialogTitle: 'Enregistrer le PDF',
+      dialogTitle: dialogTitle,
       fileName: fileName,
       type: FileType.custom,
       allowedExtensions: const ['pdf'],

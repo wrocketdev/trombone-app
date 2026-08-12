@@ -8,6 +8,7 @@ import '../core/files/export_service.dart';
 import '../core/files/file_utils.dart';
 import '../core/office/pdf_to_pptx.dart';
 import '../core/pdf/security_engine.dart';
+import '../l10n/l10n.dart';
 import '../widgets/progress_dialog.dart';
 import '../theme/theme.dart';
 import '../widgets/ui/empty_state.dart';
@@ -44,13 +45,8 @@ class _PdfToPptxScreenState extends State<PdfToPptxScreen> {
     ).showSnackBar(SnackBar(content: Text(message)));
   }
 
-  static String _formatSize(int bytes) {
-    if (bytes < 1024) return '$bytes o';
-    if (bytes < 1024 * 1024) return '${(bytes / 1024).round()} Ko';
-    return '${(bytes / (1024 * 1024)).toStringAsFixed(1)} Mo';
-  }
-
   Future<void> _pick() async {
+    final L l10n = context.l10n;
     setState(() => _busy = true);
     try {
       final PickedPdf? picked = await SecurityEngine.pickPdfFile();
@@ -64,7 +60,7 @@ class _PdfToPptxScreenState extends State<PdfToPptxScreen> {
         _result = null;
       });
     } catch (e) {
-      _showError('Impossible d\'ouvrir ce PDF : ${_friendlyError(e)}');
+      _showError(l10n.pdfToPptxOpenFailed(_friendlyError(e)));
     } finally {
       if (mounted) setState(() => _busy = false);
     }
@@ -73,10 +69,11 @@ class _PdfToPptxScreenState extends State<PdfToPptxScreen> {
   Future<void> _convert() async {
     final Uint8List? bytes = _pdfBytes;
     if (bytes == null) return;
+    final L l10n = context.l10n;
     try {
       final Uint8List? out = await runWithProgressDialog<Uint8List>(
         context: context,
-        title: 'Conversion en PowerPoint…',
+        title: l10n.pdfToPptxConverting,
         task: (token, onProgress) => PdfToPptx.convert(
           bytes,
           quality: _quality,
@@ -90,26 +87,29 @@ class _PdfToPptxScreenState extends State<PdfToPptxScreen> {
         _resultName = PdfToPptx.suggestedName(_pdfName ?? 'presentation.pdf');
       });
     } catch (e) {
-      _showError('Échec de la conversion : ${_friendlyError(e)}');
+      _showError(l10n.errorConversionFailed(_friendlyError(e)));
     }
   }
 
   Future<void> _save() async {
     final Uint8List? out = _result;
     if (out == null) return;
+    final L l10n = context.l10n;
     setState(() => _busy = true);
     try {
-      final bool ok = await ExportService.saveToDevice(out, _resultName);
+      final bool ok = await ExportService.saveToDevice(
+        out,
+        _resultName,
+        dialogTitle: l10n.exportSaveDialogTitle,
+      );
       if (!ok || !mounted) return;
       await showExportSuccess(
         context,
-        what:
-            'Présentation PowerPoint · $_pageCount '
-            'diapositive${_pageCount > 1 ? 's' : ''}',
+        what: l10n.pdfToPptxExportWhat(_pageCount),
         onShare: _share,
       );
     } catch (e) {
-      _showError('Échec de l\'enregistrement : ${_friendlyError(e)}');
+      _showError(l10n.errorSaveFailed(_friendlyError(e)));
     } finally {
       if (mounted) setState(() => _busy = false);
     }
@@ -118,12 +118,13 @@ class _PdfToPptxScreenState extends State<PdfToPptxScreen> {
   Future<void> _share() async {
     final Uint8List? out = _result;
     if (out == null) return;
+    final L l10n = context.l10n;
     setState(() => _busy = true);
     try {
       await ExportService.share(out, _resultName);
       unawaited(AdService.instance.showAfterSuccessfulExport());
     } catch (e) {
-      _showError('Échec du partage : ${_friendlyError(e)}');
+      _showError(l10n.errorShareFailed(_friendlyError(e)));
     } finally {
       if (mounted) setState(() => _busy = false);
     }
@@ -132,7 +133,7 @@ class _PdfToPptxScreenState extends State<PdfToPptxScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('PDF vers PowerPoint')),
+      appBar: AppBar(title: Text(context.l10n.toolPdfToPptx)),
       body: _pdfBytes == null
           ? _EmptyState(busy: _busy, onPick: _pick)
           : _result != null
@@ -146,7 +147,7 @@ class _PdfToPptxScreenState extends State<PdfToPptxScreen> {
                 child: FilledButton.icon(
                   onPressed: _busy ? null : _convert,
                   icon: const Icon(Icons.slideshow_outlined),
-                  label: const Text('Convertir en PowerPoint', maxLines: 1),
+                  label: Text(context.l10n.pdfToPptxConvertAction, maxLines: 1),
                 ),
               ),
             ),
@@ -154,6 +155,7 @@ class _PdfToPptxScreenState extends State<PdfToPptxScreen> {
   }
 
   Widget _buildConfig(BuildContext context) {
+    final L l10n = context.l10n;
     final int n = _pageCount;
     final bool heavy = _quality == PptxQuality.high && n > 15;
     return ListView(
@@ -169,17 +171,17 @@ class _PdfToPptxScreenState extends State<PdfToPptxScreen> {
             ),
             subtitle: Text(
               n > 0
-                  ? '$n page${n > 1 ? 's' : ''} → $n diapositive${n > 1 ? 's' : ''}'
-                  : 'Document vide',
+                  ? l10n.pdfToPptxPagesToSlides(n)
+                  : l10n.pdfToPptxEmptyDocument,
             ),
             trailing: TextButton(
               onPressed: _busy ? null : _pick,
-              child: const Text('Changer'),
+              child: Text(l10n.actionChange),
             ),
           ),
         ),
         const SizedBox(height: 20),
-        Text('Qualité', style: Theme.of(context).textTheme.titleMedium),
+        Text(l10n.qualityLabel, style: Theme.of(context).textTheme.titleMedium),
         const SizedBox(height: 8),
         Wrap(
           spacing: 8,
@@ -187,7 +189,7 @@ class _PdfToPptxScreenState extends State<PdfToPptxScreen> {
           children: [
             for (final q in PptxQuality.values)
               ChoiceChip(
-                label: Text(q.label),
+                label: Text(q.label(l10n)),
                 selected: _quality == q,
                 onSelected: (_) => setState(() => _quality = q),
               ),
@@ -195,12 +197,7 @@ class _PdfToPptxScreenState extends State<PdfToPptxScreen> {
         ),
         const SizedBox(height: 12),
         Text(
-          heavy
-              ? 'Attention : en haute qualité, une présentation de $n pages '
-                    'peut peser plusieurs dizaines de Mo et être longue à '
-                    'ouvrir. Choisissez Standard en cas de doute.'
-              : 'Une résolution plus élevée donne des diapositives plus nettes '
-                    'mais un fichier nettement plus lourd.',
+          heavy ? l10n.pdfToPptxHeavyWarning(n) : l10n.pdfToPptxQualityHint,
           style: Theme.of(context).textTheme.bodySmall?.copyWith(
             color: heavy
                 ? Theme.of(context).colorScheme.error
@@ -220,22 +217,13 @@ class _PdfToPptxScreenState extends State<PdfToPptxScreen> {
                     const Icon(Icons.info_outline, size: 20),
                     const SizedBox(width: 8),
                     Text(
-                      'À savoir',
+                      l10n.goodToKnow,
                       style: Theme.of(context).textTheme.titleSmall,
                     ),
                   ],
                 ),
                 const SizedBox(height: 8),
-                const Text(
-                  'Chaque diapositive est une image de la page : la mise en '
-                  'page est identique au PDF, mais le texte ne sera pas '
-                  'modifiable dans PowerPoint.\n'
-                  'Pour récupérer du texte modifiable, utilisez plutôt '
-                  '« PDF vers Word ».\n'
-                  'Une présentation n\'a qu\'un seul format de diapositive : '
-                  'il est repris de la première page, et les pages de format '
-                  'différent sont centrées à l\'intérieur.',
-                ),
+                Text(l10n.pdfToPptxCaveat),
               ],
             ),
           ),
@@ -245,6 +233,7 @@ class _PdfToPptxScreenState extends State<PdfToPptxScreen> {
   }
 
   Widget _buildResult(BuildContext context) {
+    final L l10n = context.l10n;
     final Uint8List out = _result!;
     return SafeArea(
       child: Column(
@@ -258,19 +247,20 @@ class _PdfToPptxScreenState extends State<PdfToPptxScreen> {
                 // autres écrans. Elles rejoignent la carte de résultat, où
                 // l'ordre et la hiérarchie sont les mêmes partout.
                 ResultCard(
-                  title: 'Présentation prête',
-                  detail:
-                      '$_resultName — $_pageCount '
-                      'diapositive${_pageCount > 1 ? 's' : ''} · '
-                      '${_formatSize(out.length)} · ${_quality.label}',
+                  title: l10n.pdfToPptxResultTitle,
+                  detail: l10n.pdfToPptxResultDetail(
+                    _resultName,
+                    _pageCount,
+                    formatFileSize(l10n, out.length),
+                    _quality.label(l10n),
+                  ),
                   busy: _busy,
                   onSave: _save,
                   onShare: _share,
                 ),
                 const SizedBox(height: Space.sm),
                 Text(
-                  'Le fichier n\'est pas encore sur votre appareil : '
-                  'enregistrez-le ou partagez-le.',
+                  l10n.notSavedYet,
                   style: Theme.of(context).textTheme.bodySmall,
                 ),
                 const SizedBox(height: Space.sm),
@@ -281,7 +271,7 @@ class _PdfToPptxScreenState extends State<PdfToPptxScreen> {
                           _result = null;
                         }),
                   icon: const Icon(Icons.tune),
-                  label: const Text('Changer la qualité', maxLines: 1),
+                  label: Text(l10n.pdfToPptxChangeQuality, maxLines: 1),
                 ),
               ],
             ),
@@ -300,15 +290,13 @@ class _EmptyState extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final L l10n = context.l10n;
     return EmptyState(
       icon: Icons.slideshow_outlined,
-      title: 'Une diapositive par page',
-      body:
-          'Le PDF devient une présentation PowerPoint à l’identique. '
-          'Chaque page arrive sous forme d’image : la mise en page est '
-          'fidèle, mais le texte ne sera pas modifiable dans PowerPoint.',
-      accepts: const ['PDF'],
-      actionLabel: 'Choisir un PDF',
+      title: l10n.pdfToPptxEmptyTitle,
+      body: l10n.pdfToPptxEmptyBody,
+      accepts: [l10n.formatPdf],
+      actionLabel: l10n.actionChoosePdf,
       onAction: onPick,
       busy: busy,
     );

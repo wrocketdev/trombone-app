@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../l10n/l10n.dart';
 import '../theme/theme.dart';
 import '../widgets/ui/bento.dart';
 import '../widgets/ui/section_header.dart';
@@ -31,25 +32,9 @@ import 'tool_search_screen.dart';
 import 'unlock_screen.dart';
 import 'watermark_screen.dart';
 
-/// Nom affiché de l'application.
-///
-/// Trois champs distincts portaient jusqu'ici la même chaîne à mots-clés, et
-/// aucun des trois n'en voulait :
-///
-/// * **ce libellé**, qui est une signature de marque et doit se lire d'un
-///   coup d'œil en haut de l'écran d'accueil ;
-/// * **`android:label`**, tronqué par le lanceur à une douzaine de
-///   caractères — « Fusionner PDF, Word & Images » y arrivait en
-///   « Fusionner… » ;
-/// * **le titre de la fiche Play**, seul des trois à être indexé, seul à
-///   disposer de 30 caractères, et seul à être localisable par langue.
-///
-/// Les mots-clés reviennent donc au troisième — « Trombone : PDF, Scan &
-/// Word » — et la marque seule reste ici.
-const String _wordmark = 'Trombone';
-
 /// Un outil de l'application, tel qu'il apparaît dans la grille et dans la
-/// recherche.
+/// recherche. Ses libellés sont déjà résolus dans la langue courante — voir
+/// [ToolCatalog].
 class ToolEntry {
   const ToolEntry({
     required this.icon,
@@ -71,280 +56,326 @@ class ToolEntry {
   /// Mots que l'utilisateur peut taper sans employer le libellé exact —
   /// « cadenas » pour Protéger, « tableur » pour Excel. Sans eux, une recherche
   /// ne trouve que ce qu'on savait déjà nommer.
+  ///
+  /// Ils sont traduits comme le reste : une liste de synonymes français ne sert
+  /// à rien à qui cherche « contraseña » ou « hasło ».
   final String keywords;
 
   /// Famille d'appartenance, affichée en sous-titre dans les résultats.
   final String section;
 
   bool matches(String query) {
-    final String q = _fold(query);
+    final String q = foldDiacritics(query);
     if (q.isEmpty) return true;
-    return _fold('$label $keywords $section').contains(q);
-  }
-
-  /// Repli des accents et de la casse : on doit trouver « protéger » en tapant
-  /// « proteger », qui est ce que produit un clavier pressé.
-  static String _fold(String s) {
-    const Map<String, String> map = {
-      'à': 'a',
-      'â': 'a',
-      'ä': 'a',
-      'é': 'e',
-      'è': 'e',
-      'ê': 'e',
-      'ë': 'e',
-      'î': 'i',
-      'ï': 'i',
-      'ô': 'o',
-      'ö': 'o',
-      'ù': 'u',
-      'û': 'u',
-      'ü': 'u',
-      'ç': 'c',
-      '’': "'",
-    };
-    final StringBuffer out = StringBuffer();
-    for (final rune in s.toLowerCase().runes) {
-      final String ch = String.fromCharCode(rune);
-      out.write(map[ch] ?? ch);
-    }
-    return out.toString();
+    return foldDiacritics('$label $keywords $section').contains(q);
   }
 }
 
-class _ToolSection {
-  const _ToolSection(this.title, this.tools);
+/// Repli des diacritiques et de la casse : on doit trouver « protéger » en
+/// tapant « proteger », qui est ce que produit un clavier pressé.
+///
+/// La table couvrait le seul français — quinze voyelles accentuées et la
+/// cédille. Elle couvre maintenant le latin étendu-A entier, c'est-à-dire
+/// exactement ce que les fontes embarquées savent composer et donc exactement
+/// les vingt-cinq langues servies. Sans cela, un Polonais tapant « zloz »
+/// ne trouverait pas « Złóż », et un Tchèque « prevest » ne trouverait pas
+/// « Převést » — la recherche ne servirait que dans les langues sans signes.
+///
+/// Dart n'expose pas la normalisation Unicode ; la table est donc écrite à la
+/// main. Elle est volontairement large : replier un caractère qu'aucune langue
+/// servie n'emploie ne coûte rien, l'oublier casse une recherche en silence.
+String foldDiacritics(String s) {
+  const Map<String, String> map = {
+    'à': 'a', 'á': 'a', 'â': 'a', 'ã': 'a', 'ä': 'a', 'å': 'a', 'ā': 'a',
+    'ă': 'a', 'ą': 'a',
+    'ç': 'c', 'ć': 'c', 'č': 'c', 'ĉ': 'c', 'ċ': 'c',
+    'ď': 'd', 'đ': 'd', 'ð': 'd',
+    'è': 'e', 'é': 'e', 'ê': 'e', 'ë': 'e', 'ē': 'e', 'ĕ': 'e', 'ė': 'e',
+    'ę': 'e', 'ě': 'e',
+    'ĝ': 'g', 'ğ': 'g', 'ġ': 'g', 'ģ': 'g',
+    'ĥ': 'h', 'ħ': 'h',
+    'ì': 'i', 'í': 'i', 'î': 'i', 'ï': 'i', 'ĩ': 'i', 'ī': 'i', 'ĭ': 'i',
+    'į': 'i', 'ı': 'i',
+    'ĵ': 'j',
+    'ķ': 'k',
+    'ĺ': 'l', 'ļ': 'l', 'ľ': 'l', 'ł': 'l', 'ŀ': 'l',
+    'ñ': 'n', 'ń': 'n', 'ņ': 'n', 'ň': 'n',
+    'ò': 'o', 'ó': 'o', 'ô': 'o', 'õ': 'o', 'ö': 'o', 'ø': 'o', 'ō': 'o',
+    'ŏ': 'o', 'ő': 'o',
+    'ŕ': 'r', 'ŗ': 'r', 'ř': 'r',
+    'ś': 's', 'ŝ': 's', 'ş': 's', 'š': 's', 'ș': 's',
+    'ţ': 't', 'ť': 't', 'ŧ': 't', 'ț': 't',
+    'ù': 'u', 'ú': 'u', 'û': 'u', 'ü': 'u', 'ũ': 'u', 'ū': 'u', 'ŭ': 'u',
+    'ů': 'u', 'ű': 'u', 'ų': 'u',
+    'ŵ': 'w',
+    'ý': 'y', 'ÿ': 'y', 'ŷ': 'y',
+    'ź': 'z', 'ż': 'z', 'ž': 'z',
+    // Ligatures et lettres propres, dépliées vers ce qu'un clavier produit.
+    'æ': 'ae', 'œ': 'oe', 'ß': 'ss', 'þ': 'th',
+    // L'apostrophe typographique de « l’ordre » face à celle du clavier.
+    '’': "'",
+  };
+  final StringBuffer out = StringBuffer();
+  for (final rune in s.toLowerCase().runes) {
+    final String ch = String.fromCharCode(rune);
+    out.write(map[ch] ?? ch);
+  }
+  return out.toString();
+}
+
+/// Une famille d'outils : son titre et ses tuiles.
+class ToolSection {
+  const ToolSection(this.title, this.tools);
 
   final String title;
   final List<ToolEntry> tools;
 }
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+/// Le catalogue des vingt-quatre outils, résolu dans une langue.
+///
+/// Il était jusqu'ici deux listes `static final`, ce qui n'est plus tenable :
+/// une liste constante fige les libellés de la première langue rencontrée, et
+/// un changement de langue système ne les rattraperait jamais. Le catalogue se
+/// reconstruit donc à chaque `build`. Vingt-quatre entrées de chaînes déjà en
+/// mémoire — le coût est nul devant celui d'un rendu, et c'est le prix de la
+/// justesse.
+class ToolCatalog {
+  ToolCatalog._(this.featured, this.sections);
 
-  /// Les cinq outils de la bande bento. Ils sont déclarés ici plutôt qu'à
-  /// l'intérieur du `build` pour que la recherche puisse les atteindre : un
-  /// moteur de recherche qui ignore les cinq outils les plus utilisés ne sert
-  /// à rien.
-  static final ToolEntry _merge = ToolEntry(
-    icon: Icons.merge_type,
-    label: 'Fusionner',
-    section: 'À la une',
-    keywords: 'assembler combiner joindre regrouper reunir concatener',
-    builder: (_) => const MergeScreen(),
-  );
+  /// Les cinq outils de la bande bento. Ils appartiennent au catalogue et non
+  /// au `build` pour que la recherche puisse les atteindre : un moteur de
+  /// recherche qui ignore les cinq outils les plus utilisés ne sert à rien.
+  final List<ToolEntry> featured;
 
-  static final List<ToolEntry> _featured = [
-    _merge,
-    ToolEntry(
-      icon: Icons.flip_to_back_outlined,
-      label: 'Recto-verso',
-      section: 'À la une',
-      family: 0,
-      keywords: 'double face intercaler scan pair impair',
-      builder: (_) => const RectoVersoScreen(),
-    ),
-    ToolEntry(
-      icon: Icons.image_outlined,
-      label: 'Images vers PDF',
-      section: 'À la une',
-      family: 3,
-      keywords: 'photo jpg jpeg png photos album appareil',
-      builder: (_) => const ImagesToPdfScreen(),
-    ),
-    ToolEntry(
-      icon: Icons.description_outlined,
-      label: 'PDF vers Word',
-      section: 'À la une',
-      family: 1,
-      keywords: 'docx traitement de texte editable convertir',
-      builder: (_) => const PdfToWordScreen(),
-    ),
-    ToolEntry(
-      icon: Icons.dashboard_customize_outlined,
-      label: 'Organiser un PDF',
-      section: 'À la une',
-      family: 2,
-      keywords: 'diviser separer extraire reordonner ordre pages supprimer',
-      builder: (_) => const OrganizeScreen(),
-    ),
-  ];
-
-  static final List<_ToolSection> _sections = [
-    _ToolSection('Vers le PDF', [
-      ToolEntry(
-        icon: Icons.table_view_outlined,
-        label: 'Excel vers PDF',
-        section: 'Vers le PDF',
-        family: 0,
-        keywords: 'tableur xlsx classeur feuille calcul',
-        builder: (_) => const ExcelToPdfScreen(),
-      ),
-      ToolEntry(
-        icon: Icons.slideshow_outlined,
-        label: 'PowerPoint vers PDF',
-        section: 'Vers le PDF',
-        family: 0,
-        keywords: 'pptx diapositive presentation slides',
-        builder: (_) => const PptxToPdfScreen(),
-      ),
-      ToolEntry(
-        icon: Icons.language_outlined,
-        label: 'Page web vers PDF',
-        section: 'Vers le PDF',
-        family: 0,
-        keywords: 'html site internet url lien article',
-        builder: (_) => const HtmlToPdfScreen(),
-      ),
-      ToolEntry(
-        icon: Icons.document_scanner_outlined,
-        label: 'Scanner un document',
-        section: 'Vers le PDF',
-        family: 0,
-        keywords: 'camera photo numeriser scan appareil papier',
-        builder: (_) => const ScanScreen(),
-      ),
-    ]),
-    _ToolSection('Depuis le PDF', [
-      ToolEntry(
-        icon: Icons.table_chart_outlined,
-        label: 'PDF vers Excel',
-        section: 'Depuis le PDF',
-        family: 1,
-        keywords: 'tableur xlsx tableau extraire donnees',
-        builder: (_) => const PdfToExcelScreen(),
-      ),
-      ToolEntry(
-        icon: Icons.co_present_outlined,
-        label: 'PDF vers PowerPoint',
-        section: 'Depuis le PDF',
-        family: 1,
-        keywords: 'pptx diapositive presentation slides',
-        builder: (_) => const PdfToPptxScreen(),
-      ),
-      ToolEntry(
-        icon: Icons.collections_outlined,
-        label: 'PDF vers Images',
-        section: 'Depuis le PDF',
-        family: 1,
-        keywords: 'jpg png photo exporter capture',
-        builder: (_) => const PdfToImagesScreen(),
-      ),
-      ToolEntry(
-        icon: Icons.manage_search_outlined,
-        label: 'Texte cherchable (OCR)',
-        section: 'Depuis le PDF',
-        family: 1,
-        keywords: 'reconnaissance caracteres scanne copier selectionner',
-        builder: (_) => const OcrScreen(),
-      ),
-      ToolEntry(
-        icon: Icons.inventory_2_outlined,
-        label: 'Convertir en PDF/A',
-        section: 'Depuis le PDF',
-        family: 1,
-        keywords: 'archivage norme long terme conservation',
-        builder: (_) => const PdfAScreen(),
-      ),
-    ]),
-    _ToolSection('Sécurité', [
-      ToolEntry(
-        icon: Icons.lock_outline,
-        label: 'Protéger PDF',
-        section: 'Sécurité',
-        family: 2,
-        keywords: 'mot de passe cadenas chiffrer verrouiller securiser',
-        builder: (_) => const ProtectScreen(),
-      ),
-      ToolEntry(
-        // Deux cadenas voisins — fermé et ouvert — dans la même famille verte
-        // et la même grille : à l'échelle où l'icône est rendue, la seule
-        // différence tenait à l'anse. La clé a une silhouette qui ne se
-        // confond avec rien.
-        icon: Icons.key_outlined,
-        label: 'Déverrouiller PDF',
-        section: 'Sécurité',
-        family: 2,
-        keywords: 'retirer mot de passe ouvrir dechiffrer debloquer cadenas',
-        builder: (_) => const UnlockScreen(),
-      ),
-      ToolEntry(
-        icon: Icons.healing_outlined,
-        label: 'Réparer PDF',
-        section: 'Sécurité',
-        family: 2,
-        keywords: 'corrompu illisible endommage recuperer erreur',
-        builder: (_) => const RepairScreen(),
-      ),
-      ToolEntry(
-        icon: Icons.visibility_off_outlined,
-        label: 'Caviarder un PDF',
-        section: 'Sécurité',
-        family: 2,
-        keywords: 'masquer noircir anonymiser confidentiel effacer',
-        builder: (_) => const RedactScreen(),
-      ),
-    ]),
-    _ToolSection('Éditer', [
-      ToolEntry(
-        icon: Icons.edit_note_outlined,
-        label: 'Éditer PDF',
-        section: 'Éditer',
-        family: 3,
-        keywords: 'texte modifier corriger annoter ecrire',
-        builder: (_) => const EditScreen(),
-      ),
-      ToolEntry(
-        icon: Icons.draw_outlined,
-        label: 'Signer',
-        section: 'Éditer',
-        family: 3,
-        keywords: 'signature paraphe contrat main',
-        builder: (_) => const SignScreen(),
-      ),
-      ToolEntry(
-        icon: Icons.water_drop_outlined,
-        label: 'Filigrane',
-        section: 'Éditer',
-        family: 3,
-        keywords: 'watermark tampon confidentiel brouillon marque',
-        builder: (_) => const WatermarkScreen(),
-      ),
-      ToolEntry(
-        icon: Icons.format_list_numbered,
-        label: 'Numéros de page',
-        section: 'Éditer',
-        family: 3,
-        keywords: 'pagination folio numeroter chiffres',
-        builder: (_) => const PageNumbersScreen(),
-      ),
-      ToolEntry(
-        icon: Icons.crop_outlined,
-        label: 'Rogner un PDF',
-        section: 'Éditer',
-        family: 3,
-        keywords: 'couper marges recadrer bords taille',
-        builder: (_) => const CropScreen(),
-      ),
-      ToolEntry(
-        icon: Icons.compare_arrows_outlined,
-        label: 'Comparer PDF',
-        section: 'Éditer',
-        family: 3,
-        keywords: 'difference versions diff changements',
-        builder: (_) => const CompareScreen(),
-      ),
-    ]),
-  ];
+  final List<ToolSection> sections;
 
   /// Tous les outils, à plat — pour la recherche et pour le décompte.
-  static List<ToolEntry> get allTools => [
-    ..._featured,
-    for (final s in _sections) ...s.tools,
+  List<ToolEntry> get all => [
+    ...featured,
+    for (final s in sections) ...s.tools,
   ];
 
-  /// Nombre total d'outils. Calculé, jamais saisi.
-  static int get _toolCount => allTools.length;
+  factory ToolCatalog.of(L l10n) {
+    final String featuredSection = l10n.sectionFeatured;
+    final String toPdf = l10n.sectionToPdf;
+    final String fromPdf = l10n.sectionFromPdf;
+    final String security = l10n.sectionSecurity;
+    final String edit = l10n.sectionEdit;
+
+    return ToolCatalog._(
+      [
+        ToolEntry(
+          icon: Icons.merge_type,
+          label: l10n.toolMerge,
+          section: featuredSection,
+          keywords: l10n.toolMergeKeywords,
+          builder: (_) => const MergeScreen(),
+        ),
+        ToolEntry(
+          icon: Icons.flip_to_back_outlined,
+          label: l10n.toolRectoVerso,
+          section: featuredSection,
+          family: 0,
+          keywords: l10n.toolRectoVersoKeywords,
+          builder: (_) => const RectoVersoScreen(),
+        ),
+        ToolEntry(
+          icon: Icons.image_outlined,
+          label: l10n.toolImagesToPdf,
+          section: featuredSection,
+          family: 3,
+          keywords: l10n.toolImagesToPdfKeywords,
+          builder: (_) => const ImagesToPdfScreen(),
+        ),
+        ToolEntry(
+          icon: Icons.description_outlined,
+          label: l10n.toolPdfToWord,
+          section: featuredSection,
+          family: 1,
+          keywords: l10n.toolPdfToWordKeywords,
+          builder: (_) => const PdfToWordScreen(),
+        ),
+        ToolEntry(
+          icon: Icons.dashboard_customize_outlined,
+          label: l10n.toolOrganize,
+          section: featuredSection,
+          family: 2,
+          keywords: l10n.toolOrganizeKeywords,
+          builder: (_) => const OrganizeScreen(),
+        ),
+      ],
+      [
+        ToolSection(toPdf, [
+          ToolEntry(
+            icon: Icons.table_view_outlined,
+            label: l10n.toolExcelToPdf,
+            section: toPdf,
+            family: 0,
+            keywords: l10n.toolExcelToPdfKeywords,
+            builder: (_) => const ExcelToPdfScreen(),
+          ),
+          ToolEntry(
+            icon: Icons.slideshow_outlined,
+            label: l10n.toolPptxToPdf,
+            section: toPdf,
+            family: 0,
+            keywords: l10n.toolPptxToPdfKeywords,
+            builder: (_) => const PptxToPdfScreen(),
+          ),
+          ToolEntry(
+            icon: Icons.language_outlined,
+            label: l10n.toolHtmlToPdf,
+            section: toPdf,
+            family: 0,
+            keywords: l10n.toolHtmlToPdfKeywords,
+            builder: (_) => const HtmlToPdfScreen(),
+          ),
+          ToolEntry(
+            icon: Icons.document_scanner_outlined,
+            label: l10n.toolScan,
+            section: toPdf,
+            family: 0,
+            keywords: l10n.toolScanKeywords,
+            builder: (_) => const ScanScreen(),
+          ),
+        ]),
+        ToolSection(fromPdf, [
+          ToolEntry(
+            icon: Icons.table_chart_outlined,
+            label: l10n.toolPdfToExcel,
+            section: fromPdf,
+            family: 1,
+            keywords: l10n.toolPdfToExcelKeywords,
+            builder: (_) => const PdfToExcelScreen(),
+          ),
+          ToolEntry(
+            icon: Icons.co_present_outlined,
+            label: l10n.toolPdfToPptx,
+            section: fromPdf,
+            family: 1,
+            keywords: l10n.toolPdfToPptxKeywords,
+            builder: (_) => const PdfToPptxScreen(),
+          ),
+          ToolEntry(
+            icon: Icons.collections_outlined,
+            label: l10n.toolPdfToImages,
+            section: fromPdf,
+            family: 1,
+            keywords: l10n.toolPdfToImagesKeywords,
+            builder: (_) => const PdfToImagesScreen(),
+          ),
+          ToolEntry(
+            icon: Icons.manage_search_outlined,
+            label: l10n.toolOcr,
+            section: fromPdf,
+            family: 1,
+            keywords: l10n.toolOcrKeywords,
+            builder: (_) => const OcrScreen(),
+          ),
+          ToolEntry(
+            icon: Icons.inventory_2_outlined,
+            label: l10n.toolPdfA,
+            section: fromPdf,
+            family: 1,
+            keywords: l10n.toolPdfAKeywords,
+            builder: (_) => const PdfAScreen(),
+          ),
+        ]),
+        ToolSection(security, [
+          ToolEntry(
+            icon: Icons.lock_outline,
+            label: l10n.toolProtect,
+            section: security,
+            family: 2,
+            keywords: l10n.toolProtectKeywords,
+            builder: (_) => const ProtectScreen(),
+          ),
+          ToolEntry(
+            // Deux cadenas voisins — fermé et ouvert — dans la même famille
+            // verte et la même grille : à l'échelle où l'icône est rendue, la
+            // seule différence tenait à l'anse. La clé a une silhouette qui ne
+            // se confond avec rien.
+            icon: Icons.key_outlined,
+            label: l10n.toolUnlock,
+            section: security,
+            family: 2,
+            keywords: l10n.toolUnlockKeywords,
+            builder: (_) => const UnlockScreen(),
+          ),
+          ToolEntry(
+            icon: Icons.healing_outlined,
+            label: l10n.toolRepair,
+            section: security,
+            family: 2,
+            keywords: l10n.toolRepairKeywords,
+            builder: (_) => const RepairScreen(),
+          ),
+          ToolEntry(
+            icon: Icons.visibility_off_outlined,
+            label: l10n.toolRedact,
+            section: security,
+            family: 2,
+            keywords: l10n.toolRedactKeywords,
+            builder: (_) => const RedactScreen(),
+          ),
+        ]),
+        ToolSection(edit, [
+          ToolEntry(
+            icon: Icons.edit_note_outlined,
+            label: l10n.toolEdit,
+            section: edit,
+            family: 3,
+            keywords: l10n.toolEditKeywords,
+            builder: (_) => const EditScreen(),
+          ),
+          ToolEntry(
+            icon: Icons.draw_outlined,
+            label: l10n.toolSign,
+            section: edit,
+            family: 3,
+            keywords: l10n.toolSignKeywords,
+            builder: (_) => const SignScreen(),
+          ),
+          ToolEntry(
+            icon: Icons.water_drop_outlined,
+            label: l10n.toolWatermark,
+            section: edit,
+            family: 3,
+            keywords: l10n.toolWatermarkKeywords,
+            builder: (_) => const WatermarkScreen(),
+          ),
+          ToolEntry(
+            icon: Icons.format_list_numbered,
+            label: l10n.toolPageNumbers,
+            section: edit,
+            family: 3,
+            keywords: l10n.toolPageNumbersKeywords,
+            builder: (_) => const PageNumbersScreen(),
+          ),
+          ToolEntry(
+            icon: Icons.crop_outlined,
+            label: l10n.toolCrop,
+            section: edit,
+            family: 3,
+            keywords: l10n.toolCropKeywords,
+            builder: (_) => const CropScreen(),
+          ),
+          ToolEntry(
+            icon: Icons.compare_arrows_outlined,
+            label: l10n.toolCompare,
+            section: edit,
+            family: 3,
+            keywords: l10n.toolCompareKeywords,
+            builder: (_) => const CompareScreen(),
+          ),
+        ]),
+      ],
+    );
+  }
+}
+
+class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
 
   /// Ouvre un outil en lui transmettant l'encre de sa famille.
   ///
@@ -369,6 +400,9 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final colors = context.colors;
+    final l10n = context.l10n;
+    final catalog = ToolCatalog.of(l10n);
+    final featured = catalog.featured;
 
     // Les hauteurs de bloc suivent l'échelle typographique du système : à
     // 200 % de police, des blocs figés déborderaient.
@@ -406,13 +440,13 @@ class HomeScreen extends StatelessWidget {
                 StaggerRise(
                   index: 0,
                   child: BentoBlock(
-                    icon: _featured[0].icon,
-                    title: _featured[0].label,
-                    subtitle: 'PDF, Word, images et texte en un seul document',
+                    icon: featured[0].icon,
+                    title: featured[0].label,
+                    subtitle: l10n.toolMergeSubtitle,
                     emphasis: BentoEmphasis.primary,
                     large: true,
                     minHeight: tall,
-                    onTap: () => open(context, _featured[0]),
+                    onTap: () => open(context, featured[0]),
                   ),
                 ),
                 const SizedBox(height: Bento.gap),
@@ -420,22 +454,22 @@ class HomeScreen extends StatelessWidget {
                   index: 1,
                   child: BentoRow(
                     left: BentoBlock(
-                      icon: _featured[1].icon,
-                      title: _featured[1].label,
-                      subtitle: 'Deux scans, remis dans l’ordre',
+                      icon: featured[1].icon,
+                      title: featured[1].label,
+                      subtitle: l10n.toolRectoVersoSubtitle,
                       emphasis: BentoEmphasis.tinted,
                       ink: colors.inks[0],
                       minHeight: medium,
-                      onTap: () => open(context, _featured[1]),
+                      onTap: () => open(context, featured[1]),
                     ),
                     right: BentoBlock(
-                      icon: _featured[2].icon,
-                      title: _featured[2].label,
-                      subtitle: 'Photos et captures en un document',
+                      icon: featured[2].icon,
+                      title: featured[2].label,
+                      subtitle: l10n.toolImagesToPdfSubtitle,
                       emphasis: BentoEmphasis.tinted,
                       ink: colors.inks[3],
                       minHeight: medium,
-                      onTap: () => open(context, _featured[2]),
+                      onTap: () => open(context, featured[2]),
                     ),
                   ),
                 ),
@@ -444,18 +478,18 @@ class HomeScreen extends StatelessWidget {
                   index: 2,
                   child: BentoRow(
                     left: BentoBlock(
-                      icon: _featured[3].icon,
-                      title: _featured[3].label,
-                      subtitle: 'Texte et tableaux, modifiables',
+                      icon: featured[3].icon,
+                      title: featured[3].label,
+                      subtitle: l10n.toolPdfToWordSubtitle,
                       emphasis: BentoEmphasis.tinted,
                       ink: colors.inks[1],
                       minHeight: medium,
-                      onTap: () => open(context, _featured[3]),
+                      onTap: () => open(context, featured[3]),
                     ),
                     right: BentoBlock(
-                      icon: _featured[4].icon,
-                      title: _featured[4].label,
-                      subtitle: 'Diviser, extraire, réordonner',
+                      icon: featured[4].icon,
+                      title: featured[4].label,
+                      subtitle: l10n.toolOrganizeSubtitle,
                       // Un bloc neutre à côté d'un bloc teinté, dans la même
                       // rangée et à la même taille, se lit comme un bloc dont
                       // on aurait oublié la couleur. Les quatre blocs
@@ -464,22 +498,22 @@ class HomeScreen extends StatelessWidget {
                       emphasis: BentoEmphasis.tinted,
                       ink: colors.inks[2],
                       minHeight: medium,
-                      onTap: () => open(context, _featured[4]),
+                      onTap: () => open(context, featured[4]),
                     ),
                   ),
                 ),
 
                 // ── Familles d'outils ────────────────────────────────────
-                for (var i = 0; i < _sections.length; i++)
+                for (var i = 0; i < catalog.sections.length; i++)
                   StaggerRise(
                     index: 3 + i,
                     child: _Section(
-                      section: _sections[i],
+                      section: catalog.sections[i],
                       ink: colors.inks[i % colors.inks.length],
                     ),
                   ),
                 const SizedBox(height: Space.xxl),
-                _Colophon(toolCount: _toolCount),
+                _Colophon(toolCount: catalog.all.length),
               ],
             ),
           ),
@@ -533,7 +567,7 @@ class _Masthead extends StatelessWidget {
       // donc atteignable depuis n'importe quel point du défilement.
       actions: [
         IconButton(
-          tooltip: 'Rechercher un outil',
+          tooltip: context.l10n.homeSearchTooltip,
           icon: const Icon(Icons.search),
           onPressed: () => Navigator.of(context).push(
             MaterialPageRoute<void>(builder: (_) => const ToolSearchScreen()),
@@ -575,7 +609,7 @@ class _Masthead extends StatelessWidget {
                     child: Align(
                       alignment: Alignment.centerLeft,
                       child: Text(
-                        _wordmark,
+                        context.l10n.appWordmark,
                         style: AppTypography.title.copyWith(color: colors.ink),
                       ),
                     ),
@@ -614,14 +648,14 @@ class _MastheadContent extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(right: 48),
           child: Text(
-            _wordmark,
+            context.l10n.appWordmark,
             style: AppTypography.masthead.copyWith(color: colors.ink),
             maxLines: 1,
           ),
         ),
         const SizedBox(height: Space.xs),
         Text(
-          'Faites votre document, exportez-le.\nAucun mur à la fin.',
+          context.l10n.homePromise,
           style: AppTypography.body.copyWith(color: colors.inkMuted),
           maxLines: 2,
         ),
@@ -639,20 +673,20 @@ class _MastheadContent extends StatelessWidget {
 class _PromiseChips extends StatelessWidget {
   const _PromiseChips();
 
-  static const List<String> _claims = [
-    'Sans compte',
-    'Sans filigrane',
-    'Export illimité',
-  ];
-
   @override
   Widget build(BuildContext context) {
     final colors = context.colors;
+    final l10n = context.l10n;
+    final List<String> claims = [
+      l10n.homeChipNoAccount,
+      l10n.homeChipNoWatermark,
+      l10n.homeChipUnlimited,
+    ];
     return Wrap(
       spacing: Space.xs,
       runSpacing: Space.xs,
       children: [
-        for (final claim in _claims)
+        for (final claim in claims)
           Container(
             padding: const EdgeInsets.symmetric(
               horizontal: Space.sm,
@@ -679,7 +713,7 @@ class _PromiseChips extends StatelessWidget {
 class _Section extends StatelessWidget {
   const _Section({required this.section, required this.ink});
 
-  final _ToolSection section;
+  final ToolSection section;
   final InkTone ink;
 
   @override
@@ -738,19 +772,19 @@ class _Colophon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final colors = context.colors;
+    final l10n = context.l10n;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Container(height: Rule.hair, color: colors.rule),
         const SizedBox(height: Space.md),
         Text(
-          '$toolCount outils',
+          l10n.toolCount(toolCount),
           style: AppTypography.microNumeric.copyWith(color: colors.ink),
         ),
         const SizedBox(height: Space.xxs),
         Text(
-          'Rien ne se débloque contre paiement au moment d’enregistrer. '
-          'L’export est gratuit, sans filigrane et sans limite de nombre.',
+          l10n.homeColophon,
           style: AppTypography.small.copyWith(color: colors.inkFaint),
         ),
       ],

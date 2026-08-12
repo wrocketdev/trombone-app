@@ -8,6 +8,7 @@ import '../core/ads/ad_service.dart';
 import '../core/files/export_service.dart';
 import '../core/pdf/security_engine.dart';
 import '../widgets/progress_dialog.dart';
+import '../l10n/l10n.dart';
 import '../theme/theme.dart';
 import '../core/files/file_utils.dart';
 import '../widgets/ui/empty_state.dart';
@@ -46,8 +47,8 @@ class _ProtectScreenState extends State<ProtectScreen> {
 
   Widget _obscureToggle() => IconButton(
     tooltip: _obscure
-        ? 'Afficher les mots de passe'
-        : 'Masquer les mots de passe',
+        ? context.l10n.protectShowPasswords
+        : context.l10n.protectHidePasswords,
     icon: Icon(
       _obscure ? Icons.visibility_outlined : Icons.visibility_off_outlined,
     ),
@@ -70,7 +71,7 @@ class _ProtectScreenState extends State<ProtectScreen> {
         _resultBytes = null;
       });
     } catch (e) {
-      if (mounted) _showError('Impossible d\'ouvrir le fichier : $e');
+      if (mounted) _showError(context.l10n.errorOpenFailed('$e'));
     } finally {
       if (mounted) setState(() => _busy = false);
     }
@@ -85,9 +86,7 @@ class _ProtectScreenState extends State<ProtectScreen> {
     try {
       doc = sf.PdfDocument(inputBytes: picked.bytes);
     } catch (_) {
-      _showError(
-        'Ce fichier est déjà protégé — utilisez d\'abord Déverrouiller PDF.',
-      );
+      _showError(context.l10n.protectAlreadyProtected);
       return;
     }
 
@@ -95,7 +94,7 @@ class _ProtectScreenState extends State<ProtectScreen> {
     try {
       final bytes = await runWithProgressDialog<Uint8List>(
         context: context,
-        title: 'Protection en cours…',
+        title: context.l10n.protectProgress,
         task: (token, onProgress) async {
           onProgress(0, 1);
           doc.security.algorithm =
@@ -111,7 +110,7 @@ class _ProtectScreenState extends State<ProtectScreen> {
         setState(() => _resultBytes = bytes);
       }
     } catch (e) {
-      if (mounted) _showError('Échec de la protection : $e');
+      if (mounted) _showError(context.l10n.protectFailed('$e'));
     } finally {
       doc.dispose();
       if (mounted) setState(() => _busy = false);
@@ -126,16 +125,17 @@ class _ProtectScreenState extends State<ProtectScreen> {
       final bool ok = await ExportService.saveToDevice(
         bytes,
         FileUtils.derivedName(_picked?.name, 'protege'),
+        dialogTitle: context.l10n.exportSaveDialogTitle,
       );
       if (ok && mounted) {
         await showExportSuccess(
           context,
-          what: 'PDF protégé par mot de passe',
+          what: context.l10n.protectExportWhat,
           onShare: _share,
         );
       }
     } catch (e) {
-      if (mounted) _showError('Échec de l\'export : $e');
+      if (mounted) _showError(context.l10n.errorExportFailed('$e'));
     } finally {
       if (mounted) setState(() => _busy = false);
     }
@@ -152,7 +152,7 @@ class _ProtectScreenState extends State<ProtectScreen> {
       );
       unawaited(AdService.instance.showAfterSuccessfulExport());
     } catch (e) {
-      if (mounted) _showError('Échec du partage : $e');
+      if (mounted) _showError(context.l10n.errorShareFailed('$e'));
     } finally {
       if (mounted) setState(() => _busy = false);
     }
@@ -160,17 +160,17 @@ class _ProtectScreenState extends State<ProtectScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = context.l10n;
     final bool canProtect = _picked != null && _passwordsValid && !_busy;
     return Scaffold(
-      appBar: AppBar(title: const Text('Protéger PDF')),
+      appBar: AppBar(title: Text(l10n.toolProtect)),
       body: _picked == null
           ? EmptyState(
               icon: Icons.lock_outline,
-              title: 'Mettre sous mot de passe',
-              body:
-                  'Le PDF ne s’ouvrira plus sans le mot de passe que vous choisissez. Gardez-le : il ne peut pas être récupéré.',
-              accepts: const ['PDF'],
-              actionLabel: 'Choisir un PDF',
+              title: l10n.protectEmptyTitle,
+              body: l10n.protectEmptyBody,
+              accepts: [l10n.formatPdf],
+              actionLabel: l10n.actionChoosePdf,
               onAction: _pick,
               busy: _busy,
             )
@@ -191,7 +191,7 @@ class _ProtectScreenState extends State<ProtectScreen> {
                 // thème.
                 PickedFileCard(
                   name: _picked!.name,
-                  subtitle: 'Sera chiffré en AES 256 bits',
+                  subtitle: l10n.protectSubtitle,
                   onChange: _pick,
                   busy: _busy,
                 ),
@@ -203,7 +203,7 @@ class _ProtectScreenState extends State<ProtectScreen> {
                     autofillHints: const [AutofillHints.newPassword],
                     onChanged: (_) => setState(() {}),
                     decoration: InputDecoration(
-                      labelText: 'Mot de passe',
+                      labelText: l10n.protectPassword,
                       suffixIcon: _obscureToggle(),
                     ),
                   ),
@@ -214,7 +214,7 @@ class _ProtectScreenState extends State<ProtectScreen> {
                     autofillHints: const [AutofillHints.newPassword],
                     onChanged: (_) => setState(() {}),
                     decoration: InputDecoration(
-                      labelText: 'Confirmer le mot de passe',
+                      labelText: l10n.protectConfirmPassword,
                       // Le second champ n'avait pas de bouton œil, alors que
                       // c'est précisément celui qu'on veut relire quand la
                       // confirmation échoue.
@@ -225,9 +225,7 @@ class _ProtectScreenState extends State<ProtectScreen> {
                       // `errorText`, il colore le bon champ, s'annonce avec
                       // lui, et prend le carmin — non plus l'orangé de marque,
                       // qui est aussi celui du lien « Changer » juste au-dessus.
-                      errorText: _mismatch
-                          ? 'Les deux mots de passe diffèrent.'
-                          : null,
+                      errorText: _mismatch ? l10n.protectMismatch : null,
                     ),
                   ),
                   const SizedBox(height: Space.sm),
@@ -242,10 +240,7 @@ class _ProtectScreenState extends State<ProtectScreen> {
                       const SizedBox(width: Space.xxs),
                       Expanded(
                         child: Text(
-                          'Notez-le quelque part : sans lui, le document '
-                          'devient définitivement illisible. Aucune '
-                          'récupération n’est possible, ni par vous ni par '
-                          'l’application.',
+                          l10n.protectWarning,
                           style: AppTypography.micro.copyWith(
                             color: context.colors.inkFaint,
                           ),
@@ -257,10 +252,8 @@ class _ProtectScreenState extends State<ProtectScreen> {
                 if (_resultBytes != null) ...[
                   const SizedBox(height: Space.lg),
                   ResultCard(
-                    title: 'PDF protégé',
-                    detail:
-                        'Chiffré en AES 256 bits. Il faudra le mot de passe '
-                        'pour l’ouvrir.',
+                    title: l10n.protectResultTitle,
+                    detail: l10n.protectResultDetail,
                     busy: _busy,
                     onSave: _save,
                     onShare: _share,
@@ -276,7 +269,7 @@ class _ProtectScreenState extends State<ProtectScreen> {
                 child: FilledButton.icon(
                   onPressed: canProtect ? _protect : null,
                   icon: const Icon(Icons.lock_outline),
-                  label: const Text('Protéger', maxLines: 1),
+                  label: Text(l10n.protectAction, maxLines: 1),
                 ),
               ),
             ),

@@ -7,6 +7,7 @@ import '../core/ads/ad_service.dart';
 import '../core/files/export_service.dart';
 import '../core/files/file_utils.dart';
 import '../core/pdf/compressor.dart';
+import '../l10n/l10n.dart';
 import '../theme/theme.dart';
 import '../widgets/page_thumb.dart';
 import '../widgets/progress_dialog.dart';
@@ -44,10 +45,7 @@ class _PreviewScreenState extends State<PreviewScreen> {
     if (mounted) setState(() => _pageCount = n);
   }
 
-  String _formatSize(int bytes) {
-    if (bytes < 1024 * 1024) return '${(bytes / 1024).toStringAsFixed(0)} Ko';
-    return '${(bytes / (1024 * 1024)).toStringAsFixed(2)} Mo';
-  }
+  String _formatSize(int bytes) => formatFileSize(context.l10n, bytes);
 
   Future<void> _openCompressSheet() async {
     final result = await showModalBottomSheet<Uint8List>(
@@ -78,12 +76,13 @@ class _PreviewScreenState extends State<PreviewScreen> {
       final bool ok = await ExportService.saveToDevice(
         _currentBytes,
         widget.suggestedName,
+        dialogTitle: context.l10n.exportSaveDialogTitle,
       );
       if (ok && mounted) {
         final int n = _pageCount ?? 0;
         final bool done = await showExportSuccess(
           context,
-          what: 'PDF · $n page${n > 1 ? 's' : ''}',
+          what: context.l10n.previewExportWhat(n),
           onShare: _share,
         );
         // « Terminé » terminait la feuille, pas le parcours : après la
@@ -95,9 +94,9 @@ class _PreviewScreenState extends State<PreviewScreen> {
       }
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(
-          context,
-        ).showSnackBar(SnackBar(content: Text('Échec de l\'export : $e')));
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text(context.l10n.errorExportFailed('$e'))),
+        );
       }
     } finally {
       if (mounted) setState(() => _busy = false);
@@ -111,9 +110,9 @@ class _PreviewScreenState extends State<PreviewScreen> {
       unawaited(AdService.instance.showAfterSuccessfulExport());
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(
-          context,
-        ).showSnackBar(SnackBar(content: Text('Échec du partage : $e')));
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text(context.l10n.errorShareFailed('$e'))),
+        );
       }
     } finally {
       if (mounted) setState(() => _busy = false);
@@ -149,7 +148,9 @@ class _PreviewScreenState extends State<PreviewScreen> {
     final int n = _pageCount ?? 0;
     return Scaffold(
       appBar: AppBar(
-        title: Text('Aperçu · ${_formatSize(_currentBytes.length)}'),
+        title: Text(
+          context.l10n.previewTitle(_formatSize(_currentBytes.length)),
+        ),
         actions: [
           // Le libellé était écrit en blanc en dur : invisible sur le papier
           // clair. Il prend maintenant la couleur d'accent du thème, comme
@@ -157,7 +158,7 @@ class _PreviewScreenState extends State<PreviewScreen> {
           if (_compressed)
             TextButton(
               onPressed: _resetCompression,
-              child: const Text('Annuler', maxLines: 1),
+              child: Text(context.l10n.actionUndo, maxLines: 1),
             ),
         ],
       ),
@@ -210,7 +211,7 @@ class _PreviewPage extends StatelessWidget {
     final colors = context.colors;
     return Semantics(
       button: true,
-      label: 'Page $number, agrandir',
+      label: context.l10n.previewZoomPage(number),
       child: InkWell(
         onTap: onOpen,
         borderRadius: Radii.allXs,
@@ -271,7 +272,9 @@ class _PageViewerScreenState extends State<_PageViewerScreen> {
   Widget build(BuildContext context) {
     final colors = context.colors;
     return Scaffold(
-      appBar: AppBar(title: Text('Page $_current sur ${widget.totalPages}')),
+      appBar: AppBar(
+        title: Text(context.l10n.pageOfTotal(_current, widget.totalPages)),
+      ),
       body: PageView.builder(
         controller: _controller,
         itemCount: widget.totalPages,
@@ -297,7 +300,7 @@ class _PageViewerScreenState extends State<_PageViewerScreen> {
                 if (snap.hasError || snap.data == null) {
                   return Center(
                     child: Text(
-                      'Page illisible.',
+                      context.l10n.previewPageUnreadable,
                       style: AppTypography.body.copyWith(
                         color: colors.inkMuted,
                       ),
@@ -339,16 +342,13 @@ class _CompressSheetState extends State<_CompressSheet> {
     }
   }
 
-  String _formatSize(int bytes) {
-    if (bytes < 1024 * 1024) return '${(bytes / 1024).toStringAsFixed(0)} Ko';
-    return '${(bytes / (1024 * 1024)).toStringAsFixed(2)} Mo';
-  }
+  String _formatSize(int bytes) => formatFileSize(context.l10n, bytes);
 
   Future<void> _apply(CompressionLevel level) async {
     try {
       final bytes = await runWithProgressDialog<Uint8List>(
         context: context,
-        title: 'Compression en cours…',
+        title: context.l10n.compressProgress,
         task: (token, onProgress) => Compressor.compress(
           widget.originalBytes,
           level,
@@ -361,9 +361,9 @@ class _CompressSheetState extends State<_CompressSheet> {
       }
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(
-          context,
-        ).showSnackBar(SnackBar(content: Text('Échec de la compression : $e')));
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text(context.l10n.compressFailed('$e'))),
+        );
       }
     }
   }
@@ -377,26 +377,32 @@ class _CompressSheetState extends State<_CompressSheet> {
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text('Compression', style: Theme.of(context).textTheme.titleLarge),
+            Text(
+              context.l10n.compressTitle,
+              style: Theme.of(context).textTheme.titleLarge,
+            ),
             const SizedBox(height: 4),
             Text(
-              'Taille actuelle : ${_formatSize(widget.originalBytes.length)}. '
-              'Choisissez un niveau — la taille estimée s\'affiche avant d\'appliquer.',
+              context.l10n.compressBody(
+                _formatSize(widget.originalBytes.length),
+              ),
               style: Theme.of(context).textTheme.bodySmall,
             ),
             const SizedBox(height: 12),
             for (final level in CompressionLevel.values)
               ListTile(
                 leading: const Icon(Icons.picture_as_pdf_outlined),
-                title: Text(Compressor.label(level)),
+                title: Text(level.label(context.l10n)),
                 subtitle: Text(
                   _estimates[level] == null
-                      ? 'Estimation…'
-                      : '≈ ${_formatSize(_estimates[level]!)}',
+                      ? context.l10n.compressEstimating
+                      : context.l10n.sizeApprox(
+                          _formatSize(_estimates[level]!),
+                        ),
                 ),
                 trailing: FilledButton(
                   onPressed: () => _apply(level),
-                  child: const Text('Appliquer'),
+                  child: Text(context.l10n.actionApply),
                 ),
               ),
           ],

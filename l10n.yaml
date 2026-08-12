@@ -1,0 +1,14 @@
+# Réglages de la génération des traductions.
+#
+# Le français est le modèle : c'est la langue dans laquelle les libellés ont
+# été écrits et pesés, et c'est donc elle qui fait foi. Les vingt-quatre
+# autres fichiers en dérivent ; une clé absente d'une traduction retombe sur
+# le français plutôt que de laisser un trou.
+arb-dir: lib/l10n
+template-arb-file: app_fr.arb
+output-localization-file: app_localizations.dart
+output-class: L
+nullable-getter: false
+
+use-deferred-loading: false
+output-dir: lib/l10n/gen

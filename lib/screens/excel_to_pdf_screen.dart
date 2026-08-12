@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 
 import '../core/office/excel_to_pdf.dart';
 import '../core/office/ooxml.dart';
+import '../l10n/l10n.dart';
 import '../widgets/progress_dialog.dart';
 import '../widgets/ui/empty_state.dart';
 import 'preview_screen.dart';
@@ -31,6 +32,9 @@ class _ExcelToPdfScreenState extends State<ExcelToPdfScreen> {
   }
 
   Future<void> _pick() async {
+    // Lus avant la premiere frontiere asynchrone : le selecteur systeme rend
+    // la main bien apres, et `context` n'est alors plus sur a traverser.
+    final L l10n = context.l10n;
     setState(() => _busy = true);
     try {
       // FileUtils.pickFiles est verrouille sur les extensions PDF/Word/image,
@@ -52,14 +56,11 @@ class _ExcelToPdfScreenState extends State<ExcelToPdfScreen> {
           ? name.split('.').last.toLowerCase()
           : '';
       if (ext == 'xls') {
-        _showError(
-          'Le format .xls (ancien format binaire Excel) n\'est pas pris en '
-          'charge. Enregistrez le fichier en .xlsx puis reessayez.',
-        );
+        _showError(l10n.excelLegacyFormat);
         return;
       }
       if (ext != 'xlsx') {
-        _showError('Veuillez choisir un classeur Excel .xlsx.');
+        _showError(l10n.excelWrongFormat);
         return;
       }
 
@@ -76,9 +77,9 @@ class _ExcelToPdfScreenState extends State<ExcelToPdfScreen> {
         _sheets = sheets;
       });
     } on FormatException catch (e) {
-      _showError('Classeur illisible : ${e.message}');
+      _showError(l10n.excelUnreadable(e.message));
     } catch (e) {
-      _showError('Impossible d\'ouvrir : $e');
+      _showError(l10n.errorOpenFailedShort('$e'));
     } finally {
       if (mounted) setState(() => _busy = false);
     }
@@ -101,10 +102,11 @@ class _ExcelToPdfScreenState extends State<ExcelToPdfScreen> {
   Future<void> _convert() async {
     final List<XlsxSheet>? sheets = _sheets;
     if (sheets == null) return;
+    final L l10n = context.l10n;
     try {
       final Uint8List? bytes = await runWithProgressDialog<Uint8List>(
         context: context,
-        title: 'Conversion en cours…',
+        title: context.l10n.convertProgress,
         task: (token, onProgress) => ExcelToPdf.convertSheets(
           sheets,
           repeatHeaderRow: _repeatHeader,
@@ -120,27 +122,27 @@ class _ExcelToPdfScreenState extends State<ExcelToPdfScreen> {
         ),
       );
     } catch (e) {
-      _showError('Échec de la conversion : $e');
+      _showError(l10n.errorConversionFailed('$e'));
     }
   }
 
   @override
   Widget build(BuildContext context) {
+    final L l10n = context.l10n;
     final List<XlsxSheet>? sheets = _sheets;
     final int totalRows = sheets == null
         ? 0
         : sheets.fold<int>(0, (int s, XlsxSheet f) => s + f.rows.length);
 
     return Scaffold(
-      appBar: AppBar(title: const Text('Excel vers PDF')),
+      appBar: AppBar(title: Text(l10n.toolExcelToPdf)),
       body: _fileName == null
           ? EmptyState(
               icon: Icons.table_view_outlined,
-              title: 'Un classeur en PDF',
-              body:
-                  'Les feuilles d’un fichier .xlsx deviennent des pages PDF, prêtes à envoyer ou à imprimer.',
+              title: l10n.excelEmptyTitle,
+              body: l10n.excelEmptyBody,
               accepts: const ['XLSX', 'XLS'],
-              actionLabel: 'Choisir un classeur',
+              actionLabel: l10n.excelChooseWorkbook,
               onAction: _pick,
               busy: _busy,
             )
@@ -152,16 +154,16 @@ class _ExcelToPdfScreenState extends State<ExcelToPdfScreen> {
                     leading: Icon(
                       _fileName == null ? Icons.upload_file : Icons.table_view,
                     ),
-                    title: Text(_fileName ?? 'Choisir un classeur .xlsx'),
+                    title: Text(_fileName ?? l10n.excelChooseXlsx),
                     subtitle: Text(
                       sheets == null
-                          ? 'Aucun fichier choisi'
-                          : '${sheets.length} feuille(s) · $totalRows ligne(s) au total',
+                          ? l10n.noFileChosen
+                          : l10n.excelSheetsAndRows(sheets.length, totalRows),
                     ),
                     trailing: _fileName == null
                         ? TextButton(
                             onPressed: _busy ? null : _pick,
-                            child: const Text('Choisir'),
+                            child: Text(l10n.actionChoose),
                           )
                         : IconButton(
                             icon: const Icon(Icons.close),
@@ -177,7 +179,7 @@ class _ExcelToPdfScreenState extends State<ExcelToPdfScreen> {
                 if (sheets != null) ...[
                   const SizedBox(height: 20),
                   Text(
-                    'Feuilles détectées',
+                    l10n.excelSheetsDetected,
                     style: Theme.of(context).textTheme.titleSmall,
                   ),
                   const SizedBox(height: 8),
@@ -192,9 +194,11 @@ class _ExcelToPdfScreenState extends State<ExcelToPdfScreen> {
                             title: Text(sheets[i].name),
                             subtitle: Text(
                               sheets[i].rows.isEmpty
-                                  ? 'Feuille vide'
-                                  : '${sheets[i].rows.length} ligne(s) × '
-                                        '${sheets[i].columnCount} colonne(s)',
+                                  ? l10n.excelEmptySheet
+                                  : l10n.excelSheetDimensions(
+                                      sheets[i].rows.length,
+                                      sheets[i].columnCount,
+                                    ),
                             ),
                           ),
                         ],
@@ -206,13 +210,8 @@ class _ExcelToPdfScreenState extends State<ExcelToPdfScreen> {
                     child: SwitchListTile(
                       value: _repeatHeader,
                       onChanged: (bool v) => setState(() => _repeatHeader = v),
-                      title: const Text(
-                        'Répéter la ligne d\'en-tête sur chaque page',
-                      ),
-                      subtitle: const Text(
-                        'La première ligne de la feuille est redessinée en haut de '
-                        'chaque page du tableau.',
-                      ),
+                      title: Text(l10n.excelRepeatHeader),
+                      subtitle: Text(l10n.excelRepeatHeaderHint),
                     ),
                   ),
                   const SizedBox(height: 16),
@@ -220,19 +219,11 @@ class _ExcelToPdfScreenState extends State<ExcelToPdfScreen> {
                     color: Theme.of(
                       context,
                     ).colorScheme.surfaceContainerHighest,
-                    child: const Padding(
-                      padding: EdgeInsets.all(14),
+                    child: Padding(
+                      padding: const EdgeInsets.all(14),
                       child: Text(
-                        'Ce que la conversion reprend : le texte des cellules tel '
-                        'qu\'il est enregistré dans le fichier (y compris le dernier '
-                        'résultat calculé des formules), la première ligne en gras et '
-                        'un quadrillage.\n\n'
-                        'Ce qui n\'est pas repris : couleurs, polices, formats de '
-                        'nombres, cellules fusionnées, images, graphiques et formules '
-                        'elles-mêmes. Les colonnes sont réduites pour tenir dans la '
-                        'largeur de la page ; sur les feuilles très larges, le texte '
-                        'des cellules trop étroites est tronqué par « … ».',
-                        style: TextStyle(fontSize: 13),
+                        l10n.excelCaveat,
+                        style: const TextStyle(fontSize: 13),
                       ),
                     ),
                   ),
@@ -247,7 +238,7 @@ class _ExcelToPdfScreenState extends State<ExcelToPdfScreen> {
                 child: FilledButton.icon(
                   onPressed: _busy ? null : _convert,
                   icon: const Icon(Icons.picture_as_pdf_outlined),
-                  label: const Text('Convertir en PDF', maxLines: 1),
+                  label: Text(l10n.actionConvertToPdf, maxLines: 1),
                 ),
               ),
             ),

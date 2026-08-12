@@ -6,6 +6,7 @@ import '../core/files/file_utils.dart';
 import 'package:syncfusion_flutter_pdf/pdf.dart' as sf;
 
 import '../core/pdf/pdf_engine.dart';
+import '../l10n/l10n.dart';
 import '../core/pdf/security_engine.dart';
 import '../models/page_selection.dart';
 import '../models/source_doc.dart';
@@ -46,7 +47,7 @@ class _UnlockScreenState extends State<UnlockScreen> {
       if (picked == null) return;
       setState(() => _picked = picked);
     } catch (e) {
-      if (mounted) _showError('Impossible d\'ouvrir le fichier : $e');
+      if (mounted) _showError(context.l10n.errorOpenFailed('$e'));
     } finally {
       if (mounted) setState(() => _busy = false);
     }
@@ -62,7 +63,7 @@ class _UnlockScreenState extends State<UnlockScreen> {
     try {
       loadedDoc = sf.PdfDocument(inputBytes: picked.bytes, password: password);
     } catch (_) {
-      if (mounted) _showError('Mot de passe incorrect.');
+      if (mounted) _showError(context.l10n.unlockWrongPassword);
       if (mounted) setState(() => _busy = false);
       return;
     }
@@ -82,7 +83,7 @@ class _UnlockScreenState extends State<UnlockScreen> {
       ];
       final bytes = await runWithProgressDialog<Uint8List>(
         context: context,
-        title: 'Déverrouillage en cours…',
+        title: context.l10n.unlockProgress,
         task: (token, onProgress) => PdfEngine.buildPdf(
           selections,
           onProgress: onProgress,
@@ -99,7 +100,7 @@ class _UnlockScreenState extends State<UnlockScreen> {
         ),
       );
     } catch (e) {
-      if (mounted) _showError('Échec du déverrouillage : $e');
+      if (mounted) _showError(context.l10n.unlockFailed('$e'));
     } finally {
       source?.dispose();
       if (mounted) setState(() => _busy = false);
@@ -108,18 +109,18 @@ class _UnlockScreenState extends State<UnlockScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = context.l10n;
     final bool canUnlock =
         _picked != null && _passwordController.text.isNotEmpty && !_busy;
     return Scaffold(
-      appBar: AppBar(title: const Text('Déverrouiller PDF')),
+      appBar: AppBar(title: Text(l10n.toolUnlock)),
       body: _picked == null
           ? EmptyState(
               icon: Icons.lock_open_outlined,
-              title: 'Retirer le mot de passe',
-              body:
-                  'Il vous faut le mot de passe actuel du document. Une fois retiré, le PDF s’ouvrira librement.',
-              accepts: const ['PDF protégé'],
-              actionLabel: 'Choisir un PDF protégé',
+              title: l10n.unlockEmptyTitle,
+              body: l10n.unlockEmptyBody,
+              accepts: [l10n.unlockAcceptsProtectedPdf],
+              actionLabel: l10n.unlockChooseProtectedPdf,
               onAction: _pick,
               busy: _busy,
             )
@@ -133,13 +134,13 @@ class _UnlockScreenState extends State<UnlockScreen> {
                           ? Icons.upload_file
                           : Icons.picture_as_pdf_outlined,
                     ),
-                    title: Text(_picked?.name ?? 'Choisir un PDF protégé'),
-                    subtitle: _picked == null
-                        ? const Text('Aucun fichier choisi')
-                        : null,
+                    title: Text(_picked?.name ?? l10n.unlockChooseProtectedPdf),
+                    subtitle: _picked == null ? Text(l10n.noFileChosen) : null,
                     trailing: TextButton(
                       onPressed: _busy ? null : _pick,
-                      child: Text(_picked == null ? 'Choisir' : 'Changer'),
+                      child: Text(
+                        _picked == null ? l10n.actionChoose : l10n.actionChange,
+                      ),
                     ),
                     onTap: _busy ? null : _pick,
                   ),
@@ -152,7 +153,7 @@ class _UnlockScreenState extends State<UnlockScreen> {
                     onChanged: (_) => setState(() {}),
                     onSubmitted: (_) => canUnlock ? _unlock() : null,
                     decoration: InputDecoration(
-                      labelText: 'Mot de passe actuel',
+                      labelText: l10n.unlockCurrentPassword,
                       border: const OutlineInputBorder(),
                       suffixIcon: IconButton(
                         icon: Icon(
@@ -175,7 +176,7 @@ class _UnlockScreenState extends State<UnlockScreen> {
                 child: FilledButton.icon(
                   onPressed: canUnlock ? _unlock : null,
                   icon: const Icon(Icons.lock_open_outlined),
-                  label: const Text('Déverrouiller', maxLines: 1),
+                  label: Text(l10n.unlockAction, maxLines: 1),
                 ),
               ),
             ),

@@ -8,6 +8,7 @@ import 'package:syncfusion_flutter_pdf/pdf.dart' as sf;
 import '../core/files/file_utils.dart';
 import '../core/pdf/pdf_engine.dart';
 import '../core/pdf/security_engine.dart';
+import '../l10n/l10n.dart';
 import '../widgets/progress_dialog.dart';
 import '../widgets/ui/empty_state.dart';
 import '../widgets/ui/picked_file_card.dart';
@@ -18,33 +19,24 @@ import 'preview_screen.dart';
 /// exploser la taille du fichier comme le ferait du 300 dpi.
 const int _kArchiveDpi = 200;
 
+/// Une variante de la norme. Le libellé (« PDF/A-1b ») est un nom de norme
+/// ISO et ne se traduit pas ; l'explication, si.
 class _ConformanceOption {
   const _ConformanceOption(this.label, this.level, this.detail);
   final String label;
   final sf.PdfConformanceLevel level;
-  final String detail;
+  final String Function(L) detail;
 }
 
 const List<_ConformanceOption> _kOptions = <_ConformanceOption>[
-  _ConformanceOption(
-    'PDF/A-1b',
-    sf.PdfConformanceLevel.a1b,
-    'Le niveau le plus strict et le plus universellement accepté. '
-        'À choisir en cas de doute.',
-  ),
-  _ConformanceOption(
-    'PDF/A-2b',
-    sf.PdfConformanceLevel.a2b,
-    'Basé sur PDF 1.7 : compression plus efficace, fichiers un peu plus '
-        'légers.',
-  ),
-  _ConformanceOption(
-    'PDF/A-3b',
-    sf.PdfConformanceLevel.a3b,
-    'Comme le A-2b, mais autorise les pièces jointes (souvent demandé pour '
-        'la facturation électronique).',
-  ),
+  _ConformanceOption('PDF/A-1b', sf.PdfConformanceLevel.a1b, _a1bDetail),
+  _ConformanceOption('PDF/A-2b', sf.PdfConformanceLevel.a2b, _a2bDetail),
+  _ConformanceOption('PDF/A-3b', sf.PdfConformanceLevel.a3b, _a3bDetail),
 ];
+
+String _a1bDetail(L l10n) => l10n.pdfaA1bDetail;
+String _a2bDetail(L l10n) => l10n.pdfaA2bDetail;
+String _a3bDetail(L l10n) => l10n.pdfaA3bDetail;
 
 class PdfAScreen extends StatefulWidget {
   const PdfAScreen({super.key});
@@ -67,6 +59,7 @@ class _PdfAScreenState extends State<PdfAScreen> {
   }
 
   Future<void> _pick() async {
+    final L l10n = context.l10n;
     setState(() => _busy = true);
     try {
       final PickedPdf? picked = await SecurityEngine.pickPdfFile();
@@ -82,7 +75,7 @@ class _PdfAScreenState extends State<PdfAScreen> {
         _pageCount = count;
       });
     } catch (e) {
-      _showError('Impossible d\'ouvrir ce PDF : $e');
+      _showError(l10n.pdfaOpenFailed('$e'));
     } finally {
       if (mounted) setState(() => _busy = false);
     }
@@ -92,10 +85,11 @@ class _PdfAScreenState extends State<PdfAScreen> {
     final PickedPdf? picked = _picked;
     if (picked == null) return;
     final sf.PdfConformanceLevel level = _kOptions[_optionIndex].level;
+    final L l10n = context.l10n;
     try {
       final Uint8List? bytes = await runWithProgressDialog<Uint8List>(
         context: context,
-        title: 'Conversion en ${_kOptions[_optionIndex].label}…',
+        title: l10n.pdfaConvertingTo(_kOptions[_optionIndex].label),
         task: (token, onProgress) => _convertToPdfA(
           picked.bytes,
           level: level,
@@ -113,23 +107,23 @@ class _PdfAScreenState extends State<PdfAScreen> {
         ),
       );
     } catch (e) {
-      _showError('Échec de la conversion : $e');
+      _showError(l10n.errorConversionFailed('$e'));
     }
   }
 
   @override
   Widget build(BuildContext context) {
     final PickedPdf? picked = _picked;
+    final L l10n = context.l10n;
     return Scaffold(
-      appBar: AppBar(title: const Text('Convertir en PDF/A')),
+      appBar: AppBar(title: Text(l10n.toolPdfA)),
       body: picked == null
           ? EmptyState(
               icon: Icons.inventory_2_outlined,
-              title: 'Archiver pour longtemps',
-              body:
-                  'Le PDF/A est le format d’archivage exigé par de nombreuses administrations. Le document est converti sans perdre son apparence.',
-              accepts: const ['PDF'],
-              actionLabel: 'Choisir un PDF',
+              title: l10n.pdfaEmptyTitle,
+              body: l10n.pdfaEmptyBody,
+              accepts: [l10n.formatPdf],
+              actionLabel: l10n.actionChoosePdf,
               onAction: _pick,
               busy: _busy,
             )
@@ -138,13 +132,13 @@ class _PdfAScreenState extends State<PdfAScreen> {
               children: [
                 PickedFileCard(
                   name: picked.name,
-                  subtitle: '$_pageCount page(s)',
+                  subtitle: l10n.pageCount(_pageCount),
                   busy: _busy,
                   onChange: _pick,
                 ),
                 const SizedBox(height: 24),
                 Text(
-                  'Niveau de conformité',
+                  l10n.pdfaConformanceLevel,
                   style: Theme.of(context).textTheme.titleMedium,
                 ),
                 const SizedBox(height: 8),
@@ -162,35 +156,28 @@ class _PdfAScreenState extends State<PdfAScreen> {
                 ),
                 const SizedBox(height: 8),
                 Text(
-                  _kOptions[_optionIndex].detail,
+                  _kOptions[_optionIndex].detail(l10n),
                   style: Theme.of(context).textTheme.bodySmall,
                 ),
                 const SizedBox(height: 20),
                 Card(
                   color: Theme.of(context).colorScheme.surfaceContainerHighest,
-                  child: const Padding(
-                    padding: EdgeInsets.all(16),
+                  child: Padding(
+                    padding: const EdgeInsets.all(16),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Row(
                           children: [
-                            Icon(Icons.info_outline, size: 20),
-                            SizedBox(width: 8),
-                            Text('Ce que la conversion change'),
+                            const Icon(Icons.info_outline, size: 20),
+                            const SizedBox(width: 8),
+                            Text(l10n.pdfaCaveatTitle),
                           ],
                         ),
-                        SizedBox(height: 8),
+                        const SizedBox(height: 8),
                         Text(
-                          'Chaque page est redessinée en image à '
-                          '$_kArchiveDpi dpi : le texte devient une image, '
-                          'la mise en page est figée. C\'est ce qui rend le '
-                          'fichier réellement conforme sans dépendre des polices '
-                          'du document d\'origine, mais en contrepartie le texte '
-                          'n\'est plus sélectionnable ni recherchable, les liens '
-                          'et les formulaires disparaissent, et le fichier devient '
-                          'plus lourd.',
-                          style: TextStyle(fontSize: 12),
+                          l10n.pdfaCaveat(_kArchiveDpi),
+                          style: const TextStyle(fontSize: 12),
                         ),
                       ],
                     ),
@@ -206,7 +193,7 @@ class _PdfAScreenState extends State<PdfAScreen> {
                 child: FilledButton.icon(
                   onPressed: _busy ? null : _convert,
                   icon: const Icon(Icons.inventory_2_outlined),
-                  label: const Text('Convertir', maxLines: 1),
+                  label: Text(l10n.actionConvert, maxLines: 1),
                 ),
               ),
             ),

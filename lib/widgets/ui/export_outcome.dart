@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../core/ads/ad_service.dart';
+import '../../l10n/l10n.dart';
 import '../../theme/theme.dart';
 
 /// Confirmation d'export — et point de passage obligé de la publicité.
@@ -89,6 +90,7 @@ class _ExportSuccessSheetState extends State<_ExportSuccessSheet>
   @override
   Widget build(BuildContext context) {
     final colors = context.colors;
+    final l10n = context.l10n;
     final bool reduced = Motion.reduced(context);
 
     // La coche est le seul moment célébré de l'application. Elle monte en
@@ -144,7 +146,7 @@ class _ExportSuccessSheetState extends State<_ExportSuccessSheet>
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   Text(
-                    'C’est enregistré.',
+                    l10n.exportSavedTitle,
                     textAlign: TextAlign.center,
                     style: AppTypography.headline.copyWith(color: colors.ink),
                   ),
@@ -186,8 +188,7 @@ class _ExportSuccessSheetState extends State<_ExportSuccessSheet>
                   ),
                   const SizedBox(height: Space.sm),
                   Text(
-                    'Sous le nom et dans le dossier que vous venez de choisir. '
-                    'Sans filigrane, sans limite, rien à débloquer.',
+                    l10n.exportSavedBody,
                     textAlign: TextAlign.center,
                     style: AppTypography.small.copyWith(color: colors.inkMuted),
                   ),
@@ -196,7 +197,7 @@ class _ExportSuccessSheetState extends State<_ExportSuccessSheet>
                     width: double.infinity,
                     child: FilledButton(
                       onPressed: () => Navigator.of(context).pop(true),
-                      child: const Text('Terminé', maxLines: 1),
+                      child: Text(l10n.actionDone, maxLines: 1),
                     ),
                   ),
                   if (widget.onShare != null) ...[
@@ -209,7 +210,7 @@ class _ExportSuccessSheetState extends State<_ExportSuccessSheet>
                           widget.onShare!();
                         },
                         icon: const Icon(Icons.share_outlined),
-                        label: const Text('Partager', maxLines: 1),
+                        label: Text(l10n.actionShare, maxLines: 1),
                       ),
                     ),
                   ],

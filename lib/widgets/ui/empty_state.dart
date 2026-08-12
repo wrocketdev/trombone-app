@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../l10n/l10n.dart';
 import '../../theme/theme.dart';
 
 /// État vide d'un écran outil.
@@ -61,6 +62,7 @@ class EmptyState extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final colors = context.colors;
+    final l10n = context.l10n;
     final ink = ToolFamily.of(context);
 
     return LayoutBuilder(
@@ -130,7 +132,9 @@ class EmptyState extends StatelessWidget {
                             )
                           : const Icon(Icons.add),
                       label: Text(
-                        busy ? 'Ouverture…' : actionLabel ?? 'Continuer',
+                        busy
+                            ? l10n.actionOpening
+                            : actionLabel ?? l10n.actionContinue,
                       ),
                     ),
                   ],
@@ -146,7 +150,7 @@ class EmptyState extends StatelessWidget {
                       const SizedBox(width: Space.xxs),
                       Flexible(
                         child: Text(
-                          note ?? 'Export gratuit, sans filigrane ni limite.',
+                          note ?? l10n.emptyReassurance,
                           style: AppTypography.micro.copyWith(
                             color: colors.sage,
                           ),
@@ -177,7 +181,7 @@ class _AcceptedFormats extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          'Formats acceptés',
+          context.l10n.emptyAcceptedFormats,
           style: AppTypography.micro.copyWith(color: colors.inkFaint),
         ),
         const SizedBox(height: Space.xs),

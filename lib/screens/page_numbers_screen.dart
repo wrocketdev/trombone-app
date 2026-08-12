@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 
 import '../core/files/file_utils.dart';
 import '../core/pdf/page_numbers_engine.dart';
+import '../l10n/l10n.dart';
 import '../models/source_doc.dart';
 import '../widgets/progress_dialog.dart';
 import '../widgets/ui/empty_state.dart';
@@ -33,6 +34,7 @@ class _PageNumbersScreenState extends State<PageNumbersScreen> {
   }
 
   Future<void> _pick() async {
+    final L l10n = context.l10n;
     setState(() => _busy = true);
     try {
       final files = await FileUtils.pickFiles(allowMultiple: false);
@@ -47,9 +49,9 @@ class _PageNumbersScreenState extends State<PageNumbersScreen> {
       });
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(
-          context,
-        ).showSnackBar(SnackBar(content: Text('Impossible d\'ouvrir : $e')));
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text(l10n.errorOpenFailedShort('$e'))),
+        );
       }
     } finally {
       if (mounted) setState(() => _busy = false);
@@ -60,10 +62,11 @@ class _PageNumbersScreenState extends State<PageNumbersScreen> {
     final doc = _doc;
     if (doc == null) return;
     final int startNumber = int.tryParse(_startController.text.trim()) ?? 1;
+    final L l10n = context.l10n;
     try {
       final bytes = await runWithProgressDialog<Uint8List>(
         context: context,
-        title: 'Numérotation en cours…',
+        title: l10n.pageNumbersProgress,
         task: (token, onProgress) async {
           final pdfBytes = await FileUtils.cachedPdfBytes(doc);
           return PageNumbersEngine.apply(
@@ -89,7 +92,7 @@ class _PageNumbersScreenState extends State<PageNumbersScreen> {
       if (mounted) {
         ScaffoldMessenger.of(
           context,
-        ).showSnackBar(SnackBar(content: Text('Échec : $e')));
+        ).showSnackBar(SnackBar(content: Text(l10n.errorGeneric('$e'))));
       }
     }
   }
@@ -97,16 +100,16 @@ class _PageNumbersScreenState extends State<PageNumbersScreen> {
   @override
   Widget build(BuildContext context) {
     final doc = _doc;
+    final L l10n = context.l10n;
     return Scaffold(
-      appBar: AppBar(title: const Text('Numéros de page')),
+      appBar: AppBar(title: Text(l10n.toolPageNumbers)),
       body: doc == null
           ? EmptyState(
               icon: Icons.format_list_numbered,
-              title: 'Numéroter les pages',
-              body:
-                  'Choisissez un PDF, puis la position et le format des numéros qui seront ajoutés sur chaque page.',
-              accepts: const ['PDF'],
-              actionLabel: 'Choisir un PDF',
+              title: l10n.pageNumbersEmptyTitle,
+              body: l10n.pageNumbersEmptyBody,
+              accepts: [l10n.formatPdf],
+              actionLabel: l10n.actionChoosePdf,
               onAction: _pick,
               busy: _busy,
             )
@@ -115,13 +118,13 @@ class _PageNumbersScreenState extends State<PageNumbersScreen> {
               children: [
                 PickedFileCard(
                   name: doc.name,
-                  subtitle: '${doc.pageCount} pages',
+                  subtitle: l10n.pageCount(doc.pageCount),
                   busy: _busy,
                   onChange: _pick,
                 ),
                 const SizedBox(height: 24),
                 Text(
-                  'Position',
+                  l10n.positionLabel,
                   style: Theme.of(context).textTheme.titleMedium,
                 ),
                 const SizedBox(height: 8),
@@ -130,26 +133,38 @@ class _PageNumbersScreenState extends State<PageNumbersScreen> {
                   runSpacing: 8,
                   children: [
                     _positionChip(
-                      'Bas centre',
+                      l10n.positionBottomCenter,
                       PageNumberPosition.bottomCenter,
                     ),
-                    _positionChip('Bas droite', PageNumberPosition.bottomRight),
-                    _positionChip('Haut centre', PageNumberPosition.topCenter),
-                    _positionChip('Haut droite', PageNumberPosition.topRight),
+                    _positionChip(
+                      l10n.positionBottomRight,
+                      PageNumberPosition.bottomRight,
+                    ),
+                    _positionChip(
+                      l10n.positionTopCenter,
+                      PageNumberPosition.topCenter,
+                    ),
+                    _positionChip(
+                      l10n.positionTopRight,
+                      PageNumberPosition.topRight,
+                    ),
                   ],
                 ),
                 const SizedBox(height: 24),
-                Text('Format', style: Theme.of(context).textTheme.titleMedium),
+                Text(
+                  l10n.formatLabel,
+                  style: Theme.of(context).textTheme.titleMedium,
+                ),
                 const SizedBox(height: 8),
                 SegmentedButton<PageNumberFormat>(
-                  segments: const [
+                  segments: [
                     ButtonSegment(
                       value: PageNumberFormat.pageOnly,
-                      label: Text('N', maxLines: 1),
+                      label: Text(l10n.pageNumbersFormatPlain, maxLines: 1),
                     ),
                     ButtonSegment(
                       value: PageNumberFormat.pageOfTotal,
-                      label: Text('N / total', maxLines: 1),
+                      label: Text(l10n.pageNumbersFormatOfTotal, maxLines: 1),
                     ),
                   ],
                   selected: {_format},
@@ -157,7 +172,7 @@ class _PageNumbersScreenState extends State<PageNumbersScreen> {
                 ),
                 const SizedBox(height: 24),
                 Text(
-                  'Numéro de départ',
+                  l10n.pageNumbersStart,
                   style: Theme.of(context).textTheme.titleMedium,
                 ),
                 const SizedBox(height: 8),
@@ -180,7 +195,7 @@ class _PageNumbersScreenState extends State<PageNumbersScreen> {
                 child: FilledButton.icon(
                   onPressed: _busy ? null : _apply,
                   icon: const Icon(Icons.format_list_numbered),
-                  label: const Text('Appliquer', maxLines: 1),
+                  label: Text(l10n.actionApply, maxLines: 1),
                 ),
               ),
             ),

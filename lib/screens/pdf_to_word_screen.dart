@@ -7,6 +7,7 @@ import '../core/files/export_service.dart';
 import '../core/office/pdf_to_word.dart';
 import '../core/pdf/security_engine.dart';
 import '../widgets/progress_dialog.dart';
+import '../l10n/l10n.dart';
 import '../theme/theme.dart';
 import '../widgets/ui/empty_state.dart';
 import '../widgets/ui/picked_file_card.dart';
@@ -44,6 +45,9 @@ class _PdfToWordScreenState extends State<PdfToWordScreen> {
   }
 
   Future<void> _pick() async {
+    // Les libelles sont lus avant tout await : `context` ne se traverse pas
+    // en toute securite une fois la frontiere asynchrone franchie.
+    final L l10n = context.l10n;
     setState(() => _busy = true);
     try {
       final PickedPdf? picked = await SecurityEngine.pickPdfFile();
@@ -56,7 +60,7 @@ class _PdfToWordScreenState extends State<PdfToWordScreen> {
       });
       await _analyze();
     } catch (e) {
-      _snack('Impossible d\'ouvrir ce fichier : $e');
+      _snack(l10n.errorOpenFailed('$e'));
     } finally {
       if (mounted) setState(() => _busy = false);
     }
@@ -69,7 +73,7 @@ class _PdfToWordScreenState extends State<PdfToWordScreen> {
       final PdfToWordAnalysis? analysis =
           await runWithProgressDialog<PdfToWordAnalysis>(
             context: context,
-            title: 'Analyse du document…',
+            title: context.l10n.pdfToWordAnalyzing,
             task: (token, onProgress) => PdfToWord.analyze(
               picked.bytes,
               onProgress: onProgress,
@@ -79,12 +83,10 @@ class _PdfToWordScreenState extends State<PdfToWordScreen> {
       if (analysis == null || !mounted) return;
       setState(() => _analysis = analysis);
     } on PdfLockedException {
-      _snack(
-        'Ce PDF est protégé par un mot de passe. Déverrouillez-le d\'abord.',
-      );
+      _snack(context.l10n.pdfLocked);
       _reset();
     } catch (e) {
-      _snack('Analyse impossible : $e');
+      _snack(context.l10n.pdfToWordAnalysisFailed('$e'));
       _reset();
     }
   }
@@ -95,7 +97,7 @@ class _PdfToWordScreenState extends State<PdfToWordScreen> {
     try {
       final Uint8List? bytes = await runWithProgressDialog<Uint8List>(
         context: context,
-        title: 'Conversion en Word…',
+        title: context.l10n.pdfToWordConverting,
         task: (token, onProgress) => PdfToWord.buildDocx(
           analysis,
           onProgress: onProgress,
@@ -105,26 +107,31 @@ class _PdfToWordScreenState extends State<PdfToWordScreen> {
       if (bytes == null || !mounted) return;
       setState(() => _docxBytes = bytes);
     } catch (e) {
-      _snack('Échec de la conversion : $e');
+      _snack(context.l10n.errorConversionFailed('$e'));
     }
   }
 
   Future<void> _save() async {
     final Uint8List? bytes = _docxBytes;
     if (bytes == null) return;
+    final L l10n = context.l10n;
     setState(() => _busy = true);
     try {
-      final bool ok = await ExportService.saveToDevice(bytes, _fileName);
+      final bool ok = await ExportService.saveToDevice(
+        bytes,
+        _fileName,
+        dialogTitle: l10n.exportSaveDialogTitle,
+      );
       if (!mounted) return;
       if (ok) {
         await showExportSuccess(
           context,
-          what: 'Document Word',
+          what: l10n.pdfToWordExportWhat,
           onShare: _share,
         );
       }
     } catch (e) {
-      _snack('Enregistrement impossible : $e');
+      _snack(l10n.errorSaveFailed('$e'));
     } finally {
       if (mounted) setState(() => _busy = false);
     }
@@ -139,7 +146,7 @@ class _PdfToWordScreenState extends State<PdfToWordScreen> {
       if (!mounted) return;
       AdService.instance.showAfterSuccessfulExport();
     } catch (e) {
-      _snack('Partage impossible : $e');
+      _snack(context.l10n.errorShareFailed('$e'));
     } finally {
       if (mounted) setState(() => _busy = false);
     }
@@ -148,20 +155,20 @@ class _PdfToWordScreenState extends State<PdfToWordScreen> {
   @override
   Widget build(BuildContext context) {
     final ThemeData theme = Theme.of(context);
+    final L l10n = context.l10n;
     final PickedPdf? picked = _picked;
     final PdfToWordAnalysis? analysis = _analysis;
     final Uint8List? docx = _docxBytes;
 
     return Scaffold(
-      appBar: AppBar(title: const Text('PDF vers Word')),
+      appBar: AppBar(title: Text(l10n.toolPdfToWord)),
       body: picked == null
           ? EmptyState(
               icon: Icons.description_outlined,
-              title: 'Un Word modifiable',
-              body:
-                  'Le texte et la structure du PDF sont transposés dans un document .docx que vous pourrez rouvrir et corriger.',
-              accepts: const ['PDF'],
-              actionLabel: 'Choisir un PDF',
+              title: l10n.pdfToWordEmptyTitle,
+              body: l10n.pdfToWordEmptyBody,
+              accepts: [l10n.formatPdf],
+              actionLabel: l10n.actionChoosePdf,
               onAction: _pick,
               busy: _busy,
             )
@@ -171,8 +178,8 @@ class _PdfToWordScreenState extends State<PdfToWordScreen> {
                 PickedFileCard(
                   name: picked.name,
                   subtitle: analysis == null
-                      ? 'Analyse en attente'
-                      : '${analysis.pageCount} pages',
+                      ? l10n.pdfToWordAnalysisPending
+                      : l10n.pageCount(analysis.pageCount),
                   busy: _busy,
                   onChange: _pick,
                 ),
@@ -184,10 +191,7 @@ class _PdfToWordScreenState extends State<PdfToWordScreen> {
                     _SummaryCard(analysis: analysis, theme: theme),
                     const SizedBox(height: 12),
                     Text(
-                      'La conversion reproduit le texte, la mise en forme et les '
-                      'tableaux, mais pas la mise en page exacte : la position des '
-                      'images et des colonnes n\'est pas conservée, et les images '
-                      'ne sont pas reprises dans le document Word.',
+                      l10n.pdfToWordCaveat,
                       style: theme.textTheme.bodySmall?.copyWith(
                         color: context.colors.inkMuted,
                       ),
@@ -197,8 +201,11 @@ class _PdfToWordScreenState extends State<PdfToWordScreen> {
                 if (docx != null) ...[
                   const SizedBox(height: Space.lg),
                   ResultCard(
-                    title: 'Document Word prêt',
-                    detail: '$_fileName — ${_formatSize(docx.length)}',
+                    title: l10n.pdfToWordResultTitle,
+                    detail: l10n.pdfToWordResultDetail(
+                      _fileName,
+                      formatFileSize(l10n, docx.length),
+                    ),
                     busy: _busy,
                     onSave: _save,
                     onShare: _share,
@@ -222,22 +229,16 @@ class _PdfToWordScreenState extends State<PdfToWordScreen> {
                     ? FilledButton.icon(
                         onPressed: _busy ? null : _convert,
                         icon: const Icon(Icons.description_outlined),
-                        label: const Text('Convertir en Word', maxLines: 1),
+                        label: Text(l10n.pdfToWordConvertAction, maxLines: 1),
                       )
                     : OutlinedButton.icon(
                         onPressed: _busy ? null : _convert,
                         icon: const Icon(Icons.refresh),
-                        label: const Text('Convertir à nouveau', maxLines: 1),
+                        label: Text(l10n.actionConvertAgain, maxLines: 1),
                       ),
               ),
             ),
     );
-  }
-
-  static String _formatSize(int bytes) {
-    if (bytes < 1024) return '$bytes o';
-    if (bytes < 1024 * 1024) return '${(bytes / 1024).toStringAsFixed(0)} Ko';
-    return '${(bytes / (1024 * 1024)).toStringAsFixed(1)} Mo';
   }
 }
 
@@ -251,13 +252,17 @@ class _SummaryCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final L l10n = context.l10n;
     return Card(
       child: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text('Contenu détecté', style: theme.textTheme.titleMedium),
+            Text(
+              l10n.pdfToWordSummaryTitle,
+              style: theme.textTheme.titleMedium,
+            ),
             const SizedBox(height: 12),
             Wrap(
               spacing: 8,
@@ -265,31 +270,26 @@ class _SummaryCard extends StatelessWidget {
               children: [
                 _Chip(
                   icon: Icons.description_outlined,
-                  label: _plural(analysis.pageCount, 'page', 'pages'),
+                  label: l10n.pageCount(analysis.pageCount),
                 ),
                 _Chip(
                   icon: Icons.notes_outlined,
-                  label: _plural(
-                    analysis.paragraphCount,
-                    'paragraphe',
-                    'paragraphes',
-                  ),
+                  label: l10n.pdfToWordParagraphCount(analysis.paragraphCount),
                 ),
                 _Chip(
                   icon: Icons.title_outlined,
-                  label: _plural(analysis.headingCount, 'titre', 'titres'),
+                  label: l10n.pdfToWordHeadingCount(analysis.headingCount),
                 ),
                 _Chip(
                   icon: Icons.table_chart_outlined,
-                  label: _plural(analysis.tableCount, 'tableau', 'tableaux'),
+                  label: l10n.pdfToWordTableCount(analysis.tableCount),
                 ),
               ],
             ),
             if (analysis.tableCount == 0) ...[
               const SizedBox(height: 12),
               Text(
-                'Aucun tableau détecté : si votre PDF en contient, ses lignes '
-                'seront converties en paragraphes.',
+                l10n.pdfToWordNoTables,
                 style: theme.textTheme.bodySmall?.copyWith(
                   color: context.colors.inkMuted,
                 ),
@@ -300,9 +300,6 @@ class _SummaryCard extends StatelessWidget {
       ),
     );
   }
-
-  static String _plural(int count, String one, String many) =>
-      '$count ${count > 1 ? many : one}';
 }
 
 class _Chip extends StatelessWidget {
@@ -343,9 +340,7 @@ class _ScanWarningCard extends StatelessWidget {
             const SizedBox(width: 12),
             Expanded(
               child: Text(
-                'Ce PDF semble être un scan : aucun texte n\'a été trouvé. '
-                'Utilisez d\'abord l\'outil Texte cherchable (OCR), puis '
-                'revenez convertir le PDF obtenu.',
+                context.l10n.pdfToWordScanWarning,
                 style: theme.textTheme.bodyMedium?.copyWith(
                   color: theme.colorScheme.onErrorContainer,
                 ),

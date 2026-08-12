@@ -30,6 +30,15 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  # Les traductions de l'application, et celles que Material fournit lui-même
+  # pour ses propres libellés (boutons de dialogue, sélecteurs, info-bulles de
+  # défilement). Sans `flutter_localizations`, une app traduite en tchèque
+  # garde des boutons « Cancel » en anglais.
+  flutter_localizations:
+    sdk: flutter
+  # Version imposée par flutter_localizations ; la contrainte reste ouverte pour
+  # ne pas bloquer une mise à jour du SDK.
+  intl: any
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -73,6 +82,10 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+
+  # Engendre `AppLocalizations` à partir des .arb de lib/l10n/ à chaque
+  # `flutter pub get` ou `flutter run`. Voir l10n.yaml pour les réglages.
+  generate: true
 
   # Direction graphique « Bento » — genre playful.
   #

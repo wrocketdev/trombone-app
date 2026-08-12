@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 import '../core/files/file_utils.dart';
 import '../core/pdf/crop_engine.dart';
+import '../l10n/l10n.dart';
 import '../core/pdf/security_engine.dart';
 import '../widgets/progress_dialog.dart';
 import '../widgets/ui/empty_state.dart';
@@ -63,7 +64,7 @@ class _CropScreenState extends State<CropScreen> {
         _allPages = true;
       });
     } catch (e) {
-      _showError('Impossible d\'ouvrir ce PDF : $e');
+      _showError(context.l10n.pdfaOpenFailed('$e'));
     } finally {
       if (mounted) setState(() => _busy = false);
     }
@@ -89,14 +90,15 @@ class _CropScreenState extends State<CropScreen> {
   Future<void> _apply() async {
     final PickedPdf? picked = _picked;
     if (picked == null) return;
+    final L l10n = context.l10n;
     if (!_rect.isUsable) {
-      _showError('La zone sélectionnée est trop petite.');
+      _showError(l10n.cropTooSmall);
       return;
     }
     try {
       final Uint8List? bytes = await runWithProgressDialog<Uint8List>(
         context: context,
-        title: 'Rognage en cours…',
+        title: l10n.cropProgress,
         task: (token, onProgress) => CropEngine.crop(
           picked.bytes,
           rect: _rect,
@@ -115,7 +117,7 @@ class _CropScreenState extends State<CropScreen> {
         ),
       );
     } catch (e) {
-      _showError('Échec du rognage : $e');
+      _showError(l10n.cropFailed('$e'));
     }
   }
 
@@ -124,8 +126,12 @@ class _CropScreenState extends State<CropScreen> {
     if (info == null) return '';
     final double wMm = _rect.width * info.displayedSize.width * 25.4 / 72;
     final double hMm = _rect.height * info.displayedSize.height * 25.4 / 72;
-    return '${wMm.round()} × ${hMm.round()} mm '
-        '(${(_rect.width * 100).round()} % × ${(_rect.height * 100).round()} %)';
+    return context.l10n.cropDimensions(
+      wMm.round(),
+      hMm.round(),
+      (_rect.width * 100).round(),
+      (_rect.height * 100).round(),
+    );
   }
 
   @override
@@ -134,17 +140,17 @@ class _CropScreenState extends State<CropScreen> {
     final PdfFirstPageInfo? info = _info;
     final Uint8List? preview = _preview;
     final ColorScheme scheme = Theme.of(context).colorScheme;
+    final L l10n = context.l10n;
 
     return Scaffold(
-      appBar: AppBar(title: const Text('Rogner un PDF')),
+      appBar: AppBar(title: Text(l10n.toolCrop)),
       body: picked == null
           ? EmptyState(
               icon: Icons.crop_outlined,
-              title: 'Rogner les marges',
-              body:
-                  'Choisissez un PDF, puis faites glisser votre doigt sur l’aperçu pour délimiter la zone à conserver.',
-              accepts: const ['PDF'],
-              actionLabel: 'Choisir un PDF',
+              title: l10n.cropEmptyTitle,
+              body: l10n.cropEmptyBody,
+              accepts: [l10n.formatPdf],
+              actionLabel: l10n.actionChoosePdf,
               onAction: _pick,
               busy: _busy,
             )
@@ -153,14 +159,14 @@ class _CropScreenState extends State<CropScreen> {
               children: [
                 PickedFileCard(
                   name: picked.name,
-                  subtitle: '${info?.pageCount ?? 0} page(s)',
+                  subtitle: l10n.pageCount(info?.pageCount ?? 0),
                   busy: _busy,
                   onChange: _pick,
                 ),
                 if (info != null && preview != null) ...[
                   const SizedBox(height: 20),
                   Text(
-                    'Zone conservée',
+                    l10n.cropKeptArea,
                     style: Theme.of(context).textTheme.titleMedium,
                   ),
                   const SizedBox(height: 8),
@@ -223,7 +229,7 @@ class _CropScreenState extends State<CropScreen> {
                       TextButton.icon(
                         onPressed: () => setState(() => _rect = CropRect.full),
                         icon: const Icon(Icons.crop_free, size: 18),
-                        label: const Text('Page entière', maxLines: 1),
+                        label: Text(l10n.cropFullPage, maxLines: 1),
                       ),
                     ],
                   ),
@@ -232,20 +238,14 @@ class _CropScreenState extends State<CropScreen> {
                     child: SwitchListTile(
                       value: _allPages,
                       onChanged: (v) => setState(() => _allPages = v),
-                      title: const Text('Appliquer à toutes les pages'),
+                      title: Text(l10n.cropAllPages),
                       subtitle: Text(
-                        _allPages
-                            ? 'La même zone est découpée sur chaque page.'
-                            : 'Seule la page 1 est rognée, les autres sont '
-                                  'conservées entières.',
+                        _allPages ? l10n.cropAllPagesOn : l10n.cropAllPagesOff,
                       ),
                     ),
                   ),
                   const SizedBox(height: 8),
-                  const Text(
-                    'Le rognage réduit la taille de la page : le contenu situé en '
-                    'dehors de la zone n\'est plus affiché ni imprimé.',
-                  ),
+                  Text(l10n.cropCaveat),
                 ],
               ],
             ),
@@ -257,7 +257,7 @@ class _CropScreenState extends State<CropScreen> {
                 child: FilledButton.icon(
                   onPressed: _busy ? null : _apply,
                   icon: const Icon(Icons.crop),
-                  label: const Text('Rogner', maxLines: 1),
+                  label: Text(l10n.cropAction, maxLines: 1),
                 ),
               ),
             ),
