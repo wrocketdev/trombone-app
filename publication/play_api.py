@@ -48,7 +48,7 @@ import requests
 from google.auth.transport.requests import Request
 from google.oauth2 import service_account
 
-CLE = Path(r"C:\Users\thomas\cles-android\play-publisher.json")
+CLE = Path.home() / "cles-android" / "play-publisher.json"
 
 # Definitif. Il a ete choisi pour ne nommer aucun outil en particulier :
 # l'identifiant precedent, `com.fusionpdf.fusion_pdf`, aurait fige « fusion »
@@ -364,7 +364,7 @@ def contact(s: requests.Session) -> None:
 # La note de la release en cours. A mettre a jour a chaque version : elle
 # n'est pas dans FICHE-PLAY.md car elle change a chaque envoi, pas a chaque
 # refonte de fiche.
-NOTES_RELEASE = "Premiere version."
+NOTES_RELEASE = "Traductions complètes en 25 langues et améliorations de stabilité."
 
 PISTES = ("internal", "alpha", "beta", "production")
 
