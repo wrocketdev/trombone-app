@@ -86,7 +86,6 @@ class LCs extends L {
       count,
       locale: localeName,
       other: '$count nástrojů',
-      many: '$count nástroje',
       few: '$count nástroje',
       one: '$count nástroj',
     );
@@ -99,7 +98,6 @@ class LCs extends L {
       count,
       locale: localeName,
       other: '$count nástrojů',
-      many: '$count nástroje',
       few: '$count nástroje',
       one: '$count nástroj',
     );
@@ -108,7 +106,7 @@ class LCs extends L {
 
   @override
   String get homePromise =>
-      'Vytvořte dokument a exportujte ho.\nŽádná zeď na konci.';
+      'Vytvořte dokument a exportujte ho.\nŽádné skryté poplatky na konci.';
 
   @override
   String get homeChipNoAccount => 'Bez účtu';
@@ -124,7 +122,7 @@ class LCs extends L {
 
   @override
   String get homeColophon =>
-      'Při ukládání se nic neodemyká za peníze. Export je zdarma, bez vodoznaku a bez omezení počtu.';
+      'Při ukládání se nic neodemyká za poplatek. Export je zdarma, bez vodoznaku a bez limitu.';
 
   @override
   String get sectionFeatured => 'Doporučené';
@@ -412,7 +410,6 @@ class LCs extends L {
       count,
       locale: localeName,
       other: '$count stránek',
-      many: '$count stránky',
       few: '$count stránky',
       one: '$count stránka',
     );
@@ -425,7 +422,6 @@ class LCs extends L {
       kept,
       locale: localeName,
       other: '$kept stránek',
-      many: '$kept stránky',
       few: '$kept stránky',
       one: '$kept stránka',
     );
@@ -504,7 +500,6 @@ class LCs extends L {
       count,
       locale: localeName,
       other: '$count stránek',
-      many: '$count stránky',
       few: '$count stránky',
       one: '$count stránka',
     );
@@ -530,7 +525,6 @@ class LCs extends L {
       count,
       locale: localeName,
       other: '$count stránek',
-      many: '$count stránky',
       few: '$count stránky',
       one: '$count stránka',
     );
@@ -662,7 +656,7 @@ class LCs extends L {
 
   @override
   String get pdfToWordEmptyBody =>
-      'Text a struktura PDF se přenesou do dokumentu .docx, který můžete znovu otevřít a opravit.';
+      'Text a struktura PDF se převedou do dokumentu .docx, který můžete znovu otevřít a upravit.';
 
   @override
   String get pdfToWordAnalyzing => 'Rozbor dokumentu…';
@@ -690,7 +684,6 @@ class LCs extends L {
       count,
       locale: localeName,
       other: '$count odstavců',
-      many: '$count odstavce',
       few: '$count odstavce',
       one: '$count odstavec',
     );
@@ -703,7 +696,6 @@ class LCs extends L {
       count,
       locale: localeName,
       other: '$count nadpisů',
-      many: '$count nadpisu',
       few: '$count nadpisy',
       one: '$count nadpis',
     );
@@ -716,7 +708,6 @@ class LCs extends L {
       count,
       locale: localeName,
       other: '$count tabulek',
-      many: '$count tabulky',
       few: '$count tabulky',
       one: '$count tabulka',
     );
@@ -780,7 +771,6 @@ class LCs extends L {
       count,
       locale: localeName,
       other: '$count stránek',
-      many: '$count stránky',
       few: '$count stránky',
       one: '$count stránka',
     );
@@ -796,7 +786,6 @@ class LCs extends L {
       count,
       locale: localeName,
       other: '$count stránek',
-      many: '$count stránky',
       few: '$count stránky',
       one: '$count stránka',
     );
@@ -853,7 +842,6 @@ class LCs extends L {
       sheets,
       locale: localeName,
       other: '$sheets listů',
-      many: '$sheets listu',
       few: '$sheets listy',
       one: '$sheets list',
     );
@@ -861,7 +849,6 @@ class LCs extends L {
       rows,
       locale: localeName,
       other: 'celkem $rows řádků',
-      many: 'celkem $rows řádku',
       few: 'celkem $rows řádky',
       one: 'celkem $rows řádek',
     );
@@ -880,7 +867,6 @@ class LCs extends L {
       rows,
       locale: localeName,
       other: '$rows řádků',
-      many: '$rows řádku',
       few: '$rows řádky',
       one: '$rows řádek',
     );
@@ -888,7 +874,6 @@ class LCs extends L {
       columns,
       locale: localeName,
       other: '$columns sloupců',
-      many: '$columns sloupce',
       few: '$columns sloupce',
       one: '$columns sloupec',
     );
@@ -929,7 +914,6 @@ class LCs extends L {
       count,
       locale: localeName,
       other: '$count snímků',
-      many: '$count snímku',
       few: '$count snímky',
       one: '$count snímek',
     );
@@ -945,7 +929,6 @@ class LCs extends L {
       count,
       locale: localeName,
       other: '$count dalších snímků',
-      many: '$count dalšího snímku',
       few: '$count další snímky',
       one: '$count další snímek',
     );
@@ -964,7 +947,6 @@ class LCs extends L {
       count,
       locale: localeName,
       other: '$count řádků textu',
-      many: '$count řádku textu',
       few: '$count řádky textu',
       one: '$count řádek textu',
     );
@@ -1004,7 +986,6 @@ class LCs extends L {
       count,
       locale: localeName,
       other: 'prozkoumáno $count stránek',
-      many: 'prozkoumáno $count stránky',
       few: 'prozkoumány $count stránky',
       one: 'prozkoumána $count stránka',
     );
@@ -1044,7 +1025,6 @@ class LCs extends L {
       tables,
       locale: localeName,
       other: 'nalezeno $tables tabulek',
-      many: 'nalezeno $tables tabulky',
       few: 'nalezeny $tables tabulky',
       one: 'nalezena $tables tabulka',
     );
@@ -1052,7 +1032,6 @@ class LCs extends L {
       pages,
       locale: localeName,
       other: '$pages stránkách',
-      many: '$pages stránky',
       few: '$pages stránkách',
       one: '$pages stránce',
     );
@@ -1070,7 +1049,6 @@ class LCs extends L {
       count,
       locale: localeName,
       other: '$count odstavců mimo tabulky',
-      many: '$count odstavce mimo tabulky',
       few: '$count odstavce mimo tabulky',
       one: '$count odstavec mimo tabulky',
     );
@@ -1120,7 +1098,6 @@ class LCs extends L {
       count,
       locale: localeName,
       other: '$count stránek',
-      many: '$count stránky',
       few: '$count stránky',
       one: '$count stránka',
     );
@@ -1128,7 +1105,6 @@ class LCs extends L {
       count,
       locale: localeName,
       other: '$count snímků',
-      many: '$count snímku',
       few: '$count snímky',
       one: '$count snímek',
     );
@@ -1151,7 +1127,6 @@ class LCs extends L {
       count,
       locale: localeName,
       other: '$count stránkách',
-      many: '$count stránky',
       few: '$count stránkách',
       one: '$count stránce',
     );
@@ -1179,7 +1154,6 @@ class LCs extends L {
       count,
       locale: localeName,
       other: '$count snímků',
-      many: '$count snímku',
       few: '$count snímky',
       one: '$count snímek',
     );
@@ -1202,7 +1176,6 @@ class LCs extends L {
       count,
       locale: localeName,
       other: '$count snímků',
-      many: '$count snímku',
       few: '$count snímky',
       one: '$count snímek',
     );
@@ -1329,7 +1302,6 @@ class LCs extends L {
       count,
       locale: localeName,
       other: '$count obrázků',
-      many: '$count obrázku',
       few: '$count obrázky',
       one: '$count obrázek',
     );
@@ -1510,7 +1482,6 @@ class LCs extends L {
       kept,
       locale: localeName,
       other: 'zachováno $kept stránek',
-      many: 'zachováno $kept stránky',
       few: 'zachovány $kept stránky',
       one: 'zachována $kept stránka',
     );
@@ -1571,7 +1542,6 @@ class LCs extends L {
       count,
       locale: localeName,
       other: '$count souborů',
-      many: '$count souboru',
       few: '$count soubory',
       one: '$count soubor',
     );
@@ -1726,7 +1696,6 @@ class LCs extends L {
       count,
       locale: localeName,
       other: 'Prozkoumáno $count stránek',
-      many: 'Prozkoumáno $count stránky',
       few: 'Prozkoumány $count stránky',
       one: 'Prozkoumána $count stránka',
     );
@@ -1790,7 +1759,6 @@ class LCs extends L {
       count,
       locale: localeName,
       other: '$count oblastí ke skrytí',
-      many: '$count oblasti ke skrytí',
       few: '$count oblasti ke skrytí',
       one: '$count oblast ke skrytí',
     );
@@ -1890,7 +1858,6 @@ class LCs extends L {
       changed,
       locale: localeName,
       other: '$changed stránek se liší',
-      many: '$changed stránky se liší',
       few: '$changed stránky se liší',
       one: '$changed stránka se liší',
     );
@@ -1912,7 +1879,6 @@ class LCs extends L {
       count,
       locale: localeName,
       other: 'Vytvořeno $count souborů',
-      many: 'Vytvořeno $count souboru',
       few: 'Vytvořeny $count soubory',
       one: 'Vytvořen $count soubor',
     );

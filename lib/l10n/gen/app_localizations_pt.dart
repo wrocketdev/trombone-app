@@ -105,7 +105,7 @@ class LPt extends L {
 
   @override
   String get homePromise =>
-      'Monte seu documento e exporte.\nSem muro no final.';
+      'Crie seu documento e exporte.\nSem paywall no final.';
 
   @override
   String get homeChipNoAccount => 'Sem conta';
@@ -121,7 +121,7 @@ class LPt extends L {
 
   @override
   String get homeColophon =>
-      'Nada é desbloqueado mediante pagamento na hora de salvar. Exportar é grátis, sem marca-d’água e sem limite de quantidade.';
+      'Nada é desbloqueado mediante pagamento ao salvar. A exportação é gratuita, sem marca-d’água e sem limites.';
 
   @override
   String get sectionFeatured => 'Em destaque';
@@ -653,7 +653,7 @@ class LPt extends L {
 
   @override
   String get pdfToWordEmptyBody =>
-      'O texto e a estrutura do PDF são transpostos para um documento .docx que você poderá reabrir e corrigir.';
+      'O texto e a estrutura do PDF são transferidos para um documento .docx que você poderá reabrir e editar.';
 
   @override
   String get pdfToWordAnalyzing => 'Analisando o documento…';
@@ -819,7 +819,7 @@ class LPt extends L {
 
   @override
   String get excelLegacyFormat =>
-      'O formato .xls (o antigo formato binário do Excel) não é suportado. Salve o arquivo como .xlsx e tente de novo.';
+      'O formato .xls (o antigo formato binário do Excel) não é compatível. Salve o arquivo como .xlsx e tente de novo.';
 
   @override
   String get excelWrongFormat => 'Escolha uma planilha do Excel .xlsx.';
@@ -1345,8 +1345,7 @@ class LPt extends L {
       'Um texto à sua escolha é repetido ao fundo em todas as páginas — para marcar um documento como confidencial ou como rascunho.';
 
   @override
-  String get watermarkEmptyNote =>
-      'Exportação grátis e sem limite de quantidade.';
+  String get watermarkEmptyNote => 'Exportação gratuita e sem limites.';
 
   @override
   String get watermarkTextLabel => 'Texto da marca-d’água';
@@ -1440,7 +1439,7 @@ class LPt extends L {
   String get pageNumbersProgress => 'Numerando…';
 
   @override
-  String get organizeEmptyTitle => 'Retomar um PDF';
+  String get organizeEmptyTitle => 'Reorganizar um PDF';
 
   @override
   String get organizeEmptyBody =>

@@ -1,14 +1,14 @@
 {
   "@@locale": "uk",
-  "appTitle": "Скріпка — PDF, Scan & Word",
+  "appTitle": "Trombone — PDF, Scan & Word",
   "@appTitle": {
     "description": "Titre affiché par le sélecteur de tâches d'Android au-dessus de l'aperçu de l'application. La marque « Trombone » ne se traduit jamais ; seuls les mots-clés qui la suivent peuvent l'être."
   },
-  "appWordmark": "Тромбон",
+  "appWordmark": "Trombone",
   "@appWordmark": {
     "description": "La signature de marque en haut de l'écran d'accueil. NE PAS TRADUIRE — c'est un nom propre, identique dans les vingt-cinq langues."
   },
-  "actionSave": "зберегти",
+  "actionSave": "Зберегти",
   "@actionSave": {
     "description": "Action principale de fin de parcours : écrire le fichier produit sur l'appareil. Bouton pleine largeur, doit tenir sur une ligne."
   },
@@ -28,7 +28,7 @@
   "@actionCancel": {
     "description": "Interrompt une opération en cours dans la boîte de progression."
   },
-  "actionChange": "Щоб змінитися",
+  "actionChange": "Змінити",
   "@actionChange": {
     "description": "Remplace le fichier choisi par un autre. Bouton texte étroit posé au bout d'une rangée — libellé court impératif."
   },
@@ -65,11 +65,11 @@
   "@emptyAcceptedFormats": {
     "description": "Intitulé de la rangée de puces listant les formats que l'outil sait ouvrir."
   },
-  "exportSavedTitle": "Це записано.",
+  "exportSavedTitle": "Збережено.",
   "@exportSavedTitle": {
     "description": "Titre de la feuille de confirmation, après écriture réussie du fichier. Ton rassurant et affirmatif ; c'est le seul moment célébré de l'application."
   },
-  "exportSavedBody": "Під назвою та в папці, яку ви щойно вибрали. Без водяного знака, без обмежень, нічого для розблокування.",
+  "exportSavedBody": "Під назвою та в папці, яку ви вибрали. Без водяних знаків, без обмежень, нічого не потрібно розблоковувати.",
   "@exportSavedBody": {
     "description": "Corps de la feuille de confirmation. Rappelle que rien n'est verrouillé derrière un paiement — la promesse centrale du produit."
   },
@@ -77,7 +77,7 @@
   "@exportSaveDialogTitle": {
     "description": "Titre de la boîte système d'enregistrement de fichier."
   },
-  "pageTileIncluded": "Сторінка {number}, включена. Торкніться, щоб відсунути його вбік.",
+  "pageTileIncluded": "Сторінка {number}, вибрана. Торкніться, щоб виключити.",
   "@pageTileIncluded": {
     "description": "Étiquette d'accessibilité d'une vignette de page retenue. Lue à voix haute, jamais affichée.",
     "placeholders": {
@@ -86,7 +86,7 @@
       }
     }
   },
-  "pageTileExcluded": "Сторінка {number}, вилучено. Торкніться, щоб включити його.",
+  "pageTileExcluded": "Сторінка {number}, виключена. Торкніться, щоб включити.",
   "@pageTileExcluded": {
     "description": "Étiquette d'accessibilité d'une vignette de page écartée. Lue à voix haute, jamais affichée.",
     "placeholders": {
@@ -104,7 +104,7 @@
       }
     }
   },
-  "sectionHeaderSemantics": "{title}, {count} інструментів",
+  "sectionHeaderSemantics": "{title}, {count, plural, one{{count} інструмент} few{{count} інструменти} many{{count} інструментів} other{{count} інструментів}}",
   "@sectionHeaderSemantics": {
     "description": "Étiquette d'accessibilité d'un en-tête de section de l'accueil. Lue à voix haute, jamais affichée.",
     "placeholders": {
@@ -116,7 +116,7 @@
       }
     }
   },
-  "toolCount": "{count} інструментів",
+  "toolCount": "{count, plural, one{{count} інструмент} few{{count} інструменти} many{{count} інструментів} other{{count} інструментів}}",
   "@toolCount": {
     "description": "Décompte des outils, au colophon de l'accueil. Le nombre est calculé depuis le catalogue, jamais saisi.",
     "placeholders": {
@@ -125,7 +125,7 @@
       }
     }
   },
-  "homePromise": "Створіть свій документ, експортуйте його.\nБез стіни в кінці.",
+  "homePromise": "Створіть свій документ, експортуйте його.\nНіяких платних обмежень у кінці.",
   "@homePromise": {
     "description": "La promesse sous la marque, en haut de l'accueil. Elle désamorce la peur relevée dans les avis du marché : découvrir un paiement obligatoire au moment d'enregistrer. Le saut de ligne est intentionnel — deux lignes exactement, la seconde plus courte que la première."
   },
@@ -145,7 +145,7 @@
   "@homeSearchTooltip": {
     "description": "Info-bulle de la loupe épinglée à la barre de titre de l'accueil."
   },
-  "homeColophon": "За оплату при реєстрації нічого не розблоковується. Експорт безкоштовний, без водяних знаків і без обмеження кількості.",
+  "homeColophon": "Під час збереження нічого не блокується за плату. Експорт безкоштовний, без водяних знаків і без обмеження кількості.",
   "@homeColophon": {
     "description": "Texte de pied d'accueil, sous le décompte des outils. Répète la promesse en toutes lettres."
   },
@@ -385,7 +385,7 @@
   "@searchHint": {
     "description": "Texte d'invite du champ de recherche. Trois exemples de requêtes séparés par des virgules, suivis d'un caractère de suspension. Choisissez trois exemples naturels dans votre langue plutôt qu'une traduction littérale."
   },
-  "searchClear": "Щоб стерти",
+  "searchClear": "Очистити",
   "@searchClear": {
     "description": "Info-bulle de la croix qui vide le champ de recherche."
   },
@@ -426,7 +426,7 @@
   "@actionConvert": {
     "description": "Lance la conversion. Bouton pleine largeur en bas d'écran."
   },
-  "actionFinish": "До кінця",
+  "actionFinish": "Завершити",
   "@actionFinish": {
     "description": "Clôt une capture en plusieurs pages et passe à la suite."
   },
@@ -494,7 +494,7 @@
   "@errorPickPdf": {
     "description": "Bandeau d'erreur quand l'outil exige un PDF et qu'on lui a donné autre chose."
   },
-  "sizeBytes": "{value} o",
+  "sizeBytes": "{value} Б",
   "@sizeBytes": {
     "description": "Poids d'un fichier en octets. L'abréviation est « o » en français, « B » en anglais — employez celle de votre langue.",
     "placeholders": {
@@ -530,7 +530,7 @@
       }
     }
   },
-  "pageCount": "{count} сторінок",
+  "pageCount": "{count, plural, one{{count} сторінка} few{{count} сторінки} many{{count} сторінок} other{{count} сторінок}}",
   "@pageCount": {
     "description": "Décompte de pages. Employez les formes plurielles de votre langue — le polonais, le tchèque, le lituanien et le letton en ont plus de deux.",
     "placeholders": {
@@ -539,7 +539,7 @@
       }
     }
   },
-  "pageCountOfTotal": "{kept} сторінок із {total}",
+  "pageCountOfTotal": "{kept, plural, one{{kept} сторінка} few{{kept} сторінки} many{{kept} сторінок} other{{kept} сторінок}} із {total}",
   "@pageCountOfTotal": {
     "description": "Décompte partiel : combien de pages sont retenues sur combien au total. Affiché seulement quand on en a écarté ; « 3 pages sur 3 » n'apparaît jamais.",
     "placeholders": {
@@ -567,7 +567,7 @@
   "@formatPdf": {
     "description": "Puce de format acceptable. Sigle international, à conserver tel quel dans toutes les langues."
   },
-  "formatWord": "Слово",
+  "formatWord": "Word",
   "@formatWord": {
     "description": "Puce de format acceptable. Marque déposée, à conserver telle quelle."
   },
@@ -575,7 +575,7 @@
   "@formatExcel": {
     "description": "Puce de format acceptable. Marque déposée, à conserver telle quelle."
   },
-  "formatPowerPoint": "Power point",
+  "formatPowerPoint": "PowerPoint",
   "@formatPowerPoint": {
     "description": "Puce de format acceptable. Marque déposée, à conserver telle quelle."
   },
@@ -651,7 +651,7 @@
   "@mergeRotateAll": {
     "description": "Bouton qui fait tourner d'un quart de tour toutes les pages du document déplié."
   },
-  "mergePreviewAndExport": "Попередній перегляд і експорт ({count} сторінок)",
+  "mergePreviewAndExport": "Попередній перегляд і експорт ({count, plural, one{{count} сторінка} few{{count} сторінки} many{{count} сторінок} other{{count} сторінок}})",
   "@mergePreviewAndExport": {
     "description": "Bouton de bas d'écran de l'outil Fusionner, avec le nombre de pages retenues entre parenthèses.",
     "placeholders": {
@@ -682,7 +682,7 @@
   "@previewPageUnreadable": {
     "description": "Affiché à la place d'une page dont le rendu a échoué."
   },
-  "previewExportWhat": "PDF · {count} сторінок",
+  "previewExportWhat": "PDF · {count, plural, one{{count} сторінка} few{{count} сторінки} many{{count} сторінок} other{{count} сторінок}}",
   "@previewExportWhat": {
     "description": "Description de ce qui vient d'être enregistré, dans la feuille de confirmation. Décrit le document, ne le nomme pas.",
     "placeholders": {
@@ -757,7 +757,7 @@
   "@protectWarning": {
     "description": "Avertissement sous les champs de saisie. C'est le seul endroit qui dit qu'un mot de passe perdu est perdu pour de bon — ne l'allégez pas."
   },
-  "protectAlreadyProtected": "Цей файл уже захищено — спершу скористайтеся Unlock PDF.",
+  "protectAlreadyProtected": "Цей файл уже захищено — спершу скористайтеся «Розблокувати PDF».",
   "@protectAlreadyProtected": {
     "description": "Bandeau d'erreur quand le PDF choisi porte déjà un mot de passe. « Déverrouiller PDF » doit reprendre exactement le libellé traduit de l'outil (toolUnlock)."
   },
@@ -835,7 +835,7 @@
   "@repairEmptyTitle": {
     "description": "Titre de l'écran vide de l'outil Réparer."
   },
-  "repairEmptyBody": "Внутрішня структура пошкодженого PDF відновлюється. Те, що можна врятувати, буде врятованим.",
+  "repairEmptyBody": "Внутрішня структура пошкодженого PDF відновлюється. Усе, що можна відновити, буде збережено.",
   "@repairEmptyBody": {
     "description": "Consigne de l'écran vide de l'outil Réparer. La seconde phrase promet peu délibérément — la réparation n'est jamais garantie."
   },
@@ -855,7 +855,7 @@
   "@pdfToWordEmptyTitle": {
     "description": "Titre de l'écran vide de l'outil PDF vers Word. « Word » est une marque, à conserver."
   },
-  "pdfToWordEmptyBody": "Текст і структура PDF-файлу транспонуються в документ .docx, який можна повторно відкрити та виправити.",
+  "pdfToWordEmptyBody": "Текст і структура PDF переносяться в документ .docx, який можна відкрити та відредагувати.",
   "@pdfToWordEmptyBody": {
     "description": "Consigne de l'écran vide de l'outil PDF vers Word. « .docx » est une extension de fichier, à conserver telle quelle."
   },
@@ -888,7 +888,7 @@
   "@pdfToWordSummaryTitle": {
     "description": "Titre de la carte qui résume ce que l'inspection a trouvé dans le PDF."
   },
-  "pdfToWordParagraphCount": "{count} абзаців",
+  "pdfToWordParagraphCount": "{count, plural, one{{count} абзац} few{{count} абзаци} many{{count} абзаців} other{{count} абзаців}}",
   "@pdfToWordParagraphCount": {
     "description": "Puce du résumé : combien de paragraphes ont été reconnus.",
     "placeholders": {
@@ -897,7 +897,7 @@
       }
     }
   },
-  "pdfToWordHeadingCount": "{count} назв",
+  "pdfToWordHeadingCount": "{count, plural, one{{count} заголовок} few{{count} заголовки} many{{count} заголовків} other{{count} заголовків}}",
   "@pdfToWordHeadingCount": {
     "description": "Puce du résumé : combien de titres ont été reconnus.",
     "placeholders": {
@@ -906,7 +906,7 @@
       }
     }
   },
-  "pdfToWordTableCount": "{count} таблиць",
+  "pdfToWordTableCount": "{count, plural, one{{count} таблиця} few{{count} таблиці} many{{count} таблиць} other{{count} таблиць}}",
   "@pdfToWordTableCount": {
     "description": "Puce du résumé : combien de tableaux ont été reconnus.",
     "placeholders": {
@@ -923,7 +923,7 @@
   "@pdfToWordCaveat": {
     "description": "Ce que la conversion ne sait pas faire, dit avant qu'on la lance. C'est le passage qui évite la déception — ne l'allégez pas."
   },
-  "pdfToWordScanWarning": "Здається, цей PDF-файл сканований: тексту не знайдено. Спочатку скористайтеся інструментом «Текст з можливістю пошуку» (OCR), а потім поверніться та конвертуйте отриманий PDF-файл.",
+  "pdfToWordScanWarning": "Здається, цей PDF-файл сканований: тексту не знайдено. Спочатку скористайтеся інструментом «Пошуковий текст (OCR)», а потім поверніться та конвертуйте отриманий PDF-файл.",
   "@pdfToWordScanWarning": {
     "description": "Avertissement quand le PDF ne contient aucun texte extractible. « Texte cherchable (OCR) » doit reprendre exactement le libellé traduit de l'outil (toolOcr)."
   },
@@ -955,7 +955,7 @@
   "@actionConvertAgain": {
     "description": "Action secondaire proposée une fois le fichier produit, pour refaire la conversion. Doit tenir sur une ligne."
   },
-  "errorSaveFailed": "Не вдалося зареєструвати: {detail}",
+  "errorSaveFailed": "Не вдалося зберегти: {detail}",
   "@errorSaveFailed": {
     "description": "Bandeau d'erreur quand l'écriture du fichier échoue. {detail} est un message technique non traduit.",
     "placeholders": {
@@ -984,7 +984,7 @@
   "@rectoVersoReversedHint": {
     "description": "Sous-titre de l'interrupteur, qui justifie sa valeur par défaut."
   },
-  "rectoVersoPreview": "Огляд чергування ({count} сторінок)",
+  "rectoVersoPreview": "Попередній перегляд чергування ({count, plural, one{{count} сторінка} few{{count} сторінки} many{{count} сторінок} other{{count} сторінок}})",
   "@rectoVersoPreview": {
     "description": "Titre de la bande de vignettes qui montre le résultat de l'entrelacement.",
     "placeholders": {
@@ -997,7 +997,7 @@
   "@rectoVersoProgress": {
     "description": "Titre de la boîte de progression pendant l'entrelacement. Garder le caractère de suspension final."
   },
-  "fileWithPageCount": "{name} · {count} сторінок",
+  "fileWithPageCount": "{name} · {count, plural, one{{count} сторінка} few{{count} сторінки} many{{count} сторінок} other{{count} сторінок}}",
   "@fileWithPageCount": {
     "description": "Sous-titre d'une carte de fichier : son nom, puis son nombre de pages. Le point médian est un séparateur typographique.",
     "placeholders": {
@@ -1072,7 +1072,7 @@
       }
     }
   },
-  "excelSheetsAndRows": "{sheets} аркушів · {rows} рядків загалом",
+  "excelSheetsAndRows": "{sheets, plural, one{{sheets} аркуш} few{{sheets} аркуші} many{{sheets} аркушів} other{{sheets} аркушів}} · {rows, plural, one{усього {rows} рядок} few{усього {rows} рядки} many{усього {rows} рядків} other{усього {rows} рядків}}",
   "@excelSheetsAndRows": {
     "description": "Sous-titre de la rangée de fichier : combien de feuilles et combien de lignes en tout. Le point médian est un séparateur typographique.",
     "placeholders": {
@@ -1092,7 +1092,7 @@
   "@excelEmptySheet": {
     "description": "Sous-titre d'une feuille qui ne contient aucune ligne."
   },
-  "excelSheetDimensions": "{rows} рядків × {columns} стовпців",
+  "excelSheetDimensions": "{rows, plural, one{{rows} рядок} few{{rows} рядки} many{{rows} рядків} other{{rows} рядків}} × {columns, plural, one{{columns} стовпець} few{{columns} стовпці} many{{columns} стовпців} other{{columns} стовпців}}",
   "@excelSheetDimensions": {
     "description": "Sous-titre d'une feuille : ses dimensions. Le signe × est le symbole de multiplication.",
     "placeholders": {
@@ -1136,7 +1136,7 @@
   "@pptxTextOnlyBody": {
     "description": "Corps de la carte d'avertissement. Dit clairement ce que l'outil ne fait pas — ne l'allégez pas."
   },
-  "pptxSlideCount": "{count} слайдів",
+  "pptxSlideCount": "{count, plural, one{{count} слайд} few{{count} слайди} many{{count} слайдів} other{{count} слайдів}}",
   "@pptxSlideCount": {
     "description": "Sous-titre de la rangée de fichier : combien de diapositives ont été trouvées.",
     "placeholders": {
@@ -1149,7 +1149,7 @@
   "@pptxSlidesDetected": {
     "description": "Intitulé de la liste des diapositives trouvées dans la présentation."
   },
-  "pptxMoreSlides": "і {count} інших слайдів…",
+  "pptxMoreSlides": "і ще {count, plural, one{{count} слайд} few{{count} слайди} many{{count} слайдів} other{{count} слайдів}}…",
   "@pptxMoreSlides": {
     "description": "Affiché sous la liste quand la présentation compte plus de trente diapositives et que l'aperçu s'arrête là. Garder le caractère de suspension final.",
     "placeholders": {
@@ -1166,7 +1166,7 @@
   "@pptxEmptySlide": {
     "description": "Sous-titre d'une diapositive dont l'outil n'a extrait aucun texte."
   },
-  "pptxTextLineCount": "{count} рядків тексту",
+  "pptxTextLineCount": "{count, plural, one{{count} рядок тексту} few{{count} рядки тексту} many{{count} рядків тексту} other{{count} рядків тексту}}",
   "@pptxTextLineCount": {
     "description": "Sous-titre d'une diapositive : combien de lignes de texte elle porte.",
     "placeholders": {
@@ -1212,7 +1212,7 @@
   "@pdfToExcelEmptyBody": {
     "description": "Consigne de l'écran vide de l'outil PDF vers Excel."
   },
-  "pdfToExcelPagesAnalyzed": "Проаналізовано {count} сторінок",
+  "pdfToExcelPagesAnalyzed": "{count, plural, one{Проаналізовано {count} сторінку} few{Проаналізовано {count} сторінки} many{Проаналізовано {count} сторінок} other{Проаналізовано {count} сторінок}}",
   "@pdfToExcelPagesAnalyzed": {
     "description": "Sous-titre de la carte du fichier une fois l'inspection faite.",
     "placeholders": {
@@ -1254,7 +1254,7 @@
   "@pdfToExcelCaveat": {
     "description": "Limites de l'extraction de tableaux, dites avant qu'on lance la conversion. Ne l'allégez pas."
   },
-  "pdfToExcelTablesFound": "{tables} таблиці, виявлені на {pages} сторінках",
+  "pdfToExcelTablesFound": "{tables, plural, one{Виявлено {tables} таблицю} few{Виявлено {tables} таблиці} many{Виявлено {tables} таблиць} other{Виявлено {tables} таблиць}} на {pages, plural, one{{pages} сторінці} few{{pages} сторінках} many{{pages} сторінках} other{{pages} сторінках}}",
   "@pdfToExcelTablesFound": {
     "description": "Résumé de l'inspection : combien de tableaux, sur combien de pages.",
     "placeholders": {
@@ -1275,7 +1275,7 @@
       }
     }
   },
-  "pdfToExcelParagraphsOutside": "{count} абзаців поза таблицями",
+  "pdfToExcelParagraphsOutside": "{count, plural, one{{count} абзац поза таблицями} few{{count} абзаци поза таблицями} many{{count} абзаців поза таблицями} other{{count} абзаців поза таблицями}}",
   "@pdfToExcelParagraphsOutside": {
     "description": "Résumé de l'inspection : combien de paragraphes vivent en dehors des tableaux.",
     "placeholders": {
@@ -1337,7 +1337,7 @@
   "@pdfToPptxConverting": {
     "description": "Titre de la boîte de progression pendant la conversion. Garder le caractère de suspension final."
   },
-  "pdfToPptxPagesToSlides": "{count} сторінок > {count} слайдів",
+  "pdfToPptxPagesToSlides": "{count, plural, one{{count} сторінка} few{{count} сторінки} many{{count} сторінок} other{{count} сторінок}} > {count, plural, one{{count} слайд} few{{count} слайди} many{{count} слайдів} other{{count} слайдів}}",
   "@pdfToPptxPagesToSlides": {
     "description": "Sous-titre de la carte du fichier : autant de diapositives que de pages. Le chevron simple et non une flèche → : celle-ci manque au sous-ensemble des fontes embarquées. Voir test/l10n_coverage_test.dart.",
     "placeholders": {
@@ -1358,7 +1358,7 @@
   "@pdfToPptxQualityHint": {
     "description": "Explication sous le choix de qualité, dans le cas ordinaire."
   },
-  "pdfToPptxHeavyWarning": "Попередження: у високій якості презентація з {count} сторінок може важити кілька десятків Мб і довго відкриватися. Якщо сумніваєтеся, виберіть «Стандарт».",
+  "pdfToPptxHeavyWarning": "Увага: у високій якості презентація з {count, plural, one{{count} сторінки} few{{count} сторінок} many{{count} сторінок} other{{count} сторінок}} може важити десятки МБ і довго відкриватися. Виберіть Стандартний, якщо сумніваєтеся.",
   "@pdfToPptxHeavyWarning": {
     "description": "Avertissement affiché en rouge quand haute qualité et document long se combinent. « Standard » doit reprendre le libellé traduit de pptxQualityStandard. « Mo » est l'abréviation de méga-octet — employez celle de votre langue.",
     "placeholders": {
@@ -1379,7 +1379,7 @@
   "@pdfToPptxResultTitle": {
     "description": "Titre de la carte de résultat, une fois la présentation produite."
   },
-  "pdfToPptxResultDetail": "{name} — {count} слайдів · {size} · {quality}",
+  "pdfToPptxResultDetail": "{name} — {count, plural, one{{count} слайд} few{{count} слайди} many{{count} слайдів} other{{count} слайдів}} · {size} · {quality}",
   "@pdfToPptxResultDetail": {
     "description": "Détail de la carte de résultat : nom, nombre de diapositives, poids et réglage de qualité. Le point médian est un séparateur typographique.",
     "placeholders": {
@@ -1409,7 +1409,7 @@
   "@pdfToPptxConvertAction": {
     "description": "Bouton de bas d'écran qui lance la conversion. Doit tenir sur une ligne."
   },
-  "pdfToPptxExportWhat": "Презентація PowerPoint · {count} слайдів",
+  "pdfToPptxExportWhat": "Презентація PowerPoint · {count, plural, one{{count} слайд} few{{count} слайди} many{{count} слайдів} other{{count} слайдів}}",
   "@pdfToPptxExportWhat": {
     "description": "Description de ce qui vient d'être enregistré, dans la feuille de confirmation.",
     "placeholders": {
@@ -1468,7 +1468,7 @@
   "@pdfToImagesProgress": {
     "description": "Titre de la boîte de progression pendant le rendu des images. Garder le caractère de suspension final."
   },
-  "pdfToImagesExportWhat": "{count} зображень {format}",
+  "pdfToImagesExportWhat": "{count, plural, one{{count} зображення} few{{count} зображення} many{{count} зображень} other{{count} зображень}} {format}",
   "@pdfToImagesExportWhat": {
     "description": "Description de ce qui vient d'être enregistré : combien d'images, dans quel format. {format} vaut « JPG » ou « PNG » et ne se traduit pas.",
     "placeholders": {
@@ -1573,7 +1573,7 @@
       }
     }
   },
-  "imagesToPdfCreateAction": "Створіть PDF ({count} зображень)",
+  "imagesToPdfCreateAction": "Створити PDF ({count, plural, one{{count} зображення} few{{count} зображення} many{{count} зображень} other{{count} зображень}})",
   "@imagesToPdfCreateAction": {
     "description": "Bouton de bas d'écran, avec le nombre d'images retenues entre parenthèses.",
     "placeholders": {
@@ -1658,7 +1658,7 @@
   "@watermarkEmptyBody": {
     "description": "Consigne de l'écran vide de l'outil Filigrane."
   },
-  "watermarkEmptyNote": "Безкоштовний експорт без обмеження кількості.",
+  "watermarkEmptyNote": "Безкоштовний експорт без обмежень.",
   "@watermarkEmptyNote": {
     "description": "Note verte de l'écran vide, propre à cet outil. La note habituelle promet « sans filigrane » — sur l'outil qui en appose un, elle se contredirait. Ne réintroduisez donc pas la mention du filigrane ici."
   },
@@ -1812,7 +1812,7 @@
   "@organizeNothingToExport": {
     "description": "Bandeau d'erreur quand toutes les pages ont été écartées."
   },
-  "organizePagesKept": "Збережено сторінок: {kept} із {total}",
+  "organizePagesKept": "{kept, plural, one{{kept} збережена сторінка} few{{kept} збережені сторінки} many{{kept} збережених сторінок} other{{kept} збережених сторінок}} із {total}",
   "@organizePagesKept": {
     "description": "Sous-titre du document : combien de pages restent retenues sur combien. Affiché seulement quand on en a écarté.",
     "placeholders": {
@@ -1905,7 +1905,7 @@
   "@organizeSplitTitle": {
     "description": "Titre de la boîte de dialogue de division."
   },
-  "organizeFileCount": "{count} файлів",
+  "organizeFileCount": "{count, plural, one{{count} файл} few{{count} файли} many{{count} файлів} other{{count} файлів}}",
   "@organizeFileCount": {
     "description": "Nombre de fichiers que la division produira, sous le curseur.",
     "placeholders": {
@@ -2108,7 +2108,7 @@
   "@ocrResultTitle": {
     "description": "Titre de la barre de l'écran de résultat. « OCR » est un sigle international, à conserver."
   },
-  "ocrResultBody": "Проаналізовано {count} сторінок. PDF-файл із можливістю пошуку готовий, і ви також можете скопіювати весь розпізнаний текст.",
+  "ocrResultBody": "{count, plural, one{Проаналізована {count} сторінка} few{Проаналізовані {count} сторінки} many{Проаналізованих {count} сторінок} other{Проаналізованих {count} сторінок}}. PDF-файл із можливістю пошуку тексту готовий, і ви також можете скопіювати весь розпізнаний текст.",
   "@ocrResultBody": {
     "description": "Résumé de l'écran de résultat : combien de pages ont été traitées et ce qu'on peut faire ensuite.",
     "placeholders": {
@@ -2194,7 +2194,7 @@
   "@redactNoZone": {
     "description": "Affiché au-dessus des boutons tant qu'aucun rectangle n'a été tracé."
   },
-  "redactZoneCount": "{count} областей, які потрібно приховати",
+  "redactZoneCount": "{count, plural, one{{count} зона для приховування} few{{count} зони для приховування} many{{count} зон для приховування} other{{count} зон для приховування}}",
   "@redactZoneCount": {
     "description": "Nombre de rectangles tracés, au-dessus des boutons.",
     "placeholders": {
@@ -2323,7 +2323,7 @@
       }
     }
   },
-  "compareChangedPages": "{changed} сторінки відрізняються на {total}",
+  "compareChangedPages": "{changed, plural, one{{changed} змінена сторінка} few{{changed} змінені сторінки} many{{changed} змінених сторінок} other{{changed} змінених сторінок}} із {total}",
   "@compareChangedPages": {
     "description": "Résumé de la comparaison : combien de pages diffèrent, sur combien au total. Accordez le verbe au nombre.",
     "placeholders": {
@@ -2348,7 +2348,7 @@
       }
     }
   },
-  "organizeFilesCreated": "Створено файлів: {count}",
+  "organizeFilesCreated": "{count, plural, one{{count} створений файл} few{{count} створені файли} many{{count} створених файлів} other{{count} створених файлів}}",
   "@organizeFilesCreated": {
     "description": "Titre de la feuille de résultats de la division : combien de fichiers en sont sortis.",
     "placeholders": {

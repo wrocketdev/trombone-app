@@ -1,9 +1,7 @@
 {
   "@@locale": "it",
-
   "appTitle": "Trombone — PDF, Scanner e Word",
   "appWordmark": "Trombone",
-
   "actionSave": "Salva",
   "actionShare": "Condividi",
   "actionCompress": "Comprimi",
@@ -12,120 +10,87 @@
   "actionChange": "Cambia",
   "actionContinue": "Continua",
   "actionOpening": "Apertura…",
-  "actionRemoveFile": "Togli questo file",
-
+  "actionRemoveFile": "Rimuovi questo file",
   "progressPreparing": "Preparazione…",
-  "progressPercent": "{percent} %",
-
+  "progressPercent": "{percent}%",
   "emptyReassurance": "Esportazione gratuita, senza filigrana né limiti.",
   "emptyAcceptedFormats": "Formati accettati",
-
   "exportSavedTitle": "Salvato.",
   "exportSavedBody": "Con il nome e nella cartella che hai appena scelto. Senza filigrana, senza limiti, niente da sbloccare.",
   "exportSaveDialogTitle": "Salva il PDF",
-
   "pageTileIncluded": "Pagina {number}, inclusa. Tocca per escluderla.",
   "pageTileExcluded": "Pagina {number}, esclusa. Tocca per includerla.",
   "pageTileRotate": "Ruota la pagina {number}",
-
   "sectionHeaderSemantics": "{title}, {count, plural, one{{count} strumento} other{{count} strumenti}}",
   "toolCount": "{count, plural, one{{count} strumento} other{{count} strumenti}}",
-
-  "homePromise": "Crea il tuo documento ed esportalo.\nNessun muro alla fine.",
+  "homePromise": "Crea il tuo documento ed esportalo.\nNessun paywall alla fine.",
   "homeChipNoAccount": "Senza account",
   "homeChipNoWatermark": "Senza filigrana",
   "homeChipUnlimited": "Esportazione illimitata",
   "homeSearchTooltip": "Cerca uno strumento",
-  "homeColophon": "Al momento di salvare non si sblocca nulla a pagamento. L’esportazione è gratuita, senza filigrana e senza limiti di quantità.",
-
+  "homeColophon": "Al momento del salvataggio non c’è nulla da sbloccare a pagamento. L’esportazione è gratuita, senza filigrana e senza limiti.",
   "sectionFeatured": "In evidenza",
   "sectionToPdf": "Verso il PDF",
   "sectionFromPdf": "Dal PDF",
   "sectionSecurity": "Sicurezza",
-  "sectionEdit": "Modificare",
-
+  "sectionEdit": "Modifica",
   "toolMerge": "Unisci",
   "toolMergeKeywords": "unire combinare fondere raggruppare concatenare aggiungere",
   "toolMergeSubtitle": "PDF, Word, immagini e testo in un solo documento",
-
   "toolRectoVerso": "Fronte-retro",
   "toolRectoVersoKeywords": "duplex intercalare scansione pari dispari due lati",
   "toolRectoVersoSubtitle": "Due scansioni, di nuovo in ordine",
-
   "toolImagesToPdf": "Immagini in PDF",
   "toolImagesToPdfKeywords": "foto jpg jpeg png foto album fotocamera immagine",
   "toolImagesToPdfSubtitle": "Foto e schermate in un documento",
-
   "toolPdfToWord": "PDF in Word",
   "toolPdfToWordKeywords": "docx videoscrittura modificabile convertire doc",
   "toolPdfToWordSubtitle": "Testo e tabelle, modificabili",
-
   "toolOrganize": "Organizza un PDF",
   "toolOrganizeKeywords": "dividere separare estrarre riordinare ordine pagine eliminare",
   "toolOrganizeSubtitle": "Dividere, estrarre, riordinare",
-
   "toolExcelToPdf": "Excel in PDF",
   "toolExcelToPdfKeywords": "foglio di calcolo xlsx cartella foglio calcolo",
-
   "toolPptxToPdf": "PowerPoint in PDF",
   "toolPptxToPdfKeywords": "pptx diapositiva presentazione slide",
-
   "toolHtmlToPdf": "Pagina web in PDF",
   "toolHtmlToPdfKeywords": "html sito internet url link articolo",
-
   "toolScan": "Scansiona un documento",
   "toolScanKeywords": "fotocamera foto digitalizzare scansione carta",
-
   "toolPdfToExcel": "PDF in Excel",
   "toolPdfToExcelKeywords": "foglio di calcolo xlsx tabella estrarre dati",
-
   "toolPdfToPptx": "PDF in PowerPoint",
   "toolPdfToPptxKeywords": "pptx diapositiva presentazione slide",
-
   "toolPdfToImages": "PDF in immagini",
   "toolPdfToImagesKeywords": "jpg png foto esportare schermata immagine",
-
   "toolOcr": "Testo ricercabile (OCR)",
   "toolOcrKeywords": "riconoscimento caratteri scansionato copiare selezionare",
-
   "toolPdfA": "Converti in PDF/A",
   "toolPdfAKeywords": "archiviazione norma lungo termine conservazione iso",
-
   "toolProtect": "Proteggi PDF",
   "toolProtectKeywords": "password lucchetto cifrare bloccare proteggere",
-
   "toolUnlock": "Sblocca PDF",
   "toolUnlockKeywords": "togliere password aprire decifrare sproteggere lucchetto",
-
   "toolRepair": "Ripara PDF",
   "toolRepairKeywords": "corrotto illeggibile danneggiato recuperare rotto errore",
-
   "toolRedact": "Oscura un PDF",
   "toolRedactKeywords": "nascondere annerire anonimizzare riservato cancellare censurare",
-
   "toolEdit": "Modifica PDF",
   "toolEditKeywords": "testo modificare correggere annotare scrivere",
-
   "toolSign": "Firma",
   "toolSignKeywords": "firma sigla contratto mano",
-
   "toolWatermark": "Filigrana",
   "toolWatermarkKeywords": "watermark timbro riservato bozza marchio",
-
   "toolPageNumbers": "Numeri di pagina",
   "toolPageNumbersKeywords": "impaginazione folio numerare cifre numeri",
-
   "toolCrop": "Ritaglia un PDF",
   "toolCropKeywords": "tagliare margini ritagliare bordi dimensione",
-
   "toolCompare": "Confronta PDF",
   "toolCompareKeywords": "differenza versioni diff modifiche confrontare",
-
   "searchHint": "Unisci, password, filigrana…",
   "searchClear": "Cancella",
   "searchNoResultTitle": "Nessuno strumento per «{query}».",
   "searchNoResultBody": "Prova con il formato che hai a portata di mano — «Word», «Excel», «foto» — o con quello che vuoi farne: «firmare», «dividere», «password».",
-
   "actionUndo": "Annulla",
   "actionApply": "Applica",
   "actionChoose": "Scegli",
@@ -136,30 +101,25 @@
   "actionBack": "Indietro",
   "actionAdd": "Aggiungi",
   "noFileChosen": "Nessun file scelto",
-
   "errorExportFailed": "Esportazione non riuscita: {detail}",
   "errorShareFailed": "Condivisione non riuscita: {detail}",
   "errorOpenFailed": "Impossibile aprire il file: {detail}",
   "errorConversionFailed": "Conversione non riuscita: {detail}",
   "errorOnFile": "{name}: {detail}",
   "errorPickPdf": "Scegli un file PDF.",
-
   "sizeBytes": "{value} B",
   "sizeKb": "{value} KB",
   "sizeMb": "{value} MB",
   "sizeApprox": "~ {size}",
-
   "pageCount": "{count, plural, one{{count} pagina} other{{count} pagine}}",
   "pageCountOfTotal": "{kept, plural, one{{kept} pagina} other{{kept} pagine}} su {total}",
   "pageOfTotal": "Pagina {current} di {total}",
-
   "formatPdf": "PDF",
   "formatWord": "Word",
   "formatExcel": "Excel",
   "formatPowerPoint": "PowerPoint",
   "formatImages": "Immagini",
   "formatText": "Testo",
-
   "mergeAddFile": "Aggiungi un file",
   "mergeAddHint": "PDF, Word, immagini o testo",
   "mergeEmptyTitle": "Un solo documento",
@@ -172,7 +132,6 @@
   "mergeMoveSemantics": "Sposta {name}",
   "mergeRotateAll": "Ruota tutte le pagine",
   "mergePreviewAndExport": "Anteprima ed esporta ({count, plural, one{{count} pagina} other{{count} pagine}})",
-
   "previewTitle": "Anteprima · {size}",
   "previewZoomPage": "Pagina {number}, ingrandisci",
   "previewPageUnreadable": "Pagina illeggibile.",
@@ -182,8 +141,7 @@
   "compressEstimating": "Stima in corso…",
   "compressProgress": "Compressione in corso…",
   "compressFailed": "Compressione non riuscita: {detail}",
-
-  "protectEmptyTitle": "Mettere una password",
+  "protectEmptyTitle": "Imposta una password",
   "protectEmptyBody": "Il PDF non si aprirà più senza la password che scegli. Conservala: non può essere recuperata.",
   "protectSubtitle": "Sarà cifrato con AES a 256 bit",
   "protectPassword": "Password",
@@ -199,8 +157,7 @@
   "protectResultTitle": "PDF protetto",
   "protectResultDetail": "Cifrato con AES a 256 bit. Servirà la password per aprirlo.",
   "protectExportWhat": "PDF protetto da password",
-
-  "unlockEmptyTitle": "Togliere la password",
+  "unlockEmptyTitle": "Rimuovi la password",
   "unlockEmptyBody": "Ti serve la password attuale del documento. Una volta tolta, il PDF si aprirà liberamente.",
   "unlockAcceptsProtectedPdf": "PDF protetto",
   "unlockChooseProtectedPdf": "Scegli un PDF protetto",
@@ -209,15 +166,13 @@
   "unlockProgress": "Sblocco in corso…",
   "unlockFailed": "Sblocco non riuscito: {detail}",
   "unlockAction": "Sblocca",
-
-  "repairEmptyTitle": "Riparare un file rovinato",
+  "repairEmptyTitle": "Ripara un file danneggiato",
   "repairEmptyBody": "La struttura interna di un PDF danneggiato viene ricostruita. Ciò che è recuperabile lo sarà.",
   "repairProgress": "Riparazione in corso…",
   "repairFailed": "Impossibile riparare questo file — forse è troppo danneggiato.",
   "repairAction": "Ripara",
-
   "pdfToWordEmptyTitle": "Un Word modificabile",
-  "pdfToWordEmptyBody": "Il testo e la struttura del PDF vengono trasposti in un documento .docx che potrai riaprire e correggere.",
+  "pdfToWordEmptyBody": "Il testo e la struttura del PDF vengono convertiti in un documento .docx che potrai riaprire e modificare.",
   "pdfToWordAnalyzing": "Analisi del documento…",
   "pdfToWordAnalysisPending": "Analisi in attesa",
   "pdfToWordAnalysisFailed": "Analisi non riuscita: {detail}",
@@ -236,7 +191,6 @@
   "pdfToWordConvertAction": "Converti in Word",
   "actionConvertAgain": "Converti di nuovo",
   "errorSaveFailed": "Impossibile salvare: {detail}",
-
   "rectoVersoIntro": "Un alimentatore a facciata singola dà due file: le pagine dispari in ordine, le pari spesso in ordine inverso. Scegli entrambi per ricomporli.",
   "rectoVersoOddSlot": "File delle pagine dispari (fronte)",
   "rectoVersoEvenSlot": "File delle pagine pari (retro)",
@@ -250,11 +204,10 @@
   "errorGeneric": "Non riuscito: {detail}",
   "actionConvertToPdf": "Converti in PDF",
   "convertProgress": "Conversione in corso…",
-
   "excelEmptyTitle": "Una cartella di lavoro in PDF",
   "excelEmptyBody": "I fogli di un file .xlsx diventano pagine PDF, pronte da inviare o stampare.",
   "excelChooseWorkbook": "Scegli una cartella di lavoro",
-  "excelChooseXlsx": "Scegli una cartella .xlsx",
+  "excelChooseXlsx": "Scegli un file .xlsx",
   "excelLegacyFormat": "Il formato .xls (il vecchio formato binario di Excel) non è supportato. Salva il file come .xlsx e riprova.",
   "excelWrongFormat": "Scegli una cartella di lavoro Excel .xlsx.",
   "excelUnreadable": "Cartella illeggibile: {detail}",
@@ -265,7 +218,6 @@
   "excelRepeatHeader": "Ripeti la riga di intestazione su ogni pagina",
   "excelRepeatHeaderHint": "La prima riga del foglio viene ridisegnata in cima a ogni pagina della tabella.",
   "excelCaveat": "Ciò che la conversione riprende: il testo delle celle così com’è salvato nel file (compreso l’ultimo risultato calcolato delle formule), la prima riga in grassetto e una griglia.\n\nCiò che non riprende: colori, caratteri, formati numerici, celle unite, immagini, grafici e le formule stesse. Le colonne vengono ridotte per stare nella larghezza della pagina; sui fogli molto larghi, il testo delle celle troppo strette viene troncato con «…».",
-
   "pptxEmptyTitle": "Una presentazione in PDF",
   "pptxEmptyBody": "Una pagina orizzontale 16:9 per diapositiva, con il titolo e i punti elenco. Il testo viene ripreso; le immagini, le forme e gli sfondi originali no.\n\nFormato accettato: .pptx. Un vecchio file .ppt va prima risalvato come .pptx da PowerPoint.",
   "pptxChoosePresentation": "Scegli una presentazione",
@@ -278,20 +230,17 @@
   "pptxEmptySlide": "Nessun testo (solo immagine o forma)",
   "pptxTextLineCount": "{count, plural, one{{count} riga di testo} other{{count} righe di testo}}",
   "pptxReadFailed": "Impossibile leggere: {detail}",
-
   "compressLevelLight": "Leggera",
   "compressLevelMedium": "Media",
   "compressLevelStrong": "Forte",
-
   "pptxQualityStandard": "Standard (150 dpi)",
   "pptxQualityHigh": "Alta (220 dpi)",
-
   "pdfToExcelEmptyTitle": "Recuperare le tabelle",
   "pdfToExcelEmptyBody": "Le tabelle di un PDF vengono estratte in una cartella di lavoro Excel. La formattazione non viene conservata, i valori sì.",
   "pdfToExcelPagesAnalyzed": "{count, plural, one{{count} pagina analizzata} other{{count} pagine analizzate}}",
   "pdfToExcelAnalysisFailed": "Analisi impossibile. Il PDF potrebbe essere protetto da password o danneggiato. ({detail})",
   "pdfToExcelNothingToExport": "Niente da esportare: nessuna tabella rilevata.",
-  "pdfToExcelBuilding": "Creazione della cartella…",
+  "pdfToExcelBuilding": "Creazione del file…",
   "pdfToExcelIncludeParagraphs": "Includi anche il testo fuori dalle tabelle (una riga per paragrafo)",
   "pdfToExcelIncludeParagraphsHint": "Utile per un documento semi-strutturato: il testo va nella colonna A, dopo le tabelle della pagina.",
   "pdfToExcelCaveatTitle": "Ciò che la conversione non conserva",
@@ -305,7 +254,6 @@
   "pdfToExcelExportWhat": "Cartella di lavoro Excel",
   "pdfToExcelConvertAction": "Converti in Excel",
   "resultNameAndSize": "{name} — {size}",
-
   "pdfToPptxEmptyTitle": "Una diapositiva per pagina",
   "pdfToPptxEmptyBody": "Il PDF diventa una presentazione PowerPoint identica. Ogni pagina arriva come immagine: l’impaginazione è fedele, ma il testo non sarà modificabile in PowerPoint.",
   "pdfToPptxOpenFailed": "Impossibile aprire questo PDF: {detail}",
@@ -323,7 +271,6 @@
   "pdfToPptxChangeQuality": "Cambia la qualità",
   "pdfToPptxConvertAction": "Converti in PowerPoint",
   "pdfToPptxExportWhat": "Presentazione PowerPoint · {count, plural, one{{count} diapositiva} other{{count} diapositive}}",
-
   "formatLabel": "Formato",
   "actionExport": "Esporta",
   "imageQualityWeb": "Web (72 dpi)",
@@ -335,8 +282,7 @@
   "errorLoadFailed": "Caricamento non riuscito: {detail}",
   "pdfToImagesProgress": "Esportazione in corso…",
   "pdfToImagesExportWhat": "{count, plural, one{{count} immagine {format}} other{{count} immagini {format}}}",
-
-  "pdfaEmptyTitle": "Archiviare a lungo termine",
+  "pdfaEmptyTitle": "Archivia a lungo termine",
   "pdfaEmptyBody": "Il PDF/A è il formato di archiviazione richiesto da molte amministrazioni. Il documento viene convertito senza perdere il suo aspetto.",
   "pdfaConformanceLevel": "Livello di conformità",
   "pdfaA1bDetail": "Il livello più rigoroso e più universalmente accettato. Da scegliere nel dubbio.",
@@ -346,7 +292,6 @@
   "pdfaCaveatTitle": "Ciò che la conversione cambia",
   "pdfaCaveat": "Ogni pagina viene ridisegnata come immagine a {dpi} dpi: il testo diventa un’immagine e l’impaginazione si fissa. È questo che rende il file realmente conforme senza dipendere dai caratteri del documento originale, ma in cambio il testo non è più selezionabile né ricercabile, i link e i moduli spariscono, e il file diventa più pesante.",
   "pdfaOpenFailed": "Impossibile aprire questo PDF: {detail}",
-
   "imagesToPdfEmptyTitle": "Immagini in un PDF",
   "imagesToPdfEmptyBody": "JPG, PNG, WebP, HEIC — aggiungi le tue immagini e saranno assemblate nell’ordine che scegli.",
   "imagesToPdfChoose": "Scegli le immagini",
@@ -356,8 +301,7 @@
   "imagesToPdfBuildFailed": "Creazione non riuscita: {detail}",
   "imagesToPdfCreateAction": "Crea il PDF ({count, plural, one{{count} immagine} other{{count} immagini}})",
   "actionRotate": "Ruota",
-  "actionRemove": "Togli",
-
+  "actionRemove": "Rimuovi",
   "htmlTitle": "HTML / pagina web in PDF",
   "htmlIntro": "Trasforma una pagina web o del codice HTML in un PDF A4. Il rendering è fatto dal browser integrato in Android, quindi l’impaginazione è quella di una stampa da Chrome.",
   "htmlModeUrl": "Indirizzo web",
@@ -373,14 +317,13 @@
   "htmlConverting": "Conversione dell’HTML…",
   "htmlNetworkNotice": "Serve una connessione a internet: è l’unico strumento dell’applicazione che deve scaricare la pagina. Le pagine che richiedono un accesso a un account, un banner dei cookie o molto JavaScript possono uscire incomplete.",
   "htmlOfflineNotice": "L’HTML e il CSS scritti direttamente nella pagina vengono resi offline. Le immagini, i fogli di stile o i caratteri richiamati da un indirizzo web esterno, invece, richiedono una connessione a internet.",
-
-  "watermarkEmptyTitle": "Applicare una filigrana",
+  "watermarkEmptyTitle": "Applica una filigrana",
   "watermarkEmptyBody": "Un testo a tua scelta viene ripetuto sullo sfondo di tutte le pagine — per contrassegnare un documento come riservato o come bozza.",
-  "watermarkEmptyNote": "Esportazione gratuita e senza limiti di quantità.",
+  "watermarkEmptyNote": "Esportazione gratuita e senza limiti.",
   "watermarkTextLabel": "Testo della filigrana",
   "watermarkDefaultText": "RISERVATO",
   "watermarkNeedText": "Inserisci un testo per la filigrana.",
-  "watermarkOpacity": "Opacità: {percent} %",
+  "watermarkOpacity": "Opacità: {percent}%",
   "watermarkRotation": "Angolo di rotazione: {degrees}°",
   "watermarkFontSize": "Dimensione del testo: {points} pt",
   "watermarkColor": "Colore",
@@ -389,11 +332,10 @@
   "colorBlue": "Blu",
   "colorBlack": "Nero",
   "watermarkProgress": "Applicazione della filigrana…",
-  "percentValue": "{percent} %",
+  "percentValue": "{percent}%",
   "degreesValue": "{degrees}°",
   "pointsValue": "{points} pt",
-
-  "pageNumbersEmptyTitle": "Numerare le pagine",
+  "pageNumbersEmptyTitle": "Numera le pagine",
   "pageNumbersEmptyBody": "Scegli un PDF, poi la posizione e il formato dei numeri che saranno aggiunti a ogni pagina.",
   "positionLabel": "Posizione",
   "positionBottomCenter": "In basso al centro",
@@ -404,22 +346,20 @@
   "pageNumbersFormatOfTotal": "N / totale",
   "pageNumbersStart": "Numero iniziale",
   "pageNumbersProgress": "Numerazione in corso…",
-
   "scanNoCamera": "Nessuna fotocamera disponibile su questo dispositivo.",
   "scanCameraFailed": "Impossibile avviare la fotocamera: {detail}",
   "scanCropToolbar": "Regola",
   "scanCaptureFailed": "Scatto non riuscito: {detail}",
   "scanPermissionBody": "Per scansionare un documento serve l’accesso alla fotocamera.",
-  "scanGrantPermission": "Consenti la fotocamera",
+  "scanGrantPermission": "Consenti l'accesso alla fotocamera",
   "actionRetry": "Riprova",
   "scanNoPageYet": "Ancora nessuna pagina.",
   "scanFinishAction": "Termina · {count}",
-
-  "signTitle": "Firmare un PDF",
+  "signTitle": "Firma un PDF",
   "signIntro": "Apponi la tua firma disegnata a mano su una pagina di un PDF. È semplicemente un disegno aggiunto al documento, non una firma elettronica certificata.",
   "signChooseSubtitle": "Seleziona il documento da firmare",
   "signPickPage": "Scegli la pagina da firmare.",
-  "signDrawTitle": "Disegnare la mia firma",
+  "signDrawTitle": "Disegna la tua firma",
   "signDrawBody": "Disegna con il dito come faresti su carta. Questo appone un disegno sulla pagina — non è una firma elettronica certificata.",
   "signNeedDrawing": "Disegna una firma prima di continuare.",
   "signClear": "Cancella",
@@ -427,8 +367,7 @@
   "signPlaceBody": "Trascina la firma dove vuoi sulla pagina, poi tocca Termina.",
   "signPageUnavailable": "Impossibile mostrare la pagina.",
   "signProgress": "Aggiunta della firma…",
-
-  "editTitle": "Annotare un documento",
+  "editTitle": "Annota un documento",
   "editEmptyBody": "Aggiungi del testo o evidenzia dei passaggi direttamente su un PDF esistente.",
   "editAddTextTitle": "Aggiungere del testo",
   "editTextHint": "Il tuo testo",
@@ -440,8 +379,7 @@
   "editModeText": "Testo",
   "editModeHighlight": "Evidenzia",
   "editPageUnavailable": "Impossibile mostrare questa pagina.",
-
-  "ocrEmptyTitle": "Rendere il testo ricercabile",
+  "ocrEmptyTitle": "Rendi il testo ricercabile",
   "ocrEmptyBody": "Il testo di un PDF scansionato viene riconosciuto e aggiunto sopra l’immagine, in modo invisibile. La pagina non cambia aspetto.",
   "ocrWrongFormat": "Scegli un PDF o un’immagine (JPG, PNG…).",
   "ocrProgress": "Riconoscimento in corso…",
@@ -451,7 +389,6 @@
   "ocrResultBody": "{count, plural, one{{count} pagina analizzata} other{{count} pagine analizzate}}. Il PDF ricercabile è pronto, e puoi anche copiare tutto il testo riconosciuto.",
   "ocrCopyText": "Copia il testo",
   "ocrTextCopied": "Testo copiato.",
-
   "redactIntro": "Nascondi definitivamente delle zone di un PDF (nomi, indirizzi, importi). A differenza di un semplice rettangolo nero messo sopra, il testo nascosto viene realmente eliminato dal file, non solo coperto: non può più essere selezionato né copiato.",
   "redactChooseSubtitle": "Seleziona il documento da oscurare",
   "redactCaveat": "Da sapere: per eliminare il testo nascosto, ogni pagina del documento viene riconvertita in immagine (200 dpi). Il risultato non è quindi più un PDF di cui si possa selezionare il testo, e il file ottenuto è di solito più pesante dell’originale.",
@@ -468,8 +405,7 @@
   "redactOtherPdf": "Altro PDF",
   "redactAction": "Oscura",
   "redactProgress": "Oscuramento in corso…",
-
-  "cropEmptyTitle": "Ritagliare i margini",
+  "cropEmptyTitle": "Ritaglia i margini",
   "cropEmptyBody": "Scegli un PDF, poi trascina il dito sull’anteprima per delimitare la zona da conservare.",
   "cropTooSmall": "La zona selezionata è troppo piccola.",
   "cropProgress": "Ritaglio in corso…",
@@ -482,8 +418,7 @@
   "cropAllPagesOff": "Solo la pagina 1 viene ritagliata, le altre restano intere.",
   "cropCaveat": "Il ritaglio riduce la dimensione della pagina: il contenuto fuori dalla zona non viene più mostrato né stampato.",
   "cropAction": "Ritaglia",
-
-  "compareTitle": "Confrontare due PDF",
+  "compareTitle": "Confronta due PDF",
   "compareEmptyTitle": "Che cosa è cambiato",
   "compareEmptyBody": "Scegli due versioni di uno stesso PDF. I passaggi aggiunti ed eliminati saranno messi a confronto, pagina per pagina.",
   "compareSlotA": "File A",
@@ -494,7 +429,6 @@
   "compareChangedPages": "{changed, plural, one{{changed} pagina differisce} other{{changed} pagine differiscono}} su {total}",
   "compareNoDifference": "Nessuna differenza rilevata tra i due file.",
   "comparePageHeading": "Pagina {number}",
-
   "organizeEmptyTitle": "Riprendere in mano un PDF",
   "organizeEmptyBody": "Apri un documento per dividerlo, estrarne pagine o cambiarne l’ordine.",
   "organizeOpenFile": "Apri un file",
@@ -509,9 +443,9 @@
   "organizeExtract": "Estrai",
   "organizeSplit": "Dividi",
   "organizePreview": "Anteprima",
-  "organizeExtractTitle": "Estrarre un intervallo di pagine",
+  "organizeExtractTitle": "Estrai un intervallo di pagine",
   "organizeRangeLabel": "Pagine da {start} a {end}",
-  "organizeSplitTitle": "Dividere in più file",
+  "organizeSplitTitle": "Dividi in più file",
   "organizeFileCount": "{count, plural, one{{count} file} other{{count} file}}",
   "organizeSplitFailed": "Divisione non riuscita: {detail}",
   "organizeFilesCreated": "{count, plural, one{{count} file creato} other{{count} file creati}}",

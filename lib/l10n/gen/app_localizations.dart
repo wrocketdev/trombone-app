@@ -524,10 +524,10 @@ abstract class L {
   /// Outil : reconnaît les caractères d'un PDF scanné pour le rendre sélectionnable. « OCR » est un sigle international, à conserver tel quel entre parenthèses. Libellé de tuile.
   ///
   /// In fr, this message translates to:
-  /// **'Texte cherchable (OCR)'**
+  /// **'Texte recherchable (OCR)'**
   String get toolOcr;
 
-  /// Mots de recherche pour « Texte cherchable (OCR) ». Séparés par des espaces, sans accents, en minuscules.
+  /// Mots de recherche pour « Texte recherchable (OCR) ». Séparés par des espaces, sans accents, en minuscules.
   ///
   /// In fr, this message translates to:
   /// **'reconnaissance caracteres scanne copier selectionner'**
@@ -1247,10 +1247,10 @@ abstract class L {
   /// **'La conversion reproduit le texte, la mise en forme et les tableaux, mais pas la mise en page exacte : la position des images et des colonnes n’est pas conservée, et les images ne sont pas reprises dans le document Word.'**
   String get pdfToWordCaveat;
 
-  /// Avertissement quand le PDF ne contient aucun texte extractible. « Texte cherchable (OCR) » doit reprendre exactement le libellé traduit de l'outil (toolOcr).
+  /// Avertissement quand le PDF ne contient aucun texte extractible. « Texte recherchable (OCR) » doit reprendre exactement le libellé traduit de l'outil (toolOcr).
   ///
   /// In fr, this message translates to:
-  /// **'Ce PDF semble être un scan : aucun texte n’a été trouvé. Utilisez d’abord l’outil Texte cherchable (OCR), puis revenez convertir le PDF obtenu.'**
+  /// **'Ce PDF semble être un scan : aucun texte n’a été trouvé. Utilisez d’abord l’outil Texte recherchable (OCR), puis revenez convertir le PDF obtenu.'**
   String get pdfToWordScanWarning;
 
   /// Titre de la carte de résultat, une fois le .docx produit.
@@ -2539,7 +2539,7 @@ abstract class L {
   /// Titre de l'écran vide de l'outil OCR.
   ///
   /// In fr, this message translates to:
-  /// **'Rendre le texte cherchable'**
+  /// **'Rendre le texte recherchable'**
   String get ocrEmptyTitle;
 
   /// Consigne de l'écran vide de l'outil OCR. La seconde phrase est importante : elle rassure sur le fait que rien n'est abîmé.
@@ -2581,7 +2581,7 @@ abstract class L {
   /// Résumé de l'écran de résultat : combien de pages ont été traitées et ce qu'on peut faire ensuite.
   ///
   /// In fr, this message translates to:
-  /// **'{count, plural, one{{count} page analysée} other{{count} pages analysées}}. Le PDF cherchable est prêt, et vous pouvez aussi copier tout le texte reconnu.'**
+  /// **'{count, plural, one{{count} page analysée} other{{count} pages analysées}}. Le PDF avec texte recherchable est prêt, et vous pouvez aussi copier tout le texte reconnu.'**
   String ocrResultBody(int count);
 
   /// Bouton qui met tout le texte reconnu dans le presse-papiers.

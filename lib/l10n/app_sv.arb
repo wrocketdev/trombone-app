@@ -1,9 +1,7 @@
 {
   "@@locale": "sv",
-
   "appTitle": "Trombone — PDF, skanning och Word",
   "appWordmark": "Trombone",
-
   "actionSave": "Spara",
   "actionShare": "Dela",
   "actionCompress": "Komprimera",
@@ -13,119 +11,86 @@
   "actionContinue": "Fortsätt",
   "actionOpening": "Öppnar…",
   "actionRemoveFile": "Ta bort den här filen",
-
   "progressPreparing": "Förbereder…",
   "progressPercent": "{percent} %",
-
   "emptyReassurance": "Gratis export, ingen vattenstämpel, ingen gräns.",
   "emptyAcceptedFormats": "Format som godtas",
-
   "exportSavedTitle": "Den är sparad.",
   "exportSavedBody": "Med det namn och i den mapp du just valde. Ingen vattenstämpel, ingen gräns, inget att låsa upp.",
   "exportSaveDialogTitle": "Spara PDF",
-
   "pageTileIncluded": "Sida {number}, medtagen. Tryck för att utesluta den.",
   "pageTileExcluded": "Sida {number}, utesluten. Tryck för att ta med den.",
   "pageTileRotate": "Rotera sida {number}",
-
   "sectionHeaderSemantics": "{title}, {count, plural, one{{count} verktyg} other{{count} verktyg}}",
   "toolCount": "{count, plural, one{{count} verktyg} other{{count} verktyg}}",
-
-  "homePromise": "Gör ditt dokument och exportera det.\nIngen mur på slutet.",
+  "homePromise": "Skapa ditt dokument och exportera det.\nIngen betalvägg på slutet.",
   "homeChipNoAccount": "Inget konto",
   "homeChipNoWatermark": "Ingen vattenstämpel",
   "homeChipUnlimited": "Obegränsad export",
   "homeSearchTooltip": "Sök efter ett verktyg",
-  "homeColophon": "Ingenting låses upp mot betalning när du ska spara. Export är gratis, utan vattenstämpel och utan tak för hur många.",
-
+  "homeColophon": "Inget låses upp mot betalning när du sparar. Export är gratis, utan vattenstämpel och utan gränser.",
   "sectionFeatured": "Utvalt",
   "sectionToPdf": "Till PDF",
   "sectionFromPdf": "Från PDF",
   "sectionSecurity": "Säkerhet",
   "sectionEdit": "Redigering",
-
   "toolMerge": "Slå ihop",
   "toolMergeKeywords": "kombinera foga samman sammanfoga lägg ihop bifoga",
   "toolMergeSubtitle": "PDF, Word, bilder och text i ett enda dokument",
-
   "toolRectoVerso": "Dubbelsidigt",
   "toolRectoVersoKeywords": "duplex varva skanning udda jämna båda sidor",
   "toolRectoVersoSubtitle": "Två skanningar, tillbaka i ordning",
-
   "toolImagesToPdf": "Bilder till PDF",
   "toolImagesToPdfKeywords": "foto jpg jpeg png bilder album kamera",
   "toolImagesToPdfSubtitle": "Foton och skärmbilder i ett enda dokument",
-
   "toolPdfToWord": "PDF till Word",
   "toolPdfToWordKeywords": "docx ordbehandling redigerbar konvertera doc",
   "toolPdfToWordSubtitle": "Text och tabeller, redigerbara",
-
   "toolOrganize": "Organisera en PDF",
   "toolOrganizeKeywords": "dela upp separera extrahera ordna om ordning sidor radera",
   "toolOrganizeSubtitle": "Dela upp, extrahera, ordna om",
-
   "toolExcelToPdf": "Excel till PDF",
   "toolExcelToPdfKeywords": "kalkylark xlsx arbetsbok blad flik",
-
   "toolPptxToPdf": "PowerPoint till PDF",
   "toolPptxToPdfKeywords": "pptx bild presentation bildspel slides",
-
   "toolHtmlToPdf": "Webbsida till PDF",
   "toolHtmlToPdfKeywords": "html webbplats internet url länk artikel spara sida",
-
   "toolScan": "Skanna ett dokument",
   "toolScanKeywords": "kamera foto digitalisera skanning papper",
-
   "toolPdfToExcel": "PDF till Excel",
   "toolPdfToExcelKeywords": "kalkylark xlsx tabell extrahera data",
-
   "toolPdfToPptx": "PDF till PowerPoint",
   "toolPdfToPptxKeywords": "pptx bild presentation bildspel slides",
-
   "toolPdfToImages": "PDF till bilder",
   "toolPdfToImagesKeywords": "jpg png foto export skärmbild",
-
   "toolOcr": "Sökbar text (OCR)",
   "toolOcrKeywords": "igenkänning tecken skannad kopiera markera sökbar",
-
   "toolPdfA": "Konvertera till PDF/A",
   "toolPdfAKeywords": "arkiv standard långtidsbevarande bevarande iso",
-
   "toolProtect": "Skydda PDF",
   "toolProtectKeywords": "lösenord lås kryptera säker hänglås",
-
   "toolUnlock": "Lås upp PDF",
   "toolUnlockKeywords": "ta bort lösenord öppna dekryptera häv hänglås",
-
   "toolRepair": "Reparera PDF",
   "toolRepairKeywords": "skadad oläslig trasig återställ fel",
-
   "toolRedact": "Maskera en PDF",
   "toolRedactKeywords": "dölj svärta anonymisera konfidentiellt radera censurera",
-
   "toolEdit": "Redigera PDF",
   "toolEditKeywords": "text ändra rätta kommentera skriv lägg till",
-
   "toolSign": "Signera",
   "toolSignKeywords": "signatur underskrift initialer kontrakt handskriven",
-
   "toolWatermark": "Vattenstämpel",
   "toolWatermarkKeywords": "vattenstämpel stämpel konfidentiellt utkast märke",
-
   "toolPageNumbers": "Sidnummer",
   "toolPageNumbersKeywords": "paginering numrering nummer sidnumrering",
-
   "toolCrop": "Beskär en PDF",
   "toolCropKeywords": "trimma marginaler beskär kanter storlek klipp",
-
   "toolCompare": "Jämför PDF-filer",
   "toolCompareKeywords": "skillnad versioner diff ändringar jämför",
-
   "searchHint": "Slå ihop, lösenord, vattenstämpel…",
   "searchClear": "Rensa",
   "searchNoResultTitle": "Inget verktyg för ”{query}”.",
   "searchNoResultBody": "Prova det format du har till hands — ”Word”, ”Excel”, ”foto” — eller det du vill göra med det: ”signera”, ”dela upp”, ”lösenord”.",
-
   "actionUndo": "Ångra",
   "actionApply": "Använd",
   "actionChoose": "Välj",
@@ -136,30 +101,25 @@
   "actionBack": "Tillbaka",
   "actionAdd": "Lägg till",
   "noFileChosen": "Ingen fil vald",
-
   "errorExportFailed": "Exporten misslyckades: {detail}",
   "errorShareFailed": "Delningen misslyckades: {detail}",
   "errorOpenFailed": "Filen kunde inte öppnas: {detail}",
   "errorConversionFailed": "Konverteringen misslyckades: {detail}",
   "errorOnFile": "{name}: {detail}",
   "errorPickPdf": "Välj en PDF-fil.",
-
   "sizeBytes": "{value} B",
   "sizeKb": "{value} kB",
   "sizeMb": "{value} MB",
   "sizeApprox": "~ {size}",
-
   "pageCount": "{count, plural, one{{count} sida} other{{count} sidor}}",
   "pageCountOfTotal": "{kept, plural, one{{kept} sida} other{{kept} sidor}} av {total}",
   "pageOfTotal": "Sida {current} av {total}",
-
   "formatPdf": "PDF",
   "formatWord": "Word",
   "formatExcel": "Excel",
   "formatPowerPoint": "PowerPoint",
   "formatImages": "Bilder",
   "formatText": "Text",
-
   "mergeAddFile": "Lägg till en fil",
   "mergeAddHint": "PDF, Word, bilder eller text",
   "mergeEmptyTitle": "Ett enda dokument",
@@ -172,7 +132,6 @@
   "mergeMoveSemantics": "Flytta {name}",
   "mergeRotateAll": "Rotera alla sidor",
   "mergePreviewAndExport": "Förhandsgranska och exportera ({count, plural, one{{count} sida} other{{count} sidor}})",
-
   "previewTitle": "Förhandsgranskning · {size}",
   "previewZoomPage": "Sida {number}, förstora",
   "previewPageUnreadable": "Sidan går inte att läsa.",
@@ -182,7 +141,6 @@
   "compressEstimating": "Uppskattar…",
   "compressProgress": "Komprimerar…",
   "compressFailed": "Komprimeringen misslyckades: {detail}",
-
   "protectEmptyTitle": "Lägg den bakom ett lösenord",
   "protectEmptyBody": "PDF-filen går inte längre att öppna utan det lösenord du väljer. Spara det: det går inte att återskapa.",
   "protectSubtitle": "Krypteras med AES 256-bitars",
@@ -199,7 +157,6 @@
   "protectResultTitle": "PDF skyddad",
   "protectResultDetail": "Krypterad med AES 256-bitars. Lösenordet behövs för att öppna den.",
   "protectExportWhat": "Lösenordsskyddad PDF",
-
   "unlockEmptyTitle": "Ta bort lösenordet",
   "unlockEmptyBody": "Du behöver dokumentets nuvarande lösenord. När det är borttaget går PDF-filen att öppna fritt.",
   "unlockAcceptsProtectedPdf": "Skyddad PDF",
@@ -209,13 +166,11 @@
   "unlockProgress": "Låser upp…",
   "unlockFailed": "Upplåsningen misslyckades: {detail}",
   "unlockAction": "Lås upp",
-
   "repairEmptyTitle": "Reparera en skadad fil",
   "repairEmptyBody": "Den interna strukturen i en skadad PDF byggs upp på nytt. Allt som går att rädda blir räddat.",
   "repairProgress": "Reparerar…",
   "repairFailed": "Den här filen går inte att reparera — den kan vara för svårt skadad.",
   "repairAction": "Reparera",
-
   "pdfToWordEmptyTitle": "En redigerbar Word-fil",
   "pdfToWordEmptyBody": "Texten och strukturen i PDF-filen förs över till ett .docx-dokument som du kan öppna igen och rätta i.",
   "pdfToWordAnalyzing": "Analyserar dokumentet…",
@@ -236,7 +191,6 @@
   "pdfToWordConvertAction": "Konvertera till Word",
   "actionConvertAgain": "Konvertera igen",
   "errorSaveFailed": "Kunde inte spara: {detail}",
-
   "rectoVersoIntro": "En enkelsidig arkmatare ger dig två filer: de udda sidorna i ordning, de jämna sidorna ofta i omvänd ordning. Välj båda för att sätta ihop dem igen.",
   "rectoVersoOddSlot": "Fil med de udda sidorna (framsidor)",
   "rectoVersoEvenSlot": "Fil med de jämna sidorna (baksidor)",
@@ -250,7 +204,6 @@
   "errorGeneric": "Misslyckades: {detail}",
   "actionConvertToPdf": "Konvertera till PDF",
   "convertProgress": "Konverterar…",
-
   "excelEmptyTitle": "En arbetsbok som PDF",
   "excelEmptyBody": "Bladen i en .xlsx-fil blir PDF-sidor, klara att skicka eller skriva ut.",
   "excelChooseWorkbook": "Välj en arbetsbok",
@@ -265,7 +218,6 @@
   "excelRepeatHeader": "Upprepa rubrikraden på varje sida",
   "excelRepeatHeaderHint": "Bladets första rad ritas om högst upp på varje sida av tabellen.",
   "excelCaveat": "Vad konverteringen tar med: celltexten som den är sparad i filen (inklusive formlernas senast beräknade resultat), första raden i fetstil och ett rutnät.\n\nVad den inte tar med: färger, teckensnitt, talformat, sammanfogade celler, bilder, diagram och formlerna själva. Kolumnerna krymps för att rymmas i sidbredden; i mycket breda blad kortas text i alltför smala celler av med ”…”.",
-
   "pptxEmptyTitle": "En presentation som PDF",
   "pptxEmptyBody": "En liggande sida i 16:9 per bild, med rubriken och punkterna. Texten följer med; originalets bilder, former och bakgrunder gör det inte.\n\nFormat som godtas: .pptx. En äldre .ppt-fil måste först sparas om som .pptx från PowerPoint.",
   "pptxChoosePresentation": "Välj en presentation",
@@ -278,14 +230,11 @@
   "pptxEmptySlide": "Ingen text (endast bild eller form)",
   "pptxTextLineCount": "{count, plural, one{{count} textrad} other{{count} textrader}}",
   "pptxReadFailed": "Kunde inte läsas: {detail}",
-
   "compressLevelLight": "Lätt",
   "compressLevelMedium": "Medel",
   "compressLevelStrong": "Kraftig",
-
   "pptxQualityStandard": "Standard (150 dpi)",
   "pptxQualityHigh": "Hög (220 dpi)",
-
   "pdfToExcelEmptyTitle": "Få tillbaka tabellerna",
   "pdfToExcelEmptyBody": "Tabeller i en PDF plockas ut till en Excel-arbetsbok. Formateringen bevaras inte; värdena gör det.",
   "pdfToExcelPagesAnalyzed": "{count, plural, one{{count} sida analyserad} other{{count} sidor analyserade}}",
@@ -305,7 +254,6 @@
   "pdfToExcelExportWhat": "Excel-arbetsbok",
   "pdfToExcelConvertAction": "Konvertera till Excel",
   "resultNameAndSize": "{name} — {size}",
-
   "pdfToPptxEmptyTitle": "En bild per sida",
   "pdfToPptxEmptyBody": "PDF-filen blir en PowerPoint-presentation, likadan. Varje sida kommer in som en bild: layouten är trogen, men texten går inte att redigera i PowerPoint.",
   "pdfToPptxOpenFailed": "Den här PDF-filen kunde inte öppnas: {detail}",
@@ -323,7 +271,6 @@
   "pdfToPptxChangeQuality": "Ändra kvaliteten",
   "pdfToPptxConvertAction": "Konvertera till PowerPoint",
   "pdfToPptxExportWhat": "PowerPoint-presentation · {count, plural, one{{count} bild} other{{count} bilder}}",
-
   "formatLabel": "Format",
   "actionExport": "Exportera",
   "imageQualityWeb": "Webb (72 dpi)",
@@ -335,7 +282,6 @@
   "errorLoadFailed": "Inläsningen misslyckades: {detail}",
   "pdfToImagesProgress": "Exporterar…",
   "pdfToImagesExportWhat": "{count, plural, one{{count} {format}-bild} other{{count} {format}-bilder}}",
-
   "pdfaEmptyTitle": "Arkivera för lång sikt",
   "pdfaEmptyBody": "PDF/A är det arkivformat som många myndigheter kräver. Dokumentet konverteras utan att förlora sitt utseende.",
   "pdfaConformanceLevel": "Konformitetsnivå",
@@ -346,7 +292,6 @@
   "pdfaCaveatTitle": "Vad konverteringen ändrar",
   "pdfaCaveat": "Varje sida ritas om som en bild i {dpi} dpi: texten blir en bild och layouten fryses. Det är det som gör filen verkligt konform utan att bero på originaldokumentets teckensnitt, men i utbyte går texten inte längre att markera eller söka i, länkar och formulär försvinner, och filen blir tyngre.",
   "pdfaOpenFailed": "Den här PDF-filen kunde inte öppnas: {detail}",
-
   "imagesToPdfEmptyTitle": "Bilder i en enda PDF",
   "imagesToPdfEmptyBody": "JPG, PNG, WebP, HEIC — lägg till dina bilder så sätts de ihop i den ordning du väljer.",
   "imagesToPdfChoose": "Välj bilder",
@@ -357,7 +302,6 @@
   "imagesToPdfCreateAction": "Skapa PDF-filen ({count, plural, one{{count} bild} other{{count} bilder}})",
   "actionRotate": "Rotera",
   "actionRemove": "Ta bort",
-
   "htmlTitle": "HTML / webbsida till PDF",
   "htmlIntro": "Gör om en webbsida eller HTML-kod till en PDF i A4. Renderingen sköts av webbläsaren som är inbyggd i Android, så layouten är den du skulle få om du skrev ut från Chrome.",
   "htmlModeUrl": "Webbadress",
@@ -373,10 +317,9 @@
   "htmlConverting": "Konverterar HTML-koden…",
   "htmlNetworkNotice": "En internetanslutning krävs: det här är det enda verktyget i appen som måste hämta sidan. Sidor som kräver inloggning på ett konto, en cookiebanner eller mycket JavaScript kan komma ut ofullständiga.",
   "htmlOfflineNotice": "HTML och CSS som skrivits direkt i sidan renderas offline. Bilder, formatmallar eller teckensnitt som hämtas från en extern webbadress kräver däremot en internetanslutning.",
-
   "watermarkEmptyTitle": "Lägg på en vattenstämpel",
   "watermarkEmptyBody": "En text du väljer själv upprepas i bakgrunden på varje sida — för att märka ett dokument som konfidentiellt eller som utkast.",
-  "watermarkEmptyNote": "Gratis export, inget tak för hur många.",
+  "watermarkEmptyNote": "Gratis export utan gränser.",
   "watermarkTextLabel": "Vattenstämpelns text",
   "watermarkDefaultText": "KONFIDENTIELLT",
   "watermarkNeedText": "Ange en text för vattenstämpeln.",
@@ -392,7 +335,6 @@
   "percentValue": "{percent} %",
   "degreesValue": "{degrees}°",
   "pointsValue": "{points} pt",
-
   "pageNumbersEmptyTitle": "Numrera sidorna",
   "pageNumbersEmptyBody": "Välj en PDF och sedan placeringen och formatet på de nummer som läggs till på varje sida.",
   "positionLabel": "Placering",
@@ -404,7 +346,6 @@
   "pageNumbersFormatOfTotal": "N / totalt",
   "pageNumbersStart": "Startnummer",
   "pageNumbersProgress": "Numrerar…",
-
   "organizeEmptyTitle": "Ta tag i en PDF igen",
   "organizeEmptyBody": "Öppna ett dokument för att dela upp det, plocka ut sidor ur det eller ändra deras ordning.",
   "organizeOpenFile": "Öppna en fil",
@@ -426,7 +367,6 @@
   "organizeSplitFailed": "Uppdelningen misslyckades: {detail}",
   "organizePartTitle": "Del {number}",
   "organizeFilesCreated": "{count, plural, one{{count} fil skapad} other{{count} filer skapade}}",
-
   "scanNoCamera": "Det finns ingen kamera på den här enheten.",
   "scanCameraFailed": "Kameran kunde inte startas: {detail}",
   "scanCropToolbar": "Justera",
@@ -436,7 +376,6 @@
   "actionRetry": "Försök igen",
   "scanNoPageYet": "Ingen sida ännu.",
   "scanFinishAction": "Slutför · {count}",
-
   "signTitle": "Signera en PDF",
   "signIntro": "Sätt din handritade signatur på en sida i en PDF. Det är bara en teckning som läggs till i dokumentet, inte en certifierad elektronisk signatur.",
   "signChooseSubtitle": "Välj dokumentet som ska signeras",
@@ -449,7 +388,6 @@
   "signPlaceBody": "Dra signaturen dit du vill ha den på sidan och tryck sedan på Slutför.",
   "signPageUnavailable": "Sidan kunde inte visas.",
   "signProgress": "Lägger till signaturen…",
-
   "editTitle": "Kommentera ett dokument",
   "editEmptyBody": "Lägg till text eller markera avsnitt direkt i en befintlig PDF.",
   "editAddTextTitle": "Lägg till text",
@@ -462,7 +400,6 @@
   "editModeText": "Text",
   "editModeHighlight": "Överstrykning",
   "editPageUnavailable": "Den här sidan kunde inte visas.",
-
   "ocrEmptyTitle": "Gör texten sökbar",
   "ocrEmptyBody": "Texten i en skannad PDF känns igen och läggs osynligt ovanpå bilden. Sidan ser likadan ut.",
   "ocrWrongFormat": "Välj en PDF eller en bild (JPG, PNG…).",
@@ -473,7 +410,6 @@
   "ocrResultBody": "{count, plural, one{{count} sida analyserad} other{{count} sidor analyserade}}. Den sökbara PDF-filen är klar, och du kan också kopiera all text som känts igen.",
   "ocrCopyText": "Kopiera texten",
   "ocrTextCopied": "Texten har kopierats.",
-
   "redactIntro": "Dölj områden i en PDF permanent (namn, adresser, belopp). Till skillnad från en vanlig svart rektangel som läggs ovanpå tas den dolda texten verkligen bort ur filen, inte bara täcks över: den går inte längre att markera eller kopiera.",
   "redactChooseSubtitle": "Välj dokumentet som ska maskeras",
   "redactCaveat": "Bra att veta: för att ta bort den dolda texten görs varje sida i dokumentet om till en bild igen (200 dpi). Resultatet är därför inte längre en PDF vars text går att markera, och den färdiga filen är oftast tyngre än originalet.",
@@ -490,7 +426,6 @@
   "redactOtherPdf": "En annan PDF",
   "redactAction": "Maskera",
   "redactProgress": "Maskerar…",
-
   "cropEmptyTitle": "Skär bort marginalerna",
   "cropEmptyBody": "Välj en PDF och dra sedan fingret över förhandsgranskningen för att märka ut området som ska behållas.",
   "cropTooSmall": "Det valda området är för litet.",
@@ -504,7 +439,6 @@
   "cropAllPagesOff": "Bara sida 1 beskärs; de övriga behålls hela.",
   "cropCaveat": "Beskärningen minskar sidans storlek: innehåll utanför området visas och skrivs inte längre ut.",
   "cropAction": "Beskär",
-
   "compareTitle": "Jämför två PDF-filer",
   "compareEmptyTitle": "Vad som har ändrats",
   "compareEmptyBody": "Välj två versioner av samma PDF. Tillagda och borttagna avsnitt ställs sida vid sida, sida för sida.",

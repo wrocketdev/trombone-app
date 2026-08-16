@@ -9,13 +9,13 @@ class LUk extends L {
   LUk([String locale = 'uk']) : super(locale);
 
   @override
-  String get appTitle => 'Скріпка — PDF, Scan & Word';
+  String get appTitle => 'Trombone — PDF, Scan & Word';
 
   @override
-  String get appWordmark => 'Тромбон';
+  String get appWordmark => 'Trombone';
 
   @override
-  String get actionSave => 'зберегти';
+  String get actionSave => 'Зберегти';
 
   @override
   String get actionShare => 'Поділіться';
@@ -30,7 +30,7 @@ class LUk extends L {
   String get actionCancel => 'Скасувати';
 
   @override
-  String get actionChange => 'Щоб змінитися';
+  String get actionChange => 'Змінити';
 
   @override
   String get actionContinue => 'Продовжити';
@@ -57,23 +57,23 @@ class LUk extends L {
   String get emptyAcceptedFormats => 'Прийнятні формати';
 
   @override
-  String get exportSavedTitle => 'Це записано.';
+  String get exportSavedTitle => 'Збережено.';
 
   @override
   String get exportSavedBody =>
-      'Під назвою та в папці, яку ви щойно вибрали. Без водяного знака, без обмежень, нічого для розблокування.';
+      'Під назвою та в папці, яку ви вибрали. Без водяних знаків, без обмежень, нічого не потрібно розблоковувати.';
 
   @override
   String get exportSaveDialogTitle => 'Зберегти PDF';
 
   @override
   String pageTileIncluded(int number) {
-    return 'Сторінка $number, включена. Торкніться, щоб відсунути його вбік.';
+    return 'Сторінка $number, вибрана. Торкніться, щоб виключити.';
   }
 
   @override
   String pageTileExcluded(int number) {
-    return 'Сторінка $number, вилучено. Торкніться, щоб включити його.';
+    return 'Сторінка $number, виключена. Торкніться, щоб включити.';
   }
 
   @override
@@ -83,17 +83,33 @@ class LUk extends L {
 
   @override
   String sectionHeaderSemantics(String title, int count) {
-    return '$title, $count інструментів';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count інструментів',
+      many: '$count інструментів',
+      few: '$count інструменти',
+      one: '$count інструмент',
+    );
+    return '$title, $_temp0';
   }
 
   @override
   String toolCount(int count) {
-    return '$count інструментів';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count інструментів',
+      many: '$count інструментів',
+      few: '$count інструменти',
+      one: '$count інструмент',
+    );
+    return '$_temp0';
   }
 
   @override
   String get homePromise =>
-      'Створіть свій документ, експортуйте його.\nБез стіни в кінці.';
+      'Створіть свій документ, експортуйте його.\nНіяких платних обмежень у кінці.';
 
   @override
   String get homeChipNoAccount => 'Без рахунку';
@@ -109,7 +125,7 @@ class LUk extends L {
 
   @override
   String get homeColophon =>
-      'За оплату при реєстрації нічого не розблоковується. Експорт безкоштовний, без водяних знаків і без обмеження кількості.';
+      'Під час збереження нічого не блокується за плату. Експорт безкоштовний, без водяних знаків і без обмеження кількості.';
 
   @override
   String get sectionFeatured => 'Рекомендовані';
@@ -303,7 +319,7 @@ class LUk extends L {
   String get searchHint => 'Об’єднати, пароль, водяний знак…';
 
   @override
-  String get searchClear => 'Щоб стерти';
+  String get searchClear => 'Очистити';
 
   @override
   String searchNoResultTitle(String query) {
@@ -333,7 +349,7 @@ class LUk extends L {
   String get actionConvert => 'конвертувати';
 
   @override
-  String get actionFinish => 'До кінця';
+  String get actionFinish => 'Завершити';
 
   @override
   String get actionBack => 'Назад';
@@ -374,7 +390,7 @@ class LUk extends L {
 
   @override
   String sizeBytes(String value) {
-    return '$value o';
+    return '$value Б';
   }
 
   @override
@@ -394,12 +410,28 @@ class LUk extends L {
 
   @override
   String pageCount(int count) {
-    return '$count сторінок';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count сторінок',
+      many: '$count сторінок',
+      few: '$count сторінки',
+      one: '$count сторінка',
+    );
+    return '$_temp0';
   }
 
   @override
   String pageCountOfTotal(int kept, int total) {
-    return '$kept сторінок із $total';
+    String _temp0 = intl.Intl.pluralLogic(
+      kept,
+      locale: localeName,
+      other: '$kept сторінок',
+      many: '$kept сторінок',
+      few: '$kept сторінки',
+      one: '$kept сторінка',
+    );
+    return '$_temp0 із $total';
   }
 
   @override
@@ -411,13 +443,13 @@ class LUk extends L {
   String get formatPdf => 'PDF';
 
   @override
-  String get formatWord => 'Слово';
+  String get formatWord => 'Word';
 
   @override
   String get formatExcel => 'Excel';
 
   @override
-  String get formatPowerPoint => 'Power point';
+  String get formatPowerPoint => 'PowerPoint';
 
   @override
   String get formatImages => 'Картинки';
@@ -470,7 +502,15 @@ class LUk extends L {
 
   @override
   String mergePreviewAndExport(int count) {
-    return 'Попередній перегляд і експорт ($count сторінок)';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count сторінок',
+      many: '$count сторінок',
+      few: '$count сторінки',
+      one: '$count сторінка',
+    );
+    return 'Попередній перегляд і експорт ($_temp0)';
   }
 
   @override
@@ -488,7 +528,15 @@ class LUk extends L {
 
   @override
   String previewExportWhat(int count) {
-    return 'PDF · $count сторінок';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count сторінок',
+      many: '$count сторінок',
+      few: '$count сторінки',
+      one: '$count сторінка',
+    );
+    return 'PDF · $_temp0';
   }
 
   @override
@@ -541,7 +589,7 @@ class LUk extends L {
 
   @override
   String get protectAlreadyProtected =>
-      'Цей файл уже захищено — спершу скористайтеся Unlock PDF.';
+      'Цей файл уже захищено — спершу скористайтеся «Розблокувати PDF».';
 
   @override
   String get protectProgress => 'Триває захист…';
@@ -599,7 +647,7 @@ class LUk extends L {
 
   @override
   String get repairEmptyBody =>
-      'Внутрішня структура пошкодженого PDF відновлюється. Те, що можна врятувати, буде врятованим.';
+      'Внутрішня структура пошкодженого PDF відновлюється. Усе, що можна відновити, буде збережено.';
 
   @override
   String get repairProgress => 'Триває ремонт…';
@@ -616,7 +664,7 @@ class LUk extends L {
 
   @override
   String get pdfToWordEmptyBody =>
-      'Текст і структура PDF-файлу транспонуються в документ .docx, який можна повторно відкрити та виправити.';
+      'Текст і структура PDF переносяться в документ .docx, який можна відкрити та відредагувати.';
 
   @override
   String get pdfToWordAnalyzing => 'Аналіз документа…';
@@ -641,17 +689,41 @@ class LUk extends L {
 
   @override
   String pdfToWordParagraphCount(int count) {
-    return '$count абзаців';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count абзаців',
+      many: '$count абзаців',
+      few: '$count абзаци',
+      one: '$count абзац',
+    );
+    return '$_temp0';
   }
 
   @override
   String pdfToWordHeadingCount(int count) {
-    return '$count назв';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count заголовків',
+      many: '$count заголовків',
+      few: '$count заголовки',
+      one: '$count заголовок',
+    );
+    return '$_temp0';
   }
 
   @override
   String pdfToWordTableCount(int count) {
-    return '$count таблиць';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count таблиць',
+      many: '$count таблиць',
+      few: '$count таблиці',
+      one: '$count таблиця',
+    );
+    return '$_temp0';
   }
 
   @override
@@ -664,7 +736,7 @@ class LUk extends L {
 
   @override
   String get pdfToWordScanWarning =>
-      'Здається, цей PDF-файл сканований: тексту не знайдено. Спочатку скористайтеся інструментом «Текст з можливістю пошуку» (OCR), а потім поверніться та конвертуйте отриманий PDF-файл.';
+      'Здається, цей PDF-файл сканований: тексту не знайдено. Спочатку скористайтеся інструментом «Пошуковий текст (OCR)», а потім поверніться та конвертуйте отриманий PDF-файл.';
 
   @override
   String get pdfToWordResultTitle => 'Документ Word готовий';
@@ -685,7 +757,7 @@ class LUk extends L {
 
   @override
   String errorSaveFailed(String detail) {
-    return 'Не вдалося зареєструвати: $detail';
+    return 'Не вдалося зберегти: $detail';
   }
 
   @override
@@ -707,7 +779,15 @@ class LUk extends L {
 
   @override
   String rectoVersoPreview(int count) {
-    return 'Огляд чергування ($count сторінок)';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count сторінок',
+      many: '$count сторінок',
+      few: '$count сторінки',
+      one: '$count сторінка',
+    );
+    return 'Попередній перегляд чергування ($_temp0)';
   }
 
   @override
@@ -715,7 +795,15 @@ class LUk extends L {
 
   @override
   String fileWithPageCount(String name, int count) {
-    return '$name · $count сторінок';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count сторінок',
+      many: '$count сторінок',
+      few: '$count сторінки',
+      one: '$count сторінка',
+    );
+    return '$name · $_temp0';
   }
 
   @override
@@ -764,7 +852,23 @@ class LUk extends L {
 
   @override
   String excelSheetsAndRows(int sheets, int rows) {
-    return '$sheets аркушів · $rows рядків загалом';
+    String _temp0 = intl.Intl.pluralLogic(
+      sheets,
+      locale: localeName,
+      other: '$sheets аркушів',
+      many: '$sheets аркушів',
+      few: '$sheets аркуші',
+      one: '$sheets аркуш',
+    );
+    String _temp1 = intl.Intl.pluralLogic(
+      rows,
+      locale: localeName,
+      other: 'усього $rows рядків',
+      many: 'усього $rows рядків',
+      few: 'усього $rows рядки',
+      one: 'усього $rows рядок',
+    );
+    return '$_temp0 · $_temp1';
   }
 
   @override
@@ -775,7 +879,23 @@ class LUk extends L {
 
   @override
   String excelSheetDimensions(int rows, int columns) {
-    return '$rows рядків × $columns стовпців';
+    String _temp0 = intl.Intl.pluralLogic(
+      rows,
+      locale: localeName,
+      other: '$rows рядків',
+      many: '$rows рядків',
+      few: '$rows рядки',
+      one: '$rows рядок',
+    );
+    String _temp1 = intl.Intl.pluralLogic(
+      columns,
+      locale: localeName,
+      other: '$columns стовпців',
+      many: '$columns стовпців',
+      few: '$columns стовпці',
+      one: '$columns стовпець',
+    );
+    return '$_temp0 × $_temp1';
   }
 
   @override
@@ -809,7 +929,15 @@ class LUk extends L {
 
   @override
   String pptxSlideCount(int count) {
-    return '$count слайдів';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count слайдів',
+      many: '$count слайдів',
+      few: '$count слайди',
+      one: '$count слайд',
+    );
+    return '$_temp0';
   }
 
   @override
@@ -817,7 +945,15 @@ class LUk extends L {
 
   @override
   String pptxMoreSlides(int count) {
-    return 'і $count інших слайдів…';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count слайдів',
+      many: '$count слайдів',
+      few: '$count слайди',
+      one: '$count слайд',
+    );
+    return 'і ще $_temp0…';
   }
 
   @override
@@ -828,7 +964,15 @@ class LUk extends L {
 
   @override
   String pptxTextLineCount(int count) {
-    return '$count рядків тексту';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count рядків тексту',
+      many: '$count рядків тексту',
+      few: '$count рядки тексту',
+      one: '$count рядок тексту',
+    );
+    return '$_temp0';
   }
 
   @override
@@ -860,7 +1004,15 @@ class LUk extends L {
 
   @override
   String pdfToExcelPagesAnalyzed(int count) {
-    return 'Проаналізовано $count сторінок';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Проаналізовано $count сторінок',
+      many: 'Проаналізовано $count сторінок',
+      few: 'Проаналізовано $count сторінки',
+      one: 'Проаналізовано $count сторінку',
+    );
+    return '$_temp0';
   }
 
   @override
@@ -892,7 +1044,23 @@ class LUk extends L {
 
   @override
   String pdfToExcelTablesFound(int tables, int pages) {
-    return '$tables таблиці, виявлені на $pages сторінках';
+    String _temp0 = intl.Intl.pluralLogic(
+      tables,
+      locale: localeName,
+      other: 'Виявлено $tables таблиць',
+      many: 'Виявлено $tables таблиць',
+      few: 'Виявлено $tables таблиці',
+      one: 'Виявлено $tables таблицю',
+    );
+    String _temp1 = intl.Intl.pluralLogic(
+      pages,
+      locale: localeName,
+      other: '$pages сторінках',
+      many: '$pages сторінках',
+      few: '$pages сторінках',
+      one: '$pages сторінці',
+    );
+    return '$_temp0 на $_temp1';
   }
 
   @override
@@ -902,7 +1070,15 @@ class LUk extends L {
 
   @override
   String pdfToExcelParagraphsOutside(int count) {
-    return '$count абзаців поза таблицями';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count абзаців поза таблицями',
+      many: '$count абзаців поза таблицями',
+      few: '$count абзаци поза таблицями',
+      one: '$count абзац поза таблицями',
+    );
+    return '$_temp0';
   }
 
   @override
@@ -944,7 +1120,23 @@ class LUk extends L {
 
   @override
   String pdfToPptxPagesToSlides(int count) {
-    return '$count сторінок > $count слайдів';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count сторінок',
+      many: '$count сторінок',
+      few: '$count сторінки',
+      one: '$count сторінка',
+    );
+    String _temp1 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count слайдів',
+      many: '$count слайдів',
+      few: '$count слайди',
+      one: '$count слайд',
+    );
+    return '$_temp0 > $_temp1';
   }
 
   @override
@@ -959,7 +1151,15 @@ class LUk extends L {
 
   @override
   String pdfToPptxHeavyWarning(int count) {
-    return 'Попередження: у високій якості презентація з $count сторінок може важити кілька десятків Мб і довго відкриватися. Якщо сумніваєтеся, виберіть «Стандарт».';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count сторінок',
+      many: '$count сторінок',
+      few: '$count сторінок',
+      one: '$count сторінки',
+    );
+    return 'Увага: у високій якості презентація з $_temp0 може важити десятки МБ і довго відкриватися. Виберіть Стандартний, якщо сумніваєтеся.';
   }
 
   @override
@@ -979,7 +1179,15 @@ class LUk extends L {
     String size,
     String quality,
   ) {
-    return '$name — $count слайдів · $size · $quality';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count слайдів',
+      many: '$count слайдів',
+      few: '$count слайди',
+      one: '$count слайд',
+    );
+    return '$name — $_temp0 · $size · $quality';
   }
 
   @override
@@ -994,7 +1202,15 @@ class LUk extends L {
 
   @override
   String pdfToPptxExportWhat(int count) {
-    return 'Презентація PowerPoint · $count слайдів';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count слайдів',
+      many: '$count слайдів',
+      few: '$count слайди',
+      one: '$count слайд',
+    );
+    return 'Презентація PowerPoint · $_temp0';
   }
 
   @override
@@ -1034,7 +1250,15 @@ class LUk extends L {
 
   @override
   String pdfToImagesExportWhat(int count, String format) {
-    return '$count зображень $format';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count зображень',
+      many: '$count зображень',
+      few: '$count зображення',
+      one: '$count зображення',
+    );
+    return '$_temp0 $format';
   }
 
   @override
@@ -1105,7 +1329,15 @@ class LUk extends L {
 
   @override
   String imagesToPdfCreateAction(int count) {
-    return 'Створіть PDF ($count зображень)';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count зображень',
+      many: '$count зображень',
+      few: '$count зображення',
+      one: '$count зображення',
+    );
+    return 'Створити PDF ($_temp0)';
   }
 
   @override
@@ -1171,8 +1403,7 @@ class LUk extends L {
       'Вибраний вами текст повторюється у фоновому режимі на всіх сторінках — щоб позначити документ як конфіденційний або чернетковий.';
 
   @override
-  String get watermarkEmptyNote =>
-      'Безкоштовний експорт без обмеження кількості.';
+  String get watermarkEmptyNote => 'Безкоштовний експорт без обмежень.';
 
   @override
   String get watermarkTextLabel => 'Текст водяного знака';
@@ -1280,7 +1511,15 @@ class LUk extends L {
 
   @override
   String organizePagesKept(int kept, int total) {
-    return 'Збережено сторінок: $kept із $total';
+    String _temp0 = intl.Intl.pluralLogic(
+      kept,
+      locale: localeName,
+      other: '$kept збережених сторінок',
+      many: '$kept збережених сторінок',
+      few: '$kept збережені сторінки',
+      one: '$kept збережена сторінка',
+    );
+    return '$_temp0 із $total';
   }
 
   @override
@@ -1333,7 +1572,15 @@ class LUk extends L {
 
   @override
   String organizeFileCount(int count) {
-    return '$count файлів';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count файлів',
+      many: '$count файлів',
+      few: '$count файли',
+      one: '$count файл',
+    );
+    return '$_temp0';
   }
 
   @override
@@ -1480,7 +1727,15 @@ class LUk extends L {
 
   @override
   String ocrResultBody(int count) {
-    return 'Проаналізовано $count сторінок. PDF-файл із можливістю пошуку готовий, і ви також можете скопіювати весь розпізнаний текст.';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Проаналізованих $count сторінок',
+      many: 'Проаналізованих $count сторінок',
+      few: 'Проаналізовані $count сторінки',
+      one: 'Проаналізована $count сторінка',
+    );
+    return '$_temp0. PDF-файл із можливістю пошуку тексту готовий, і ви також можете скопіювати весь розпізнаний текст.';
   }
 
   @override
@@ -1536,7 +1791,15 @@ class LUk extends L {
 
   @override
   String redactZoneCount(int count) {
-    return '$count областей, які потрібно приховати';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count зон для приховування',
+      many: '$count зон для приховування',
+      few: '$count зони для приховування',
+      one: '$count зона для приховування',
+    );
+    return '$_temp0';
   }
 
   @override
@@ -1629,7 +1892,15 @@ class LUk extends L {
 
   @override
   String compareChangedPages(int changed, int total) {
-    return '$changed сторінки відрізняються на $total';
+    String _temp0 = intl.Intl.pluralLogic(
+      changed,
+      locale: localeName,
+      other: '$changed змінених сторінок',
+      many: '$changed змінених сторінок',
+      few: '$changed змінені сторінки',
+      one: '$changed змінена сторінка',
+    );
+    return '$_temp0 із $total';
   }
 
   @override
@@ -1643,7 +1914,15 @@ class LUk extends L {
 
   @override
   String organizeFilesCreated(int count) {
-    return 'Створено файлів: $count';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count створених файлів',
+      many: '$count створених файлів',
+      few: '$count створені файли',
+      one: '$count створений файл',
+    );
+    return '$_temp0';
   }
 
   @override

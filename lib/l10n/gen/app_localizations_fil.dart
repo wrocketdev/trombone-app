@@ -9,7 +9,7 @@ class LFil extends L {
   LFil([String locale = 'fil']) : super(locale);
 
   @override
-  String get appTitle => 'Paper clip — PDF, Scan at Word';
+  String get appTitle => 'Trombone — PDF, Scan at Word';
 
   @override
   String get appWordmark => 'Trombone';
@@ -30,7 +30,7 @@ class LFil extends L {
   String get actionCancel => 'Kanselahin';
 
   @override
-  String get actionChange => 'Para magbago';
+  String get actionChange => 'Palitan';
 
   @override
   String get actionContinue => 'Magpatuloy';
@@ -57,23 +57,23 @@ class LFil extends L {
   String get emptyAcceptedFormats => 'Mga tinatanggap na format';
 
   @override
-  String get exportSavedTitle => 'Ito ay naitala.';
+  String get exportSavedTitle => 'Nai-save na.';
 
   @override
   String get exportSavedBody =>
-      'Sa ilalim ng pangalan at sa folder na kakapili mo lang. Walang watermark, walang limitasyon, walang i-unlock.';
+      'Gamit ang pangalan at folder na iyong pinili. Walang watermark, walang limitasyon, walang kailangang i-unlock.';
 
   @override
   String get exportSaveDialogTitle => 'I-save ang PDF';
 
   @override
   String pageTileIncluded(int number) {
-    return 'Pahina $number, kasama. Pindutin upang itabi ito.';
+    return 'Pahina $number, kasama. Pindutin para alisin.';
   }
 
   @override
   String pageTileExcluded(int number) {
-    return 'Pahina $number, itinapon. Pindutin upang isama ito.';
+    return 'Pahina $number, inalis. Pindutin para isama.';
   }
 
   @override
@@ -93,7 +93,7 @@ class LFil extends L {
 
   @override
   String get homePromise =>
-      'Gawin ang iyong dokumento, i-export ito.\nWalang pader sa dulo.';
+      'Gawin ang iyong dokumento, i-export ito.\nWalang bayad sa dulo.';
 
   @override
   String get homeChipNoAccount => 'Nang walang account';
@@ -109,7 +109,7 @@ class LFil extends L {
 
   @override
   String get homeColophon =>
-      'Walang na-unlock laban sa pagbabayad kapag nagrerehistro. Ang pag-export ay libre, walang watermark at walang limitasyon sa bilang.';
+      'Walang naka-lock na kailangang bayaran sa pag-save. Libre ang pag-export, walang watermark at walang limitasyon.';
 
   @override
   String get sectionFeatured => 'Itinatampok';
@@ -253,7 +253,7 @@ class LFil extends L {
   String get toolRepairKeywords => 'corrupted unreadable damaged recover error';
 
   @override
-  String get toolRedact => 'I-react ang isang PDF';
+  String get toolRedact => 'I-redact ang isang PDF';
 
   @override
   String get toolRedactKeywords =>
@@ -302,7 +302,7 @@ class LFil extends L {
   String get searchHint => 'Pagsamahin, password, watermark...';
 
   @override
-  String get searchClear => 'Para burahin';
+  String get searchClear => 'Burahin';
 
   @override
   String searchNoResultTitle(String query) {
@@ -314,7 +314,7 @@ class LFil extends L {
       'Subukan ang format na nasa kamay mo – “Word”, “Excel”, “photo” – o anumang gusto mong gawin dito: “sign”, “divide”, “password”.';
 
   @override
-  String get actionUndo => 'Kanselahin';
+  String get actionUndo => 'I-undo';
 
   @override
   String get actionApply => 'Mag-apply';
@@ -329,10 +329,10 @@ class LFil extends L {
   String get actionChooseFiles => 'Pumili ng mga file';
 
   @override
-  String get actionConvert => 'Magbalik-loob';
+  String get actionConvert => 'I-convert';
 
   @override
-  String get actionFinish => 'Upang tapusin';
+  String get actionFinish => 'Tapusin';
 
   @override
   String get actionBack => 'Bumalik';
@@ -373,7 +373,7 @@ class LFil extends L {
 
   @override
   String sizeBytes(String value) {
-    return '$value o';
+    return '$value B';
   }
 
   @override
@@ -398,7 +398,13 @@ class LFil extends L {
 
   @override
   String pageCountOfTotal(int kept, int total) {
-    return '$kept page out of $total';
+    String _temp0 = intl.Intl.pluralLogic(
+      kept,
+      locale: localeName,
+      other: '$kept pahina',
+      one: '$kept pahina',
+    );
+    return '$_temp0 mula sa $total';
   }
 
   @override
@@ -410,13 +416,13 @@ class LFil extends L {
   String get formatPdf => 'PDF';
 
   @override
-  String get formatWord => 'salita';
+  String get formatWord => 'Word';
 
   @override
   String get formatExcel => 'Excel';
 
   @override
-  String get formatPowerPoint => 'Power point';
+  String get formatPowerPoint => 'PowerPoint';
 
   @override
   String get formatImages => 'Mga larawan';
@@ -442,7 +448,7 @@ class LFil extends L {
       'Magdagdag ng kahit isang file na may isasamang pahina.';
 
   @override
-  String get mergeProgress => 'Kasalukuyang isinasagawa ang pagsasanib...';
+  String get mergeProgress => 'Pinagsasama…';
 
   @override
   String mergeFailed(String detail) {
@@ -540,7 +546,7 @@ class LFil extends L {
 
   @override
   String get protectAlreadyProtected =>
-      'Protektado na ang file na ito — gamitin muna ang Unlock PDF.';
+      'Protektado na ang file na ito — gamitin muna ang tool na I-unlock ang PDF.';
 
   @override
   String get protectProgress => 'Kasalukuyang isinasagawa ang proteksyon…';
@@ -598,7 +604,7 @@ class LFil extends L {
 
   @override
   String get repairEmptyBody =>
-      'Ang panloob na istraktura ng isang nasirang PDF ay muling itinayo. Kung ano ang maililigtas ay magiging maililigtas.';
+      'Muling itinatayo ang istruktura ng sirang PDF. Ang anumang maaaring ma-recover ay maisasalba.';
 
   @override
   String get repairProgress => 'Kasalukuyang isinasagawa ang pag-aayos…';
@@ -615,7 +621,7 @@ class LFil extends L {
 
   @override
   String get pdfToWordEmptyBody =>
-      'Ang teksto at istraktura ng PDF ay inilipat sa isang .docx na dokumento na maaari mong muling buksan at itama.';
+      'Ang teksto at istruktura ng PDF ay inililipat sa isang .docx na dokumento na maaari mong muling buksan at i-edit.';
 
   @override
   String get pdfToWordAnalyzing => 'Pagsusuri ng dokumento…';
@@ -663,7 +669,7 @@ class LFil extends L {
 
   @override
   String get pdfToWordScanWarning =>
-      'Mukhang isang scan ang PDF na ito: walang nakitang text. Gamitin muna ang Searchable Text (OCR) tool, pagkatapos ay bumalik at i-convert ang resultang PDF.';
+      'Mukhang isang scan ang PDF na ito: walang nakitang text. Gamitin muna ang tool na Naghahanap ng teksto (OCR), pagkatapos ay bumalik at i-convert ang resultang PDF.';
 
   @override
   String get pdfToWordResultTitle => 'Handa na ang dokumento ng salita';
@@ -684,7 +690,7 @@ class LFil extends L {
 
   @override
   String errorSaveFailed(String detail) {
-    return 'Hindi makapagrehistro: $detail';
+    return 'Hindi mai-save: $detail';
   }
 
   @override
@@ -841,7 +847,7 @@ class LFil extends L {
   String get compressLevelMedium => 'Katamtaman';
 
   @override
-  String get compressLevelStrong => 'Forte';
+  String get compressLevelStrong => 'Malakas';
 
   @override
   String get pptxQualityStandard => 'Karaniwan (150 dpi)';
@@ -1172,8 +1178,7 @@ class LFil extends L {
       'Ang teksto na iyong pinili ay inuulit sa background sa lahat ng mga pahina — upang markahan ang isang dokumento bilang kumpidensyal o draft.';
 
   @override
-  String get watermarkEmptyNote =>
-      'Libreng pag-export na walang limitasyon sa bilang.';
+  String get watermarkEmptyNote => 'Libreng pag-export na walang limitasyon.';
 
   @override
   String get watermarkTextLabel => 'Teksto ng watermark';
@@ -1401,10 +1406,10 @@ class LFil extends L {
   String get signNeedDrawing => 'Gumuhit ng lagda bago magpatuloy.';
 
   @override
-  String get signClear => 'Para burahin';
+  String get signClear => 'Burahin';
 
   @override
-  String get signValidate => 'Upang patunayan';
+  String get signValidate => 'Patunayan';
 
   @override
   String get signPlaceBody =>

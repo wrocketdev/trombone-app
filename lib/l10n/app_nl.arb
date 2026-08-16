@@ -1,9 +1,7 @@
 {
   "@@locale": "nl",
-
   "appTitle": "Trombone — PDF, Scan & Word",
   "appWordmark": "Trombone",
-
   "actionSave": "Opslaan",
   "actionShare": "Delen",
   "actionCompress": "Verkleinen",
@@ -11,121 +9,88 @@
   "actionCancel": "Annuleren",
   "actionChange": "Wijzigen",
   "actionContinue": "Doorgaan",
-  "actionOpening": "Bezig met openen…",
+  "actionOpening": "Openen…",
   "actionRemoveFile": "Dit bestand verwijderen",
-
   "progressPreparing": "Voorbereiden…",
   "progressPercent": "{percent}%",
-
   "emptyReassurance": "Gratis exporteren, zonder watermerk of limiet.",
   "emptyAcceptedFormats": "Toegestane formaten",
-
   "exportSavedTitle": "Opgeslagen.",
   "exportSavedBody": "Onder de naam en in de map die je zojuist hebt gekozen. Zonder watermerk, zonder limiet, niets te ontgrendelen.",
   "exportSaveDialogTitle": "Pdf opslaan",
-
   "pageTileIncluded": "Pagina {number}, opgenomen. Tik om weg te laten.",
   "pageTileExcluded": "Pagina {number}, weggelaten. Tik om op te nemen.",
   "pageTileRotate": "Pagina {number} draaien",
-
   "sectionHeaderSemantics": "{title}, {count, plural, one{{count} hulpmiddel} other{{count} hulpmiddelen}}",
   "toolCount": "{count, plural, one{{count} hulpmiddel} other{{count} hulpmiddelen}}",
-
-  "homePromise": "Maak je document en exporteer het.\nGeen muur aan het eind.",
+  "homePromise": "Maak je document en exporteer het.\nGeen betaalmuur aan het eind.",
   "homeChipNoAccount": "Zonder account",
   "homeChipNoWatermark": "Zonder watermerk",
   "homeChipUnlimited": "Onbeperkt exporteren",
   "homeSearchTooltip": "Zoek een hulpmiddel",
-  "homeColophon": "Bij het opslaan wordt niets tegen betaling ontgrendeld. Exporteren is gratis, zonder watermerk en zonder limiet op het aantal.",
-
+  "homeColophon": "Bij het opslaan wordt niets tegen betaling ontgrendeld. Exporteren is gratis, zonder watermerk en zonder limiet.",
   "sectionFeatured": "Uitgelicht",
   "sectionToPdf": "Naar pdf",
   "sectionFromPdf": "Vanuit pdf",
   "sectionSecurity": "Beveiliging",
   "sectionEdit": "Bewerken",
-
   "toolMerge": "Samenvoegen",
   "toolMergeKeywords": "combineren verbinden bundelen samenvoegen toevoegen",
   "toolMergeSubtitle": "Pdf, Word, afbeeldingen en tekst in één document",
-
   "toolRectoVerso": "Dubbelzijdig",
   "toolRectoVersoKeywords": "duplex sorteren scan even oneven twee zijden",
   "toolRectoVersoSubtitle": "Twee scans, weer op volgorde",
-
   "toolImagesToPdf": "Afbeeldingen naar pdf",
   "toolImagesToPdfKeywords": "foto jpg jpeg png fotos album camera afbeelding",
   "toolImagesToPdfSubtitle": "Foto’s en schermafbeeldingen in één document",
-
   "toolPdfToWord": "Pdf naar Word",
   "toolPdfToWordKeywords": "docx tekstverwerker bewerkbaar omzetten doc",
   "toolPdfToWordSubtitle": "Tekst en tabellen, bewerkbaar",
-
   "toolOrganize": "Pdf ordenen",
   "toolOrganizeKeywords": "splitsen scheiden uitnemen herschikken volgorde paginas verwijderen",
   "toolOrganizeSubtitle": "Splitsen, uitnemen, herschikken",
-
   "toolExcelToPdf": "Excel naar pdf",
   "toolExcelToPdfKeywords": "spreadsheet xlsx werkmap blad rekenblad",
-
   "toolPptxToPdf": "PowerPoint naar pdf",
   "toolPptxToPdfKeywords": "pptx dia presentatie slides",
-
   "toolHtmlToPdf": "Webpagina naar pdf",
   "toolHtmlToPdfKeywords": "html website internet url link artikel",
-
   "toolScan": "Document scannen",
   "toolScanKeywords": "camera foto digitaliseren scan papier",
-
   "toolPdfToExcel": "Pdf naar Excel",
   "toolPdfToExcelKeywords": "spreadsheet xlsx tabel uitnemen gegevens",
-
   "toolPdfToPptx": "Pdf naar PowerPoint",
   "toolPdfToPptxKeywords": "pptx dia presentatie slides",
-
   "toolPdfToImages": "Pdf naar afbeeldingen",
   "toolPdfToImagesKeywords": "jpg png foto exporteren schermafbeelding",
-
   "toolOcr": "Doorzoekbare tekst (OCR)",
   "toolOcrKeywords": "tekstherkenning tekens gescand kopieren selecteren",
-
   "toolPdfA": "Omzetten naar PDF/A",
   "toolPdfAKeywords": "archivering norm lange termijn bewaring iso",
-
   "toolProtect": "Pdf beveiligen",
   "toolProtectKeywords": "wachtwoord slot versleutelen vergrendelen beveiligen",
-
   "toolUnlock": "Pdf ontgrendelen",
   "toolUnlockKeywords": "wachtwoord verwijderen openen ontsleutelen slot",
-
   "toolRepair": "Pdf repareren",
   "toolRepairKeywords": "beschadigd onleesbaar kapot herstellen fout",
-
-  "toolRedact": "Pdf onleesbaar maken",
+  "toolRedact": "Pdf anonimiseren",
   "toolRedactKeywords": "verbergen zwart maken anonimiseren vertrouwelijk wissen",
-
   "toolEdit": "Pdf bewerken",
   "toolEditKeywords": "tekst wijzigen corrigeren annoteren schrijven",
-
   "toolSign": "Ondertekenen",
   "toolSignKeywords": "handtekening paraaf contract hand",
-
   "toolWatermark": "Watermerk",
   "toolWatermarkKeywords": "watermark stempel vertrouwelijk concept markering",
-
   "toolPageNumbers": "Paginanummers",
   "toolPageNumbersKeywords": "paginering folio nummeren cijfers nummers",
-
   "toolCrop": "Pdf bijsnijden",
   "toolCropKeywords": "snijden marges bijsnijden randen grootte",
-
   "toolCompare": "Pdf’s vergelijken",
   "toolCompareKeywords": "verschil versies diff wijzigingen vergelijken",
-
   "searchHint": "Samenvoegen, wachtwoord, watermerk…",
   "searchClear": "Wissen",
   "searchNoResultTitle": "Geen hulpmiddel voor ‘{query}’.",
   "searchNoResultBody": "Probeer het formaat dat je bij de hand hebt — ‘Word’, ‘Excel’, ‘foto’ — of wat je ermee wilt doen: ‘ondertekenen’, ‘splitsen’, ‘wachtwoord’.",
-
   "actionUndo": "Ongedaan maken",
   "actionApply": "Toepassen",
   "actionChoose": "Kiezen",
@@ -136,30 +101,25 @@
   "actionBack": "Terug",
   "actionAdd": "Toevoegen",
   "noFileChosen": "Geen bestand gekozen",
-
   "errorExportFailed": "Exporteren mislukt: {detail}",
   "errorShareFailed": "Delen mislukt: {detail}",
   "errorOpenFailed": "Het bestand kon niet worden geopend: {detail}",
   "errorConversionFailed": "Omzetten mislukt: {detail}",
   "errorOnFile": "{name}: {detail}",
   "errorPickPdf": "Kies een pdf-bestand.",
-
   "sizeBytes": "{value} B",
   "sizeKb": "{value} kB",
   "sizeMb": "{value} MB",
   "sizeApprox": "~ {size}",
-
   "pageCount": "{count, plural, one{{count} pagina} other{{count} pagina’s}}",
   "pageCountOfTotal": "{kept, plural, one{{kept} pagina} other{{kept} pagina’s}} van {total}",
   "pageOfTotal": "Pagina {current} van {total}",
-
   "formatPdf": "PDF",
   "formatWord": "Word",
   "formatExcel": "Excel",
   "formatPowerPoint": "PowerPoint",
   "formatImages": "Afbeeldingen",
   "formatText": "Tekst",
-
   "mergeAddFile": "Bestand toevoegen",
   "mergeAddHint": "Pdf, Word, afbeeldingen of tekst",
   "mergeEmptyTitle": "Eén enkel document",
@@ -172,7 +132,6 @@
   "mergeMoveSemantics": "{name} verplaatsen",
   "mergeRotateAll": "Alle pagina’s draaien",
   "mergePreviewAndExport": "Voorbeeld en exporteren ({count, plural, one{{count} pagina} other{{count} pagina’s}})",
-
   "previewTitle": "Voorbeeld · {size}",
   "previewZoomPage": "Pagina {number}, vergroten",
   "previewPageUnreadable": "Pagina onleesbaar.",
@@ -182,7 +141,6 @@
   "compressEstimating": "Bezig met schatten…",
   "compressProgress": "Bezig met verkleinen…",
   "compressFailed": "Verkleinen mislukt: {detail}",
-
   "protectEmptyTitle": "Achter een wachtwoord zetten",
   "protectEmptyBody": "De pdf gaat niet meer open zonder het wachtwoord dat je kiest. Bewaar het: het kan niet worden hersteld.",
   "protectSubtitle": "Wordt versleuteld met AES 256-bit",
@@ -199,7 +157,6 @@
   "protectResultTitle": "Pdf beveiligd",
   "protectResultDetail": "Versleuteld met AES 256-bit. Het wachtwoord is nodig om hem te openen.",
   "protectExportWhat": "Met wachtwoord beveiligde pdf",
-
   "unlockEmptyTitle": "Het wachtwoord verwijderen",
   "unlockEmptyBody": "Je hebt het huidige wachtwoord van het document nodig. Eenmaal verwijderd gaat de pdf gewoon open.",
   "unlockAcceptsProtectedPdf": "Beveiligde pdf",
@@ -209,15 +166,13 @@
   "unlockProgress": "Bezig met ontgrendelen…",
   "unlockFailed": "Ontgrendelen mislukt: {detail}",
   "unlockAction": "Ontgrendelen",
-
   "repairEmptyTitle": "Een beschadigd bestand repareren",
   "repairEmptyBody": "De interne structuur van een beschadigde pdf wordt opnieuw opgebouwd. Wat te redden valt, wordt gered.",
   "repairProgress": "Bezig met repareren…",
   "repairFailed": "Dit bestand kan niet worden gerepareerd — het is mogelijk te zwaar beschadigd.",
   "repairAction": "Repareren",
-
   "pdfToWordEmptyTitle": "Een bewerkbaar Word-bestand",
-  "pdfToWordEmptyBody": "De tekst en de structuur van de pdf worden overgezet naar een .docx-document dat je opnieuw kunt openen en corrigeren.",
+  "pdfToWordEmptyBody": "De tekst en structuur van de PDF worden overgezet naar een .docx-document dat je kunt heropenen en bewerken.",
   "pdfToWordAnalyzing": "Document analyseren…",
   "pdfToWordAnalysisPending": "Analyse in afwachting",
   "pdfToWordAnalysisFailed": "Analyse mislukt: {detail}",
@@ -236,7 +191,6 @@
   "pdfToWordConvertAction": "Omzetten naar Word",
   "actionConvertAgain": "Opnieuw omzetten",
   "errorSaveFailed": "Opslaan niet mogelijk: {detail}",
-
   "rectoVersoIntro": "Een enkelzijdige invoer levert twee bestanden op: de oneven pagina’s op volgorde, de even pagina’s vaak in omgekeerde volgorde. Kies ze allebei om ze weer samen te voegen.",
   "rectoVersoOddSlot": "Bestand met de oneven pagina’s (voorzijde)",
   "rectoVersoEvenSlot": "Bestand met de even pagina’s (achterzijde)",
@@ -250,7 +204,6 @@
   "errorGeneric": "Mislukt: {detail}",
   "actionConvertToPdf": "Omzetten naar pdf",
   "convertProgress": "Bezig met omzetten…",
-
   "excelEmptyTitle": "Een werkmap als pdf",
   "excelEmptyBody": "De bladen van een .xlsx-bestand worden pdf-pagina’s, klaar om te versturen of af te drukken.",
   "excelChooseWorkbook": "Kies een werkmap",
@@ -265,7 +218,6 @@
   "excelRepeatHeader": "Kopregel op elke pagina herhalen",
   "excelRepeatHeaderHint": "De eerste rij van het blad wordt boven aan elke pagina van de tabel opnieuw getekend.",
   "excelCaveat": "Wat de omzetting overneemt: de celtekst zoals die in het bestand is opgeslagen (inclusief het laatst berekende resultaat van formules), de eerste rij vet en een raster.\n\nWat niet: kleuren, lettertypen, getalnotaties, samengevoegde cellen, afbeeldingen, grafieken en de formules zelf. Kolommen worden versmald om binnen de paginabreedte te passen; op zeer brede bladen wordt de tekst van te smalle cellen afgekapt met ‘…’.",
-
   "pptxEmptyTitle": "Een presentatie als pdf",
   "pptxEmptyBody": "Eén liggende 16:9-pagina per dia, met de titel en de opsommingstekens. De tekst wordt overgenomen; de oorspronkelijke afbeeldingen, vormen en achtergronden niet.\n\nToegestaan formaat: .pptx. Een ouder .ppt-bestand moet eerst in PowerPoint als .pptx worden opgeslagen.",
   "pptxChoosePresentation": "Kies een presentatie",
@@ -278,14 +230,11 @@
   "pptxEmptySlide": "Geen tekst (alleen afbeelding of vorm)",
   "pptxTextLineCount": "{count, plural, one{{count} regel tekst} other{{count} regels tekst}}",
   "pptxReadFailed": "Lezen niet mogelijk: {detail}",
-
   "compressLevelLight": "Licht",
   "compressLevelMedium": "Gemiddeld",
   "compressLevelStrong": "Sterk",
-
   "pptxQualityStandard": "Standaard (150 dpi)",
   "pptxQualityHigh": "Hoog (220 dpi)",
-
   "pdfToExcelEmptyTitle": "De tabellen terughalen",
   "pdfToExcelEmptyBody": "De tabellen van een pdf worden overgezet naar een Excel-werkmap. De opmaak blijft niet behouden, de waarden wel.",
   "pdfToExcelPagesAnalyzed": "{count, plural, one{{count} pagina geanalyseerd} other{{count} pagina’s geanalyseerd}}",
@@ -305,7 +254,6 @@
   "pdfToExcelExportWhat": "Excel-werkmap",
   "pdfToExcelConvertAction": "Omzetten naar Excel",
   "resultNameAndSize": "{name} — {size}",
-
   "pdfToPptxEmptyTitle": "Eén dia per pagina",
   "pdfToPptxEmptyBody": "De pdf wordt een identieke PowerPoint-presentatie. Elke pagina komt binnen als afbeelding: de lay-out is getrouw, maar de tekst is in PowerPoint niet bewerkbaar.",
   "pdfToPptxOpenFailed": "Deze pdf kon niet worden geopend: {detail}",
@@ -323,7 +271,6 @@
   "pdfToPptxChangeQuality": "Kwaliteit wijzigen",
   "pdfToPptxConvertAction": "Omzetten naar PowerPoint",
   "pdfToPptxExportWhat": "PowerPoint-presentatie · {count, plural, one{{count} dia} other{{count} dia’s}}",
-
   "formatLabel": "Formaat",
   "actionExport": "Exporteren",
   "imageQualityWeb": "Web (72 dpi)",
@@ -335,7 +282,6 @@
   "errorLoadFailed": "Laden mislukt: {detail}",
   "pdfToImagesProgress": "Bezig met exporteren…",
   "pdfToImagesExportWhat": "{count, plural, one{{count} {format}-afbeelding} other{{count} {format}-afbeeldingen}}",
-
   "pdfaEmptyTitle": "Voor lange tijd archiveren",
   "pdfaEmptyBody": "PDF/A is het archiefformaat dat veel overheidsinstanties eisen. Het document wordt omgezet zonder zijn uiterlijk te verliezen.",
   "pdfaConformanceLevel": "Conformiteitsniveau",
@@ -346,7 +292,6 @@
   "pdfaCaveatTitle": "Wat de omzetting verandert",
   "pdfaCaveat": "Elke pagina wordt op {dpi} dpi opnieuw als afbeelding getekend: de tekst wordt een afbeelding en de lay-out ligt vast. Juist daardoor is het bestand echt conform zonder af te hangen van de lettertypen van het oorspronkelijke document, maar in ruil daarvoor is de tekst niet meer te selecteren of te doorzoeken, verdwijnen links en formulieren, en wordt het bestand zwaarder.",
   "pdfaOpenFailed": "Deze pdf kon niet worden geopend: {detail}",
-
   "imagesToPdfEmptyTitle": "Afbeeldingen in één pdf",
   "imagesToPdfEmptyBody": "JPG, PNG, WebP, HEIC — voeg je afbeeldingen toe en ze worden samengevoegd in de volgorde die je kiest.",
   "imagesToPdfChoose": "Kies afbeeldingen",
@@ -357,7 +302,6 @@
   "imagesToPdfCreateAction": "Pdf maken ({count, plural, one{{count} afbeelding} other{{count} afbeeldingen}})",
   "actionRotate": "Draaien",
   "actionRemove": "Verwijderen",
-
   "htmlTitle": "HTML / webpagina naar pdf",
   "htmlIntro": "Zet een webpagina of HTML-code om in een A4-pdf. Het renderen gebeurt door de in Android ingebouwde browser, dus de lay-out is die van een afdruk vanuit Chrome.",
   "htmlModeUrl": "Webadres",
@@ -372,11 +316,10 @@
   "htmlLoadingUrl": "Pagina laden en omzetten…",
   "htmlConverting": "HTML omzetten…",
   "htmlNetworkNotice": "Een internetverbinding is nodig: dit is het enige hulpmiddel in de app dat de pagina moet downloaden. Pagina’s die inloggen, een cookiebanner of veel JavaScript vereisen, kunnen onvolledig uitkomen.",
-  "htmlOfflineNotice": "HTML en CSS die rechtstreeks in de pagina staan, worden offline weergegeven. Afbeeldingen, stijlbladen of lettertypen die van een extern webadres worden gehaald, hebben wel een internetverbinding nodig.",
-
+  "htmlOfflineNotice": "HTML en CSS die rechtstreeks in de pagina staan, worden offline weergegeven. Afbeeldingen, stylesheets of lettertypen die van een extern webadres worden gehaald, hebben wel een internetverbinding nodig.",
   "watermarkEmptyTitle": "Een watermerk aanbrengen",
   "watermarkEmptyBody": "Een tekst naar keuze wordt op de achtergrond van alle pagina’s herhaald — om een document als vertrouwelijk of als concept te merken.",
-  "watermarkEmptyNote": "Gratis exporteren en zonder limiet op het aantal.",
+  "watermarkEmptyNote": "Gratis exporteren zonder limiet.",
   "watermarkTextLabel": "Tekst van het watermerk",
   "watermarkDefaultText": "VERTROUWELIJK",
   "watermarkNeedText": "Voer een tekst voor het watermerk in.",
@@ -392,7 +335,6 @@
   "percentValue": "{percent}%",
   "degreesValue": "{degrees}°",
   "pointsValue": "{points} pt",
-
   "pageNumbersEmptyTitle": "De pagina’s nummeren",
   "pageNumbersEmptyBody": "Kies een pdf en daarna de plaats en de vorm van de nummers die op elke pagina komen.",
   "positionLabel": "Positie",
@@ -404,7 +346,6 @@
   "pageNumbersFormatOfTotal": "N / totaal",
   "pageNumbersStart": "Beginnummer",
   "pageNumbersProgress": "Bezig met nummeren…",
-
   "scanNoCamera": "Geen camera beschikbaar op dit toestel.",
   "scanCameraFailed": "De camera kon niet worden gestart: {detail}",
   "scanCropToolbar": "Bijstellen",
@@ -414,7 +355,6 @@
   "actionRetry": "Opnieuw proberen",
   "scanNoPageYet": "Nog geen pagina.",
   "scanFinishAction": "Voltooien · {count}",
-
   "signTitle": "Een pdf ondertekenen",
   "signIntro": "Zet je met de hand getekende handtekening op een pagina van een pdf. Het is louter een tekening die aan het document wordt toegevoegd, geen gecertificeerde elektronische handtekening.",
   "signChooseSubtitle": "Kies het document dat je wilt ondertekenen",
@@ -427,7 +367,6 @@
   "signPlaceBody": "Sleep de handtekening naar de gewenste plaats op de pagina en tik dan op Voltooien.",
   "signPageUnavailable": "De pagina kon niet worden weergegeven.",
   "signProgress": "Handtekening toevoegen…",
-
   "editTitle": "Een document annoteren",
   "editEmptyBody": "Voeg tekst toe of markeer passages rechtstreeks op een bestaande pdf.",
   "editAddTextTitle": "Tekst toevoegen",
@@ -440,7 +379,6 @@
   "editModeText": "Tekst",
   "editModeHighlight": "Markeren",
   "editPageUnavailable": "Deze pagina kon niet worden weergegeven.",
-
   "ocrEmptyTitle": "De tekst doorzoekbaar maken",
   "ocrEmptyBody": "De tekst van een gescande pdf wordt herkend en onzichtbaar over de afbeelding gelegd. De pagina verandert niet van uiterlijk.",
   "ocrWrongFormat": "Kies een pdf of een afbeelding (JPG, PNG…).",
@@ -451,7 +389,6 @@
   "ocrResultBody": "{count, plural, one{{count} pagina geanalyseerd} other{{count} pagina’s geanalyseerd}}. De doorzoekbare pdf is klaar, en je kunt ook alle herkende tekst kopiëren.",
   "ocrCopyText": "Tekst kopiëren",
   "ocrTextCopied": "Tekst gekopieerd.",
-
   "redactIntro": "Verberg definitief delen van een pdf (namen, adressen, bedragen). Anders dan bij een simpele zwarte rechthoek erover wordt de verborgen tekst echt uit het bestand verwijderd, niet alleen bedekt: hij kan niet meer worden geselecteerd of gekopieerd.",
   "redactChooseSubtitle": "Kies het document dat je onleesbaar wilt maken",
   "redactCaveat": "Goed om te weten: om de verborgen tekst te verwijderen wordt elke pagina van het document weer in een afbeelding omgezet (200 dpi). Het resultaat is daardoor geen pdf meer waarvan je de tekst kunt selecteren, en het verkregen bestand is meestal zwaarder dan het origineel.",
@@ -466,9 +403,8 @@
   "redactNoZone": "Geen gebied getekend",
   "redactZoneCount": "{count, plural, one{{count} te verbergen gebied} other{{count} te verbergen gebieden}}",
   "redactOtherPdf": "Andere pdf",
-  "redactAction": "Onleesbaar maken",
+  "redactAction": "Anonimiseren",
   "redactProgress": "Bezig met onleesbaar maken…",
-
   "cropEmptyTitle": "De marges bijsnijden",
   "cropEmptyBody": "Kies een pdf en sleep dan je vinger over het voorbeeld om het gebied af te bakenen dat je wilt behouden.",
   "cropTooSmall": "Het gekozen gebied is te klein.",
@@ -482,7 +418,6 @@
   "cropAllPagesOff": "Alleen pagina 1 wordt bijgesneden, de andere blijven heel.",
   "cropCaveat": "Bijsnijden verkleint de pagina: inhoud buiten het gebied wordt niet meer weergegeven of afgedrukt.",
   "cropAction": "Bijsnijden",
-
   "compareTitle": "Twee pdf’s vergelijken",
   "compareEmptyTitle": "Wat er is veranderd",
   "compareEmptyBody": "Kies twee versies van dezelfde pdf. Toegevoegde en verwijderde passages worden pagina voor pagina naast elkaar gezet.",
@@ -494,7 +429,6 @@
   "compareChangedPages": "{changed, plural, one{{changed} pagina wijkt af} other{{changed} pagina’s wijken af}} van {total}",
   "compareNoDifference": "Geen verschil gevonden tussen de twee bestanden.",
   "comparePageHeading": "Pagina {number}",
-
   "organizeEmptyTitle": "Een pdf weer ter hand nemen",
   "organizeEmptyBody": "Open een document om het te splitsen, er pagina’s uit te nemen of de volgorde te wijzigen.",
   "organizeOpenFile": "Een bestand openen",

@@ -60,19 +60,19 @@ class LEn extends L {
 
   @override
   String get exportSavedBody =>
-      'Under the name and in the folder you just chose. No watermark, no limit, nothing to unlock.';
+      'Saved with the name and in the folder you selected. No watermark, no limits, nothing to unlock.';
 
   @override
   String get exportSaveDialogTitle => 'Save PDF';
 
   @override
   String pageTileIncluded(int number) {
-    return 'Page $number, included. Tap to leave it out.';
+    return 'Page $number, included. Tap to exclude.';
   }
 
   @override
   String pageTileExcluded(int number) {
-    return 'Page $number, left out. Tap to include it.';
+    return 'Page $number, excluded. Tap to include.';
   }
 
   @override
@@ -104,7 +104,7 @@ class LEn extends L {
 
   @override
   String get homePromise =>
-      'Make your document, export it.\nNo wall at the end.';
+      'Create your document, export it.\nNo paywall at the end.';
 
   @override
   String get homeChipNoAccount => 'No account';
@@ -120,16 +120,16 @@ class LEn extends L {
 
   @override
   String get homeColophon =>
-      'Nothing unlocks for a fee when you go to save. Exporting is free, without a watermark, and without a cap on how many.';
+      'Nothing is locked behind a paywall when you save. Exporting is free, watermark-free, and with no limits.';
 
   @override
   String get sectionFeatured => 'Featured';
 
   @override
-  String get sectionToPdf => 'Into PDF';
+  String get sectionToPdf => 'To PDF';
 
   @override
-  String get sectionFromPdf => 'Out of PDF';
+  String get sectionFromPdf => 'From PDF';
 
   @override
   String get sectionSecurity => 'Security';
@@ -456,7 +456,7 @@ class LEn extends L {
   String get mergeAddHint => 'PDF, Word, images or text';
 
   @override
-  String get mergeEmptyTitle => 'One single document';
+  String get mergeEmptyTitle => 'A single document';
 
   @override
   String get mergeEmptyBody =>
@@ -547,14 +547,14 @@ class LEn extends L {
   }
 
   @override
-  String get protectEmptyTitle => 'Put it behind a password';
+  String get protectEmptyTitle => 'Set a password';
 
   @override
   String get protectEmptyBody =>
       'The PDF will no longer open without the password you choose. Keep it: it cannot be recovered.';
 
   @override
-  String get protectSubtitle => 'Will be encrypted with AES 256-bit';
+  String get protectSubtitle => 'Encrypted with 256-bit AES';
 
   @override
   String get protectPassword => 'Password';
@@ -648,11 +648,11 @@ class LEn extends L {
   String get repairAction => 'Repair';
 
   @override
-  String get pdfToWordEmptyTitle => 'An editable Word file';
+  String get pdfToWordEmptyTitle => 'Editable Word document';
 
   @override
   String get pdfToWordEmptyBody =>
-      'The text and structure of the PDF are carried over into a .docx document you can reopen and correct.';
+      'The text and structure of the PDF are converted into a .docx document you can reopen and edit.';
 
   @override
   String get pdfToWordAnalyzing => 'Analysing the document…';
@@ -743,7 +743,7 @@ class LEn extends L {
 
   @override
   String get rectoVersoIntro =>
-      'A single-sided feeder gives you two files: the odd pages in order, the even pages often in reverse. Choose both to put them back together.';
+      'A single-sided scanner produces two files: odd pages in order, even pages often reversed. Select both files to interleave them.';
 
   @override
   String get rectoVersoOddSlot => 'File with the odd pages (front)';
@@ -755,8 +755,7 @@ class LEn extends L {
   String get rectoVersoReversed => 'The second file is in reverse order';
 
   @override
-  String get rectoVersoReversedHint =>
-      'This is the usual case, ticked by default';
+  String get rectoVersoReversedHint => 'Most common case, checked by default';
 
   @override
   String rectoVersoPreview(int count) {
@@ -803,7 +802,7 @@ class LEn extends L {
   String get convertProgress => 'Converting…';
 
   @override
-  String get excelEmptyTitle => 'A workbook as a PDF';
+  String get excelEmptyTitle => 'Workbook to PDF';
 
   @override
   String get excelEmptyBody =>
@@ -817,7 +816,7 @@ class LEn extends L {
 
   @override
   String get excelLegacyFormat =>
-      'The .xls format (the old binary Excel format) is not supported. Save the file as .xlsx and try again.';
+      'The legacy .xls format is not supported. Please save the file as .xlsx and try again.';
 
   @override
   String get excelWrongFormat => 'Please choose an .xlsx Excel workbook.';
@@ -838,8 +837,8 @@ class LEn extends L {
     String _temp1 = intl.Intl.pluralLogic(
       rows,
       locale: localeName,
-      other: '$rows rows in total',
-      one: '$rows row in total',
+      other: '$rows total rows',
+      one: '$rows total row',
     );
     return '$_temp0 · $_temp1';
   }
@@ -879,7 +878,7 @@ class LEn extends L {
       'What the conversion carries over: the cell text as stored in the file (including the last calculated result of formulas), the first row in bold, and a grid.\n\nWhat it does not: colours, fonts, number formats, merged cells, images, charts and the formulas themselves. Columns are shrunk to fit the page width; on very wide sheets, text in cells that are too narrow is truncated with “…”.';
 
   @override
-  String get pptxEmptyTitle => 'A presentation as a PDF';
+  String get pptxEmptyTitle => 'Presentation to PDF';
 
   @override
   String get pptxEmptyBody =>
@@ -1172,7 +1171,7 @@ class LEn extends L {
   String get imageQualityHigh => 'High quality (300 dpi)';
 
   @override
-  String get pdfToImagesEmptyTitle => 'One image per page';
+  String get pdfToImagesEmptyTitle => 'Export pages as images';
 
   @override
   String get pdfToImagesEmptyBody =>
@@ -1203,7 +1202,7 @@ class LEn extends L {
   }
 
   @override
-  String get pdfaEmptyTitle => 'Archive for the long haul';
+  String get pdfaEmptyTitle => 'Long-term archiving';
 
   @override
   String get pdfaEmptyBody =>
@@ -1234,7 +1233,7 @@ class LEn extends L {
 
   @override
   String pdfaCaveat(int dpi) {
-    return 'Every page is redrawn as an image at $dpi dpi: the text becomes an image and the layout is frozen. That is what makes the file genuinely conformant without depending on the fonts of the original document, but in exchange the text is no longer selectable or searchable, links and forms disappear, and the file gets heavier.';
+    return 'Each page is redrawn as an image at $dpi dpi: text becomes an image and layout is preserved. This ensures full standards compliance without relying on external fonts, but text will no longer be selectable or searchable, links and forms will be removed, and file size will increase.';
   }
 
   @override
@@ -1243,7 +1242,7 @@ class LEn extends L {
   }
 
   @override
-  String get imagesToPdfEmptyTitle => 'Images into one PDF';
+  String get imagesToPdfEmptyTitle => 'Combine images into a PDF';
 
   @override
   String get imagesToPdfEmptyBody =>
@@ -1265,7 +1264,7 @@ class LEn extends L {
 
   @override
   String imagesToPdfBuildFailed(String detail) {
-    return 'Could not build it: $detail';
+    return 'Failed to create PDF: $detail';
   }
 
   @override
@@ -1342,7 +1341,7 @@ class LEn extends L {
       'Text of your choosing is repeated in the background of every page — to mark a document as confidential or as a draft.';
 
   @override
-  String get watermarkEmptyNote => 'Free export, no cap on how many.';
+  String get watermarkEmptyNote => 'Free export with no limits.';
 
   @override
   String get watermarkTextLabel => 'Watermark text';
@@ -1436,7 +1435,7 @@ class LEn extends L {
   String get pageNumbersProgress => 'Numbering…';
 
   @override
-  String get organizeEmptyTitle => 'Take a PDF back in hand';
+  String get organizeEmptyTitle => 'Take control of your PDF';
 
   @override
   String get organizeEmptyBody =>
@@ -1625,7 +1624,7 @@ class LEn extends L {
   String get editChooseOther => 'Choose another PDF';
 
   @override
-  String get editUndoTooltip => 'Undo the last annotation';
+  String get editUndoTooltip => 'Undo last annotation';
 
   @override
   String get editModeText => 'Text';
@@ -1668,7 +1667,7 @@ class LEn extends L {
       other: '$count pages analysed',
       one: '$count page analysed',
     );
-    return '$_temp0. The searchable PDF is ready, and you can also copy all the recognised text.';
+    return '$_temp0. The searchable PDF is ready, and you can also copy all recognised text.';
   }
 
   @override
@@ -1686,10 +1685,10 @@ class LEn extends L {
 
   @override
   String get redactCaveat =>
-      'Good to know: to remove the hidden text, every page of the document is turned back into an image (200 dpi). The result is therefore no longer a PDF whose text can be selected, and the resulting file is usually heavier than the original.';
+      'Please note: to permanently remove hidden text, each page is converted to an image (200 dpi). The resulting file will no longer have selectable text, and file size may increase.';
 
   @override
-  String get redactEmptyPdf => 'This PDF contains no page.';
+  String get redactEmptyPdf => 'This PDF contains no pages.';
 
   @override
   String redactOpenFailed(String detail) {
@@ -1702,7 +1701,7 @@ class LEn extends L {
   }
 
   @override
-  String get redactUndoTooltip => 'Undo the last area';
+  String get redactUndoTooltip => 'Undo last area';
 
   @override
   String get redactInstructions =>
@@ -1797,7 +1796,7 @@ class LEn extends L {
   String get compareTitle => 'Compare two PDFs';
 
   @override
-  String get compareEmptyTitle => 'What has changed';
+  String get compareEmptyTitle => 'See what changed';
 
   @override
   String get compareEmptyBody =>
@@ -1828,7 +1827,7 @@ class LEn extends L {
       other: '$changed pages differ',
       one: '$changed page differs',
     );
-    return '$_temp0 out of $total';
+    return '$_temp0 of $total';
   }
 
   @override

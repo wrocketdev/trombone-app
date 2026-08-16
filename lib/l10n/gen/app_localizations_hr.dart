@@ -107,7 +107,7 @@ class LHr extends L {
 
   @override
   String get homePromise =>
-      'Složite dokument i izvezite ga.\nNa kraju nema zida.';
+      'Složite dokument i izvezite ga.\nBez skrivenih plaćanja na kraju.';
 
   @override
   String get homeChipNoAccount => 'Bez računa';
@@ -123,7 +123,7 @@ class LHr extends L {
 
   @override
   String get homeColophon =>
-      'Pri spremanju se ništa ne otključava uz plaćanje. Izvoz je besplatan, bez vodenog žiga i bez ograničenja broja.';
+      'Pri spremanju se ništa ne otključava uz plaćanje. Izvoz je besplatan, bez vodenog žiga i bez ograničenja.';
 
   @override
   String get sectionFeatured => 'Istaknuto';
@@ -659,7 +659,7 @@ class LHr extends L {
 
   @override
   String get pdfToWordEmptyBody =>
-      'Tekst i struktura PDF-a prenose se u .docx dokument koji ćete moći ponovno otvoriti i ispraviti.';
+      'Tekst i struktura PDF-a prenose se u .docx dokument koji možete ponovo otvoriti i urediti.';
 
   @override
   String get pdfToWordAnalyzing => 'Analiza dokumenta…';
@@ -1375,8 +1375,7 @@ class LHr extends L {
       'Tekst po vašem izboru ponavlja se u pozadini svih stranica — da dokument označite kao povjerljiv ili kao nacrt.';
 
   @override
-  String get watermarkEmptyNote =>
-      'Izvoz je besplatan i bez ograničenja broja.';
+  String get watermarkEmptyNote => 'Izvoz je besplatan i bez ograničenja.';
 
   @override
   String get watermarkTextLabel => 'Tekst vodenog žiga';

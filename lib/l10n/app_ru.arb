@@ -1,9 +1,7 @@
 {
   "@@locale": "ru",
-
   "appTitle": "Trombone — PDF, сканер и Word",
   "appWordmark": "Trombone",
-
   "actionSave": "Сохранить",
   "actionShare": "Поделиться",
   "actionCompress": "Сжать",
@@ -13,119 +11,86 @@
   "actionContinue": "Далее",
   "actionOpening": "Открывается…",
   "actionRemoveFile": "Убрать этот файл",
-
   "progressPreparing": "Подготовка…",
-  "progressPercent": "{percent} %",
-
+  "progressPercent": "{percent}%",
   "emptyReassurance": "Экспорт бесплатный, без водяного знака и без ограничений.",
   "emptyAcceptedFormats": "Поддерживаемые форматы",
-
   "exportSavedTitle": "Сохранено.",
   "exportSavedBody": "Под тем именем и в той папке, которые вы только что выбрали. Без водяного знака, без ограничений, разблокировать нечего.",
   "exportSaveDialogTitle": "Сохранить PDF",
-
   "pageTileIncluded": "Страница {number}, включена. Нажмите, чтобы исключить.",
   "pageTileExcluded": "Страница {number}, исключена. Нажмите, чтобы включить.",
   "pageTileRotate": "Повернуть страницу {number}",
-
   "sectionHeaderSemantics": "{title}, {count, plural, one{{count} инструмент} few{{count} инструмента} many{{count} инструментов} other{{count} инструмента}}",
   "toolCount": "{count, plural, one{{count} инструмент} few{{count} инструмента} many{{count} инструментов} other{{count} инструмента}}",
-
-  "homePromise": "Сделайте документ и выгрузите его.\nНикакой стены в конце.",
+  "homePromise": "Создайте документ и сохраните его.\nНикаких платных ограничений в конце.",
   "homeChipNoAccount": "Без аккаунта",
   "homeChipNoWatermark": "Без водяного знака",
   "homeChipUnlimited": "Экспорт без ограничений",
   "homeSearchTooltip": "Найти инструмент",
-  "homeColophon": "При сохранении ничто не открывается за плату. Экспорт бесплатный, без водяного знака и без ограничения по количеству.",
-
+  "homeColophon": "При сохранении ничего не блокируется за плату. Экспорт бесплатный, без водяного знака и без ограничений.",
   "sectionFeatured": "Главное",
   "sectionToPdf": "В PDF",
   "sectionFromPdf": "Из PDF",
   "sectionSecurity": "Защита",
   "sectionEdit": "Правка",
-
   "toolMerge": "Объединить",
   "toolMergeKeywords": "соединить склеить собрать слить добавить",
   "toolMergeSubtitle": "PDF, Word, изображения и текст в одном документе",
-
   "toolRectoVerso": "Двусторонняя печать",
   "toolRectoVersoKeywords": "дуплекс чередовать скан чётные нечётные две стороны",
   "toolRectoVersoSubtitle": "Два скана, снова по порядку",
-
   "toolImagesToPdf": "Изображения в PDF",
   "toolImagesToPdfKeywords": "фото jpg jpeg png снимки альбом камера картинка",
   "toolImagesToPdfSubtitle": "Фото и снимки экрана в одном документе",
-
   "toolPdfToWord": "PDF в Word",
   "toolPdfToWordKeywords": "docx текстовый редактор редактируемый конвертировать doc",
   "toolPdfToWordSubtitle": "Текст и таблицы, с возможностью правки",
-
   "toolOrganize": "Упорядочить PDF",
   "toolOrganizeKeywords": "разделить извлечь переставить порядок страницы удалить",
   "toolOrganizeSubtitle": "Разделить, извлечь, переставить",
-
   "toolExcelToPdf": "Excel в PDF",
   "toolExcelToPdfKeywords": "таблица xlsx книга лист расчёты",
-
   "toolPptxToPdf": "PowerPoint в PDF",
   "toolPptxToPdfKeywords": "pptx слайд презентация slides",
-
   "toolHtmlToPdf": "Веб-страница в PDF",
   "toolHtmlToPdfKeywords": "html сайт интернет url ссылка статья",
-
   "toolScan": "Сканировать документ",
   "toolScanKeywords": "камера фото оцифровать сканер бумага",
-
   "toolPdfToExcel": "PDF в Excel",
   "toolPdfToExcelKeywords": "таблица xlsx извлечь данные",
-
   "toolPdfToPptx": "PDF в PowerPoint",
   "toolPdfToPptxKeywords": "pptx слайд презентация slides",
-
   "toolPdfToImages": "PDF в изображения",
   "toolPdfToImagesKeywords": "jpg png фото выгрузить снимок картинка",
-
   "toolOcr": "Поиск по тексту (OCR)",
-  "toolOcrKeywords": "распознавание символы скан копировать выделить ОРС",
-
+  "toolOcrKeywords": "распознавание символы скан копировать выделить ocr оцр",
   "toolPdfA": "Преобразовать в PDF/A",
   "toolPdfAKeywords": "архив стандарт долгое хранение iso",
-
   "toolProtect": "Защитить PDF",
   "toolProtectKeywords": "пароль замок зашифровать заблокировать защита",
-
   "toolUnlock": "Снять защиту с PDF",
   "toolUnlockKeywords": "убрать пароль открыть расшифровать разблокировать замок",
-
   "toolRepair": "Восстановить PDF",
   "toolRepairKeywords": "повреждён нечитаемый битый восстановить ошибка",
-
   "toolRedact": "Затемнить в PDF",
   "toolRedactKeywords": "скрыть закрасить обезличить конфиденциально удалить цензура",
-
   "toolEdit": "Редактировать PDF",
   "toolEditKeywords": "текст изменить исправить пометка писать",
-
   "toolSign": "Подписать",
   "toolSignKeywords": "подпись росчерк договор рука",
-
   "toolWatermark": "Водяной знак",
   "toolWatermarkKeywords": "watermark штамп конфиденциально черновик метка",
-
   "toolPageNumbers": "Номера страниц",
   "toolPageNumbersKeywords": "нумерация колонцифра пронумеровать цифры номера",
-
   "toolCrop": "Обрезать PDF",
   "toolCropKeywords": "обрезать поля кадрировать края размер",
-
   "toolCompare": "Сравнить PDF",
   "toolCompareKeywords": "разница версии diff изменения сравнить",
-
   "searchHint": "Объединить, пароль, водяной знак…",
   "searchClear": "Очистить",
   "searchNoResultTitle": "Нет инструмента для «{query}».",
   "searchNoResultBody": "Попробуйте назвать формат, который у вас под рукой, — «Word», «Excel», «фото» — или то, что вы хотите сделать: «подписать», «разделить», «пароль».",
-
   "actionUndo": "Отменить действие",
   "actionApply": "Применить",
   "actionChoose": "Выбрать",
@@ -136,30 +101,25 @@
   "actionBack": "Назад",
   "actionAdd": "Добавить",
   "noFileChosen": "Файл не выбран",
-
   "errorExportFailed": "Не удалось выгрузить: {detail}",
   "errorShareFailed": "Не удалось поделиться: {detail}",
   "errorOpenFailed": "Не удалось открыть файл: {detail}",
   "errorConversionFailed": "Не удалось преобразовать: {detail}",
   "errorOnFile": "{name}: {detail}",
   "errorPickPdf": "Выберите файл PDF.",
-
   "sizeBytes": "{value} Б",
   "sizeKb": "{value} КБ",
   "sizeMb": "{value} МБ",
   "sizeApprox": "~ {size}",
-
   "pageCount": "{count, plural, one{{count} страница} few{{count} страницы} many{{count} страниц} other{{count} страницы}}",
   "pageCountOfTotal": "{kept, plural, one{{kept} страница} few{{kept} страницы} many{{kept} страниц} other{{kept} страницы}} из {total}",
   "pageOfTotal": "Страница {current} из {total}",
-
   "formatPdf": "PDF",
   "formatWord": "Word",
   "formatExcel": "Excel",
   "formatPowerPoint": "PowerPoint",
   "formatImages": "Изображения",
   "formatText": "Текст",
-
   "mergeAddFile": "Добавить файл",
   "mergeAddHint": "PDF, Word, изображения или текст",
   "mergeEmptyTitle": "Один документ",
@@ -172,7 +132,6 @@
   "mergeMoveSemantics": "Переместить {name}",
   "mergeRotateAll": "Повернуть все страницы",
   "mergePreviewAndExport": "Просмотр и экспорт ({count, plural, one{{count} страница} few{{count} страницы} many{{count} страниц} other{{count} страницы}})",
-
   "previewTitle": "Просмотр · {size}",
   "previewZoomPage": "Страница {number}, увеличить",
   "previewPageUnreadable": "Страница не читается.",
@@ -182,7 +141,6 @@
   "compressEstimating": "Оценка…",
   "compressProgress": "Сжатие…",
   "compressFailed": "Не удалось сжать: {detail}",
-
   "protectEmptyTitle": "Поставить пароль",
   "protectEmptyBody": "PDF больше не откроется без выбранного вами пароля. Сохраните его: восстановить пароль невозможно.",
   "protectSubtitle": "Будет зашифрован по AES 256 бит",
@@ -199,7 +157,6 @@
   "protectResultTitle": "PDF защищён",
   "protectResultDetail": "Зашифрован по AES 256 бит. Для открытия понадобится пароль.",
   "protectExportWhat": "PDF, защищённый паролем",
-
   "unlockEmptyTitle": "Убрать пароль",
   "unlockEmptyBody": "Понадобится текущий пароль документа. После снятия PDF будет открываться свободно.",
   "unlockAcceptsProtectedPdf": "Защищённый PDF",
@@ -209,15 +166,13 @@
   "unlockProgress": "Снятие защиты…",
   "unlockFailed": "Не удалось снять защиту: {detail}",
   "unlockAction": "Снять защиту",
-
   "repairEmptyTitle": "Восстановить повреждённый файл",
   "repairEmptyBody": "Внутренняя структура повреждённого PDF собирается заново. Всё, что можно спасти, будет спасено.",
   "repairProgress": "Восстановление…",
   "repairFailed": "Этот файл восстановить не удаётся — возможно, он слишком повреждён.",
   "repairAction": "Восстановить",
-
   "pdfToWordEmptyTitle": "Редактируемый Word",
-  "pdfToWordEmptyBody": "Текст и структура PDF переносятся в документ .docx, который можно снова открыть и поправить.",
+  "pdfToWordEmptyBody": "Текст и структура PDF переносятся в документ .docx, который можно открыть и отредактировать.",
   "pdfToWordAnalyzing": "Анализ документа…",
   "pdfToWordAnalysisPending": "Анализ ожидается",
   "pdfToWordAnalysisFailed": "Анализ не удался: {detail}",
@@ -236,7 +191,6 @@
   "pdfToWordConvertAction": "Преобразовать в Word",
   "actionConvertAgain": "Преобразовать заново",
   "errorSaveFailed": "Не удалось сохранить: {detail}",
-
   "rectoVersoIntro": "Односторонний податчик даёт два файла: нечётные страницы по порядку, чётные часто в обратном. Выберите оба, чтобы собрать документ заново.",
   "rectoVersoOddSlot": "Файл с нечётными страницами (лицевая сторона)",
   "rectoVersoEvenSlot": "Файл с чётными страницами (оборот)",
@@ -250,7 +204,6 @@
   "errorGeneric": "Не удалось: {detail}",
   "actionConvertToPdf": "Преобразовать в PDF",
   "convertProgress": "Преобразование…",
-
   "excelEmptyTitle": "Книга в виде PDF",
   "excelEmptyBody": "Листы файла .xlsx становятся страницами PDF, готовыми к отправке или печати.",
   "excelChooseWorkbook": "Выбрать книгу",
@@ -265,7 +218,6 @@
   "excelRepeatHeader": "Повторять строку заголовка на каждой странице",
   "excelRepeatHeaderHint": "Первая строка листа заново отрисовывается вверху каждой страницы таблицы.",
   "excelCaveat": "Что переносится: текст ячеек в том виде, в каком он записан в файле (включая последний вычисленный результат формул), первая строка полужирным и сетка.\n\nЧто не переносится: цвета, шрифты, числовые форматы, объединённые ячейки, изображения, диаграммы и сами формулы. Столбцы сужаются, чтобы уместиться по ширине страницы; на очень широких листах текст слишком узких ячеек обрезается знаком «…».",
-
   "pptxEmptyTitle": "Презентация в виде PDF",
   "pptxEmptyBody": "Одна альбомная страница 16:9 на слайд, с заголовком и пунктами. Текст переносится; исходные изображения, фигуры и фоны — нет.\n\nПоддерживаемый формат: .pptx. Старый файл .ppt нужно сначала пересохранить как .pptx в PowerPoint.",
   "pptxChoosePresentation": "Выбрать презентацию",
@@ -278,14 +230,11 @@
   "pptxEmptySlide": "Без текста (только изображение или фигура)",
   "pptxTextLineCount": "{count, plural, one{{count} строка текста} few{{count} строки текста} many{{count} строк текста} other{{count} строки текста}}",
   "pptxReadFailed": "Не удалось прочитать: {detail}",
-
   "compressLevelLight": "Слабое",
   "compressLevelMedium": "Среднее",
   "compressLevelStrong": "Сильное",
-
   "pptxQualityStandard": "Обычное (150 dpi)",
   "pptxQualityHigh": "Высокое (220 dpi)",
-
   "pdfToExcelEmptyTitle": "Вернуть таблицы",
   "pdfToExcelEmptyBody": "Таблицы из PDF извлекаются в книгу Excel. Оформление не сохраняется, значения сохраняются.",
   "pdfToExcelPagesAnalyzed": "{count, plural, one{проанализирована {count} страница} few{проанализированы {count} страницы} many{проанализировано {count} страниц} other{проанализировано {count} страницы}}",
@@ -305,7 +254,6 @@
   "pdfToExcelExportWhat": "Книга Excel",
   "pdfToExcelConvertAction": "Преобразовать в Excel",
   "resultNameAndSize": "{name} — {size}",
-
   "pdfToPptxEmptyTitle": "По слайду на страницу",
   "pdfToPptxEmptyBody": "PDF становится точно такой же презентацией PowerPoint. Каждая страница попадает туда как изображение: вёрстка сохраняется, но текст в PowerPoint редактировать нельзя.",
   "pdfToPptxOpenFailed": "Не удалось открыть этот PDF: {detail}",
@@ -323,7 +271,6 @@
   "pdfToPptxChangeQuality": "Изменить качество",
   "pdfToPptxConvertAction": "Преобразовать в PowerPoint",
   "pdfToPptxExportWhat": "Презентация PowerPoint · {count, plural, one{{count} слайд} few{{count} слайда} many{{count} слайдов} other{{count} слайда}}",
-
   "formatLabel": "Формат",
   "actionExport": "Выгрузить",
   "imageQualityWeb": "Веб (72 dpi)",
@@ -335,7 +282,6 @@
   "errorLoadFailed": "Не удалось загрузить: {detail}",
   "pdfToImagesProgress": "Выгрузка…",
   "pdfToImagesExportWhat": "{count, plural, one{{count} изображение {format}} few{{count} изображения {format}} many{{count} изображений {format}} other{{count} изображения {format}}}",
-
   "pdfaEmptyTitle": "Архивировать надолго",
   "pdfaEmptyBody": "PDF/A — формат архивного хранения, которого требуют многие ведомства. Документ преобразуется без потери внешнего вида.",
   "pdfaConformanceLevel": "Уровень соответствия",
@@ -346,7 +292,6 @@
   "pdfaCaveatTitle": "Что меняет преобразование",
   "pdfaCaveat": "Каждая страница заново отрисовывается изображением с разрешением {dpi} dpi: текст становится изображением, вёрстка фиксируется. Именно это делает файл действительно соответствующим стандарту, не завися от шрифтов исходного документа, но взамен текст больше нельзя выделить или найти, ссылки и формы исчезают, а файл становится тяжелее.",
   "pdfaOpenFailed": "Не удалось открыть этот PDF: {detail}",
-
   "imagesToPdfEmptyTitle": "Изображения в одном PDF",
   "imagesToPdfEmptyBody": "JPG, PNG, WebP, HEIC — добавьте свои изображения, и они будут собраны в выбранном вами порядке.",
   "imagesToPdfChoose": "Выбрать изображения",
@@ -357,7 +302,6 @@
   "imagesToPdfCreateAction": "Создать PDF ({count, plural, one{{count} изображение} few{{count} изображения} many{{count} изображений} other{{count} изображения}})",
   "actionRotate": "Повернуть",
   "actionRemove": "Убрать",
-
   "htmlTitle": "HTML / веб-страница в PDF",
   "htmlIntro": "Превратите веб-страницу или код HTML в PDF формата A4. Отрисовкой занимается встроенный в Android браузер, поэтому вёрстка получается такой же, как при печати из Chrome.",
   "htmlModeUrl": "Веб-адрес",
@@ -373,14 +317,13 @@
   "htmlConverting": "Преобразование HTML…",
   "htmlNetworkNotice": "Нужен доступ в интернет: это единственный инструмент приложения, которому приходится загружать страницу. Страницы, требующие входа в аккаунт, баннера о файлах cookie или большого объёма JavaScript, могут выйти неполными.",
   "htmlOfflineNotice": "HTML и CSS, записанные прямо в странице, отрисовываются без сети. А вот изображения, таблицы стилей и шрифты, запрашиваемые по внешнему веб-адресу, требуют доступа в интернет.",
-
   "watermarkEmptyTitle": "Поставить водяной знак",
   "watermarkEmptyBody": "Выбранный вами текст повторяется фоном на всех страницах — чтобы пометить документ как конфиденциальный или как черновик.",
-  "watermarkEmptyNote": "Экспорт бесплатный и без ограничения по количеству.",
+  "watermarkEmptyNote": "Экспорт бесплатный и без ограничений.",
   "watermarkTextLabel": "Текст водяного знака",
   "watermarkDefaultText": "КОНФИДЕНЦИАЛЬНО",
   "watermarkNeedText": "Введите текст водяного знака.",
-  "watermarkOpacity": "Непрозрачность: {percent} %",
+  "watermarkOpacity": "Непрозрачность: {percent}%",
   "watermarkRotation": "Угол поворота: {degrees}°",
   "watermarkFontSize": "Размер текста: {points} пт",
   "watermarkColor": "Цвет",
@@ -389,10 +332,9 @@
   "colorBlue": "Синий",
   "colorBlack": "Чёрный",
   "watermarkProgress": "Нанесение водяного знака…",
-  "percentValue": "{percent} %",
+  "percentValue": "{percent}%",
   "degreesValue": "{degrees}°",
   "pointsValue": "{points} пт",
-
   "pageNumbersEmptyTitle": "Пронумеровать страницы",
   "pageNumbersEmptyBody": "Выберите PDF, затем положение и вид номеров, которые появятся на каждой странице.",
   "positionLabel": "Положение",
@@ -404,7 +346,6 @@
   "pageNumbersFormatOfTotal": "N / всего",
   "pageNumbersStart": "Начальный номер",
   "pageNumbersProgress": "Нумерация…",
-
   "scanNoCamera": "На этом устройстве нет доступной камеры.",
   "scanCameraFailed": "Не удалось запустить камеру: {detail}",
   "scanCropToolbar": "Подправить",
@@ -414,7 +355,6 @@
   "actionRetry": "Повторить",
   "scanNoPageYet": "Пока ни одной страницы.",
   "scanFinishAction": "Завершить · {count}",
-
   "signTitle": "Подписать PDF",
   "signIntro": "Поставьте нарисованную от руки подпись на страницу PDF. Это просто рисунок, добавленный к документу, а не квалифицированная электронная подпись.",
   "signChooseSubtitle": "Выберите документ для подписи",
@@ -427,7 +367,6 @@
   "signPlaceBody": "Перетащите подпись в нужное место на странице, затем нажмите «Завершить».",
   "signPageUnavailable": "Не удалось показать страницу.",
   "signProgress": "Добавление подписи…",
-
   "editTitle": "Сделать пометки в документе",
   "editEmptyBody": "Добавляйте текст или выделяйте фрагменты прямо в готовом PDF.",
   "editAddTextTitle": "Добавить текст",
@@ -440,7 +379,6 @@
   "editModeText": "Текст",
   "editModeHighlight": "Выделить",
   "editPageUnavailable": "Не удалось показать эту страницу.",
-
   "ocrEmptyTitle": "Сделать текст доступным для поиска",
   "ocrEmptyBody": "Текст отсканированного PDF распознаётся и незаметно накладывается поверх изображения. Внешний вид страницы не меняется.",
   "ocrWrongFormat": "Выберите PDF или изображение (JPG, PNG…).",
@@ -451,7 +389,6 @@
   "ocrResultBody": "{count, plural, one{Проанализирована {count} страница} few{Проанализированы {count} страницы} many{Проанализировано {count} страниц} other{Проанализировано {count} страницы}}. PDF с поиском готов, и весь распознанный текст можно скопировать.",
   "ocrCopyText": "Скопировать текст",
   "ocrTextCopied": "Текст скопирован.",
-
   "redactIntro": "Навсегда скройте участки PDF (имена, адреса, суммы). В отличие от простого чёрного прямоугольника сверху, скрытый текст действительно удаляется из файла, а не просто закрывается: его больше нельзя выделить или скопировать.",
   "redactChooseSubtitle": "Выберите документ для затемнения",
   "redactCaveat": "Полезно знать: чтобы удалить скрытый текст, каждая страница документа снова превращается в изображение (200 dpi). Поэтому результат — уже не PDF, в котором можно выделить текст, а полученный файл обычно тяжелее исходного.",
@@ -468,7 +405,6 @@
   "redactOtherPdf": "Другой PDF",
   "redactAction": "Затемнить",
   "redactProgress": "Затемнение…",
-
   "cropEmptyTitle": "Обрезать поля",
   "cropEmptyBody": "Выберите PDF, затем проведите пальцем по образцу, чтобы очертить область, которую нужно сохранить.",
   "cropTooSmall": "Выбранная область слишком мала.",
@@ -482,7 +418,6 @@
   "cropAllPagesOff": "Обрезается только страница 1, остальные остаются целыми.",
   "cropCaveat": "Обрезка уменьшает размер страницы: содержимое за пределами области больше не показывается и не печатается.",
   "cropAction": "Обрезать",
-
   "compareTitle": "Сравнить два PDF",
   "compareEmptyTitle": "Что изменилось",
   "compareEmptyBody": "Выберите две версии одного и того же PDF. Добавленные и удалённые фрагменты будут показаны рядом, страница за страницей.",
@@ -494,7 +429,6 @@
   "compareChangedPages": "{changed, plural, one{{changed} страница отличается} few{{changed} страницы отличаются} many{{changed} страниц отличаются} other{{changed} страницы отличаются}} из {total}",
   "compareNoDifference": "Различий между двумя файлами не обнаружено.",
   "comparePageHeading": "Страница {number}",
-
   "organizeEmptyTitle": "Взять PDF в свои руки",
   "organizeEmptyBody": "Откройте документ, чтобы разделить его, извлечь страницы или изменить их порядок.",
   "organizeOpenFile": "Открыть файл",

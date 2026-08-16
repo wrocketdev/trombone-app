@@ -21,13 +21,13 @@ class LTr extends L {
   String get actionShare => 'Paylaş';
 
   @override
-  String get actionCompress => 'Küçült';
+  String get actionCompress => 'Sıkıştır';
 
   @override
   String get actionDone => 'Bitti';
 
   @override
-  String get actionCancel => 'Vazgeç';
+  String get actionCancel => 'İptal';
 
   @override
   String get actionChange => 'Değiştir';
@@ -61,7 +61,7 @@ class LTr extends L {
 
   @override
   String get exportSavedBody =>
-      'Az önce seçtiğiniz adla ve klasörde. Filigransız, sınırsız, açılacak hiçbir şey yok.';
+      'Az önce seçtiğiniz adla ve klasörde. Filigransız, sınırsız, kilitli hiçbir özellik yok.';
 
   @override
   String get exportSaveDialogTitle => 'PDF’i kaydet';
@@ -105,7 +105,7 @@ class LTr extends L {
 
   @override
   String get homePromise =>
-      'Belgenizi hazırlayın, dışa aktarın.\nSonunda duvar yok.';
+      'Belgenizi hazırlayın, dışa aktarın.\nSonunda ödeme duvarı yok.';
 
   @override
   String get homeChipNoAccount => 'Hesapsız';
@@ -121,7 +121,7 @@ class LTr extends L {
 
   @override
   String get homeColophon =>
-      'Kaydetme anında para karşılığı hiçbir şey açılmıyor. Dışa aktarma ücretsiz, filigransız ve sayı sınırı olmadan.';
+      'Kaydederken hiçbir özellik ücret karşılığı açılmaz. Dışa aktarma ücretsiz, filigransız ve sınırsızdır.';
 
   @override
   String get sectionFeatured => 'Öne çıkanlar';
@@ -155,7 +155,7 @@ class LTr extends L {
       'dupleks harmanla tarama tek cift iki yuz';
 
   @override
-  String get toolRectoVersoSubtitle => 'İki tarama, yeniden sırasında';
+  String get toolRectoVersoSubtitle => 'İki tarama, doğru sırada';
 
   @override
   String get toolImagesToPdf => 'Görseller PDF’e';
@@ -522,7 +522,7 @@ class LTr extends L {
   }
 
   @override
-  String get compressTitle => 'Küçültme';
+  String get compressTitle => 'Sıkıştırma';
 
   @override
   String compressBody(String size) {
@@ -533,11 +533,11 @@ class LTr extends L {
   String get compressEstimating => 'Tahmin ediliyor…';
 
   @override
-  String get compressProgress => 'Küçültülüyor…';
+  String get compressProgress => 'Sıkıştırılıyor…';
 
   @override
   String compressFailed(String detail) {
-    return 'Küçültme başarısız: $detail';
+    return 'Sıkıştırma başarısız: $detail';
   }
 
   @override
@@ -645,7 +645,7 @@ class LTr extends L {
 
   @override
   String get pdfToWordEmptyBody =>
-      'PDF’in metni ve yapısı, yeniden açıp düzeltebileceğiniz bir .docx belgesine aktarılır.';
+      'PDF metni ve yapısı, yeniden açıp düzenleyebileceğiniz bir .docx belgesine aktarılır.';
 
   @override
   String get pdfToWordAnalyzing => 'Belge inceleniyor…';
@@ -1328,15 +1328,14 @@ class LTr extends L {
       'Doğrudan sayfada yazılmış HTML ve CSS çevrimdışı işlenir. Buna karşılık dış bir web adresinden çağrılan görseller, stil sayfaları ya da yazı tipleri internet bağlantısı gerektirir.';
 
   @override
-  String get watermarkEmptyTitle => 'Filigran koy';
+  String get watermarkEmptyTitle => 'Filigran ekle';
 
   @override
   String get watermarkEmptyBody =>
       'Seçtiğiniz bir metin tüm sayfalarda arka planda yinelenir — belgeyi gizli ya da taslak olarak işaretlemek için.';
 
   @override
-  String get watermarkEmptyNote =>
-      'Dışa aktarma ücretsiz ve sayı sınırı olmadan.';
+  String get watermarkEmptyNote => 'Dışa aktarma ücretsiz ve sınırsızdır.';
 
   @override
   String get watermarkTextLabel => 'Filigran metni';

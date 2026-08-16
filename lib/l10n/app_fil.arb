@@ -1,6 +1,6 @@
 {
   "@@locale": "fil",
-  "appTitle": "Paper clip — PDF, Scan at Word",
+  "appTitle": "Trombone — PDF, Scan at Word",
   "@appTitle": {
     "description": "Titre affiché par le sélecteur de tâches d'Android au-dessus de l'aperçu de l'application. La marque « Trombone » ne se traduit jamais ; seuls les mots-clés qui la suivent peuvent l'être."
   },
@@ -28,7 +28,7 @@
   "@actionCancel": {
     "description": "Interrompt une opération en cours dans la boîte de progression."
   },
-  "actionChange": "Para magbago",
+  "actionChange": "Palitan",
   "@actionChange": {
     "description": "Remplace le fichier choisi par un autre. Bouton texte étroit posé au bout d'une rangée — libellé court impératif."
   },
@@ -65,11 +65,11 @@
   "@emptyAcceptedFormats": {
     "description": "Intitulé de la rangée de puces listant les formats que l'outil sait ouvrir."
   },
-  "exportSavedTitle": "Ito ay naitala.",
+  "exportSavedTitle": "Nai-save na.",
   "@exportSavedTitle": {
     "description": "Titre de la feuille de confirmation, après écriture réussie du fichier. Ton rassurant et affirmatif ; c'est le seul moment célébré de l'application."
   },
-  "exportSavedBody": "Sa ilalim ng pangalan at sa folder na kakapili mo lang. Walang watermark, walang limitasyon, walang i-unlock.",
+  "exportSavedBody": "Gamit ang pangalan at folder na iyong pinili. Walang watermark, walang limitasyon, walang kailangang i-unlock.",
   "@exportSavedBody": {
     "description": "Corps de la feuille de confirmation. Rappelle que rien n'est verrouillé derrière un paiement — la promesse centrale du produit."
   },
@@ -77,7 +77,7 @@
   "@exportSaveDialogTitle": {
     "description": "Titre de la boîte système d'enregistrement de fichier."
   },
-  "pageTileIncluded": "Pahina {number}, kasama. Pindutin upang itabi ito.",
+  "pageTileIncluded": "Pahina {number}, kasama. Pindutin para alisin.",
   "@pageTileIncluded": {
     "description": "Étiquette d'accessibilité d'une vignette de page retenue. Lue à voix haute, jamais affichée.",
     "placeholders": {
@@ -86,7 +86,7 @@
       }
     }
   },
-  "pageTileExcluded": "Pahina {number}, itinapon. Pindutin upang isama ito.",
+  "pageTileExcluded": "Pahina {number}, inalis. Pindutin para isama.",
   "@pageTileExcluded": {
     "description": "Étiquette d'accessibilité d'une vignette de page écartée. Lue à voix haute, jamais affichée.",
     "placeholders": {
@@ -125,7 +125,7 @@
       }
     }
   },
-  "homePromise": "Gawin ang iyong dokumento, i-export ito.\nWalang pader sa dulo.",
+  "homePromise": "Gawin ang iyong dokumento, i-export ito.\nWalang bayad sa dulo.",
   "@homePromise": {
     "description": "La promesse sous la marque, en haut de l'accueil. Elle désamorce la peur relevée dans les avis du marché : découvrir un paiement obligatoire au moment d'enregistrer. Le saut de ligne est intentionnel — deux lignes exactement, la seconde plus courte que la première."
   },
@@ -145,7 +145,7 @@
   "@homeSearchTooltip": {
     "description": "Info-bulle de la loupe épinglée à la barre de titre de l'accueil."
   },
-  "homeColophon": "Walang na-unlock laban sa pagbabayad kapag nagrerehistro. Ang pag-export ay libre, walang watermark at walang limitasyon sa bilang.",
+  "homeColophon": "Walang naka-lock na kailangang bayaran sa pag-save. Libre ang pag-export, walang watermark at walang limitasyon.",
   "@homeColophon": {
     "description": "Texte de pied d'accueil, sous le décompte des outils. Répète la promesse en toutes lettres."
   },
@@ -325,7 +325,7 @@
   "@toolRepairKeywords": {
     "description": "Mots de recherche pour « Réparer PDF ». Séparés par des espaces, sans accents, en minuscules."
   },
-  "toolRedact": "I-react ang isang PDF",
+  "toolRedact": "I-redact ang isang PDF",
   "@toolRedact": {
     "description": "Outil : recouvre définitivement des zones du document pour anonymiser. Le terme métier consacré en français est « caviarder » ; employez l'équivalent consacré de votre langue (anglais : redact). Libellé de tuile."
   },
@@ -385,7 +385,7 @@
   "@searchHint": {
     "description": "Texte d'invite du champ de recherche. Trois exemples de requêtes séparés par des virgules, suivis d'un caractère de suspension. Choisissez trois exemples naturels dans votre langue plutôt qu'une traduction littérale."
   },
-  "searchClear": "Para burahin",
+  "searchClear": "Burahin",
   "@searchClear": {
     "description": "Info-bulle de la croix qui vide le champ de recherche."
   },
@@ -402,7 +402,7 @@
   "@searchNoResultBody": {
     "description": "Conseil affiché sous le titre d'absence de résultat. Les exemples entre guillemets doivent être adaptés à votre langue, pas traduits littéralement. Employez les guillemets de votre langue."
   },
-  "actionUndo": "Kanselahin",
+  "actionUndo": "I-undo",
   "@actionUndo": {
     "description": "Défait la dernière action — retrait d'un fichier, compression appliquée. ATTENTION : ce n'est PAS « interrompre » (voir actionCancel). Le français emploie le même mot pour les deux, la plupart des langues non : anglais « Undo » contre « Cancel », allemand « Rückgängig » contre « Abbrechen »."
   },
@@ -422,11 +422,11 @@
   "@actionChooseFiles": {
     "description": "Bouton principal d'un écran vide dont l'outil accepte plusieurs fichiers à la fois."
   },
-  "actionConvert": "Magbalik-loob",
+  "actionConvert": "I-convert",
   "@actionConvert": {
     "description": "Lance la conversion. Bouton pleine largeur en bas d'écran."
   },
-  "actionFinish": "Upang tapusin",
+  "actionFinish": "Tapusin",
   "@actionFinish": {
     "description": "Clôt une capture en plusieurs pages et passe à la suite."
   },
@@ -494,7 +494,7 @@
   "@errorPickPdf": {
     "description": "Bandeau d'erreur quand l'outil exige un PDF et qu'on lui a donné autre chose."
   },
-  "sizeBytes": "{value} o",
+  "sizeBytes": "{value} B",
   "@sizeBytes": {
     "description": "Poids d'un fichier en octets. L'abréviation est « o » en français, « B » en anglais — employez celle de votre langue.",
     "placeholders": {
@@ -539,7 +539,7 @@
       }
     }
   },
-  "pageCountOfTotal": "{kept} page out of {total}",
+  "pageCountOfTotal": "{kept, plural, one{{kept} pahina} other{{kept} pahina}} mula sa {total}",
   "@pageCountOfTotal": {
     "description": "Décompte partiel : combien de pages sont retenues sur combien au total. Affiché seulement quand on en a écarté ; « 3 pages sur 3 » n'apparaît jamais.",
     "placeholders": {
@@ -567,7 +567,7 @@
   "@formatPdf": {
     "description": "Puce de format acceptable. Sigle international, à conserver tel quel dans toutes les langues."
   },
-  "formatWord": "salita",
+  "formatWord": "Word",
   "@formatWord": {
     "description": "Puce de format acceptable. Marque déposée, à conserver telle quelle."
   },
@@ -575,7 +575,7 @@
   "@formatExcel": {
     "description": "Puce de format acceptable. Marque déposée, à conserver telle quelle."
   },
-  "formatPowerPoint": "Power point",
+  "formatPowerPoint": "PowerPoint",
   "@formatPowerPoint": {
     "description": "Puce de format acceptable. Marque déposée, à conserver telle quelle."
   },
@@ -607,7 +607,7 @@
   "@mergeNeedOnePage": {
     "description": "Bandeau d'erreur quand on demande l'aperçu sans qu'aucune page ne soit retenue."
   },
-  "mergeProgress": "Kasalukuyang isinasagawa ang pagsasanib...",
+  "mergeProgress": "Pinagsasama…",
   "@mergeProgress": {
     "description": "Titre de la boîte de progression pendant l'assemblage. Garder le caractère de suspension final."
   },
@@ -757,7 +757,7 @@
   "@protectWarning": {
     "description": "Avertissement sous les champs de saisie. C'est le seul endroit qui dit qu'un mot de passe perdu est perdu pour de bon — ne l'allégez pas."
   },
-  "protectAlreadyProtected": "Protektado na ang file na ito — gamitin muna ang Unlock PDF.",
+  "protectAlreadyProtected": "Protektado na ang file na ito — gamitin muna ang tool na I-unlock ang PDF.",
   "@protectAlreadyProtected": {
     "description": "Bandeau d'erreur quand le PDF choisi porte déjà un mot de passe. « Déverrouiller PDF » doit reprendre exactement le libellé traduit de l'outil (toolUnlock)."
   },
@@ -835,7 +835,7 @@
   "@repairEmptyTitle": {
     "description": "Titre de l'écran vide de l'outil Réparer."
   },
-  "repairEmptyBody": "Ang panloob na istraktura ng isang nasirang PDF ay muling itinayo. Kung ano ang maililigtas ay magiging maililigtas.",
+  "repairEmptyBody": "Muling itinatayo ang istruktura ng sirang PDF. Ang anumang maaaring ma-recover ay maisasalba.",
   "@repairEmptyBody": {
     "description": "Consigne de l'écran vide de l'outil Réparer. La seconde phrase promet peu délibérément — la réparation n'est jamais garantie."
   },
@@ -855,7 +855,7 @@
   "@pdfToWordEmptyTitle": {
     "description": "Titre de l'écran vide de l'outil PDF vers Word. « Word » est une marque, à conserver."
   },
-  "pdfToWordEmptyBody": "Ang teksto at istraktura ng PDF ay inilipat sa isang .docx na dokumento na maaari mong muling buksan at itama.",
+  "pdfToWordEmptyBody": "Ang teksto at istruktura ng PDF ay inililipat sa isang .docx na dokumento na maaari mong muling buksan at i-edit.",
   "@pdfToWordEmptyBody": {
     "description": "Consigne de l'écran vide de l'outil PDF vers Word. « .docx » est une extension de fichier, à conserver telle quelle."
   },
@@ -923,7 +923,7 @@
   "@pdfToWordCaveat": {
     "description": "Ce que la conversion ne sait pas faire, dit avant qu'on la lance. C'est le passage qui évite la déception — ne l'allégez pas."
   },
-  "pdfToWordScanWarning": "Mukhang isang scan ang PDF na ito: walang nakitang text. Gamitin muna ang Searchable Text (OCR) tool, pagkatapos ay bumalik at i-convert ang resultang PDF.",
+  "pdfToWordScanWarning": "Mukhang isang scan ang PDF na ito: walang nakitang text. Gamitin muna ang tool na Naghahanap ng teksto (OCR), pagkatapos ay bumalik at i-convert ang resultang PDF.",
   "@pdfToWordScanWarning": {
     "description": "Avertissement quand le PDF ne contient aucun texte extractible. « Texte cherchable (OCR) » doit reprendre exactement le libellé traduit de l'outil (toolOcr)."
   },
@@ -955,7 +955,7 @@
   "@actionConvertAgain": {
     "description": "Action secondaire proposée une fois le fichier produit, pour refaire la conversion. Doit tenir sur une ligne."
   },
-  "errorSaveFailed": "Hindi makapagrehistro: {detail}",
+  "errorSaveFailed": "Hindi mai-save: {detail}",
   "@errorSaveFailed": {
     "description": "Bandeau d'erreur quand l'écriture du fichier échoue. {detail} est un message technique non traduit.",
     "placeholders": {
@@ -1192,7 +1192,7 @@
   "@compressLevelMedium": {
     "description": "Niveau de compression intermédiaire. Adjectif accordé à « compression »."
   },
-  "compressLevelStrong": "Forte",
+  "compressLevelStrong": "Malakas",
   "@compressLevelStrong": {
     "description": "Niveau de compression le plus agressif. Adjectif accordé à « compression »."
   },
@@ -1658,7 +1658,7 @@
   "@watermarkEmptyBody": {
     "description": "Consigne de l'écran vide de l'outil Filigrane."
   },
-  "watermarkEmptyNote": "Libreng pag-export na walang limitasyon sa bilang.",
+  "watermarkEmptyNote": "Libreng pag-export na walang limitasyon.",
   "@watermarkEmptyNote": {
     "description": "Note verte de l'écran vide, propre à cet outil. La note habituelle promet « sans filigrane » — sur l'outil qui en appose un, elle se contredirait. Ne réintroduisez donc pas la mention du filigrane ici."
   },
@@ -2002,11 +2002,11 @@
   "@signNeedDrawing": {
     "description": "Bandeau d'erreur quand on valide une zone de tracé restée vide."
   },
-  "signClear": "Para burahin",
+  "signClear": "Burahin",
   "@signClear": {
     "description": "Bouton qui vide la zone de tracé. Court."
   },
-  "signValidate": "Upang patunayan",
+  "signValidate": "Patunayan",
   "@signValidate": {
     "description": "Bouton qui retient la signature tracée et passe au placement. Court."
   },

@@ -9,7 +9,7 @@ class LNb extends L {
   LNb([String locale = 'nb']) : super(locale);
 
   @override
-  String get appTitle => 'Papirklipp — PDF, Skann og Word';
+  String get appTitle => 'Trombone — PDF, Skann og Word';
 
   @override
   String get appWordmark => 'Trombone';
@@ -56,23 +56,23 @@ class LNb extends L {
   String get emptyAcceptedFormats => 'Godkjente formater';
 
   @override
-  String get exportSavedTitle => 'Det er tatt opp.';
+  String get exportSavedTitle => 'Lagret.';
 
   @override
   String get exportSavedBody =>
-      'Under navnet og i mappen du nettopp har valgt. Ingen vannmerke, ingen grenser, ingenting å låse opp.';
+      'Med navnet og i mappen du valgte. Uten vannmerke, uten begrensninger, ingenting å låse opp.';
 
   @override
   String get exportSaveDialogTitle => 'Lagre PDF';
 
   @override
   String pageTileIncluded(int number) {
-    return 'Side $number, inkludert. Trykk for å flytte den til side.';
+    return 'Side $number, inkludert. Trykk for å utelate.';
   }
 
   @override
   String pageTileExcluded(int number) {
-    return 'Side $number, forkastet. Trykk for å inkludere den.';
+    return 'Side $number, utelatt. Trykk for å inkludere.';
   }
 
   @override
@@ -82,17 +82,29 @@ class LNb extends L {
 
   @override
   String sectionHeaderSemantics(String title, int count) {
-    return '$title, $count verktøy';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count verktøy',
+      one: '$count verktøy',
+    );
+    return '$title, $_temp0';
   }
 
   @override
   String toolCount(int count) {
-    return '$count verktøy';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count verktøy',
+      one: '$count verktøy',
+    );
+    return '$_temp0';
   }
 
   @override
   String get homePromise =>
-      'Lag dokumentet ditt, eksporter det.\nIngen vegg på slutten.';
+      'Lag dokumentet ditt, eksporter det.\nIngen betalingsmur til slutt.';
 
   @override
   String get homeChipNoAccount => 'Uten konto';
@@ -108,7 +120,7 @@ class LNb extends L {
 
   @override
   String get homeColophon =>
-      'Ingenting låses opp mot betaling ved registrering. Eksporten er gratis, uten vannmerke og uten antallsbegrensning.';
+      'Ingenting låses opp mot betaling ved lagring. Eksporten er gratis, uten vannmerke og uten begrensninger.';
 
   @override
   String get sectionFeatured => 'Utvalgte';
@@ -310,7 +322,7 @@ class LNb extends L {
       'Prøv formatet du har for hånden – “Word”, “Excel”, “photo” – eller hva du vil gjøre med det: “sign”, “divide”, “password”.';
 
   @override
-  String get actionUndo => 'Avbryt';
+  String get actionUndo => 'Angre';
 
   @override
   String get actionApply => 'Søk';
@@ -369,7 +381,7 @@ class LNb extends L {
 
   @override
   String sizeBytes(String value) {
-    return '$value o';
+    return '$value B';
   }
 
   @override
@@ -389,12 +401,24 @@ class LNb extends L {
 
   @override
   String pageCount(int count) {
-    return '$count sider';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count sider',
+      one: '$count side',
+    );
+    return '$_temp0';
   }
 
   @override
   String pageCountOfTotal(int kept, int total) {
-    return '$kept sider av $total';
+    String _temp0 = intl.Intl.pluralLogic(
+      kept,
+      locale: localeName,
+      other: '$kept sider',
+      one: '$kept side',
+    );
+    return '$_temp0 av $total';
   }
 
   @override
@@ -465,7 +489,13 @@ class LNb extends L {
 
   @override
   String mergePreviewAndExport(int count) {
-    return 'Forhåndsvisning og eksport ($count sider)';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count sider',
+      one: '$count side',
+    );
+    return 'Forhåndsvisning og eksport ($_temp0)';
   }
 
   @override
@@ -483,7 +513,13 @@ class LNb extends L {
 
   @override
   String previewExportWhat(int count) {
-    return 'PDF · $count sider';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count sider',
+      one: '$count side',
+    );
+    return 'PDF · $_temp0';
   }
 
   @override
@@ -532,11 +568,11 @@ class LNb extends L {
 
   @override
   String get protectWarning =>
-      'Skriv det ned et sted: uten det blir dokumentet permanent uleselig. Ingen gjenoppretting er mulig, verken av deg eller applikasjonen.';
+      'Skriv det ned et sted: uten det blir dokumentet permanent uleselig. Ingen gjenoppretting er mulig, verken av deg eller appen.';
 
   @override
   String get protectAlreadyProtected =>
-      'Denne filen er allerede beskyttet – bruk Unlock PDF først.';
+      'Denne filen er allerede beskyttet – bruk Lås opp PDF først.';
 
   @override
   String get protectProgress => 'Beskyttelse pågår...';
@@ -594,7 +630,7 @@ class LNb extends L {
 
   @override
   String get repairEmptyBody =>
-      'Den interne strukturen til en skadet PDF rekonstrueres. Det som er bergbart vil være bergbart.';
+      'Den interne strukturen til en skadet PDF gjenoppbygges. Det som kan gjenopprettes, blir berget.';
 
   @override
   String get repairProgress => 'Reparasjon pågår...';
@@ -636,17 +672,35 @@ class LNb extends L {
 
   @override
   String pdfToWordParagraphCount(int count) {
-    return '$count avsnitt';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count avsnitt',
+      one: '$count avsnitt',
+    );
+    return '$_temp0';
   }
 
   @override
   String pdfToWordHeadingCount(int count) {
-    return '$count titler';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count overskrifter',
+      one: '$count overskrift',
+    );
+    return '$_temp0';
   }
 
   @override
   String pdfToWordTableCount(int count) {
-    return '$count tabeller';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count tabeller',
+      one: '$count tabell',
+    );
+    return '$_temp0';
   }
 
   @override
@@ -659,7 +713,7 @@ class LNb extends L {
 
   @override
   String get pdfToWordScanWarning =>
-      'Denne PDF-en ser ut til å være skannet: ingen tekst ble funnet. Bruk søkbar tekst (OCR)-verktøyet først, kom så tilbake og konverter den resulterende PDF-filen.';
+      'Denne PDF-en ser ut til å være skannet: ingen tekst ble funnet. Bruk verktøyet Søkbar tekst (OCR) først, kom så tilbake og konverter den resulterende PDF-filen.';
 
   @override
   String get pdfToWordResultTitle => 'Word-dokumentet er klart';
@@ -680,7 +734,7 @@ class LNb extends L {
 
   @override
   String errorSaveFailed(String detail) {
-    return 'Kan ikke registrere: $detail';
+    return 'Kunne ikke lagre: $detail';
   }
 
   @override
@@ -702,7 +756,13 @@ class LNb extends L {
 
   @override
   String rectoVersoPreview(int count) {
-    return 'Interleaving-oversikt ($count sider)';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count sider',
+      one: '$count side',
+    );
+    return 'Interleaving-oversikt ($_temp0)';
   }
 
   @override
@@ -710,7 +770,13 @@ class LNb extends L {
 
   @override
   String fileWithPageCount(String name, int count) {
-    return '$name · $count sider';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count sider',
+      one: '$count side',
+    );
+    return '$name · $_temp0';
   }
 
   @override
@@ -759,7 +825,19 @@ class LNb extends L {
 
   @override
   String excelSheetsAndRows(int sheets, int rows) {
-    return '$sheets ark · $rows rader totalt';
+    String _temp0 = intl.Intl.pluralLogic(
+      sheets,
+      locale: localeName,
+      other: '$sheets ark',
+      one: '$sheets ark',
+    );
+    String _temp1 = intl.Intl.pluralLogic(
+      rows,
+      locale: localeName,
+      other: '$rows rader totalt',
+      one: '$rows rad totalt',
+    );
+    return '$_temp0 · $_temp1';
   }
 
   @override
@@ -770,7 +848,19 @@ class LNb extends L {
 
   @override
   String excelSheetDimensions(int rows, int columns) {
-    return '$rows rader × $columns kolonner';
+    String _temp0 = intl.Intl.pluralLogic(
+      rows,
+      locale: localeName,
+      other: '$rows rader',
+      one: '$rows rad',
+    );
+    String _temp1 = intl.Intl.pluralLogic(
+      columns,
+      locale: localeName,
+      other: '$columns kolonner',
+      one: '$columns kolonne',
+    );
+    return '$_temp0 × $_temp1';
   }
 
   @override
@@ -803,7 +893,13 @@ class LNb extends L {
 
   @override
   String pptxSlideCount(int count) {
-    return '$count lysbilder';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count lysbilder',
+      one: '$count lysbilde',
+    );
+    return '$_temp0';
   }
 
   @override
@@ -811,7 +907,13 @@ class LNb extends L {
 
   @override
   String pptxMoreSlides(int count) {
-    return 'og $count andre lysbilder …';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count andre lysbilder',
+      one: '$count annet lysbilde',
+    );
+    return 'og $_temp0 …';
   }
 
   @override
@@ -822,7 +924,13 @@ class LNb extends L {
 
   @override
   String pptxTextLineCount(int count) {
-    return '$count linjer med tekst';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count linjer med tekst',
+      one: '$count linje med tekst',
+    );
+    return '$_temp0';
   }
 
   @override
@@ -854,7 +962,13 @@ class LNb extends L {
 
   @override
   String pdfToExcelPagesAnalyzed(int count) {
-    return '$count sider analysert';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count sider analysert',
+      one: '$count side analysert',
+    );
+    return '$_temp0';
   }
 
   @override
@@ -886,7 +1000,19 @@ class LNb extends L {
 
   @override
   String pdfToExcelTablesFound(int tables, int pages) {
-    return '$tables tabeller oppdaget på $pages sider';
+    String _temp0 = intl.Intl.pluralLogic(
+      tables,
+      locale: localeName,
+      other: '$tables tabeller oppdaget',
+      one: '$tables tabell oppdaget',
+    );
+    String _temp1 = intl.Intl.pluralLogic(
+      pages,
+      locale: localeName,
+      other: '$pages sider',
+      one: '$pages side',
+    );
+    return '$_temp0 på $_temp1';
   }
 
   @override
@@ -896,7 +1022,13 @@ class LNb extends L {
 
   @override
   String pdfToExcelParagraphsOutside(int count) {
-    return '$count avsnitt utenfor tabeller';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count avsnitt utenfor tabeller',
+      one: '$count avsnitt utenfor tabeller',
+    );
+    return '$_temp0';
   }
 
   @override
@@ -908,7 +1040,7 @@ class LNb extends L {
       'Ingen tabellstruktur ble gjenkjent i dette dokumentet. Teksten er der, men den er ikke ordnet i vanlige spalter. I stedet for å lage en uleselig arbeidsbok, aktiver \"Inkluder også ikke-tabelltekst\" ovenfor, eller bruk \"PDF til Word\" som bevarer avsnitt bedre.';
 
   @override
-  String get pdfToExcelResultTitle => 'Perm klar';
+  String get pdfToExcelResultTitle => 'Regneark klart';
 
   @override
   String get pdfToExcelExportWhat => 'Excel arbeidsbok';
@@ -938,7 +1070,19 @@ class LNb extends L {
 
   @override
   String pdfToPptxPagesToSlides(int count) {
-    return '$count sider > $count lysbilder';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count sider',
+      one: '$count side',
+    );
+    String _temp1 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count lysbilder',
+      one: '$count lysbilde',
+    );
+    return '$_temp0 > $_temp1';
   }
 
   @override
@@ -953,7 +1097,13 @@ class LNb extends L {
 
   @override
   String pdfToPptxHeavyWarning(int count) {
-    return 'Advarsel: i høy kvalitet kan en presentasjon på $count sider veie flere titalls MB og ta lang tid å åpne. Velg Standard når du er i tvil.';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count sider',
+      one: '$count side',
+    );
+    return 'Advarsel: i høy kvalitet kan en presentasjon på $_temp0 veie flere titalls MB og ta lang tid å åpne. Velg Standard når du er i tvil.';
   }
 
   @override
@@ -973,7 +1123,13 @@ class LNb extends L {
     String size,
     String quality,
   ) {
-    return '$name — $count lysbilder · $size · $quality';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count lysbilder',
+      one: '$count lysbilde',
+    );
+    return '$name — $_temp0 · $size · $quality';
   }
 
   @override
@@ -988,7 +1144,13 @@ class LNb extends L {
 
   @override
   String pdfToPptxExportWhat(int count) {
-    return 'PowerPoint-presentasjon · $count lysbilder';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count lysbilder',
+      one: '$count lysbilde',
+    );
+    return 'PowerPoint-presentasjon · $_temp0';
   }
 
   @override
@@ -1028,7 +1190,13 @@ class LNb extends L {
 
   @override
   String pdfToImagesExportWhat(int count, String format) {
-    return '$count bilder $format';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count bilder',
+      one: '$count bilde',
+    );
+    return '$_temp0 $format';
   }
 
   @override
@@ -1099,7 +1267,13 @@ class LNb extends L {
 
   @override
   String imagesToPdfCreateAction(int count) {
-    return 'Lag PDF-en ($count bilder)';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count bilder',
+      one: '$count bilde',
+    );
+    return 'Lag PDF-en ($_temp0)';
   }
 
   @override
@@ -1151,7 +1325,7 @@ class LNb extends L {
 
   @override
   String get htmlNetworkNotice =>
-      'En internettforbindelse er nødvendig: det er det eneste verktøyet i applikasjonen som må laste ned siden. Sider som krever en kontopålogging, et informasjonskapselbanner eller mye JavaScript kan bli ufullstendige.';
+      'En internettforbindelse er nødvendig: det er det eneste verktøyet i appen som må laste ned siden. Sider som krever en kontopålogging, et informasjonskapselbanner eller mye JavaScript kan bli ufullstendige.';
 
   @override
   String get htmlOfflineNotice =>
@@ -1165,7 +1339,7 @@ class LNb extends L {
       'Valgt tekst gjentas i bakgrunnen på alle sider – for å merke et dokument som konfidensielt eller utkast.';
 
   @override
-  String get watermarkEmptyNote => 'Gratis eksport uten antall grenser.';
+  String get watermarkEmptyNote => 'Gratis eksport uten begrensninger.';
 
   @override
   String get watermarkTextLabel => 'Vannmerketekst';
@@ -1273,7 +1447,13 @@ class LNb extends L {
 
   @override
   String organizePagesKept(int kept, int total) {
-    return '$kept sider beholdt av $total';
+    String _temp0 = intl.Intl.pluralLogic(
+      kept,
+      locale: localeName,
+      other: '$kept sider beholdt',
+      one: '$kept side beholdt',
+    );
+    return '$_temp0 av $total';
   }
 
   @override
@@ -1326,7 +1506,13 @@ class LNb extends L {
 
   @override
   String organizeFileCount(int count) {
-    return '$count filer';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count filer',
+      one: '$count fil',
+    );
+    return '$_temp0';
   }
 
   @override
@@ -1473,7 +1659,13 @@ class LNb extends L {
 
   @override
   String ocrResultBody(int count) {
-    return '$count sider analysert. Den søkbare PDF-en er klar, og du kan også kopiere all gjenkjent tekst.';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count sider analysert',
+      one: '$count side analysert',
+    );
+    return '$_temp0. Den søkbare PDF-en er klar, og du kan også kopiere all gjenkjent tekst.';
   }
 
   @override
@@ -1529,7 +1721,13 @@ class LNb extends L {
 
   @override
   String redactZoneCount(int count) {
-    return '$count områder å skjule';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count soner å skjule',
+      one: '$count sone å skjule',
+    );
+    return '$_temp0';
   }
 
   @override
@@ -1621,7 +1819,13 @@ class LNb extends L {
 
   @override
   String compareChangedPages(int changed, int total) {
-    return '$changed sider er forskjellige på $total';
+    String _temp0 = intl.Intl.pluralLogic(
+      changed,
+      locale: localeName,
+      other: '$changed sider er forskjellige',
+      one: '$changed side er forskjellig',
+    );
+    return '$_temp0 på $total';
   }
 
   @override
@@ -1635,7 +1839,13 @@ class LNb extends L {
 
   @override
   String organizeFilesCreated(int count) {
-    return '$count filer opprettet';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count filer opprettet',
+      one: '$count fil opprettet',
+    );
+    return '$_temp0';
   }
 
   @override

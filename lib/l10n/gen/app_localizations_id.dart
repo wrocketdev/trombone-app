@@ -103,7 +103,7 @@ class LId extends L {
 
   @override
   String get homePromise =>
-      'Buat dokumen Anda, lalu ekspor.\nTidak ada tembok di akhir.';
+      'Buat dokumen Anda, lalu ekspor.\nTanpa paywall di akhir.';
 
   @override
   String get homeChipNoAccount => 'Tanpa akun';
@@ -119,7 +119,7 @@ class LId extends L {
 
   @override
   String get homeColophon =>
-      'Tidak ada yang dibuka dengan bayaran saat menyimpan. Ekspor gratis, tanpa tanda air, dan tanpa batas jumlah.';
+      'Tidak ada yang terkunci di balik pembayaran saat menyimpan. Ekspor gratis, tanpa tanda air, dan tanpa batas.';
 
   @override
   String get sectionFeatured => 'Pilihan';
@@ -640,7 +640,7 @@ class LId extends L {
 
   @override
   String get pdfToWordEmptyBody =>
-      'Teks dan struktur PDF dipindahkan ke dokumen .docx yang bisa Anda buka kembali dan perbaiki.';
+      'Teks dan struktur PDF dipindahkan ke dokumen .docx yang dapat Anda buka kembali dan edit.';
 
   @override
   String get pdfToWordAnalyzing => 'Menganalisis dokumen…';
@@ -1307,7 +1307,7 @@ class LId extends L {
       'Teks pilihan Anda diulang sebagai latar di semua halaman — untuk menandai dokumen sebagai rahasia atau sebagai draf.';
 
   @override
-  String get watermarkEmptyNote => 'Ekspor gratis dan tanpa batas jumlah.';
+  String get watermarkEmptyNote => 'Ekspor gratis dan tanpa batas.';
 
   @override
   String get watermarkTextLabel => 'Teks tanda air';

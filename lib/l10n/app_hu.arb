@@ -1,9 +1,7 @@
 {
   "@@locale": "hu",
-
   "appTitle": "Trombone — PDF, szkennelés és Word",
   "appWordmark": "Trombone",
-
   "actionSave": "Mentés",
   "actionShare": "Megosztás",
   "actionCompress": "Tömörítés",
@@ -13,121 +11,88 @@
   "actionContinue": "Tovább",
   "actionOpening": "Megnyitás…",
   "actionRemoveFile": "Fájl eltávolítása",
-
   "progressPreparing": "Előkészítés…",
   "progressPercent": "{percent}%",
-
   "emptyReassurance": "Az exportálás ingyenes, vízjel és korlát nélkül.",
   "emptyAcceptedFormats": "Elfogadott formátumok",
-
   "exportSavedTitle": "Elmentve.",
   "exportSavedBody": "Azon a néven és abba a mappába, amit az imént választott. Vízjel nélkül, korlát nélkül, nincs mit feloldani.",
   "exportSaveDialogTitle": "PDF mentése",
-
   "pageTileIncluded": "{number}. oldal, benne van. Koppintson a kihagyásához.",
   "pageTileExcluded": "{number}. oldal, kihagyva. Koppintson a hozzávételéhez.",
   "pageTileRotate": "{number}. oldal forgatása",
-
   "sectionHeaderSemantics": "{title}, {count, plural, one{{count} eszköz} other{{count} eszköz}}",
   "toolCount": "{count, plural, one{{count} eszköz} other{{count} eszköz}}",
-
-  "homePromise": "Állítsa össze a dokumentumot, és exportálja.\nA végén nincs fal.",
+  "homePromise": "Állítsa össze a dokumentumot, és exportálja.\nA végén nincs fizetési fal.",
   "homeChipNoAccount": "Fiók nélkül",
   "homeChipNoWatermark": "Vízjel nélkül",
   "homeChipUnlimited": "Korlátlan exportálás",
   "homeSearchTooltip": "Eszköz keresése",
-  "homeColophon": "Mentéskor semmi nem oldódik fel fizetés ellenében. Az exportálás ingyenes, vízjel nélküli, és a darabszám sincs korlátozva.",
-
+  "homeColophon": "Mentéskor semmit sem kell fizetéssel feloldani. Az exportálás ingyenes, vízjelmentes és korlátlan.",
   "sectionFeatured": "Kiemelt",
   "sectionToPdf": "PDF-be",
   "sectionFromPdf": "PDF-ből",
   "sectionSecurity": "Biztonság",
   "sectionEdit": "Szerkesztés",
-
   "toolMerge": "Egyesítés",
   "toolMergeKeywords": "osszefuzes egyesites osszevonas hozzafuzes egybe",
   "toolMergeSubtitle": "PDF, Word, képek és szöveg egyetlen dokumentumban",
-
   "toolRectoVerso": "Kétoldalas",
   "toolRectoVersoKeywords": "duplex osszefesules szkennelés paros paratlan ket oldal",
   "toolRectoVersoSubtitle": "Két beolvasás, újra jó sorrendben",
-
   "toolImagesToPdf": "Képekből PDF",
   "toolImagesToPdfKeywords": "fotó jpg jpeg png kepek album kamera kep",
   "toolImagesToPdfSubtitle": "Fényképek és képernyőképek egy dokumentumban",
-
   "toolPdfToWord": "PDF-ből Word",
   "toolPdfToWordKeywords": "docx szovegszerkeszto szerkesztheto atalakitas doc",
   "toolPdfToWordSubtitle": "Szöveg és táblázatok, szerkeszthetően",
-
   "toolOrganize": "PDF rendezése",
   "toolOrganizeKeywords": "szetvagas szetvalasztas kiemeles atrendezes sorrend oldalak torles",
   "toolOrganizeSubtitle": "Szétvágás, kiemelés, átrendezés",
-
   "toolExcelToPdf": "Excelből PDF",
   "toolExcelToPdfKeywords": "tablazat xlsx munkafuzet munkalap szamolas",
-
   "toolPptxToPdf": "PowerPointból PDF",
   "toolPptxToPdfKeywords": "pptx dia bemutato slides",
-
   "toolHtmlToPdf": "Weboldalból PDF",
   "toolHtmlToPdfKeywords": "html webhely internet url hivatkozas cikk",
-
   "toolScan": "Dokumentum beolvasása",
   "toolScanKeywords": "kamera fotó digitalizalas szkenner papir",
-
   "toolPdfToExcel": "PDF-ből Excel",
   "toolPdfToExcelKeywords": "tablazat xlsx kiemeles adatok",
-
   "toolPdfToPptx": "PDF-ből PowerPoint",
   "toolPdfToPptxKeywords": "pptx dia bemutato slides",
-
   "toolPdfToImages": "PDF-ből képek",
   "toolPdfToImagesKeywords": "jpg png fotó exportalas kepernyokep kep",
-
   "toolOcr": "Kereshető szöveg (OCR)",
   "toolOcrKeywords": "felismeres karakterek beolvasott masolas kijeloles",
-
   "toolPdfA": "Átalakítás PDF/A-ba",
   "toolPdfAKeywords": "archivalas szabvany hosszu tavu megorzes iso",
-
   "toolProtect": "PDF védelme",
   "toolProtectKeywords": "jelszo lakat titkositas zarolas vedelem",
-
   "toolUnlock": "PDF feloldása",
   "toolUnlockKeywords": "jelszo eltavolitasa megnyitas visszafejtes lakat",
-
   "toolRepair": "PDF javítása",
   "toolRepairKeywords": "serult olvashatatlan hibas helyreallitas hiba",
-
   "toolRedact": "PDF kitakarása",
   "toolRedactKeywords": "elrejtes kifekitese anonimizalas bizalmas torles cenzura",
-
   "toolEdit": "PDF szerkesztése",
   "toolEditKeywords": "szoveg modositas javitas jegyzet iras",
-
   "toolSign": "Aláírás",
   "toolSignKeywords": "alairas kezjegy szerzodes kez",
-
   "toolWatermark": "Vízjel",
   "toolWatermarkKeywords": "watermark belyegzo bizalmas piszkozat jelzes",
-
   "toolPageNumbers": "Oldalszámok",
   "toolPageNumbersKeywords": "oldalszamozas szamozas oldalszam szamjegyek",
-
   "toolCrop": "PDF levágása",
   "toolCropKeywords": "vagas margok korbevagas szelek meret",
-
   "toolCompare": "PDF-ek összehasonlítása",
   "toolCompareKeywords": "kulonbseg valtozatok diff modositasok osszehasonlitas",
-
   "searchHint": "Egyesítés, jelszó, vízjel…",
   "searchClear": "Törlés",
   "searchNoResultTitle": "Nincs eszköz erre: „{query}”.",
   "searchNoResultBody": "Próbálja a kéznél lévő formátummal — „Word”, „Excel”, „fotó” —, vagy azzal, amit tenni szeretne vele: „aláírás”, „szétvágás”, „jelszó”.",
-
   "actionUndo": "Visszavonás",
-  "actionApply": "Alkalmaz",
+  "actionApply": "Alkalmazás",
   "actionChoose": "Kiválasztás",
   "actionChoosePdf": "PDF kiválasztása",
   "actionChooseFiles": "Fájlok kiválasztása",
@@ -136,30 +101,25 @@
   "actionBack": "Vissza",
   "actionAdd": "Hozzáadás",
   "noFileChosen": "Nincs kiválasztott fájl",
-
   "errorExportFailed": "Az exportálás nem sikerült: {detail}",
   "errorShareFailed": "A megosztás nem sikerült: {detail}",
   "errorOpenFailed": "A fájlt nem sikerült megnyitni: {detail}",
   "errorConversionFailed": "Az átalakítás nem sikerült: {detail}",
   "errorOnFile": "{name}: {detail}",
   "errorPickPdf": "Válasszon egy PDF-fájlt.",
-
   "sizeBytes": "{value} B",
   "sizeKb": "{value} kB",
   "sizeMb": "{value} MB",
   "sizeApprox": "~ {size}",
-
   "pageCount": "{count, plural, one{{count} oldal} other{{count} oldal}}",
   "pageCountOfTotal": "{total} oldalból {kept, plural, one{{kept} oldal} other{{kept} oldal}}",
   "pageOfTotal": "{total} oldalból a(z) {current}.",
-
   "formatPdf": "PDF",
   "formatWord": "Word",
   "formatExcel": "Excel",
   "formatPowerPoint": "PowerPoint",
   "formatImages": "Képek",
   "formatText": "Szöveg",
-
   "mergeAddFile": "Fájl hozzáadása",
   "mergeAddHint": "PDF, Word, képek vagy szöveg",
   "mergeEmptyTitle": "Egyetlen dokumentum",
@@ -172,7 +132,6 @@
   "mergeMoveSemantics": "{name} áthelyezése",
   "mergeRotateAll": "Minden oldal forgatása",
   "mergePreviewAndExport": "Előnézet és exportálás ({count, plural, one{{count} oldal} other{{count} oldal}})",
-
   "previewTitle": "Előnézet · {size}",
   "previewZoomPage": "{number}. oldal nagyítása",
   "previewPageUnreadable": "Az oldal olvashatatlan.",
@@ -182,7 +141,6 @@
   "compressEstimating": "Becslés…",
   "compressProgress": "Tömörítés folyamatban…",
   "compressFailed": "A tömörítés nem sikerült: {detail}",
-
   "protectEmptyTitle": "Jelszó beállítása",
   "protectEmptyBody": "A PDF a választott jelszó nélkül többé nem nyílik meg. Őrizze meg: nem állítható vissza.",
   "protectSubtitle": "AES 256 bites titkosítást kap",
@@ -199,7 +157,6 @@
   "protectResultTitle": "A PDF védett",
   "protectResultDetail": "AES 256 bites titkosítással. A megnyitáshoz jelszó kell majd.",
   "protectExportWhat": "Jelszóval védett PDF",
-
   "unlockEmptyTitle": "Jelszó eltávolítása",
   "unlockEmptyBody": "Szüksége lesz a dokumentum jelenlegi jelszavára. Eltávolítás után a PDF szabadon megnyílik.",
   "unlockAcceptsProtectedPdf": "Védett PDF",
@@ -209,15 +166,13 @@
   "unlockProgress": "Feloldás folyamatban…",
   "unlockFailed": "A feloldás nem sikerült: {detail}",
   "unlockAction": "Feloldás",
-
   "repairEmptyTitle": "Sérült fájl javítása",
   "repairEmptyBody": "A sérült PDF belső szerkezetét újraépítjük. Ami menthető, azt megmentjük.",
   "repairProgress": "Javítás folyamatban…",
   "repairFailed": "Ez a fájl nem javítható — talán túlságosan sérült.",
   "repairAction": "Javítás",
-
   "pdfToWordEmptyTitle": "Szerkeszthető Word",
-  "pdfToWordEmptyBody": "A PDF szövege és szerkezete átkerül egy .docx dokumentumba, amelyet újra megnyithat és javíthat.",
+  "pdfToWordEmptyBody": "A PDF szövege és szerkezete átkerül egy .docx dokumentumba, amelyet újra megnyithat és szerkeszthet.",
   "pdfToWordAnalyzing": "A dokumentum elemzése…",
   "pdfToWordAnalysisPending": "Elemzés folyamatban",
   "pdfToWordAnalysisFailed": "Az elemzés nem sikerült: {detail}",
@@ -236,7 +191,6 @@
   "pdfToWordConvertAction": "Átalakítás Wordbe",
   "actionConvertAgain": "Átalakítás újra",
   "errorSaveFailed": "A mentés nem sikerült: {detail}",
-
   "rectoVersoIntro": "Az egyoldalas lapadagoló két fájlt ad: a páratlan oldalakat sorban, a párosakat gyakran fordítva. Válassza ki mindkettőt, hogy a dokumentum újra összeálljon.",
   "rectoVersoOddSlot": "A páratlan oldalak fájlja (előlap)",
   "rectoVersoEvenSlot": "A páros oldalak fájlja (hátlap)",
@@ -250,7 +204,6 @@
   "errorGeneric": "Nem sikerült: {detail}",
   "actionConvertToPdf": "Átalakítás PDF-be",
   "convertProgress": "Átalakítás folyamatban…",
-
   "excelEmptyTitle": "Munkafüzet PDF-ként",
   "excelEmptyBody": "Egy .xlsx fájl munkalapjaiból PDF-oldalak lesznek, küldésre vagy nyomtatásra készen.",
   "excelChooseWorkbook": "Munkafüzet kiválasztása",
@@ -265,7 +218,6 @@
   "excelRepeatHeader": "Fejlécsor ismétlése minden oldalon",
   "excelRepeatHeaderHint": "A munkalap első sora a táblázat minden oldalának tetején újra kirajzolódik.",
   "excelCaveat": "Amit az átalakítás átvisz: a cellák szövegét úgy, ahogy a fájlban szerepel (a képletek utolsó kiszámított eredményével együtt), az első sort félkövéren, és egy rácsot.\n\nAmit nem: színek, betűtípusok, számformátumok, egyesített cellák, képek, diagramok és maguk a képletek. Az oszlopok szűkülnek, hogy elférjenek az oldal szélességében; nagyon széles munkalapokon a túl keskeny cellák szövege „…” jellel csonkolódik.",
-
   "pptxEmptyTitle": "Bemutató PDF-ként",
   "pptxEmptyBody": "Diánként egy fekvő, 16:9 arányú oldal, a címmel és a felsorolásokkal. A szöveg átkerül; az eredeti képek, alakzatok és hátterek nem.\n\nElfogadott formátum: .pptx. A régebbi .ppt fájlt előbb .pptx néven kell menteni a PowerPointból.",
   "pptxChoosePresentation": "Bemutató kiválasztása",
@@ -278,14 +230,11 @@
   "pptxEmptySlide": "Nincs szöveg (csak kép vagy alakzat)",
   "pptxTextLineCount": "{count, plural, one{{count} sor szöveg} other{{count} sor szöveg}}",
   "pptxReadFailed": "Nem sikerült beolvasni: {detail}",
-
   "compressLevelLight": "Enyhe",
   "compressLevelMedium": "Közepes",
   "compressLevelStrong": "Erős",
-
   "pptxQualityStandard": "Normál (150 dpi)",
   "pptxQualityHigh": "Magas (220 dpi)",
-
   "pdfToExcelEmptyTitle": "A táblázatok visszaszerzése",
   "pdfToExcelEmptyBody": "A PDF táblázatai Excel-munkafüzetbe kerülnek. A formázás nem marad meg, az értékek igen.",
   "pdfToExcelPagesAnalyzed": "{count, plural, one{{count} oldal elemezve} other{{count} oldal elemezve}}",
@@ -305,7 +254,6 @@
   "pdfToExcelExportWhat": "Excel-munkafüzet",
   "pdfToExcelConvertAction": "Átalakítás Excelbe",
   "resultNameAndSize": "{name} — {size}",
-
   "pdfToPptxEmptyTitle": "Oldalanként egy dia",
   "pdfToPptxEmptyBody": "A PDF-ből teljesen ugyanolyan PowerPoint-bemutató lesz. Minden oldal képként kerül be: az elrendezés hű marad, de a szöveg a PowerPointban nem lesz szerkeszthető.",
   "pdfToPptxOpenFailed": "Ezt a PDF-et nem sikerült megnyitni: {detail}",
@@ -323,7 +271,6 @@
   "pdfToPptxChangeQuality": "Minőség módosítása",
   "pdfToPptxConvertAction": "Átalakítás PowerPointba",
   "pdfToPptxExportWhat": "PowerPoint-bemutató · {count, plural, one{{count} dia} other{{count} dia}}",
-
   "formatLabel": "Formátum",
   "actionExport": "Exportálás",
   "imageQualityWeb": "Web (72 dpi)",
@@ -335,7 +282,6 @@
   "errorLoadFailed": "A betöltés nem sikerült: {detail}",
   "pdfToImagesProgress": "Exportálás folyamatban…",
   "pdfToImagesExportWhat": "{count, plural, one{{count} {format} kép} other{{count} {format} kép}}",
-
   "pdfaEmptyTitle": "Hosszú távú megőrzés",
   "pdfaEmptyBody": "A PDF/A az a megőrzési formátum, amelyet sok hivatal megkövetel. A dokumentum úgy alakul át, hogy a megjelenése nem változik.",
   "pdfaConformanceLevel": "Megfelelőségi szint",
@@ -346,7 +292,6 @@
   "pdfaCaveatTitle": "Amit az átalakítás megváltoztat",
   "pdfaCaveat": "Minden oldal képként rajzolódik újra {dpi} dpi felbontásban: a szövegből kép lesz, az elrendezés rögzül. Éppen ez teszi a fájlt valóban szabványossá anélkül, hogy az eredeti dokumentum betűtípusaitól függne, cserébe viszont a szöveg többé nem jelölhető ki és nem kereshető, a hivatkozások és űrlapok eltűnnek, a fájl pedig nehezebb lesz.",
   "pdfaOpenFailed": "Ezt a PDF-et nem sikerült megnyitni: {detail}",
-
   "imagesToPdfEmptyTitle": "Képek egyetlen PDF-ben",
   "imagesToPdfEmptyBody": "JPG, PNG, WebP, HEIC — adja hozzá a képeit, és a választott sorrendben állnak össze.",
   "imagesToPdfChoose": "Képek kiválasztása",
@@ -357,7 +302,6 @@
   "imagesToPdfCreateAction": "PDF létrehozása ({count, plural, one{{count} kép} other{{count} kép}})",
   "actionRotate": "Forgatás",
   "actionRemove": "Eltávolítás",
-
   "htmlTitle": "HTML / weboldalból PDF",
   "htmlIntro": "Alakítson egy weboldalt vagy HTML-kódot A4-es PDF-fé. A megjelenítést az Androidba épített böngésző végzi, így az elrendezés olyan, mint a Chrome-ból való nyomtatásnál.",
   "htmlModeUrl": "Webcím",
@@ -373,10 +317,9 @@
   "htmlConverting": "A HTML átalakítása…",
   "htmlNetworkNotice": "Internetkapcsolat szükséges: ez az alkalmazás egyetlen eszköze, amelynek le kell töltenie az oldalt. A bejelentkezést, sütisávot vagy sok JavaScriptet igénylő oldalak hiányosan jöhetnek ki.",
   "htmlOfflineNotice": "A közvetlenül az oldalba írt HTML és CSS kapcsolat nélkül is megjelenik. A külső webcímről betöltött képekhez, stíluslapokhoz vagy betűtípusokhoz viszont internetkapcsolat kell.",
-
   "watermarkEmptyTitle": "Vízjel elhelyezése",
   "watermarkEmptyBody": "Az Ön által választott szöveg minden oldal hátterében ismétlődik — hogy a dokumentumot bizalmasnak vagy piszkozatnak jelölje.",
-  "watermarkEmptyNote": "Az exportálás ingyenes, és a darabszám sincs korlátozva.",
+  "watermarkEmptyNote": "Az exportálás ingyenes és korlátlan.",
   "watermarkTextLabel": "A vízjel szövege",
   "watermarkDefaultText": "BIZALMAS",
   "watermarkNeedText": "Adja meg a vízjel szövegét.",
@@ -392,7 +335,6 @@
   "percentValue": "{percent}%",
   "degreesValue": "{degrees}°",
   "pointsValue": "{points} pt",
-
   "pageNumbersEmptyTitle": "Oldalak számozása",
   "pageNumbersEmptyBody": "Válasszon PDF-et, majd a minden oldalra kerülő számok helyét és alakját.",
   "positionLabel": "Elhelyezés",
@@ -404,7 +346,6 @@
   "pageNumbersFormatOfTotal": "N / összes",
   "pageNumbersStart": "Kezdő szám",
   "pageNumbersProgress": "Számozás folyamatban…",
-
   "scanNoCamera": "Ezen a készüléken nincs elérhető kamera.",
   "scanCameraFailed": "A kamerát nem sikerült elindítani: {detail}",
   "scanCropToolbar": "Igazítás",
@@ -414,7 +355,6 @@
   "actionRetry": "Újra",
   "scanNoPageYet": "Még nincs egyetlen oldal sem.",
   "scanFinishAction": "Befejezés · {count}",
-
   "signTitle": "PDF aláírása",
   "signIntro": "Helyezze kézzel rajzolt aláírását a PDF egyik oldalára. Ez csupán a dokumentumhoz hozzáadott rajz, nem hitelesített elektronikus aláírás.",
   "signChooseSubtitle": "Válassza ki az aláírandó dokumentumot",
@@ -427,7 +367,6 @@
   "signPlaceBody": "Húzza az aláírást az oldal kívánt helyére, majd koppintson a Befejezés gombra.",
   "signPageUnavailable": "Az oldalt nem sikerült megjeleníteni.",
   "signProgress": "Az aláírás hozzáadása…",
-
   "editTitle": "Jegyzetelés a dokumentumban",
   "editEmptyBody": "Adjon hozzá szöveget, vagy emeljen ki részeket közvetlenül egy meglévő PDF-en.",
   "editAddTextTitle": "Szöveg hozzáadása",
@@ -440,7 +379,6 @@
   "editModeText": "Szöveg",
   "editModeHighlight": "Kiemelés",
   "editPageUnavailable": "Ezt az oldalt nem sikerült megjeleníteni.",
-
   "ocrEmptyTitle": "A szöveg kereshetővé tétele",
   "ocrEmptyBody": "A beolvasott PDF szövegét felismerjük, és láthatatlanul a kép fölé helyezzük. Az oldal megjelenése nem változik.",
   "ocrWrongFormat": "Válasszon PDF-et vagy képet (JPG, PNG…).",
@@ -451,7 +389,6 @@
   "ocrResultBody": "{count, plural, one{{count} oldal elemezve} other{{count} oldal elemezve}}. A kereshető PDF elkészült, és a felismert szöveg egészét is átmásolhatja.",
   "ocrCopyText": "Szöveg másolása",
   "ocrTextCopied": "A szöveg átmásolva.",
-
   "redactIntro": "Rejtsen el véglegesen részeket a PDF-ből (nevek, címek, összegek). A fölé húzott egyszerű fekete téglalappal ellentétben az elrejtett szöveg valóban törlődik a fájlból, nem csak eltakaródik: többé nem jelölhető ki és nem másolható.",
   "redactChooseSubtitle": "Válassza ki a kitakarandó dokumentumot",
   "redactCaveat": "Jó tudni: az elrejtett szöveg törléséhez a dokumentum minden oldala újra képpé alakul (200 dpi). Az eredmény ezért már nem olyan PDF, amelyben ki lehet jelölni a szöveget, és a kapott fájl általában nehezebb az eredetinél.",
@@ -468,7 +405,6 @@
   "redactOtherPdf": "Másik PDF",
   "redactAction": "Kitakarás",
   "redactProgress": "Kitakarás folyamatban…",
-
   "cropEmptyTitle": "A margók levágása",
   "cropEmptyBody": "Válasszon PDF-et, majd húzza az ujját az előnézeten, hogy kijelölje a megtartandó területet.",
   "cropTooSmall": "A kijelölt terület túl kicsi.",
@@ -482,7 +418,6 @@
   "cropAllPagesOff": "Csak az 1. oldal lesz levágva, a többi egészben marad.",
   "cropCaveat": "A levágás kisebbé teszi az oldalt: a területen kívüli tartalom többé nem jelenik meg és nem nyomtatódik ki.",
   "cropAction": "Levágás",
-
   "compareTitle": "Két PDF összehasonlítása",
   "compareEmptyTitle": "Ami megváltozott",
   "compareEmptyBody": "Válassza ki ugyanannak a PDF-nek két változatát. A hozzáadott és törölt részek oldalról oldalra egymás mellé kerülnek.",
@@ -494,7 +429,6 @@
   "compareChangedPages": "{total} oldalból {changed, plural, one{{changed} oldal tér el} other{{changed} oldal tér el}}",
   "compareNoDifference": "A két fájl között nem találtunk eltérést.",
   "comparePageHeading": "{number}. oldal",
-
   "organizeEmptyTitle": "PDF újrarendezése",
   "organizeEmptyBody": "Nyisson meg egy dokumentumot, hogy szétvágja, oldalakat emeljen ki belőle, vagy megváltoztassa a sorrendjüket.",
   "organizeOpenFile": "Fájl megnyitása",

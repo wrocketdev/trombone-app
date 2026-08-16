@@ -105,7 +105,7 @@ class LDa extends L {
 
   @override
   String get homePromise =>
-      'Lav dit dokument, og eksportér det.\nIngen mur til sidst.';
+      'Lav dit dokument, og eksportér det.\nIngen betalingsmur til sidst.';
 
   @override
   String get homeChipNoAccount => 'Ingen konto';
@@ -121,7 +121,7 @@ class LDa extends L {
 
   @override
   String get homeColophon =>
-      'Der låses ikke noget op mod betaling, når du gemmer. Eksport er gratis, uden vandmærke og uden loft over antallet.';
+      'Ved lagring låses intet op mod betaling. Eksport er gratis, uden vandmærke og uden begrænsninger.';
 
   @override
   String get sectionFeatured => 'Fremhævet';
@@ -1345,7 +1345,7 @@ class LDa extends L {
       'En tekst, du selv vælger, gentages i baggrunden på hver side — til at mærke et dokument som fortroligt eller som kladde.';
 
   @override
-  String get watermarkEmptyNote => 'Gratis eksport, intet loft over antallet.';
+  String get watermarkEmptyNote => 'Gratis eksport uden begrænsninger.';
 
   @override
   String get watermarkTextLabel => 'Vandmærkets tekst';

@@ -1,14 +1,14 @@
 {
   "@@locale": "vi",
-  "appTitle": "Kẹp giấy - PDF, Scan & Word",
+  "appTitle": "Trombone - PDF, Scan & Word",
   "@appTitle": {
     "description": "Titre affiché par le sélecteur de tâches d'Android au-dessus de l'aperçu de l'application. La marque « Trombone » ne se traduit jamais ; seuls les mots-clés qui la suivent peuvent l'être."
   },
-  "appWordmark": "kèn trombone",
+  "appWordmark": "Trombone",
   "@appWordmark": {
     "description": "La signature de marque en haut de l'écran d'accueil. NE PAS TRADUIRE — c'est un nom propre, identique dans les vingt-cinq langues."
   },
-  "actionSave": "Cứu",
+  "actionSave": "Lưu",
   "@actionSave": {
     "description": "Action principale de fin de parcours : écrire le fichier produit sur l'appareil. Bouton pleine largeur, doit tenir sur une ligne."
   },
@@ -28,7 +28,7 @@
   "@actionCancel": {
     "description": "Interrompt une opération en cours dans la boîte de progression."
   },
-  "actionChange": "Để thay đổi",
+  "actionChange": "Thay đổi",
   "@actionChange": {
     "description": "Remplace le fichier choisi par un autre. Bouton texte étroit posé au bout d'une rangée — libellé court impératif."
   },
@@ -36,7 +36,7 @@
   "@actionContinue": {
     "description": "Libellé de repli du bouton d'un écran vide quand l'outil n'en propose pas de plus précis."
   },
-  "actionOpening": "Khai mạc…",
+  "actionOpening": "Đang mở…",
   "@actionOpening": {
     "description": "État transitoire d'un bouton pendant que la boîte de sélection de fichiers du système s'ouvre. Garder le caractère de suspension final."
   },
@@ -44,7 +44,7 @@
   "@actionRemoveFile": {
     "description": "Info-bulle de la croix qui ramène l'écran à son état vide."
   },
-  "progressPreparing": "Sự chuẩn bị…",
+  "progressPreparing": "Đang chuẩn bị…",
   "@progressPreparing": {
     "description": "Affiché sous la barre de progression tant que le travail total n'est pas connu. Garder le caractère de suspension final."
   },
@@ -57,7 +57,7 @@
       }
     }
   },
-  "emptyReassurance": "Xuất khẩu miễn phí, không có hình mờ hoặc giới hạn.",
+  "emptyReassurance": "Xuất miễn phí, không có hình mờ hoặc giới hạn.",
   "@emptyReassurance": {
     "description": "Note verte sous le bouton d'un écran vide. Répond à la peur du marché : découvrir un paiement au moment d'enregistrer. Doit rester une phrase brève, tenant sur une à deux lignes."
   },
@@ -65,11 +65,11 @@
   "@emptyAcceptedFormats": {
     "description": "Intitulé de la rangée de puces listant les formats que l'outil sait ouvrir."
   },
-  "exportSavedTitle": "Nó được ghi lại.",
+  "exportSavedTitle": "Đã lưu thành công.",
   "@exportSavedTitle": {
     "description": "Titre de la feuille de confirmation, après écriture réussie du fichier. Ton rassurant et affirmatif ; c'est le seul moment célébré de l'application."
   },
-  "exportSavedBody": "Dưới tên và trong thư mục bạn vừa chọn. Không có hình mờ, không có giới hạn, không có gì để mở khóa.",
+  "exportSavedBody": "Tệp đã được lưu theo tên và thư mục bạn đã chọn. Không có hình mờ, không giới hạn, không cần mở khóa.",
   "@exportSavedBody": {
     "description": "Corps de la feuille de confirmation. Rappelle que rien n'est verrouillé derrière un paiement — la promesse centrale du produit."
   },
@@ -77,7 +77,7 @@
   "@exportSaveDialogTitle": {
     "description": "Titre de la boîte système d'enregistrement de fichier."
   },
-  "pageTileIncluded": "Trang {number}, được bao gồm. Chạm để di chuyển nó sang một bên.",
+  "pageTileIncluded": "Trang {number}, đã chọn. Chạm để bỏ chọn.",
   "@pageTileIncluded": {
     "description": "Étiquette d'accessibilité d'une vignette de page retenue. Lue à voix haute, jamais affichée.",
     "placeholders": {
@@ -86,7 +86,7 @@
       }
     }
   },
-  "pageTileExcluded": "Trang {number}, bị loại bỏ. Chạm để bao gồm nó.",
+  "pageTileExcluded": "Trang {number}, đã bỏ. Chạm để chọn lại.",
   "@pageTileExcluded": {
     "description": "Étiquette d'accessibilité d'une vignette de page écartée. Lue à voix haute, jamais affichée.",
     "placeholders": {
@@ -125,7 +125,7 @@
       }
     }
   },
-  "homePromise": "Tạo tài liệu của bạn, xuất nó.\nKhông có bức tường ở cuối.",
+  "homePromise": "Tạo tài liệu và xuất tệp.\nKhông yêu cầu trả phí.",
   "@homePromise": {
     "description": "La promesse sous la marque, en haut de l'accueil. Elle désamorce la peur relevée dans les avis du marché : découvrir un paiement obligatoire au moment d'enregistrer. Le saut de ligne est intentionnel — deux lignes exactement, la seconde plus courte que la première."
   },
@@ -137,7 +137,7 @@
   "@homeChipNoWatermark": {
     "description": "Puce de garantie : les fichiers exportés ne portent aucune marque apposée. Deux ou trois mots maximum."
   },
-  "homeChipUnlimited": "Xuất khẩu không giới hạn",
+  "homeChipUnlimited": "Xuất không giới hạn",
   "@homeChipUnlimited": {
     "description": "Puce de garantie : aucun quota sur le nombre d'exports. Deux ou trois mots maximum."
   },
@@ -145,7 +145,7 @@
   "@homeSearchTooltip": {
     "description": "Info-bulle de la loupe épinglée à la barre de titre de l'accueil."
   },
-  "homeColophon": "Không có gì được mở khóa để thanh toán khi đăng ký. Xuất khẩu miễn phí, không có hình mờ và không giới hạn số lượng.",
+  "homeColophon": "Không có tính năng nào bị khóa trả phí khi lưu. Xuất tệp hoàn toàn miễn phí, không có hình mờ và không giới hạn.",
   "@homeColophon": {
     "description": "Texte de pied d'accueil, sous le décompte des outils. Répète la promesse en toutes lettres."
   },
@@ -281,7 +281,7 @@
   "@toolPdfToImages": {
     "description": "Outil : exporte chaque page en fichier image. Libellé de tuile, court."
   },
-  "toolPdfToImagesKeywords": "chụp ảnh xuất khẩu jpg png",
+  "toolPdfToImagesKeywords": "anh jpg png xuat tep chup man hinh",
   "@toolPdfToImagesKeywords": {
     "description": "Mots de recherche pour « PDF vers Images ». Séparés par des espaces, sans accents, en minuscules."
   },
@@ -385,7 +385,7 @@
   "@searchHint": {
     "description": "Texte d'invite du champ de recherche. Trois exemples de requêtes séparés par des virgules, suivis d'un caractère de suspension. Choisissez trois exemples naturels dans votre langue plutôt qu'une traduction littérale."
   },
-  "searchClear": "Để xóa",
+  "searchClear": "Xóa",
   "@searchClear": {
     "description": "Info-bulle de la croix qui vide le champ de recherche."
   },
@@ -426,11 +426,11 @@
   "@actionConvert": {
     "description": "Lance la conversion. Bouton pleine largeur en bas d'écran."
   },
-  "actionFinish": "Để kết thúc",
+  "actionFinish": "Hoàn tất",
   "@actionFinish": {
     "description": "Clôt une capture en plusieurs pages et passe à la suite."
   },
-  "actionBack": "Mặt sau",
+  "actionBack": "Quay lại",
   "@actionBack": {
     "description": "Info-bulle de la flèche qui remonte d'un écran."
   },
@@ -494,7 +494,7 @@
   "@errorPickPdf": {
     "description": "Bandeau d'erreur quand l'outil exige un PDF et qu'on lui a donné autre chose."
   },
-  "sizeBytes": "{value} o",
+  "sizeBytes": "{value} B",
   "@sizeBytes": {
     "description": "Poids d'un fichier en octets. L'abréviation est « o » en français, « B » en anglais — employez celle de votre langue.",
     "placeholders": {
@@ -567,7 +567,7 @@
   "@formatPdf": {
     "description": "Puce de format acceptable. Sigle international, à conserver tel quel dans toutes les langues."
   },
-  "formatWord": "Từ",
+  "formatWord": "Word",
   "@formatWord": {
     "description": "Puce de format acceptable. Marque déposée, à conserver telle quelle."
   },
@@ -575,7 +575,7 @@
   "@formatExcel": {
     "description": "Puce de format acceptable. Marque déposée, à conserver telle quelle."
   },
-  "formatPowerPoint": "điểm mạnh",
+  "formatPowerPoint": "PowerPoint",
   "@formatPowerPoint": {
     "description": "Puce de format acceptable. Marque déposée, à conserver telle quelle."
   },
@@ -835,7 +835,7 @@
   "@repairEmptyTitle": {
     "description": "Titre de l'écran vide de l'outil Réparer."
   },
-  "repairEmptyBody": "Cấu trúc bên trong của tệp PDF bị hỏng được xây dựng lại. Cái gì cứu được sẽ cứu được.",
+  "repairEmptyBody": "Cấu trúc bên trong của tệp PDF bị hỏng được tái tạo. Dữ liệu có thể phục hồi sẽ được khôi phục.",
   "@repairEmptyBody": {
     "description": "Consigne de l'écran vide de l'outil Réparer. La seconde phrase promet peu délibérément — la réparation n'est jamais garantie."
   },
@@ -855,7 +855,7 @@
   "@pdfToWordEmptyTitle": {
     "description": "Titre de l'écran vide de l'outil PDF vers Word. « Word » est une marque, à conserver."
   },
-  "pdfToWordEmptyBody": "Văn bản và cấu trúc của tệp PDF được chuyển thành tài liệu .docx mà bạn có thể mở lại và sửa.",
+  "pdfToWordEmptyBody": "Văn bản và cấu trúc của tệp PDF được chuyển sang tài liệu .docx để bạn có thể mở lại và chỉnh sửa.",
   "@pdfToWordEmptyBody": {
     "description": "Consigne de l'écran vide de l'outil PDF vers Word. « .docx » est une extension de fichier, à conserver telle quelle."
   },
@@ -955,7 +955,7 @@
   "@actionConvertAgain": {
     "description": "Action secondaire proposée une fois le fichier produit, pour refaire la conversion. Doit tenir sur une ligne."
   },
-  "errorSaveFailed": "Không thể đăng ký: {detail}",
+  "errorSaveFailed": "Không thể lưu: {detail}",
   "@errorSaveFailed": {
     "description": "Bandeau d'erreur quand l'écriture du fichier échoue. {detail} est un message technique non traduit.",
     "placeholders": {
@@ -1422,7 +1422,7 @@
   "@formatLabel": {
     "description": "Intitulé du groupe de boutons qui choisit le format de sortie."
   },
-  "actionExport": "Xuất khẩu",
+  "actionExport": "Xuất tệp",
   "@actionExport": {
     "description": "Bouton qui lance la production des fichiers. Verbe à l'infinitif, court."
   },
@@ -1464,7 +1464,7 @@
       }
     }
   },
-  "pdfToImagesProgress": "Đang xuất khẩu…",
+  "pdfToImagesProgress": "Đang xuất tệp…",
   "@pdfToImagesProgress": {
     "description": "Titre de la boîte de progression pendant le rendu des images. Garder le caractère de suspension final."
   },
@@ -1658,7 +1658,7 @@
   "@watermarkEmptyBody": {
     "description": "Consigne de l'écran vide de l'outil Filigrane."
   },
-  "watermarkEmptyNote": "Xuất khẩu miễn phí không giới hạn số lượng.",
+  "watermarkEmptyNote": "Xuất miễn phí không giới hạn số lượng.",
   "@watermarkEmptyNote": {
     "description": "Note verte de l'écran vide, propre à cet outil. La note habituelle promet « sans filigrane » — sur l'outil qui en appose un, elle se contredirait. Ne réintroduisez donc pas la mention du filigrane ici."
   },
@@ -2002,11 +2002,11 @@
   "@signNeedDrawing": {
     "description": "Bandeau d'erreur quand on valide une zone de tracé restée vide."
   },
-  "signClear": "Để xóa",
+  "signClear": "Xóa",
   "@signClear": {
     "description": "Bouton qui vide la zone de tracé. Court."
   },
-  "signValidate": "Để xác thực",
+  "signValidate": "Xác thực",
   "@signValidate": {
     "description": "Bouton qui retient la signature tracée et passe au placement. Court."
   },

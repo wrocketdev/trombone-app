@@ -9,13 +9,13 @@ class LVi extends L {
   LVi([String locale = 'vi']) : super(locale);
 
   @override
-  String get appTitle => 'Kẹp giấy - PDF, Scan & Word';
+  String get appTitle => 'Trombone - PDF, Scan & Word';
 
   @override
-  String get appWordmark => 'kèn trombone';
+  String get appWordmark => 'Trombone';
 
   @override
-  String get actionSave => 'Cứu';
+  String get actionSave => 'Lưu';
 
   @override
   String get actionShare => 'Chia sẻ';
@@ -30,19 +30,19 @@ class LVi extends L {
   String get actionCancel => 'Hủy bỏ';
 
   @override
-  String get actionChange => 'Để thay đổi';
+  String get actionChange => 'Thay đổi';
 
   @override
   String get actionContinue => 'Tiếp tục';
 
   @override
-  String get actionOpening => 'Khai mạc…';
+  String get actionOpening => 'Đang mở…';
 
   @override
   String get actionRemoveFile => 'Xóa tập tin này';
 
   @override
-  String get progressPreparing => 'Sự chuẩn bị…';
+  String get progressPreparing => 'Đang chuẩn bị…';
 
   @override
   String progressPercent(int percent) {
@@ -51,29 +51,29 @@ class LVi extends L {
 
   @override
   String get emptyReassurance =>
-      'Xuất khẩu miễn phí, không có hình mờ hoặc giới hạn.';
+      'Xuất miễn phí, không có hình mờ hoặc giới hạn.';
 
   @override
   String get emptyAcceptedFormats => 'Các định dạng được chấp nhận';
 
   @override
-  String get exportSavedTitle => 'Nó được ghi lại.';
+  String get exportSavedTitle => 'Đã lưu thành công.';
 
   @override
   String get exportSavedBody =>
-      'Dưới tên và trong thư mục bạn vừa chọn. Không có hình mờ, không có giới hạn, không có gì để mở khóa.';
+      'Tệp đã được lưu theo tên và thư mục bạn đã chọn. Không có hình mờ, không giới hạn, không cần mở khóa.';
 
   @override
   String get exportSaveDialogTitle => 'Lưu PDF';
 
   @override
   String pageTileIncluded(int number) {
-    return 'Trang $number, được bao gồm. Chạm để di chuyển nó sang một bên.';
+    return 'Trang $number, đã chọn. Chạm để bỏ chọn.';
   }
 
   @override
   String pageTileExcluded(int number) {
-    return 'Trang $number, bị loại bỏ. Chạm để bao gồm nó.';
+    return 'Trang $number, đã bỏ. Chạm để chọn lại.';
   }
 
   @override
@@ -92,8 +92,7 @@ class LVi extends L {
   }
 
   @override
-  String get homePromise =>
-      'Tạo tài liệu của bạn, xuất nó.\nKhông có bức tường ở cuối.';
+  String get homePromise => 'Tạo tài liệu và xuất tệp.\nKhông yêu cầu trả phí.';
 
   @override
   String get homeChipNoAccount => 'Không có tài khoản';
@@ -102,14 +101,14 @@ class LVi extends L {
   String get homeChipNoWatermark => 'Không có hình mờ';
 
   @override
-  String get homeChipUnlimited => 'Xuất khẩu không giới hạn';
+  String get homeChipUnlimited => 'Xuất không giới hạn';
 
   @override
   String get homeSearchTooltip => 'Tìm một công cụ';
 
   @override
   String get homeColophon =>
-      'Không có gì được mở khóa để thanh toán khi đăng ký. Xuất khẩu miễn phí, không có hình mờ và không giới hạn số lượng.';
+      'Không có tính năng nào bị khóa trả phí khi lưu. Xuất tệp hoàn toàn miễn phí, không có hình mờ và không giới hạn.';
 
   @override
   String get sectionFeatured => 'Nổi bật';
@@ -216,7 +215,7 @@ class LVi extends L {
   String get toolPdfToImages => 'PDF sang hình ảnh';
 
   @override
-  String get toolPdfToImagesKeywords => 'chụp ảnh xuất khẩu jpg png';
+  String get toolPdfToImagesKeywords => 'anh jpg png xuat tep chup man hinh';
 
   @override
   String get toolOcr => 'Văn bản có thể tìm kiếm (OCR)';
@@ -295,7 +294,7 @@ class LVi extends L {
   String get searchHint => 'Hợp nhất, mật khẩu, hình mờ…';
 
   @override
-  String get searchClear => 'Để xóa';
+  String get searchClear => 'Xóa';
 
   @override
   String searchNoResultTitle(String query) {
@@ -325,10 +324,10 @@ class LVi extends L {
   String get actionConvert => 'Chuyển thành';
 
   @override
-  String get actionFinish => 'Để kết thúc';
+  String get actionFinish => 'Hoàn tất';
 
   @override
-  String get actionBack => 'Mặt sau';
+  String get actionBack => 'Quay lại';
 
   @override
   String get actionAdd => 'Thêm vào';
@@ -366,7 +365,7 @@ class LVi extends L {
 
   @override
   String sizeBytes(String value) {
-    return '$value o';
+    return '$value B';
   }
 
   @override
@@ -403,13 +402,13 @@ class LVi extends L {
   String get formatPdf => 'PDF';
 
   @override
-  String get formatWord => 'Từ';
+  String get formatWord => 'Word';
 
   @override
   String get formatExcel => 'Excel';
 
   @override
-  String get formatPowerPoint => 'điểm mạnh';
+  String get formatPowerPoint => 'PowerPoint';
 
   @override
   String get formatImages => 'Hình ảnh';
@@ -590,7 +589,7 @@ class LVi extends L {
 
   @override
   String get repairEmptyBody =>
-      'Cấu trúc bên trong của tệp PDF bị hỏng được xây dựng lại. Cái gì cứu được sẽ cứu được.';
+      'Cấu trúc bên trong của tệp PDF bị hỏng được tái tạo. Dữ liệu có thể phục hồi sẽ được khôi phục.';
 
   @override
   String get repairProgress => 'Đang sửa chữa…';
@@ -607,7 +606,7 @@ class LVi extends L {
 
   @override
   String get pdfToWordEmptyBody =>
-      'Văn bản và cấu trúc của tệp PDF được chuyển thành tài liệu .docx mà bạn có thể mở lại và sửa.';
+      'Văn bản và cấu trúc của tệp PDF được chuyển sang tài liệu .docx để bạn có thể mở lại và chỉnh sửa.';
 
   @override
   String get pdfToWordAnalyzing => 'Phân tích tài liệu…';
@@ -676,7 +675,7 @@ class LVi extends L {
 
   @override
   String errorSaveFailed(String detail) {
-    return 'Không thể đăng ký: $detail';
+    return 'Không thể lưu: $detail';
   }
 
   @override
@@ -991,7 +990,7 @@ class LVi extends L {
   String get formatLabel => 'Định dạng';
 
   @override
-  String get actionExport => 'Xuất khẩu';
+  String get actionExport => 'Xuất tệp';
 
   @override
   String get imageQualityWeb => 'Web (72 dpi)';
@@ -1020,7 +1019,7 @@ class LVi extends L {
   }
 
   @override
-  String get pdfToImagesProgress => 'Đang xuất khẩu…';
+  String get pdfToImagesProgress => 'Đang xuất tệp…';
 
   @override
   String pdfToImagesExportWhat(int count, String format) {
@@ -1161,8 +1160,7 @@ class LVi extends L {
       'Văn bản bạn chọn được lặp lại ở chế độ nền trên tất cả các trang — để đánh dấu tài liệu là bí mật hoặc bản nháp.';
 
   @override
-  String get watermarkEmptyNote =>
-      'Xuất khẩu miễn phí không giới hạn số lượng.';
+  String get watermarkEmptyNote => 'Xuất miễn phí không giới hạn số lượng.';
 
   @override
   String get watermarkTextLabel => 'Văn bản hình mờ';
@@ -1389,10 +1387,10 @@ class LVi extends L {
   String get signNeedDrawing => 'Vẽ chữ ký trước khi tiếp tục.';
 
   @override
-  String get signClear => 'Để xóa';
+  String get signClear => 'Xóa';
 
   @override
-  String get signValidate => 'Để xác thực';
+  String get signValidate => 'Xác thực';
 
   @override
   String get signPlaceBody =>

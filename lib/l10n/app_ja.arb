@@ -1,9 +1,7 @@
 {
   "@@locale": "ja",
-
   "appTitle": "Trombone — PDF・スキャン・Word",
   "appWordmark": "Trombone",
-
   "actionSave": "保存",
   "actionShare": "共有",
   "actionCompress": "圧縮",
@@ -13,119 +11,86 @@
   "actionContinue": "次へ",
   "actionOpening": "開いています…",
   "actionRemoveFile": "このファイルを外す",
-
   "progressPreparing": "準備中…",
   "progressPercent": "{percent}%",
-
   "emptyReassurance": "書き出しは無料、透かしなし、回数制限なし。",
   "emptyAcceptedFormats": "対応する形式",
-
   "exportSavedTitle": "保存しました。",
   "exportSavedBody": "いま選んだ名前とフォルダーに保存しました。透かしなし、制限なし、解除するものは何もありません。",
   "exportSaveDialogTitle": "PDF を保存",
-
   "pageTileIncluded": "{number} ページ目、対象に含まれています。タップで除外します。",
   "pageTileExcluded": "{number} ページ目、除外されています。タップで含めます。",
   "pageTileRotate": "{number} ページ目を回転",
-
   "sectionHeaderSemantics": "{title}、{count, plural, other{ツール {count} 個}}",
   "toolCount": "{count, plural, other{ツール {count} 個}}",
-
-  "homePromise": "書類をつくって、書き出すだけ。\n最後に壁はありません。",
+  "homePromise": "書類をつくって、書き出すだけ。\n課金の壁はありません。",
   "homeChipNoAccount": "アカウント不要",
   "homeChipNoWatermark": "透かしなし",
   "homeChipUnlimited": "書き出し無制限",
   "homeSearchTooltip": "ツールを探す",
-  "homeColophon": "保存のときに有料で解除されるものはありません。書き出しは無料で、透かしも回数制限もありません。",
-
+  "homeColophon": "保存時に有料でロック解除されるものはありません。書き出しは無料、透かしなし、回数制限なし。",
   "sectionFeatured": "おすすめ",
   "sectionToPdf": "PDF にする",
   "sectionFromPdf": "PDF から",
   "sectionSecurity": "セキュリティ",
   "sectionEdit": "編集",
-
   "toolMerge": "結合",
   "toolMergeKeywords": "まとめる 合体 連結 つなげる merge 統合",
   "toolMergeSubtitle": "PDF・Word・画像・テキストを 1 つの書類に",
-
   "toolRectoVerso": "両面",
   "toolRectoVersoKeywords": "両面 交互 スキャン 奇数 偶数 表裏 duplex",
   "toolRectoVersoSubtitle": "2 つのスキャンを元の順番に",
-
   "toolImagesToPdf": "画像を PDF に",
   "toolImagesToPdfKeywords": "写真 jpg jpeg png アルバム カメラ 画像",
   "toolImagesToPdfSubtitle": "写真やスクリーンショットを 1 つの書類に",
-
   "toolPdfToWord": "PDF を Word に",
   "toolPdfToWordKeywords": "docx ワープロ 編集できる 変換 doc",
   "toolPdfToWordSubtitle": "文章も表も編集できる形に",
-
   "toolOrganize": "PDF を整理",
   "toolOrganizeKeywords": "分割 抜き出す 並べ替え 順番 ページ 削除",
   "toolOrganizeSubtitle": "分割・抽出・並べ替え",
-
   "toolExcelToPdf": "Excel を PDF に",
   "toolExcelToPdfKeywords": "表計算 xlsx ブック シート スプレッドシート",
-
   "toolPptxToPdf": "PowerPoint を PDF に",
   "toolPptxToPdfKeywords": "pptx スライド プレゼン",
-
   "toolHtmlToPdf": "ウェブページを PDF に",
   "toolHtmlToPdfKeywords": "html サイト インターネット url リンク 記事",
-
   "toolScan": "書類をスキャン",
   "toolScanKeywords": "カメラ 写真 デジタル化 スキャナー 紙",
-
   "toolPdfToExcel": "PDF を Excel に",
   "toolPdfToExcelKeywords": "表計算 xlsx 表 抽出 データ",
-
   "toolPdfToPptx": "PDF を PowerPoint に",
   "toolPdfToPptxKeywords": "pptx スライド プレゼン",
-
   "toolPdfToImages": "PDF を画像に",
   "toolPdfToImagesKeywords": "jpg png 写真 書き出し スクリーンショット 画像",
-
   "toolOcr": "検索できる文字に（OCR）",
   "toolOcrKeywords": "文字認識 スキャン コピー 選択 ocr",
-
   "toolPdfA": "PDF/A に変換",
   "toolPdfAKeywords": "アーカイブ 規格 長期保存 iso",
-
   "toolProtect": "PDF を保護",
   "toolProtectKeywords": "パスワード 鍵 暗号化 ロック 保護",
-
   "toolUnlock": "PDF のロック解除",
   "toolUnlockKeywords": "パスワード 解除 開く 復号 ロック",
-
   "toolRepair": "PDF を修復",
   "toolRepairKeywords": "壊れた 読めない 破損 復旧 エラー",
-
   "toolRedact": "PDF を墨消し",
   "toolRedactKeywords": "隠す 黒塗り 匿名化 秘密 削除 墨消し",
-
   "toolEdit": "PDF を編集",
   "toolEditKeywords": "文字 書き込み 修正 注釈 記入",
-
   "toolSign": "署名",
   "toolSignKeywords": "署名 サイン 契約 手書き",
-
   "toolWatermark": "透かし",
   "toolWatermarkKeywords": "watermark スタンプ 秘密 下書き 透かし",
-
   "toolPageNumbers": "ページ番号",
   "toolPageNumbersKeywords": "ノンブル 通し番号 番号付け 数字",
-
   "toolCrop": "PDF をトリミング",
   "toolCropKeywords": "切り取る 余白 トリミング 端 サイズ",
-
   "toolCompare": "PDF を比較",
   "toolCompareKeywords": "差分 バージョン diff 変更点 比較",
-
   "searchHint": "結合、パスワード、透かし…",
   "searchClear": "消去",
   "searchNoResultTitle": "「{query}」に合うツールがありません。",
   "searchNoResultBody": "手元にある形式で探してみてください（「Word」「Excel」「写真」）。あるいは何をしたいかで探せます（「署名」「分割」「パスワード」）。",
-
   "actionUndo": "元に戻す",
   "actionApply": "適用",
   "actionChoose": "選ぶ",
@@ -136,30 +101,25 @@
   "actionBack": "戻る",
   "actionAdd": "追加",
   "noFileChosen": "ファイルが選ばれていません",
-
   "errorExportFailed": "書き出しに失敗しました：{detail}",
   "errorShareFailed": "共有に失敗しました：{detail}",
   "errorOpenFailed": "ファイルを開けませんでした：{detail}",
   "errorConversionFailed": "変換に失敗しました：{detail}",
   "errorOnFile": "{name}：{detail}",
   "errorPickPdf": "PDF ファイルを選んでください。",
-
   "sizeBytes": "{value} B",
   "sizeKb": "{value} KB",
   "sizeMb": "{value} MB",
   "sizeApprox": "約 {size}",
-
   "pageCount": "{count, plural, other{{count} ページ}}",
   "pageCountOfTotal": "{total} ページ中 {kept, plural, other{{kept} ページ}}",
   "pageOfTotal": "{total} ページ中 {current} ページ目",
-
   "formatPdf": "PDF",
   "formatWord": "Word",
   "formatExcel": "Excel",
   "formatPowerPoint": "PowerPoint",
   "formatImages": "画像",
   "formatText": "テキスト",
-
   "mergeAddFile": "ファイルを追加",
   "mergeAddHint": "PDF・Word・画像・テキスト",
   "mergeEmptyTitle": "1 つの書類にまとめる",
@@ -172,7 +132,6 @@
   "mergeMoveSemantics": "{name} を移動",
   "mergeRotateAll": "すべてのページを回転",
   "mergePreviewAndExport": "プレビューと書き出し（{count, plural, other{{count} ページ}}）",
-
   "previewTitle": "プレビュー · {size}",
   "previewZoomPage": "{number} ページ目を拡大",
   "previewPageUnreadable": "このページは読み込めません。",
@@ -182,7 +141,6 @@
   "compressEstimating": "推定中…",
   "compressProgress": "圧縮しています…",
   "compressFailed": "圧縮に失敗しました：{detail}",
-
   "protectEmptyTitle": "パスワードをかける",
   "protectEmptyBody": "選んだパスワードがないと、この PDF は開けなくなります。パスワードは控えておいてください。復元はできません。",
   "protectSubtitle": "AES 256 ビットで暗号化されます",
@@ -199,7 +157,6 @@
   "protectResultTitle": "PDF を保護しました",
   "protectResultDetail": "AES 256 ビットで暗号化しました。開くにはパスワードが必要です。",
   "protectExportWhat": "パスワードで保護した PDF",
-
   "unlockEmptyTitle": "パスワードを外す",
   "unlockEmptyBody": "この書類の現在のパスワードが必要です。外したあとは、PDF が自由に開けるようになります。",
   "unlockAcceptsProtectedPdf": "保護された PDF",
@@ -209,13 +166,11 @@
   "unlockProgress": "ロックを解除しています…",
   "unlockFailed": "ロック解除に失敗しました：{detail}",
   "unlockAction": "ロック解除",
-
   "repairEmptyTitle": "壊れたファイルを修復する",
   "repairEmptyBody": "破損した PDF の内部構造を組み直します。救えるものは救います。",
   "repairProgress": "修復しています…",
   "repairFailed": "このファイルは修復できません。損傷が大きすぎるおそれがあります。",
   "repairAction": "修復する",
-
   "pdfToWordEmptyTitle": "編集できる Word に",
   "pdfToWordEmptyBody": "PDF の文章と構造を .docx 書類に移します。あとから開き直して直せます。",
   "pdfToWordAnalyzing": "書類を解析しています…",
@@ -236,7 +191,6 @@
   "pdfToWordConvertAction": "Word に変換",
   "actionConvertAgain": "もう一度変換",
   "errorSaveFailed": "保存できませんでした：{detail}",
-
   "rectoVersoIntro": "片面スキャナーでは 2 つのファイルができます。奇数ページは順どおり、偶数ページは逆順になっていることが多いものです。両方を選んで元の並びに戻します。",
   "rectoVersoOddSlot": "奇数ページのファイル（表）",
   "rectoVersoEvenSlot": "偶数ページのファイル（裏）",
@@ -250,7 +204,6 @@
   "errorGeneric": "失敗しました：{detail}",
   "actionConvertToPdf": "PDF に変換",
   "convertProgress": "変換しています…",
-
   "excelEmptyTitle": "ブックを PDF に",
   "excelEmptyBody": ".xlsx ファイルの各シートが PDF のページになります。そのまま送ったり印刷したりできます。",
   "excelChooseWorkbook": "ブックを選ぶ",
@@ -265,7 +218,6 @@
   "excelRepeatHeader": "見出し行を各ページで繰り返す",
   "excelRepeatHeaderHint": "シートの 1 行目を、表の各ページの上部に描き直します。",
   "excelCaveat": "変換で引き継がれるもの：ファイルに保存されているとおりのセルの文字（数式の最後の計算結果を含みます）、太字の 1 行目、罫線。\n\n引き継がれないもの：色、フォント、数値の書式、結合セル、画像、グラフ、数式そのもの。列はページ幅に収まるよう縮められます。とても横に広いシートでは、狭すぎるセルの文字が「…」で切り詰められます。",
-
   "pptxEmptyTitle": "プレゼンを PDF に",
   "pptxEmptyBody": "スライド 1 枚につき 16:9 の横向きページを 1 枚つくり、タイトルと箇条書きを載せます。文字は引き継がれますが、もとの画像・図形・背景は引き継がれません。\n\n対応形式：.pptx。古い .ppt ファイルは、先に PowerPoint で .pptx として保存し直してください。",
   "pptxChoosePresentation": "プレゼンを選ぶ",
@@ -278,15 +230,12 @@
   "pptxEmptySlide": "文字なし（画像または図形のみ）",
   "pptxTextLineCount": "{count, plural, other{本文 {count} 行}}",
   "pptxReadFailed": "読み込めませんでした：{detail}",
-
   "compressLevelLight": "弱",
   "compressLevelMedium": "中",
   "compressLevelStrong": "強",
-
   "pptxQualityStandard": "標準（150 dpi）",
   "pptxQualityHigh": "高（220 dpi）",
-
-  "pdfToExcelEmptyTitle": "表を取り戻す",
+  "pdfToExcelEmptyTitle": "表を取り出す",
   "pdfToExcelEmptyBody": "PDF の中の表を Excel ブックに書き出します。書式は保たれませんが、値は保たれます。",
   "pdfToExcelPagesAnalyzed": "{count, plural, other{{count} ページを解析}}",
   "pdfToExcelAnalysisFailed": "解析できませんでした。PDF がパスワードで保護されているか、破損しているおそれがあります。（{detail}）",
@@ -305,7 +254,6 @@
   "pdfToExcelExportWhat": "Excel ブック",
   "pdfToExcelConvertAction": "Excel に変換",
   "resultNameAndSize": "{name} — {size}",
-
   "pdfToPptxEmptyTitle": "1 ページを 1 スライドに",
   "pdfToPptxEmptyBody": "PDF がそのままの見た目の PowerPoint プレゼンになります。各ページは画像として入るため、レイアウトは忠実ですが、文字は PowerPoint で編集できません。",
   "pdfToPptxOpenFailed": "この PDF を開けませんでした：{detail}",
@@ -323,7 +271,6 @@
   "pdfToPptxChangeQuality": "画質を変える",
   "pdfToPptxConvertAction": "PowerPoint に変換",
   "pdfToPptxExportWhat": "PowerPoint プレゼン · {count, plural, other{スライド {count} 枚}}",
-
   "formatLabel": "形式",
   "actionExport": "書き出す",
   "imageQualityWeb": "ウェブ（72 dpi）",
@@ -335,7 +282,6 @@
   "errorLoadFailed": "読み込みに失敗しました：{detail}",
   "pdfToImagesProgress": "書き出しています…",
   "pdfToImagesExportWhat": "{count, plural, other{{format} 画像 {count} 枚}}",
-
   "pdfaEmptyTitle": "長期保存のために",
   "pdfaEmptyBody": "PDF/A は多くの官公庁が求める長期保存の形式です。見た目を変えずに変換します。",
   "pdfaConformanceLevel": "準拠レベル",
@@ -346,18 +292,16 @@
   "pdfaCaveatTitle": "変換で変わること",
   "pdfaCaveat": "各ページを {dpi} dpi の画像として描き直します。文字は画像になり、レイアウトは固定されます。もとの書類のフォントに左右されず本当に規格に適合させられるのはこのためですが、引き換えに文字は選択も検索もできなくなり、リンクやフォームは消え、ファイルは重くなります。",
   "pdfaOpenFailed": "この PDF を開けませんでした：{detail}",
-
   "imagesToPdfEmptyTitle": "画像を 1 つの PDF に",
   "imagesToPdfEmptyBody": "JPG・PNG・WebP・HEIC — 画像を追加すると、選んだ順番でまとめられます。",
   "imagesToPdfChoose": "画像を選ぶ",
   "imagesToPdfAdd": "画像を追加",
-  "imagesToPdfRejected": "画像ではないため飛ばしました：{names}",
+  "imagesToPdfRejected": "画像ではないためスキップしました：{names}",
   "imagesToPdfBuilding": "PDF を作成しています…",
   "imagesToPdfBuildFailed": "作成に失敗しました：{detail}",
   "imagesToPdfCreateAction": "PDF を作成（{count, plural, other{画像 {count} 枚}}）",
   "actionRotate": "回転",
   "actionRemove": "外す",
-
   "htmlTitle": "HTML・ウェブページを PDF に",
   "htmlIntro": "ウェブページや HTML のコードを A4 の PDF にします。描画は Android 内蔵のブラウザーが行うため、Chrome から印刷したときと同じレイアウトになります。",
   "htmlModeUrl": "ウェブアドレス",
@@ -373,7 +317,6 @@
   "htmlConverting": "HTML を変換しています…",
   "htmlNetworkNotice": "インターネット接続が必要です。ページを読み込む必要があるのは、このアプリでこのツールだけです。ログインが必要なページ、Cookie の同意バナー、JavaScript の多いページは、不完全に出力されることがあります。",
   "htmlOfflineNotice": "ページに直接書かれた HTML と CSS はオフラインで描画されます。一方、外部のウェブアドレスから読み込む画像・スタイルシート・フォントには、インターネット接続が必要です。",
-
   "watermarkEmptyTitle": "透かしを入れる",
   "watermarkEmptyBody": "お好きな文字を、すべてのページの背景に繰り返して入れます。書類を「社外秘」や「下書き」と示すためのものです。",
   "watermarkEmptyNote": "書き出しは無料で、回数制限もありません。",
@@ -392,7 +335,6 @@
   "percentValue": "{percent}%",
   "degreesValue": "{degrees}°",
   "pointsValue": "{points} pt",
-
   "pageNumbersEmptyTitle": "ページに番号をつける",
   "pageNumbersEmptyBody": "PDF を選び、各ページに入れる番号の位置と形式を決めてください。",
   "positionLabel": "位置",
@@ -404,7 +346,6 @@
   "pageNumbersFormatOfTotal": "N / 総数",
   "pageNumbersStart": "開始番号",
   "pageNumbersProgress": "番号をつけています…",
-
   "scanNoCamera": "この端末で使えるカメラがありません。",
   "scanCameraFailed": "カメラを起動できませんでした：{detail}",
   "scanCropToolbar": "調整",
@@ -414,7 +355,6 @@
   "actionRetry": "もう一度",
   "scanNoPageYet": "まだページがありません。",
   "scanFinishAction": "終了 · {count}",
-
   "signTitle": "PDF に署名",
   "signIntro": "手で描いた署名を PDF のページに置きます。書類に絵を加えるだけのもので、認証された電子署名ではありません。",
   "signChooseSubtitle": "署名する書類を選んでください",
@@ -427,7 +367,6 @@
   "signPlaceBody": "署名をページの好きな位置までドラッグし、「終了」を押してください。",
   "signPageUnavailable": "このページを表示できませんでした。",
   "signProgress": "署名を追加しています…",
-
   "editTitle": "書類に書き込む",
   "editEmptyBody": "できあがった PDF に、そのまま文字を足したり、部分を目立たせたりできます。",
   "editAddTextTitle": "文字を追加",
@@ -440,7 +379,6 @@
   "editModeText": "文字",
   "editModeHighlight": "マーカー",
   "editPageUnavailable": "このページを表示できませんでした。",
-
   "ocrEmptyTitle": "文字を検索できるようにする",
   "ocrEmptyBody": "スキャンした PDF の文字を認識し、画像の上に見えない形で重ねます。ページの見た目は変わりません。",
   "ocrWrongFormat": "PDF か画像（JPG、PNG…）を選んでください。",
@@ -451,7 +389,6 @@
   "ocrResultBody": "{count, plural, other{{count} ページを解析しました}}。検索できる PDF ができました。認識した文字をすべてコピーすることもできます。",
   "ocrCopyText": "文字をコピー",
   "ocrTextCopied": "文字をコピーしました。",
-
   "redactIntro": "PDF の一部（氏名・住所・金額など）を完全に隠します。上から黒い四角を重ねるのとは違い、隠した文字はファイルから実際に削除されます。覆い隠すだけではないので、選択もコピーもできなくなります。",
   "redactChooseSubtitle": "墨消しする書類を選んでください",
   "redactCaveat": "知っておくこと：隠した文字を削除するため、書類の各ページを画像に変換し直します（200 dpi）。そのため結果は、文字を選択できる PDF ではなくなり、できあがるファイルはたいてい元より重くなります。",
@@ -468,7 +405,6 @@
   "redactOtherPdf": "別の PDF",
   "redactAction": "墨消し",
   "redactProgress": "墨消ししています…",
-
   "cropEmptyTitle": "余白を切り取る",
   "cropEmptyBody": "PDF を選び、プレビューの上で指をなぞって、残す範囲を決めてください。",
   "cropTooSmall": "選んだ範囲が小さすぎます。",
@@ -482,7 +418,6 @@
   "cropAllPagesOff": "1 ページ目だけを切り取り、ほかはそのまま残します。",
   "cropCaveat": "切り取るとページの大きさが小さくなります。範囲の外にある内容は、表示も印刷もされなくなります。",
   "cropAction": "切り取る",
-
   "compareTitle": "2 つの PDF を比べる",
   "compareEmptyTitle": "変わったところ",
   "compareEmptyBody": "同じ PDF の 2 つの版を選んでください。加わった部分と消えた部分を、ページごとに並べて示します。",
@@ -494,7 +429,6 @@
   "compareChangedPages": "{total} ページ中 {changed, plural, other{{changed} ページ}}に違いがあります",
   "compareNoDifference": "2 つのファイルに違いは見つかりませんでした。",
   "comparePageHeading": "{number} ページ目",
-
   "organizeEmptyTitle": "PDF を組み直す",
   "organizeEmptyBody": "書類を開いて、分割したり、ページを抜き出したり、順番を入れ替えたりできます。",
   "organizeOpenFile": "ファイルを開く",

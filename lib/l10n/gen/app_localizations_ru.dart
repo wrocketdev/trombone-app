@@ -46,7 +46,7 @@ class LRu extends L {
 
   @override
   String progressPercent(int percent) {
-    return '$percent %';
+    return '$percent%';
   }
 
   @override
@@ -109,7 +109,7 @@ class LRu extends L {
 
   @override
   String get homePromise =>
-      'Сделайте документ и выгрузите его.\nНикакой стены в конце.';
+      'Создайте документ и сохраните его.\nНикаких платных ограничений в конце.';
 
   @override
   String get homeChipNoAccount => 'Без аккаунта';
@@ -125,7 +125,7 @@ class LRu extends L {
 
   @override
   String get homeColophon =>
-      'При сохранении ничто не открывается за плату. Экспорт бесплатный, без водяного знака и без ограничения по количеству.';
+      'При сохранении ничего не блокируется за плату. Экспорт бесплатный, без водяного знака и без ограничений.';
 
   @override
   String get sectionFeatured => 'Главное';
@@ -241,7 +241,7 @@ class LRu extends L {
 
   @override
   String get toolOcrKeywords =>
-      'распознавание символы скан копировать выделить ОРС';
+      'распознавание символы скан копировать выделить ocr оцр';
 
   @override
   String get toolPdfA => 'Преобразовать в PDF/A';
@@ -664,7 +664,7 @@ class LRu extends L {
 
   @override
   String get pdfToWordEmptyBody =>
-      'Текст и структура PDF переносятся в документ .docx, который можно снова открыть и поправить.';
+      'Текст и структура PDF переносятся в документ .docx, который можно открыть и отредактировать.';
 
   @override
   String get pdfToWordAnalyzing => 'Анализ документа…';
@@ -1403,8 +1403,7 @@ class LRu extends L {
       'Выбранный вами текст повторяется фоном на всех страницах — чтобы пометить документ как конфиденциальный или как черновик.';
 
   @override
-  String get watermarkEmptyNote =>
-      'Экспорт бесплатный и без ограничения по количеству.';
+  String get watermarkEmptyNote => 'Экспорт бесплатный и без ограничений.';
 
   @override
   String get watermarkTextLabel => 'Текст водяного знака';
@@ -1417,7 +1416,7 @@ class LRu extends L {
 
   @override
   String watermarkOpacity(int percent) {
-    return 'Непрозрачность: $percent %';
+    return 'Непрозрачность: $percent%';
   }
 
   @override
@@ -1450,7 +1449,7 @@ class LRu extends L {
 
   @override
   String percentValue(int percent) {
-    return '$percent %';
+    return '$percent%';
   }
 
   @override

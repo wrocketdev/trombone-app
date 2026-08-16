@@ -101,7 +101,7 @@ class LJa extends L {
   }
 
   @override
-  String get homePromise => '書類をつくって、書き出すだけ。\n最後に壁はありません。';
+  String get homePromise => '書類をつくって、書き出すだけ。\n課金の壁はありません。';
 
   @override
   String get homeChipNoAccount => 'アカウント不要';
@@ -116,7 +116,7 @@ class LJa extends L {
   String get homeSearchTooltip => 'ツールを探す';
 
   @override
-  String get homeColophon => '保存のときに有料で解除されるものはありません。書き出しは無料で、透かしも回数制限もありません。';
+  String get homeColophon => '保存時に有料でロック解除されるものはありません。書き出しは無料、透かしなし、回数制限なし。';
 
   @override
   String get sectionFeatured => 'おすすめ';
@@ -914,7 +914,7 @@ class LJa extends L {
   String get pptxQualityHigh => '高（220 dpi）';
 
   @override
-  String get pdfToExcelEmptyTitle => '表を取り戻す';
+  String get pdfToExcelEmptyTitle => '表を取り出す';
 
   @override
   String get pdfToExcelEmptyBody =>
@@ -1196,7 +1196,7 @@ class LJa extends L {
 
   @override
   String imagesToPdfRejected(String names) {
-    return '画像ではないため飛ばしました：$names';
+    return '画像ではないためスキップしました：$names';
   }
 
   @override

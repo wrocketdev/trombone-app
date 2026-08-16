@@ -1,9 +1,7 @@
 {
   "@@locale": "da",
-
   "appTitle": "Trombone — PDF, scan og Word",
   "appWordmark": "Trombone",
-
   "actionSave": "Gem",
   "actionShare": "Del",
   "actionCompress": "Komprimér",
@@ -13,119 +11,86 @@
   "actionContinue": "Fortsæt",
   "actionOpening": "Åbner…",
   "actionRemoveFile": "Fjern denne fil",
-
   "progressPreparing": "Forbereder…",
   "progressPercent": "{percent} %",
-
   "emptyReassurance": "Gratis eksport, intet vandmærke, ingen grænse.",
   "emptyAcceptedFormats": "Accepterede formater",
-
   "exportSavedTitle": "Den er gemt.",
   "exportSavedBody": "Under det navn og i den mappe, du lige har valgt. Intet vandmærke, ingen grænse, intet at låse op.",
   "exportSaveDialogTitle": "Gem PDF",
-
   "pageTileIncluded": "Side {number}, medtaget. Tryk for at udelade den.",
   "pageTileExcluded": "Side {number}, udeladt. Tryk for at medtage den.",
   "pageTileRotate": "Rotér side {number}",
-
   "sectionHeaderSemantics": "{title}, {count, plural, one{{count} værktøj} other{{count} værktøjer}}",
   "toolCount": "{count, plural, one{{count} værktøj} other{{count} værktøjer}}",
-
-  "homePromise": "Lav dit dokument, og eksportér det.\nIngen mur til sidst.",
+  "homePromise": "Lav dit dokument, og eksportér det.\nIngen betalingsmur til sidst.",
   "homeChipNoAccount": "Ingen konto",
   "homeChipNoWatermark": "Intet vandmærke",
   "homeChipUnlimited": "Ubegrænset eksport",
   "homeSearchTooltip": "Søg efter et værktøj",
-  "homeColophon": "Der låses ikke noget op mod betaling, når du gemmer. Eksport er gratis, uden vandmærke og uden loft over antallet.",
-
+  "homeColophon": "Ved lagring låses intet op mod betaling. Eksport er gratis, uden vandmærke og uden begrænsninger.",
   "sectionFeatured": "Fremhævet",
   "sectionToPdf": "Til PDF",
   "sectionFromPdf": "Fra PDF",
   "sectionSecurity": "Sikkerhed",
   "sectionEdit": "Redigering",
-
   "toolMerge": "Flet sammen",
   "toolMergeKeywords": "kombiner saml forene sammensæt tilføj vedhæft",
   "toolMergeSubtitle": "PDF, Word, billeder og tekst i ét dokument",
-
   "toolRectoVerso": "Dobbeltsidet",
   "toolRectoVersoKeywords": "duplex indflet scan ulige lige begge sider",
   "toolRectoVersoSubtitle": "To scanninger, tilbage i rækkefølge",
-
   "toolImagesToPdf": "Billeder til PDF",
   "toolImagesToPdfKeywords": "foto jpg jpeg png billeder album kamera",
   "toolImagesToPdfSubtitle": "Fotos og skærmbilleder i ét dokument",
-
   "toolPdfToWord": "PDF til Word",
   "toolPdfToWordKeywords": "docx tekstbehandling redigerbar konverter doc",
   "toolPdfToWordSubtitle": "Tekst og tabeller, redigerbare",
-
   "toolOrganize": "Organisér en PDF",
   "toolOrganizeKeywords": "opdel adskil udtræk omarrangér rækkefølge sider slet",
   "toolOrganizeSubtitle": "Opdel, udtræk, omarrangér",
-
   "toolExcelToPdf": "Excel til PDF",
   "toolExcelToPdfKeywords": "regneark xlsx projektmappe ark faneblad",
-
   "toolPptxToPdf": "PowerPoint til PDF",
   "toolPptxToPdfKeywords": "pptx dias præsentation slides",
-
   "toolHtmlToPdf": "Webside til PDF",
   "toolHtmlToPdfKeywords": "html hjemmeside internet url link artikel gem side",
-
   "toolScan": "Scan et dokument",
   "toolScanKeywords": "kamera foto digitalisér scanning papir",
-
   "toolPdfToExcel": "PDF til Excel",
   "toolPdfToExcelKeywords": "regneark xlsx tabel udtræk data",
-
   "toolPdfToPptx": "PDF til PowerPoint",
   "toolPdfToPptxKeywords": "pptx dias præsentation slides",
-
   "toolPdfToImages": "PDF til billeder",
   "toolPdfToImagesKeywords": "jpg png foto eksport skærmbillede",
-
   "toolOcr": "Søgbar tekst (OCR)",
   "toolOcrKeywords": "genkendelse tegn scannet kopiér markér søgbar",
-
   "toolPdfA": "Konvertér til PDF/A",
   "toolPdfAKeywords": "arkiv standard langtidsopbevaring bevaring iso",
-
   "toolProtect": "Beskyt PDF",
   "toolProtectKeywords": "adgangskode lås kryptér sikker hængelås",
-
   "toolUnlock": "Lås PDF op",
   "toolUnlockKeywords": "fjern adgangskode åbn dekryptér ophæv hængelås",
-
   "toolRepair": "Reparér PDF",
   "toolRepairKeywords": "beskadiget ulæselig ødelagt gendan fejl",
-
   "toolRedact": "Anonymisér en PDF",
   "toolRedactKeywords": "skjul sværtet fortroligt slet censurér tildæk",
-
   "toolEdit": "Redigér PDF",
   "toolEditKeywords": "tekst ændr rettelse annotér skriv tilføj",
-
   "toolSign": "Underskriv",
   "toolSignKeywords": "underskrift signatur initialer kontrakt håndskrevet",
-
   "toolWatermark": "Vandmærke",
   "toolWatermarkKeywords": "vandmærke stempel fortroligt kladde mærke",
-
   "toolPageNumbers": "Sidetal",
   "toolPageNumbersKeywords": "paginering nummerering numre sidenumre",
-
   "toolCrop": "Beskær en PDF",
   "toolCropKeywords": "trim margener beskær kanter størrelse klip",
-
   "toolCompare": "Sammenlign PDF-filer",
   "toolCompareKeywords": "forskel versioner diff ændringer sammenlign",
-
   "searchHint": "Flet, adgangskode, vandmærke…",
   "searchClear": "Ryd",
   "searchNoResultTitle": "Intet værktøj til “{query}”.",
   "searchNoResultBody": "Prøv det format, du har ved hånden — “Word”, “Excel”, “foto” — eller det, du vil gøre med det: “underskriv”, “opdel”, “adgangskode”.",
-
   "actionUndo": "Fortryd",
   "actionApply": "Anvend",
   "actionChoose": "Vælg",
@@ -136,30 +101,25 @@
   "actionBack": "Tilbage",
   "actionAdd": "Tilføj",
   "noFileChosen": "Ingen fil valgt",
-
   "errorExportFailed": "Eksporten mislykkedes: {detail}",
   "errorShareFailed": "Delingen mislykkedes: {detail}",
   "errorOpenFailed": "Filen kunne ikke åbnes: {detail}",
   "errorConversionFailed": "Konverteringen mislykkedes: {detail}",
   "errorOnFile": "{name}: {detail}",
   "errorPickPdf": "Vælg venligst en PDF-fil.",
-
   "sizeBytes": "{value} B",
   "sizeKb": "{value} kB",
   "sizeMb": "{value} MB",
   "sizeApprox": "~ {size}",
-
   "pageCount": "{count, plural, one{{count} side} other{{count} sider}}",
   "pageCountOfTotal": "{kept, plural, one{{kept} side} other{{kept} sider}} af {total}",
   "pageOfTotal": "Side {current} af {total}",
-
   "formatPdf": "PDF",
   "formatWord": "Word",
   "formatExcel": "Excel",
   "formatPowerPoint": "PowerPoint",
   "formatImages": "Billeder",
   "formatText": "Tekst",
-
   "mergeAddFile": "Tilføj en fil",
   "mergeAddHint": "PDF, Word, billeder eller tekst",
   "mergeEmptyTitle": "Ét enkelt dokument",
@@ -172,7 +132,6 @@
   "mergeMoveSemantics": "Flyt {name}",
   "mergeRotateAll": "Rotér alle sider",
   "mergePreviewAndExport": "Forhåndsvis og eksportér ({count, plural, one{{count} side} other{{count} sider}})",
-
   "previewTitle": "Forhåndsvisning · {size}",
   "previewZoomPage": "Side {number}, forstør",
   "previewPageUnreadable": "Siden kan ikke læses.",
@@ -182,7 +141,6 @@
   "compressEstimating": "Anslår…",
   "compressProgress": "Komprimerer…",
   "compressFailed": "Komprimeringen mislykkedes: {detail}",
-
   "protectEmptyTitle": "Læg den bag en adgangskode",
   "protectEmptyBody": "PDF-filen kan ikke længere åbnes uden den adgangskode, du vælger. Gem den godt: den kan ikke gendannes.",
   "protectSubtitle": "Krypteres med AES 256-bit",
@@ -199,7 +157,6 @@
   "protectResultTitle": "PDF beskyttet",
   "protectResultDetail": "Krypteret med AES 256-bit. Adgangskoden skal bruges for at åbne den.",
   "protectExportWhat": "Adgangskodebeskyttet PDF",
-
   "unlockEmptyTitle": "Fjern adgangskoden",
   "unlockEmptyBody": "Du skal bruge dokumentets nuværende adgangskode. Når den er fjernet, kan PDF-filen åbnes frit.",
   "unlockAcceptsProtectedPdf": "Beskyttet PDF",
@@ -209,13 +166,11 @@
   "unlockProgress": "Låser op…",
   "unlockFailed": "Oplåsningen mislykkedes: {detail}",
   "unlockAction": "Lås op",
-
   "repairEmptyTitle": "Reparér en beskadiget fil",
   "repairEmptyBody": "Den interne struktur i en beskadiget PDF bygges op igen. Alt, hvad der kan reddes, bliver reddet.",
   "repairProgress": "Reparerer…",
   "repairFailed": "Denne fil kan ikke repareres — den er måske for hårdt beskadiget.",
   "repairAction": "Reparér",
-
   "pdfToWordEmptyTitle": "En redigerbar Word-fil",
   "pdfToWordEmptyBody": "Tekst og struktur fra PDF-filen overføres til et .docx-dokument, som du kan åbne igen og rette i.",
   "pdfToWordAnalyzing": "Analyserer dokumentet…",
@@ -236,7 +191,6 @@
   "pdfToWordConvertAction": "Konvertér til Word",
   "actionConvertAgain": "Konvertér igen",
   "errorSaveFailed": "Kunne ikke gemme: {detail}",
-
   "rectoVersoIntro": "En enkeltsidet arkføder giver dig to filer: de ulige sider i rækkefølge, de lige sider ofte i omvendt rækkefølge. Vælg begge for at sætte dem sammen igen.",
   "rectoVersoOddSlot": "Fil med de ulige sider (forsider)",
   "rectoVersoEvenSlot": "Fil med de lige sider (bagsider)",
@@ -250,7 +204,6 @@
   "errorGeneric": "Mislykkedes: {detail}",
   "actionConvertToPdf": "Konvertér til PDF",
   "convertProgress": "Konverterer…",
-
   "excelEmptyTitle": "En projektmappe som PDF",
   "excelEmptyBody": "Arkene i en .xlsx-fil bliver til PDF-sider, klar til at sende eller printe.",
   "excelChooseWorkbook": "Vælg en projektmappe",
@@ -265,7 +218,6 @@
   "excelRepeatHeader": "Gentag overskriftsrækken på hver side",
   "excelRepeatHeaderHint": "Arkets første række tegnes igen øverst på hver side af tabellen.",
   "excelCaveat": "Hvad konverteringen tager med: celleteksten, som den er gemt i filen (herunder formlernes sidst beregnede resultat), den første række i fed og et gitter.\n\nHvad den ikke tager med: farver, skrifttyper, talformater, flettede celler, billeder, diagrammer og selve formlerne. Kolonnerne skrumpes, så de passer til sidebredden; i meget brede ark bliver tekst i for smalle celler afkortet med “…”.",
-
   "pptxEmptyTitle": "En præsentation som PDF",
   "pptxEmptyBody": "Én liggende side i 16:9 pr. dias, med titlen og punkterne. Teksten kommer med; de oprindelige billeder, former og baggrunde gør ikke.\n\nAccepteret format: .pptx. En ældre .ppt-fil skal først gemmes igen som .pptx fra PowerPoint.",
   "pptxChoosePresentation": "Vælg en præsentation",
@@ -278,14 +230,11 @@
   "pptxEmptySlide": "Ingen tekst (kun billede eller form)",
   "pptxTextLineCount": "{count, plural, one{{count} tekstlinje} other{{count} tekstlinjer}}",
   "pptxReadFailed": "Kunne ikke læses: {detail}",
-
   "compressLevelLight": "Let",
   "compressLevelMedium": "Middel",
   "compressLevelStrong": "Kraftig",
-
   "pptxQualityStandard": "Standard (150 dpi)",
   "pptxQualityHigh": "Høj (220 dpi)",
-
   "pdfToExcelEmptyTitle": "Få tabellerne tilbage",
   "pdfToExcelEmptyBody": "Tabeller i en PDF trækkes ud i en Excel-projektmappe. Formateringen bevares ikke; det gør værdierne.",
   "pdfToExcelPagesAnalyzed": "{count, plural, one{{count} side analyseret} other{{count} sider analyseret}}",
@@ -305,7 +254,6 @@
   "pdfToExcelExportWhat": "Excel-projektmappe",
   "pdfToExcelConvertAction": "Konvertér til Excel",
   "resultNameAndSize": "{name} — {size}",
-
   "pdfToPptxEmptyTitle": "Ét dias pr. side",
   "pdfToPptxEmptyBody": "PDF-filen bliver til en PowerPoint-præsentation, magen til. Hver side kommer ind som et billede: layoutet er tro mod originalen, men teksten kan ikke redigeres i PowerPoint.",
   "pdfToPptxOpenFailed": "Denne PDF kunne ikke åbnes: {detail}",
@@ -323,7 +271,6 @@
   "pdfToPptxChangeQuality": "Skift kvaliteten",
   "pdfToPptxConvertAction": "Konvertér til PowerPoint",
   "pdfToPptxExportWhat": "PowerPoint-præsentation · {count, plural, one{{count} dias} other{{count} dias}}",
-
   "formatLabel": "Format",
   "actionExport": "Eksportér",
   "imageQualityWeb": "Web (72 dpi)",
@@ -335,7 +282,6 @@
   "errorLoadFailed": "Indlæsningen mislykkedes: {detail}",
   "pdfToImagesProgress": "Eksporterer…",
   "pdfToImagesExportWhat": "{count, plural, one{{count} {format}-billede} other{{count} {format}-billeder}}",
-
   "pdfaEmptyTitle": "Arkivér for den lange bane",
   "pdfaEmptyBody": "PDF/A er det arkivformat, mange offentlige myndigheder kræver. Dokumentet konverteres uden at miste sit udseende.",
   "pdfaConformanceLevel": "Overensstemmelsesniveau",
@@ -346,7 +292,6 @@
   "pdfaCaveatTitle": "Hvad konverteringen ændrer",
   "pdfaCaveat": "Hver side tegnes om som et billede ved {dpi} dpi: teksten bliver til et billede, og layoutet fryses fast. Det er det, der gør filen reelt overensstemmende uden at afhænge af det oprindelige dokuments skrifttyper, men til gengæld kan teksten ikke længere markeres eller søges i, links og formularer forsvinder, og filen bliver tungere.",
   "pdfaOpenFailed": "Denne PDF kunne ikke åbnes: {detail}",
-
   "imagesToPdfEmptyTitle": "Billeder i én PDF",
   "imagesToPdfEmptyBody": "JPG, PNG, WebP, HEIC — tilføj dine billeder, så bliver de samlet i den rækkefølge, du vælger.",
   "imagesToPdfChoose": "Vælg billeder",
@@ -357,7 +302,6 @@
   "imagesToPdfCreateAction": "Opret PDF-filen ({count, plural, one{{count} billede} other{{count} billeder}})",
   "actionRotate": "Rotér",
   "actionRemove": "Fjern",
-
   "htmlTitle": "HTML / webside til PDF",
   "htmlIntro": "Lav en webside eller HTML-kode om til en PDF i A4. Gengivelsen klares af den browser, der er indbygget i Android, så layoutet er det, du ville få ved at printe fra Chrome.",
   "htmlModeUrl": "Webadresse",
@@ -373,10 +317,9 @@
   "htmlConverting": "Konverterer HTML-koden…",
   "htmlNetworkNotice": "Der kræves en internetforbindelse: det er det eneste værktøj i appen, der er nødt til at hente siden. Sider, der kræver login på en konto, et cookiebanner eller meget JavaScript, kan komme ufuldstændigt ud.",
   "htmlOfflineNotice": "HTML og CSS skrevet direkte i siden gengives offline. Billeder, typografiark eller skrifttyper, der hentes fra en ekstern webadresse, kræver derimod en internetforbindelse.",
-
   "watermarkEmptyTitle": "Læg et vandmærke på",
   "watermarkEmptyBody": "En tekst, du selv vælger, gentages i baggrunden på hver side — til at mærke et dokument som fortroligt eller som kladde.",
-  "watermarkEmptyNote": "Gratis eksport, intet loft over antallet.",
+  "watermarkEmptyNote": "Gratis eksport uden begrænsninger.",
   "watermarkTextLabel": "Vandmærkets tekst",
   "watermarkDefaultText": "FORTROLIGT",
   "watermarkNeedText": "Indtast en tekst til vandmærket.",
@@ -392,7 +335,6 @@
   "percentValue": "{percent} %",
   "degreesValue": "{degrees}°",
   "pointsValue": "{points} pt",
-
   "pageNumbersEmptyTitle": "Sæt tal på siderne",
   "pageNumbersEmptyBody": "Vælg en PDF, og derefter placeringen og formatet på de tal, der bliver føjet til hver side.",
   "positionLabel": "Placering",
@@ -404,7 +346,6 @@
   "pageNumbersFormatOfTotal": "N / i alt",
   "pageNumbersStart": "Starttal",
   "pageNumbersProgress": "Nummererer…",
-
   "organizeEmptyTitle": "Tag fat i en PDF igen",
   "organizeEmptyBody": "Åbn et dokument for at dele det op, trække sider ud af det eller ændre deres rækkefølge.",
   "organizeOpenFile": "Åbn en fil",
@@ -426,7 +367,6 @@
   "organizeSplitFailed": "Opdelingen mislykkedes: {detail}",
   "organizePartTitle": "Del {number}",
   "organizeFilesCreated": "{count, plural, one{{count} fil oprettet} other{{count} filer oprettet}}",
-
   "scanNoCamera": "Der er intet kamera på denne enhed.",
   "scanCameraFailed": "Kameraet kunne ikke startes: {detail}",
   "scanCropToolbar": "Justér",
@@ -436,7 +376,6 @@
   "actionRetry": "Prøv igen",
   "scanNoPageYet": "Ingen side endnu.",
   "scanFinishAction": "Afslut · {count}",
-
   "signTitle": "Underskriv en PDF",
   "signIntro": "Sæt din håndtegnede underskrift på en side i en PDF. Det er blot en tegning, der føjes til dokumentet, ikke en certificeret elektronisk signatur.",
   "signChooseSubtitle": "Vælg det dokument, der skal underskrives",
@@ -449,7 +388,6 @@
   "signPlaceBody": "Træk underskriften hen, hvor du vil have den på siden, og tryk så på Afslut.",
   "signPageUnavailable": "Siden kunne ikke vises.",
   "signProgress": "Tilføjer underskriften…",
-
   "editTitle": "Kommentér et dokument",
   "editEmptyBody": "Tilføj tekst eller fremhæv passager direkte i en eksisterende PDF.",
   "editAddTextTitle": "Tilføj tekst",
@@ -462,7 +400,6 @@
   "editModeText": "Tekst",
   "editModeHighlight": "Fremhævning",
   "editPageUnavailable": "Denne side kunne ikke vises.",
-
   "ocrEmptyTitle": "Gør teksten søgbar",
   "ocrEmptyBody": "Teksten i en scannet PDF genkendes og lægges usynligt oven på billedet. Siden ser ud, som den plejer.",
   "ocrWrongFormat": "Vælg en PDF eller et billede (JPG, PNG…).",
@@ -473,7 +410,6 @@
   "ocrResultBody": "{count, plural, one{{count} side analyseret} other{{count} sider analyseret}}. Den søgbare PDF er klar, og du kan også kopiere hele den genkendte tekst.",
   "ocrCopyText": "Kopiér teksten",
   "ocrTextCopied": "Teksten er kopieret.",
-
   "redactIntro": "Skjul områder i en PDF permanent (navne, adresser, beløb). I modsætning til et almindeligt sort rektangel lagt ovenpå bliver den skjulte tekst reelt fjernet fra filen, ikke bare dækket: den kan ikke længere markeres eller kopieres.",
   "redactChooseSubtitle": "Vælg det dokument, der skal anonymiseres",
   "redactCaveat": "Godt at vide: for at fjerne den skjulte tekst laves hver side i dokumentet om til et billede igen (200 dpi). Resultatet er derfor ikke længere en PDF, hvis tekst kan markeres, og den færdige fil fylder som regel mere end den oprindelige.",
@@ -490,7 +426,6 @@
   "redactOtherPdf": "En anden PDF",
   "redactAction": "Anonymisér",
   "redactProgress": "Anonymiserer…",
-
   "cropEmptyTitle": "Skær margenerne væk",
   "cropEmptyBody": "Vælg en PDF, og træk så fingeren hen over forhåndsvisningen for at markere det område, der skal beholdes.",
   "cropTooSmall": "Det valgte område er for lille.",
@@ -504,7 +439,6 @@
   "cropAllPagesOff": "Kun side 1 beskæres; de øvrige beholdes hele.",
   "cropCaveat": "Beskæringen gør siden mindre: indhold uden for området vises og printes ikke længere.",
   "cropAction": "Beskær",
-
   "compareTitle": "Sammenlign to PDF-filer",
   "compareEmptyTitle": "Hvad der er ændret",
   "compareEmptyBody": "Vælg to versioner af den samme PDF. Tilføjede og fjernede passager stilles side om side, side for side.",

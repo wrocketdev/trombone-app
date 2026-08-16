@@ -1,54 +1,54 @@
 {
   "@@locale": "el",
-  "appTitle": "Κλιπ — PDF, Scan & Word",
+  "appTitle": "Trombone — PDF, Σάρωση & Word",
   "@appTitle": {
     "description": "Titre affiché par le sélecteur de tâches d'Android au-dessus de l'aperçu de l'application. La marque « Trombone » ne se traduit jamais ; seuls les mots-clés qui la suivent peuvent l'être."
   },
-  "appWordmark": "Τρομπόνι",
+  "appWordmark": "Trombone",
   "@appWordmark": {
     "description": "La signature de marque en haut de l'écran d'accueil. NE PAS TRADUIRE — c'est un nom propre, identique dans les vingt-cinq langues."
   },
-  "actionSave": "Εκτός",
+  "actionSave": "Αποθήκευση",
   "@actionSave": {
     "description": "Action principale de fin de parcours : écrire le fichier produit sur l'appareil. Bouton pleine largeur, doit tenir sur une ligne."
   },
-  "actionShare": "Μερίδιο",
+  "actionShare": "Κοινοποίηση",
   "@actionShare": {
     "description": "Ouvre la fenêtre de partage du système. Bouton de demi-largeur, doit tenir sur une ligne."
   },
-  "actionCompress": "Κομπρέσα",
+  "actionCompress": "Συμπίεση",
   "@actionCompress": {
     "description": "Réduit le poids du PDF. Bouton de demi-largeur, doit tenir sur une ligne."
   },
-  "actionDone": "Πεπερασμένος",
+  "actionDone": "Τέλος",
   "@actionDone": {
     "description": "Acquitte la feuille de confirmation d'export et sort de l'outil."
   },
-  "actionCancel": "Ματαίωση",
+  "actionCancel": "Ακύρωση",
   "@actionCancel": {
     "description": "Interrompt une opération en cours dans la boîte de progression."
   },
-  "actionChange": "Να αλλάξει",
+  "actionChange": "Αλλαγή",
   "@actionChange": {
     "description": "Remplace le fichier choisi par un autre. Bouton texte étroit posé au bout d'une rangée — libellé court impératif."
   },
-  "actionContinue": "Συνεχίζω",
+  "actionContinue": "Συνέχεια",
   "@actionContinue": {
     "description": "Libellé de repli du bouton d'un écran vide quand l'outil n'en propose pas de plus précis."
   },
-  "actionOpening": "Ανοιγμα…",
+  "actionOpening": "Άνοιγμα…",
   "@actionOpening": {
     "description": "État transitoire d'un bouton pendant que la boîte de sélection de fichiers du système s'ouvre. Garder le caractère de suspension final."
   },
-  "actionRemoveFile": "Καταργήστε αυτό το αρχείο",
+  "actionRemoveFile": "Αφαίρεση αυτού του αρχείου",
   "@actionRemoveFile": {
     "description": "Info-bulle de la croix qui ramène l'écran à son état vide."
   },
-  "progressPreparing": "Παρασκευή…",
+  "progressPreparing": "Προετοιμασία…",
   "@progressPreparing": {
     "description": "Affiché sous la barre de progression tant que le travail total n'est pas connu. Garder le caractère de suspension final."
   },
-  "progressPercent": "{percent} %",
+  "progressPercent": "{percent}%",
   "@progressPercent": {
     "description": "Avancement en pourcentage. L'espace avant le signe % est une convention française ; les langues qui collent le signe au chiffre doivent écrire « {percent}% ».",
     "placeholders": {
@@ -65,11 +65,11 @@
   "@emptyAcceptedFormats": {
     "description": "Intitulé de la rangée de puces listant les formats que l'outil sait ouvrir."
   },
-  "exportSavedTitle": "Είναι καταγεγραμμένο.",
+  "exportSavedTitle": "Αποθηκεύτηκε.",
   "@exportSavedTitle": {
     "description": "Titre de la feuille de confirmation, après écriture réussie du fichier. Ton rassurant et affirmatif ; c'est le seul moment célébré de l'application."
   },
-  "exportSavedBody": "Κάτω από το όνομα και στο φάκελο που μόλις επιλέξατε. Χωρίς υδατογράφημα, χωρίς όρια, τίποτα για ξεκλείδωμα.",
+  "exportSavedBody": "Με το όνομα και στον φάκελο που μόλις επιλέξατε. Χωρίς υδατογράφημα, χωρίς όρια, τίποτα να ξεκλειδώσετε.",
   "@exportSavedBody": {
     "description": "Corps de la feuille de confirmation. Rappelle que rien n'est verrouillé derrière un paiement — la promesse centrale du produit."
   },
@@ -77,7 +77,7 @@
   "@exportSaveDialogTitle": {
     "description": "Titre de la boîte système d'enregistrement de fichier."
   },
-  "pageTileIncluded": "Σελίδα {number}, περιλαμβάνεται. Αγγίξτε για να το μετακινήσετε στην άκρη.",
+  "pageTileIncluded": "Σελίδα {number}, περιλαμβάνεται. Πατήστε για να την εξαιρέσετε.",
   "@pageTileIncluded": {
     "description": "Étiquette d'accessibilité d'une vignette de page retenue. Lue à voix haute, jamais affichée.",
     "placeholders": {
@@ -86,7 +86,7 @@
       }
     }
   },
-  "pageTileExcluded": "Σελίδα {number}, απορρίφθηκε. Αγγίξτε για να το συμπεριλάβετε.",
+  "pageTileExcluded": "Σελίδα {number}, εξαιρέθηκε. Πατήστε για να την συμπεριλάβετε.",
   "@pageTileExcluded": {
     "description": "Étiquette d'accessibilité d'une vignette de page écartée. Lue à voix haute, jamais affichée.",
     "placeholders": {
@@ -104,7 +104,7 @@
       }
     }
   },
-  "sectionHeaderSemantics": "{title}, {count} εργαλεία",
+  "sectionHeaderSemantics": "{title}, {count, plural, one{{count} εργαλείο} other{{count} εργαλεία}}",
   "@sectionHeaderSemantics": {
     "description": "Étiquette d'accessibilité d'un en-tête de section de l'accueil. Lue à voix haute, jamais affichée.",
     "placeholders": {
@@ -116,7 +116,7 @@
       }
     }
   },
-  "toolCount": "{count} εργαλεία",
+  "toolCount": "{count, plural, one{{count} εργαλείο} other{{count} εργαλεία}}",
   "@toolCount": {
     "description": "Décompte des outils, au colophon de l'accueil. Le nombre est calculé depuis le catalogue, jamais saisi.",
     "placeholders": {
@@ -125,7 +125,7 @@
       }
     }
   },
-  "homePromise": "Δημιουργήστε το έγγραφό σας, εξάγετε το.\nΧωρίς τοίχο στο τέλος.",
+  "homePromise": "Φτιάξτε το έγγραφό σας, εξάγετέ το.\nΧωρίς κρυφές χρεώσεις στο τέλος.",
   "@homePromise": {
     "description": "La promesse sous la marque, en haut de l'accueil. Elle désamorce la peur relevée dans les avis du marché : découvrir un paiement obligatoire au moment d'enregistrer. Le saut de ligne est intentionnel — deux lignes exactement, la seconde plus courte que la première."
   },
@@ -141,11 +141,11 @@
   "@homeChipUnlimited": {
     "description": "Puce de garantie : aucun quota sur le nombre d'exports. Deux ou trois mots maximum."
   },
-  "homeSearchTooltip": "Βρείτε ένα εργαλείο",
+  "homeSearchTooltip": "Αναζήτηση εργαλείου",
   "@homeSearchTooltip": {
     "description": "Info-bulle de la loupe épinglée à la barre de titre de l'accueil."
   },
-  "homeColophon": "Τίποτα δεν ξεκλειδώνεται έναντι πληρωμής κατά την εγγραφή. Η εξαγωγή είναι δωρεάν, χωρίς υδατογράφημα και χωρίς όριο αριθμού.",
+  "homeColophon": "Κατά την αποθήκευση δεν ξεκλειδώνει τίποτα με πληρωμή. Η εξαγωγή είναι δωρεάν, χωρίς υδατογράφημα και χωρίς όρια.",
   "@homeColophon": {
     "description": "Texte de pied d'accueil, sous le décompte des outils. Répète la promesse en toutes lettres."
   },
@@ -153,7 +153,7 @@
   "@sectionFeatured": {
     "description": "Famille des cinq outils mis en avant dans la bande bento. Apparaît en sous-titre des résultats de recherche. Court."
   },
-  "sectionToPdf": "Στο PDF",
+  "sectionToPdf": "Προς PDF",
   "@sectionToPdf": {
     "description": "Famille des outils qui produisent un PDF depuis un autre format. Titre de section de l'accueil : doit tenir sur une ligne à côté d'un filet et d'une pastille de compte."
   },
@@ -165,7 +165,7 @@
   "@sectionSecurity": {
     "description": "Famille des outils de protection, déverrouillage, réparation et caviardage. Titre de section : doit tenir sur une ligne."
   },
-  "sectionEdit": "Εκδίδω",
+  "sectionEdit": "Επεξεργασία",
   "@sectionEdit": {
     "description": "Famille des outils qui modifient un PDF en place. Titre de section, verbe à l'infinitif : doit tenir sur une ligne."
   },
@@ -173,7 +173,7 @@
   "@toolMerge": {
     "description": "Outil : réunit plusieurs documents en un seul PDF. Libellé de tuile — verbe à l'infinitif, court, il s'affiche sur une tuile de 96 dp de large."
   },
-  "toolMergeKeywords": "συναρμολογώ συνδυάζω ένωση ενώνω ανασυγκρότηση ενώνουμε συνενώνουμε",
+  "toolMergeKeywords": "συγχώνευση ένωση συνδυασμός συνένωση combine merge ενώνω",
   "@toolMergeKeywords": {
     "description": "Mots que l'utilisateur peut taper pour trouver l'outil « Fusionner » sans en connaître le nom exact. Séparés par des espaces, sans accents ni ponctuation, en minuscules. Ce ne sont PAS des traductions mot à mot : donnez les synonymes naturels de votre langue, y compris les termes empruntés à l'anglais s'ils sont d'usage courant. Ajoutez-en ou retirez-en librement."
   },
@@ -185,11 +185,11 @@
   "@toolRectoVerso": {
     "description": "Outil : intercale deux scans — les pages impaires et les pages paires — pour reconstituer un document imprimé des deux côtés. Libellé de tuile, court."
   },
-  "toolRectoVersoKeywords": "διπλής όψης ενδιάμεση σάρωση άρτιος περιττός",
+  "toolRectoVersoKeywords": "διπλής όψης σάρωση μονές ζυγές σελίδες recto verso interleave",
   "@toolRectoVersoKeywords": {
     "description": "Mots de recherche pour « Recto-verso ». Séparés par des espaces, sans accents, en minuscules. Donnez les synonymes naturels de votre langue plutôt qu'une traduction mot à mot."
   },
-  "toolRectoVersoSubtitle": "Δύο σαρώσεις, επανατοποθετημένες σε σειρά",
+  "toolRectoVersoSubtitle": "Δύο σαρώσεις, ξανά στη σειρά",
   "@toolRectoVersoSubtitle": {
     "description": "Sous-titre d'un bloc bento moyen. Très court — une ligne, six mots au plus."
   },
@@ -197,11 +197,11 @@
   "@toolImagesToPdf": {
     "description": "Outil : assemble des photos en un PDF. Libellé de tuile, court."
   },
-  "toolImagesToPdfKeywords": "φωτογραφία jpg jpeg png συσκευή άλμπουμ φωτογραφιών",
+  "toolImagesToPdfKeywords": "φωτογραφία jpg jpeg png άλμπουμ φωτογραφίες κάμερα",
   "@toolImagesToPdfKeywords": {
     "description": "Mots de recherche pour « Images vers PDF ». Séparés par des espaces, sans accents, en minuscules."
   },
-  "toolImagesToPdfSubtitle": "Φωτογραφίες και λήψεις σε ένα έγγραφο",
+  "toolImagesToPdfSubtitle": "Φωτογραφίες και στιγμιότυπα σε ένα έγγραφο",
   "@toolImagesToPdfSubtitle": {
     "description": "Sous-titre d'un bloc bento moyen. Très court — une ligne, six mots au plus."
   },
@@ -209,23 +209,23 @@
   "@toolPdfToWord": {
     "description": "Outil : convertit un PDF en document Word modifiable. « Word » est une marque, elle ne se traduit pas. Libellé de tuile, court."
   },
-  "toolPdfToWordKeywords": "docx επεξεργάσιμο επεξεργαστή κειμένου μετατροπή",
+  "toolPdfToWordKeywords": "docx επεξεργασία κειμένου μετατροπή word",
   "@toolPdfToWordKeywords": {
     "description": "Mots de recherche pour « PDF vers Word ». Séparés par des espaces, sans accents, en minuscules."
   },
-  "toolPdfToWordSubtitle": "Κείμενο και πίνακες, επεξεργάσιμο",
+  "toolPdfToWordSubtitle": "Κείμενο και πίνακες, επεξεργάσιμα",
   "@toolPdfToWordSubtitle": {
     "description": "Sous-titre d'un bloc bento moyen. Très court — une ligne, six mots au plus."
   },
-  "toolOrganize": "Οργανώστε ένα PDF",
+  "toolOrganize": "Οργάνωση PDF",
   "@toolOrganize": {
     "description": "Outil : réordonne, extrait, divise et supprime des pages. Libellé de tuile, court."
   },
-  "toolOrganizeKeywords": "διαίρεση ξεχωριστά απόσπασμα αναδιάταξη σελίδων παραγγελίας διαγραφή",
+  "toolOrganizeKeywords": "διαχωρισμός εξαγωγή αναδιάταξη σελίδες διαγραφή σειρά",
   "@toolOrganizeKeywords": {
     "description": "Mots de recherche pour « Organiser un PDF ». Séparés par des espaces, sans accents, en minuscules."
   },
-  "toolOrganizeSubtitle": "Διαίρεση, εξαγωγή, αναδιάταξη",
+  "toolOrganizeSubtitle": "Διαχωρισμός, εξαγωγή, αναδιάταξη",
   "@toolOrganizeSubtitle": {
     "description": "Sous-titre d'un bloc bento moyen. Très court — trois verbes à l'infinitif."
   },
@@ -233,7 +233,7 @@
   "@toolExcelToPdf": {
     "description": "Outil : convertit un classeur en PDF. « Excel » est une marque, elle ne se traduit pas. Libellé de tuile, court."
   },
-  "toolExcelToPdfKeywords": "xlsx φύλλο υπολογισμού βιβλίου εργασίας υπολογιστικού φύλλου",
+  "toolExcelToPdfKeywords": "xlsx υπολογιστικό φύλλο βιβλίο εργασίας excel",
   "@toolExcelToPdfKeywords": {
     "description": "Mots de recherche pour « Excel vers PDF ». Séparés par des espaces, sans accents, en minuscules."
   },
@@ -241,7 +241,7 @@
   "@toolPptxToPdf": {
     "description": "Outil : convertit une présentation en PDF. « PowerPoint » est une marque, elle ne se traduit pas. Libellé de tuile."
   },
-  "toolPptxToPdfKeywords": "Διαφάνειες παρουσίασης διαφανειών pptx",
+  "toolPptxToPdfKeywords": "pptx διαφάνειες παρουσίαση slides",
   "@toolPptxToPdfKeywords": {
     "description": "Mots de recherche pour « PowerPoint vers PDF ». Séparés par des espaces, sans accents, en minuscules."
   },
@@ -249,15 +249,15 @@
   "@toolHtmlToPdf": {
     "description": "Outil : enregistre une page web en PDF depuis son adresse. Libellé de tuile, court."
   },
-  "toolHtmlToPdfKeywords": "html άρθρο με σύνδεσμο url ιστότοπου",
+  "toolHtmlToPdfKeywords": "html ιστότοπος url σύνδεσμος άρθρο σελίδα",
   "@toolHtmlToPdfKeywords": {
     "description": "Mots de recherche pour « Page web vers PDF ». Séparés par des espaces, sans accents, en minuscules."
   },
-  "toolScan": "Σαρώστε ένα έγγραφο",
+  "toolScan": "Σάρωση εγγράφου",
   "@toolScan": {
     "description": "Outil : photographie des pages avec l'appareil et les redresse en PDF. Libellé de tuile, court."
   },
-  "toolScanKeywords": "φωτογραφική μηχανή φωτογραφική ψηφιοποίηση χαρτί σάρωσης συσκευής",
+  "toolScanKeywords": "κάμερα φωτογραφία σάρωση ψηφιοποίηση χαρτί scan",
   "@toolScanKeywords": {
     "description": "Mots de recherche pour « Scanner un document ». Séparés par des espaces, sans accents, en minuscules."
   },
@@ -265,7 +265,7 @@
   "@toolPdfToExcel": {
     "description": "Outil : extrait les tableaux d'un PDF vers un classeur. « Excel » est une marque. Libellé de tuile, court."
   },
-  "toolPdfToExcelKeywords": "xlsx εξαγωγή δεδομένων πίνακα υπολογιστικών φύλλων",
+  "toolPdfToExcelKeywords": "xlsx πίνακας εξαγωγή δεδομένα excel",
   "@toolPdfToExcelKeywords": {
     "description": "Mots de recherche pour « PDF vers Excel ». Séparés par des espaces, sans accents, en minuscules."
   },
@@ -273,7 +273,7 @@
   "@toolPdfToPptx": {
     "description": "Outil : transforme chaque page en diapositive. « PowerPoint » est une marque. Libellé de tuile."
   },
-  "toolPdfToPptxKeywords": "Διαφάνειες παρουσίασης διαφανειών pptx",
+  "toolPdfToPptxKeywords": "pptx διαφάνειες παρουσίαση slides",
   "@toolPdfToPptxKeywords": {
     "description": "Mots de recherche pour « PDF vers PowerPoint ». Séparés par des espaces, sans accents, en minuscules."
   },
@@ -281,15 +281,15 @@
   "@toolPdfToImages": {
     "description": "Outil : exporte chaque page en fichier image. Libellé de tuile, court."
   },
-  "toolPdfToImagesKeywords": "Λήψη εξαγωγής φωτογραφιών jpg png",
+  "toolPdfToImagesKeywords": "jpg png φωτογραφία εξαγωγή στιγμιότυπο",
   "@toolPdfToImagesKeywords": {
     "description": "Mots de recherche pour « PDF vers Images ». Séparés par des espaces, sans accents, en minuscules."
   },
-  "toolOcr": "Κείμενο με δυνατότητα αναζήτησης (OCR)",
+  "toolOcr": "Αναζητήσιμο κείμενο (OCR)",
   "@toolOcr": {
     "description": "Outil : reconnaît les caractères d'un PDF scanné pour le rendre sélectionnable. « OCR » est un sigle international, à conserver tel quel entre parenthèses. Libellé de tuile."
   },
-  "toolOcrKeywords": "αναγνώριση χαρακτήρων σάρωση αντιγραφής επιλέξτε",
+  "toolOcrKeywords": "αναγνώριση χαρακτήρων σάρωση αντιγραφή επιλογή ocr",
   "@toolOcrKeywords": {
     "description": "Mots de recherche pour « Texte cherchable (OCR) ». Séparés par des espaces, sans accents, en minuscules."
   },
@@ -297,7 +297,7 @@
   "@toolPdfA": {
     "description": "Outil : produit la variante normalisée d'archivage. « PDF/A » est une norme ISO, à conserver telle quelle. Libellé de tuile."
   },
-  "toolPdfAKeywords": "αρχειοθέτηση τυπικής μακροπρόθεσμης διατήρησης",
+  "toolPdfAKeywords": "αρχειοθέτηση πρότυπο μακροχρόνια διατήρηση pdf/a",
   "@toolPdfAKeywords": {
     "description": "Mots de recherche pour « Convertir en PDF/A ». Séparés par des espaces, sans accents, en minuscules."
   },
@@ -305,7 +305,7 @@
   "@toolProtect": {
     "description": "Outil : chiffre le document derrière un mot de passe. Libellé de tuile, court."
   },
-  "toolProtectKeywords": "λουκέτο κωδικού πρόσβασης κρυπτογράφηση κλειδαριά ασφαλή",
+  "toolProtectKeywords": "κωδικός λουκέτο κρυπτογράφηση κλείδωμα ασφάλεια password",
   "@toolProtectKeywords": {
     "description": "Mots de recherche pour « Protéger PDF ». Séparés par des espaces, sans accents, en minuscules."
   },
@@ -313,23 +313,23 @@
   "@toolUnlock": {
     "description": "Outil : retire le mot de passe d'un PDF dont on connaît le mot de passe. Libellé de tuile, court."
   },
-  "toolUnlockKeywords": "αφαίρεση κωδικού πρόσβασης άνοιγμα αποκρυπτογράφηση ξεκλειδώματος λουκέτο",
+  "toolUnlockKeywords": "αφαίρεση κωδικού άνοιγμα αποκρυπτογράφηση ξεκλείδωμα password",
   "@toolUnlockKeywords": {
     "description": "Mots de recherche pour « Déverrouiller PDF ». Séparés par des espaces, sans accents, en minuscules."
   },
-  "toolRepair": "Επισκευή PDF",
+  "toolRepair": "Επιδιόρθωση PDF",
   "@toolRepair": {
     "description": "Outil : récupère ce qui peut l'être d'un fichier endommagé. Libellé de tuile, court."
   },
-  "toolRepairKeywords": "κατεστραμμένο μη αναγνώσιμο κατεστραμμένο σφάλμα ανάκτησης",
+  "toolRepairKeywords": "κατεστραμμένο μη αναγνώσιμο ανάκτηση σφάλμα repair",
   "@toolRepairKeywords": {
     "description": "Mots de recherche pour « Réparer PDF ». Séparés par des espaces, sans accents, en minuscules."
   },
-  "toolRedact": "Διορθώστε ένα PDF",
+  "toolRedact": "Απόκρυψη περιεχομένου",
   "@toolRedact": {
     "description": "Outil : recouvre définitivement des zones du document pour anonymiser. Le terme métier consacré en français est « caviarder » ; employez l'équivalent consacré de votre langue (anglais : redact). Libellé de tuile."
   },
-  "toolRedactKeywords": "απόκρυψη μαύρη ανωνυμοποίηση εμπιστευτική διαγραφή",
+  "toolRedactKeywords": "απόκρυψη κάλυψη ανωνυμοποίηση εμπιστευτικό διαγραφή redact",
   "@toolRedactKeywords": {
     "description": "Mots de recherche pour « Caviarder un PDF ». Séparés par des espaces, sans accents, en minuscules."
   },
@@ -337,59 +337,59 @@
   "@toolEdit": {
     "description": "Outil : ajoute ou corrige du texte sur les pages. Libellé de tuile, court."
   },
-  "toolEditKeywords": "κείμενο τροποποίηση σωστή σχολιασμός εγγραφή",
+  "toolEditKeywords": "κείμενο τροποποίηση διόρθωση σχολιασμός εγγραφή",
   "@toolEditKeywords": {
     "description": "Mots de recherche pour « Éditer PDF ». Séparés par des espaces, sans accents, en minuscules."
   },
-  "toolSign": "Σημείο",
+  "toolSign": "Υπογραφή",
   "@toolSign": {
     "description": "Outil : appose une signature tracée au doigt. Libellé de tuile, un seul verbe."
   },
-  "toolSignKeywords": "υπογραφή αρχικής σύμβασης χέρι",
+  "toolSignKeywords": "υπογραφή μονογραφή συμβόλαιο χέρι sign",
   "@toolSignKeywords": {
     "description": "Mots de recherche pour « Signer ». Séparés par des espaces, sans accents, en minuscules."
   },
-  "toolWatermark": "Αφανής σφραγίδα χάρτου",
+  "toolWatermark": "Υδατογράφημα",
   "@toolWatermark": {
     "description": "Outil : appose une mention en travers des pages (« CONFIDENTIEL », « BROUILLON »). Libellé de tuile, un seul mot si possible."
   },
-  "toolWatermarkKeywords": "υδατογράφημα εμπιστευτικό σχέδιο σφραγίδας",
+  "toolWatermarkKeywords": "watermark υδατογράφημα σφραγίδα εμπιστευτικό πρόχειρο",
   "@toolWatermarkKeywords": {
     "description": "Mots de recherche pour « Filigrane ». Séparés par des espaces, sans accents, en minuscules. Gardez « watermark » : le terme anglais est cherché dans toutes les langues."
   },
-  "toolPageNumbers": "Αριθμοί σελίδων",
+  "toolPageNumbers": "Αρίθμηση σελίδων",
   "@toolPageNumbers": {
     "description": "Outil : appose une pagination. Libellé de tuile, court."
   },
-  "toolPageNumbersKeywords": "αριθμοί φυλλαδίου σελιδοποίησης",
+  "toolPageNumbersKeywords": "αρίθμηση σελιδοποίηση αριθμοί σελίδων folio",
   "@toolPageNumbersKeywords": {
     "description": "Mots de recherche pour « Numéros de page ». Séparés par des espaces, sans accents, en minuscules."
   },
-  "toolCrop": "Περικοπή ενός PDF",
+  "toolCrop": "Περικοπή PDF",
   "@toolCrop": {
     "description": "Outil : recadre les pages en retirant les marges. Libellé de tuile, court."
   },
-  "toolCropKeywords": "κομμένα περιθώρια μέγεθος άκρων καλλιέργειας",
+  "toolCropKeywords": "περικοπή περιθώρια άκρες μέγεθος crop",
   "@toolCropKeywords": {
     "description": "Mots de recherche pour « Rogner un PDF ». Séparés par des espaces, sans accents, en minuscules."
   },
-  "toolCompare": "Συγκρίνετε PDF",
+  "toolCompare": "Σύγκριση PDF",
   "@toolCompare": {
     "description": "Outil : met deux versions face à face et signale ce qui change. Libellé de tuile, court."
   },
-  "toolCompareKeywords": "διαφορά εκδόσεις διαφορετικές αλλαγές",
+  "toolCompareKeywords": "διαφορά εκδόσεις diff αλλαγές σύγκριση",
   "@toolCompareKeywords": {
     "description": "Mots de recherche pour « Comparer PDF ». Séparés par des espaces, sans accents, en minuscules."
   },
-  "searchHint": "Συγχώνευση, κωδικός πρόσβασης, υδατογράφημα…",
+  "searchHint": "Συγχώνευση, κωδικός, υδατογράφημα…",
   "@searchHint": {
     "description": "Texte d'invite du champ de recherche. Trois exemples de requêtes séparés par des virgules, suivis d'un caractère de suspension. Choisissez trois exemples naturels dans votre langue plutôt qu'une traduction littérale."
   },
-  "searchClear": "Να σβήσει",
+  "searchClear": "Εκκαθάριση",
   "@searchClear": {
     "description": "Info-bulle de la croix qui vide le champ de recherche."
   },
-  "searchNoResultTitle": "Δεν υπάρχουν εργαλεία για το \"{query}\".",
+  "searchNoResultTitle": "Κανένα εργαλείο για «{query}».",
   "@searchNoResultTitle": {
     "description": "Titre affiché quand aucun outil ne correspond. Les guillemets français « » doivent être remplacés par ceux de votre langue.",
     "placeholders": {
@@ -398,35 +398,35 @@
       }
     }
   },
-  "searchNoResultBody": "Δοκιμάστε τη μορφή που έχετε στη διάθεσή σας - \"Word\", \"Excel\", \"photo\" - ή οτιδήποτε άλλο θέλετε να κάνετε με αυτό: \"υπογραφή\", \"διαίρεση\", \"κωδικός πρόσβασης\".",
+  "searchNoResultBody": "Δοκιμάστε τη μορφή που έχετε στη διάθεσή σας — «Word», «Excel», «φωτογραφία» — ή αυτό που θέλετε να κάνετε: «υπογραφή», «διαχωρισμός», «κωδικός».",
   "@searchNoResultBody": {
     "description": "Conseil affiché sous le titre d'absence de résultat. Les exemples entre guillemets doivent être adaptés à votre langue, pas traduits littéralement. Employez les guillemets de votre langue."
   },
-  "actionUndo": "Ματαίωση",
+  "actionUndo": "Αναίρεση",
   "@actionUndo": {
     "description": "Défait la dernière action — retrait d'un fichier, compression appliquée. ATTENTION : ce n'est PAS « interrompre » (voir actionCancel). Le français emploie le même mot pour les deux, la plupart des langues non : anglais « Undo » contre « Cancel », allemand « Rückgängig » contre « Abbrechen »."
   },
-  "actionApply": "Εφαρμόζω",
+  "actionApply": "Εφαρμογή",
   "@actionApply": {
     "description": "Valide le réglage choisi et l'applique au document."
   },
-  "actionChoose": "Επιλέγω",
+  "actionChoose": "Επιλογή",
   "@actionChoose": {
     "description": "Ouvre la boîte de sélection de fichiers du système. Libellé court, souvent au bout d'une rangée étroite."
   },
-  "actionChoosePdf": "Επιλέξτε ένα PDF",
+  "actionChoosePdf": "Επιλογή PDF",
   "@actionChoosePdf": {
     "description": "Bouton principal d'un écran vide dont l'outil ne travaille que sur des PDF."
   },
-  "actionChooseFiles": "Επιλέξτε αρχεία",
+  "actionChooseFiles": "Επιλογή αρχείων",
   "@actionChooseFiles": {
     "description": "Bouton principal d'un écran vide dont l'outil accepte plusieurs fichiers à la fois."
   },
-  "actionConvert": "Μετατρέπω",
+  "actionConvert": "Μετατροπή",
   "@actionConvert": {
     "description": "Lance la conversion. Bouton pleine largeur en bas d'écran."
   },
-  "actionFinish": "Για να τελειώσει",
+  "actionFinish": "Ολοκλήρωση",
   "@actionFinish": {
     "description": "Clôt une capture en plusieurs pages et passe à la suite."
   },
@@ -434,7 +434,7 @@
   "@actionBack": {
     "description": "Info-bulle de la flèche qui remonte d'un écran."
   },
-  "actionAdd": "Προσθέτω",
+  "actionAdd": "Προσθήκη",
   "@actionAdd": {
     "description": "Ajoute un élément à une liste. Libellé court."
   },
@@ -451,7 +451,7 @@
       }
     }
   },
-  "errorShareFailed": "Η κοινή χρήση απέτυχε: {detail}",
+  "errorShareFailed": "Η κοινοποίηση απέτυχε: {detail}",
   "@errorShareFailed": {
     "description": "Bandeau d'erreur quand la fenêtre de partage échoue. {detail} est un message technique non traduit.",
     "placeholders": {
@@ -460,7 +460,7 @@
       }
     }
   },
-  "errorOpenFailed": "Δεν είναι δυνατό το άνοιγμα του αρχείου: {detail}",
+  "errorOpenFailed": "Δεν ήταν δυνατό το άνοιγμα του αρχείου: {detail}",
   "@errorOpenFailed": {
     "description": "Bandeau d'erreur quand le fichier choisi ne peut pas être lu. {detail} est un message technique non traduit.",
     "placeholders": {
@@ -494,7 +494,7 @@
   "@errorPickPdf": {
     "description": "Bandeau d'erreur quand l'outil exige un PDF et qu'on lui a donné autre chose."
   },
-  "sizeBytes": "{value} ο",
+  "sizeBytes": "{value} B",
   "@sizeBytes": {
     "description": "Poids d'un fichier en octets. L'abréviation est « o » en français, « B » en anglais — employez celle de votre langue.",
     "placeholders": {
@@ -521,7 +521,7 @@
       }
     }
   },
-  "sizeApprox": "~{size}",
+  "sizeApprox": "~ {size}",
   "@sizeApprox": {
     "description": "Taille estimée, précédée du signe « environ ». {size} est déjà formaté (« 240 Ko »). Le tilde et non le signe ≈ : ce dernier manque au sous-ensemble des fontes embarquées. Voir test/l10n_coverage_test.dart.",
     "placeholders": {
@@ -530,7 +530,7 @@
       }
     }
   },
-  "pageCount": "{count} σελίδες",
+  "pageCount": "{count, plural, one{{count} σελίδα} other{{count} σελίδες}}",
   "@pageCount": {
     "description": "Décompte de pages. Employez les formes plurielles de votre langue — le polonais, le tchèque, le lituanien et le letton en ont plus de deux.",
     "placeholders": {
@@ -539,7 +539,7 @@
       }
     }
   },
-  "pageCountOfTotal": "{kept} σελίδες από {total}",
+  "pageCountOfTotal": "{kept, plural, one{{kept} σελίδα} other{{kept} σελίδες}} από {total}",
   "@pageCountOfTotal": {
     "description": "Décompte partiel : combien de pages sont retenues sur combien au total. Affiché seulement quand on en a écarté ; « 3 pages sur 3 » n'apparaît jamais.",
     "placeholders": {
@@ -551,7 +551,7 @@
       }
     }
   },
-  "pageOfTotal": "Σελίδα {current} σε {total}",
+  "pageOfTotal": "Σελίδα {current} από {total}",
   "@pageOfTotal": {
     "description": "Titre de la visionneuse plein écran : quelle page on regarde, sur combien.",
     "placeholders": {
@@ -567,15 +567,15 @@
   "@formatPdf": {
     "description": "Puce de format acceptable. Sigle international, à conserver tel quel dans toutes les langues."
   },
-  "formatWord": "Λέξη",
+  "formatWord": "Word",
   "@formatWord": {
     "description": "Puce de format acceptable. Marque déposée, à conserver telle quelle."
   },
-  "formatExcel": "Προέχω",
+  "formatExcel": "Excel",
   "@formatExcel": {
     "description": "Puce de format acceptable. Marque déposée, à conserver telle quelle."
   },
-  "formatPowerPoint": "Power point",
+  "formatPowerPoint": "PowerPoint",
   "@formatPowerPoint": {
     "description": "Puce de format acceptable. Marque déposée, à conserver telle quelle."
   },
@@ -587,7 +587,7 @@
   "@formatText": {
     "description": "Puce de format acceptable : les fichiers texte brut."
   },
-  "mergeAddFile": "Προσθέστε ένα αρχείο",
+  "mergeAddFile": "Προσθήκη αρχείου",
   "@mergeAddFile": {
     "description": "Libellé de la carte à contour tireté en fin de liste, qui ouvre la sélection de fichiers."
   },
@@ -599,15 +599,15 @@
   "@mergeEmptyTitle": {
     "description": "Titre de l'écran vide de l'outil Fusionner : ce qu'on va obtenir, en trois mots."
   },
-  "mergeEmptyBody": "Προσθέστε αρχεία PDF, αρχεία Word, εικόνες ή κείμενο. Μπορείτε να τα αναδιατάξετε και να αφαιρέσετε σελίδες πριν από την εξαγωγή.",
+  "mergeEmptyBody": "Προσθέστε PDF, αρχεία Word, εικόνες ή κείμενο. Μπορείτε να τα αναδιατάξετε και να εξαιρέσετε σελίδες πριν την εξαγωγή.",
   "@mergeEmptyBody": {
     "description": "Consigne de l'écran vide de l'outil Fusionner."
   },
-  "mergeNeedOnePage": "Προσθέστε τουλάχιστον ένα αρχείο με μια σελίδα για συμπερίληψη.",
+  "mergeNeedOnePage": "Προσθέστε τουλάχιστον ένα αρχείο με σελίδα προς συμπερίληψη.",
   "@mergeNeedOnePage": {
     "description": "Bandeau d'erreur quand on demande l'aperçu sans qu'aucune page ne soit retenue."
   },
-  "mergeProgress": "Συγχώνευση σε εξέλιξη...",
+  "mergeProgress": "Συγχώνευση σε εξέλιξη…",
   "@mergeProgress": {
     "description": "Titre de la boîte de progression pendant l'assemblage. Garder le caractère de suspension final."
   },
@@ -620,7 +620,7 @@
       }
     }
   },
-  "mergeRemoved": "Το {name} καταργήθηκε.",
+  "mergeRemoved": "Το {name} αφαιρέθηκε.",
   "@mergeRemoved": {
     "description": "Bandeau confirmant qu'un document a quitté la liste ; il porte l'action « Annuler » (actionUndo). Accordez au genre du mot « fichier » dans votre langue.",
     "placeholders": {
@@ -629,7 +629,7 @@
       }
     }
   },
-  "mergeRemoveTooltip": "Αφαιρέστε το {name}",
+  "mergeRemoveTooltip": "Αφαίρεση {name}",
   "@mergeRemoveTooltip": {
     "description": "Info-bulle de la corbeille d'une rangée de la liste.",
     "placeholders": {
@@ -651,7 +651,7 @@
   "@mergeRotateAll": {
     "description": "Bouton qui fait tourner d'un quart de tour toutes les pages du document déplié."
   },
-  "mergePreviewAndExport": "Προεπισκόπηση και εξαγωγή ({count} σελίδες)",
+  "mergePreviewAndExport": "Προεπισκόπηση και εξαγωγή ({count, plural, one{{count} σελίδα} other{{count} σελίδες}})",
   "@mergePreviewAndExport": {
     "description": "Bouton de bas d'écran de l'outil Fusionner, avec le nombre de pages retenues entre parenthèses.",
     "placeholders": {
@@ -660,7 +660,7 @@
       }
     }
   },
-  "previewTitle": "Επισκόπηση · {size}",
+  "previewTitle": "Προεπισκόπηση · {size}",
   "@previewTitle": {
     "description": "Titre de l'écran d'aperçu, suivi du poids du fichier. {size} est déjà formaté (« 1,20 Mo »). Le point médian est un séparateur typographique, gardez-le ou remplacez-le par celui de votre langue.",
     "placeholders": {
@@ -678,11 +678,11 @@
       }
     }
   },
-  "previewPageUnreadable": "Σελίδα δυσανάγνωστη.",
+  "previewPageUnreadable": "Η σελίδα δεν είναι αναγνώσιμη.",
   "@previewPageUnreadable": {
     "description": "Affiché à la place d'une page dont le rendu a échoué."
   },
-  "previewExportWhat": "PDF · {count} σελίδες",
+  "previewExportWhat": "PDF · {count, plural, one{{count} σελίδα} other{{count} σελίδες}}",
   "@previewExportWhat": {
     "description": "Description de ce qui vient d'être enregistré, dans la feuille de confirmation. Décrit le document, ne le nomme pas.",
     "placeholders": {
@@ -695,7 +695,7 @@
   "@compressTitle": {
     "description": "Titre de la feuille de choix du niveau de compression."
   },
-  "compressBody": "Τρέχον μέγεθος: {size}. Επιλέξτε ένα επίπεδο — το εκτιμώμενο μέγεθος εμφανίζεται πριν από την εφαρμογή.",
+  "compressBody": "Τρέχον μέγεθος: {size}. Επιλέξτε ένα επίπεδο — το εκτιμώμενο μέγεθος εμφανίζεται πριν την εφαρμογή.",
   "@compressBody": {
     "description": "Consigne de la feuille de compression. {size} est déjà formaté.",
     "placeholders": {
@@ -708,7 +708,7 @@
   "@compressEstimating": {
     "description": "Affiché tant que la taille estimée d'un niveau n'est pas connue. Garder le caractère de suspension final."
   },
-  "compressProgress": "Συμπίεση σε εξέλιξη...",
+  "compressProgress": "Συμπίεση σε εξέλιξη…",
   "@compressProgress": {
     "description": "Titre de la boîte de progression pendant la compression. Garder le caractère de suspension final."
   },
@@ -721,43 +721,43 @@
       }
     }
   },
-  "protectEmptyTitle": "Βάλτε κάτω από τον κωδικό πρόσβασης",
+  "protectEmptyTitle": "Προστασία με κωδικό",
   "@protectEmptyTitle": {
     "description": "Titre de l'écran vide de l'outil Protéger."
   },
-  "protectEmptyBody": "Το PDF δεν θα ανοίγει πλέον χωρίς τον κωδικό πρόσβασης που έχετε επιλέξει. Κρατήστε το: δεν μπορεί να ανακτηθεί.",
+  "protectEmptyBody": "Το PDF δεν θα ανοίγει πλέον χωρίς τον κωδικό που θα επιλέξετε. Κρατήστε τον: δεν μπορεί να ανακτηθεί.",
   "@protectEmptyBody": {
     "description": "Consigne de l'écran vide de l'outil Protéger. L'avertissement de la seconde phrase est essentiel — ne l'allégez pas."
   },
-  "protectSubtitle": "Θα είναι κρυπτογραφημένο σε AES 256-bit",
+  "protectSubtitle": "Θα κρυπτογραφηθεί με AES 256 bits",
   "@protectSubtitle": {
     "description": "Sous-titre de la carte du fichier choisi. « AES 256 bits » est un nom d'algorithme, à conserver tel quel."
   },
-  "protectPassword": "Σύνθημα",
+  "protectPassword": "Κωδικός",
   "@protectPassword": {
     "description": "Intitulé du premier champ de saisie."
   },
-  "protectConfirmPassword": "Επιβεβαίωση κωδικού πρόσβασης",
+  "protectConfirmPassword": "Επιβεβαίωση κωδικού",
   "@protectConfirmPassword": {
     "description": "Intitulé du second champ, où l'on retape le mot de passe."
   },
-  "protectShowPasswords": "Εμφάνιση κωδικών πρόσβασης",
+  "protectShowPasswords": "Εμφάνιση κωδικών",
   "@protectShowPasswords": {
     "description": "Info-bulle du bouton œil quand les caractères sont masqués."
   },
-  "protectHidePasswords": "Απόκρυψη κωδικών πρόσβασης",
+  "protectHidePasswords": "Απόκρυψη κωδικών",
   "@protectHidePasswords": {
     "description": "Info-bulle du bouton œil quand les caractères sont visibles."
   },
-  "protectMismatch": "Οι δύο κωδικοί πρόσβασης διαφέρουν.",
+  "protectMismatch": "Οι δύο κωδικοί διαφέρουν.",
   "@protectMismatch": {
     "description": "Message d'erreur rattaché au champ de confirmation. Court : il s'affiche sous le champ."
   },
-  "protectWarning": "Γράψτε το κάπου: χωρίς αυτό, το έγγραφο γίνεται μόνιμα δυσανάγνωστο. Δεν είναι δυνατή η ανάκτηση, ούτε από εσάς ούτε από την εφαρμογή.",
+  "protectWarning": "Σημειώστε τον κάπου: χωρίς αυτόν, το έγγραφο γίνεται οριστικά μη αναγνώσιμο. Δεν υπάρχει καμία δυνατότητα ανάκτησης, ούτε από εσάς ούτε από την εφαρμογή.",
   "@protectWarning": {
     "description": "Avertissement sous les champs de saisie. C'est le seul endroit qui dit qu'un mot de passe perdu est perdu pour de bon — ne l'allégez pas."
   },
-  "protectAlreadyProtected": "Αυτό το αρχείο είναι ήδη προστατευμένο — χρησιμοποιήστε πρώτα Ξεκλείδωμα PDF.",
+  "protectAlreadyProtected": "Αυτό το αρχείο είναι ήδη προστατευμένο — χρησιμοποιήστε πρώτα το Ξεκλείδωμα PDF.",
   "@protectAlreadyProtected": {
     "description": "Bandeau d'erreur quand le PDF choisi porte déjà un mot de passe. « Déverrouiller PDF » doit reprendre exactement le libellé traduit de l'outil (toolUnlock)."
   },
@@ -774,7 +774,7 @@
       }
     }
   },
-  "protectAction": "Προστατεύω",
+  "protectAction": "Προστασία",
   "@protectAction": {
     "description": "Bouton de bas d'écran qui lance le chiffrement. Verbe à l'infinitif, court."
   },
@@ -782,19 +782,19 @@
   "@protectResultTitle": {
     "description": "Titre de la carte de résultat, une fois le document chiffré."
   },
-  "protectResultDetail": "Κρυπτογραφημένο σε AES 256 bit. Θα χρειαστείτε τον κωδικό πρόσβασης για να το ανοίξετε.",
+  "protectResultDetail": "Κρυπτογραφημένο με AES 256 bits. Θα χρειαστεί ο κωδικός για να ανοίξει.",
   "@protectResultDetail": {
     "description": "Détail de la carte de résultat. « AES 256 bits » est un nom d'algorithme, à conserver tel quel."
   },
-  "protectExportWhat": "PDF με κωδικό πρόσβασης",
+  "protectExportWhat": "PDF με προστασία κωδικού",
   "@protectExportWhat": {
     "description": "Description de ce qui vient d'être enregistré, dans la feuille de confirmation."
   },
-  "unlockEmptyTitle": "Αφαίρεση κωδικού πρόσβασης",
+  "unlockEmptyTitle": "Αφαίρεση κωδικού",
   "@unlockEmptyTitle": {
     "description": "Titre de l'écran vide de l'outil Déverrouiller."
   },
-  "unlockEmptyBody": "Χρειάζεστε τον τρέχοντα κωδικό πρόσβασης για το έγγραφο. Μόλις αφαιρεθεί, το PDF θα ανοίξει ελεύθερα.",
+  "unlockEmptyBody": "Χρειάζεστε τον τρέχοντα κωδικό του εγγράφου. Μόλις αφαιρεθεί, το PDF θα ανοίγει ελεύθερα.",
   "@unlockEmptyBody": {
     "description": "Consigne de l'écran vide de l'outil Déverrouiller. La première phrase est importante : l'outil ne casse pas les mots de passe, il en délivre un document qu'on sait déjà ouvrir."
   },
@@ -802,15 +802,15 @@
   "@unlockAcceptsProtectedPdf": {
     "description": "Puce de format acceptable : un PDF portant un mot de passe."
   },
-  "unlockChooseProtectedPdf": "Επιλέξτε ένα προστατευμένο PDF",
+  "unlockChooseProtectedPdf": "Επιλογή προστατευμένου PDF",
   "@unlockChooseProtectedPdf": {
     "description": "Bouton principal de l'écran vide de l'outil Déverrouiller."
   },
-  "unlockCurrentPassword": "Τρέχων κωδικός πρόσβασης",
+  "unlockCurrentPassword": "Τρέχων κωδικός",
   "@unlockCurrentPassword": {
     "description": "Intitulé du champ où l'on saisit le mot de passe qui ouvre déjà le document."
   },
-  "unlockWrongPassword": "Λανθασμένος κωδικός πρόσβασης.",
+  "unlockWrongPassword": "Λάθος κωδικός.",
   "@unlockWrongPassword": {
     "description": "Bandeau d'erreur quand le mot de passe saisi n'ouvre pas le document."
   },
@@ -818,7 +818,7 @@
   "@unlockProgress": {
     "description": "Titre de la boîte de progression pendant le retrait du mot de passe. Garder le caractère de suspension final."
   },
-  "unlockFailed": "Αποτυχία ξεκλειδώματος: {detail}",
+  "unlockFailed": "Το ξεκλείδωμα απέτυχε: {detail}",
   "@unlockFailed": {
     "description": "Bandeau d'erreur quand le retrait du mot de passe échoue. {detail} est un message technique non traduit.",
     "placeholders": {
@@ -827,27 +827,27 @@
       }
     }
   },
-  "unlockAction": "Ξεκλειδώνω",
+  "unlockAction": "Ξεκλείδωμα",
   "@unlockAction": {
     "description": "Bouton de bas d'écran qui retire le mot de passe. Verbe à l'infinitif, court."
   },
-  "repairEmptyTitle": "Επισκευάστε ένα κατεστραμμένο αρχείο",
+  "repairEmptyTitle": "Επιδιόρθωση κατεστραμμένου αρχείου",
   "@repairEmptyTitle": {
     "description": "Titre de l'écran vide de l'outil Réparer."
   },
-  "repairEmptyBody": "Η εσωτερική δομή ενός κατεστραμμένου PDF ανακατασκευάζεται. Ό,τι είναι διασώσιμο θα είναι και διασώσιμο.",
+  "repairEmptyBody": "Η εσωτερική δομή ενός κατεστραμμένου PDF ανακατασκευάζεται. Ό,τι μπορεί να διασωθεί, θα διασωθεί.",
   "@repairEmptyBody": {
     "description": "Consigne de l'écran vide de l'outil Réparer. La seconde phrase promet peu délibérément — la réparation n'est jamais garantie."
   },
-  "repairProgress": "Επισκευή σε εξέλιξη…",
+  "repairProgress": "Επιδιόρθωση σε εξέλιξη…",
   "@repairProgress": {
     "description": "Titre de la boîte de progression pendant la reconstruction. Garder le caractère de suspension final."
   },
-  "repairFailed": "Αυτό το αρχείο δεν μπορεί να επιδιορθωθεί — μπορεί να είναι πολύ κατεστραμμένο.",
+  "repairFailed": "Δεν είναι δυνατή η επιδιόρθωση αυτού του αρχείου — ίσως είναι πολύ κατεστραμμένο.",
   "@repairFailed": {
     "description": "Bandeau d'erreur quand la reconstruction échoue. Le ton reste prudent : on ne sait pas pourquoi, et on le dit."
   },
-  "repairAction": "Διορθώνω",
+  "repairAction": "Επιδιόρθωση",
   "@repairAction": {
     "description": "Bouton de bas d'écran qui lance la reconstruction. Verbe à l'infinitif, court."
   },
@@ -855,11 +855,11 @@
   "@pdfToWordEmptyTitle": {
     "description": "Titre de l'écran vide de l'outil PDF vers Word. « Word » est une marque, à conserver."
   },
-  "pdfToWordEmptyBody": "Το κείμενο και η δομή του PDF μεταφέρονται σε ένα έγγραφο .docx που μπορείτε να ανοίξετε ξανά και να διορθώσετε.",
+  "pdfToWordEmptyBody": "Το κείμενο και η δομή του PDF μεταφέρονται σε ένα έγγραφο .docx που μπορείτε να ανοίξετε ξανά και να επεξεργαστείτε.",
   "@pdfToWordEmptyBody": {
     "description": "Consigne de l'écran vide de l'outil PDF vers Word. « .docx » est une extension de fichier, à conserver telle quelle."
   },
-  "pdfToWordAnalyzing": "Ανάλυση του εγγράφου…",
+  "pdfToWordAnalyzing": "Ανάλυση εγγράφου…",
   "@pdfToWordAnalyzing": {
     "description": "Titre de la boîte de progression pendant l'inspection du PDF, avant conversion. Garder le caractère de suspension final."
   },
@@ -867,7 +867,7 @@
   "@pdfToWordAnalysisPending": {
     "description": "Sous-titre de la carte du fichier tant que l'inspection n'a pas rendu ses résultats."
   },
-  "pdfToWordAnalysisFailed": "Δεν είναι δυνατή η σάρωση: {detail}",
+  "pdfToWordAnalysisFailed": "Η ανάλυση απέτυχε: {detail}",
   "@pdfToWordAnalysisFailed": {
     "description": "Bandeau d'erreur quand l'inspection du PDF échoue. {detail} est un message technique non traduit.",
     "placeholders": {
@@ -876,7 +876,7 @@
       }
     }
   },
-  "pdfLocked": "Αυτό το PDF προστατεύεται με κωδικό πρόσβασης. Ξεκλειδώστε το πρώτα.",
+  "pdfLocked": "Αυτό το PDF προστατεύεται με κωδικό. Ξεκλειδώστε το πρώτα.",
   "@pdfLocked": {
     "description": "Bandeau d'erreur commun aux outils qui refusent un PDF chiffré. Renvoie implicitement à l'outil Déverrouiller."
   },
@@ -884,11 +884,11 @@
   "@pdfToWordConverting": {
     "description": "Titre de la boîte de progression pendant la conversion. Garder le caractère de suspension final."
   },
-  "pdfToWordSummaryTitle": "Εντοπίστηκε περιεχόμενο",
+  "pdfToWordSummaryTitle": "Περιεχόμενο που εντοπίστηκε",
   "@pdfToWordSummaryTitle": {
     "description": "Titre de la carte qui résume ce que l'inspection a trouvé dans le PDF."
   },
-  "pdfToWordParagraphCount": "{count} παραγράφους",
+  "pdfToWordParagraphCount": "{count, plural, one{{count} παράγραφος} other{{count} παράγραφοι}}",
   "@pdfToWordParagraphCount": {
     "description": "Puce du résumé : combien de paragraphes ont été reconnus.",
     "placeholders": {
@@ -897,7 +897,7 @@
       }
     }
   },
-  "pdfToWordHeadingCount": "{count} τίτλοι",
+  "pdfToWordHeadingCount": "{count, plural, one{{count} τίτλος} other{{count} τίτλοι}}",
   "@pdfToWordHeadingCount": {
     "description": "Puce du résumé : combien de titres ont été reconnus.",
     "placeholders": {
@@ -906,7 +906,7 @@
       }
     }
   },
-  "pdfToWordTableCount": "{count} πίνακες",
+  "pdfToWordTableCount": "{count, plural, one{{count} πίνακας} other{{count} πίνακες}}",
   "@pdfToWordTableCount": {
     "description": "Puce du résumé : combien de tableaux ont été reconnus.",
     "placeholders": {
@@ -915,19 +915,19 @@
       }
     }
   },
-  "pdfToWordNoTables": "Δεν εντοπίστηκαν πίνακες: εάν το PDF σας περιέχει, οι γραμμές του θα μετατραπούν σε παραγράφους.",
+  "pdfToWordNoTables": "Δεν εντοπίστηκε κανένας πίνακας: αν το PDF σας περιέχει, οι γραμμές του θα μετατραπούν σε παραγράφους.",
   "@pdfToWordNoTables": {
     "description": "Avertissement affiché quand l'inspection n'a trouvé aucun tableau."
   },
-  "pdfToWordCaveat": "Η μετατροπή αναπαράγει το κείμενο, τη μορφοποίηση και τους πίνακες, αλλά όχι την ακριβή διάταξη: η θέση των εικόνων και των στηλών δεν διατηρείται και οι εικόνες δεν περιλαμβάνονται στο έγγραφο του Word.",
+  "pdfToWordCaveat": "Η μετατροπή αναπαράγει το κείμενο, τη μορφοποίηση και τους πίνακες, αλλά όχι την ακριβή διάταξη: η θέση των εικόνων και των στηλών δεν διατηρείται, και οι εικόνες δεν περιλαμβάνονται στο έγγραφο Word.",
   "@pdfToWordCaveat": {
     "description": "Ce que la conversion ne sait pas faire, dit avant qu'on la lance. C'est le passage qui évite la déception — ne l'allégez pas."
   },
-  "pdfToWordScanWarning": "Αυτό το PDF φαίνεται να είναι σάρωση: δεν βρέθηκε κείμενο. Χρησιμοποιήστε πρώτα το εργαλείο αναζήτησης κειμένου (OCR) και μετά επιστρέψτε και μετατρέψτε το PDF που προκύπτει.",
+  "pdfToWordScanWarning": "Αυτό το PDF μοιάζει με σάρωση: δεν βρέθηκε κείμενο. Χρησιμοποιήστε πρώτα το εργαλείο «Αναζητήσιμο κείμενο (OCR)» και μετά επιστρέψτε για να μετατρέψετε το PDF που προκύπτει.",
   "@pdfToWordScanWarning": {
     "description": "Avertissement quand le PDF ne contient aucun texte extractible. « Texte cherchable (OCR) » doit reprendre exactement le libellé traduit de l'outil (toolOcr)."
   },
-  "pdfToWordResultTitle": "Έτοιμο έγγραφο του Word",
+  "pdfToWordResultTitle": "Έγγραφο Word έτοιμο",
   "@pdfToWordResultTitle": {
     "description": "Titre de la carte de résultat, une fois le .docx produit."
   },
@@ -943,7 +943,7 @@
       }
     }
   },
-  "pdfToWordExportWhat": "Έγγραφο του Word",
+  "pdfToWordExportWhat": "Έγγραφο Word",
   "@pdfToWordExportWhat": {
     "description": "Description de ce qui vient d'être enregistré, dans la feuille de confirmation."
   },
@@ -951,11 +951,11 @@
   "@pdfToWordConvertAction": {
     "description": "Bouton de bas d'écran qui lance la conversion. Doit tenir sur une ligne."
   },
-  "actionConvertAgain": "Μετατροπή ξανά",
+  "actionConvertAgain": "Νέα μετατροπή",
   "@actionConvertAgain": {
     "description": "Action secondaire proposée une fois le fichier produit, pour refaire la conversion. Doit tenir sur une ligne."
   },
-  "errorSaveFailed": "Δεν είναι δυνατή η εγγραφή: {detail}",
+  "errorSaveFailed": "Η αποθήκευση απέτυχε: {detail}",
   "@errorSaveFailed": {
     "description": "Bandeau d'erreur quand l'écriture du fichier échoue. {detail} est un message technique non traduit.",
     "placeholders": {
@@ -964,27 +964,27 @@
       }
     }
   },
-  "rectoVersoIntro": "Ένας τροφοδότης μονής όψης παράγει δύο αρχεία: μονές σελίδες με σειρά, ζυγές σελίδες συχνά με αντίστροφη σειρά. Επιλέξτε και τα δύο για να τα ανασυνθέσετε.",
+  "rectoVersoIntro": "Ένας τροφοδότης μονής όψης δίνει δύο αρχεία: τις μονές σελίδες στη σειρά και τις ζυγές συχνά σε αντίστροφη σειρά. Επιλέξτε και τα δύο για να τις ανασυνθέσετε.",
   "@rectoVersoIntro": {
     "description": "Consigne en tête de l'outil Recto-verso, qui explique d'où viennent les deux fichiers attendus."
   },
-  "rectoVersoOddSlot": "Αρχείο Μονών Σελίδων (Μονής Όψης)",
+  "rectoVersoOddSlot": "Αρχείο μονών σελίδων (εμπρός όψη)",
   "@rectoVersoOddSlot": {
     "description": "Intitulé de la première case : le scan des pages 1, 3, 5…"
   },
-  "rectoVersoEvenSlot": "Αρχείο ζυγών σελίδων (πίσω)",
+  "rectoVersoEvenSlot": "Αρχείο ζυγών σελίδων (πίσω όψη)",
   "@rectoVersoEvenSlot": {
     "description": "Intitulé de la seconde case : le scan des pages 2, 4, 6…"
   },
-  "rectoVersoReversed": "Το δεύτερο αρχείο έχει αντίστροφη σειρά",
+  "rectoVersoReversed": "Το δεύτερο αρχείο είναι σε αντίστροφη σειρά",
   "@rectoVersoReversed": {
     "description": "Intitulé de l'interrupteur qui retourne l'ordre des pages paires."
   },
-  "rectoVersoReversedHint": "Αυτή είναι η πιο συνηθισμένη περίπτωση, που ελέγχεται από προεπιλογή",
+  "rectoVersoReversedHint": "Είναι η πιο συνηθισμένη περίπτωση, επιλεγμένη από προεπιλογή",
   "@rectoVersoReversedHint": {
     "description": "Sous-titre de l'interrupteur, qui justifie sa valeur par défaut."
   },
-  "rectoVersoPreview": "Επισκόπηση παρεμβολής ({count} σελίδες)",
+  "rectoVersoPreview": "Προεπισκόπηση εναλλαγής ({count, plural, one{{count} σελίδα} other{{count} σελίδες}})",
   "@rectoVersoPreview": {
     "description": "Titre de la bande de vignettes qui montre le résultat de l'entrelacement.",
     "placeholders": {
@@ -993,11 +993,11 @@
       }
     }
   },
-  "rectoVersoProgress": "Η παρέμβαση σε εξέλιξη…",
+  "rectoVersoProgress": "Εναλλαγή σελίδων σε εξέλιξη…",
   "@rectoVersoProgress": {
     "description": "Titre de la boîte de progression pendant l'entrelacement. Garder le caractère de suspension final."
   },
-  "fileWithPageCount": "{name} · {count} σελίδες",
+  "fileWithPageCount": "{name} · {count, plural, one{{count} σελίδα} other{{count} σελίδες}}",
   "@fileWithPageCount": {
     "description": "Sous-titre d'une carte de fichier : son nom, puis son nombre de pages. Le point médian est un séparateur typographique.",
     "placeholders": {
@@ -1013,7 +1013,7 @@
   "@actionPreviewAndExport": {
     "description": "Bouton de bas d'écran qui mène à l'écran d'aperçu. Doit tenir sur une ligne."
   },
-  "errorOpenFailedShort": "Δεν είναι δυνατό το άνοιγμα: {detail}",
+  "errorOpenFailedShort": "Δεν ήταν δυνατό το άνοιγμα: {detail}",
   "@errorOpenFailedShort": {
     "description": "Variante brève du bandeau d'erreur d'ouverture. {detail} est un message technique non traduit.",
     "placeholders": {
@@ -1022,7 +1022,7 @@
       }
     }
   },
-  "errorGeneric": "Απέτυχε: {detail}",
+  "errorGeneric": "Αποτυχία: {detail}",
   "@errorGeneric": {
     "description": "Bandeau d'erreur générique, quand l'écran n'a rien de plus précis à dire. {detail} est un message technique non traduit.",
     "placeholders": {
@@ -1035,23 +1035,23 @@
   "@actionConvertToPdf": {
     "description": "Bouton de bas d'écran des outils de conversion vers le PDF. Doit tenir sur une ligne."
   },
-  "convertProgress": "Μετατροπή σε εξέλιξη...",
+  "convertProgress": "Μετατροπή σε εξέλιξη…",
   "@convertProgress": {
     "description": "Titre de la boîte de progression pendant une conversion de format. Garder le caractère de suspension final."
   },
-  "excelEmptyTitle": "Ένα βιβλίο εργασίας PDF",
+  "excelEmptyTitle": "Ένα βιβλίο εργασίας σε PDF",
   "@excelEmptyTitle": {
     "description": "Titre de l'écran vide de l'outil Excel vers PDF."
   },
-  "excelEmptyBody": "Τα φύλλα σε ένα αρχείο .xlsx γίνονται σελίδες PDF, έτοιμες για αποστολή ή εκτύπωση.",
+  "excelEmptyBody": "Τα φύλλα ενός αρχείου .xlsx γίνονται σελίδες PDF, έτοιμες για αποστολή ή εκτύπωση.",
   "@excelEmptyBody": {
     "description": "Consigne de l'écran vide de l'outil Excel vers PDF. « .xlsx » est une extension de fichier, à conserver telle quelle."
   },
-  "excelChooseWorkbook": "Επιλέξτε ένα συνδετικό",
+  "excelChooseWorkbook": "Επιλογή βιβλίου εργασίας",
   "@excelChooseWorkbook": {
     "description": "Bouton principal de l'écran vide de l'outil Excel vers PDF."
   },
-  "excelChooseXlsx": "Επιλέξτε ένα βιβλίο εργασίας .xlsx",
+  "excelChooseXlsx": "Επιλογή βιβλίου εργασίας .xlsx",
   "@excelChooseXlsx": {
     "description": "Intitulé de la rangée de fichier tant qu'aucun classeur n'est choisi. « .xlsx » est une extension, à conserver."
   },
@@ -1063,7 +1063,7 @@
   "@excelWrongFormat": {
     "description": "Bandeau d'erreur quand le fichier choisi n'est pas un classeur."
   },
-  "excelUnreadable": "Μη αναγνώσιμος φάκελος: {detail}",
+  "excelUnreadable": "Το βιβλίο εργασίας δεν είναι αναγνώσιμο: {detail}",
   "@excelUnreadable": {
     "description": "Bandeau d'erreur quand le classeur ne peut pas être décodé. {detail} est un message technique non traduit.",
     "placeholders": {
@@ -1072,7 +1072,7 @@
       }
     }
   },
-  "excelSheetsAndRows": "{sheets} φύλλα · {rows} σειρές συνολικά",
+  "excelSheetsAndRows": "{sheets, plural, one{{sheets} φύλλο} other{{sheets} φύλλα}} · {rows, plural, one{{rows} γραμμή συνολικά} other{{rows} γραμμές συνολικά}}",
   "@excelSheetsAndRows": {
     "description": "Sous-titre de la rangée de fichier : combien de feuilles et combien de lignes en tout. Le point médian est un séparateur typographique.",
     "placeholders": {
@@ -1084,15 +1084,15 @@
       }
     }
   },
-  "excelSheetsDetected": "Εντοπίστηκαν φύλλα",
+  "excelSheetsDetected": "Φύλλα που εντοπίστηκαν",
   "@excelSheetsDetected": {
     "description": "Intitulé de la liste des feuilles trouvées dans le classeur."
   },
-  "excelEmptySheet": "Άδειο φύλλο",
+  "excelEmptySheet": "Κενό φύλλο",
   "@excelEmptySheet": {
     "description": "Sous-titre d'une feuille qui ne contient aucune ligne."
   },
-  "excelSheetDimensions": "{rows} σειρές × {columns} στήλες",
+  "excelSheetDimensions": "{rows, plural, one{{rows} γραμμή} other{{rows} γραμμές}} × {columns, plural, one{{columns} στήλη} other{{columns} στήλες}}",
   "@excelSheetDimensions": {
     "description": "Sous-titre d'une feuille : ses dimensions. Le signe × est le symbole de multiplication.",
     "placeholders": {
@@ -1104,27 +1104,27 @@
       }
     }
   },
-  "excelRepeatHeader": "Επαναλάβετε τη γραμμή κεφαλίδας σε κάθε σελίδα",
+  "excelRepeatHeader": "Επανάληψη της γραμμής επικεφαλίδας σε κάθε σελίδα",
   "@excelRepeatHeader": {
     "description": "Intitulé de l'interrupteur qui redessine la première ligne en haut de chaque page."
   },
-  "excelRepeatHeaderHint": "Η πρώτη σειρά του φύλλου σχεδιάζεται εκ νέου στην κορυφή κάθε σελίδας πίνακα.",
+  "excelRepeatHeaderHint": "Η πρώτη γραμμή του φύλλου σχεδιάζεται ξανά στο πάνω μέρος κάθε σελίδας του πίνακα.",
   "@excelRepeatHeaderHint": {
     "description": "Sous-titre de l'interrupteur de répétition d'en-tête."
   },
-  "excelCaveat": "Τι χρειάζεται η μετατροπή: το κείμενο των κελιών όπως είναι αποθηκευμένο στο αρχείο (συμπεριλαμβανομένου του τελευταίου υπολογισμένου αποτελέσματος των τύπων), την πρώτη έντονη γραμμή και ένα πλέγμα.\n\nΤι δεν περιλαμβάνεται: χρώματα, γραμματοσειρές, μορφές αριθμών, συγχωνευμένα κελιά, εικόνες, γραφικά και οι ίδιοι οι τύποι. Οι στήλες μειώνονται για να ταιριάζουν στο πλάτος της σελίδας. σε πολύ πλατιά φύλλα, το κείμενο σε κελιά που είναι πολύ στενά περικόπτεται με \"...\".",
+  "excelCaveat": "Τι αναπαράγει η μετατροπή: το κείμενο των κελιών όπως είναι αποθηκευμένο στο αρχείο (μαζί με το τελευταίο υπολογισμένο αποτέλεσμα των τύπων), την πρώτη γραμμή με έντονη γραφή και ένα πλέγμα.\n\nΤι δεν αναπαράγει: χρώματα, γραμματοσειρές, μορφές αριθμών, συγχωνευμένα κελιά, εικόνες, γραφήματα και τους ίδιους τους τύπους. Οι στήλες συρρικνώνονται για να χωρέσουν στο πλάτος της σελίδας· σε πολύ φαρδιά φύλλα, το κείμενο των πολύ στενών κελιών περικόπτεται με «…».",
   "@excelCaveat": {
     "description": "Ce que la conversion sait et ne sait pas faire. Les deux paragraphes sont séparés par une ligne vide — gardez le double saut de ligne. C'est le passage qui évite la déception, ne l'allégez pas."
   },
-  "pptxEmptyTitle": "Παρουσίαση σε PDF",
+  "pptxEmptyTitle": "Μια παρουσίαση σε PDF",
   "@pptxEmptyTitle": {
     "description": "Titre de l'écran vide de l'outil PowerPoint vers PDF."
   },
-  "pptxEmptyBody": "Μία οριζόντια σελίδα 16:9 ανά διαφάνεια, συμπεριλαμβανομένων του τίτλου και των κουκκίδων. Το κείμενο επαναλαμβάνεται. οι αρχικές εικόνες, τα σχήματα και τα φόντο δεν είναι.\n\nΑποδεκτή μορφή: .pptx. Ένα παλιό αρχείο .ppt πρέπει πρώτα να αποθηκευτεί ξανά ως .pptx από το PowerPoint.",
+  "pptxEmptyBody": "Μία οριζόντια σελίδα 16:9 ανά διαφάνεια, με τον τίτλο και τις κουκκίδες. Το κείμενο αναπαράγεται· οι αρχικές εικόνες, τα σχήματα και τα φόντα όχι.\n\nΑποδεκτή μορφή: .pptx. Ένα παλιό αρχείο .ppt πρέπει πρώτα να αποθηκευτεί ξανά ως .pptx από το PowerPoint.",
   "@pptxEmptyBody": {
     "description": "Consigne de l'écran vide de l'outil PowerPoint vers PDF. Les deux paragraphes sont séparés par une ligne vide — gardez le double saut de ligne. « 16:9 », « .pptx » et « .ppt » sont à conserver tels quels."
   },
-  "pptxChoosePresentation": "Επιλέξτε μια παρουσίαση",
+  "pptxChoosePresentation": "Επιλογή παρουσίασης",
   "@pptxChoosePresentation": {
     "description": "Bouton principal de l'écran vide de l'outil PowerPoint vers PDF."
   },
@@ -1132,11 +1132,11 @@
   "@pptxTextOnlyTitle": {
     "description": "Titre de la carte d'avertissement affichée une fois la présentation chargée."
   },
-  "pptxTextOnlyBody": "Το κείμενο κάθε διαφάνειας επαναλαμβάνεται. Οι αρχικές εικόνες, τα σχήματα, τα φόντο, τα χρώματα και οι διατάξεις δεν διατηρούνται: το PDF που προκύπτει είναι μια απλή, ευανάγνωστη διάταξη, όχι ένα πιστό αντίγραφο της παρουσίασής σας.",
+  "pptxTextOnlyBody": "Το κείμενο κάθε διαφάνειας αναπαράγεται. Οι αρχικές εικόνες, τα σχήματα, τα φόντα, τα χρώματα και οι διατάξεις δεν διατηρούνται: το PDF που προκύπτει έχει μια απλή, ευανάγνωστη διάταξη, όχι ένα πιστό αντίγραφο της παρουσίασής σας.",
   "@pptxTextOnlyBody": {
     "description": "Corps de la carte d'avertissement. Dit clairement ce que l'outil ne fait pas — ne l'allégez pas."
   },
-  "pptxSlideCount": "{count} διαφάνειες",
+  "pptxSlideCount": "{count, plural, one{{count} διαφάνεια} other{{count} διαφάνειες}}",
   "@pptxSlideCount": {
     "description": "Sous-titre de la rangée de fichier : combien de diapositives ont été trouvées.",
     "placeholders": {
@@ -1145,11 +1145,11 @@
       }
     }
   },
-  "pptxSlidesDetected": "Εντοπίστηκαν διαφάνειες",
+  "pptxSlidesDetected": "Διαφάνειες που εντοπίστηκαν",
   "@pptxSlidesDetected": {
     "description": "Intitulé de la liste des diapositives trouvées dans la présentation."
   },
-  "pptxMoreSlides": "και {count} άλλες διαφάνειες…",
+  "pptxMoreSlides": "και {count, plural, one{{count} ακόμη διαφάνεια} other{{count} ακόμη διαφάνειες}}…",
   "@pptxMoreSlides": {
     "description": "Affiché sous la liste quand la présentation compte plus de trente diapositives et que l'aperçu s'arrête là. Garder le caractère de suspension final.",
     "placeholders": {
@@ -1166,7 +1166,7 @@
   "@pptxEmptySlide": {
     "description": "Sous-titre d'une diapositive dont l'outil n'a extrait aucun texte."
   },
-  "pptxTextLineCount": "{count} γραμμές κειμένου",
+  "pptxTextLineCount": "{count, plural, one{{count} γραμμή κειμένου} other{{count} γραμμές κειμένου}}",
   "@pptxTextLineCount": {
     "description": "Sous-titre d'une diapositive : combien de lignes de texte elle porte.",
     "placeholders": {
@@ -1175,7 +1175,7 @@
       }
     }
   },
-  "pptxReadFailed": "Δεν είναι δυνατή η ανάγνωση: {detail}",
+  "pptxReadFailed": "Η ανάγνωση απέτυχε: {detail}",
   "@pptxReadFailed": {
     "description": "Bandeau d'erreur quand la présentation ne peut pas être décodée. {detail} est un message technique non traduit.",
     "placeholders": {
@@ -1184,35 +1184,35 @@
       }
     }
   },
-  "compressLevelLight": "Φως",
+  "compressLevelLight": "Ελαφριά",
   "@compressLevelLight": {
     "description": "Niveau de compression le plus doux. Adjectif accordé à « compression » ; si votre langue ne permet pas l'adjectif seul, écrivez « Compression légère »."
   },
-  "compressLevelMedium": "Μέσος",
+  "compressLevelMedium": "Μεσαία",
   "@compressLevelMedium": {
     "description": "Niveau de compression intermédiaire. Adjectif accordé à « compression »."
   },
-  "compressLevelStrong": "Φόρτε",
+  "compressLevelStrong": "Ισχυρή",
   "@compressLevelStrong": {
     "description": "Niveau de compression le plus agressif. Adjectif accordé à « compression »."
   },
-  "pptxQualityStandard": "Τυπικό (150 dpi)",
+  "pptxQualityStandard": "Κανονική (150 dpi)",
   "@pptxQualityStandard": {
     "description": "Réglage de résolution par défaut de l'export PowerPoint. « dpi » est un sigle international, à conserver."
   },
-  "pptxQualityHigh": "Υψηλό (220 dpi)",
+  "pptxQualityHigh": "Υψηλή (220 dpi)",
   "@pptxQualityHigh": {
     "description": "Réglage de résolution élevée de l'export PowerPoint. « dpi » est un sigle international, à conserver."
   },
-  "pdfToExcelEmptyTitle": "Ανάκτηση πινάκων",
+  "pdfToExcelEmptyTitle": "Ανάκτηση των πινάκων",
   "@pdfToExcelEmptyTitle": {
     "description": "Titre de l'écran vide de l'outil PDF vers Excel."
   },
-  "pdfToExcelEmptyBody": "Οι πίνακες από ένα PDF εξάγονται σε ένα βιβλίο εργασίας του Excel. Η μορφοποίηση δεν διατηρείται, οι τιμές είναι.",
+  "pdfToExcelEmptyBody": "Οι πίνακες ενός PDF εξάγονται σε βιβλίο εργασίας του Excel. Η μορφοποίηση δεν διατηρείται· οι τιμές διατηρούνται.",
   "@pdfToExcelEmptyBody": {
     "description": "Consigne de l'écran vide de l'outil PDF vers Excel."
   },
-  "pdfToExcelPagesAnalyzed": "Αναλύθηκαν {count} σελίδες",
+  "pdfToExcelPagesAnalyzed": "{count, plural, one{{count} σελίδα αναλύθηκε} other{{count} σελίδες αναλύθηκαν}}",
   "@pdfToExcelPagesAnalyzed": {
     "description": "Sous-titre de la carte du fichier une fois l'inspection faite.",
     "placeholders": {
@@ -1221,7 +1221,7 @@
       }
     }
   },
-  "pdfToExcelAnalysisFailed": "Αδύνατη η ανάλυση. Το PDF ενδέχεται να προστατεύεται με κωδικό πρόσβασης ή να έχει καταστραφεί. ({detail})",
+  "pdfToExcelAnalysisFailed": "Η ανάλυση απέτυχε. Το PDF μπορεί να προστατεύεται με κωδικό ή να είναι κατεστραμμένο. ({detail})",
   "@pdfToExcelAnalysisFailed": {
     "description": "Bandeau d'erreur quand l'inspection échoue. {detail} est un message technique non traduit.",
     "placeholders": {
@@ -1230,7 +1230,7 @@
       }
     }
   },
-  "pdfToExcelNothingToExport": "Δεν υπάρχει τίποτα για εξαγωγή: δεν εντοπίστηκε πίνακας.",
+  "pdfToExcelNothingToExport": "Τίποτα προς εξαγωγή: δεν εντοπίστηκε πίνακας.",
   "@pdfToExcelNothingToExport": {
     "description": "Bandeau d'erreur quand on lance la conversion sans qu'aucun tableau n'ait été reconnu."
   },
@@ -1238,23 +1238,23 @@
   "@pdfToExcelBuilding": {
     "description": "Titre de la boîte de progression pendant la construction du classeur. Garder le caractère de suspension final."
   },
-  "pdfToExcelIncludeParagraphs": "Συμπεριλάβετε επίσης κείμενο εκτός πινάκων (μία γραμμή ανά παράγραφο)",
+  "pdfToExcelIncludeParagraphs": "Συμπερίληψη και του κειμένου εκτός πινάκων (μία γραμμή ανά παράγραφο)",
   "@pdfToExcelIncludeParagraphs": {
     "description": "Intitulé de l'interrupteur qui verse le texte courant dans le classeur."
   },
-  "pdfToExcelIncludeParagraphsHint": "Χρήσιμο για ένα ημιδομημένο έγγραφο: το κείμενο τοποθετείται στη στήλη Α, μετά τους πίνακες της σελίδας.",
+  "pdfToExcelIncludeParagraphsHint": "Χρήσιμο για ημιδομημένα έγγραφα: το κείμενο τοποθετείται στη στήλη A, μετά τους πίνακες της σελίδας.",
   "@pdfToExcelIncludeParagraphsHint": {
     "description": "Sous-titre de l'interrupteur. « colonne A » désigne la première colonne du tableur."
   },
-  "pdfToExcelCaveatTitle": "Αυτό που δεν διατηρεί η μετατροπή",
+  "pdfToExcelCaveatTitle": "Τι δεν διατηρεί η μετατροπή",
   "@pdfToExcelCaveatTitle": {
     "description": "Intitulé du paragraphe qui énumère les limites de l'extraction."
   },
-  "pdfToExcelCaveat": "Η ανίχνευση βασίζεται στη θέση του κειμένου στη σελίδα: οι πίνακες χωρίς κανονικό περίγραμμα, συγχωνευμένα κελιά και πολύ ακανόνιστες στήλες ενδέχεται να έχουν κακή κοπή. Ένα σαρωμένο PDF (εικόνα) δεν περιέχει κείμενο με δυνατότητα εξαγωγής και δεν θα αποφέρει τίποτα. Τα χρώματα, οι τύποι και οι εικόνες δεν περιλαμβάνονται ποτέ: περιλαμβάνονται μόνο οι τιμές κειμένου.",
+  "pdfToExcelCaveat": "Ο εντοπισμός βασίζεται στη θέση του κειμένου στη σελίδα: πίνακες χωρίς κανονικά περιγράμματα, συγχωνευμένα κελιά και πολύ ακανόνιστες στήλες μπορεί να κοπούν λάθος. Ένα σαρωμένο PDF (εικόνα) δεν περιέχει εξαγώγιμο κείμενο και δεν θα δώσει τίποτα. Χρώματα, τύποι και εικόνες δεν αναπαράγονται ποτέ: μόνο οι τιμές κειμένου.",
   "@pdfToExcelCaveat": {
     "description": "Limites de l'extraction de tableaux, dites avant qu'on lance la conversion. Ne l'allégez pas."
   },
-  "pdfToExcelTablesFound": "Εντοπίστηκαν πίνακες {tables} σε {pages} σελίδες",
+  "pdfToExcelTablesFound": "{tables, plural, one{{tables} πίνακας εντοπίστηκε} other{{tables} πίνακες εντοπίστηκαν}} σε {pages, plural, one{{pages} σελίδα} other{{pages} σελίδες}}",
   "@pdfToExcelTablesFound": {
     "description": "Résumé de l'inspection : combien de tableaux, sur combien de pages.",
     "placeholders": {
@@ -1266,7 +1266,7 @@
       }
     }
   },
-  "pdfToExcelPagesConcerned": "Σελίδες που επηρεάζονται: {pages}",
+  "pdfToExcelPagesConcerned": "Σελίδες που αφορά: {pages}",
   "@pdfToExcelPagesConcerned": {
     "description": "Liste des numéros de page qui portent un tableau. {pages} est déjà formaté (« 1, 3, 7… »).",
     "placeholders": {
@@ -1275,7 +1275,7 @@
       }
     }
   },
-  "pdfToExcelParagraphsOutside": "{count} παράγραφοι εκτός πινάκων",
+  "pdfToExcelParagraphsOutside": "{count, plural, one{{count} παράγραφος εκτός πινάκων} other{{count} παράγραφοι εκτός πινάκων}}",
   "@pdfToExcelParagraphsOutside": {
     "description": "Résumé de l'inspection : combien de paragraphes vivent en dehors des tableaux.",
     "placeholders": {
@@ -1284,19 +1284,19 @@
       }
     }
   },
-  "pdfToExcelScannedWarning": "Δεν ήταν δυνατή η εξαγωγή κειμένου από αυτό το PDF: πιθανότατα πρόκειται για σαρωμένο έγγραφο (εικόνες σελίδας). Ένα υπολογιστικό φύλλο δεν μπορεί να βγάλει τίποτα από αυτό. χρησιμοποιήστε πρώτα το εργαλείο αναγνώρισης κειμένου (OCR).",
+  "pdfToExcelScannedWarning": "Δεν ήταν δυνατή η εξαγωγή κειμένου από αυτό το PDF: πρόκειται σχεδόν σίγουρα για σαρωμένο έγγραφο (εικόνες σελίδων). Ένα υπολογιστικό φύλλο δεν μπορεί να βγάλει τίποτα από αυτό· χρησιμοποιήστε πρώτα το εργαλείο αναγνώρισης κειμένου (OCR).",
   "@pdfToExcelScannedWarning": {
     "description": "Avertissement quand le PDF est un scan sans couche de texte. « OCR » est un sigle international, à conserver."
   },
-  "pdfToExcelNoTableWarning": "Δεν αναγνωρίστηκε δομή πίνακα σε αυτό το έγγραφο. Το κείμενο υπάρχει, αλλά δεν είναι ταξινομημένο σε κανονικές στήλες. Αντί να δημιουργήσετε ένα μη αναγνώσιμο βιβλίο εργασίας, ενεργοποιήστε την επιλογή \"Συμπεριλαμβάνεται επίσης κείμενο μη πίνακα\" παραπάνω ή χρησιμοποιήστε το \"PDF σε Word\" που διατηρεί καλύτερα τις παραγράφους.",
+  "pdfToExcelNoTableWarning": "Δεν αναγνωρίστηκε καμία δομή πίνακα σε αυτό το έγγραφο. Το κείμενο υπάρχει, αλλά δεν είναι τοποθετημένο σε κανονικές στήλες. Αντί να παραχθεί ένα μη αναγνώσιμο βιβλίο εργασίας, ενεργοποιήστε την επιλογή «Συμπερίληψη και του κειμένου εκτός πινάκων» παραπάνω ή χρησιμοποιήστε το «PDF σε Word» που διατηρεί καλύτερα τις παραγράφους.",
   "@pdfToExcelNoTableWarning": {
     "description": "Avertissement quand le texte existe mais n'est pas tabulaire. Les deux citations entre guillemets doivent reprendre exactement les libellés traduits correspondants (pdfToExcelIncludeParagraphs et toolPdfToWord)."
   },
-  "pdfToExcelResultTitle": "Έτοιμο συνδετικό",
+  "pdfToExcelResultTitle": "Βιβλίο εργασίας έτοιμο",
   "@pdfToExcelResultTitle": {
     "description": "Titre de la carte de résultat, une fois le classeur produit."
   },
-  "pdfToExcelExportWhat": "Βιβλίο εργασίας του Excel",
+  "pdfToExcelExportWhat": "Βιβλίο εργασίας Excel",
   "@pdfToExcelExportWhat": {
     "description": "Description de ce qui vient d'être enregistré, dans la feuille de confirmation."
   },
@@ -1320,11 +1320,11 @@
   "@pdfToPptxEmptyTitle": {
     "description": "Titre de l'écran vide de l'outil PDF vers PowerPoint."
   },
-  "pdfToPptxEmptyBody": "Το PDF γίνεται μια πανομοιότυπη παρουσίαση PowerPoint. Κάθε σελίδα έρχεται με τη μορφή εικόνας: η διάταξη είναι πιστή, αλλά το κείμενο δεν θα είναι επεξεργάσιμο στο PowerPoint.",
+  "pdfToPptxEmptyBody": "Το PDF γίνεται πανομοιότυπη παρουσίαση PowerPoint. Κάθε σελίδα φτάνει ως εικόνα: η διάταξη είναι πιστή, αλλά το κείμενο δεν θα είναι επεξεργάσιμο στο PowerPoint.",
   "@pdfToPptxEmptyBody": {
     "description": "Consigne de l'écran vide de l'outil PDF vers PowerPoint. Le compromis annoncé — mise en page fidèle contre texte figé — est le point essentiel."
   },
-  "pdfToPptxOpenFailed": "Δεν είναι δυνατό το άνοιγμα αυτού του PDF: {detail}",
+  "pdfToPptxOpenFailed": "Δεν ήταν δυνατό το άνοιγμα αυτού του PDF: {detail}",
   "@pdfToPptxOpenFailed": {
     "description": "Bandeau d'erreur quand le PDF ne peut pas être lu. {detail} est un message technique non traduit.",
     "placeholders": {
@@ -1337,7 +1337,7 @@
   "@pdfToPptxConverting": {
     "description": "Titre de la boîte de progression pendant la conversion. Garder le caractère de suspension final."
   },
-  "pdfToPptxPagesToSlides": "{count} σελίδες > {count} διαφάνειες",
+  "pdfToPptxPagesToSlides": "{count, plural, one{{count} σελίδα} other{{count} σελίδες}} > {count, plural, one{{count} διαφάνεια} other{{count} διαφάνειες}}",
   "@pdfToPptxPagesToSlides": {
     "description": "Sous-titre de la carte du fichier : autant de diapositives que de pages. Le chevron simple et non une flèche → : celle-ci manque au sous-ensemble des fontes embarquées. Voir test/l10n_coverage_test.dart.",
     "placeholders": {
@@ -1354,11 +1354,11 @@
   "@qualityLabel": {
     "description": "Intitulé du groupe de boutons qui choisit la résolution de sortie."
   },
-  "pdfToPptxQualityHint": "Μια υψηλότερη ανάλυση έχει ως αποτέλεσμα πιο ευκρινείς διαφάνειες αλλά ένα σημαντικά μεγαλύτερο αρχείο.",
+  "pdfToPptxQualityHint": "Μια υψηλότερη ανάλυση δίνει πιο ευκρινείς διαφάνειες αλλά αισθητά βαρύτερο αρχείο.",
   "@pdfToPptxQualityHint": {
     "description": "Explication sous le choix de qualité, dans le cas ordinaire."
   },
-  "pdfToPptxHeavyWarning": "Προειδοποίηση: σε υψηλή ποιότητα, μια παρουσίαση {count} σελίδων μπορεί να ζυγίζει αρκετές δεκάδες MB και να χρειαστεί πολύς χρόνος για να ανοίξει. Επιλέξτε Standard όταν έχετε αμφιβολίες.",
+  "pdfToPptxHeavyWarning": "Προσοχή: σε υψηλή ποιότητα, μια παρουσίαση {count, plural, one{{count} σελίδας} other{{count} σελίδων}} μπορεί να ζυγίζει δεκάδες MB και να αργεί να ανοίξει. Επιλέξτε Κανονική αν έχετε αμφιβολία.",
   "@pdfToPptxHeavyWarning": {
     "description": "Avertissement affiché en rouge quand haute qualité et document long se combinent. « Standard » doit reprendre le libellé traduit de pptxQualityStandard. « Mo » est l'abréviation de méga-octet — employez celle de votre langue.",
     "placeholders": {
@@ -1367,19 +1367,19 @@
       }
     }
   },
-  "goodToKnow": "Δηλαδή",
+  "goodToKnow": "Καλό να ξέρετε",
   "@goodToKnow": {
     "description": "Titre d'une carte d'information neutre."
   },
-  "pdfToPptxCaveat": "Κάθε διαφάνεια είναι μια εικόνα της σελίδας: η διάταξη είναι ίδια με το PDF, αλλά το κείμενο δεν θα είναι επεξεργάσιμο στο PowerPoint.\nΓια να ανακτήσετε επεξεργάσιμο κείμενο, χρησιμοποιήστε αντί αυτού το \"PDF σε Word\".\nΜια παρουσίαση έχει μόνο μία μορφή διαφάνειας: λαμβάνεται από την πρώτη σελίδα και σελίδες διαφορετικών μορφών βρίσκονται στο κέντρο της.",
+  "pdfToPptxCaveat": "Κάθε διαφάνεια είναι εικόνα της σελίδας: η διάταξη είναι ίδια με το PDF, αλλά το κείμενο δεν θα είναι επεξεργάσιμο στο PowerPoint.\nΓια να ανακτήσετε επεξεργάσιμο κείμενο, χρησιμοποιήστε το «PDF σε Word».\nΜια παρουσίαση έχει μόνο μία μορφή διαφάνειας: λαμβάνεται από την πρώτη σελίδα, και οι σελίδες διαφορετικής μορφής κεντράρονται μέσα σε αυτήν.",
   "@pdfToPptxCaveat": {
     "description": "Trois limites de la conversion, une par ligne — gardez les sauts de ligne simples. « PDF vers Word » doit reprendre le libellé traduit de toolPdfToWord."
   },
-  "pdfToPptxResultTitle": "Έτοιμη η παρουσίαση",
+  "pdfToPptxResultTitle": "Παρουσίαση έτοιμη",
   "@pdfToPptxResultTitle": {
     "description": "Titre de la carte de résultat, une fois la présentation produite."
   },
-  "pdfToPptxResultDetail": "{name} — {count} διαφάνειες · {size} · {quality}",
+  "pdfToPptxResultDetail": "{name} — {count, plural, one{{count} διαφάνεια} other{{count} διαφάνειες}} · {size} · {quality}",
   "@pdfToPptxResultDetail": {
     "description": "Détail de la carte de résultat : nom, nombre de diapositives, poids et réglage de qualité. Le point médian est un séparateur typographique.",
     "placeholders": {
@@ -1397,7 +1397,7 @@
       }
     }
   },
-  "notSavedYet": "Το αρχείο δεν βρίσκεται ακόμα στη συσκευή σας: αποθηκεύστε το ή μοιραστείτε το.",
+  "notSavedYet": "Το αρχείο δεν βρίσκεται ακόμη στη συσκευή σας: αποθηκεύστε το ή μοιραστείτε το.",
   "@notSavedYet": {
     "description": "Rappel sous la carte de résultat : le fichier existe en mémoire mais n'a pas encore été écrit."
   },
@@ -1409,7 +1409,7 @@
   "@pdfToPptxConvertAction": {
     "description": "Bouton de bas d'écran qui lance la conversion. Doit tenir sur une ligne."
   },
-  "pdfToPptxExportWhat": "Παρουσίαση PowerPoint · {count} διαφάνειες",
+  "pdfToPptxExportWhat": "Παρουσίαση PowerPoint · {count, plural, one{{count} διαφάνεια} other{{count} διαφάνειες}}",
   "@pdfToPptxExportWhat": {
     "description": "Description de ce qui vient d'être enregistré, dans la feuille de confirmation.",
     "placeholders": {
@@ -1418,7 +1418,7 @@
       }
     }
   },
-  "formatLabel": "Σχήμα και διάταξις βιβλίου",
+  "formatLabel": "Μορφή",
   "@formatLabel": {
     "description": "Intitulé du groupe de boutons qui choisit le format de sortie."
   },
@@ -1426,11 +1426,11 @@
   "@actionExport": {
     "description": "Bouton qui lance la production des fichiers. Verbe à l'infinitif, court."
   },
-  "imageQualityWeb": "Ιστός (72 dpi)",
+  "imageQualityWeb": "Ιστού (72 dpi)",
   "@imageQualityWeb": {
     "description": "Résolution la plus basse de l'export en images, destinée à l'écran. « dpi » est un sigle international, à conserver."
   },
-  "imageQualityStandard": "Τυπικό (150 dpi)",
+  "imageQualityStandard": "Κανονική (150 dpi)",
   "@imageQualityStandard": {
     "description": "Résolution intermédiaire de l'export en images. « dpi » est un sigle international, à conserver."
   },
@@ -1442,11 +1442,11 @@
   "@pdfToImagesEmptyTitle": {
     "description": "Titre de l'écran vide de l'outil PDF vers Images."
   },
-  "pdfToImagesEmptyBody": "Επιλέξτε ένα PDF: κάθε σελίδα θα βγει ως εικόνα, με τον ορισμό που θα προσαρμόσετε στη συνέχεια.",
+  "pdfToImagesEmptyBody": "Επιλέξτε ένα PDF: κάθε σελίδα θα βγει ως εικόνα, στην ανάλυση που θα ρυθμίσετε στη συνέχεια.",
   "@pdfToImagesEmptyBody": {
     "description": "Consigne de l'écran vide de l'outil PDF vers Images."
   },
-  "pdfToImagesNotAPdf": "{name}: Επιλέξτε ένα αρχείο PDF.",
+  "pdfToImagesNotAPdf": "{name}: επιλέξτε ένα αρχείο PDF.",
   "@pdfToImagesNotAPdf": {
     "description": "Bandeau d'erreur quand le fichier choisi n'est pas un PDF.",
     "placeholders": {
@@ -1455,7 +1455,7 @@
       }
     }
   },
-  "errorLoadFailed": "Αποτυχία φόρτωσης: {detail}",
+  "errorLoadFailed": "Η φόρτωση απέτυχε: {detail}",
   "@errorLoadFailed": {
     "description": "Bandeau d'erreur quand le fichier ne peut pas être chargé. {detail} est un message technique non traduit.",
     "placeholders": {
@@ -1468,7 +1468,7 @@
   "@pdfToImagesProgress": {
     "description": "Titre de la boîte de progression pendant le rendu des images. Garder le caractère de suspension final."
   },
-  "pdfToImagesExportWhat": "{count} εικόνες {format}",
+  "pdfToImagesExportWhat": "{count, plural, one{{count} εικόνα} other{{count} εικόνες}} {format}",
   "@pdfToImagesExportWhat": {
     "description": "Description de ce qui vient d'être enregistré : combien d'images, dans quel format. {format} vaut « JPG » ou « PNG » et ne se traduit pas.",
     "placeholders": {
@@ -1480,11 +1480,11 @@
       }
     }
   },
-  "pdfaEmptyTitle": "Αρχειοθέτηση για μεγάλο χρονικό διάστημα",
+  "pdfaEmptyTitle": "Αρχειοθέτηση για μακροχρόνια διατήρηση",
   "@pdfaEmptyTitle": {
     "description": "Titre de l'écran vide de l'outil Convertir en PDF/A."
   },
-  "pdfaEmptyBody": "Το PDF/A είναι η μορφή αρχειοθέτησης που απαιτείται από πολλές διοικήσεις. Το έγγραφο μετατρέπεται χωρίς να χάσει την εμφάνισή του.",
+  "pdfaEmptyBody": "Το PDF/A είναι η μορφή αρχειοθέτησης που απαιτούν πολλές δημόσιες υπηρεσίες. Το έγγραφο μετατρέπεται χωρίς να χάσει την εμφάνισή του.",
   "@pdfaEmptyBody": {
     "description": "Consigne de l'écran vide de l'outil Convertir en PDF/A. « PDF/A » est une norme ISO, à conserver telle quelle."
   },
@@ -1492,15 +1492,15 @@
   "@pdfaConformanceLevel": {
     "description": "Intitulé du groupe de boutons qui choisit la variante de la norme."
   },
-  "pdfaA1bDetail": "Το πιο αυστηρό και παγκοσμίως αποδεκτό επίπεδο. Επιλέξτε όταν έχετε αμφιβολίες.",
+  "pdfaA1bDetail": "Το πιο αυστηρό και πιο ευρέως αποδεκτό επίπεδο. Επιλέξτε το αν έχετε αμφιβολία.",
   "@pdfaA1bDetail": {
     "description": "Explication de la variante PDF/A-1b, affichée sous le choix."
   },
-  "pdfaA2bDetail": "Βασισμένο στο PDF 1.7: πιο αποτελεσματική συμπίεση, ελαφρώς ελαφρύτερα αρχεία.",
+  "pdfaA2bDetail": "Βασίζεται στο PDF 1.7: πιο αποδοτική συμπίεση, ελαφρώς μικρότερα αρχεία.",
   "@pdfaA2bDetail": {
     "description": "Explication de la variante PDF/A-2b. « PDF 1.7 » est un numéro de version, à conserver."
   },
-  "pdfaA3bDetail": "Όπως το A-2b, αλλά επιτρέπει συνημμένα (συχνά ζητούνται για ηλεκτρονική τιμολόγηση).",
+  "pdfaA3bDetail": "Όπως το A-2b, αλλά επιτρέπει συνημμένα (συχνά απαιτείται για την ηλεκτρονική τιμολόγηση).",
   "@pdfaA3bDetail": {
     "description": "Explication de la variante PDF/A-3b. « A-2b » désigne la variante précédente, à conserver."
   },
@@ -1517,7 +1517,7 @@
   "@pdfaCaveatTitle": {
     "description": "Titre de la carte qui énumère les effets de la conversion."
   },
-  "pdfaCaveat": "Κάθε σελίδα επανασχεδιάζεται ως εικόνα σε {dpi} dpi: το κείμενο γίνεται εικόνα, η διάταξη παγώνει. Αυτό είναι που κάνει το αρχείο πραγματικά συμβατό χωρίς να εξαρτάται από τις γραμματοσειρές του αρχικού εγγράφου, αλλά σε αντάλλαγμα το κείμενο δεν είναι πλέον επιλέξιμο ή αναζητήσιμο, οι σύνδεσμοι και οι φόρμες εξαφανίζονται και το αρχείο γίνεται βαρύτερο.",
+  "pdfaCaveat": "Κάθε σελίδα σχεδιάζεται ξανά ως εικόνα στα {dpi} dpi: το κείμενο γίνεται εικόνα και η διάταξη παγώνει. Αυτό κάνει το αρχείο πραγματικά συμμορφωμένο χωρίς να εξαρτάται από τις γραμματοσειρές του αρχικού εγγράφου, αλλά σε αντάλλαγμα το κείμενο δεν είναι πλέον επιλέξιμο ούτε αναζητήσιμο, οι σύνδεσμοι και οι φόρμες εξαφανίζονται και το αρχείο γίνεται βαρύτερο.",
   "@pdfaCaveat": {
     "description": "Le compromis de la conversion PDF/A, dit avant qu'on la lance. « dpi » est un sigle international. Ne l'allégez pas.",
     "placeholders": {
@@ -1526,7 +1526,7 @@
       }
     }
   },
-  "pdfaOpenFailed": "Δεν είναι δυνατό το άνοιγμα αυτού του PDF: {detail}",
+  "pdfaOpenFailed": "Δεν ήταν δυνατό το άνοιγμα αυτού του PDF: {detail}",
   "@pdfaOpenFailed": {
     "description": "Bandeau d'erreur quand le PDF ne peut pas être lu. {detail} est un message technique non traduit.",
     "placeholders": {
@@ -1535,15 +1535,15 @@
       }
     }
   },
-  "imagesToPdfEmptyTitle": "Εικόνες, ένα PDF",
+  "imagesToPdfEmptyTitle": "Εικόνες σε ένα PDF",
   "@imagesToPdfEmptyTitle": {
     "description": "Titre de l'écran vide de l'outil Images vers PDF."
   },
-  "imagesToPdfEmptyBody": "JPG, PNG, WebP, HEIC — προσθέστε τις εικόνες σας και θα συναρμολογηθούν με τη σειρά που επιλέγετε.",
+  "imagesToPdfEmptyBody": "JPG, PNG, WebP, HEIC — προσθέστε τις εικόνες σας και θα συναρμολογηθούν με τη σειρά που θα επιλέξετε.",
   "@imagesToPdfEmptyBody": {
     "description": "Consigne de l'écran vide de l'outil Images vers PDF. Les quatre noms de format ne se traduisent pas."
   },
-  "imagesToPdfChoose": "Επιλέξτε εικόνες",
+  "imagesToPdfChoose": "Επιλογή εικόνων",
   "@imagesToPdfChoose": {
     "description": "Bouton principal de l'écran vide de l'outil Images vers PDF."
   },
@@ -1551,7 +1551,7 @@
   "@imagesToPdfAdd": {
     "description": "Info-bulle du bouton flottant qui ajoute d'autres images à la liste."
   },
-  "imagesToPdfRejected": "Παράλειψη (όχι εικόνα): {names}",
+  "imagesToPdfRejected": "Παραλείφθηκε (δεν είναι εικόνα): {names}",
   "@imagesToPdfRejected": {
     "description": "Bandeau signalant les fichiers écartés parce qu'ils ne sont pas des images. {names} est une liste de noms séparés par des virgules.",
     "placeholders": {
@@ -1560,7 +1560,7 @@
       }
     }
   },
-  "imagesToPdfBuilding": "Δημιουργία PDF...",
+  "imagesToPdfBuilding": "Δημιουργία PDF…",
   "@imagesToPdfBuilding": {
     "description": "Titre de la boîte de progression pendant l'assemblage. Garder le caractère de suspension final."
   },
@@ -1573,7 +1573,7 @@
       }
     }
   },
-  "imagesToPdfCreateAction": "Δημιουργήστε το PDF ({count} εικόνες)",
+  "imagesToPdfCreateAction": "Δημιουργία PDF ({count, plural, one{{count} εικόνα} other{{count} εικόνες}})",
   "@imagesToPdfCreateAction": {
     "description": "Bouton de bas d'écran, avec le nombre d'images retenues entre parenthèses.",
     "placeholders": {
@@ -1582,11 +1582,11 @@
       }
     }
   },
-  "actionRotate": "Γυρίζω",
+  "actionRotate": "Περιστροφή",
   "@actionRotate": {
     "description": "Info-bulle du bouton qui fait tourner une image d'un quart de tour."
   },
-  "actionRemove": "Αποσύρω",
+  "actionRemove": "Αφαίρεση",
   "@actionRemove": {
     "description": "Info-bulle du bouton qui retire un élément de la liste."
   },
@@ -1594,11 +1594,11 @@
   "@htmlTitle": {
     "description": "Titre de la barre de l'outil Page web vers PDF. « HTML » est un sigle, à conserver."
   },
-  "htmlIntro": "Μετατρέψτε μια ιστοσελίδα ή έναν κώδικα HTML σε PDF A4. Η απόδοση πραγματοποιείται από το πρόγραμμα περιήγησης που είναι ενσωματωμένο στο Android, επομένως η διάταξη είναι αυτή της εκτύπωσης από το Chrome.",
+  "htmlIntro": "Μετατρέψτε μια ιστοσελίδα ή κώδικα HTML σε PDF A4. Η απόδοση γίνεται από το ενσωματωμένο πρόγραμμα περιήγησης του Android, οπότε η διάταξη είναι αυτή μιας εκτύπωσης από το Chrome.",
   "@htmlIntro": {
     "description": "Consigne en tête de l'outil. « A4 » est un format de papier, « Android » et « Chrome » des marques — à conserver."
   },
-  "htmlModeUrl": "Διεύθυνση ιστότοπου",
+  "htmlModeUrl": "Διεύθυνση ιστού",
   "@htmlModeUrl": {
     "description": "Onglet du sélecteur : fournir une adresse à télécharger. Court, il tient dans un segment."
   },
@@ -1610,7 +1610,7 @@
   "@htmlUrlLabel": {
     "description": "Intitulé du champ où l'on saisit l'adresse."
   },
-  "htmlUrlHint": "https://example.fr/article",
+  "htmlUrlHint": "https://example.gr/arthro",
   "@htmlUrlHint": {
     "description": "Exemple d'adresse affiché en filigrane dans le champ. Adaptez le domaine à votre langue (« example.com », « beispiel.de »…)."
   },
@@ -1622,7 +1622,7 @@
   "@htmlCodeHint": {
     "description": "Exemple de code affiché en filigrane. Les balises <h1> et <p> ne se traduisent pas ; seuls les mots entre elles le sont. Gardez le saut de ligne."
   },
-  "htmlUrlBadScheme": "Η διεύθυνση πρέπει να ξεκινά με http:// ή https://.",
+  "htmlUrlBadScheme": "Η διεύθυνση πρέπει να αρχίζει με http:// ή https://.",
   "@htmlUrlBadScheme": {
     "description": "Bandeau d'erreur quand l'adresse ne porte pas de protocole. « http:// » et « https:// » ne se traduisent pas."
   },
@@ -1638,27 +1638,27 @@
   "@htmlLoadingUrl": {
     "description": "Titre de la boîte de progression pendant le téléchargement puis le rendu. Garder le caractère de suspension final."
   },
-  "htmlConverting": "Μετατροπή HTML σε εξέλιξη...",
+  "htmlConverting": "Μετατροπή HTML σε εξέλιξη…",
   "@htmlConverting": {
     "description": "Titre de la boîte de progression pendant le rendu du code collé. Garder le caractère de suspension final."
   },
-  "htmlNetworkNotice": "Απαιτείται σύνδεση στο διαδίκτυο: είναι το μόνο εργαλείο στην εφαρμογή που πρέπει να κατεβάσει τη σελίδα. Σελίδες που απαιτούν σύνδεση λογαριασμού, banner cookie ή πολλή JavaScript ενδέχεται να είναι ελλιπείς.",
+  "htmlNetworkNotice": "Απαιτείται σύνδεση στο διαδίκτυο: είναι το μόνο εργαλείο της εφαρμογής που πρέπει να κατεβάσει τη σελίδα. Σελίδες που απαιτούν σύνδεση σε λογαριασμό, banner cookies ή πολλή JavaScript μπορεί να βγουν ελλιπείς.",
   "@htmlNetworkNotice": {
     "description": "Avertissement affiché en mode adresse. Il signale la seule exception au fonctionnement hors ligne de l'application — ne l'allégez pas. « JavaScript » est une marque, à conserver."
   },
-  "htmlOfflineNotice": "Τα HTML και CSS που είναι γραμμένα απευθείας στη σελίδα αποδίδονται εκτός σύνδεσης. Από την άλλη πλευρά, οι εικόνες, τα φύλλα στυλ ή οι γραμματοσειρές που καλούνται από μια εξωτερική διεύθυνση ιστού απαιτούν σύνδεση στο διαδίκτυο.",
+  "htmlOfflineNotice": "Το HTML και το CSS που είναι γραμμένα απευθείας στη σελίδα αποδίδονται χωρίς σύνδεση. Αντίθετα, εικόνες, φύλλα στυλ ή γραμματοσειρές που καλούνται από εξωτερική διεύθυνση ιστού απαιτούν σύνδεση στο διαδίκτυο.",
   "@htmlOfflineNotice": {
     "description": "Avertissement affiché en mode code. « HTML » et « CSS » sont des sigles, à conserver."
   },
-  "watermarkEmptyTitle": "Προσθέστε ένα υδατογράφημα",
+  "watermarkEmptyTitle": "Προσθήκη υδατογραφήματος",
   "@watermarkEmptyTitle": {
     "description": "Titre de l'écran vide de l'outil Filigrane."
   },
-  "watermarkEmptyBody": "Το κείμενο της επιλογής σας επαναλαμβάνεται στο παρασκήνιο σε όλες τις σελίδες — για να επισημάνετε ένα έγγραφο ως εμπιστευτικό ή πρόχειρο.",
+  "watermarkEmptyBody": "Ένα κείμενο της επιλογής σας επαναλαμβάνεται στο φόντο όλων των σελίδων — για να σημάνετε ένα έγγραφο ως εμπιστευτικό ή πρόχειρο.",
   "@watermarkEmptyBody": {
     "description": "Consigne de l'écran vide de l'outil Filigrane."
   },
-  "watermarkEmptyNote": "Δωρεάν εξαγωγή χωρίς όριο αριθμού.",
+  "watermarkEmptyNote": "Δωρεάν εξαγωγή, χωρίς όρια.",
   "@watermarkEmptyNote": {
     "description": "Note verte de l'écran vide, propre à cet outil. La note habituelle promet « sans filigrane » — sur l'outil qui en appose un, elle se contredirait. Ne réintroduisez donc pas la mention du filigrane ici."
   },
@@ -1666,7 +1666,7 @@
   "@watermarkTextLabel": {
     "description": "Intitulé du champ où l'on saisit la mention à répéter."
   },
-  "watermarkDefaultText": "ΕΜΠΙΣΤΕΥΤΙΚΟΣ",
+  "watermarkDefaultText": "ΕΜΠΙΣΤΕΥΤΙΚΟ",
   "@watermarkDefaultText": {
     "description": "Mention proposée par défaut dans le champ, en capitales. Employez le mot consacré de votre langue (anglais : CONFIDENTIAL, allemand : VERTRAULICH)."
   },
@@ -1674,7 +1674,7 @@
   "@watermarkNeedText": {
     "description": "Bandeau d'erreur quand on applique sans avoir saisi de texte."
   },
-  "watermarkOpacity": "Αδιαφάνεια: {percent} %",
+  "watermarkOpacity": "Αδιαφάνεια: {percent}%",
   "@watermarkOpacity": {
     "description": "Intitulé du curseur d'opacité. L'espace avant le signe % est une convention française ; collez-le au chiffre si votre langue le veut.",
     "placeholders": {
@@ -1705,11 +1705,11 @@
   "@watermarkColor": {
     "description": "Intitulé de la rangée de pastilles de couleur."
   },
-  "colorGrey": "Γκρί",
+  "colorGrey": "Γκρι",
   "@colorGrey": {
     "description": "Nom d'une couleur de filigrane, sous sa pastille. Très court."
   },
-  "colorRed": "Κόκκινος",
+  "colorRed": "Κόκκινο",
   "@colorRed": {
     "description": "Nom d'une couleur de filigrane, sous sa pastille. Très court."
   },
@@ -1717,15 +1717,15 @@
   "@colorBlue": {
     "description": "Nom d'une couleur de filigrane, sous sa pastille. Très court."
   },
-  "colorBlack": "Μαύρος",
+  "colorBlack": "Μαύρο",
   "@colorBlack": {
     "description": "Nom d'une couleur de filigrane, sous sa pastille. Très court."
   },
-  "watermarkProgress": "Η εφαρμογή υδατογραφήματος σε εξέλιξη…",
+  "watermarkProgress": "Εφαρμογή υδατογραφήματος σε εξέλιξη…",
   "@watermarkProgress": {
     "description": "Titre de la boîte de progression. Garder le caractère de suspension final."
   },
-  "percentValue": "{percent} %",
+  "percentValue": "{percent}%",
   "@percentValue": {
     "description": "Valeur en pourcentage affichée sur la pastille d'un curseur. L'espace avant le signe % est une convention française.",
     "placeholders": {
@@ -1752,11 +1752,11 @@
       }
     }
   },
-  "pageNumbersEmptyTitle": "Αριθμήστε τις σελίδες",
+  "pageNumbersEmptyTitle": "Αρίθμηση σελίδων",
   "@pageNumbersEmptyTitle": {
     "description": "Titre de l'écran vide de l'outil Numéros de page."
   },
-  "pageNumbersEmptyBody": "Επιλέξτε ένα PDF και, στη συνέχεια, τη θέση και τη μορφή των αριθμών που θα προστεθούν σε κάθε σελίδα.",
+  "pageNumbersEmptyBody": "Επιλέξτε ένα PDF και μετά τη θέση και τη μορφή των αριθμών που θα προστεθούν σε κάθε σελίδα.",
   "@pageNumbersEmptyBody": {
     "description": "Consigne de l'écran vide de l'outil Numéros de page."
   },
@@ -1772,7 +1772,7 @@
   "@positionBottomRight": {
     "description": "Position du numéro : en bas, à droite. Très court."
   },
-  "positionTopCenter": "Κορυφαίο κέντρο",
+  "positionTopCenter": "Πάνω κέντρο",
   "@positionTopCenter": {
     "description": "Position du numéro : en haut, au milieu. Très court."
   },
@@ -1784,7 +1784,7 @@
   "@pageNumbersFormatPlain": {
     "description": "Format de numérotation : le numéro seul. « N » est l'initiale de « numéro » — employez celle de votre langue si elle diffère (anglais : N, allemand : N)."
   },
-  "pageNumbersFormatOfTotal": "N / σύνολο",
+  "pageNumbersFormatOfTotal": "Ν / σύνολο",
   "@pageNumbersFormatOfTotal": {
     "description": "Format de numérotation : le numéro suivi du total, « 3 / 12 ». Traduisez « total » ; « N » suit la même règle que ci-dessus. Doit rester très court, c'est un segment de bouton."
   },
@@ -1792,27 +1792,27 @@
   "@pageNumbersStart": {
     "description": "Intitulé du champ où l'on choisit à quel chiffre la numérotation commence."
   },
-  "pageNumbersProgress": "Η αρίθμηση σε εξέλιξη…",
+  "pageNumbersProgress": "Αρίθμηση σε εξέλιξη…",
   "@pageNumbersProgress": {
     "description": "Titre de la boîte de progression. Garder le caractère de suspension final."
   },
-  "organizeEmptyTitle": "Συνέχιση ενός PDF στο χέρι",
+  "organizeEmptyTitle": "Αναλάβετε ξανά τον έλεγχο ενός PDF",
   "@organizeEmptyTitle": {
     "description": "Titre de l'écran vide de l'outil Organiser."
   },
-  "organizeEmptyBody": "Ανοίξτε ένα έγγραφο για να το χωρίσετε, να εξαγάγετε σελίδες ή να αλλάξετε τη σειρά.",
+  "organizeEmptyBody": "Ανοίξτε ένα έγγραφο για να το χωρίσετε, να εξαγάγετε σελίδες ή να αλλάξετε τη σειρά τους.",
   "@organizeEmptyBody": {
     "description": "Consigne de l'écran vide de l'outil Organiser."
   },
-  "organizeOpenFile": "Ανοίξτε ένα αρχείο",
+  "organizeOpenFile": "Άνοιγμα αρχείου",
   "@organizeOpenFile": {
     "description": "Bouton principal de l'écran vide de l'outil Organiser."
   },
-  "organizeNothingToExport": "Δεν υπάρχουν σελίδες για εξαγωγή.",
+  "organizeNothingToExport": "Καμία σελίδα προς εξαγωγή.",
   "@organizeNothingToExport": {
     "description": "Bandeau d'erreur quand toutes les pages ont été écartées."
   },
-  "organizePagesKept": "Διατηρήθηκαν {kept} σελίδες από {total}",
+  "organizePagesKept": "{kept, plural, one{{kept} σελίδα διατηρήθηκε} other{{kept} σελίδες διατηρήθηκαν}} από {total}",
   "@organizePagesKept": {
     "description": "Sous-titre du document : combien de pages restent retenues sur combien. Affiché seulement quand on en a écarté.",
     "placeholders": {
@@ -1824,7 +1824,7 @@
       }
     }
   },
-  "organizePageExcluded": "Απορρίπτεται",
+  "organizePageExcluded": "Εξαιρέθηκε",
   "@organizePageExcluded": {
     "description": "Mention sous une rangée de page mise de côté. Accordé au féminin de « page ». Court."
   },
@@ -1846,7 +1846,7 @@
       }
     }
   },
-  "organizeExcludePage": "Απόρριψη σελίδας {number}",
+  "organizeExcludePage": "Εξαίρεση σελίδας {number}",
   "@organizeExcludePage": {
     "description": "Info-bulle du bouton qui met une page de côté.",
     "placeholders": {
@@ -1855,7 +1855,7 @@
       }
     }
   },
-  "organizeIncludePage": "Συμπεριλάβετε τη σελίδα {number}",
+  "organizeIncludePage": "Συμπερίληψη σελίδας {number}",
   "@organizeIncludePage": {
     "description": "Info-bulle du bouton qui remet une page dans le document.",
     "placeholders": {
@@ -1873,15 +1873,15 @@
       }
     }
   },
-  "organizeExtract": "Εκχύλισμα",
+  "organizeExtract": "Εξαγωγή",
   "@organizeExtract": {
     "description": "Bouton qui ne garde qu'une plage de pages. Verbe à l'infinitif, court."
   },
-  "organizeSplit": "Χώρισμα",
+  "organizeSplit": "Διαχωρισμός",
   "@organizeSplit": {
     "description": "Bouton qui coupe le document en plusieurs fichiers. Verbe à l'infinitif, court."
   },
-  "organizePreview": "Πρεμιέρα",
+  "organizePreview": "Προεπισκόπηση",
   "@organizePreview": {
     "description": "Bouton qui mène à l'écran d'aperçu. Court."
   },
@@ -1905,7 +1905,7 @@
   "@organizeSplitTitle": {
     "description": "Titre de la boîte de dialogue de division."
   },
-  "organizeFileCount": "{count} αρχεία",
+  "organizeFileCount": "{count, plural, one{{count} αρχείο} other{{count} αρχεία}}",
   "@organizeFileCount": {
     "description": "Nombre de fichiers que la division produira, sous le curseur.",
     "placeholders": {
@@ -1914,7 +1914,7 @@
       }
     }
   },
-  "organizeSplitFailed": "Αποτυχία τμήματος: {detail}",
+  "organizeSplitFailed": "Ο διαχωρισμός απέτυχε: {detail}",
   "@organizeSplitFailed": {
     "description": "Bandeau d'erreur quand la division échoue. {detail} est un message technique non traduit.",
     "placeholders": {
@@ -1927,7 +1927,7 @@
   "@scanNoCamera": {
     "description": "Message d'erreur quand l'appareil n'expose aucune caméra."
   },
-  "scanCameraFailed": "Δεν είναι δυνατή η προετοιμασία της κάμερας: {detail}",
+  "scanCameraFailed": "Δεν ήταν δυνατή η εκκίνηση της κάμερας: {detail}",
   "@scanCameraFailed": {
     "description": "Message d'erreur quand la caméra refuse de démarrer. {detail} est un message technique non traduit.",
     "placeholders": {
@@ -1936,7 +1936,7 @@
       }
     }
   },
-  "scanCropToolbar": "Προσαρμόζω",
+  "scanCropToolbar": "Προσαρμογή",
   "@scanCropToolbar": {
     "description": "Titre de la barre du recadreur système d'Android, après la prise de vue. Court."
   },
@@ -1949,23 +1949,23 @@
       }
     }
   },
-  "scanPermissionBody": "Απαιτείται πρόσβαση στην κάμερα για τη σάρωση ενός εγγράφου.",
+  "scanPermissionBody": "Απαιτείται πρόσβαση στην κάμερα για τη σάρωση εγγράφου.",
   "@scanPermissionBody": {
     "description": "Explication affichée quand l'autorisation d'accès à la caméra n'a pas été accordée."
   },
-  "scanGrantPermission": "Να επιτρέπεται η κάμερα",
+  "scanGrantPermission": "Να επιτραπεί η κάμερα",
   "@scanGrantPermission": {
     "description": "Bouton qui redemande l'autorisation d'accès à la caméra. Doit tenir sur une ligne."
   },
-  "actionRetry": "Προσπαθήστε ξανά",
+  "actionRetry": "Δοκιμή ξανά",
   "@actionRetry": {
     "description": "Bouton qui relance une opération après un échec. Court."
   },
-  "scanNoPageYet": "Δεν υπάρχουν σελίδες αυτή τη στιγμή.",
+  "scanNoPageYet": "Καμία σελίδα ακόμη.",
   "@scanNoPageYet": {
     "description": "Affiché dans la grille de relecture tant qu'aucune page n'a été photographiée."
   },
-  "scanFinishAction": "Φινίρισμα · {count}",
+  "scanFinishAction": "Ολοκλήρωση · {count}",
   "@scanFinishAction": {
     "description": "Bouton qui clôt la capture, suivi du nombre de pages prises. Le point médian est un séparateur typographique. Doit tenir sur une ligne.",
     "placeholders": {
@@ -1974,15 +1974,15 @@
       }
     }
   },
-  "signTitle": "Υπογράψτε ένα PDF",
+  "signTitle": "Υπογραφή PDF",
   "@signTitle": {
     "description": "Titre de la barre de l'outil Signer."
   },
-  "signIntro": "Προσθέστε την υπογραφή σας με το χέρι σε μια σελίδα ενός PDF. Είναι ένα απλό σχέδιο που προστέθηκε στο έγγραφο, όχι μια επικυρωμένη ηλεκτρονική υπογραφή.",
+  "signIntro": "Βάλτε τη χειρόγραφη υπογραφή σας σε μια σελίδα ενός PDF. Είναι ένα απλό σχέδιο που προστίθεται στο έγγραφο, όχι πιστοποιημένη ηλεκτρονική υπογραφή.",
   "@signIntro": {
     "description": "Consigne en tête de l'outil Signer. La dernière proposition est une réserve juridique — ne la retirez pas."
   },
-  "signChooseSubtitle": "Επιλέξτε το έγγραφο που θέλετε να υπογράψετε",
+  "signChooseSubtitle": "Επιλέξτε το έγγραφο προς υπογραφή",
   "@signChooseSubtitle": {
     "description": "Sous-titre de la rangée qui ouvre la sélection de fichiers."
   },
@@ -1990,11 +1990,11 @@
   "@signPickPage": {
     "description": "Consigne au-dessus de la bande de vignettes de pages."
   },
-  "signDrawTitle": "Ζωγράφισε την υπογραφή μου",
+  "signDrawTitle": "Σχεδιάστε την υπογραφή μου",
   "@signDrawTitle": {
     "description": "Titre de l'étape où l'on trace la signature au doigt."
   },
-  "signDrawBody": "Σχεδιάστε με το δάχτυλό σας όπως σε χαρτί. Αυτό τοποθετεί ένα σχέδιο στη σελίδα — δεν είναι πιστοποιημένη ηλεκτρονική υπογραφή.",
+  "signDrawBody": "Σχεδιάστε με το δάχτυλό σας όπως στο χαρτί. Αυτό τοποθετεί ένα σχέδιο στη σελίδα — δεν είναι πιστοποιημένη ηλεκτρονική υπογραφή.",
   "@signDrawBody": {
     "description": "Consigne de l'étape de tracé. La réserve juridique de la fin est délibérément répétée ici."
   },
@@ -2002,19 +2002,19 @@
   "@signNeedDrawing": {
     "description": "Bandeau d'erreur quand on valide une zone de tracé restée vide."
   },
-  "signClear": "Να σβήσει",
+  "signClear": "Εκκαθάριση",
   "@signClear": {
     "description": "Bouton qui vide la zone de tracé. Court."
   },
-  "signValidate": "Για επικύρωση",
+  "signValidate": "Επιβεβαίωση",
   "@signValidate": {
     "description": "Bouton qui retient la signature tracée et passe au placement. Court."
   },
-  "signPlaceBody": "Σύρετε την υπογραφή στην επιθυμητή θέση στη σελίδα και, στη συνέχεια, πατήστε Τέλος.",
+  "signPlaceBody": "Σύρετε την υπογραφή στο σημείο που θέλετε στη σελίδα και μετά πατήστε Ολοκλήρωση.",
   "@signPlaceBody": {
     "description": "Consigne de l'étape de placement. « Terminer » doit reprendre exactement le libellé traduit de actionFinish."
   },
-  "signPageUnavailable": "Δεν είναι δυνατή η εμφάνιση της σελίδας.",
+  "signPageUnavailable": "Δεν ήταν δυνατή η εμφάνιση της σελίδας.",
   "@signPageUnavailable": {
     "description": "Affiché à la place de la page quand son rendu échoue."
   },
@@ -2022,7 +2022,7 @@
   "@signProgress": {
     "description": "Titre de la boîte de progression. Garder le caractère de suspension final."
   },
-  "editTitle": "Σημειώστε ένα έγγραφο",
+  "editTitle": "Σχολιασμός εγγράφου",
   "@editTitle": {
     "description": "Titre de l'écran vide de l'outil Éditer."
   },
@@ -2055,11 +2055,11 @@
   "@editProgress": {
     "description": "Titre de la boîte de progression. Garder le caractère de suspension final."
   },
-  "editChooseOther": "Επιλέξτε άλλο PDF",
+  "editChooseOther": "Επιλογή άλλου PDF",
   "@editChooseOther": {
     "description": "Info-bulle du bouton qui abandonne le document en cours."
   },
-  "editUndoTooltip": "Αναίρεση τελευταίου σχολιασμού",
+  "editUndoTooltip": "Αναίρεση του τελευταίου σχολιασμού",
   "@editUndoTooltip": {
     "description": "Info-bulle du bouton qui retire la dernière annotation posée. Il s'agit de défaire, pas d'interrompre."
   },
@@ -2067,15 +2067,15 @@
   "@editModeText": {
     "description": "Onglet du sélecteur : poser du texte. Très court, il tient dans un segment."
   },
-  "editModeHighlight": "Αποκορύφωμα",
+  "editModeHighlight": "Επισήμανση",
   "@editModeHighlight": {
     "description": "Onglet du sélecteur : surligner un passage. Très court, il tient dans un segment."
   },
-  "editPageUnavailable": "Δεν είναι δυνατή η εμφάνιση αυτής της σελίδας.",
+  "editPageUnavailable": "Δεν ήταν δυνατή η εμφάνιση αυτής της σελίδας.",
   "@editPageUnavailable": {
     "description": "Affiché à la place de la page quand son rendu échoue."
   },
-  "ocrEmptyTitle": "Κάντε αναζήτηση κειμένου",
+  "ocrEmptyTitle": "Κάντε το κείμενο αναζητήσιμο",
   "@ocrEmptyTitle": {
     "description": "Titre de l'écran vide de l'outil OCR."
   },
@@ -2083,7 +2083,7 @@
   "@ocrEmptyBody": {
     "description": "Consigne de l'écran vide de l'outil OCR. La seconde phrase est importante : elle rassure sur le fait que rien n'est abîmé."
   },
-  "ocrWrongFormat": "Επιλέξτε ένα PDF ή μια εικόνα (JPG, PNG, κ.λπ.).",
+  "ocrWrongFormat": "Επιλέξτε ένα PDF ή μια εικόνα (JPG, PNG…).",
   "@ocrWrongFormat": {
     "description": "Bandeau d'erreur quand le fichier n'est ni un PDF ni une image. Les noms de format ne se traduisent pas."
   },
@@ -2091,7 +2091,7 @@
   "@ocrProgress": {
     "description": "Titre de la boîte de progression pendant la reconnaissance de caractères. Garder le caractère de suspension final."
   },
-  "ocrFailed": "Αποτυχία αναγνώρισης: {detail}",
+  "ocrFailed": "Η αναγνώριση απέτυχε: {detail}",
   "@ocrFailed": {
     "description": "Bandeau d'erreur quand la reconnaissance échoue. {detail} est un message technique non traduit.",
     "placeholders": {
@@ -2108,7 +2108,7 @@
   "@ocrResultTitle": {
     "description": "Titre de la barre de l'écran de résultat. « OCR » est un sigle international, à conserver."
   },
-  "ocrResultBody": "Αναλύθηκαν {count} σελίδες. Το PDF με δυνατότητα αναζήτησης είναι έτοιμο και μπορείτε επίσης να αντιγράψετε όλο το αναγνωρισμένο κείμενο.",
+  "ocrResultBody": "{count, plural, one{{count} σελίδα αναλύθηκε} other{{count} σελίδες αναλύθηκαν}}. Το αναζητήσιμο PDF είναι έτοιμο και μπορείτε επίσης να αντιγράψετε όλο το αναγνωρισμένο κείμενο.",
   "@ocrResultBody": {
     "description": "Résumé de l'écran de résultat : combien de pages ont été traitées et ce qu'on peut faire ensuite.",
     "placeholders": {
@@ -2125,23 +2125,23 @@
   "@ocrTextCopied": {
     "description": "Bandeau confirmant la copie dans le presse-papiers."
   },
-  "redactIntro": "Μόνιμη απόκρυψη περιοχών ενός PDF (ονόματα, διευθύνσεις, ποσά). Σε αντίθεση με ένα απλό μαύρο ορθογώνιο που τοποθετείται στην κορυφή, το κρυφό κείμενο διαγράφεται στην πραγματικότητα από το αρχείο, όχι απλώς καλύπτεται: δεν μπορεί πλέον να επιλεγεί ή να αντιγραφεί.",
+  "redactIntro": "Αποκρύψτε οριστικά περιοχές ενός PDF (ονόματα, διευθύνσεις, ποσά). Σε αντίθεση με ένα απλό μαύρο ορθογώνιο από πάνω, το κρυμμένο κείμενο διαγράφεται πραγματικά από το αρχείο, όχι απλώς καλύπτεται: δεν μπορεί πλέον να επιλεγεί ή να αντιγραφεί.",
   "@redactIntro": {
     "description": "Consigne en tête de l'outil Caviarder. La distinction avec un rectangle noir décoratif est le cœur de l'outil — ne l'allégez pas."
   },
-  "redactChooseSubtitle": "Επιλέξτε το έγγραφο για διόρθωση",
+  "redactChooseSubtitle": "Επιλέξτε το έγγραφο για απόκρυψη περιεχομένου",
   "@redactChooseSubtitle": {
     "description": "Sous-titre de la rangée qui ouvre la sélection de fichiers."
   },
-  "redactCaveat": "Σημείωση: για να αφαιρέσετε το κρυφό κείμενο, κάθε σελίδα του εγγράφου μετατρέπεται σε εικόνα (200 ppi). Επομένως, το αποτέλεσμα δεν είναι πλέον ένα PDF από το οποίο μπορεί να επιλεγεί το κείμενο και το αρχείο που προκύπτει είναι γενικά βαρύτερο από το αρχικό.",
+  "redactCaveat": "Καλό να ξέρετε: για να αφαιρεθεί το κρυμμένο κείμενο, κάθε σελίδα του εγγράφου μετατρέπεται ξανά σε εικόνα (200 dpi). Το αποτέλεσμα δεν είναι πλέον PDF με επιλέξιμο κείμενο, και το αρχείο που προκύπτει είναι συνήθως βαρύτερο από το αρχικό.",
   "@redactCaveat": {
     "description": "Le prix à payer du caviardage réel. « ppp » est l'abréviation française de « points par pouce » ; l'anglais et la plupart des langues emploient « dpi »."
   },
-  "redactEmptyPdf": "Αυτό το PDF δεν περιέχει σελίδες.",
+  "redactEmptyPdf": "Αυτό το PDF δεν περιέχει καμία σελίδα.",
   "@redactEmptyPdf": {
     "description": "Bandeau d'erreur quand le document choisi est vide."
   },
-  "redactOpenFailed": "Δεν είναι δυνατό το άνοιγμα αυτού του PDF (μπορεί να προστατεύεται με κωδικό πρόσβασης): {detail}",
+  "redactOpenFailed": "Δεν ήταν δυνατό το άνοιγμα αυτού του PDF (ίσως προστατεύεται με κωδικό): {detail}",
   "@redactOpenFailed": {
     "description": "Bandeau d'erreur quand le PDF ne peut pas être lu. {detail} est un message technique non traduit.",
     "placeholders": {
@@ -2150,7 +2150,7 @@
       }
     }
   },
-  "redactPageRenderFailed": "Η σελίδα {number} δεν μπορεί να εμφανιστεί: {detail}",
+  "redactPageRenderFailed": "Δεν ήταν δυνατή η εμφάνιση της σελίδας {number}: {detail}",
   "@redactPageRenderFailed": {
     "description": "Bandeau d'erreur quand une page ne peut pas être rendue à l'écran. {detail} est un message technique non traduit.",
     "placeholders": {
@@ -2162,11 +2162,11 @@
       }
     }
   },
-  "redactUndoTooltip": "Αναίρεση τελευταίας ζώνης",
+  "redactUndoTooltip": "Αναίρεση της τελευταίας περιοχής",
   "@redactUndoTooltip": {
     "description": "Info-bulle du bouton qui retire le dernier rectangle tracé. Il s'agit de défaire, pas d'interrompre."
   },
-  "redactInstructions": "Σύρετε το δάχτυλό σας κατά μήκος της σελίδας για να σχεδιάσετε μια περιοχή για απόκρυψη. Το καλυμμένο κείμενο θα αφαιρεθεί πραγματικά από το αρχείο, όχι απλώς θα καλύπτεται.",
+  "redactInstructions": "Σύρετε το δάχτυλό σας πάνω στη σελίδα για να σχεδιάσετε μια περιοχή προς απόκρυψη. Το κείμενο που καλύπτεται θα διαγραφεί πραγματικά από το αρχείο, όχι απλώς θα καλυφθεί.",
   "@redactInstructions": {
     "description": "Consigne au-dessus de la page, dans l'éditeur."
   },
@@ -2190,11 +2190,11 @@
       }
     }
   },
-  "redactNoZone": "Χωρίς οικόπεδο",
+  "redactNoZone": "Καμία περιοχή δεν σχεδιάστηκε",
   "@redactNoZone": {
     "description": "Affiché au-dessus des boutons tant qu'aucun rectangle n'a été tracé."
   },
-  "redactZoneCount": "{count} περιοχές για απόκρυψη",
+  "redactZoneCount": "{count, plural, one{{count} περιοχή προς απόκρυψη} other{{count} περιοχές προς απόκρυψη}}",
   "@redactZoneCount": {
     "description": "Nombre de rectangles tracés, au-dessus des boutons.",
     "placeholders": {
@@ -2207,19 +2207,19 @@
   "@redactOtherPdf": {
     "description": "Bouton qui abandonne le document en cours pour en ouvrir un autre. Court."
   },
-  "redactAction": "Συντάσσω",
+  "redactAction": "Απόκρυψη",
   "@redactAction": {
     "description": "Bouton qui applique le caviardage. Verbe à l'infinitif, court ; employez le terme consacré de votre langue."
   },
-  "redactProgress": "Διασκευή σε εξέλιξη…",
+  "redactProgress": "Απόκρυψη σε εξέλιξη…",
   "@redactProgress": {
     "description": "Titre de la boîte de progression. Garder le caractère de suspension final."
   },
-  "cropEmptyTitle": "Κόψτε τα περιθώρια",
+  "cropEmptyTitle": "Περικοπή περιθωρίων",
   "@cropEmptyTitle": {
     "description": "Titre de l'écran vide de l'outil Rogner."
   },
-  "cropEmptyBody": "Επιλέξτε ένα PDF και, στη συνέχεια, σύρετε το δάχτυλό σας στην προεπισκόπηση για να περιγράψετε την περιοχή που θέλετε να διατηρήσετε.",
+  "cropEmptyBody": "Επιλέξτε ένα PDF και μετά σύρετε το δάχτυλό σας πάνω στην προεπισκόπηση για να ορίσετε την περιοχή που θα διατηρηθεί.",
   "@cropEmptyBody": {
     "description": "Consigne de l'écran vide de l'outil Rogner."
   },
@@ -2240,11 +2240,11 @@
       }
     }
   },
-  "cropKeptArea": "Διατηρητέα περιοχή",
+  "cropKeptArea": "Περιοχή που διατηρήθηκε",
   "@cropKeptArea": {
     "description": "Intitulé au-dessus de l'aperçu sur lequel on trace la zone à garder."
   },
-  "cropDimensions": "{width} × {height} mm ({widthPercent} % × {heightPercent} %)",
+  "cropDimensions": "{width} × {height} mm ({widthPercent}% × {heightPercent}%)",
   "@cropDimensions": {
     "description": "Dimensions de la zone tracée, en millimètres puis en proportion de la page. Le signe × est le symbole de multiplication. L'espace avant le signe % est une convention française.",
     "placeholders": {
@@ -2262,7 +2262,7 @@
       }
     }
   },
-  "cropFullPage": "Ολοσέλιδος",
+  "cropFullPage": "Ολόκληρη η σελίδα",
   "@cropFullPage": {
     "description": "Bouton qui remet la zone aux dimensions de la page entière."
   },
@@ -2270,43 +2270,43 @@
   "@cropAllPages": {
     "description": "Intitulé de l'interrupteur qui étend le recadrage au document entier."
   },
-  "cropAllPagesOn": "Η ίδια περιοχή αποκόπτεται σε κάθε σελίδα.",
+  "cropAllPagesOn": "Η ίδια περιοχή κόβεται σε κάθε σελίδα.",
   "@cropAllPagesOn": {
     "description": "Sous-titre de l'interrupteur quand il est activé."
   },
-  "cropAllPagesOff": "Μόνο η σελίδα 1 έχει περικοπεί, οι υπόλοιπες διατηρούνται ολόκληρες.",
+  "cropAllPagesOff": "Μόνο η σελίδα 1 περικόπτεται· οι υπόλοιπες διατηρούνται ολόκληρες.",
   "@cropAllPagesOff": {
     "description": "Sous-titre de l'interrupteur quand il est désactivé."
   },
-  "cropCaveat": "Η περικοπή μειώνει το μέγεθος της σελίδας: περιεχόμενο εκτός της περιοχής δεν εμφανίζεται πλέον ούτε εκτυπώνεται.",
+  "cropCaveat": "Η περικοπή μειώνει το μέγεθος της σελίδας: το περιεχόμενο εκτός της περιοχής δεν εμφανίζεται ούτε εκτυπώνεται πλέον.",
   "@cropCaveat": {
     "description": "Ce que le recadrage fait au document, dit avant qu'on l'applique."
   },
-  "cropAction": "Καλλιέργεια",
+  "cropAction": "Περικοπή",
   "@cropAction": {
     "description": "Bouton de bas d'écran qui lance le recadrage. Verbe à l'infinitif, court."
   },
-  "compareTitle": "Συγκρίνετε δύο αρχεία PDF",
+  "compareTitle": "Σύγκριση δύο PDF",
   "@compareTitle": {
     "description": "Titre de la barre de l'outil Comparer."
   },
-  "compareEmptyTitle": "Τι έχει αλλάξει",
+  "compareEmptyTitle": "Τι άλλαξε",
   "@compareEmptyTitle": {
     "description": "Titre de l'écran vide de l'outil Comparer."
   },
-  "compareEmptyBody": "Επιλέξτε δύο εκδόσεις του ίδιου PDF. Τα αποσπάσματα που προστέθηκαν και διαγράφηκαν θα τοποθετηθούν το ένα δίπλα στο άλλο, σελίδα προς σελίδα.",
+  "compareEmptyBody": "Επιλέξτε δύο εκδόσεις του ίδιου PDF. Τα αποσπάσματα που προστέθηκαν και αφαιρέθηκαν θα τοποθετηθούν το ένα δίπλα στο άλλο, σελίδα προς σελίδα.",
   "@compareEmptyBody": {
     "description": "Consigne de l'écran vide de l'outil Comparer."
   },
-  "compareSlotA": "Αρχείο Α",
+  "compareSlotA": "Αρχείο A",
   "@compareSlotA": {
     "description": "Intitulé de la première case : la version de départ. La lettre A sert de repère, gardez-la."
   },
-  "compareSlotB": "Αρχείο Β",
+  "compareSlotB": "Αρχείο B",
   "@compareSlotB": {
     "description": "Intitulé de la seconde case : la version à confronter. La lettre B sert de repère, gardez-la."
   },
-  "compareAction": "Συγκρίνω",
+  "compareAction": "Σύγκριση",
   "@compareAction": {
     "description": "Bouton qui lance la comparaison. Verbe à l'infinitif, court."
   },
@@ -2323,7 +2323,7 @@
       }
     }
   },
-  "compareChangedPages": "{changed} σελίδες διαφέρουν σε {total}",
+  "compareChangedPages": "{changed, plural, one{{changed} σελίδα διαφέρει} other{{changed} σελίδες διαφέρουν}} από {total}",
   "@compareChangedPages": {
     "description": "Résumé de la comparaison : combien de pages diffèrent, sur combien au total. Accordez le verbe au nombre.",
     "placeholders": {
@@ -2335,7 +2335,7 @@
       }
     }
   },
-  "compareNoDifference": "Δεν εντοπίστηκαν διαφορές μεταξύ των δύο αρχείων.",
+  "compareNoDifference": "Δεν εντοπίστηκε καμία διαφορά μεταξύ των δύο αρχείων.",
   "@compareNoDifference": {
     "description": "Affiché quand les deux documents sont identiques mot pour mot."
   },
@@ -2348,7 +2348,7 @@
       }
     }
   },
-  "organizeFilesCreated": "Δημιουργήθηκαν {count} αρχεία",
+  "organizeFilesCreated": "{count, plural, one{{count} αρχείο δημιουργήθηκε} other{{count} αρχεία δημιουργήθηκαν}}",
   "@organizeFilesCreated": {
     "description": "Titre de la feuille de résultats de la division : combien de fichiers en sont sortis.",
     "placeholders": {

@@ -104,7 +104,8 @@ class LEs extends L {
   }
 
   @override
-  String get homePromise => 'Haz tu documento y expórtalo.\nSin muro al final.';
+  String get homePromise =>
+      'Crea tu documento y expórtalo.\nSin muros de pago al final.';
 
   @override
   String get homeChipNoAccount => 'Sin cuenta';
@@ -120,13 +121,13 @@ class LEs extends L {
 
   @override
   String get homeColophon =>
-      'Nada se desbloquea pagando en el momento de guardar. Exportar es gratis, sin marca de agua y sin límite de cantidad.';
+      'Nada se desbloquea pagando al guardar. La exportación es gratuita, sin marcas de agua y sin límites.';
 
   @override
   String get sectionFeatured => 'Destacado';
 
   @override
-  String get sectionToPdf => 'Hacia el PDF';
+  String get sectionToPdf => 'A PDF';
 
   @override
   String get sectionFromPdf => 'Desde el PDF';
@@ -232,7 +233,7 @@ class LEs extends L {
   String get toolPdfToImagesKeywords => 'jpg png foto exportar captura imagen';
 
   @override
-  String get toolOcr => 'Texto buscable (OCR)';
+  String get toolOcr => 'Texto seleccionable (OCR)';
 
   @override
   String get toolOcrKeywords =>
@@ -652,7 +653,7 @@ class LEs extends L {
 
   @override
   String get pdfToWordEmptyBody =>
-      'El texto y la estructura del PDF se trasladan a un documento .docx que podrás volver a abrir y corregir.';
+      'El texto y la estructura del PDF se trasladan a un documento .docx que podrás volver a abrir y editar.';
 
   @override
   String get pdfToWordAnalyzing => 'Analizando el documento…';
@@ -1345,8 +1346,7 @@ class LEs extends L {
       'Un texto que tú elijas se repite de fondo en todas las páginas, para marcar un documento como confidencial o como borrador.';
 
   @override
-  String get watermarkEmptyNote =>
-      'Exportación gratuita y sin límite de cantidad.';
+  String get watermarkEmptyNote => 'Exportación gratuita y sin límites.';
 
   @override
   String get watermarkTextLabel => 'Texto de la marca de agua';
@@ -1440,7 +1440,7 @@ class LEs extends L {
   String get pageNumbersProgress => 'Numerando…';
 
   @override
-  String get organizeEmptyTitle => 'Retomar un PDF';
+  String get organizeEmptyTitle => 'Reorganizar un PDF';
 
   @override
   String get organizeEmptyBody =>
@@ -1537,7 +1537,7 @@ class LEs extends L {
   }
 
   @override
-  String get scanCropToolbar => 'Ajustar';
+  String get scanCropToolbar => 'Recortar';
 
   @override
   String scanCaptureFailed(String detail) {

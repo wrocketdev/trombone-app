@@ -87,7 +87,6 @@ class LSk extends L {
       count,
       locale: localeName,
       other: '$count nástrojov',
-      many: '$count nástroja',
       few: '$count nástroje',
       one: '$count nástroj',
     );
@@ -100,7 +99,6 @@ class LSk extends L {
       count,
       locale: localeName,
       other: '$count nástrojov',
-      many: '$count nástroja',
       few: '$count nástroje',
       one: '$count nástroj',
     );
@@ -109,7 +107,7 @@ class LSk extends L {
 
   @override
   String get homePromise =>
-      'Vytvorte dokument a exportujte ho.\nŽiadna stena na konci.';
+      'Vytvorte dokument a exportujte ho.\nŽiadne skryté poplatky na konci.';
 
   @override
   String get homeChipNoAccount => 'Bez účtu';
@@ -413,7 +411,6 @@ class LSk extends L {
       count,
       locale: localeName,
       other: '$count strán',
-      many: '$count strany',
       few: '$count strany',
       one: '$count strana',
     );
@@ -426,7 +423,6 @@ class LSk extends L {
       kept,
       locale: localeName,
       other: '$kept strán',
-      many: '$kept strany',
       few: '$kept strany',
       one: '$kept strana',
     );
@@ -505,7 +501,6 @@ class LSk extends L {
       count,
       locale: localeName,
       other: '$count strán',
-      many: '$count strany',
       few: '$count strany',
       one: '$count strana',
     );
@@ -531,7 +526,6 @@ class LSk extends L {
       count,
       locale: localeName,
       other: '$count strán',
-      many: '$count strany',
       few: '$count strany',
       one: '$count strana',
     );
@@ -691,7 +685,6 @@ class LSk extends L {
       count,
       locale: localeName,
       other: '$count odsekov',
-      many: '$count odseku',
       few: '$count odseky',
       one: '$count odsek',
     );
@@ -704,7 +697,6 @@ class LSk extends L {
       count,
       locale: localeName,
       other: '$count nadpisov',
-      many: '$count nadpisu',
       few: '$count nadpisy',
       one: '$count nadpis',
     );
@@ -717,7 +709,6 @@ class LSk extends L {
       count,
       locale: localeName,
       other: '$count tabuliek',
-      many: '$count tabuľky',
       few: '$count tabuľky',
       one: '$count tabuľka',
     );
@@ -781,7 +772,6 @@ class LSk extends L {
       count,
       locale: localeName,
       other: '$count strán',
-      many: '$count strany',
       few: '$count strany',
       one: '$count strana',
     );
@@ -797,7 +787,6 @@ class LSk extends L {
       count,
       locale: localeName,
       other: '$count strán',
-      many: '$count strany',
       few: '$count strany',
       one: '$count strana',
     );
@@ -854,7 +843,6 @@ class LSk extends L {
       sheets,
       locale: localeName,
       other: '$sheets hárkov',
-      many: '$sheets hárku',
       few: '$sheets hárky',
       one: '$sheets hárok',
     );
@@ -862,7 +850,6 @@ class LSk extends L {
       rows,
       locale: localeName,
       other: 'spolu $rows riadkov',
-      many: 'spolu $rows riadku',
       few: 'spolu $rows riadky',
       one: 'spolu $rows riadok',
     );
@@ -881,7 +868,6 @@ class LSk extends L {
       rows,
       locale: localeName,
       other: '$rows riadkov',
-      many: '$rows riadku',
       few: '$rows riadky',
       one: '$rows riadok',
     );
@@ -889,7 +875,6 @@ class LSk extends L {
       columns,
       locale: localeName,
       other: '$columns stĺpcov',
-      many: '$columns stĺpca',
       few: '$columns stĺpce',
       one: '$columns stĺpec',
     );
@@ -930,7 +915,6 @@ class LSk extends L {
       count,
       locale: localeName,
       other: '$count snímok',
-      many: '$count snímky',
       few: '$count snímky',
       one: '$count snímka',
     );
@@ -946,7 +930,6 @@ class LSk extends L {
       count,
       locale: localeName,
       other: '$count ďalších snímok',
-      many: '$count ďalšej snímky',
       few: '$count ďalšie snímky',
       one: '$count ďalšia snímka',
     );
@@ -965,7 +948,6 @@ class LSk extends L {
       count,
       locale: localeName,
       other: '$count riadkov textu',
-      many: '$count riadku textu',
       few: '$count riadky textu',
       one: '$count riadok textu',
     );
@@ -1005,7 +987,6 @@ class LSk extends L {
       count,
       locale: localeName,
       other: 'preskúmaných $count strán',
-      many: 'preskúmané $count strany',
       few: 'preskúmané $count strany',
       one: 'preskúmaná $count strana',
     );
@@ -1045,7 +1026,6 @@ class LSk extends L {
       tables,
       locale: localeName,
       other: 'nájdených $tables tabuliek',
-      many: 'nájdenej $tables tabuľky',
       few: 'nájdené $tables tabuľky',
       one: 'nájdená $tables tabuľka',
     );
@@ -1053,7 +1033,6 @@ class LSk extends L {
       pages,
       locale: localeName,
       other: '$pages stranách',
-      many: '$pages strany',
       few: '$pages stranách',
       one: '$pages strane',
     );
@@ -1071,7 +1050,6 @@ class LSk extends L {
       count,
       locale: localeName,
       other: '$count odsekov mimo tabuliek',
-      many: '$count odseku mimo tabuliek',
       few: '$count odseky mimo tabuliek',
       one: '$count odsek mimo tabuliek',
     );
@@ -1121,7 +1099,6 @@ class LSk extends L {
       count,
       locale: localeName,
       other: '$count strán',
-      many: '$count strany',
       few: '$count strany',
       one: '$count strana',
     );
@@ -1129,7 +1106,6 @@ class LSk extends L {
       count,
       locale: localeName,
       other: '$count snímok',
-      many: '$count snímky',
       few: '$count snímky',
       one: '$count snímka',
     );
@@ -1152,7 +1128,6 @@ class LSk extends L {
       count,
       locale: localeName,
       other: '$count stranami',
-      many: '$count strany',
       few: '$count stranami',
       one: '$count stranou',
     );
@@ -1180,7 +1155,6 @@ class LSk extends L {
       count,
       locale: localeName,
       other: '$count snímok',
-      many: '$count snímky',
       few: '$count snímky',
       one: '$count snímka',
     );
@@ -1203,7 +1177,6 @@ class LSk extends L {
       count,
       locale: localeName,
       other: '$count snímok',
-      many: '$count snímky',
       few: '$count snímky',
       one: '$count snímka',
     );
@@ -1251,7 +1224,6 @@ class LSk extends L {
       count,
       locale: localeName,
       other: '$count obrázkov $format',
-      many: '$count obrázku $format',
       few: '$count obrázky $format',
       one: '$count obrázok $format',
     );
@@ -1330,7 +1302,6 @@ class LSk extends L {
       count,
       locale: localeName,
       other: '$count obrázkov',
-      many: '$count obrázku',
       few: '$count obrázky',
       one: '$count obrázok',
     );
@@ -1511,7 +1482,6 @@ class LSk extends L {
       kept,
       locale: localeName,
       other: 'zachovaných $kept strán',
-      many: 'zachované $kept strany',
       few: 'zachované $kept strany',
       one: 'zachovaná $kept strana',
     );
@@ -1572,7 +1542,6 @@ class LSk extends L {
       count,
       locale: localeName,
       other: '$count súborov',
-      many: '$count súboru',
       few: '$count súbory',
       one: '$count súbor',
     );
@@ -1729,7 +1698,6 @@ class LSk extends L {
       count,
       locale: localeName,
       other: 'Preskúmaných $count strán',
-      many: 'Preskúmané $count strany',
       few: 'Preskúmané $count strany',
       one: 'Preskúmaná $count strana',
     );
@@ -1793,7 +1761,6 @@ class LSk extends L {
       count,
       locale: localeName,
       other: '$count oblastí na skrytie',
-      many: '$count oblasti na skrytie',
       few: '$count oblasti na skrytie',
       one: '$count oblasť na skrytie',
     );
@@ -1892,7 +1859,6 @@ class LSk extends L {
       changed,
       locale: localeName,
       other: '$changed strán sa líši',
-      many: '$changed strany sa líši',
       few: '$changed strany sa líšia',
       one: '$changed strana sa líši',
     );
@@ -1914,7 +1880,6 @@ class LSk extends L {
       count,
       locale: localeName,
       other: 'Vytvorených $count súborov',
-      many: 'Vytvorené $count súboru',
       few: 'Vytvorené $count súbory',
       one: 'Vytvorený $count súbor',
     );

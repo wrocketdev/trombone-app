@@ -109,7 +109,7 @@ class LSl extends L {
 
   @override
   String get homePromise =>
-      'Sestavite dokument in ga izvozite.\nNa koncu ni zidu.';
+      'Sestavite dokument in ga izvozite.\nBrez plačljivih ovir na koncu.';
 
   @override
   String get homeChipNoAccount => 'Brez računa';
@@ -125,7 +125,7 @@ class LSl extends L {
 
   @override
   String get homeColophon =>
-      'Pri shranjevanju se nič ne odklene proti plačilu. Izvoz je brezplačen, brez vodnega žiga in brez omejitve števila.';
+      'Pri shranjevanju se nič ne odklepa s plačilom. Izvoz je brezplačen, brez vodnega žiga in brez omejitev.';
 
   @override
   String get sectionFeatured => 'Izpostavljeno';
@@ -666,7 +666,7 @@ class LSl extends L {
 
   @override
   String get pdfToWordEmptyBody =>
-      'Besedilo in zgradba PDF-ja se preneseta v dokument .docx, ki ga boste lahko znova odprli in popravili.';
+      'Besedilo in struktura PDF-ja se preneseta v dokument .docx, ki ga lahko znova odprete in urejate.';
 
   @override
   String get pdfToWordAnalyzing => 'Analiza dokumenta…';
@@ -1404,8 +1404,7 @@ class LSl extends L {
       'Besedilo po vaši izbiri se ponavlja v ozadju vseh strani — da dokument označite kot zaupen ali kot osnutek.';
 
   @override
-  String get watermarkEmptyNote =>
-      'Izvoz je brezplačen in brez omejitve števila.';
+  String get watermarkEmptyNote => 'Izvoz je brezplačen in brez omejitev.';
 
   @override
   String get watermarkTextLabel => 'Besedilo vodnega žiga';

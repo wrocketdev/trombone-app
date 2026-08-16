@@ -39,14 +39,14 @@ class LIt extends L {
   String get actionOpening => 'Apertura…';
 
   @override
-  String get actionRemoveFile => 'Togli questo file';
+  String get actionRemoveFile => 'Rimuovi questo file';
 
   @override
   String get progressPreparing => 'Preparazione…';
 
   @override
   String progressPercent(int percent) {
-    return '$percent %';
+    return '$percent%';
   }
 
   @override
@@ -105,7 +105,7 @@ class LIt extends L {
 
   @override
   String get homePromise =>
-      'Crea il tuo documento ed esportalo.\nNessun muro alla fine.';
+      'Crea il tuo documento ed esportalo.\nNessun paywall alla fine.';
 
   @override
   String get homeChipNoAccount => 'Senza account';
@@ -121,7 +121,7 @@ class LIt extends L {
 
   @override
   String get homeColophon =>
-      'Al momento di salvare non si sblocca nulla a pagamento. L’esportazione è gratuita, senza filigrana e senza limiti di quantità.';
+      'Al momento del salvataggio non c’è nulla da sbloccare a pagamento. L’esportazione è gratuita, senza filigrana e senza limiti.';
 
   @override
   String get sectionFeatured => 'In evidenza';
@@ -136,7 +136,7 @@ class LIt extends L {
   String get sectionSecurity => 'Sicurezza';
 
   @override
-  String get sectionEdit => 'Modificare';
+  String get sectionEdit => 'Modifica';
 
   @override
   String get toolMerge => 'Unisci';
@@ -553,7 +553,7 @@ class LIt extends L {
   }
 
   @override
-  String get protectEmptyTitle => 'Mettere una password';
+  String get protectEmptyTitle => 'Imposta una password';
 
   @override
   String get protectEmptyBody =>
@@ -607,7 +607,7 @@ class LIt extends L {
   String get protectExportWhat => 'PDF protetto da password';
 
   @override
-  String get unlockEmptyTitle => 'Togliere la password';
+  String get unlockEmptyTitle => 'Rimuovi la password';
 
   @override
   String get unlockEmptyBody =>
@@ -637,7 +637,7 @@ class LIt extends L {
   String get unlockAction => 'Sblocca';
 
   @override
-  String get repairEmptyTitle => 'Riparare un file rovinato';
+  String get repairEmptyTitle => 'Ripara un file danneggiato';
 
   @override
   String get repairEmptyBody =>
@@ -658,7 +658,7 @@ class LIt extends L {
 
   @override
   String get pdfToWordEmptyBody =>
-      'Il testo e la struttura del PDF vengono trasposti in un documento .docx che potrai riaprire e correggere.';
+      'Il testo e la struttura del PDF vengono convertiti in un documento .docx che potrai riaprire e modificare.';
 
   @override
   String get pdfToWordAnalyzing => 'Analisi del documento…';
@@ -819,7 +819,7 @@ class LIt extends L {
   String get excelChooseWorkbook => 'Scegli una cartella di lavoro';
 
   @override
-  String get excelChooseXlsx => 'Scegli una cartella .xlsx';
+  String get excelChooseXlsx => 'Scegli un file .xlsx';
 
   @override
   String get excelLegacyFormat =>
@@ -992,7 +992,7 @@ class LIt extends L {
       'Niente da esportare: nessuna tabella rilevata.';
 
   @override
-  String get pdfToExcelBuilding => 'Creazione della cartella…';
+  String get pdfToExcelBuilding => 'Creazione del file…';
 
   @override
   String get pdfToExcelIncludeParagraphs =>
@@ -1211,7 +1211,7 @@ class LIt extends L {
   }
 
   @override
-  String get pdfaEmptyTitle => 'Archiviare a lungo termine';
+  String get pdfaEmptyTitle => 'Archivia a lungo termine';
 
   @override
   String get pdfaEmptyBody =>
@@ -1291,7 +1291,7 @@ class LIt extends L {
   String get actionRotate => 'Ruota';
 
   @override
-  String get actionRemove => 'Togli';
+  String get actionRemove => 'Rimuovi';
 
   @override
   String get htmlTitle => 'HTML / pagina web in PDF';
@@ -1343,15 +1343,14 @@ class LIt extends L {
       'L’HTML e il CSS scritti direttamente nella pagina vengono resi offline. Le immagini, i fogli di stile o i caratteri richiamati da un indirizzo web esterno, invece, richiedono una connessione a internet.';
 
   @override
-  String get watermarkEmptyTitle => 'Applicare una filigrana';
+  String get watermarkEmptyTitle => 'Applica una filigrana';
 
   @override
   String get watermarkEmptyBody =>
       'Un testo a tua scelta viene ripetuto sullo sfondo di tutte le pagine — per contrassegnare un documento come riservato o come bozza.';
 
   @override
-  String get watermarkEmptyNote =>
-      'Esportazione gratuita e senza limiti di quantità.';
+  String get watermarkEmptyNote => 'Esportazione gratuita e senza limiti.';
 
   @override
   String get watermarkTextLabel => 'Testo della filigrana';
@@ -1364,7 +1363,7 @@ class LIt extends L {
 
   @override
   String watermarkOpacity(int percent) {
-    return 'Opacità: $percent %';
+    return 'Opacità: $percent%';
   }
 
   @override
@@ -1397,7 +1396,7 @@ class LIt extends L {
 
   @override
   String percentValue(int percent) {
-    return '$percent %';
+    return '$percent%';
   }
 
   @override
@@ -1411,7 +1410,7 @@ class LIt extends L {
   }
 
   @override
-  String get pageNumbersEmptyTitle => 'Numerare le pagine';
+  String get pageNumbersEmptyTitle => 'Numera le pagine';
 
   @override
   String get pageNumbersEmptyBody =>
@@ -1506,7 +1505,7 @@ class LIt extends L {
   String get organizePreview => 'Anteprima';
 
   @override
-  String get organizeExtractTitle => 'Estrarre un intervallo di pagine';
+  String get organizeExtractTitle => 'Estrai un intervallo di pagine';
 
   @override
   String organizeRangeLabel(int start, int end) {
@@ -1514,7 +1513,7 @@ class LIt extends L {
   }
 
   @override
-  String get organizeSplitTitle => 'Dividere in più file';
+  String get organizeSplitTitle => 'Dividi in più file';
 
   @override
   String organizeFileCount(int count) {
@@ -1554,7 +1553,7 @@ class LIt extends L {
       'Per scansionare un documento serve l’accesso alla fotocamera.';
 
   @override
-  String get scanGrantPermission => 'Consenti la fotocamera';
+  String get scanGrantPermission => 'Consenti l\'accesso alla fotocamera';
 
   @override
   String get actionRetry => 'Riprova';
@@ -1568,7 +1567,7 @@ class LIt extends L {
   }
 
   @override
-  String get signTitle => 'Firmare un PDF';
+  String get signTitle => 'Firma un PDF';
 
   @override
   String get signIntro =>
@@ -1581,7 +1580,7 @@ class LIt extends L {
   String get signPickPage => 'Scegli la pagina da firmare.';
 
   @override
-  String get signDrawTitle => 'Disegnare la mia firma';
+  String get signDrawTitle => 'Disegna la tua firma';
 
   @override
   String get signDrawBody =>
@@ -1607,7 +1606,7 @@ class LIt extends L {
   String get signProgress => 'Aggiunta della firma…';
 
   @override
-  String get editTitle => 'Annotare un documento';
+  String get editTitle => 'Annota un documento';
 
   @override
   String get editEmptyBody =>
@@ -1647,7 +1646,7 @@ class LIt extends L {
   String get editPageUnavailable => 'Impossibile mostrare questa pagina.';
 
   @override
-  String get ocrEmptyTitle => 'Rendere il testo ricercabile';
+  String get ocrEmptyTitle => 'Rendi il testo ricercabile';
 
   @override
   String get ocrEmptyBody =>
@@ -1753,7 +1752,7 @@ class LIt extends L {
   String get redactProgress => 'Oscuramento in corso…';
 
   @override
-  String get cropEmptyTitle => 'Ritagliare i margini';
+  String get cropEmptyTitle => 'Ritaglia i margini';
 
   @override
   String get cropEmptyBody =>
@@ -1805,7 +1804,7 @@ class LIt extends L {
   String get cropAction => 'Ritaglia';
 
   @override
-  String get compareTitle => 'Confrontare due PDF';
+  String get compareTitle => 'Confronta due PDF';
 
   @override
   String get compareEmptyTitle => 'Che cosa è cambiato';

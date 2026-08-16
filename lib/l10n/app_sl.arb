@@ -1,9 +1,7 @@
 {
   "@@locale": "sl",
-
   "appTitle": "Trombone — PDF, skeniranje in Word",
   "appWordmark": "Trombone",
-
   "actionSave": "Shrani",
   "actionShare": "Deli",
   "actionCompress": "Pomanjšaj",
@@ -13,119 +11,86 @@
   "actionContinue": "Naprej",
   "actionOpening": "Odpiranje…",
   "actionRemoveFile": "Odstrani to datoteko",
-
   "progressPreparing": "Pripravljanje…",
   "progressPercent": "{percent} %",
-
   "emptyReassurance": "Izvoz je brezplačen, brez vodnega žiga in brez omejitev.",
   "emptyAcceptedFormats": "Podprte oblike",
-
   "exportSavedTitle": "Shranjeno.",
   "exportSavedBody": "Pod imenom in v mapo, ki ste ju pravkar izbrali. Brez vodnega žiga, brez omejitev, ničesar ni treba odklepati.",
   "exportSaveDialogTitle": "Shrani PDF",
-
   "pageTileIncluded": "Stran {number}, vključena. Dotaknite se, da jo izpustite.",
   "pageTileExcluded": "Stran {number}, izpuščena. Dotaknite se, da jo vključite.",
   "pageTileRotate": "Zavrti stran {number}",
-
   "sectionHeaderSemantics": "{title}, {count, plural, one{{count} orodje} two{{count} orodji} few{{count} orodja} other{{count} orodij}}",
   "toolCount": "{count, plural, one{{count} orodje} two{{count} orodji} few{{count} orodja} other{{count} orodij}}",
-
-  "homePromise": "Sestavite dokument in ga izvozite.\nNa koncu ni zidu.",
+  "homePromise": "Sestavite dokument in ga izvozite.\nBrez plačljivih ovir na koncu.",
   "homeChipNoAccount": "Brez računa",
   "homeChipNoWatermark": "Brez vodnega žiga",
   "homeChipUnlimited": "Neomejen izvoz",
   "homeSearchTooltip": "Poišči orodje",
-  "homeColophon": "Pri shranjevanju se nič ne odklene proti plačilu. Izvoz je brezplačen, brez vodnega žiga in brez omejitve števila.",
-
+  "homeColophon": "Pri shranjevanju se nič ne odklepa s plačilom. Izvoz je brezplačen, brez vodnega žiga in brez omejitev.",
   "sectionFeatured": "Izpostavljeno",
   "sectionToPdf": "V PDF",
   "sectionFromPdf": "Iz PDF-ja",
   "sectionSecurity": "Varnost",
   "sectionEdit": "Urejanje",
-
   "toolMerge": "Združi",
   "toolMergeKeywords": "zdruzevanje spoji sestavi povezi dodaj",
   "toolMergeSubtitle": "PDF, Word, slike in besedilo v enem dokumentu",
-
   "toolRectoVerso": "Obojestransko",
   "toolRectoVersoKeywords": "dupleks prepletanje skeniranje sode lihe dve strani",
   "toolRectoVersoSubtitle": "Dva skena, spet v pravem vrstnem redu",
-
   "toolImagesToPdf": "Slike v PDF",
   "toolImagesToPdfKeywords": "fotografija jpg jpeg png slike album kamera",
   "toolImagesToPdfSubtitle": "Fotografije in posnetki zaslona v enem dokumentu",
-
   "toolPdfToWord": "PDF v Word",
   "toolPdfToWordKeywords": "docx urejevalnik besedila urejljivo pretvori doc",
   "toolPdfToWordSubtitle": "Besedilo in tabele, z možnostjo urejanja",
-
   "toolOrganize": "Uredi PDF",
   "toolOrganizeKeywords": "razdeli loci izlusci prerazporedi vrstni red strani izbrisi",
   "toolOrganizeSubtitle": "Deljenje, izluščanje, razporejanje",
-
   "toolExcelToPdf": "Excel v PDF",
   "toolExcelToPdfKeywords": "preglednica xlsx delovni zvezek list",
-
   "toolPptxToPdf": "PowerPoint v PDF",
   "toolPptxToPdfKeywords": "pptx prosojnica predstavitev slides",
-
   "toolHtmlToPdf": "Spletna stran v PDF",
   "toolHtmlToPdfKeywords": "html splet internet url povezava clanek",
-
   "toolScan": "Skeniraj dokument",
   "toolScanKeywords": "kamera fotografija digitaliziraj skener papir",
-
   "toolPdfToExcel": "PDF v Excel",
   "toolPdfToExcelKeywords": "preglednica xlsx tabela izlusci podatke",
-
   "toolPdfToPptx": "PDF v PowerPoint",
   "toolPdfToPptxKeywords": "pptx prosojnica predstavitev slides",
-
   "toolPdfToImages": "PDF v slike",
   "toolPdfToImagesKeywords": "jpg png fotografija izvozi posnetek zaslona slika",
-
   "toolOcr": "Besedilo za iskanje (OCR)",
   "toolOcrKeywords": "prepoznavanje znaki skenirano kopiraj oznaci",
-
   "toolPdfA": "Pretvori v PDF/A",
   "toolPdfAKeywords": "arhiviranje standard dolgorocna hramba iso",
-
   "toolProtect": "Zaščiti PDF",
   "toolProtectKeywords": "geslo kljucavnica sifriraj zakleni zascita",
-
   "toolUnlock": "Odkleni PDF",
   "toolUnlockKeywords": "odstrani geslo odpri desifriraj odkleni kljucavnica",
-
   "toolRepair": "Popravi PDF",
   "toolRepairKeywords": "poskodovan neberljiv pokvarjen obnovi napaka",
-
   "toolRedact": "Prekrij v PDF-ju",
   "toolRedactKeywords": "skrij pocrni anonimiziraj zaupno izbrisi cenzura",
-
   "toolEdit": "Uredi besedilo v PDF-ju",
   "toolEditKeywords": "besedilo spremeni popravi opomba pisi",
-
   "toolSign": "Podpiši",
   "toolSignKeywords": "podpis parafa pogodba roka",
-
   "toolWatermark": "Vodni žig",
   "toolWatermarkKeywords": "watermark zig zaupno osnutek oznaka",
-
   "toolPageNumbers": "Številke strani",
   "toolPageNumbersKeywords": "oštevilčenje paginacija ostevilci stevilke",
-
   "toolCrop": "Obreži PDF",
   "toolCropKeywords": "rezanje robovi obrezovanje velikost",
-
   "toolCompare": "Primerjaj PDF-je",
   "toolCompareKeywords": "razlika razlicice diff spremembe primerjaj",
-
   "searchHint": "Združi, geslo, vodni žig…",
   "searchClear": "Počisti",
   "searchNoResultTitle": "Za »{query}« ni nobenega orodja.",
   "searchNoResultBody": "Poskusite z obliko, ki jo imate pri roki — »Word«, »Excel«, »fotografija« — ali s tem, kar želite narediti: »podpiši«, »razdeli«, »geslo«.",
-
   "actionUndo": "Razveljavi",
   "actionApply": "Uporabi",
   "actionChoose": "Izberi",
@@ -136,30 +101,25 @@
   "actionBack": "Nazaj",
   "actionAdd": "Dodaj",
   "noFileChosen": "Nobena datoteka ni izbrana",
-
   "errorExportFailed": "Izvoz ni uspel: {detail}",
   "errorShareFailed": "Deljenje ni uspelo: {detail}",
   "errorOpenFailed": "Datoteke ni bilo mogoče odpreti: {detail}",
   "errorConversionFailed": "Pretvorba ni uspela: {detail}",
   "errorOnFile": "{name}: {detail}",
   "errorPickPdf": "Izberite datoteko PDF.",
-
   "sizeBytes": "{value} B",
   "sizeKb": "{value} kB",
   "sizeMb": "{value} MB",
   "sizeApprox": "~ {size}",
-
   "pageCount": "{count, plural, one{{count} stran} two{{count} strani} few{{count} strani} other{{count} strani}}",
   "pageCountOfTotal": "{kept, plural, one{{kept} stran} two{{kept} strani} few{{kept} strani} other{{kept} strani}} od {total}",
   "pageOfTotal": "Stran {current} od {total}",
-
   "formatPdf": "PDF",
   "formatWord": "Word",
   "formatExcel": "Excel",
   "formatPowerPoint": "PowerPoint",
   "formatImages": "Slike",
   "formatText": "Besedilo",
-
   "mergeAddFile": "Dodaj datoteko",
   "mergeAddHint": "PDF, Word, slike ali besedilo",
   "mergeEmptyTitle": "En sam dokument",
@@ -172,7 +132,6 @@
   "mergeMoveSemantics": "Premakni {name}",
   "mergeRotateAll": "Zavrti vse strani",
   "mergePreviewAndExport": "Predogled in izvoz ({count, plural, one{{count} stran} two{{count} strani} few{{count} strani} other{{count} strani}})",
-
   "previewTitle": "Predogled · {size}",
   "previewZoomPage": "Stran {number}, povečaj",
   "previewPageUnreadable": "Strani ni mogoče prebrati.",
@@ -182,7 +141,6 @@
   "compressEstimating": "Ocenjevanje…",
   "compressProgress": "Pomanjševanje…",
   "compressFailed": "Pomanjšanje ni uspelo: {detail}",
-
   "protectEmptyTitle": "Zakleni z geslom",
   "protectEmptyBody": "PDF se brez gesla, ki ga izberete, ne bo več odprl. Shranite ga: obnoviti ga ni mogoče.",
   "protectSubtitle": "Šifriran bo z AES 256 bitov",
@@ -199,7 +157,6 @@
   "protectResultTitle": "PDF je zaščiten",
   "protectResultDetail": "Šifriran z AES 256 bitov. Za odpiranje bo potrebno geslo.",
   "protectExportWhat": "PDF, zaščiten z geslom",
-
   "unlockEmptyTitle": "Odstrani geslo",
   "unlockEmptyBody": "Potrebujete trenutno geslo dokumenta. Ko je odstranjeno, se PDF odpira prosto.",
   "unlockAcceptsProtectedPdf": "Zaščiten PDF",
@@ -209,15 +166,13 @@
   "unlockProgress": "Odklepanje…",
   "unlockFailed": "Odklepanje ni uspelo: {detail}",
   "unlockAction": "Odkleni",
-
   "repairEmptyTitle": "Popravi poškodovano datoteko",
   "repairEmptyBody": "Notranja zgradba poškodovanega PDF-ja se sestavi znova. Kar je mogoče rešiti, bo rešeno.",
   "repairProgress": "Popravljanje…",
   "repairFailed": "Te datoteke ni mogoče popraviti — morda je preveč poškodovana.",
   "repairAction": "Popravi",
-
   "pdfToWordEmptyTitle": "Word, ki ga je mogoče urejati",
-  "pdfToWordEmptyBody": "Besedilo in zgradba PDF-ja se preneseta v dokument .docx, ki ga boste lahko znova odprli in popravili.",
+  "pdfToWordEmptyBody": "Besedilo in struktura PDF-ja se preneseta v dokument .docx, ki ga lahko znova odprete in urejate.",
   "pdfToWordAnalyzing": "Analiza dokumenta…",
   "pdfToWordAnalysisPending": "Analiza čaka",
   "pdfToWordAnalysisFailed": "Analiza ni uspela: {detail}",
@@ -236,7 +191,6 @@
   "pdfToWordConvertAction": "Pretvori v Word",
   "actionConvertAgain": "Pretvori znova",
   "errorSaveFailed": "Shranjevanje ni bilo mogoče: {detail}",
-
   "rectoVersoIntro": "Enostranski podajalnik da dve datoteki: lihe strani po vrsti, sode pa pogosto v obratnem vrstnem redu. Izberite obe, da se dokument spet sestavi.",
   "rectoVersoOddSlot": "Datoteka z lihimi stranmi (sprednja stran)",
   "rectoVersoEvenSlot": "Datoteka s sodimi stranmi (hrbtna stran)",
@@ -250,7 +204,6 @@
   "errorGeneric": "Ni uspelo: {detail}",
   "actionConvertToPdf": "Pretvori v PDF",
   "convertProgress": "Pretvarjanje…",
-
   "excelEmptyTitle": "Delovni zvezek kot PDF",
   "excelEmptyBody": "Listi datoteke .xlsx postanejo strani PDF, pripravljene za pošiljanje ali tiskanje.",
   "excelChooseWorkbook": "Izberi delovni zvezek",
@@ -265,7 +218,6 @@
   "excelRepeatHeader": "Ponovi vrstico glave na vsaki strani",
   "excelRepeatHeaderHint": "Prva vrstica lista se znova izriše na vrhu vsake strani tabele.",
   "excelCaveat": "Kaj pretvorba prenese: besedilo celic tako, kot je shranjeno v datoteki (vključno z zadnjim izračunanim rezultatom formul), prvo vrstico krepko in mrežo.\n\nČesa ne: barv, pisav, oblik števil, spojenih celic, slik, grafikonov in samih formul. Stolpci se zožijo, da se prilegajo širini strani; na zelo širokih listih se besedilo preozkih celic skrajša z »…«.",
-
   "pptxEmptyTitle": "Predstavitev kot PDF",
   "pptxEmptyBody": "Ena ležeča stran 16:9 na prosojnico, z naslovom in alinejami. Besedilo se prenese; izvorne slike, oblike in ozadja ne.\n\nPodprta oblika: .pptx. Starejšo datoteko .ppt je treba najprej shraniti kot .pptx iz PowerPointa.",
   "pptxChoosePresentation": "Izberi predstavitev",
@@ -278,14 +230,11 @@
   "pptxEmptySlide": "Brez besedila (samo slika ali oblika)",
   "pptxTextLineCount": "{count, plural, one{{count} vrstica besedila} two{{count} vrstici besedila} few{{count} vrstice besedila} other{{count} vrstic besedila}}",
   "pptxReadFailed": "Branje ni bilo mogoče: {detail}",
-
   "compressLevelLight": "Rahlo",
   "compressLevelMedium": "Srednje",
   "compressLevelStrong": "Močno",
-
   "pptxQualityStandard": "Standardna (150 dpi)",
   "pptxQualityHigh": "Visoka (220 dpi)",
-
   "pdfToExcelEmptyTitle": "Vrni tabele",
   "pdfToExcelEmptyBody": "Tabele iz PDF-ja se izluščijo v Excelov delovni zvezek. Oblikovanje se ne ohrani, vrednosti pa da.",
   "pdfToExcelPagesAnalyzed": "{count, plural, one{analizirana {count} stran} two{analizirani {count} strani} few{analizirane {count} strani} other{analiziranih {count} strani}}",
@@ -305,7 +254,6 @@
   "pdfToExcelExportWhat": "Excelov delovni zvezek",
   "pdfToExcelConvertAction": "Pretvori v Excel",
   "resultNameAndSize": "{name} — {size}",
-
   "pdfToPptxEmptyTitle": "Ena prosojnica na stran",
   "pdfToPptxEmptyBody": "PDF postane povsem enaka PowerPointova predstavitev. Vsaka stran pride kot slika: postavitev je zvesta, besedila pa v PowerPointu ne bo mogoče urejati.",
   "pdfToPptxOpenFailed": "Tega PDF-ja ni bilo mogoče odpreti: {detail}",
@@ -323,7 +271,6 @@
   "pdfToPptxChangeQuality": "Spremeni kakovost",
   "pdfToPptxConvertAction": "Pretvori v PowerPoint",
   "pdfToPptxExportWhat": "PowerPointova predstavitev · {count, plural, one{{count} prosojnica} two{{count} prosojnici} few{{count} prosojnice} other{{count} prosojnic}}",
-
   "formatLabel": "Oblika",
   "actionExport": "Izvozi",
   "imageQualityWeb": "Splet (72 dpi)",
@@ -335,7 +282,6 @@
   "errorLoadFailed": "Nalaganje ni uspelo: {detail}",
   "pdfToImagesProgress": "Izvažanje…",
   "pdfToImagesExportWhat": "{count, plural, one{{count} slika {format}} two{{count} sliki {format}} few{{count} slike {format}} other{{count} slik {format}}}",
-
   "pdfaEmptyTitle": "Arhiviraj za dolgo",
   "pdfaEmptyBody": "PDF/A je oblika za arhiviranje, ki jo zahtevajo mnoge ustanove. Dokument se pretvori, ne da bi izgubil svoj videz.",
   "pdfaConformanceLevel": "Raven skladnosti",
@@ -346,7 +292,6 @@
   "pdfaCaveatTitle": "Kaj pretvorba spremeni",
   "pdfaCaveat": "Vsaka stran se znova izriše kot slika pri {dpi} dpi: besedilo postane slika, postavitev pa se ustali. Prav to naredi datoteko resnično skladno, ne da bi bila odvisna od pisav izvornega dokumenta, v zameno pa besedila ni več mogoče označiti ali iskati, povezave in obrazci izginejo, datoteka pa postane težja.",
   "pdfaOpenFailed": "Tega PDF-ja ni bilo mogoče odpreti: {detail}",
-
   "imagesToPdfEmptyTitle": "Slike v enem PDF-ju",
   "imagesToPdfEmptyBody": "JPG, PNG, WebP, HEIC — dodajte svoje slike in sestavile se bodo v vrstnem redu, ki ga izberete.",
   "imagesToPdfChoose": "Izberi slike",
@@ -357,7 +302,6 @@
   "imagesToPdfCreateAction": "Ustvari PDF ({count, plural, one{{count} slika} two{{count} sliki} few{{count} slike} other{{count} slik}})",
   "actionRotate": "Zavrti",
   "actionRemove": "Odstrani",
-
   "htmlTitle": "HTML / spletna stran v PDF",
   "htmlIntro": "Spremenite spletno stran ali kodo HTML v PDF velikosti A4. Izris opravi brskalnik, vgrajen v Android, zato je postavitev takšna kot pri tiskanju iz Chroma.",
   "htmlModeUrl": "Spletni naslov",
@@ -373,10 +317,9 @@
   "htmlConverting": "Pretvarjanje HTML-ja…",
   "htmlNetworkNotice": "Potrebna je internetna povezava: to je edino orodje v aplikaciji, ki mora prenesti stran. Strani, ki zahtevajo prijavo, pasico o piškotkih ali veliko JavaScripta, lahko pridejo nepopolne.",
   "htmlOfflineNotice": "HTML in CSS, zapisana neposredno v strani, se izrišeta brez povezave. Nasprotno pa slike, slogovne predloge ali pisave, ki se pridobijo z zunanjega spletnega naslova, potrebujejo internetno povezavo.",
-
   "watermarkEmptyTitle": "Dodaj vodni žig",
   "watermarkEmptyBody": "Besedilo po vaši izbiri se ponavlja v ozadju vseh strani — da dokument označite kot zaupen ali kot osnutek.",
-  "watermarkEmptyNote": "Izvoz je brezplačen in brez omejitve števila.",
+  "watermarkEmptyNote": "Izvoz je brezplačen in brez omejitev.",
   "watermarkTextLabel": "Besedilo vodnega žiga",
   "watermarkDefaultText": "ZAUPNO",
   "watermarkNeedText": "Vnesite besedilo vodnega žiga.",
@@ -392,7 +335,6 @@
   "percentValue": "{percent} %",
   "degreesValue": "{degrees}°",
   "pointsValue": "{points} pt",
-
   "pageNumbersEmptyTitle": "Oštevilči strani",
   "pageNumbersEmptyBody": "Izberite PDF, nato položaj in obliko številk, ki bodo dodane na vsako stran.",
   "positionLabel": "Položaj",
@@ -404,7 +346,6 @@
   "pageNumbersFormatOfTotal": "N / skupaj",
   "pageNumbersStart": "Začetna številka",
   "pageNumbersProgress": "Oštevilčevanje…",
-
   "scanNoCamera": "V tej napravi ni na voljo nobene kamere.",
   "scanCameraFailed": "Kamere ni bilo mogoče zagnati: {detail}",
   "scanCropToolbar": "Prilagodi",
@@ -414,7 +355,6 @@
   "actionRetry": "Poskusi znova",
   "scanNoPageYet": "Zaenkrat še nobene strani.",
   "scanFinishAction": "Zaključi · {count}",
-
   "signTitle": "Podpiši PDF",
   "signIntro": "Na stran PDF-ja postavite svoj ročno narisan podpis. To je zgolj risba, dodana dokumentu, ne pa overjen elektronski podpis.",
   "signChooseSubtitle": "Izberite dokument za podpis",
@@ -427,7 +367,6 @@
   "signPlaceBody": "Povlecite podpis na želeno mesto na strani, nato se dotaknite Zaključi.",
   "signPageUnavailable": "Strani ni bilo mogoče prikazati.",
   "signProgress": "Dodajanje podpisa…",
-
   "editTitle": "Označi dokument",
   "editEmptyBody": "Dodajajte besedilo ali označujte odlomke neposredno na obstoječem PDF-ju.",
   "editAddTextTitle": "Dodaj besedilo",
@@ -440,7 +379,6 @@
   "editModeText": "Besedilo",
   "editModeHighlight": "Označi",
   "editPageUnavailable": "Te strani ni bilo mogoče prikazati.",
-
   "ocrEmptyTitle": "Naredi besedilo iskljivo",
   "ocrEmptyBody": "Besedilo skeniranega PDF-ja se prepozna in nevidno doda čez sliko. Videz strani se ne spremeni.",
   "ocrWrongFormat": "Izberite PDF ali sliko (JPG, PNG…).",
@@ -451,7 +389,6 @@
   "ocrResultBody": "{count, plural, one{analizirana {count} stran} two{analizirani {count} strani} few{analizirane {count} strani} other{analiziranih {count} strani}}. PDF za iskanje je pripravljen, prepoznano besedilo pa lahko tudi kopirate.",
   "ocrCopyText": "Kopiraj besedilo",
   "ocrTextCopied": "Besedilo je kopirano.",
-
   "redactIntro": "Trajno skrijte dele PDF-ja (imena, naslove, zneske). Za razliko od preprostega črnega pravokotnika, položenega čez, se skrito besedilo iz datoteke zares odstrani, ne le prekrije: ni ga več mogoče označiti ali kopirati.",
   "redactChooseSubtitle": "Izberite dokument za prekrivanje",
   "redactCaveat": "Dobro je vedeti: da se skrito besedilo odstrani, se vsaka stran dokumenta znova pretvori v sliko (200 dpi). Rezultat zato ni več PDF, v katerem bi bilo mogoče označiti besedilo, dobljena datoteka pa je navadno težja od izvirne.",
@@ -468,7 +405,6 @@
   "redactOtherPdf": "Drug PDF",
   "redactAction": "Prekrij",
   "redactProgress": "Prekrivanje…",
-
   "cropEmptyTitle": "Obreži robove",
   "cropEmptyBody": "Izberite PDF, nato povlecite s prstom po predogledu, da določite območje, ki naj se ohrani.",
   "cropTooSmall": "Izbrano območje je premajhno.",
@@ -482,7 +418,6 @@
   "cropAllPagesOff": "Obreže se le stran 1, druge ostanejo cele.",
   "cropCaveat": "Obrezovanje zmanjša stran: vsebina zunaj območja se ne prikazuje in ne tiska več.",
   "cropAction": "Obreži",
-
   "compareTitle": "Primerjaj dva PDF-ja",
   "compareEmptyTitle": "Kaj se je spremenilo",
   "compareEmptyBody": "Izberite dve različici istega PDF-ja. Dodani in odstranjeni odlomki bodo postavljeni drug ob drugega, stran za stranjo.",
@@ -494,7 +429,6 @@
   "compareChangedPages": "{changed, plural, one{{changed} stran se razlikuje} two{{changed} strani se razlikujeta} few{{changed} strani se razlikujejo} other{{changed} strani se razlikuje}} od {total}",
   "compareNoDifference": "Med datotekama ni bila zaznana nobena razlika.",
   "comparePageHeading": "Stran {number}",
-
   "organizeEmptyTitle": "Vzemi PDF spet v roke",
   "organizeEmptyBody": "Odprite dokument, da ga razdelite, iz njega izluščite strani ali jim spremenite vrstni red.",
   "organizeOpenFile": "Odpri datoteko",

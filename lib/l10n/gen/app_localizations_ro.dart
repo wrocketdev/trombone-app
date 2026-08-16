@@ -9,7 +9,7 @@ class LRo extends L {
   LRo([String locale = 'ro']) : super(locale);
 
   @override
-  String get appTitle => 'Trombone — PDF, scanare şi Word';
+  String get appTitle => 'Trombone — PDF, scanare și Word';
 
   @override
   String get appWordmark => 'Trombone';
@@ -21,13 +21,13 @@ class LRo extends L {
   String get actionShare => 'Partajează';
 
   @override
-  String get actionCompress => 'Micşorează';
+  String get actionCompress => 'Micșorează';
 
   @override
   String get actionDone => 'Gata';
 
   @override
-  String get actionCancel => 'Renunţă';
+  String get actionCancel => 'Renunță';
 
   @override
   String get actionChange => 'Schimbă';
@@ -39,10 +39,10 @@ class LRo extends L {
   String get actionOpening => 'Se deschide…';
 
   @override
-  String get actionRemoveFile => 'Scoate acest fişier';
+  String get actionRemoveFile => 'Scoate acest fișier';
 
   @override
-  String get progressPreparing => 'Se pregăteşte…';
+  String get progressPreparing => 'Se pregătește…';
 
   @override
   String progressPercent(int percent) {
@@ -51,7 +51,7 @@ class LRo extends L {
 
   @override
   String get emptyReassurance =>
-      'Export gratuit, fără filigran şi fără limită.';
+      'Export gratuit, fără filigran și fără limită.';
 
   @override
   String get emptyAcceptedFormats => 'Formate acceptate';
@@ -61,24 +61,24 @@ class LRo extends L {
 
   @override
   String get exportSavedBody =>
-      'Cu numele şi în folderul pe care tocmai le-aţi ales. Fără filigran, fără limită, nimic de deblocat.';
+      'Cu numele și în folderul pe care tocmai le-ați ales. Fără filigran, fără limită, nimic de deblocat.';
 
   @override
   String get exportSaveDialogTitle => 'Salvează PDF-ul';
 
   @override
   String pageTileIncluded(int number) {
-    return 'Pagina $number, inclusă. Atingeţi pentru a o scoate.';
+    return 'Pagina $number, inclusă. Atingeți pentru a o scoate.';
   }
 
   @override
   String pageTileExcluded(int number) {
-    return 'Pagina $number, scoasă. Atingeţi pentru a o include.';
+    return 'Pagina $number, scoasă. Atingeți pentru a o include.';
   }
 
   @override
   String pageTileRotate(int number) {
-    return 'Roteşte pagina $number';
+    return 'Rotește pagina $number';
   }
 
   @override
@@ -107,7 +107,7 @@ class LRo extends L {
 
   @override
   String get homePromise =>
-      'Faceţi-vă documentul şi exportaţi-l.\nNiciun zid la final.';
+      'Creați documentul și exportați-l.\nNiciun paywall la final.';
 
   @override
   String get homeChipNoAccount => 'Fără cont';
@@ -123,7 +123,7 @@ class LRo extends L {
 
   @override
   String get homeColophon =>
-      'La salvare nu se deblochează nimic contra cost. Exportul este gratuit, fără filigran şi fără limită de număr.';
+      'La salvare nu se deblochează nimic contra cost. Exportul este gratuit, fără filigran și fără limite.';
 
   @override
   String get sectionFeatured => 'Recomandate';
@@ -149,10 +149,10 @@ class LRo extends L {
 
   @override
   String get toolMergeSubtitle =>
-      'PDF, Word, imagini şi text într-un singur document';
+      'PDF, Word, imagini și text într-un singur document';
 
   @override
-  String get toolRectoVerso => 'Faţă-verso';
+  String get toolRectoVerso => 'Față-verso';
 
   @override
   String get toolRectoVersoKeywords =>
@@ -170,7 +170,7 @@ class LRo extends L {
 
   @override
   String get toolImagesToPdfSubtitle =>
-      'Poze şi capturi într-un singur document';
+      'Poze și capturi într-un singur document';
 
   @override
   String get toolPdfToWord => 'PDF în Word';
@@ -180,7 +180,7 @@ class LRo extends L {
       'docx procesor de text editabil converteste doc';
 
   @override
-  String get toolPdfToWordSubtitle => 'Text şi tabele, editabile';
+  String get toolPdfToWordSubtitle => 'Text și tabele, editabile';
 
   @override
   String get toolOrganize => 'Organizează un PDF';
@@ -190,7 +190,7 @@ class LRo extends L {
       'imparte separa extrage reordoneaza ordine pagini sterge';
 
   @override
-  String get toolOrganizeSubtitle => 'Împărţire, extragere, reordonare';
+  String get toolOrganizeSubtitle => 'Împărțire, extragere, reordonare';
 
   @override
   String get toolExcelToPdf => 'Excel în PDF';
@@ -244,7 +244,7 @@ class LRo extends L {
       'recunoastere caractere scanat copiaza selecteaza';
 
   @override
-  String get toolPdfA => 'Converteşte în PDF/A';
+  String get toolPdfA => 'Convertește în PDF/A';
 
   @override
   String get toolPdfAKeywords => 'arhivare standard termen lung pastrare iso';
@@ -319,7 +319,7 @@ class LRo extends L {
   String get searchHint => 'Îmbină, parolă, filigran…';
 
   @override
-  String get searchClear => 'Şterge';
+  String get searchClear => 'Șterge';
 
   @override
   String searchNoResultTitle(String query) {
@@ -328,10 +328,10 @@ class LRo extends L {
 
   @override
   String get searchNoResultBody =>
-      'Încercaţi cu formatul pe care îl aveţi la îndemână — „Word”, „Excel”, „poză” — sau cu ce vreţi să faceţi: „semnează”, „împarte”, „parolă”.';
+      'Încercați cu formatul pe care îl aveți la îndemână — „Word”, „Excel”, „poză” — sau cu ce vreți să faceți: „semnează”, „împarte”, „parolă”.';
 
   @override
-  String get actionUndo => 'Anulează acţiunea';
+  String get actionUndo => 'Anulează acțiunea';
 
   @override
   String get actionApply => 'Aplică';
@@ -343,10 +343,10 @@ class LRo extends L {
   String get actionChoosePdf => 'Alege un PDF';
 
   @override
-  String get actionChooseFiles => 'Alege fişiere';
+  String get actionChooseFiles => 'Alege fișiere';
 
   @override
-  String get actionConvert => 'Converteşte';
+  String get actionConvert => 'Convertește';
 
   @override
   String get actionFinish => 'Termină';
@@ -358,26 +358,26 @@ class LRo extends L {
   String get actionAdd => 'Adaugă';
 
   @override
-  String get noFileChosen => 'Niciun fişier ales';
+  String get noFileChosen => 'Niciun fișier ales';
 
   @override
   String errorExportFailed(String detail) {
-    return 'Exportul a eşuat: $detail';
+    return 'Exportul a eșuat: $detail';
   }
 
   @override
   String errorShareFailed(String detail) {
-    return 'Partajarea a eşuat: $detail';
+    return 'Partajarea a eșuat: $detail';
   }
 
   @override
   String errorOpenFailed(String detail) {
-    return 'Fişierul nu a putut fi deschis: $detail';
+    return 'Fișierul nu a putut fi deschis: $detail';
   }
 
   @override
   String errorConversionFailed(String detail) {
-    return 'Conversia a eşuat: $detail';
+    return 'Conversia a eșuat: $detail';
   }
 
   @override
@@ -386,7 +386,7 @@ class LRo extends L {
   }
 
   @override
-  String get errorPickPdf => 'Alegeţi un fişier PDF.';
+  String get errorPickPdf => 'Alegeți un fișier PDF.';
 
   @override
   String sizeBytes(String value) {
@@ -456,7 +456,7 @@ class LRo extends L {
   String get formatText => 'Text';
 
   @override
-  String get mergeAddFile => 'Adaugă un fişier';
+  String get mergeAddFile => 'Adaugă un fișier';
 
   @override
   String get mergeAddHint => 'PDF, Word, imagini sau text';
@@ -466,18 +466,18 @@ class LRo extends L {
 
   @override
   String get mergeEmptyBody =>
-      'Adăugaţi PDF-uri, fişiere Word, imagini sau text. Înainte de export le puteţi reordona şi puteţi scoate pagini.';
+      'Adăugați PDF-uri, fișiere Word, imagini sau text. Înainte de export le puteți reordona și puteți scoate pagini.';
 
   @override
   String get mergeNeedOnePage =>
-      'Adăugaţi cel puţin un fişier cu o pagină de inclus.';
+      'Adăugați cel puțin un fișier cu o pagină de inclus.';
 
   @override
   String get mergeProgress => 'Se îmbină…';
 
   @override
   String mergeFailed(String detail) {
-    return 'Îmbinarea a eşuat: $detail';
+    return 'Îmbinarea a eșuat: $detail';
   }
 
   @override
@@ -496,7 +496,7 @@ class LRo extends L {
   }
 
   @override
-  String get mergeRotateAll => 'Roteşte toate paginile';
+  String get mergeRotateAll => 'Rotește toate paginile';
 
   @override
   String mergePreviewAndExport(int count) {
@@ -507,7 +507,7 @@ class LRo extends L {
       few: '$count pagini',
       one: '$count pagină',
     );
-    return 'Previzualizare şi export ($_temp0)';
+    return 'Previzualizare și export ($_temp0)';
   }
 
   @override
@@ -517,7 +517,7 @@ class LRo extends L {
 
   @override
   String previewZoomPage(int number) {
-    return 'Pagina $number, măreşte';
+    return 'Pagina $number, mărește';
   }
 
   @override
@@ -536,22 +536,22 @@ class LRo extends L {
   }
 
   @override
-  String get compressTitle => 'Micşorare';
+  String get compressTitle => 'Micșorare';
 
   @override
   String compressBody(String size) {
-    return 'Dimensiune actuală: $size. Alegeţi un nivel — dimensiunea estimată apare înainte de aplicare.';
+    return 'Dimensiune actuală: $size. Alegeți un nivel — dimensiunea estimată apare înainte de aplicare.';
   }
 
   @override
   String get compressEstimating => 'Se estimează…';
 
   @override
-  String get compressProgress => 'Se micşorează…';
+  String get compressProgress => 'Se micșorează…';
 
   @override
   String compressFailed(String detail) {
-    return 'Micşorarea a eşuat: $detail';
+    return 'Micșorarea a eșuat: $detail';
   }
 
   @override
@@ -559,10 +559,10 @@ class LRo extends L {
 
   @override
   String get protectEmptyBody =>
-      'PDF-ul nu se va mai deschide fără parola pe care o alegeţi. Păstraţi-o: nu poate fi recuperată.';
+      'PDF-ul nu se va mai deschide fără parola pe care o alegeți. Păstrați-o: nu poate fi recuperată.';
 
   @override
-  String get protectSubtitle => 'Va fi criptat cu AES pe 256 de biţi';
+  String get protectSubtitle => 'Va fi criptat cu AES pe 256 de biți';
 
   @override
   String get protectPassword => 'Parolă';
@@ -581,18 +581,18 @@ class LRo extends L {
 
   @override
   String get protectWarning =>
-      'Notaţi-o undeva: fără ea, documentul devine definitiv ilizibil. Nicio recuperare nu este posibilă, nici de către dumneavoastră, nici de către aplicaţie.';
+      'Notați-o undeva: fără ea, documentul devine definitiv ilizibil. Nicio recuperare nu este posibilă, nici de către dumneavoastră, nici de către aplicație.';
 
   @override
   String get protectAlreadyProtected =>
-      'Acest fişier este deja protejat — folosiţi mai întâi Deblochează PDF-ul.';
+      'Acest fișier este deja protejat — folosiți mai întâi Deblochează PDF-ul.';
 
   @override
   String get protectProgress => 'Se protejează…';
 
   @override
   String protectFailed(String detail) {
-    return 'Protejarea a eşuat: $detail';
+    return 'Protejarea a eșuat: $detail';
   }
 
   @override
@@ -603,7 +603,7 @@ class LRo extends L {
 
   @override
   String get protectResultDetail =>
-      'Criptat cu AES pe 256 de biţi. Va fi nevoie de parolă pentru a-l deschide.';
+      'Criptat cu AES pe 256 de biți. Va fi nevoie de parolă pentru a-l deschide.';
 
   @override
   String get protectExportWhat => 'PDF protejat cu parolă';
@@ -613,7 +613,7 @@ class LRo extends L {
 
   @override
   String get unlockEmptyBody =>
-      'Aveţi nevoie de parola actuală a documentului. După ce este scoasă, PDF-ul se va deschide liber.';
+      'Aveți nevoie de parola actuală a documentului. După ce este scoasă, PDF-ul se va deschide liber.';
 
   @override
   String get unlockAcceptsProtectedPdf => 'PDF protejat';
@@ -625,21 +625,21 @@ class LRo extends L {
   String get unlockCurrentPassword => 'Parola actuală';
 
   @override
-  String get unlockWrongPassword => 'Parolă greşită.';
+  String get unlockWrongPassword => 'Parolă greșită.';
 
   @override
   String get unlockProgress => 'Se deblochează…';
 
   @override
   String unlockFailed(String detail) {
-    return 'Deblocarea a eşuat: $detail';
+    return 'Deblocarea a eșuat: $detail';
   }
 
   @override
   String get unlockAction => 'Deblochează';
 
   @override
-  String get repairEmptyTitle => 'Repară un fişier stricat';
+  String get repairEmptyTitle => 'Repară un fișier stricat';
 
   @override
   String get repairEmptyBody =>
@@ -650,7 +650,7 @@ class LRo extends L {
 
   @override
   String get repairFailed =>
-      'Acest fişier nu poate fi reparat — poate fi prea deteriorat.';
+      'Acest fișier nu poate fi reparat — poate fi prea deteriorat.';
 
   @override
   String get repairAction => 'Repară';
@@ -660,28 +660,28 @@ class LRo extends L {
 
   @override
   String get pdfToWordEmptyBody =>
-      'Textul şi structura PDF-ului sunt transpuse într-un document .docx pe care îl veţi putea redeschide şi corecta.';
+      'Textul și structura PDF-ului sunt transpuse într-un document .docx pe care îl puteți redeschide și edita.';
 
   @override
   String get pdfToWordAnalyzing => 'Se analizează documentul…';
 
   @override
-  String get pdfToWordAnalysisPending => 'Analiză în aşteptare';
+  String get pdfToWordAnalysisPending => 'Analiză în așteptare';
 
   @override
   String pdfToWordAnalysisFailed(String detail) {
-    return 'Analiza a eşuat: $detail';
+    return 'Analiza a eșuat: $detail';
   }
 
   @override
   String get pdfLocked =>
-      'Acest PDF este protejat cu parolă. Deblocaţi-l mai întâi.';
+      'Acest PDF este protejat cu parolă. Deblocați-l mai întâi.';
 
   @override
-  String get pdfToWordConverting => 'Se converteşte în Word…';
+  String get pdfToWordConverting => 'Se convertește în Word…';
 
   @override
-  String get pdfToWordSummaryTitle => 'Conţinut detectat';
+  String get pdfToWordSummaryTitle => 'Conținut detectat';
 
   @override
   String pdfToWordParagraphCount(int count) {
@@ -721,15 +721,15 @@ class LRo extends L {
 
   @override
   String get pdfToWordNoTables =>
-      'Niciun tabel detectat: dacă PDF-ul dumneavoastră conţine vreunul, rândurile lui vor fi transformate în paragrafe.';
+      'Niciun tabel detectat: dacă PDF-ul dumneavoastră conține vreunul, rândurile lui vor fi transformate în paragrafe.';
 
   @override
   String get pdfToWordCaveat =>
-      'Conversia reproduce textul, formatarea şi tabelele, dar nu şi aşezarea exactă în pagină: poziţia imaginilor şi a coloanelor nu se păstrează, iar imaginile nu ajung în documentul Word.';
+      'Conversia reproduce textul, formatarea și tabelele, dar nu și așezarea exactă în pagină: poziția imaginilor și a coloanelor nu se păstrează, iar imaginile nu ajung în documentul Word.';
 
   @override
   String get pdfToWordScanWarning =>
-      'Acest PDF pare a fi o scanare: nu s-a găsit niciun text. Folosiţi mai întâi instrumentul Text căutabil (OCR), apoi reveniţi şi convertiţi PDF-ul obţinut.';
+      'Acest PDF pare a fi o scanare: nu s-a găsit niciun text. Folosiți mai întâi instrumentul Text căutabil (OCR), apoi reveniți și convertiți PDF-ul obținut.';
 
   @override
   String get pdfToWordResultTitle => 'Document Word gata';
@@ -743,10 +743,10 @@ class LRo extends L {
   String get pdfToWordExportWhat => 'Document Word';
 
   @override
-  String get pdfToWordConvertAction => 'Converteşte în Word';
+  String get pdfToWordConvertAction => 'Convertește în Word';
 
   @override
-  String get actionConvertAgain => 'Converteşte din nou';
+  String get actionConvertAgain => 'Convertește din nou';
 
   @override
   String errorSaveFailed(String detail) {
@@ -755,16 +755,16 @@ class LRo extends L {
 
   @override
   String get rectoVersoIntro =>
-      'Un alimentator cu o singură faţă dă două fişiere: paginile impare în ordine, iar cele pare adesea în ordine inversă. Alegeţi-le pe amândouă pentru a le recompune.';
+      'Un alimentator cu o singură față dă două fișiere: paginile impare în ordine, iar cele pare adesea în ordine inversă. Alegeți-le pe amândouă pentru a le recompune.';
 
   @override
-  String get rectoVersoOddSlot => 'Fişierul cu paginile impare (faţa)';
+  String get rectoVersoOddSlot => 'Fișierul cu paginile impare (fața)';
 
   @override
-  String get rectoVersoEvenSlot => 'Fişierul cu paginile pare (versoul)';
+  String get rectoVersoEvenSlot => 'Fișierul cu paginile pare (versoul)';
 
   @override
-  String get rectoVersoReversed => 'Al doilea fişier este în ordine inversă';
+  String get rectoVersoReversed => 'Al doilea fișier este în ordine inversă';
 
   @override
   String get rectoVersoReversedHint =>
@@ -798,7 +798,7 @@ class LRo extends L {
   }
 
   @override
-  String get actionPreviewAndExport => 'Previzualizare şi export';
+  String get actionPreviewAndExport => 'Previzualizare și export';
 
   @override
   String errorOpenFailedShort(String detail) {
@@ -807,21 +807,21 @@ class LRo extends L {
 
   @override
   String errorGeneric(String detail) {
-    return 'A eşuat: $detail';
+    return 'A eșuat: $detail';
   }
 
   @override
-  String get actionConvertToPdf => 'Converteşte în PDF';
+  String get actionConvertToPdf => 'Convertește în PDF';
 
   @override
-  String get convertProgress => 'Se converteşte…';
+  String get convertProgress => 'Se convertește…';
 
   @override
   String get excelEmptyTitle => 'Un registru în PDF';
 
   @override
   String get excelEmptyBody =>
-      'Foile unui fişier .xlsx devin pagini PDF, gata de trimis sau de tipărit.';
+      'Foile unui fișier .xlsx devin pagini PDF, gata de trimis sau de tipărit.';
 
   @override
   String get excelChooseWorkbook => 'Alege un registru';
@@ -831,10 +831,10 @@ class LRo extends L {
 
   @override
   String get excelLegacyFormat =>
-      'Formatul .xls (vechiul format binar Excel) nu este acceptat. Salvaţi fişierul ca .xlsx şi încercaţi din nou.';
+      'Formatul .xls (vechiul format binar Excel) nu este acceptat. Salvați fișierul ca .xlsx și încercați din nou.';
 
   @override
-  String get excelWrongFormat => 'Alegeţi un registru Excel .xlsx.';
+  String get excelWrongFormat => 'Alegeți un registru Excel .xlsx.';
 
   @override
   String excelUnreadable(String detail) {
@@ -894,24 +894,24 @@ class LRo extends L {
 
   @override
   String get excelCaveat =>
-      'Ce preia conversia: textul celulelor aşa cum este salvat în fişier (inclusiv ultimul rezultat calculat al formulelor), primul rând îngroşat şi o grilă.\n\nCe nu preia: culori, fonturi, formate numerice, celule îmbinate, imagini, grafice şi formulele însele. Coloanele sunt îngustate ca să încapă în lăţimea paginii; pe foile foarte late, textul celulelor prea înguste este tăiat cu „…”.';
+      'Ce preia conversia: textul celulelor așa cum este salvat în fișier (inclusiv ultimul rezultat calculat al formulelor), primul rând îngroșat și o grilă.\n\nCe nu preia: culori, fonturi, formate numerice, celule îmbinate, imagini, grafice și formulele însele. Coloanele sunt îngustate ca să încapă în lățimea paginii; pe foile foarte late, textul celulelor prea înguste este tăiat cu „…”.';
 
   @override
   String get pptxEmptyTitle => 'O prezentare în PDF';
 
   @override
   String get pptxEmptyBody =>
-      'O pagină orizontală 16:9 pentru fiecare diapozitiv, cu titlul şi punctele. Textul este preluat; imaginile, formele şi fundalurile originale nu.\n\nFormat acceptat: .pptx. Un fişier .ppt mai vechi trebuie salvat mai întâi ca .pptx din PowerPoint.';
+      'O pagină orizontală 16:9 pentru fiecare diapozitiv, cu titlul și punctele. Textul este preluat; imaginile, formele și fundalurile originale nu.\n\nFormat acceptat: .pptx. Un fișier .ppt mai vechi trebuie salvat mai întâi ca .pptx din PowerPoint.';
 
   @override
   String get pptxChoosePresentation => 'Alege o prezentare';
 
   @override
-  String get pptxTextOnlyTitle => 'Se converteşte doar textul';
+  String get pptxTextOnlyTitle => 'Se convertește doar textul';
 
   @override
   String get pptxTextOnlyBody =>
-      'Textul fiecărui diapozitiv este preluat. Imaginile, formele, fundalurile, culorile şi aşezările originale nu se păstrează: PDF-ul obţinut este o aşezare simplă şi lizibilă, nu o copie fidelă a prezentării dumneavoastră.';
+      'Textul fiecărui diapozitiv este preluat. Imaginile, formele, fundalurile, culorile și așezările originale nu se păstrează: PDF-ul obținut este o așezare simplă și lizibilă, nu o copie fidelă a prezentării dumneavoastră.';
 
   @override
   String pptxSlideCount(int count) {
@@ -937,7 +937,7 @@ class LRo extends L {
       few: '$count diapozitive',
       one: '$count diapozitiv',
     );
-    return 'şi încă $_temp0…';
+    return 'și încă $_temp0…';
   }
 
   @override
@@ -964,7 +964,7 @@ class LRo extends L {
   }
 
   @override
-  String get compressLevelLight => 'Uşoară';
+  String get compressLevelLight => 'Ușoară';
 
   @override
   String get compressLevelMedium => 'Medie';
@@ -979,7 +979,7 @@ class LRo extends L {
   String get pptxQualityHigh => 'Înaltă (220 dpi)';
 
   @override
-  String get pdfToExcelEmptyTitle => 'Recuperaţi tabelele';
+  String get pdfToExcelEmptyTitle => 'Recuperați tabelele';
 
   @override
   String get pdfToExcelEmptyBody =>
@@ -1011,7 +1011,7 @@ class LRo extends L {
 
   @override
   String get pdfToExcelIncludeParagraphs =>
-      'Include şi textul din afara tabelelor (un rând pe paragraf)';
+      'Include și textul din afara tabelelor (un rând pe paragraf)';
 
   @override
   String get pdfToExcelIncludeParagraphsHint =>
@@ -1022,7 +1022,7 @@ class LRo extends L {
 
   @override
   String get pdfToExcelCaveat =>
-      'Detectarea se bazează pe poziţia textului în pagină: tabelele fără chenar regulat, celulele îmbinate şi coloanele foarte neregulate pot fi tăiate greşit. Un PDF scanat (o imagine) nu conţine text extractibil şi nu va da nimic. Culorile, formulele şi imaginile nu sunt preluate niciodată: doar valorile text.';
+      'Detectarea se bazează pe poziția textului în pagină: tabelele fără chenar regulat, celulele îmbinate și coloanele foarte neregulate pot fi tăiate greșit. Un PDF scanat (o imagine) nu conține text extractibil și nu va da nimic. Culorile, formulele și imaginile nu sunt preluate niciodată: doar valorile text.';
 
   @override
   String pdfToExcelTablesFound(int tables, int pages) {
@@ -1062,11 +1062,11 @@ class LRo extends L {
 
   @override
   String get pdfToExcelScannedWarning =>
-      'Din acest PDF nu s-a putut extrage niciun text: aproape sigur este un document scanat (imagini ale paginilor). Un program de calcul tabelar nu poate scoate nimic din el; folosiţi mai întâi instrumentul de recunoaştere a textului (OCR).';
+      'Din acest PDF nu s-a putut extrage niciun text: aproape sigur este un document scanat (imagini ale paginilor). Un program de calcul tabelar nu poate scoate nimic din el; folosiți mai întâi instrumentul de recunoaștere a textului (OCR).';
 
   @override
   String get pdfToExcelNoTableWarning =>
-      'În acest document nu s-a recunoscut nicio structură de tabel. Textul există, dar nu este aşezat în coloane regulate. În loc să obţineţi un registru ilizibil, activaţi mai sus „Include şi textul din afara tabelelor” sau folosiţi „PDF în Word”, care păstrează mai bine paragrafele.';
+      'În acest document nu s-a recunoscut nicio structură de tabel. Textul există, dar nu este așezat în coloane regulate. În loc să obțineți un registru ilizibil, activați mai sus „Include și textul din afara tabelelor” sau folosiți „PDF în Word”, care păstrează mai bine paragrafele.';
 
   @override
   String get pdfToExcelResultTitle => 'Registru gata';
@@ -1075,7 +1075,7 @@ class LRo extends L {
   String get pdfToExcelExportWhat => 'Registru Excel';
 
   @override
-  String get pdfToExcelConvertAction => 'Converteşte în Excel';
+  String get pdfToExcelConvertAction => 'Convertește în Excel';
 
   @override
   String resultNameAndSize(String name, String size) {
@@ -1087,7 +1087,7 @@ class LRo extends L {
 
   @override
   String get pdfToPptxEmptyBody =>
-      'PDF-ul devine o prezentare PowerPoint identică. Fiecare pagină ajunge ca imagine: aşezarea este fidelă, dar textul nu va putea fi editat în PowerPoint.';
+      'PDF-ul devine o prezentare PowerPoint identică. Fiecare pagină ajunge ca imagine: așezarea este fidelă, dar textul nu va putea fi editat în PowerPoint.';
 
   @override
   String pdfToPptxOpenFailed(String detail) {
@@ -1095,7 +1095,7 @@ class LRo extends L {
   }
 
   @override
-  String get pdfToPptxConverting => 'Se converteşte în PowerPoint…';
+  String get pdfToPptxConverting => 'Se convertește în PowerPoint…';
 
   @override
   String pdfToPptxPagesToSlides(int count) {
@@ -1124,7 +1124,7 @@ class LRo extends L {
 
   @override
   String get pdfToPptxQualityHint =>
-      'O rezoluţie mai mare dă diapozitive mai clare, dar un fişier net mai greu.';
+      'O rezoluție mai mare dă diapozitive mai clare, dar un fișier net mai greu.';
 
   @override
   String pdfToPptxHeavyWarning(int count) {
@@ -1135,15 +1135,15 @@ class LRo extends L {
       few: '$count pagini',
       one: '$count pagină',
     );
-    return 'Atenţie: la calitate înaltă, o prezentare de $_temp0 poate cântări zeci de MB şi se poate deschide greu. Alegeţi Standard dacă aveţi dubii.';
+    return 'Atenție: la calitate înaltă, o prezentare de $_temp0 poate cântări zeci de MB și se poate deschide greu. Alegeți Standard dacă aveți dubii.';
   }
 
   @override
-  String get goodToKnow => 'De ştiut';
+  String get goodToKnow => 'De știut';
 
   @override
   String get pdfToPptxCaveat =>
-      'Fiecare diapozitiv este o imagine a paginii: aşezarea este identică cu cea din PDF, dar textul nu va putea fi editat în PowerPoint.\nPentru text editabil folosiţi mai degrabă „PDF în Word”.\nO prezentare are un singur format de diapozitiv: este preluat din prima pagină, iar paginile de alt format sunt centrate în interior.';
+      'Fiecare diapozitiv este o imagine a paginii: așezarea este identică cu cea din PDF, dar textul nu va putea fi editat în PowerPoint.\nPentru text editabil folosiți mai degrabă „PDF în Word”.\nO prezentare are un singur format de diapozitiv: este preluat din prima pagină, iar paginile de alt format sunt centrate în interior.';
 
   @override
   String get pdfToPptxResultTitle => 'Prezentare gata';
@@ -1167,13 +1167,13 @@ class LRo extends L {
 
   @override
   String get notSavedYet =>
-      'Fişierul nu este încă pe dispozitivul dumneavoastră: salvaţi-l sau partajaţi-l.';
+      'Fișierul nu este încă pe dispozitivul dumneavoastră: salvați-l sau partajați-l.';
 
   @override
   String get pdfToPptxChangeQuality => 'Schimbă calitatea';
 
   @override
-  String get pdfToPptxConvertAction => 'Converteşte în PowerPoint';
+  String get pdfToPptxConvertAction => 'Convertește în PowerPoint';
 
   @override
   String pdfToPptxExportWhat(int count) {
@@ -1207,16 +1207,16 @@ class LRo extends L {
 
   @override
   String get pdfToImagesEmptyBody =>
-      'Alegeţi un PDF: fiecare pagină va ieşi ca imagine, la rezoluţia pe care o reglaţi apoi.';
+      'Alegeți un PDF: fiecare pagină va ieși ca imagine, la rezoluția pe care o reglați apoi.';
 
   @override
   String pdfToImagesNotAPdf(String name) {
-    return '$name: alegeţi un fişier PDF.';
+    return '$name: alegeți un fișier PDF.';
   }
 
   @override
   String errorLoadFailed(String detail) {
-    return 'Încărcarea a eşuat: $detail';
+    return 'Încărcarea a eșuat: $detail';
   }
 
   @override
@@ -1239,26 +1239,26 @@ class LRo extends L {
 
   @override
   String get pdfaEmptyBody =>
-      'PDF/A este formatul de arhivare cerut de multe instituţii. Documentul este convertit fără să-şi piardă înfăţişarea.';
+      'PDF/A este formatul de arhivare cerut de multe instituții. Documentul este convertit fără să-și piardă înfățișarea.';
 
   @override
   String get pdfaConformanceLevel => 'Nivel de conformitate';
 
   @override
   String get pdfaA1bDetail =>
-      'Nivelul cel mai strict şi cel mai larg acceptat. De ales dacă aveţi dubii.';
+      'Nivelul cel mai strict și cel mai larg acceptat. De ales dacă aveți dubii.';
 
   @override
   String get pdfaA2bDetail =>
-      'Bazat pe PDF 1.7: compresie mai eficientă, fişiere ceva mai uşoare.';
+      'Bazat pe PDF 1.7: compresie mai eficientă, fișiere ceva mai ușoare.';
 
   @override
   String get pdfaA3bDetail =>
-      'Ca A-2b, dar permite ataşamente (cerut adesea pentru facturarea electronică).';
+      'Ca A-2b, dar permite atașamente (cerut adesea pentru facturarea electronică).';
 
   @override
   String pdfaConvertingTo(String level) {
-    return 'Se converteşte în $level…';
+    return 'Se convertește în $level…';
   }
 
   @override
@@ -1266,7 +1266,7 @@ class LRo extends L {
 
   @override
   String pdfaCaveat(int dpi) {
-    return 'Fiecare pagină este redesenată ca imagine la $dpi dpi: textul devine imagine, iar aşezarea se fixează. Tocmai asta face fişierul cu adevărat conform, fără să depindă de fonturile documentului original, dar în schimb textul nu mai poate fi selectat sau căutat, legăturile şi formularele dispar, iar fişierul devine mai greu.';
+    return 'Fiecare pagină este redesenată ca imagine la $dpi dpi: textul devine imagine, iar așezarea se fixează. Tocmai asta face fișierul cu adevărat conform, fără să depindă de fonturile documentului original, dar în schimb textul nu mai poate fi selectat sau căutat, legăturile și formularele dispar, iar fișierul devine mai greu.';
   }
 
   @override
@@ -1279,7 +1279,7 @@ class LRo extends L {
 
   @override
   String get imagesToPdfEmptyBody =>
-      'JPG, PNG, WebP, HEIC — adăugaţi-vă imaginile şi vor fi asamblate în ordinea pe care o alegeţi.';
+      'JPG, PNG, WebP, HEIC — adăugați-vă imaginile și vor fi asamblate în ordinea pe care o alegeți.';
 
   @override
   String get imagesToPdfChoose => 'Alege imagini';
@@ -1297,7 +1297,7 @@ class LRo extends L {
 
   @override
   String imagesToPdfBuildFailed(String detail) {
-    return 'Crearea a eşuat: $detail';
+    return 'Crearea a eșuat: $detail';
   }
 
   @override
@@ -1313,7 +1313,7 @@ class LRo extends L {
   }
 
   @override
-  String get actionRotate => 'Roteşte';
+  String get actionRotate => 'Rotește';
 
   @override
   String get actionRemove => 'Scoate';
@@ -1323,7 +1323,7 @@ class LRo extends L {
 
   @override
   String get htmlIntro =>
-      'Transformaţi o pagină web sau cod HTML într-un PDF A4. Randarea este făcută de browserul integrat în Android, aşa că aşezarea este cea a unei tipăriri din Chrome.';
+      'Transformați o pagină web sau cod HTML într-un PDF A4. Randarea este făcută de browserul integrat în Android, așa că așezarea este cea a unei tipăriri din Chrome.';
 
   @override
   String get htmlModeUrl => 'Adresă web';
@@ -1348,43 +1348,43 @@ class LRo extends L {
       'Adresa trebuie să înceapă cu http:// sau https://.';
 
   @override
-  String get htmlUrlIncomplete => 'Introduceţi o adresă web completă.';
+  String get htmlUrlIncomplete => 'Introduceți o adresă web completă.';
 
   @override
-  String get htmlCodeEmpty => 'Lipiţi cod HTML de convertit.';
+  String get htmlCodeEmpty => 'Lipiți cod HTML de convertit.';
 
   @override
-  String get htmlLoadingUrl => 'Se încarcă pagina şi se converteşte…';
+  String get htmlLoadingUrl => 'Se încarcă pagina și se convertește…';
 
   @override
-  String get htmlConverting => 'Se converteşte HTML-ul…';
+  String get htmlConverting => 'Se convertește HTML-ul…';
 
   @override
   String get htmlNetworkNotice =>
-      'Este nevoie de conexiune la internet: este singurul instrument al aplicaţiei care trebuie să descarce pagina. Paginile care cer autentificare, o bandă de cookie-uri sau mult JavaScript pot ieşi incomplete.';
+      'Este nevoie de conexiune la internet: este singurul instrument al aplicației care trebuie să descarce pagina. Paginile care cer autentificare, o bandă de cookie-uri sau mult JavaScript pot ieși incomplete.';
 
   @override
   String get htmlOfflineNotice =>
-      'HTML-ul şi CSS-ul scrise direct în pagină sunt randate fără conexiune. În schimb, imaginile, foile de stil sau fonturile aduse de la o adresă web externă au nevoie de conexiune la internet.';
+      'HTML-ul și CSS-ul scrise direct în pagină sunt randate fără conexiune. În schimb, imaginile, foile de stil sau fonturile aduse de la o adresă web externă au nevoie de conexiune la internet.';
 
   @override
   String get watermarkEmptyTitle => 'Pune un filigran';
 
   @override
   String get watermarkEmptyBody =>
-      'Un text la alegerea dumneavoastră se repetă pe fundalul tuturor paginilor — pentru a marca un document drept confidenţial sau ciornă.';
+      'Un text la alegerea dumneavoastră se repetă pe fundalul tuturor paginilor — pentru a marca un document drept confidențial sau ciornă.';
 
   @override
-  String get watermarkEmptyNote => 'Export gratuit şi fără limită de număr.';
+  String get watermarkEmptyNote => 'Export gratuit și fără limite.';
 
   @override
   String get watermarkTextLabel => 'Textul filigranului';
 
   @override
-  String get watermarkDefaultText => 'CONFIDENŢIAL';
+  String get watermarkDefaultText => 'CONFIDENȚIAL';
 
   @override
-  String get watermarkNeedText => 'Introduceţi un text pentru filigran.';
+  String get watermarkNeedText => 'Introduceți un text pentru filigran.';
 
   @override
   String watermarkOpacity(int percent) {
@@ -1393,7 +1393,7 @@ class LRo extends L {
 
   @override
   String watermarkRotation(int degrees) {
-    return 'Unghi de rotaţie: $degrees°';
+    return 'Unghi de rotație: $degrees°';
   }
 
   @override
@@ -1408,7 +1408,7 @@ class LRo extends L {
   String get colorGrey => 'Gri';
 
   @override
-  String get colorRed => 'Roşu';
+  String get colorRed => 'Roșu';
 
   @override
   String get colorBlue => 'Albastru';
@@ -1435,14 +1435,14 @@ class LRo extends L {
   }
 
   @override
-  String get pageNumbersEmptyTitle => 'Numerotaţi paginile';
+  String get pageNumbersEmptyTitle => 'Numerotați paginile';
 
   @override
   String get pageNumbersEmptyBody =>
-      'Alegeţi un PDF, apoi poziţia şi forma numerelor care vor fi adăugate pe fiecare pagină.';
+      'Alegeți un PDF, apoi poziția și forma numerelor care vor fi adăugate pe fiecare pagină.';
 
   @override
-  String get positionLabel => 'Poziţie';
+  String get positionLabel => 'Poziție';
 
   @override
   String get positionBottomCenter => 'Jos centru';
@@ -1473,10 +1473,10 @@ class LRo extends L {
 
   @override
   String get organizeEmptyBody =>
-      'Deschideţi un document ca să-l împărţiţi, să extrageţi pagini sau să le schimbaţi ordinea.';
+      'Deschideți un document ca să-l împărțiți, să extrageți pagini sau să le schimbați ordinea.';
 
   @override
-  String get organizeOpenFile => 'Deschide un fişier';
+  String get organizeOpenFile => 'Deschide un fișier';
 
   @override
   String get organizeNothingToExport => 'Nicio pagină de exportat.';
@@ -1498,7 +1498,7 @@ class LRo extends L {
 
   @override
   String organizePageMoved(int from) {
-    return 'Mutată de pe poziţia $from';
+    return 'Mutată de pe poziția $from';
   }
 
   @override
@@ -1539,23 +1539,23 @@ class LRo extends L {
   }
 
   @override
-  String get organizeSplitTitle => 'Împarte în mai multe fişiere';
+  String get organizeSplitTitle => 'Împarte în mai multe fișiere';
 
   @override
   String organizeFileCount(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count de fişiere',
-      few: '$count fişiere',
-      one: '$count fişier',
+      other: '$count de fișiere',
+      few: '$count fișiere',
+      one: '$count fișier',
     );
     return '$_temp0';
   }
 
   @override
   String organizeSplitFailed(String detail) {
-    return 'Împărţirea a eşuat: $detail';
+    return 'Împărțirea a eșuat: $detail';
   }
 
   @override
@@ -1572,7 +1572,7 @@ class LRo extends L {
 
   @override
   String scanCaptureFailed(String detail) {
-    return 'Captura a eşuat: $detail';
+    return 'Captura a eșuat: $detail';
   }
 
   @override
@@ -1598,36 +1598,36 @@ class LRo extends L {
 
   @override
   String get signIntro =>
-      'Puneţi-vă semnătura desenată de mână pe o pagină dintr-un PDF. Este doar un desen adăugat documentului, nu o semnătură electronică certificată.';
+      'Puneți-vă semnătura desenată de mână pe o pagină dintr-un PDF. Este doar un desen adăugat documentului, nu o semnătură electronică certificată.';
 
   @override
-  String get signChooseSubtitle => 'Selectaţi documentul de semnat';
+  String get signChooseSubtitle => 'Selectați documentul de semnat';
 
   @override
-  String get signPickPage => 'Alegeţi pagina de semnat.';
+  String get signPickPage => 'Alegeți pagina de semnat.';
 
   @override
   String get signDrawTitle => 'Desenează-mi semnătura';
 
   @override
   String get signDrawBody =>
-      'Desenaţi cu degetul ca pe hârtie. Aceasta pune un desen pe pagină — nu este o semnătură electronică certificată.';
+      'Desenați cu degetul ca pe hârtie. Aceasta pune un desen pe pagină — nu este o semnătură electronică certificată.';
 
   @override
-  String get signNeedDrawing => 'Desenaţi o semnătură înainte de a continua.';
+  String get signNeedDrawing => 'Desenați o semnătură înainte de a continua.';
 
   @override
-  String get signClear => 'Şterge';
+  String get signClear => 'Șterge';
 
   @override
   String get signValidate => 'Confirmă';
 
   @override
   String get signPlaceBody =>
-      'Trageţi semnătura în locul dorit pe pagină, apoi apăsaţi Termină.';
+      'Trageți semnătura în locul dorit pe pagină, apoi apăsați Termină.';
 
   @override
-  String get signPageUnavailable => 'Pagina nu a putut fi afişată.';
+  String get signPageUnavailable => 'Pagina nu a putut fi afișată.';
 
   @override
   String get signProgress => 'Se adaugă semnătura…';
@@ -1637,7 +1637,7 @@ class LRo extends L {
 
   @override
   String get editEmptyBody =>
-      'Adăugaţi text sau evidenţiaţi pasaje direct pe un PDF existent.';
+      'Adăugați text sau evidențiați pasaje direct pe un PDF existent.';
 
   @override
   String get editAddTextTitle => 'Adaugă text';
@@ -1652,7 +1652,7 @@ class LRo extends L {
 
   @override
   String get editNeedAnnotation =>
-      'Adăugaţi cel puţin o adnotare înainte de a termina.';
+      'Adăugați cel puțin o adnotare înainte de a termina.';
 
   @override
   String get editProgress => 'Se aplică adnotările…';
@@ -1667,31 +1667,31 @@ class LRo extends L {
   String get editModeText => 'Text';
 
   @override
-  String get editModeHighlight => 'Evidenţiază';
+  String get editModeHighlight => 'Evidențiază';
 
   @override
-  String get editPageUnavailable => 'Această pagină nu a putut fi afişată.';
+  String get editPageUnavailable => 'Această pagină nu a putut fi afișată.';
 
   @override
   String get ocrEmptyTitle => 'Fă textul căutabil';
 
   @override
   String get ocrEmptyBody =>
-      'Textul unui PDF scanat este recunoscut şi adăugat peste imagine, în mod invizibil. Pagina nu îşi schimbă înfăţişarea.';
+      'Textul unui PDF scanat este recunoscut și adăugat peste imagine, în mod invizibil. Pagina nu își schimbă înfățișarea.';
 
   @override
-  String get ocrWrongFormat => 'Alegeţi un PDF sau o imagine (JPG, PNG…).';
+  String get ocrWrongFormat => 'Alegeți un PDF sau o imagine (JPG, PNG…).';
 
   @override
-  String get ocrProgress => 'Se recunoaşte…';
+  String get ocrProgress => 'Se recunoaște…';
 
   @override
   String ocrFailed(String detail) {
-    return 'Recunoaşterea a eşuat: $detail';
+    return 'Recunoașterea a eșuat: $detail';
   }
 
   @override
-  String get ocrRunAction => 'Porneşte recunoaşterea';
+  String get ocrRunAction => 'Pornește recunoașterea';
 
   @override
   String get ocrResultTitle => 'Rezultatul OCR';
@@ -1705,7 +1705,7 @@ class LRo extends L {
       few: '$count pagini analizate',
       one: '$count pagină analizată',
     );
-    return '$_temp0. PDF-ul căutabil este gata şi puteţi copia şi tot textul recunoscut.';
+    return '$_temp0. PDF-ul căutabil este gata și puteți copia și tot textul recunoscut.';
   }
 
   @override
@@ -1716,17 +1716,17 @@ class LRo extends L {
 
   @override
   String get redactIntro =>
-      'Ascundeţi definitiv zone dintr-un PDF (nume, adrese, sume). Spre deosebire de un simplu dreptunghi negru pus deasupra, textul ascuns este chiar şters din fişier, nu doar acoperit: nu mai poate fi selectat sau copiat.';
+      'Ascundeți definitiv zone dintr-un PDF (nume, adrese, sume). Spre deosebire de un simplu dreptunghi negru pus deasupra, textul ascuns este chiar șters din fișier, nu doar acoperit: nu mai poate fi selectat sau copiat.';
 
   @override
-  String get redactChooseSubtitle => 'Selectaţi documentul de anonimizat';
+  String get redactChooseSubtitle => 'Selectați documentul de anonimizat';
 
   @override
   String get redactCaveat =>
-      'De ştiut: pentru a şterge textul ascuns, fiecare pagină a documentului este transformată din nou în imagine (200 dpi). Rezultatul nu mai este aşadar un PDF din care se poate selecta textul, iar fişierul obţinut este de obicei mai greu decât originalul.';
+      'De știut: pentru a șterge textul ascuns, fiecare pagină a documentului este transformată din nou în imagine (200 dpi). Rezultatul nu mai este așadar un PDF din care se poate selecta textul, iar fișierul obținut este de obicei mai greu decât originalul.';
 
   @override
-  String get redactEmptyPdf => 'Acest PDF nu conţine nicio pagină.';
+  String get redactEmptyPdf => 'Acest PDF nu conține nicio pagină.';
 
   @override
   String redactOpenFailed(String detail) {
@@ -1735,7 +1735,7 @@ class LRo extends L {
 
   @override
   String redactPageRenderFailed(int number, String detail) {
-    return 'Pagina $number nu a putut fi afişată: $detail';
+    return 'Pagina $number nu a putut fi afișată: $detail';
   }
 
   @override
@@ -1743,7 +1743,7 @@ class LRo extends L {
 
   @override
   String get redactInstructions =>
-      'Trageţi cu degetul pe pagină pentru a trasa o zonă de ascuns. Textul acoperit va fi chiar şters din fişier, nu doar acoperit.';
+      'Trageți cu degetul pe pagină pentru a trasa o zonă de ascuns. Textul acoperit va fi chiar șters din fișier, nu doar acoperit.';
 
   @override
   String get redactPagePrevious => 'Pagina anterioară';
@@ -1785,7 +1785,7 @@ class LRo extends L {
 
   @override
   String get cropEmptyBody =>
-      'Alegeţi un PDF, apoi trageţi cu degetul pe previzualizare pentru a delimita zona de păstrat.';
+      'Alegeți un PDF, apoi trageți cu degetul pe previzualizare pentru a delimita zona de păstrat.';
 
   @override
   String get cropTooSmall => 'Zona selectată este prea mică.';
@@ -1795,7 +1795,7 @@ class LRo extends L {
 
   @override
   String cropFailed(String detail) {
-    return 'Decuparea a eşuat: $detail';
+    return 'Decuparea a eșuat: $detail';
   }
 
   @override
@@ -1818,7 +1818,7 @@ class LRo extends L {
   String get cropAllPages => 'Aplică pe toate paginile';
 
   @override
-  String get cropAllPagesOn => 'Aceeaşi zonă este decupată pe fiecare pagină.';
+  String get cropAllPagesOn => 'Aceeași zonă este decupată pe fiecare pagină.';
 
   @override
   String get cropAllPagesOff =>
@@ -1826,7 +1826,7 @@ class LRo extends L {
 
   @override
   String get cropCaveat =>
-      'Decuparea micşorează pagina: conţinutul din afara zonei nu mai este afişat şi nici tipărit.';
+      'Decuparea micșorează pagina: conținutul din afara zonei nu mai este afișat și nici tipărit.';
 
   @override
   String get cropAction => 'Decupează';
@@ -1839,13 +1839,13 @@ class LRo extends L {
 
   @override
   String get compareEmptyBody =>
-      'Alegeţi două versiuni ale aceluiaşi PDF. Pasajele adăugate şi cele şterse vor fi puse faţă în faţă, pagină cu pagină.';
+      'Alegeți două versiuni ale aceluiași PDF. Pasajele adăugate și cele șterse vor fi puse față în față, pagină cu pagină.';
 
   @override
-  String get compareSlotA => 'Fişierul A';
+  String get compareSlotA => 'Fișierul A';
 
   @override
-  String get compareSlotB => 'Fişierul B';
+  String get compareSlotB => 'Fișierul B';
 
   @override
   String get compareAction => 'Compară';
@@ -1855,7 +1855,7 @@ class LRo extends L {
 
   @override
   String compareFailed(String detail) {
-    return 'Comparaţia a eşuat: $detail';
+    return 'Comparația a eșuat: $detail';
   }
 
   @override
@@ -1872,7 +1872,7 @@ class LRo extends L {
 
   @override
   String get compareNoDifference =>
-      'Nicio diferenţă detectată între cele două fişiere.';
+      'Nicio diferență detectată între cele două fișiere.';
 
   @override
   String comparePageHeading(int number) {
@@ -1884,9 +1884,9 @@ class LRo extends L {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count de fişiere create',
-      few: '$count fişiere create',
-      one: '$count fişier creat',
+      other: '$count de fișiere create',
+      few: '$count fișiere create',
+      one: '$count fișier creat',
     );
     return '$_temp0';
   }

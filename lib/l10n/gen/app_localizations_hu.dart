@@ -105,7 +105,7 @@ class LHu extends L {
 
   @override
   String get homePromise =>
-      'Állítsa össze a dokumentumot, és exportálja.\nA végén nincs fal.';
+      'Állítsa össze a dokumentumot, és exportálja.\nA végén nincs fizetési fal.';
 
   @override
   String get homeChipNoAccount => 'Fiók nélkül';
@@ -121,7 +121,7 @@ class LHu extends L {
 
   @override
   String get homeColophon =>
-      'Mentéskor semmi nem oldódik fel fizetés ellenében. Az exportálás ingyenes, vízjel nélküli, és a darabszám sincs korlátozva.';
+      'Mentéskor semmit sem kell fizetéssel feloldani. Az exportálás ingyenes, vízjelmentes és korlátlan.';
 
   @override
   String get sectionFeatured => 'Kiemelt';
@@ -333,7 +333,7 @@ class LHu extends L {
   String get actionUndo => 'Visszavonás';
 
   @override
-  String get actionApply => 'Alkalmaz';
+  String get actionApply => 'Alkalmazás';
 
   @override
   String get actionChoose => 'Kiválasztás';
@@ -655,7 +655,7 @@ class LHu extends L {
 
   @override
   String get pdfToWordEmptyBody =>
-      'A PDF szövege és szerkezete átkerül egy .docx dokumentumba, amelyet újra megnyithat és javíthat.';
+      'A PDF szövege és szerkezete átkerül egy .docx dokumentumba, amelyet újra megnyithat és szerkeszthet.';
 
   @override
   String get pdfToWordAnalyzing => 'A dokumentum elemzése…';
@@ -1347,8 +1347,7 @@ class LHu extends L {
       'Az Ön által választott szöveg minden oldal hátterében ismétlődik — hogy a dokumentumot bizalmasnak vagy piszkozatnak jelölje.';
 
   @override
-  String get watermarkEmptyNote =>
-      'Az exportálás ingyenes, és a darabszám sincs korlátozva.';
+  String get watermarkEmptyNote => 'Az exportálás ingyenes és korlátlan.';
 
   @override
   String get watermarkTextLabel => 'A vízjel szövege';

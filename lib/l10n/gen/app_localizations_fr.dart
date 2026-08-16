@@ -231,7 +231,7 @@ class LFr extends L {
   String get toolPdfToImagesKeywords => 'jpg png photo exporter capture';
 
   @override
-  String get toolOcr => 'Texte cherchable (OCR)';
+  String get toolOcr => 'Texte recherchable (OCR)';
 
   @override
   String get toolOcrKeywords =>
@@ -715,7 +715,7 @@ class LFr extends L {
 
   @override
   String get pdfToWordScanWarning =>
-      'Ce PDF semble être un scan : aucun texte n’a été trouvé. Utilisez d’abord l’outil Texte cherchable (OCR), puis revenez convertir le PDF obtenu.';
+      'Ce PDF semble être un scan : aucun texte n’a été trouvé. Utilisez d’abord l’outil Texte recherchable (OCR), puis revenez convertir le PDF obtenu.';
 
   @override
   String get pdfToWordResultTitle => 'Document Word prêt';
@@ -1636,7 +1636,7 @@ class LFr extends L {
   String get editPageUnavailable => 'Impossible d’afficher cette page.';
 
   @override
-  String get ocrEmptyTitle => 'Rendre le texte cherchable';
+  String get ocrEmptyTitle => 'Rendre le texte recherchable';
 
   @override
   String get ocrEmptyBody =>
@@ -1667,7 +1667,7 @@ class LFr extends L {
       other: '$count pages analysées',
       one: '$count page analysée',
     );
-    return '$_temp0. Le PDF cherchable est prêt, et vous pouvez aussi copier tout le texte reconnu.';
+    return '$_temp0. Le PDF avec texte recherchable est prêt, et vous pouvez aussi copier tout le texte reconnu.';
   }
 
   @override

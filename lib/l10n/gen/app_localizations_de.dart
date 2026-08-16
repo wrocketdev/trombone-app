@@ -105,7 +105,7 @@ class LDe extends L {
 
   @override
   String get homePromise =>
-      'Dokument erstellen, exportieren.\nAm Ende keine Mauer.';
+      'Dokument erstellen, exportieren.\nKeine Bezahlschranke am Ende.';
 
   @override
   String get homeChipNoAccount => 'Ohne Konto';
@@ -121,7 +121,7 @@ class LDe extends L {
 
   @override
   String get homeColophon =>
-      'Beim Speichern wird nichts gegen Bezahlung freigeschaltet. Der Export ist kostenlos, ohne Wasserzeichen und ohne Mengenbegrenzung.';
+      'Beim Speichern wird nichts gegen Bezahlung freigeschaltet. Der Export ist kostenlos, ohne Wasserzeichen und ohne Limit.';
 
   @override
   String get sectionFeatured => 'Empfohlen';
@@ -657,7 +657,7 @@ class LDe extends L {
 
   @override
   String get pdfToWordEmptyBody =>
-      'Text und Struktur des PDFs werden in ein .docx-Dokument übertragen, das Sie wieder öffnen und korrigieren können.';
+      'Text und Struktur des PDFs werden in ein .docx-Dokument übertragen, das Sie wieder öffnen und bearbeiten können.';
 
   @override
   String get pdfToWordAnalyzing => 'Dokument wird analysiert…';
@@ -1116,7 +1116,7 @@ class LDe extends L {
       other: '$count Seiten',
       one: '$count Seite',
     );
-    return 'Achtung: in hoher Qualität kann eine Präsentation mit $_temp0 mehrere Dutzend MB wiegen und lange zum Öffnen brauchen. Wählen Sie im Zweifel Standard.';
+    return 'Achtung: in hoher Qualität kann eine Präsentation mit $_temp0 mehrere Dutzend MB groß sein und lange zum Öffnen brauchen. Wählen Sie im Zweifel Standard.';
   }
 
   @override
@@ -1352,8 +1352,7 @@ class LDe extends L {
       'Ein Text Ihrer Wahl wird im Hintergrund auf allen Seiten wiederholt — um ein Dokument als vertraulich oder als Entwurf zu kennzeichnen.';
 
   @override
-  String get watermarkEmptyNote =>
-      'Export kostenlos und ohne Mengenbegrenzung.';
+  String get watermarkEmptyNote => 'Kostenloser Export ohne Begrenzung.';
 
   @override
   String get watermarkTextLabel => 'Text des Wasserzeichens';
@@ -1448,7 +1447,7 @@ class LDe extends L {
   String get pageNumbersProgress => 'Wird nummeriert…';
 
   @override
-  String get organizeEmptyTitle => 'Ein PDF wieder in die Hand nehmen';
+  String get organizeEmptyTitle => 'Ein PDF neu organisieren';
 
   @override
   String get organizeEmptyBody =>

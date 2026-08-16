@@ -105,7 +105,7 @@ class LSv extends L {
 
   @override
   String get homePromise =>
-      'Gör ditt dokument och exportera det.\nIngen mur på slutet.';
+      'Skapa ditt dokument och exportera det.\nIngen betalvägg på slutet.';
 
   @override
   String get homeChipNoAccount => 'Inget konto';
@@ -121,7 +121,7 @@ class LSv extends L {
 
   @override
   String get homeColophon =>
-      'Ingenting låses upp mot betalning när du ska spara. Export är gratis, utan vattenstämpel och utan tak för hur många.';
+      'Inget låses upp mot betalning när du sparar. Export är gratis, utan vattenstämpel och utan gränser.';
 
   @override
   String get sectionFeatured => 'Utvalt';
@@ -1345,7 +1345,7 @@ class LSv extends L {
       'En text du väljer själv upprepas i bakgrunden på varje sida — för att märka ett dokument som konfidentiellt eller som utkast.';
 
   @override
-  String get watermarkEmptyNote => 'Gratis export, inget tak för hur många.';
+  String get watermarkEmptyNote => 'Gratis export utan gränser.';
 
   @override
   String get watermarkTextLabel => 'Vattenstämpelns text';

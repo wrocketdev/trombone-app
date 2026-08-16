@@ -36,7 +36,7 @@ class LNl extends L {
   String get actionContinue => 'Doorgaan';
 
   @override
-  String get actionOpening => 'Bezig met openen…';
+  String get actionOpening => 'Openen…';
 
   @override
   String get actionRemoveFile => 'Dit bestand verwijderen';
@@ -105,7 +105,7 @@ class LNl extends L {
 
   @override
   String get homePromise =>
-      'Maak je document en exporteer het.\nGeen muur aan het eind.';
+      'Maak je document en exporteer het.\nGeen betaalmuur aan het eind.';
 
   @override
   String get homeChipNoAccount => 'Zonder account';
@@ -121,7 +121,7 @@ class LNl extends L {
 
   @override
   String get homeColophon =>
-      'Bij het opslaan wordt niets tegen betaling ontgrendeld. Exporteren is gratis, zonder watermerk en zonder limiet op het aantal.';
+      'Bij het opslaan wordt niets tegen betaling ontgrendeld. Exporteren is gratis, zonder watermerk en zonder limiet.';
 
   @override
   String get sectionFeatured => 'Uitgelicht';
@@ -270,7 +270,7 @@ class LNl extends L {
       'beschadigd onleesbaar kapot herstellen fout';
 
   @override
-  String get toolRedact => 'Pdf onleesbaar maken';
+  String get toolRedact => 'Pdf anonimiseren';
 
   @override
   String get toolRedactKeywords =>
@@ -657,7 +657,7 @@ class LNl extends L {
 
   @override
   String get pdfToWordEmptyBody =>
-      'De tekst en de structuur van de pdf worden overgezet naar een .docx-document dat je opnieuw kunt openen en corrigeren.';
+      'De tekst en structuur van de PDF worden overgezet naar een .docx-document dat je kunt heropenen en bewerken.';
 
   @override
   String get pdfToWordAnalyzing => 'Document analyseren…';
@@ -1340,7 +1340,7 @@ class LNl extends L {
 
   @override
   String get htmlOfflineNotice =>
-      'HTML en CSS die rechtstreeks in de pagina staan, worden offline weergegeven. Afbeeldingen, stijlbladen of lettertypen die van een extern webadres worden gehaald, hebben wel een internetverbinding nodig.';
+      'HTML en CSS die rechtstreeks in de pagina staan, worden offline weergegeven. Afbeeldingen, stylesheets of lettertypen die van een extern webadres worden gehaald, hebben wel een internetverbinding nodig.';
 
   @override
   String get watermarkEmptyTitle => 'Een watermerk aanbrengen';
@@ -1350,8 +1350,7 @@ class LNl extends L {
       'Een tekst naar keuze wordt op de achtergrond van alle pagina’s herhaald — om een document als vertrouwelijk of als concept te merken.';
 
   @override
-  String get watermarkEmptyNote =>
-      'Gratis exporteren en zonder limiet op het aantal.';
+  String get watermarkEmptyNote => 'Gratis exporteren zonder limiet.';
 
   @override
   String get watermarkTextLabel => 'Tekst van het watermerk';
@@ -1747,7 +1746,7 @@ class LNl extends L {
   String get redactOtherPdf => 'Andere pdf';
 
   @override
-  String get redactAction => 'Onleesbaar maken';
+  String get redactAction => 'Anonimiseren';
 
   @override
   String get redactProgress => 'Bezig met onleesbaar maken…';

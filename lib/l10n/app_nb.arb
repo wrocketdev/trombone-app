@@ -1,6 +1,6 @@
 {
   "@@locale": "nb",
-  "appTitle": "Papirklipp — PDF, Skann og Word",
+  "appTitle": "Trombone — PDF, Skann og Word",
   "@appTitle": {
     "description": "Titre affiché par le sélecteur de tâches d'Android au-dessus de l'aperçu de l'application. La marque « Trombone » ne se traduit jamais ; seuls les mots-clés qui la suivent peuvent l'être."
   },
@@ -65,11 +65,11 @@
   "@emptyAcceptedFormats": {
     "description": "Intitulé de la rangée de puces listant les formats que l'outil sait ouvrir."
   },
-  "exportSavedTitle": "Det er tatt opp.",
+  "exportSavedTitle": "Lagret.",
   "@exportSavedTitle": {
     "description": "Titre de la feuille de confirmation, après écriture réussie du fichier. Ton rassurant et affirmatif ; c'est le seul moment célébré de l'application."
   },
-  "exportSavedBody": "Under navnet og i mappen du nettopp har valgt. Ingen vannmerke, ingen grenser, ingenting å låse opp.",
+  "exportSavedBody": "Med navnet og i mappen du valgte. Uten vannmerke, uten begrensninger, ingenting å låse opp.",
   "@exportSavedBody": {
     "description": "Corps de la feuille de confirmation. Rappelle que rien n'est verrouillé derrière un paiement — la promesse centrale du produit."
   },
@@ -77,7 +77,7 @@
   "@exportSaveDialogTitle": {
     "description": "Titre de la boîte système d'enregistrement de fichier."
   },
-  "pageTileIncluded": "Side {number}, inkludert. Trykk for å flytte den til side.",
+  "pageTileIncluded": "Side {number}, inkludert. Trykk for å utelate.",
   "@pageTileIncluded": {
     "description": "Étiquette d'accessibilité d'une vignette de page retenue. Lue à voix haute, jamais affichée.",
     "placeholders": {
@@ -86,7 +86,7 @@
       }
     }
   },
-  "pageTileExcluded": "Side {number}, forkastet. Trykk for å inkludere den.",
+  "pageTileExcluded": "Side {number}, utelatt. Trykk for å inkludere.",
   "@pageTileExcluded": {
     "description": "Étiquette d'accessibilité d'une vignette de page écartée. Lue à voix haute, jamais affichée.",
     "placeholders": {
@@ -104,7 +104,7 @@
       }
     }
   },
-  "sectionHeaderSemantics": "{title}, {count} verktøy",
+  "sectionHeaderSemantics": "{title}, {count, plural, one{{count} verktøy} other{{count} verktøy}}",
   "@sectionHeaderSemantics": {
     "description": "Étiquette d'accessibilité d'un en-tête de section de l'accueil. Lue à voix haute, jamais affichée.",
     "placeholders": {
@@ -116,7 +116,7 @@
       }
     }
   },
-  "toolCount": "{count} verktøy",
+  "toolCount": "{count, plural, one{{count} verktøy} other{{count} verktøy}}",
   "@toolCount": {
     "description": "Décompte des outils, au colophon de l'accueil. Le nombre est calculé depuis le catalogue, jamais saisi.",
     "placeholders": {
@@ -125,7 +125,7 @@
       }
     }
   },
-  "homePromise": "Lag dokumentet ditt, eksporter det.\nIngen vegg på slutten.",
+  "homePromise": "Lag dokumentet ditt, eksporter det.\nIngen betalingsmur til slutt.",
   "@homePromise": {
     "description": "La promesse sous la marque, en haut de l'accueil. Elle désamorce la peur relevée dans les avis du marché : découvrir un paiement obligatoire au moment d'enregistrer. Le saut de ligne est intentionnel — deux lignes exactement, la seconde plus courte que la première."
   },
@@ -145,7 +145,7 @@
   "@homeSearchTooltip": {
     "description": "Info-bulle de la loupe épinglée à la barre de titre de l'accueil."
   },
-  "homeColophon": "Ingenting låses opp mot betaling ved registrering. Eksporten er gratis, uten vannmerke og uten antallsbegrensning.",
+  "homeColophon": "Ingenting låses opp mot betaling ved lagring. Eksporten er gratis, uten vannmerke og uten begrensninger.",
   "@homeColophon": {
     "description": "Texte de pied d'accueil, sous le décompte des outils. Répète la promesse en toutes lettres."
   },
@@ -402,7 +402,7 @@
   "@searchNoResultBody": {
     "description": "Conseil affiché sous le titre d'absence de résultat. Les exemples entre guillemets doivent être adaptés à votre langue, pas traduits littéralement. Employez les guillemets de votre langue."
   },
-  "actionUndo": "Avbryt",
+  "actionUndo": "Angre",
   "@actionUndo": {
     "description": "Défait la dernière action — retrait d'un fichier, compression appliquée. ATTENTION : ce n'est PAS « interrompre » (voir actionCancel). Le français emploie le même mot pour les deux, la plupart des langues non : anglais « Undo » contre « Cancel », allemand « Rückgängig » contre « Abbrechen »."
   },
@@ -494,7 +494,7 @@
   "@errorPickPdf": {
     "description": "Bandeau d'erreur quand l'outil exige un PDF et qu'on lui a donné autre chose."
   },
-  "sizeBytes": "{value} o",
+  "sizeBytes": "{value} B",
   "@sizeBytes": {
     "description": "Poids d'un fichier en octets. L'abréviation est « o » en français, « B » en anglais — employez celle de votre langue.",
     "placeholders": {
@@ -530,7 +530,7 @@
       }
     }
   },
-  "pageCount": "{count} sider",
+  "pageCount": "{count, plural, one{{count} side} other{{count} sider}}",
   "@pageCount": {
     "description": "Décompte de pages. Employez les formes plurielles de votre langue — le polonais, le tchèque, le lituanien et le letton en ont plus de deux.",
     "placeholders": {
@@ -539,7 +539,7 @@
       }
     }
   },
-  "pageCountOfTotal": "{kept} sider av {total}",
+  "pageCountOfTotal": "{kept, plural, one{{kept} side} other{{kept} sider}} av {total}",
   "@pageCountOfTotal": {
     "description": "Décompte partiel : combien de pages sont retenues sur combien au total. Affiché seulement quand on en a écarté ; « 3 pages sur 3 » n'apparaît jamais.",
     "placeholders": {
@@ -651,7 +651,7 @@
   "@mergeRotateAll": {
     "description": "Bouton qui fait tourner d'un quart de tour toutes les pages du document déplié."
   },
-  "mergePreviewAndExport": "Forhåndsvisning og eksport ({count} sider)",
+  "mergePreviewAndExport": "Forhåndsvisning og eksport ({count, plural, one{{count} side} other{{count} sider}})",
   "@mergePreviewAndExport": {
     "description": "Bouton de bas d'écran de l'outil Fusionner, avec le nombre de pages retenues entre parenthèses.",
     "placeholders": {
@@ -682,7 +682,7 @@
   "@previewPageUnreadable": {
     "description": "Affiché à la place d'une page dont le rendu a échoué."
   },
-  "previewExportWhat": "PDF · {count} sider",
+  "previewExportWhat": "PDF · {count, plural, one{{count} side} other{{count} sider}}",
   "@previewExportWhat": {
     "description": "Description de ce qui vient d'être enregistré, dans la feuille de confirmation. Décrit le document, ne le nomme pas.",
     "placeholders": {
@@ -753,11 +753,11 @@
   "@protectMismatch": {
     "description": "Message d'erreur rattaché au champ de confirmation. Court : il s'affiche sous le champ."
   },
-  "protectWarning": "Skriv det ned et sted: uten det blir dokumentet permanent uleselig. Ingen gjenoppretting er mulig, verken av deg eller applikasjonen.",
+  "protectWarning": "Skriv det ned et sted: uten det blir dokumentet permanent uleselig. Ingen gjenoppretting er mulig, verken av deg eller appen.",
   "@protectWarning": {
     "description": "Avertissement sous les champs de saisie. C'est le seul endroit qui dit qu'un mot de passe perdu est perdu pour de bon — ne l'allégez pas."
   },
-  "protectAlreadyProtected": "Denne filen er allerede beskyttet – bruk Unlock PDF først.",
+  "protectAlreadyProtected": "Denne filen er allerede beskyttet – bruk Lås opp PDF først.",
   "@protectAlreadyProtected": {
     "description": "Bandeau d'erreur quand le PDF choisi porte déjà un mot de passe. « Déverrouiller PDF » doit reprendre exactement le libellé traduit de l'outil (toolUnlock)."
   },
@@ -835,7 +835,7 @@
   "@repairEmptyTitle": {
     "description": "Titre de l'écran vide de l'outil Réparer."
   },
-  "repairEmptyBody": "Den interne strukturen til en skadet PDF rekonstrueres. Det som er bergbart vil være bergbart.",
+  "repairEmptyBody": "Den interne strukturen til en skadet PDF gjenoppbygges. Det som kan gjenopprettes, blir berget.",
   "@repairEmptyBody": {
     "description": "Consigne de l'écran vide de l'outil Réparer. La seconde phrase promet peu délibérément — la réparation n'est jamais garantie."
   },
@@ -888,7 +888,7 @@
   "@pdfToWordSummaryTitle": {
     "description": "Titre de la carte qui résume ce que l'inspection a trouvé dans le PDF."
   },
-  "pdfToWordParagraphCount": "{count} avsnitt",
+  "pdfToWordParagraphCount": "{count, plural, one{{count} avsnitt} other{{count} avsnitt}}",
   "@pdfToWordParagraphCount": {
     "description": "Puce du résumé : combien de paragraphes ont été reconnus.",
     "placeholders": {
@@ -897,7 +897,7 @@
       }
     }
   },
-  "pdfToWordHeadingCount": "{count} titler",
+  "pdfToWordHeadingCount": "{count, plural, one{{count} overskrift} other{{count} overskrifter}}",
   "@pdfToWordHeadingCount": {
     "description": "Puce du résumé : combien de titres ont été reconnus.",
     "placeholders": {
@@ -906,7 +906,7 @@
       }
     }
   },
-  "pdfToWordTableCount": "{count} tabeller",
+  "pdfToWordTableCount": "{count, plural, one{{count} tabell} other{{count} tabeller}}",
   "@pdfToWordTableCount": {
     "description": "Puce du résumé : combien de tableaux ont été reconnus.",
     "placeholders": {
@@ -923,7 +923,7 @@
   "@pdfToWordCaveat": {
     "description": "Ce que la conversion ne sait pas faire, dit avant qu'on la lance. C'est le passage qui évite la déception — ne l'allégez pas."
   },
-  "pdfToWordScanWarning": "Denne PDF-en ser ut til å være skannet: ingen tekst ble funnet. Bruk søkbar tekst (OCR)-verktøyet først, kom så tilbake og konverter den resulterende PDF-filen.",
+  "pdfToWordScanWarning": "Denne PDF-en ser ut til å være skannet: ingen tekst ble funnet. Bruk verktøyet Søkbar tekst (OCR) først, kom så tilbake og konverter den resulterende PDF-filen.",
   "@pdfToWordScanWarning": {
     "description": "Avertissement quand le PDF ne contient aucun texte extractible. « Texte cherchable (OCR) » doit reprendre exactement le libellé traduit de l'outil (toolOcr)."
   },
@@ -955,7 +955,7 @@
   "@actionConvertAgain": {
     "description": "Action secondaire proposée une fois le fichier produit, pour refaire la conversion. Doit tenir sur une ligne."
   },
-  "errorSaveFailed": "Kan ikke registrere: {detail}",
+  "errorSaveFailed": "Kunne ikke lagre: {detail}",
   "@errorSaveFailed": {
     "description": "Bandeau d'erreur quand l'écriture du fichier échoue. {detail} est un message technique non traduit.",
     "placeholders": {
@@ -984,7 +984,7 @@
   "@rectoVersoReversedHint": {
     "description": "Sous-titre de l'interrupteur, qui justifie sa valeur par défaut."
   },
-  "rectoVersoPreview": "Interleaving-oversikt ({count} sider)",
+  "rectoVersoPreview": "Interleaving-oversikt ({count, plural, one{{count} side} other{{count} sider}})",
   "@rectoVersoPreview": {
     "description": "Titre de la bande de vignettes qui montre le résultat de l'entrelacement.",
     "placeholders": {
@@ -997,7 +997,7 @@
   "@rectoVersoProgress": {
     "description": "Titre de la boîte de progression pendant l'entrelacement. Garder le caractère de suspension final."
   },
-  "fileWithPageCount": "{name} · {count} sider",
+  "fileWithPageCount": "{name} · {count, plural, one{{count} side} other{{count} sider}}",
   "@fileWithPageCount": {
     "description": "Sous-titre d'une carte de fichier : son nom, puis son nombre de pages. Le point médian est un séparateur typographique.",
     "placeholders": {
@@ -1072,7 +1072,7 @@
       }
     }
   },
-  "excelSheetsAndRows": "{sheets} ark · {rows} rader totalt",
+  "excelSheetsAndRows": "{sheets, plural, one{{sheets} ark} other{{sheets} ark}} · {rows, plural, one{{rows} rad totalt} other{{rows} rader totalt}}",
   "@excelSheetsAndRows": {
     "description": "Sous-titre de la rangée de fichier : combien de feuilles et combien de lignes en tout. Le point médian est un séparateur typographique.",
     "placeholders": {
@@ -1092,7 +1092,7 @@
   "@excelEmptySheet": {
     "description": "Sous-titre d'une feuille qui ne contient aucune ligne."
   },
-  "excelSheetDimensions": "{rows} rader × {columns} kolonner",
+  "excelSheetDimensions": "{rows, plural, one{{rows} rad} other{{rows} rader}} × {columns, plural, one{{columns} kolonne} other{{columns} kolonner}}",
   "@excelSheetDimensions": {
     "description": "Sous-titre d'une feuille : ses dimensions. Le signe × est le symbole de multiplication.",
     "placeholders": {
@@ -1136,7 +1136,7 @@
   "@pptxTextOnlyBody": {
     "description": "Corps de la carte d'avertissement. Dit clairement ce que l'outil ne fait pas — ne l'allégez pas."
   },
-  "pptxSlideCount": "{count} lysbilder",
+  "pptxSlideCount": "{count, plural, one{{count} lysbilde} other{{count} lysbilder}}",
   "@pptxSlideCount": {
     "description": "Sous-titre de la rangée de fichier : combien de diapositives ont été trouvées.",
     "placeholders": {
@@ -1149,7 +1149,7 @@
   "@pptxSlidesDetected": {
     "description": "Intitulé de la liste des diapositives trouvées dans la présentation."
   },
-  "pptxMoreSlides": "og {count} andre lysbilder …",
+  "pptxMoreSlides": "og {count, plural, one{{count} annet lysbilde} other{{count} andre lysbilder}} …",
   "@pptxMoreSlides": {
     "description": "Affiché sous la liste quand la présentation compte plus de trente diapositives et que l'aperçu s'arrête là. Garder le caractère de suspension final.",
     "placeholders": {
@@ -1166,7 +1166,7 @@
   "@pptxEmptySlide": {
     "description": "Sous-titre d'une diapositive dont l'outil n'a extrait aucun texte."
   },
-  "pptxTextLineCount": "{count} linjer med tekst",
+  "pptxTextLineCount": "{count, plural, one{{count} linje med tekst} other{{count} linjer med tekst}}",
   "@pptxTextLineCount": {
     "description": "Sous-titre d'une diapositive : combien de lignes de texte elle porte.",
     "placeholders": {
@@ -1212,7 +1212,7 @@
   "@pdfToExcelEmptyBody": {
     "description": "Consigne de l'écran vide de l'outil PDF vers Excel."
   },
-  "pdfToExcelPagesAnalyzed": "{count} sider analysert",
+  "pdfToExcelPagesAnalyzed": "{count, plural, one{{count} side analysert} other{{count} sider analysert}}",
   "@pdfToExcelPagesAnalyzed": {
     "description": "Sous-titre de la carte du fichier une fois l'inspection faite.",
     "placeholders": {
@@ -1254,7 +1254,7 @@
   "@pdfToExcelCaveat": {
     "description": "Limites de l'extraction de tableaux, dites avant qu'on lance la conversion. Ne l'allégez pas."
   },
-  "pdfToExcelTablesFound": "{tables} tabeller oppdaget på {pages} sider",
+  "pdfToExcelTablesFound": "{tables, plural, one{{tables} tabell oppdaget} other{{tables} tabeller oppdaget}} på {pages, plural, one{{pages} side} other{{pages} sider}}",
   "@pdfToExcelTablesFound": {
     "description": "Résumé de l'inspection : combien de tableaux, sur combien de pages.",
     "placeholders": {
@@ -1275,7 +1275,7 @@
       }
     }
   },
-  "pdfToExcelParagraphsOutside": "{count} avsnitt utenfor tabeller",
+  "pdfToExcelParagraphsOutside": "{count, plural, one{{count} avsnitt utenfor tabeller} other{{count} avsnitt utenfor tabeller}}",
   "@pdfToExcelParagraphsOutside": {
     "description": "Résumé de l'inspection : combien de paragraphes vivent en dehors des tableaux.",
     "placeholders": {
@@ -1292,7 +1292,7 @@
   "@pdfToExcelNoTableWarning": {
     "description": "Avertissement quand le texte existe mais n'est pas tabulaire. Les deux citations entre guillemets doivent reprendre exactement les libellés traduits correspondants (pdfToExcelIncludeParagraphs et toolPdfToWord)."
   },
-  "pdfToExcelResultTitle": "Perm klar",
+  "pdfToExcelResultTitle": "Regneark klart",
   "@pdfToExcelResultTitle": {
     "description": "Titre de la carte de résultat, une fois le classeur produit."
   },
@@ -1337,7 +1337,7 @@
   "@pdfToPptxConverting": {
     "description": "Titre de la boîte de progression pendant la conversion. Garder le caractère de suspension final."
   },
-  "pdfToPptxPagesToSlides": "{count} sider > {count} lysbilder",
+  "pdfToPptxPagesToSlides": "{count, plural, one{{count} side} other{{count} sider}} > {count, plural, one{{count} lysbilde} other{{count} lysbilder}}",
   "@pdfToPptxPagesToSlides": {
     "description": "Sous-titre de la carte du fichier : autant de diapositives que de pages. Le chevron simple et non une flèche → : celle-ci manque au sous-ensemble des fontes embarquées. Voir test/l10n_coverage_test.dart.",
     "placeholders": {
@@ -1358,7 +1358,7 @@
   "@pdfToPptxQualityHint": {
     "description": "Explication sous le choix de qualité, dans le cas ordinaire."
   },
-  "pdfToPptxHeavyWarning": "Advarsel: i høy kvalitet kan en presentasjon på {count} sider veie flere titalls MB og ta lang tid å åpne. Velg Standard når du er i tvil.",
+  "pdfToPptxHeavyWarning": "Advarsel: i høy kvalitet kan en presentasjon på {count, plural, one{{count} side} other{{count} sider}} veie flere titalls MB og ta lang tid å åpne. Velg Standard når du er i tvil.",
   "@pdfToPptxHeavyWarning": {
     "description": "Avertissement affiché en rouge quand haute qualité et document long se combinent. « Standard » doit reprendre le libellé traduit de pptxQualityStandard. « Mo » est l'abréviation de méga-octet — employez celle de votre langue.",
     "placeholders": {
@@ -1379,7 +1379,7 @@
   "@pdfToPptxResultTitle": {
     "description": "Titre de la carte de résultat, une fois la présentation produite."
   },
-  "pdfToPptxResultDetail": "{name} — {count} lysbilder · {size} · {quality}",
+  "pdfToPptxResultDetail": "{name} — {count, plural, one{{count} lysbilde} other{{count} lysbilder}} · {size} · {quality}",
   "@pdfToPptxResultDetail": {
     "description": "Détail de la carte de résultat : nom, nombre de diapositives, poids et réglage de qualité. Le point médian est un séparateur typographique.",
     "placeholders": {
@@ -1409,7 +1409,7 @@
   "@pdfToPptxConvertAction": {
     "description": "Bouton de bas d'écran qui lance la conversion. Doit tenir sur une ligne."
   },
-  "pdfToPptxExportWhat": "PowerPoint-presentasjon · {count} lysbilder",
+  "pdfToPptxExportWhat": "PowerPoint-presentasjon · {count, plural, one{{count} lysbilde} other{{count} lysbilder}}",
   "@pdfToPptxExportWhat": {
     "description": "Description de ce qui vient d'être enregistré, dans la feuille de confirmation.",
     "placeholders": {
@@ -1468,7 +1468,7 @@
   "@pdfToImagesProgress": {
     "description": "Titre de la boîte de progression pendant le rendu des images. Garder le caractère de suspension final."
   },
-  "pdfToImagesExportWhat": "{count} bilder {format}",
+  "pdfToImagesExportWhat": "{count, plural, one{{count} bilde} other{{count} bilder}} {format}",
   "@pdfToImagesExportWhat": {
     "description": "Description de ce qui vient d'être enregistré : combien d'images, dans quel format. {format} vaut « JPG » ou « PNG » et ne se traduit pas.",
     "placeholders": {
@@ -1573,7 +1573,7 @@
       }
     }
   },
-  "imagesToPdfCreateAction": "Lag PDF-en ({count} bilder)",
+  "imagesToPdfCreateAction": "Lag PDF-en ({count, plural, one{{count} bilde} other{{count} bilder}})",
   "@imagesToPdfCreateAction": {
     "description": "Bouton de bas d'écran, avec le nombre d'images retenues entre parenthèses.",
     "placeholders": {
@@ -1642,7 +1642,7 @@
   "@htmlConverting": {
     "description": "Titre de la boîte de progression pendant le rendu du code collé. Garder le caractère de suspension final."
   },
-  "htmlNetworkNotice": "En internettforbindelse er nødvendig: det er det eneste verktøyet i applikasjonen som må laste ned siden. Sider som krever en kontopålogging, et informasjonskapselbanner eller mye JavaScript kan bli ufullstendige.",
+  "htmlNetworkNotice": "En internettforbindelse er nødvendig: det er det eneste verktøyet i appen som må laste ned siden. Sider som krever en kontopålogging, et informasjonskapselbanner eller mye JavaScript kan bli ufullstendige.",
   "@htmlNetworkNotice": {
     "description": "Avertissement affiché en mode adresse. Il signale la seule exception au fonctionnement hors ligne de l'application — ne l'allégez pas. « JavaScript » est une marque, à conserver."
   },
@@ -1658,7 +1658,7 @@
   "@watermarkEmptyBody": {
     "description": "Consigne de l'écran vide de l'outil Filigrane."
   },
-  "watermarkEmptyNote": "Gratis eksport uten antall grenser.",
+  "watermarkEmptyNote": "Gratis eksport uten begrensninger.",
   "@watermarkEmptyNote": {
     "description": "Note verte de l'écran vide, propre à cet outil. La note habituelle promet « sans filigrane » — sur l'outil qui en appose un, elle se contredirait. Ne réintroduisez donc pas la mention du filigrane ici."
   },
@@ -1812,7 +1812,7 @@
   "@organizeNothingToExport": {
     "description": "Bandeau d'erreur quand toutes les pages ont été écartées."
   },
-  "organizePagesKept": "{kept} sider beholdt av {total}",
+  "organizePagesKept": "{kept, plural, one{{kept} side beholdt} other{{kept} sider beholdt}} av {total}",
   "@organizePagesKept": {
     "description": "Sous-titre du document : combien de pages restent retenues sur combien. Affiché seulement quand on en a écarté.",
     "placeholders": {
@@ -1905,7 +1905,7 @@
   "@organizeSplitTitle": {
     "description": "Titre de la boîte de dialogue de division."
   },
-  "organizeFileCount": "{count} filer",
+  "organizeFileCount": "{count, plural, one{{count} fil} other{{count} filer}}",
   "@organizeFileCount": {
     "description": "Nombre de fichiers que la division produira, sous le curseur.",
     "placeholders": {
@@ -2108,7 +2108,7 @@
   "@ocrResultTitle": {
     "description": "Titre de la barre de l'écran de résultat. « OCR » est un sigle international, à conserver."
   },
-  "ocrResultBody": "{count} sider analysert. Den søkbare PDF-en er klar, og du kan også kopiere all gjenkjent tekst.",
+  "ocrResultBody": "{count, plural, one{{count} side analysert} other{{count} sider analysert}}. Den søkbare PDF-en er klar, og du kan også kopiere all gjenkjent tekst.",
   "@ocrResultBody": {
     "description": "Résumé de l'écran de résultat : combien de pages ont été traitées et ce qu'on peut faire ensuite.",
     "placeholders": {
@@ -2194,7 +2194,7 @@
   "@redactNoZone": {
     "description": "Affiché au-dessus des boutons tant qu'aucun rectangle n'a été tracé."
   },
-  "redactZoneCount": "{count} områder å skjule",
+  "redactZoneCount": "{count, plural, one{{count} sone å skjule} other{{count} soner å skjule}}",
   "@redactZoneCount": {
     "description": "Nombre de rectangles tracés, au-dessus des boutons.",
     "placeholders": {
@@ -2323,7 +2323,7 @@
       }
     }
   },
-  "compareChangedPages": "{changed} sider er forskjellige på {total}",
+  "compareChangedPages": "{changed, plural, one{{changed} side er forskjellig} other{{changed} sider er forskjellige}} på {total}",
   "@compareChangedPages": {
     "description": "Résumé de la comparaison : combien de pages diffèrent, sur combien au total. Accordez le verbe au nombre.",
     "placeholders": {
@@ -2348,7 +2348,7 @@
       }
     }
   },
-  "organizeFilesCreated": "{count} filer opprettet",
+  "organizeFilesCreated": "{count, plural, one{{count} fil opprettet} other{{count} filer opprettet}}",
   "@organizeFilesCreated": {
     "description": "Titre de la feuille de résultats de la division : combien de fichiers en sont sortis.",
     "placeholders": {

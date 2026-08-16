@@ -1,131 +1,96 @@
 {
   "@@locale": "pl",
-
   "appTitle": "Trombone — PDF, skan i Word",
   "appWordmark": "Trombone",
-
   "actionSave": "Zapisz",
   "actionShare": "Udostępnij",
-  "actionCompress": "Zmniejsz",
+  "actionCompress": "Kompresuj",
   "actionDone": "Gotowe",
   "actionCancel": "Anuluj",
   "actionChange": "Zmień",
   "actionContinue": "Dalej",
   "actionOpening": "Otwieranie…",
   "actionRemoveFile": "Usuń ten plik",
-
   "progressPreparing": "Przygotowywanie…",
   "progressPercent": "{percent}%",
-
   "emptyReassurance": "Eksport za darmo, bez znaku wodnego i bez limitu.",
   "emptyAcceptedFormats": "Obsługiwane formaty",
-
   "exportSavedTitle": "Zapisano.",
   "exportSavedBody": "Pod nazwą i w folderze, które właśnie wybrałeś. Bez znaku wodnego, bez limitu, nic do odblokowania.",
   "exportSaveDialogTitle": "Zapisz PDF",
-
   "pageTileIncluded": "Strona {number}, uwzględniona. Dotknij, aby pominąć.",
   "pageTileExcluded": "Strona {number}, pominięta. Dotknij, aby uwzględnić.",
   "pageTileRotate": "Obróć stronę {number}",
-
   "sectionHeaderSemantics": "{title}, {count, plural, one{{count} narzędzie} few{{count} narzędzia} many{{count} narzędzi} other{{count} narzędzia}}",
   "toolCount": "{count, plural, one{{count} narzędzie} few{{count} narzędzia} many{{count} narzędzi} other{{count} narzędzia}}",
-
-  "homePromise": "Zrób swój dokument i wyeksportuj go.\nŻadnej ściany na końcu.",
+  "homePromise": "Stwórz swój dokument i wyeksportuj go.\nŻadnych opłat na końcu.",
   "homeChipNoAccount": "Bez konta",
   "homeChipNoWatermark": "Bez znaku wodnego",
   "homeChipUnlimited": "Eksport bez limitu",
   "homeSearchTooltip": "Szukaj narzędzia",
-  "homeColophon": "Przy zapisywaniu nic nie odblokowuje się za opłatą. Eksport jest darmowy, bez znaku wodnego i bez ograniczenia liczby.",
-
+  "homeColophon": "Przy zapisywaniu nic nie wymaga płatności. Eksport jest bezpłatny, bez znaku wodnego i bez limitu.",
   "sectionFeatured": "Polecane",
   "sectionToPdf": "Do PDF",
   "sectionFromPdf": "Z PDF",
   "sectionSecurity": "Bezpieczeństwo",
   "sectionEdit": "Edycja",
-
   "toolMerge": "Połącz",
   "toolMergeKeywords": "scal polacz zlacz zgrupuj dolacz zlozyc",
   "toolMergeSubtitle": "PDF, Word, obrazy i tekst w jednym dokumencie",
-
   "toolRectoVerso": "Dwustronnie",
   "toolRectoVersoKeywords": "duplex przeplot skan parzyste nieparzyste dwie strony",
   "toolRectoVersoSubtitle": "Dwa skany, znów po kolei",
-
   "toolImagesToPdf": "Obrazy na PDF",
   "toolImagesToPdfKeywords": "zdjecie jpg jpeg png zdjecia album aparat obraz",
   "toolImagesToPdfSubtitle": "Zdjęcia i zrzuty ekranu w jednym dokumencie",
-
   "toolPdfToWord": "PDF na Word",
   "toolPdfToWordKeywords": "docx edytor tekstu edytowalny konwertuj doc",
   "toolPdfToWordSubtitle": "Tekst i tabele, edytowalne",
-
   "toolOrganize": "Uporządkuj PDF",
   "toolOrganizeKeywords": "podziel rozdziel wyodrebnij zmien kolejnosc strony usun",
   "toolOrganizeSubtitle": "Dzielenie, wyodrębnianie, kolejność",
-
   "toolExcelToPdf": "Excel na PDF",
   "toolExcelToPdfKeywords": "arkusz kalkulacyjny xlsx skoroszyt arkusz",
-
   "toolPptxToPdf": "PowerPoint na PDF",
   "toolPptxToPdfKeywords": "pptx slajd prezentacja slides",
-
   "toolHtmlToPdf": "Strona WWW na PDF",
   "toolHtmlToPdfKeywords": "html witryna internet url link artykul",
-
   "toolScan": "Zeskanuj dokument",
   "toolScanKeywords": "aparat zdjecie digitalizuj skaner papier",
-
   "toolPdfToExcel": "PDF na Excel",
   "toolPdfToExcelKeywords": "arkusz kalkulacyjny xlsx tabela wyodrebnij dane",
-
   "toolPdfToPptx": "PDF na PowerPoint",
   "toolPdfToPptxKeywords": "pptx slajd prezentacja slides",
-
   "toolPdfToImages": "PDF na obrazy",
   "toolPdfToImagesKeywords": "jpg png zdjecie eksportuj zrzut obraz",
-
   "toolOcr": "Tekst wyszukiwalny (OCR)",
   "toolOcrKeywords": "rozpoznawanie znaki zeskanowany kopiuj zaznacz",
-
   "toolPdfA": "Konwertuj na PDF/A",
   "toolPdfAKeywords": "archiwizacja norma dlugoterminowe przechowywanie iso",
-
   "toolProtect": "Zabezpiecz PDF",
   "toolProtectKeywords": "haslo klodka szyfruj zablokuj zabezpiecz",
-
   "toolUnlock": "Odblokuj PDF",
   "toolUnlockKeywords": "usun haslo otworz odszyfruj odbezpiecz klodka",
-
   "toolRepair": "Napraw PDF",
   "toolRepairKeywords": "uszkodzony nieczytelny zepsuty odzyskaj blad",
-
   "toolRedact": "Zamaż PDF",
   "toolRedactKeywords": "ukryj zaczernij anonimizuj poufne usun cenzura",
-
   "toolEdit": "Edytuj PDF",
   "toolEditKeywords": "tekst zmien popraw dodaj notatke pisz",
-
   "toolSign": "Podpisz",
   "toolSignKeywords": "podpis parafa umowa reka",
-
   "toolWatermark": "Znak wodny",
   "toolWatermarkKeywords": "watermark pieczec poufne szkic oznaczenie",
-
   "toolPageNumbers": "Numery stron",
   "toolPageNumbersKeywords": "paginacja numeracja numeruj cyfry numery",
-
   "toolCrop": "Przytnij PDF",
   "toolCropKeywords": "przytnij marginesy kadruj krawedzie rozmiar",
-
   "toolCompare": "Porównaj PDF",
   "toolCompareKeywords": "roznica wersje diff zmiany porownaj",
-
   "searchHint": "Połącz, hasło, znak wodny…",
   "searchClear": "Wyczyść",
-  "searchNoResultTitle": "Brak narzędzia dla „{query}”.",
+  "searchNoResultTitle": "Brak wyników dla „{query}”.",
   "searchNoResultBody": "Spróbuj podać format, który masz pod ręką — „Word”, „Excel”, „zdjęcie” — albo to, co chcesz z nim zrobić: „podpisz”, „podziel”, „hasło”.",
-
   "actionUndo": "Cofnij",
   "actionApply": "Zastosuj",
   "actionChoose": "Wybierz",
@@ -136,30 +101,25 @@
   "actionBack": "Wstecz",
   "actionAdd": "Dodaj",
   "noFileChosen": "Nie wybrano pliku",
-
   "errorExportFailed": "Eksport nie powiódł się: {detail}",
   "errorShareFailed": "Udostępnianie nie powiodło się: {detail}",
   "errorOpenFailed": "Nie udało się otworzyć pliku: {detail}",
   "errorConversionFailed": "Konwersja nie powiodła się: {detail}",
   "errorOnFile": "{name}: {detail}",
   "errorPickPdf": "Wybierz plik PDF.",
-
   "sizeBytes": "{value} B",
   "sizeKb": "{value} KB",
   "sizeMb": "{value} MB",
   "sizeApprox": "~ {size}",
-
   "pageCount": "{count, plural, one{{count} strona} few{{count} strony} many{{count} stron} other{{count} strony}}",
   "pageCountOfTotal": "{kept, plural, one{{kept} strona} few{{kept} strony} many{{kept} stron} other{{kept} strony}} z {total}",
   "pageOfTotal": "Strona {current} z {total}",
-
   "formatPdf": "PDF",
   "formatWord": "Word",
   "formatExcel": "Excel",
   "formatPowerPoint": "PowerPoint",
   "formatImages": "Obrazy",
   "formatText": "Tekst",
-
   "mergeAddFile": "Dodaj plik",
   "mergeAddHint": "PDF, Word, obrazy lub tekst",
   "mergeEmptyTitle": "Jeden dokument",
@@ -172,17 +132,15 @@
   "mergeMoveSemantics": "Przenieś {name}",
   "mergeRotateAll": "Obróć wszystkie strony",
   "mergePreviewAndExport": "Podgląd i eksport ({count, plural, one{{count} strona} few{{count} strony} many{{count} stron} other{{count} strony}})",
-
   "previewTitle": "Podgląd · {size}",
   "previewZoomPage": "Strona {number}, powiększ",
   "previewPageUnreadable": "Strona nieczytelna.",
   "previewExportWhat": "PDF · {count, plural, one{{count} strona} few{{count} strony} many{{count} stron} other{{count} strony}}",
-  "compressTitle": "Zmniejszanie",
+  "compressTitle": "Kompresja",
   "compressBody": "Obecny rozmiar: {size}. Wybierz poziom — szacowany rozmiar pojawi się przed zastosowaniem.",
   "compressEstimating": "Szacowanie…",
   "compressProgress": "Zmniejszanie…",
   "compressFailed": "Zmniejszanie nie powiodło się: {detail}",
-
   "protectEmptyTitle": "Zabezpiecz hasłem",
   "protectEmptyBody": "PDF nie otworzy się już bez hasła, które wybierzesz. Zachowaj je: nie da się go odzyskać.",
   "protectSubtitle": "Zostanie zaszyfrowany algorytmem AES 256-bit",
@@ -199,7 +157,6 @@
   "protectResultTitle": "PDF zabezpieczony",
   "protectResultDetail": "Zaszyfrowany algorytmem AES 256-bit. Do otwarcia potrzebne będzie hasło.",
   "protectExportWhat": "PDF zabezpieczony hasłem",
-
   "unlockEmptyTitle": "Usuń hasło",
   "unlockEmptyBody": "Potrzebujesz obecnego hasła dokumentu. Po jego usunięciu PDF będzie się otwierał bez przeszkód.",
   "unlockAcceptsProtectedPdf": "Zabezpieczony PDF",
@@ -209,15 +166,13 @@
   "unlockProgress": "Odblokowywanie…",
   "unlockFailed": "Odblokowanie nie powiodło się: {detail}",
   "unlockAction": "Odblokuj",
-
   "repairEmptyTitle": "Napraw uszkodzony plik",
   "repairEmptyBody": "Wewnętrzna struktura uszkodzonego PDF zostaje odtworzona. To, co da się odzyskać, zostanie odzyskane.",
   "repairProgress": "Naprawianie…",
   "repairFailed": "Nie da się naprawić tego pliku — może być zbyt uszkodzony.",
   "repairAction": "Napraw",
-
   "pdfToWordEmptyTitle": "Edytowalny plik Word",
-  "pdfToWordEmptyBody": "Tekst i struktura PDF zostają przeniesione do dokumentu .docx, który będzie można ponownie otworzyć i poprawić.",
+  "pdfToWordEmptyBody": "Tekst i struktura pliku PDF zostają przeniesione do dokumentu .docx, który można ponownie otworzyć i edytować.",
   "pdfToWordAnalyzing": "Analiza dokumentu…",
   "pdfToWordAnalysisPending": "Analiza oczekuje",
   "pdfToWordAnalysisFailed": "Analiza nie powiodła się: {detail}",
@@ -236,7 +191,6 @@
   "pdfToWordConvertAction": "Konwertuj do Worda",
   "actionConvertAgain": "Konwertuj ponownie",
   "errorSaveFailed": "Nie udało się zapisać: {detail}",
-
   "rectoVersoIntro": "Podajnik jednostronny daje dwa pliki: strony nieparzyste po kolei, a parzyste często w odwrotnej kolejności. Wybierz oba, aby je złożyć z powrotem.",
   "rectoVersoOddSlot": "Plik ze stronami nieparzystymi (awers)",
   "rectoVersoEvenSlot": "Plik ze stronami parzystymi (rewers)",
@@ -250,7 +204,6 @@
   "errorGeneric": "Niepowodzenie: {detail}",
   "actionConvertToPdf": "Konwertuj na PDF",
   "convertProgress": "Konwersja…",
-
   "excelEmptyTitle": "Skoroszyt jako PDF",
   "excelEmptyBody": "Arkusze pliku .xlsx stają się stronami PDF, gotowymi do wysłania lub wydruku.",
   "excelChooseWorkbook": "Wybierz skoroszyt",
@@ -265,7 +218,6 @@
   "excelRepeatHeader": "Powtarzaj wiersz nagłówka na każdej stronie",
   "excelRepeatHeaderHint": "Pierwszy wiersz arkusza jest rysowany ponownie u góry każdej strony tabeli.",
   "excelCaveat": "Co konwersja przenosi: tekst komórek w postaci zapisanej w pliku (łącznie z ostatnim obliczonym wynikiem formuł), pierwszy wiersz pogrubiony i siatkę.\n\nCzego nie przenosi: kolorów, czcionek, formatów liczb, komórek scalonych, obrazów, wykresów ani samych formuł. Kolumny są zwężane, aby zmieściły się na szerokości strony; w bardzo szerokich arkuszach tekst zbyt wąskich komórek zostaje ucięty znakiem „…”.",
-
   "pptxEmptyTitle": "Prezentacja jako PDF",
   "pptxEmptyBody": "Jedna pozioma strona 16:9 na slajd, z tytułem i punktami. Tekst zostaje przeniesiony; pierwotne obrazy, kształty i tła nie.\n\nObsługiwany format: .pptx. Starszy plik .ppt trzeba najpierw zapisać jako .pptx w PowerPoincie.",
   "pptxChoosePresentation": "Wybierz prezentację",
@@ -278,14 +230,11 @@
   "pptxEmptySlide": "Brak tekstu (tylko obraz lub kształt)",
   "pptxTextLineCount": "{count, plural, one{{count} wiersz tekstu} few{{count} wiersze tekstu} many{{count} wierszy tekstu} other{{count} wiersza tekstu}}",
   "pptxReadFailed": "Nie udało się odczytać: {detail}",
-
   "compressLevelLight": "Lekkie",
   "compressLevelMedium": "Średnie",
   "compressLevelStrong": "Mocne",
-
   "pptxQualityStandard": "Standardowa (150 dpi)",
   "pptxQualityHigh": "Wysoka (220 dpi)",
-
   "pdfToExcelEmptyTitle": "Odzyskaj tabele",
   "pdfToExcelEmptyBody": "Tabele z PDF zostają wyodrębnione do skoroszytu Excela. Formatowanie nie zostaje zachowane, wartości tak.",
   "pdfToExcelPagesAnalyzed": "{count, plural, one{przeanalizowano {count} stronę} few{przeanalizowano {count} strony} many{przeanalizowano {count} stron} other{przeanalizowano {count} strony}}",
@@ -305,7 +254,6 @@
   "pdfToExcelExportWhat": "Skoroszyt Excela",
   "pdfToExcelConvertAction": "Konwertuj do Excela",
   "resultNameAndSize": "{name} — {size}",
-
   "pdfToPptxEmptyTitle": "Jeden slajd na stronę",
   "pdfToPptxEmptyBody": "PDF staje się identyczną prezentacją PowerPoint. Każda strona trafia tam jako obraz: układ jest wierny, ale tekstu nie da się edytować w PowerPoincie.",
   "pdfToPptxOpenFailed": "Nie udało się otworzyć tego PDF: {detail}",
@@ -323,7 +271,6 @@
   "pdfToPptxChangeQuality": "Zmień jakość",
   "pdfToPptxConvertAction": "Konwertuj do PowerPointa",
   "pdfToPptxExportWhat": "Prezentacja PowerPoint · {count, plural, one{{count} slajd} few{{count} slajdy} many{{count} slajdów} other{{count} slajdu}}",
-
   "formatLabel": "Format",
   "actionExport": "Eksportuj",
   "imageQualityWeb": "Web (72 dpi)",
@@ -335,7 +282,6 @@
   "errorLoadFailed": "Wczytywanie nie powiodło się: {detail}",
   "pdfToImagesProgress": "Eksportowanie…",
   "pdfToImagesExportWhat": "{count, plural, one{{count} obraz {format}} few{{count} obrazy {format}} many{{count} obrazów {format}} other{{count} obrazu {format}}}",
-
   "pdfaEmptyTitle": "Archiwizuj na długo",
   "pdfaEmptyBody": "PDF/A to format archiwalny wymagany przez wiele urzędów. Dokument zostaje przekonwertowany bez utraty wyglądu.",
   "pdfaConformanceLevel": "Poziom zgodności",
@@ -346,7 +292,6 @@
   "pdfaCaveatTitle": "Co zmienia konwersja",
   "pdfaCaveat": "Każda strona zostaje narysowana od nowa jako obraz w {dpi} dpi: tekst staje się obrazem, a układ zostaje utrwalony. Właśnie to sprawia, że plik jest naprawdę zgodny bez zależności od czcionek oryginalnego dokumentu, ale w zamian tekstu nie da się już zaznaczyć ani przeszukać, znikają odnośniki i formularze, a plik staje się cięższy.",
   "pdfaOpenFailed": "Nie udało się otworzyć tego PDF: {detail}",
-
   "imagesToPdfEmptyTitle": "Obrazy w jednym PDF",
   "imagesToPdfEmptyBody": "JPG, PNG, WebP, HEIC — dodaj swoje obrazy, a zostaną złożone w kolejności, którą wybierzesz.",
   "imagesToPdfChoose": "Wybierz obrazy",
@@ -357,7 +302,6 @@
   "imagesToPdfCreateAction": "Utwórz PDF ({count, plural, one{{count} obraz} few{{count} obrazy} many{{count} obrazów} other{{count} obrazu}})",
   "actionRotate": "Obróć",
   "actionRemove": "Usuń",
-
   "htmlTitle": "HTML / strona WWW na PDF",
   "htmlIntro": "Zamień stronę WWW albo kod HTML na PDF w formacie A4. Renderowaniem zajmuje się przeglądarka wbudowana w Androida, więc układ jest taki jak przy druku z Chrome.",
   "htmlModeUrl": "Adres WWW",
@@ -373,10 +317,9 @@
   "htmlConverting": "Konwersja HTML…",
   "htmlNetworkNotice": "Potrzebne jest połączenie z internetem: to jedyne narzędzie w aplikacji, które musi pobrać stronę. Strony wymagające logowania, baneru cookies albo dużej ilości JavaScriptu mogą wyjść niekompletne.",
   "htmlOfflineNotice": "HTML i CSS zapisane bezpośrednio na stronie są renderowane bez połączenia. Natomiast obrazy, arkusze stylów czy czcionki pobierane z zewnętrznego adresu wymagają połączenia z internetem.",
-
   "watermarkEmptyTitle": "Nałóż znak wodny",
   "watermarkEmptyBody": "Wybrany przez Ciebie tekst powtarza się w tle na wszystkich stronach — aby oznaczyć dokument jako poufny albo jako szkic.",
-  "watermarkEmptyNote": "Eksport za darmo i bez ograniczenia liczby.",
+  "watermarkEmptyNote": "Eksport bezpłatny i bez ograniczeń liczby.",
   "watermarkTextLabel": "Tekst znaku wodnego",
   "watermarkDefaultText": "POUFNE",
   "watermarkNeedText": "Wpisz tekst znaku wodnego.",
@@ -392,7 +335,6 @@
   "percentValue": "{percent}%",
   "degreesValue": "{degrees}°",
   "pointsValue": "{points} pt",
-
   "pageNumbersEmptyTitle": "Ponumeruj strony",
   "pageNumbersEmptyBody": "Wybierz PDF, a potem położenie i postać numerów, które trafią na każdą stronę.",
   "positionLabel": "Położenie",
@@ -404,7 +346,6 @@
   "pageNumbersFormatOfTotal": "N / razem",
   "pageNumbersStart": "Numer początkowy",
   "pageNumbersProgress": "Numerowanie…",
-
   "scanNoCamera": "Na tym urządzeniu nie ma dostępnego aparatu.",
   "scanCameraFailed": "Nie udało się uruchomić aparatu: {detail}",
   "scanCropToolbar": "Dopasuj",
@@ -414,7 +355,6 @@
   "actionRetry": "Spróbuj ponownie",
   "scanNoPageYet": "Jeszcze żadnej strony.",
   "scanFinishAction": "Zakończ · {count}",
-
   "signTitle": "Podpisz PDF",
   "signIntro": "Złóż odręcznie narysowany podpis na stronie PDF. To zwykły rysunek dodany do dokumentu, a nie kwalifikowany podpis elektroniczny.",
   "signChooseSubtitle": "Wybierz dokument do podpisania",
@@ -427,7 +367,6 @@
   "signPlaceBody": "Przeciągnij podpis w wybrane miejsce na stronie, a potem dotknij Zakończ.",
   "signPageUnavailable": "Nie udało się wyświetlić strony.",
   "signProgress": "Dodawanie podpisu…",
-
   "editTitle": "Dodaj notatki do dokumentu",
   "editEmptyBody": "Dodawaj tekst albo zaznaczaj fragmenty bezpośrednio na istniejącym PDF.",
   "editAddTextTitle": "Dodaj tekst",
@@ -440,7 +379,6 @@
   "editModeText": "Tekst",
   "editModeHighlight": "Zakreśl",
   "editPageUnavailable": "Nie udało się wyświetlić tej strony.",
-
   "ocrEmptyTitle": "Uczyń tekst wyszukiwalnym",
   "ocrEmptyBody": "Tekst zeskanowanego PDF zostaje rozpoznany i nałożony na obraz w sposób niewidoczny. Wygląd strony się nie zmienia.",
   "ocrWrongFormat": "Wybierz PDF albo obraz (JPG, PNG…).",
@@ -451,7 +389,6 @@
   "ocrResultBody": "{count, plural, one{Przeanalizowano {count} stronę} few{Przeanalizowano {count} strony} many{Przeanalizowano {count} stron} other{Przeanalizowano {count} strony}}. Wyszukiwalny PDF jest gotowy, a cały rozpoznany tekst możesz też skopiować.",
   "ocrCopyText": "Kopiuj tekst",
   "ocrTextCopied": "Skopiowano tekst.",
-
   "redactIntro": "Zamaż na stałe fragmenty PDF (nazwiska, adresy, kwoty). W odróżnieniu od zwykłego czarnego prostokąta nałożonego z wierzchu, ukryty tekst zostaje naprawdę usunięty z pliku, a nie tylko przykryty: nie da się go już zaznaczyć ani skopiować.",
   "redactChooseSubtitle": "Wybierz dokument do zamazania",
   "redactCaveat": "Warto wiedzieć: aby usunąć ukryty tekst, każda strona dokumentu zostaje z powrotem zamieniona na obraz (200 dpi). Wynik nie jest więc już plikiem PDF, w którym da się zaznaczyć tekst, a otrzymany plik jest zwykle cięższy od oryginału.",
@@ -468,7 +405,6 @@
   "redactOtherPdf": "Inny PDF",
   "redactAction": "Zamaż",
   "redactProgress": "Zamazywanie…",
-
   "cropEmptyTitle": "Przytnij marginesy",
   "cropEmptyBody": "Wybierz PDF, a potem przeciągnij palcem po podglądzie, aby wyznaczyć obszar do zachowania.",
   "cropTooSmall": "Zaznaczony obszar jest za mały.",
@@ -482,7 +418,6 @@
   "cropAllPagesOff": "Przycinana jest tylko strona 1, pozostałe zostają w całości.",
   "cropCaveat": "Przycinanie zmniejsza rozmiar strony: treść poza obszarem nie jest już wyświetlana ani drukowana.",
   "cropAction": "Przytnij",
-
   "compareTitle": "Porównaj dwa PDF",
   "compareEmptyTitle": "Co się zmieniło",
   "compareEmptyBody": "Wybierz dwie wersje tego samego PDF. Dodane i usunięte fragmenty zostaną zestawione obok siebie, strona po stronie.",
@@ -494,7 +429,6 @@
   "compareChangedPages": "{changed, plural, one{{changed} strona różni się} few{{changed} strony różnią się} many{{changed} stron różni się} other{{changed} strony różni się}} z {total}",
   "compareNoDifference": "Nie wykryto różnic między dwoma plikami.",
   "comparePageHeading": "Strona {number}",
-
   "organizeEmptyTitle": "Weź PDF z powrotem w swoje ręce",
   "organizeEmptyBody": "Otwórz dokument, aby go podzielić, wyodrębnić z niego strony albo zmienić ich kolejność.",
   "organizeOpenFile": "Otwórz plik",

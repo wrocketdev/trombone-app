@@ -21,7 +21,7 @@ class LPl extends L {
   String get actionShare => 'Udostępnij';
 
   @override
-  String get actionCompress => 'Zmniejsz';
+  String get actionCompress => 'Kompresuj';
 
   @override
   String get actionDone => 'Gotowe';
@@ -109,7 +109,7 @@ class LPl extends L {
 
   @override
   String get homePromise =>
-      'Zrób swój dokument i wyeksportuj go.\nŻadnej ściany na końcu.';
+      'Stwórz swój dokument i wyeksportuj go.\nŻadnych opłat na końcu.';
 
   @override
   String get homeChipNoAccount => 'Bez konta';
@@ -125,7 +125,7 @@ class LPl extends L {
 
   @override
   String get homeColophon =>
-      'Przy zapisywaniu nic nie odblokowuje się za opłatą. Eksport jest darmowy, bez znaku wodnego i bez ograniczenia liczby.';
+      'Przy zapisywaniu nic nie wymaga płatności. Eksport jest bezpłatny, bez znaku wodnego i bez limitu.';
 
   @override
   String get sectionFeatured => 'Polecane';
@@ -324,7 +324,7 @@ class LPl extends L {
 
   @override
   String searchNoResultTitle(String query) {
-    return 'Brak narzędzia dla „$query”.';
+    return 'Brak wyników dla „$query”.';
   }
 
   @override
@@ -541,7 +541,7 @@ class LPl extends L {
   }
 
   @override
-  String get compressTitle => 'Zmniejszanie';
+  String get compressTitle => 'Kompresja';
 
   @override
   String compressBody(String size) {
@@ -665,7 +665,7 @@ class LPl extends L {
 
   @override
   String get pdfToWordEmptyBody =>
-      'Tekst i struktura PDF zostają przeniesione do dokumentu .docx, który będzie można ponownie otworzyć i poprawić.';
+      'Tekst i struktura pliku PDF zostają przeniesione do dokumentu .docx, który można ponownie otworzyć i edytować.';
 
   @override
   String get pdfToWordAnalyzing => 'Analiza dokumentu…';
@@ -1403,8 +1403,7 @@ class LPl extends L {
       'Wybrany przez Ciebie tekst powtarza się w tle na wszystkich stronach — aby oznaczyć dokument jako poufny albo jako szkic.';
 
   @override
-  String get watermarkEmptyNote =>
-      'Eksport za darmo i bez ograniczenia liczby.';
+  String get watermarkEmptyNote => 'Eksport bezpłatny i bez ograniczeń liczby.';
 
   @override
   String get watermarkTextLabel => 'Tekst znaku wodnego';
