@@ -26,6 +26,7 @@ Play Console > Utilisateurs et autorisations).
 
 Usage :
     python play_api.py etat        (lecture seule)
+    python play_api.py prochain-code  (lecture seule : versionCode suivant)
     python play_api.py fiche       (ECRIT les textes depuis FICHE-PLAY.md)
     python play_api.py contact     (ECRIT le site et l'e-mail de contact)
     python play_api.py visuels     (ECRIT ce qui manque, n'ecrase rien)
@@ -41,6 +42,7 @@ rien n'est ecrit.
 
 from __future__ import annotations
 
+import os
 import sys
 from pathlib import Path
 
@@ -48,7 +50,15 @@ import requests
 from google.auth.transport.requests import Request
 from google.oauth2 import service_account
 
-CLE = Path.home() / "cles-android" / "play-publisher.json"
+# La cle du compte de service. En local elle vit dans `~/cles-android/`;
+# l'integration continue n'a pas ce dossier et passe le chemin par la
+# variable `PLAY_SERVICE_ACCOUNT` (un fichier JSON ecrit par le workflow).
+CLE = Path(
+    os.environ.get(
+        "PLAY_SERVICE_ACCOUNT",
+        str(Path.home() / "cles-android" / "play-publisher.json"),
+    )
+)
 
 # Definitif. Il a ete choisi pour ne nommer aucun outil en particulier :
 # l'identifiant precedent, `com.fusionpdf.fusion_pdf`, aurait fige « fusion »
@@ -220,6 +230,24 @@ def etat(s: requests.Session) -> None:
             ]
             print(f"  piste {t['track']:<12} {versions}")
         # Lecture seule : on abandonne plutot que de valider un edit vide.
+        raise _Lecture()
+
+
+def prochain_code(s: requests.Session) -> None:
+    """Le versionCode a utiliser pour le prochain envoi.
+
+    Play refuse deux fois le meme versionCode : on lit donc le plus grand code
+    deja depose et on renvoie le suivant. L'integration continue s'en sert
+    pour construire l'AAB avec `--build-number`, sans avoir a monter
+    `pubspec.yaml` a la main a chaque merge.
+
+    N'ecrit rien : l'edit n'est ouvert que pour lire la liste des bundles et
+    il est abandonne, exactement comme dans [etat].
+    """
+    with Edit(s) as e:
+        bundles = verifier(s.get(e.url("bundles"))).get("bundles", [])
+        connus = [int(b["versionCode"]) for b in bundles]
+        print(max(connus, default=0) + 1)
         raise _Lecture()
 
 
@@ -506,6 +534,8 @@ def main() -> None:
     try:
         if commande == "etat":
             etat(s)
+        elif commande == "prochain-code":
+            prochain_code(s)
         elif commande == "fiche":
             fiche(s)
         elif commande == "visuels":

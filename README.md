@@ -58,6 +58,43 @@ fichier `.properties` l'antislash est un caractère d'échappement, et un chemin
 mal lu produit un AAB signé avec la clé de debug — que Play refuse. Le build
 échoue désormais franchement dans ce cas au lieu de retomber sur la clé de debug.
 
+## Publication automatique (CI)
+
+`.github/workflows/publish-play-store.yml` construit l'AAB signé et le publie
+sur le Play Store à chaque push sur `main` (la branche par défaut du dépôt),
+sur la piste **production**. Un déclenchement manuel permet de viser une autre
+piste (`internal`, `alpha`, `beta`, `production`).
+
+L'envoi et la promotion de piste sont délégués à l'action standard
+[`r0adkll/upload-google-play`](https://github.com/r0adkll/upload-google-play)
+(téléversement de l'AAB + passage en `completed`). `publication/play_api.py`
+ne sert plus, en CI, qu'à calculer le `versionCode` suivant ; ses commandes
+`etat`, `fiche`, `visuels` et `contact` restent là pour la fiche Play, lancées
+à la main. Les notes de version viennent de
+`publication/whatsnew/whatsnew-fr-FR` (un fichier par langue, à mettre à jour
+à chaque release).
+
+Le `versionCode` est **auto-généré par la CI** : le workflow interroge Play
+(plus grand code déjà déposé + 1) et construit l'AAB avec `--build-number`.
+Il n'y a donc plus rien à monter dans `pubspec.yaml` à chaque merge. Le
+`versionName` (la partie `x.y.z` avant le `+`) reste décidé à la main :
+monter `1.0.0` → `1.1.0` quand une version visible change.
+
+Secrets à créer dans *GitHub → Settings → Secrets and variables → Actions* :
+
+| Secret | Contenu |
+| --- | --- |
+| `KEYSTORE_B64` | `base64 -i trombone-upload.jks` (la clé d'envoi, encodée) |
+| `KEYSTORE_PASSWORD` | le mot de passe du keystore |
+| `KEY_ALIAS` | l'alias de la clé |
+| `KEY_PASSWORD` | le mot de passe de la clé |
+| `PLAY_SERVICE_ACCOUNT_B64` | `base64 -i play-publisher.json` (la clé du compte de service Play, encodée) |
+
+Le compte de service doit avoir accès à l'application dans la Play Console et
+la permission « Release to production » (voir §7 de `FICHE-PLAY.md`). Le
+workflow reconstruit `android/key.properties` et la clé à partir de ces
+secrets, comme le ferait un build local.
+
 ## Nommage
 
 Trois champs différents, trois rôles à ne pas confondre :

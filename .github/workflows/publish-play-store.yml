@@ -1,0 +1,120 @@
+name: Publier sur le Play Store
+
+# Publie l'AAB signe sur le Play Store a chaque push sur `main`, directement
+# sur la piste `production` (envoi en examen Google puis mise en ligne).
+#
+# Le depot utilise `main` comme branche par defaut, pas `master` ; le
+# workflow se declenche donc sur `main`.
+#
+# Le `versionCode` est derive du Play Store a chaque envoi (le plus grand code
+# deja depose + 1, via `play_api.py prochain-code`), puis passe au build avec
+# `--build-number`. Il n'y a donc plus rien a monter a la main avant de merger.
+# Seul le `versionName` (la partie x.y.z de `pubspec.yaml`) reste decide a la
+# main. Le developpement sur branches ne declenche rien.
+#
+# L'envoi de l'AAB et la promotion de piste sont delegues a l'action standard
+# `r0adkll/upload-google-play` ; `play_api.py` ne sert plus ici qu'a calculer
+# le versionCode suivant.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      track:
+        description: Piste de diffusion
+        type: choice
+        default: production
+        options: [internal, alpha, beta, production]
+        required: true
+
+# Un seul deploiement a la fois : deux pushes rapproches ne doivent pas
+# partir en course pour ecrire la meme piste Play.
+concurrency:
+  group: play-publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      # `stable` suit la version que l'equipe utilise en local : epingler une
+      # version ici la rendrait caduque des que pubspec.yaml monte sa
+      # contrainte `sdk:` au-dela de ce que cette version fournit.
+      - name: Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Dependances de publication
+        run: pip install requests google-auth
+
+      # La cle d'envoi et `key.properties` vivent hors du depot (voir
+      # android/.gitignore). On les reconstitue ici a partir des secrets, en
+      # suivant exactement le format attendu par android/app/build.gradle.kts.
+      - name: Cle de signature
+        env:
+          KEYSTORE_B64: ${{ secrets.KEYSTORE_B64 }}
+          KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
+          KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
+          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
+        run: |
+          echo "$KEYSTORE_B64" | base64 --decode > android/app/upload.jks
+          {
+            echo "storeFile=upload.jks"
+            echo "storePassword=$KEYSTORE_PASSWORD"
+            echo "keyAlias=$KEY_ALIAS"
+            echo "keyPassword=$KEY_PASSWORD"
+          } > android/key.properties
+
+      # `play_api.py` lit la cle du compte de service dans la variable
+      # PLAY_SERVICE_ACCOUNT (voir le fallback local dans le script).
+      - name: Compte de service Play
+        env:
+          PLAY_SERVICE_ACCOUNT_B64: ${{ secrets.PLAY_SERVICE_ACCOUNT_B64 }}
+        run: |
+          echo "$PLAY_SERVICE_ACCOUNT_B64" | base64 --decode > play-publisher.json
+          echo "PLAY_SERVICE_ACCOUNT=$PWD/play-publisher.json" >> "$GITHUB_ENV"
+
+      - name: Dependances Flutter
+        run: flutter pub get
+
+      # Interroge Play pour obtenir le prochain versionCode libre. Cela doit
+      # tourner apres l'etape « Compte de service Play » (variable
+      # PLAY_SERVICE_ACCOUNT) et avant le build, qui le recoit en
+      # `--build-number`.
+      - name: Prochain versionCode
+        id: version
+        run: echo "code=$(python publication/play_api.py prochain-code)" >> "$GITHUB_OUTPUT"
+
+      - name: Build AAB release
+        run: flutter build appbundle --release --build-number="${{ steps.version.outputs.code }}"
+
+      # Televerse l'AAB et l'affecte a la piste visee en `completed` : c'est
+      # ce qui envoie en examen puis met en ligne. L'action standard remplace
+      # ici les commandes `bundle` + `deployer` de play_api.py, qui restent
+      # dispo pour un usage manuel.
+      - name: Publier sur le Play Store
+        uses: r0adkll/upload-google-play@v1
+        with:
+          serviceAccountJson: ${{ github.workspace }}/play-publisher.json
+          packageName: com.kwizu.trombone
+          releaseFiles: build/app/outputs/bundle/release/app-release.aab
+          tracks: ${{ github.event_name == 'workflow_dispatch' && inputs.track || 'production' }}
+          status: completed
+          whatsNewDirectory: publication/whatsnew
