@@ -18,6 +18,14 @@
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-3940256099942544~3347511713"/>
+        <!-- image_cropper launches this uCrop activity after a photo is taken.
+             uCrop 2.2.11 no longer declares it in its own manifest, so the
+             Scanner tool crashes with ActivityNotFoundException the moment the
+             user taps the shutter unless it is registered here. -->
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"
